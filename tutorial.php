@@ -12,10 +12,8 @@
  * \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_PASSWORD => 'you_secret_password',
  * );
  * etc....
- * ################################################################################
- * Don't forget to add wsdltophp/packagebase:dev-master to your main composer.json.
- * ################################################################################
  */
+require_once __DIR__ . '/vendor/autoload.php';
 /**
  * Minimal options
  */

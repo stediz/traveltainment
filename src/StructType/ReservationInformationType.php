@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class ReservationInformationType extends AbstractStructBase
     /**
      * Set id value
      * @param string $id
-     * @return \StructType\ReservationInformationType
+     * @return \traveltainment\SOAP17\StructType\ReservationInformationType
      */
     public function setId($id = null)
     {
@@ -53,7 +53,7 @@ class ReservationInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReservationInformationType
+     * @return \traveltainment\SOAP17\StructType\ReservationInformationType
      */
     public static function __set_state(array $array)
     {

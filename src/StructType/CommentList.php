@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class CommentList extends AbstractStructBase
     }
     /**
      * Set Comment value
-     * @uses \EnumType\CommentType::valueIsValid()
-     * @uses \EnumType\CommentType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $comment
-     * @return \StructType\CommentList
+     * @return \traveltainment\SOAP17\StructType\CommentList
      */
     public function setComment(array $comment = array())
     {
         $invalidValues = array();
         foreach ($comment as $commentListCommentItem) {
-            if (!\EnumType\CommentType::valueIsValid($commentListCommentItem)) {
+            if (!\traveltainment\SOAP17\EnumType\CommentType::valueIsValid($commentListCommentItem)) {
                 $invalidValues[] = var_export($commentListCommentItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\CommentType::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\CommentType::getValidValues())), __LINE__);
         }
         $this->Comment = $comment;
         return $this;
     }
     /**
      * Add item to Comment value
-     * @uses \EnumType\CommentType::valueIsValid()
-     * @uses \EnumType\CommentType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\CommentList
+     * @return \traveltainment\SOAP17\StructType\CommentList
      */
     public function addToComment($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CommentType::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\CommentType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CommentType::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\CommentType::getValidValues())), __LINE__);
         }
         $this->Comment[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class CommentList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CommentList
+     * @return \traveltainment\SOAP17\StructType\CommentList
      */
     public static function __set_state(array $array)
     {

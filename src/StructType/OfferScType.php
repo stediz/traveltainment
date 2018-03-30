@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,44 +14,44 @@ class OfferScType extends OfferBaseType
 {
     /**
      * The Package
-     * @var \StructType\PackageType
+     * @var \traveltainment\SOAP17\StructType\PackageType
      */
     public $Package;
     /**
      * The Accommodation
-     * @var \StructType\AccommodationType
+     * @var \traveltainment\SOAP17\StructType\AccommodationType
      */
     public $Accommodation;
     /**
      * The Flight
-     * @var \StructType\FlightType
+     * @var \traveltainment\SOAP17\StructType\FlightType
      */
     public $Flight;
     /**
      * The RentalCar
-     * @var \StructType\RentalCarDetails4ScType
+     * @var \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
     public $RentalCar;
     /**
      * The Insurance
-     * @var \StructType\InsuranceDetails4ScType
+     * @var \traveltainment\SOAP17\StructType\InsuranceDetails4ScType
      */
     public $Insurance;
     /**
      * The Transfer
-     * @var \StructType\TransferDetails4ScType
+     * @var \traveltainment\SOAP17\StructType\TransferDetails4ScType
      */
     public $Transfer;
     /**
      * The Parking
-     * @var \StructType\ParkingDetails4ScType
+     * @var \traveltainment\SOAP17\StructType\ParkingDetails4ScType
      */
     public $Parking;
     /**
      * The AdditionalCost
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AdditionalCostType
+     * @var \traveltainment\SOAP17\StructType\AdditionalCostType
      */
     public $AdditionalCost;
     /**
@@ -64,16 +64,16 @@ class OfferScType extends OfferBaseType
      * @uses OfferScType::setTransfer()
      * @uses OfferScType::setParking()
      * @uses OfferScType::setAdditionalCost()
-     * @param \StructType\PackageType $package
-     * @param \StructType\AccommodationType $accommodation
-     * @param \StructType\FlightType $flight
-     * @param \StructType\RentalCarDetails4ScType $rentalCar
-     * @param \StructType\InsuranceDetails4ScType $insurance
-     * @param \StructType\TransferDetails4ScType $transfer
-     * @param \StructType\ParkingDetails4ScType $parking
-     * @param \StructType\AdditionalCostType $additionalCost
+     * @param \traveltainment\SOAP17\StructType\PackageType $package
+     * @param \traveltainment\SOAP17\StructType\AccommodationType $accommodation
+     * @param \traveltainment\SOAP17\StructType\FlightType $flight
+     * @param \traveltainment\SOAP17\StructType\RentalCarDetails4ScType $rentalCar
+     * @param \traveltainment\SOAP17\StructType\InsuranceDetails4ScType $insurance
+     * @param \traveltainment\SOAP17\StructType\TransferDetails4ScType $transfer
+     * @param \traveltainment\SOAP17\StructType\ParkingDetails4ScType $parking
+     * @param \traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost
      */
-    public function __construct(\StructType\PackageType $package = null, \StructType\AccommodationType $accommodation = null, \StructType\FlightType $flight = null, \StructType\RentalCarDetails4ScType $rentalCar = null, \StructType\InsuranceDetails4ScType $insurance = null, \StructType\TransferDetails4ScType $transfer = null, \StructType\ParkingDetails4ScType $parking = null, \StructType\AdditionalCostType $additionalCost = null)
+    public function __construct(\traveltainment\SOAP17\StructType\PackageType $package = null, \traveltainment\SOAP17\StructType\AccommodationType $accommodation = null, \traveltainment\SOAP17\StructType\FlightType $flight = null, \traveltainment\SOAP17\StructType\RentalCarDetails4ScType $rentalCar = null, \traveltainment\SOAP17\StructType\InsuranceDetails4ScType $insurance = null, \traveltainment\SOAP17\StructType\TransferDetails4ScType $transfer = null, \traveltainment\SOAP17\StructType\ParkingDetails4ScType $parking = null, \traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost = null)
     {
         $this
             ->setPackage($package)
@@ -87,7 +87,7 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Get Package value
-     * @return \StructType\PackageType|null
+     * @return \traveltainment\SOAP17\StructType\PackageType|null
      */
     public function getPackage()
     {
@@ -95,17 +95,17 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set Package value
-     * @param \StructType\PackageType $package
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\PackageType $package
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setPackage(\StructType\PackageType $package = null)
+    public function setPackage(\traveltainment\SOAP17\StructType\PackageType $package = null)
     {
         $this->Package = $package;
         return $this;
     }
     /**
      * Get Accommodation value
-     * @return \StructType\AccommodationType|null
+     * @return \traveltainment\SOAP17\StructType\AccommodationType|null
      */
     public function getAccommodation()
     {
@@ -113,17 +113,17 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set Accommodation value
-     * @param \StructType\AccommodationType $accommodation
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\AccommodationType $accommodation
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setAccommodation(\StructType\AccommodationType $accommodation = null)
+    public function setAccommodation(\traveltainment\SOAP17\StructType\AccommodationType $accommodation = null)
     {
         $this->Accommodation = $accommodation;
         return $this;
     }
     /**
      * Get Flight value
-     * @return \StructType\FlightType|null
+     * @return \traveltainment\SOAP17\StructType\FlightType|null
      */
     public function getFlight()
     {
@@ -131,17 +131,17 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set Flight value
-     * @param \StructType\FlightType $flight
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\FlightType $flight
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setFlight(\StructType\FlightType $flight = null)
+    public function setFlight(\traveltainment\SOAP17\StructType\FlightType $flight = null)
     {
         $this->Flight = $flight;
         return $this;
     }
     /**
      * Get RentalCar value
-     * @return \StructType\RentalCarDetails4ScType|null
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType|null
      */
     public function getRentalCar()
     {
@@ -149,17 +149,17 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set RentalCar value
-     * @param \StructType\RentalCarDetails4ScType $rentalCar
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\RentalCarDetails4ScType $rentalCar
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setRentalCar(\StructType\RentalCarDetails4ScType $rentalCar = null)
+    public function setRentalCar(\traveltainment\SOAP17\StructType\RentalCarDetails4ScType $rentalCar = null)
     {
         $this->RentalCar = $rentalCar;
         return $this;
     }
     /**
      * Get Insurance value
-     * @return \StructType\InsuranceDetails4ScType|null
+     * @return \traveltainment\SOAP17\StructType\InsuranceDetails4ScType|null
      */
     public function getInsurance()
     {
@@ -167,17 +167,17 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set Insurance value
-     * @param \StructType\InsuranceDetails4ScType $insurance
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\InsuranceDetails4ScType $insurance
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setInsurance(\StructType\InsuranceDetails4ScType $insurance = null)
+    public function setInsurance(\traveltainment\SOAP17\StructType\InsuranceDetails4ScType $insurance = null)
     {
         $this->Insurance = $insurance;
         return $this;
     }
     /**
      * Get Transfer value
-     * @return \StructType\TransferDetails4ScType|null
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4ScType|null
      */
     public function getTransfer()
     {
@@ -185,17 +185,17 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set Transfer value
-     * @param \StructType\TransferDetails4ScType $transfer
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\TransferDetails4ScType $transfer
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setTransfer(\StructType\TransferDetails4ScType $transfer = null)
+    public function setTransfer(\traveltainment\SOAP17\StructType\TransferDetails4ScType $transfer = null)
     {
         $this->Transfer = $transfer;
         return $this;
     }
     /**
      * Get Parking value
-     * @return \StructType\ParkingDetails4ScType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDetails4ScType|null
      */
     public function getParking()
     {
@@ -203,17 +203,17 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set Parking value
-     * @param \StructType\ParkingDetails4ScType $parking
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\ParkingDetails4ScType $parking
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setParking(\StructType\ParkingDetails4ScType $parking = null)
+    public function setParking(\traveltainment\SOAP17\StructType\ParkingDetails4ScType $parking = null)
     {
         $this->Parking = $parking;
         return $this;
     }
     /**
      * Get AdditionalCost value
-     * @return \StructType\AdditionalCostType|null
+     * @return \traveltainment\SOAP17\StructType\AdditionalCostType|null
      */
     public function getAdditionalCost()
     {
@@ -221,10 +221,10 @@ class OfferScType extends OfferBaseType
     }
     /**
      * Set AdditionalCost value
-     * @param \StructType\AdditionalCostType $additionalCost
-     * @return \StructType\OfferScType
+     * @param \traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
-    public function setAdditionalCost(\StructType\AdditionalCostType $additionalCost = null)
+    public function setAdditionalCost(\traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost = null)
     {
         $this->AdditionalCost = $additionalCost;
         return $this;
@@ -235,7 +235,7 @@ class OfferScType extends OfferBaseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferScType
+     * @return \traveltainment\SOAP17\StructType\OfferScType
      */
     public static function __set_state(array $array)
     {

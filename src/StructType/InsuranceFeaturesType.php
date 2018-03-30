@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class InsuranceFeaturesType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\InsuranceFeatureType[]
+     * @var \traveltainment\SOAP17\StructType\InsuranceFeatureType[]
      */
     public $InsuranceFeature;
     /**
      * Constructor method for InsuranceFeaturesType
      * @uses InsuranceFeaturesType::setInsuranceFeature()
-     * @param \StructType\InsuranceFeatureType[] $insuranceFeature
+     * @param \traveltainment\SOAP17\StructType\InsuranceFeatureType[] $insuranceFeature
      */
     public function __construct(array $insuranceFeature = array())
     {
@@ -30,7 +30,7 @@ class InsuranceFeaturesType extends AbstractStructBase
     }
     /**
      * Get InsuranceFeature value
-     * @return \StructType\InsuranceFeatureType[]|null
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeatureType[]|null
      */
     public function getInsuranceFeature()
     {
@@ -39,15 +39,15 @@ class InsuranceFeaturesType extends AbstractStructBase
     /**
      * Set InsuranceFeature value
      * @throws \InvalidArgumentException
-     * @param \StructType\InsuranceFeatureType[] $insuranceFeature
-     * @return \StructType\InsuranceFeaturesType
+     * @param \traveltainment\SOAP17\StructType\InsuranceFeatureType[] $insuranceFeature
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeaturesType
      */
     public function setInsuranceFeature(array $insuranceFeature = array())
     {
         foreach ($insuranceFeature as $insuranceFeaturesTypeInsuranceFeatureItem) {
             // validation for constraint: itemType
-            if (!$insuranceFeaturesTypeInsuranceFeatureItem instanceof \StructType\InsuranceFeatureType) {
-                throw new \InvalidArgumentException(sprintf('The InsuranceFeature property can only contain items of \StructType\InsuranceFeatureType, "%s" given', is_object($insuranceFeaturesTypeInsuranceFeatureItem) ? get_class($insuranceFeaturesTypeInsuranceFeatureItem) : gettype($insuranceFeaturesTypeInsuranceFeatureItem)), __LINE__);
+            if (!$insuranceFeaturesTypeInsuranceFeatureItem instanceof \traveltainment\SOAP17\StructType\InsuranceFeatureType) {
+                throw new \InvalidArgumentException(sprintf('The InsuranceFeature property can only contain items of \traveltainment\SOAP17\StructType\InsuranceFeatureType, "%s" given', is_object($insuranceFeaturesTypeInsuranceFeatureItem) ? get_class($insuranceFeaturesTypeInsuranceFeatureItem) : gettype($insuranceFeaturesTypeInsuranceFeatureItem)), __LINE__);
             }
         }
         $this->InsuranceFeature = $insuranceFeature;
@@ -56,14 +56,14 @@ class InsuranceFeaturesType extends AbstractStructBase
     /**
      * Add item to InsuranceFeature value
      * @throws \InvalidArgumentException
-     * @param \StructType\InsuranceFeatureType $item
-     * @return \StructType\InsuranceFeaturesType
+     * @param \traveltainment\SOAP17\StructType\InsuranceFeatureType $item
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeaturesType
      */
-    public function addToInsuranceFeature(\StructType\InsuranceFeatureType $item)
+    public function addToInsuranceFeature(\traveltainment\SOAP17\StructType\InsuranceFeatureType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\InsuranceFeatureType) {
-            throw new \InvalidArgumentException(sprintf('The InsuranceFeature property can only contain items of \StructType\InsuranceFeatureType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\InsuranceFeatureType) {
+            throw new \InvalidArgumentException(sprintf('The InsuranceFeature property can only contain items of \traveltainment\SOAP17\StructType\InsuranceFeatureType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->InsuranceFeature[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class InsuranceFeaturesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InsuranceFeaturesType
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeaturesType
      */
     public static function __set_state(array $array)
     {

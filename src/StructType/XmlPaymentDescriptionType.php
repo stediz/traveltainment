@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
      * The Surcharge
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SurchargeType
+     * @var \traveltainment\SOAP17\StructType\SurchargeType
      */
     public $Surcharge;
     /**
@@ -44,12 +44,12 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
      * @uses XmlPaymentDescriptionType::setLabel()
      * @uses XmlPaymentDescriptionType::setId()
      * @uses XmlPaymentDescriptionType::setToken()
-     * @param \StructType\SurchargeType $surcharge
+     * @param \traveltainment\SOAP17\StructType\SurchargeType $surcharge
      * @param string $label
      * @param string $id
      * @param string $token
      */
-    public function __construct(\StructType\SurchargeType $surcharge = null, $label = null, $id = null, $token = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SurchargeType $surcharge = null, $label = null, $id = null, $token = null)
     {
         $this
             ->setSurcharge($surcharge)
@@ -59,7 +59,7 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
     }
     /**
      * Get Surcharge value
-     * @return \StructType\SurchargeType|null
+     * @return \traveltainment\SOAP17\StructType\SurchargeType|null
      */
     public function getSurcharge()
     {
@@ -67,10 +67,10 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
     }
     /**
      * Set Surcharge value
-     * @param \StructType\SurchargeType $surcharge
-     * @return \StructType\XmlPaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\SurchargeType $surcharge
+     * @return \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType
      */
-    public function setSurcharge(\StructType\SurchargeType $surcharge = null)
+    public function setSurcharge(\traveltainment\SOAP17\StructType\SurchargeType $surcharge = null)
     {
         $this->Surcharge = $surcharge;
         return $this;
@@ -86,7 +86,7 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
     /**
      * Set Label value
      * @param string $label
-     * @return \StructType\XmlPaymentDescriptionType
+     * @return \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType
      */
     public function setLabel($label = null)
     {
@@ -108,7 +108,7 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
     /**
      * Set Id value
      * @param string $id
-     * @return \StructType\XmlPaymentDescriptionType
+     * @return \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType
      */
     public function setId($id = null)
     {
@@ -130,7 +130,7 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
     /**
      * Set Token value
      * @param string $token
-     * @return \StructType\XmlPaymentDescriptionType
+     * @return \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType
      */
     public function setToken($token = null)
     {
@@ -147,7 +147,7 @@ class XmlPaymentDescriptionType extends PaymentDescriptionType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\XmlPaymentDescriptionType
+     * @return \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType
      */
     public static function __set_state(array $array)
     {

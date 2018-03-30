@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,21 +21,21 @@ class FlightSegmentListType extends AbstractStructBase
      * The DepartureAirport
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AirportType
+     * @var \traveltainment\SOAP17\StructType\AirportType
      */
     public $DepartureAirport;
     /**
      * The DestinationAirport
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AirportType
+     * @var \traveltainment\SOAP17\StructType\AirportType
      */
     public $DestinationAirport;
     /**
      * The FlightDateTimeSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\DateTimeSpanType
+     * @var \traveltainment\SOAP17\StructType\DateTimeSpanType
      */
     public $FlightDateTimeSpan;
     /**
@@ -71,7 +71,7 @@ class FlightSegmentListType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\FlightSegmentType[]
+     * @var \traveltainment\SOAP17\StructType\FlightSegmentType[]
      */
     public $FlightSegment;
     /**
@@ -86,16 +86,16 @@ class FlightSegmentListType extends AbstractStructBase
      * @uses FlightSegmentListType::setLegCode()
      * @uses FlightSegmentListType::setFlightSegment()
      * @param string $programType
-     * @param \StructType\AirportType $departureAirport
-     * @param \StructType\AirportType $destinationAirport
-     * @param \StructType\DateTimeSpanType $flightDateTimeSpan
+     * @param \traveltainment\SOAP17\StructType\AirportType $departureAirport
+     * @param \traveltainment\SOAP17\StructType\AirportType $destinationAirport
+     * @param \traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan
      * @param string $boardingCode
      * @param string $carrierCode
      * @param string $flightCode
      * @param string $legCode
-     * @param \StructType\FlightSegmentType[] $flightSegment
+     * @param \traveltainment\SOAP17\StructType\FlightSegmentType[] $flightSegment
      */
-    public function __construct($programType = null, \StructType\AirportType $departureAirport = null, \StructType\AirportType $destinationAirport = null, \StructType\DateTimeSpanType $flightDateTimeSpan = null, $boardingCode = null, $carrierCode = null, $flightCode = null, $legCode = null, array $flightSegment = array())
+    public function __construct($programType = null, \traveltainment\SOAP17\StructType\AirportType $departureAirport = null, \traveltainment\SOAP17\StructType\AirportType $destinationAirport = null, \traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan = null, $boardingCode = null, $carrierCode = null, $flightCode = null, $legCode = null, array $flightSegment = array())
     {
         $this
             ->setProgramType($programType)
@@ -119,7 +119,7 @@ class FlightSegmentListType extends AbstractStructBase
     /**
      * Set ProgramType value
      * @param string $programType
-     * @return \StructType\FlightSegmentListType
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public function setProgramType($programType = null)
     {
@@ -132,7 +132,7 @@ class FlightSegmentListType extends AbstractStructBase
     }
     /**
      * Get DepartureAirport value
-     * @return \StructType\AirportType|null
+     * @return \traveltainment\SOAP17\StructType\AirportType|null
      */
     public function getDepartureAirport()
     {
@@ -140,17 +140,17 @@ class FlightSegmentListType extends AbstractStructBase
     }
     /**
      * Set DepartureAirport value
-     * @param \StructType\AirportType $departureAirport
-     * @return \StructType\FlightSegmentListType
+     * @param \traveltainment\SOAP17\StructType\AirportType $departureAirport
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
-    public function setDepartureAirport(\StructType\AirportType $departureAirport = null)
+    public function setDepartureAirport(\traveltainment\SOAP17\StructType\AirportType $departureAirport = null)
     {
         $this->DepartureAirport = $departureAirport;
         return $this;
     }
     /**
      * Get DestinationAirport value
-     * @return \StructType\AirportType|null
+     * @return \traveltainment\SOAP17\StructType\AirportType|null
      */
     public function getDestinationAirport()
     {
@@ -158,17 +158,17 @@ class FlightSegmentListType extends AbstractStructBase
     }
     /**
      * Set DestinationAirport value
-     * @param \StructType\AirportType $destinationAirport
-     * @return \StructType\FlightSegmentListType
+     * @param \traveltainment\SOAP17\StructType\AirportType $destinationAirport
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
-    public function setDestinationAirport(\StructType\AirportType $destinationAirport = null)
+    public function setDestinationAirport(\traveltainment\SOAP17\StructType\AirportType $destinationAirport = null)
     {
         $this->DestinationAirport = $destinationAirport;
         return $this;
     }
     /**
      * Get FlightDateTimeSpan value
-     * @return \StructType\DateTimeSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateTimeSpanType|null
      */
     public function getFlightDateTimeSpan()
     {
@@ -176,10 +176,10 @@ class FlightSegmentListType extends AbstractStructBase
     }
     /**
      * Set FlightDateTimeSpan value
-     * @param \StructType\DateTimeSpanType $flightDateTimeSpan
-     * @return \StructType\FlightSegmentListType
+     * @param \traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
-    public function setFlightDateTimeSpan(\StructType\DateTimeSpanType $flightDateTimeSpan = null)
+    public function setFlightDateTimeSpan(\traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan = null)
     {
         $this->FlightDateTimeSpan = $flightDateTimeSpan;
         return $this;
@@ -195,7 +195,7 @@ class FlightSegmentListType extends AbstractStructBase
     /**
      * Set BoardingCode value
      * @param string $boardingCode
-     * @return \StructType\FlightSegmentListType
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public function setBoardingCode($boardingCode = null)
     {
@@ -217,7 +217,7 @@ class FlightSegmentListType extends AbstractStructBase
     /**
      * Set CarrierCode value
      * @param string $carrierCode
-     * @return \StructType\FlightSegmentListType
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public function setCarrierCode($carrierCode = null)
     {
@@ -239,7 +239,7 @@ class FlightSegmentListType extends AbstractStructBase
     /**
      * Set FlightCode value
      * @param string $flightCode
-     * @return \StructType\FlightSegmentListType
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public function setFlightCode($flightCode = null)
     {
@@ -261,7 +261,7 @@ class FlightSegmentListType extends AbstractStructBase
     /**
      * Set LegCode value
      * @param string $legCode
-     * @return \StructType\FlightSegmentListType
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public function setLegCode($legCode = null)
     {
@@ -274,7 +274,7 @@ class FlightSegmentListType extends AbstractStructBase
     }
     /**
      * Get FlightSegment value
-     * @return \StructType\FlightSegmentType[]|null
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentType[]|null
      */
     public function getFlightSegment()
     {
@@ -283,15 +283,15 @@ class FlightSegmentListType extends AbstractStructBase
     /**
      * Set FlightSegment value
      * @throws \InvalidArgumentException
-     * @param \StructType\FlightSegmentType[] $flightSegment
-     * @return \StructType\FlightSegmentListType
+     * @param \traveltainment\SOAP17\StructType\FlightSegmentType[] $flightSegment
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public function setFlightSegment(array $flightSegment = array())
     {
         foreach ($flightSegment as $flightSegmentListTypeFlightSegmentItem) {
             // validation for constraint: itemType
-            if (!$flightSegmentListTypeFlightSegmentItem instanceof \StructType\FlightSegmentType) {
-                throw new \InvalidArgumentException(sprintf('The FlightSegment property can only contain items of \StructType\FlightSegmentType, "%s" given', is_object($flightSegmentListTypeFlightSegmentItem) ? get_class($flightSegmentListTypeFlightSegmentItem) : gettype($flightSegmentListTypeFlightSegmentItem)), __LINE__);
+            if (!$flightSegmentListTypeFlightSegmentItem instanceof \traveltainment\SOAP17\StructType\FlightSegmentType) {
+                throw new \InvalidArgumentException(sprintf('The FlightSegment property can only contain items of \traveltainment\SOAP17\StructType\FlightSegmentType, "%s" given', is_object($flightSegmentListTypeFlightSegmentItem) ? get_class($flightSegmentListTypeFlightSegmentItem) : gettype($flightSegmentListTypeFlightSegmentItem)), __LINE__);
             }
         }
         $this->FlightSegment = $flightSegment;
@@ -300,14 +300,14 @@ class FlightSegmentListType extends AbstractStructBase
     /**
      * Add item to FlightSegment value
      * @throws \InvalidArgumentException
-     * @param \StructType\FlightSegmentType $item
-     * @return \StructType\FlightSegmentListType
+     * @param \traveltainment\SOAP17\StructType\FlightSegmentType $item
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
-    public function addToFlightSegment(\StructType\FlightSegmentType $item)
+    public function addToFlightSegment(\traveltainment\SOAP17\StructType\FlightSegmentType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\FlightSegmentType) {
-            throw new \InvalidArgumentException(sprintf('The FlightSegment property can only contain items of \StructType\FlightSegmentType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\FlightSegmentType) {
+            throw new \InvalidArgumentException(sprintf('The FlightSegment property can only contain items of \traveltainment\SOAP17\StructType\FlightSegmentType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->FlightSegment[] = $item;
         return $this;
@@ -318,7 +318,7 @@ class FlightSegmentListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FlightSegmentListType
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public static function __set_state(array $array)
     {

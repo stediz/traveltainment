@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_CrossSelling_ParkingOfferListResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetParkingOfferListRSType
+     * @var \traveltainment\SOAP17\StructType\GetParkingOfferListRSType
      */
     public $return;
     /**
      * Constructor method for Search_CrossSelling_ParkingOfferListResponse
      * @uses Search_CrossSelling_ParkingOfferListResponse::setReturn()
-     * @param \StructType\GetParkingOfferListRSType $return
+     * @param \traveltainment\SOAP17\StructType\GetParkingOfferListRSType $return
      */
-    public function __construct(\StructType\GetParkingOfferListRSType $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetParkingOfferListRSType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\GetParkingOfferListRSType|null
+     * @return \traveltainment\SOAP17\StructType\GetParkingOfferListRSType|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_CrossSelling_ParkingOfferListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\GetParkingOfferListRSType $return
-     * @return \StructType\Search_CrossSelling_ParkingOfferListResponse
+     * @param \traveltainment\SOAP17\StructType\GetParkingOfferListRSType $return
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_ParkingOfferListResponse
      */
-    public function setReturn(\StructType\GetParkingOfferListRSType $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\GetParkingOfferListRSType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_CrossSelling_ParkingOfferListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_CrossSelling_ParkingOfferListResponse
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_ParkingOfferListResponse
      */
     public static function __set_state(array $array)
     {

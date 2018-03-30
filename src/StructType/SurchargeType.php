@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class SurchargeType extends AbstractStructBase
      * The ExtendedAbsolute
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $ExtendedAbsolute;
     /**
@@ -51,7 +51,7 @@ class SurchargeType extends AbstractStructBase
      * The ExtendedMinimalSurcharge
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $ExtendedMinimalSurcharge;
     /**
@@ -86,15 +86,15 @@ class SurchargeType extends AbstractStructBase
      * @uses SurchargeType::setServiceText()
      * @uses SurchargeType::setOrder()
      * @param float $absolute
-     * @param \StructType\PriceInformationType $extendedAbsolute
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedAbsolute
      * @param float $relative
      * @param float $minimalSurcharge
-     * @param \StructType\PriceInformationType $extendedMinimalSurcharge
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedMinimalSurcharge
      * @param string $currency
      * @param string $serviceText
      * @param string $order
      */
-    public function __construct($absolute = null, \StructType\PriceInformationType $extendedAbsolute = null, $relative = null, $minimalSurcharge = null, \StructType\PriceInformationType $extendedMinimalSurcharge = null, $currency = null, $serviceText = null, $order = null)
+    public function __construct($absolute = null, \traveltainment\SOAP17\StructType\PriceInformationType $extendedAbsolute = null, $relative = null, $minimalSurcharge = null, \traveltainment\SOAP17\StructType\PriceInformationType $extendedMinimalSurcharge = null, $currency = null, $serviceText = null, $order = null)
     {
         $this
             ->setAbsolute($absolute)
@@ -117,7 +117,7 @@ class SurchargeType extends AbstractStructBase
     /**
      * Set Absolute value
      * @param float $absolute
-     * @return \StructType\SurchargeType
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
     public function setAbsolute($absolute = null)
     {
@@ -138,7 +138,7 @@ class SurchargeType extends AbstractStructBase
     }
     /**
      * Get ExtendedAbsolute value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getExtendedAbsolute()
     {
@@ -146,10 +146,10 @@ class SurchargeType extends AbstractStructBase
     }
     /**
      * Set ExtendedAbsolute value
-     * @param \StructType\PriceInformationType $extendedAbsolute
-     * @return \StructType\SurchargeType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedAbsolute
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
-    public function setExtendedAbsolute(\StructType\PriceInformationType $extendedAbsolute = null)
+    public function setExtendedAbsolute(\traveltainment\SOAP17\StructType\PriceInformationType $extendedAbsolute = null)
     {
         $this->ExtendedAbsolute = $extendedAbsolute;
         return $this;
@@ -165,7 +165,7 @@ class SurchargeType extends AbstractStructBase
     /**
      * Set Relative value
      * @param float $relative
-     * @return \StructType\SurchargeType
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
     public function setRelative($relative = null)
     {
@@ -195,7 +195,7 @@ class SurchargeType extends AbstractStructBase
     /**
      * Set MinimalSurcharge value
      * @param float $minimalSurcharge
-     * @return \StructType\SurchargeType
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
     public function setMinimalSurcharge($minimalSurcharge = null)
     {
@@ -216,7 +216,7 @@ class SurchargeType extends AbstractStructBase
     }
     /**
      * Get ExtendedMinimalSurcharge value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getExtendedMinimalSurcharge()
     {
@@ -224,10 +224,10 @@ class SurchargeType extends AbstractStructBase
     }
     /**
      * Set ExtendedMinimalSurcharge value
-     * @param \StructType\PriceInformationType $extendedMinimalSurcharge
-     * @return \StructType\SurchargeType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedMinimalSurcharge
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
-    public function setExtendedMinimalSurcharge(\StructType\PriceInformationType $extendedMinimalSurcharge = null)
+    public function setExtendedMinimalSurcharge(\traveltainment\SOAP17\StructType\PriceInformationType $extendedMinimalSurcharge = null)
     {
         $this->ExtendedMinimalSurcharge = $extendedMinimalSurcharge;
         return $this;
@@ -243,7 +243,7 @@ class SurchargeType extends AbstractStructBase
     /**
      * Set Currency value
      * @param string $currency
-     * @return \StructType\SurchargeType
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
     public function setCurrency($currency = null)
     {
@@ -265,7 +265,7 @@ class SurchargeType extends AbstractStructBase
     /**
      * Set ServiceText value
      * @param string $serviceText
-     * @return \StructType\SurchargeType
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
     public function setServiceText($serviceText = null)
     {
@@ -286,17 +286,17 @@ class SurchargeType extends AbstractStructBase
     }
     /**
      * Set Order value
-     * @uses \EnumType\SurchargeOrderEnum::valueIsValid()
-     * @uses \EnumType\SurchargeOrderEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\SurchargeOrderEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\SurchargeOrderEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $order
-     * @return \StructType\SurchargeType
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
     public function setOrder($order = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\SurchargeOrderEnum::valueIsValid($order)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order, implode(', ', \EnumType\SurchargeOrderEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\SurchargeOrderEnum::valueIsValid($order)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order, implode(', ', \traveltainment\SOAP17\EnumType\SurchargeOrderEnum::getValidValues())), __LINE__);
         }
         $this->Order = $order;
         return $this;
@@ -307,7 +307,7 @@ class SurchargeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SurchargeType
+     * @return \traveltainment\SOAP17\StructType\SurchargeType
      */
     public static function __set_state(array $array)
     {

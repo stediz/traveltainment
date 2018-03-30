@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class HolidayHomeType extends AbstractStructBase
     public $ObjectID;
     /**
      * The City
-     * @var \StructType\CityIdentType
+     * @var \traveltainment\SOAP17\StructType\CityIdentType
      */
     public $City;
     /**
@@ -48,14 +48,14 @@ class HolidayHomeType extends AbstractStructBase
      * The ObjectImages
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ObjectImagesType
+     * @var \traveltainment\SOAP17\StructType\ObjectImagesType
      */
     public $ObjectImages;
     /**
      * The HolidayHomeAttributes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeAttributesType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeAttributesType
      */
     public $HolidayHomeAttributes;
     /**
@@ -86,16 +86,16 @@ class HolidayHomeType extends AbstractStructBase
      * @uses HolidayHomeType::setDistanceToSkilift()
      * @param string $objectName
      * @param int $objectID
-     * @param \StructType\CityIdentType $city
+     * @param \traveltainment\SOAP17\StructType\CityIdentType $city
      * @param float $meanCategory
      * @param int $maximalOccupancy
      * @param int $floorArea
-     * @param \StructType\ObjectImagesType $objectImages
-     * @param \StructType\HolidayHomeAttributesType $holidayHomeAttributes
+     * @param \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes
      * @param string $distanceToSea
      * @param string $distanceToSkilift
      */
-    public function __construct($objectName = null, $objectID = null, \StructType\CityIdentType $city = null, $meanCategory = null, $maximalOccupancy = null, $floorArea = null, \StructType\ObjectImagesType $objectImages = null, \StructType\HolidayHomeAttributesType $holidayHomeAttributes = null, $distanceToSea = null, $distanceToSkilift = null)
+    public function __construct($objectName = null, $objectID = null, \traveltainment\SOAP17\StructType\CityIdentType $city = null, $meanCategory = null, $maximalOccupancy = null, $floorArea = null, \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages = null, \traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes = null, $distanceToSea = null, $distanceToSkilift = null)
     {
         $this
             ->setObjectName($objectName)
@@ -120,7 +120,7 @@ class HolidayHomeType extends AbstractStructBase
     /**
      * Set ObjectName value
      * @param string $objectName
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public function setObjectName($objectName = null)
     {
@@ -142,7 +142,7 @@ class HolidayHomeType extends AbstractStructBase
     /**
      * Set ObjectID value
      * @param int $objectID
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public function setObjectID($objectID = null)
     {
@@ -155,7 +155,7 @@ class HolidayHomeType extends AbstractStructBase
     }
     /**
      * Get City value
-     * @return \StructType\CityIdentType|null
+     * @return \traveltainment\SOAP17\StructType\CityIdentType|null
      */
     public function getCity()
     {
@@ -163,10 +163,10 @@ class HolidayHomeType extends AbstractStructBase
     }
     /**
      * Set City value
-     * @param \StructType\CityIdentType $city
-     * @return \StructType\HolidayHomeType
+     * @param \traveltainment\SOAP17\StructType\CityIdentType $city
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
-    public function setCity(\StructType\CityIdentType $city = null)
+    public function setCity(\traveltainment\SOAP17\StructType\CityIdentType $city = null)
     {
         $this->City = $city;
         return $this;
@@ -182,7 +182,7 @@ class HolidayHomeType extends AbstractStructBase
     /**
      * Set MeanCategory value
      * @param float $meanCategory
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public function setMeanCategory($meanCategory = null)
     {
@@ -200,7 +200,7 @@ class HolidayHomeType extends AbstractStructBase
     /**
      * Set MaximalOccupancy value
      * @param int $maximalOccupancy
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public function setMaximalOccupancy($maximalOccupancy = null)
     {
@@ -222,7 +222,7 @@ class HolidayHomeType extends AbstractStructBase
     /**
      * Set FloorArea value
      * @param int $floorArea
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public function setFloorArea($floorArea = null)
     {
@@ -235,7 +235,7 @@ class HolidayHomeType extends AbstractStructBase
     }
     /**
      * Get ObjectImages value
-     * @return \StructType\ObjectImagesType|null
+     * @return \traveltainment\SOAP17\StructType\ObjectImagesType|null
      */
     public function getObjectImages()
     {
@@ -243,17 +243,17 @@ class HolidayHomeType extends AbstractStructBase
     }
     /**
      * Set ObjectImages value
-     * @param \StructType\ObjectImagesType $objectImages
-     * @return \StructType\HolidayHomeType
+     * @param \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
-    public function setObjectImages(\StructType\ObjectImagesType $objectImages = null)
+    public function setObjectImages(\traveltainment\SOAP17\StructType\ObjectImagesType $objectImages = null)
     {
         $this->ObjectImages = $objectImages;
         return $this;
     }
     /**
      * Get HolidayHomeAttributes value
-     * @return \StructType\HolidayHomeAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAttributesType|null
      */
     public function getHolidayHomeAttributes()
     {
@@ -261,10 +261,10 @@ class HolidayHomeType extends AbstractStructBase
     }
     /**
      * Set HolidayHomeAttributes value
-     * @param \StructType\HolidayHomeAttributesType $holidayHomeAttributes
-     * @return \StructType\HolidayHomeType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
-    public function setHolidayHomeAttributes(\StructType\HolidayHomeAttributesType $holidayHomeAttributes = null)
+    public function setHolidayHomeAttributes(\traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes = null)
     {
         $this->HolidayHomeAttributes = $holidayHomeAttributes;
         return $this;
@@ -279,17 +279,17 @@ class HolidayHomeType extends AbstractStructBase
     }
     /**
      * Set DistanceToSea value
-     * @uses \EnumType\DistanceEnum::valueIsValid()
-     * @uses \EnumType\DistanceEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $distanceToSea
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public function setDistanceToSea($distanceToSea = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\DistanceEnum::valueIsValid($distanceToSea)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSea, implode(', ', \EnumType\DistanceEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid($distanceToSea)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSea, implode(', ', \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues())), __LINE__);
         }
         $this->DistanceToSea = $distanceToSea;
         return $this;
@@ -304,17 +304,17 @@ class HolidayHomeType extends AbstractStructBase
     }
     /**
      * Set DistanceToSkilift value
-     * @uses \EnumType\DistanceEnum::valueIsValid()
-     * @uses \EnumType\DistanceEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $distanceToSkilift
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public function setDistanceToSkilift($distanceToSkilift = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\DistanceEnum::valueIsValid($distanceToSkilift)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSkilift, implode(', ', \EnumType\DistanceEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid($distanceToSkilift)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSkilift, implode(', ', \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues())), __LINE__);
         }
         $this->DistanceToSkilift = $distanceToSkilift;
         return $this;
@@ -325,7 +325,7 @@ class HolidayHomeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public static function __set_state(array $array)
     {

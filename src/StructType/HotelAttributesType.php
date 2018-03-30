@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class HotelAttributesType extends AbstractStructBase
     }
     /**
      * Set HotelAttribute value
-     * @uses \EnumType\HotelAttribute::valueIsValid()
-     * @uses \EnumType\HotelAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $hotelAttribute
-     * @return \StructType\HotelAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelAttributesType
      */
     public function setHotelAttribute(array $hotelAttribute = array())
     {
         $invalidValues = array();
         foreach ($hotelAttribute as $hotelAttributesTypeHotelAttributeItem) {
-            if (!\EnumType\HotelAttribute::valueIsValid($hotelAttributesTypeHotelAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelAttribute::valueIsValid($hotelAttributesTypeHotelAttributeItem)) {
                 $invalidValues[] = var_export($hotelAttributesTypeHotelAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelAttribute::getValidValues())), __LINE__);
         }
         $this->HotelAttribute = $hotelAttribute;
         return $this;
     }
     /**
      * Add item to HotelAttribute value
-     * @uses \EnumType\HotelAttribute::valueIsValid()
-     * @uses \EnumType\HotelAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelAttributesType
      */
     public function addToHotelAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelAttribute::getValidValues())), __LINE__);
         }
         $this->HotelAttribute[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class HotelAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelAttributesType
      */
     public static function __set_state(array $array)
     {

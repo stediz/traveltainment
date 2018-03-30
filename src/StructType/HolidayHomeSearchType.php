@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class HolidayHomeSearchType extends AbstractStructBase
 {
     /**
      * The Trip
-     * @var \StructType\HolidayHomeTripType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeTripType
      */
     public $Trip;
     /**
      * Constructor method for HolidayHomeSearchType
      * @uses HolidayHomeSearchType::setTrip()
-     * @param \StructType\HolidayHomeTripType $trip
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeTripType $trip
      */
-    public function __construct(\StructType\HolidayHomeTripType $trip = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeTripType $trip = null)
     {
         $this
             ->setTrip($trip);
     }
     /**
      * Get Trip value
-     * @return \StructType\HolidayHomeTripType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeTripType|null
      */
     public function getTrip()
     {
@@ -35,10 +35,10 @@ class HolidayHomeSearchType extends AbstractStructBase
     }
     /**
      * Set Trip value
-     * @param \StructType\HolidayHomeTripType $trip
-     * @return \StructType\HolidayHomeSearchType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeTripType $trip
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchType
      */
-    public function setTrip(\StructType\HolidayHomeTripType $trip = null)
+    public function setTrip(\traveltainment\SOAP17\StructType\HolidayHomeTripType $trip = null)
     {
         $this->Trip = $trip;
         return $this;
@@ -49,7 +49,7 @@ class HolidayHomeSearchType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeSearchType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchType
      */
     public static function __set_state(array $array)
     {

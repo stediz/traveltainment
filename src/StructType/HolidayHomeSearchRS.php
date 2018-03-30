@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class HolidayHomeSearchRS extends XmlInterfaceRS
      * Meta informations extracted from the WSDL
      * - maxOccurs: 2
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeResultSetList[]
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[]
      */
     public $ResultSet;
     /**
      * Constructor method for HolidayHomeSearchRS
      * @uses HolidayHomeSearchRS::setResultSet()
-     * @param \StructType\HolidayHomeResultSetList[] $resultSet
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[] $resultSet
      */
     public function __construct(array $resultSet = array())
     {
@@ -30,7 +30,7 @@ class HolidayHomeSearchRS extends XmlInterfaceRS
     }
     /**
      * Get ResultSet value
-     * @return \StructType\HolidayHomeResultSetList[]|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[]|null
      */
     public function getResultSet()
     {
@@ -39,15 +39,15 @@ class HolidayHomeSearchRS extends XmlInterfaceRS
     /**
      * Set ResultSet value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeResultSetList[] $resultSet
-     * @return \StructType\HolidayHomeSearchRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[] $resultSet
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchRS
      */
     public function setResultSet(array $resultSet = array())
     {
         foreach ($resultSet as $holidayHomeSearchRSResultSetItem) {
             // validation for constraint: itemType
-            if (!$holidayHomeSearchRSResultSetItem instanceof \StructType\HolidayHomeResultSetList) {
-                throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \StructType\HolidayHomeResultSetList, "%s" given', is_object($holidayHomeSearchRSResultSetItem) ? get_class($holidayHomeSearchRSResultSetItem) : gettype($holidayHomeSearchRSResultSetItem)), __LINE__);
+            if (!$holidayHomeSearchRSResultSetItem instanceof \traveltainment\SOAP17\StructType\HolidayHomeResultSetList) {
+                throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeResultSetList, "%s" given', is_object($holidayHomeSearchRSResultSetItem) ? get_class($holidayHomeSearchRSResultSetItem) : gettype($holidayHomeSearchRSResultSetItem)), __LINE__);
             }
         }
         $this->ResultSet = $resultSet;
@@ -56,14 +56,14 @@ class HolidayHomeSearchRS extends XmlInterfaceRS
     /**
      * Add item to ResultSet value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeResultSetList $item
-     * @return \StructType\HolidayHomeSearchRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSetList $item
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchRS
      */
-    public function addToResultSet(\StructType\HolidayHomeResultSetList $item)
+    public function addToResultSet(\traveltainment\SOAP17\StructType\HolidayHomeResultSetList $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HolidayHomeResultSetList) {
-            throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \StructType\HolidayHomeResultSetList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\HolidayHomeResultSetList) {
+            throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeResultSetList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ResultSet[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class HolidayHomeSearchRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeSearchRS
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchRS
      */
     public static function __set_state(array $array)
     {

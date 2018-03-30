@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class GetInsuranceOfferListRQType extends RequestType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\GetInsuranceOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType
      */
     public function setSessionID($sessionID = null)
     {
@@ -80,7 +80,7 @@ class GetInsuranceOfferListRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetInsuranceOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -102,7 +102,7 @@ class GetInsuranceOfferListRQType extends RequestType
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\GetInsuranceOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -119,7 +119,7 @@ class GetInsuranceOfferListRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetInsuranceOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class TravelDurationSpanType extends AbstractStructBase
     /**
      * Set MinDays value
      * @param int $minDays
-     * @return \StructType\TravelDurationSpanType
+     * @return \traveltainment\SOAP17\StructType\TravelDurationSpanType
      */
     public function setMinDays($minDays = null)
     {
@@ -88,7 +88,7 @@ class TravelDurationSpanType extends AbstractStructBase
     /**
      * Set MaxDays value
      * @param int $maxDays
-     * @return \StructType\TravelDurationSpanType
+     * @return \traveltainment\SOAP17\StructType\TravelDurationSpanType
      */
     public function setMaxDays($maxDays = null)
     {
@@ -114,7 +114,7 @@ class TravelDurationSpanType extends AbstractStructBase
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\TravelDurationSpanType
+     * @return \traveltainment\SOAP17\StructType\TravelDurationSpanType
      */
     public function setWeightage($weightage = '0')
     {
@@ -139,7 +139,7 @@ class TravelDurationSpanType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravelDurationSpanType
+     * @return \traveltainment\SOAP17\StructType\TravelDurationSpanType
      */
     public static function __set_state(array $array)
     {

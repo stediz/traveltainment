@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class CarRentalEventInfoType extends AbstractStructBase
      * The OpeningHourDetails
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OpeningHourDetailsType
+     * @var \traveltainment\SOAP17\StructType\OpeningHourDetailsType
      */
     public $OpeningHourDetails;
     /**
@@ -47,9 +47,9 @@ class CarRentalEventInfoType extends AbstractStructBase
      * @param string $dateTime
      * @param string $locationCode
      * @param string $locationName
-     * @param \StructType\OpeningHourDetailsType $openingHourDetails
+     * @param \traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails
      */
-    public function __construct($dateTime = null, $locationCode = null, $locationName = null, \StructType\OpeningHourDetailsType $openingHourDetails = null)
+    public function __construct($dateTime = null, $locationCode = null, $locationName = null, \traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails = null)
     {
         $this
             ->setDateTime($dateTime)
@@ -68,7 +68,7 @@ class CarRentalEventInfoType extends AbstractStructBase
     /**
      * Set DateTime value
      * @param string $dateTime
-     * @return \StructType\CarRentalEventInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventInfoType
      */
     public function setDateTime($dateTime = null)
     {
@@ -90,7 +90,7 @@ class CarRentalEventInfoType extends AbstractStructBase
     /**
      * Set LocationCode value
      * @param string $locationCode
-     * @return \StructType\CarRentalEventInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventInfoType
      */
     public function setLocationCode($locationCode = null)
     {
@@ -120,7 +120,7 @@ class CarRentalEventInfoType extends AbstractStructBase
     /**
      * Set LocationName value
      * @param string $locationName
-     * @return \StructType\CarRentalEventInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventInfoType
      */
     public function setLocationName($locationName = null)
     {
@@ -141,7 +141,7 @@ class CarRentalEventInfoType extends AbstractStructBase
     }
     /**
      * Get OpeningHourDetails value
-     * @return \StructType\OpeningHourDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\OpeningHourDetailsType|null
      */
     public function getOpeningHourDetails()
     {
@@ -149,10 +149,10 @@ class CarRentalEventInfoType extends AbstractStructBase
     }
     /**
      * Set OpeningHourDetails value
-     * @param \StructType\OpeningHourDetailsType $openingHourDetails
-     * @return \StructType\CarRentalEventInfoType
+     * @param \traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventInfoType
      */
-    public function setOpeningHourDetails(\StructType\OpeningHourDetailsType $openingHourDetails = null)
+    public function setOpeningHourDetails(\traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails = null)
     {
         $this->OpeningHourDetails = $openingHourDetails;
         return $this;
@@ -163,7 +163,7 @@ class CarRentalEventInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalEventInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventInfoType
      */
     public static function __set_state(array $array)
     {

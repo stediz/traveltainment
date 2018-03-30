@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,12 +12,12 @@ class VehicleDetailsType extends AbstractStructBase
 {
     /**
      * The BaggageCounts
-     * @var \StructType\BaggageCountType
+     * @var \traveltainment\SOAP17\StructType\BaggageCountType
      */
     public $BaggageCounts;
     /**
      * The PassengerCounts
-     * @var \StructType\PassengerCountsType
+     * @var \traveltainment\SOAP17\StructType\PassengerCountsType
      */
     public $PassengerCounts;
     /**
@@ -51,7 +51,7 @@ class VehicleDetailsType extends AbstractStructBase
      * The VehicleConfiguration
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\VehicleConfigurationType
+     * @var \traveltainment\SOAP17\StructType\VehicleConfigurationType
      */
     public $VehicleConfiguration;
     /**
@@ -63,15 +63,15 @@ class VehicleDetailsType extends AbstractStructBase
      * @uses VehicleDetailsType::setVehicleClass()
      * @uses VehicleDetailsType::setVehicleCode()
      * @uses VehicleDetailsType::setVehicleConfiguration()
-     * @param \StructType\BaggageCountType $baggageCounts
-     * @param \StructType\PassengerCountsType $passengerCounts
+     * @param \traveltainment\SOAP17\StructType\BaggageCountType $baggageCounts
+     * @param \traveltainment\SOAP17\StructType\PassengerCountsType $passengerCounts
      * @param int $seatCount
      * @param int $doorCount
      * @param string $vehicleClass
      * @param string $vehicleCode
-     * @param \StructType\VehicleConfigurationType $vehicleConfiguration
+     * @param \traveltainment\SOAP17\StructType\VehicleConfigurationType $vehicleConfiguration
      */
-    public function __construct(\StructType\BaggageCountType $baggageCounts = null, \StructType\PassengerCountsType $passengerCounts = null, $seatCount = null, $doorCount = null, $vehicleClass = null, $vehicleCode = null, \StructType\VehicleConfigurationType $vehicleConfiguration = null)
+    public function __construct(\traveltainment\SOAP17\StructType\BaggageCountType $baggageCounts = null, \traveltainment\SOAP17\StructType\PassengerCountsType $passengerCounts = null, $seatCount = null, $doorCount = null, $vehicleClass = null, $vehicleCode = null, \traveltainment\SOAP17\StructType\VehicleConfigurationType $vehicleConfiguration = null)
     {
         $this
             ->setBaggageCounts($baggageCounts)
@@ -84,7 +84,7 @@ class VehicleDetailsType extends AbstractStructBase
     }
     /**
      * Get BaggageCounts value
-     * @return \StructType\BaggageCountType|null
+     * @return \traveltainment\SOAP17\StructType\BaggageCountType|null
      */
     public function getBaggageCounts()
     {
@@ -92,17 +92,17 @@ class VehicleDetailsType extends AbstractStructBase
     }
     /**
      * Set BaggageCounts value
-     * @param \StructType\BaggageCountType $baggageCounts
-     * @return \StructType\VehicleDetailsType
+     * @param \traveltainment\SOAP17\StructType\BaggageCountType $baggageCounts
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
-    public function setBaggageCounts(\StructType\BaggageCountType $baggageCounts = null)
+    public function setBaggageCounts(\traveltainment\SOAP17\StructType\BaggageCountType $baggageCounts = null)
     {
         $this->BaggageCounts = $baggageCounts;
         return $this;
     }
     /**
      * Get PassengerCounts value
-     * @return \StructType\PassengerCountsType|null
+     * @return \traveltainment\SOAP17\StructType\PassengerCountsType|null
      */
     public function getPassengerCounts()
     {
@@ -110,10 +110,10 @@ class VehicleDetailsType extends AbstractStructBase
     }
     /**
      * Set PassengerCounts value
-     * @param \StructType\PassengerCountsType $passengerCounts
-     * @return \StructType\VehicleDetailsType
+     * @param \traveltainment\SOAP17\StructType\PassengerCountsType $passengerCounts
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
-    public function setPassengerCounts(\StructType\PassengerCountsType $passengerCounts = null)
+    public function setPassengerCounts(\traveltainment\SOAP17\StructType\PassengerCountsType $passengerCounts = null)
     {
         $this->PassengerCounts = $passengerCounts;
         return $this;
@@ -129,7 +129,7 @@ class VehicleDetailsType extends AbstractStructBase
     /**
      * Set SeatCount value
      * @param int $seatCount
-     * @return \StructType\VehicleDetailsType
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
     public function setSeatCount($seatCount = null)
     {
@@ -151,7 +151,7 @@ class VehicleDetailsType extends AbstractStructBase
     /**
      * Set DoorCount value
      * @param int $doorCount
-     * @return \StructType\VehicleDetailsType
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
     public function setDoorCount($doorCount = null)
     {
@@ -172,17 +172,17 @@ class VehicleDetailsType extends AbstractStructBase
     }
     /**
      * Set VehicleClass value
-     * @uses \EnumType\VehicleClassEnum::valueIsValid()
-     * @uses \EnumType\VehicleClassEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\VehicleClassEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\VehicleClassEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $vehicleClass
-     * @return \StructType\VehicleDetailsType
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
     public function setVehicleClass($vehicleClass = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\VehicleClassEnum::valueIsValid($vehicleClass)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $vehicleClass, implode(', ', \EnumType\VehicleClassEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\VehicleClassEnum::valueIsValid($vehicleClass)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $vehicleClass, implode(', ', \traveltainment\SOAP17\EnumType\VehicleClassEnum::getValidValues())), __LINE__);
         }
         $this->VehicleClass = $vehicleClass;
         return $this;
@@ -198,7 +198,7 @@ class VehicleDetailsType extends AbstractStructBase
     /**
      * Set VehicleCode value
      * @param string $vehicleCode
-     * @return \StructType\VehicleDetailsType
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
     public function setVehicleCode($vehicleCode = null)
     {
@@ -219,7 +219,7 @@ class VehicleDetailsType extends AbstractStructBase
     }
     /**
      * Get VehicleConfiguration value
-     * @return \StructType\VehicleConfigurationType|null
+     * @return \traveltainment\SOAP17\StructType\VehicleConfigurationType|null
      */
     public function getVehicleConfiguration()
     {
@@ -227,10 +227,10 @@ class VehicleDetailsType extends AbstractStructBase
     }
     /**
      * Set VehicleConfiguration value
-     * @param \StructType\VehicleConfigurationType $vehicleConfiguration
-     * @return \StructType\VehicleDetailsType
+     * @param \traveltainment\SOAP17\StructType\VehicleConfigurationType $vehicleConfiguration
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
-    public function setVehicleConfiguration(\StructType\VehicleConfigurationType $vehicleConfiguration = null)
+    public function setVehicleConfiguration(\traveltainment\SOAP17\StructType\VehicleConfigurationType $vehicleConfiguration = null)
     {
         $this->VehicleConfiguration = $vehicleConfiguration;
         return $this;
@@ -241,7 +241,7 @@ class VehicleDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\VehicleDetailsType
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,24 +14,24 @@ class BookingScType extends BookingScBaseType
      * The Offer
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferScType
+     * @var \traveltainment\SOAP17\StructType\OfferScType
      */
     public $Offer;
     /**
      * The Comments
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CommentList
+     * @var \traveltainment\SOAP17\StructType\CommentList
      */
     public $Comments;
     /**
      * Constructor method for BookingScType
      * @uses BookingScType::setOffer()
      * @uses BookingScType::setComments()
-     * @param \StructType\OfferScType $offer
-     * @param \StructType\CommentList $comments
+     * @param \traveltainment\SOAP17\StructType\OfferScType $offer
+     * @param \traveltainment\SOAP17\StructType\CommentList $comments
      */
-    public function __construct(\StructType\OfferScType $offer = null, \StructType\CommentList $comments = null)
+    public function __construct(\traveltainment\SOAP17\StructType\OfferScType $offer = null, \traveltainment\SOAP17\StructType\CommentList $comments = null)
     {
         $this
             ->setOffer($offer)
@@ -39,7 +39,7 @@ class BookingScType extends BookingScBaseType
     }
     /**
      * Get Offer value
-     * @return \StructType\OfferScType|null
+     * @return \traveltainment\SOAP17\StructType\OfferScType|null
      */
     public function getOffer()
     {
@@ -47,17 +47,17 @@ class BookingScType extends BookingScBaseType
     }
     /**
      * Set Offer value
-     * @param \StructType\OfferScType $offer
-     * @return \StructType\BookingScType
+     * @param \traveltainment\SOAP17\StructType\OfferScType $offer
+     * @return \traveltainment\SOAP17\StructType\BookingScType
      */
-    public function setOffer(\StructType\OfferScType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\OfferScType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
     }
     /**
      * Get Comments value
-     * @return \StructType\CommentList|null
+     * @return \traveltainment\SOAP17\StructType\CommentList|null
      */
     public function getComments()
     {
@@ -65,10 +65,10 @@ class BookingScType extends BookingScBaseType
     }
     /**
      * Set Comments value
-     * @param \StructType\CommentList $comments
-     * @return \StructType\BookingScType
+     * @param \traveltainment\SOAP17\StructType\CommentList $comments
+     * @return \traveltainment\SOAP17\StructType\BookingScType
      */
-    public function setComments(\StructType\CommentList $comments = null)
+    public function setComments(\traveltainment\SOAP17\StructType\CommentList $comments = null)
     {
         $this->Comments = $comments;
         return $this;
@@ -79,7 +79,7 @@ class BookingScType extends BookingScBaseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingScType
+     * @return \traveltainment\SOAP17\StructType\BookingScType
      */
     public static function __set_state(array $array)
     {

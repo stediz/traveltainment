@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class UsageLimitsType extends AbstractStructBase
     /**
      * Set MinParkingDays value
      * @param int $minParkingDays
-     * @return \StructType\UsageLimitsType
+     * @return \traveltainment\SOAP17\StructType\UsageLimitsType
      */
     public function setMinParkingDays($minParkingDays = null)
     {
@@ -80,7 +80,7 @@ class UsageLimitsType extends AbstractStructBase
     /**
      * Set MaxParkingDays value
      * @param int $maxParkingDays
-     * @return \StructType\UsageLimitsType
+     * @return \traveltainment\SOAP17\StructType\UsageLimitsType
      */
     public function setMaxParkingDays($maxParkingDays = null)
     {
@@ -102,7 +102,7 @@ class UsageLimitsType extends AbstractStructBase
     /**
      * Set MaxCarSize value
      * @param string $maxCarSize
-     * @return \StructType\UsageLimitsType
+     * @return \traveltainment\SOAP17\StructType\UsageLimitsType
      */
     public function setMaxCarSize($maxCarSize = null)
     {
@@ -119,7 +119,7 @@ class UsageLimitsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\UsageLimitsType
+     * @return \traveltainment\SOAP17\StructType\UsageLimitsType
      */
     public static function __set_state(array $array)
     {

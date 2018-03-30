@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class MandatoryInformationType extends AbstractStructBase
     /**
      * Set URL value
      * @param string $uRL
-     * @return \StructType\MandatoryInformationType
+     * @return \traveltainment\SOAP17\StructType\MandatoryInformationType
      */
     public function setURL($uRL = null)
     {
@@ -66,7 +66,7 @@ class MandatoryInformationType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\MandatoryInformationType
+     * @return \traveltainment\SOAP17\StructType\MandatoryInformationType
      */
     public function setDescription($description = null)
     {
@@ -83,7 +83,7 @@ class MandatoryInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MandatoryInformationType
+     * @return \traveltainment\SOAP17\StructType\MandatoryInformationType
      */
     public static function __set_state(array $array)
     {

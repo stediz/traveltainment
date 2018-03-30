@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class RegionType extends AbstractStructBase
      * The WeatherForRegion
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\WeatherType
+     * @var \traveltainment\SOAP17\StructType\WeatherType
      */
     public $WeatherForRegion;
     /**
@@ -74,9 +74,9 @@ class RegionType extends AbstractStructBase
      * @param int $destinationID
      * @param int $topRegionID
      * @param string $destinationAirport
-     * @param \StructType\WeatherType $weatherForRegion
+     * @param \traveltainment\SOAP17\StructType\WeatherType $weatherForRegion
      */
-    public function __construct($country = null, $region = null, $regionRefID = null, $destinationID = null, $topRegionID = null, $destinationAirport = null, \StructType\WeatherType $weatherForRegion = null)
+    public function __construct($country = null, $region = null, $regionRefID = null, $destinationID = null, $topRegionID = null, $destinationAirport = null, \traveltainment\SOAP17\StructType\WeatherType $weatherForRegion = null)
     {
         $this
             ->setCountry($country)
@@ -98,7 +98,7 @@ class RegionType extends AbstractStructBase
     /**
      * Set Country value
      * @param string $country
-     * @return \StructType\RegionType
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
     public function setCountry($country = null)
     {
@@ -120,7 +120,7 @@ class RegionType extends AbstractStructBase
     /**
      * Set Region value
      * @param string $region
-     * @return \StructType\RegionType
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
     public function setRegion($region = null)
     {
@@ -142,7 +142,7 @@ class RegionType extends AbstractStructBase
     /**
      * Set RegionRefID value
      * @param string $regionRefID
-     * @return \StructType\RegionType
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
     public function setRegionRefID($regionRefID = null)
     {
@@ -164,7 +164,7 @@ class RegionType extends AbstractStructBase
     /**
      * Set DestinationID value
      * @param int $destinationID
-     * @return \StructType\RegionType
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
     public function setDestinationID($destinationID = null)
     {
@@ -186,7 +186,7 @@ class RegionType extends AbstractStructBase
     /**
      * Set TopRegionID value
      * @param int $topRegionID
-     * @return \StructType\RegionType
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
     public function setTopRegionID($topRegionID = null)
     {
@@ -208,7 +208,7 @@ class RegionType extends AbstractStructBase
     /**
      * Set DestinationAirport value
      * @param string $destinationAirport
-     * @return \StructType\RegionType
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
     public function setDestinationAirport($destinationAirport = null)
     {
@@ -221,7 +221,7 @@ class RegionType extends AbstractStructBase
     }
     /**
      * Get WeatherForRegion value
-     * @return \StructType\WeatherType|null
+     * @return \traveltainment\SOAP17\StructType\WeatherType|null
      */
     public function getWeatherForRegion()
     {
@@ -229,10 +229,10 @@ class RegionType extends AbstractStructBase
     }
     /**
      * Set WeatherForRegion value
-     * @param \StructType\WeatherType $weatherForRegion
-     * @return \StructType\RegionType
+     * @param \traveltainment\SOAP17\StructType\WeatherType $weatherForRegion
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
-    public function setWeatherForRegion(\StructType\WeatherType $weatherForRegion = null)
+    public function setWeatherForRegion(\traveltainment\SOAP17\StructType\WeatherType $weatherForRegion = null)
     {
         $this->WeatherForRegion = $weatherForRegion;
         return $this;
@@ -243,7 +243,7 @@ class RegionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionType
+     * @return \traveltainment\SOAP17\StructType\RegionType
      */
     public static function __set_state(array $array)
     {

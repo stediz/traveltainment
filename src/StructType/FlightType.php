@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,26 +15,26 @@ class FlightType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Es gibt hier den kompletten Flugzeitraum. Also vom ersten Starttermin des Hinflugs bis zum letzten des Ruecklfugs.
      * - minOccurs: 0
-     * @var \StructType\DateTimeSpanType
+     * @var \traveltainment\SOAP17\StructType\DateTimeSpanType
      */
     public $FlightDateTimeSpan;
     /**
      * The OutboundFlightSegments
-     * @var \StructType\FlightSegmentListType
+     * @var \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public $OutboundFlightSegments;
     /**
      * The InboundFlightSegments
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\FlightSegmentListType
+     * @var \traveltainment\SOAP17\StructType\FlightSegmentListType
      */
     public $InboundFlightSegments;
     /**
      * The TermsAndConditions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\MandatoryInformationType
+     * @var \traveltainment\SOAP17\StructType\MandatoryInformationType
      */
     public $TermsAndConditions;
     /**
@@ -43,12 +43,12 @@ class FlightType extends AbstractStructBase
      * @uses FlightType::setOutboundFlightSegments()
      * @uses FlightType::setInboundFlightSegments()
      * @uses FlightType::setTermsAndConditions()
-     * @param \StructType\DateTimeSpanType $flightDateTimeSpan
-     * @param \StructType\FlightSegmentListType $outboundFlightSegments
-     * @param \StructType\FlightSegmentListType $inboundFlightSegments
-     * @param \StructType\MandatoryInformationType $termsAndConditions
+     * @param \traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan
+     * @param \traveltainment\SOAP17\StructType\FlightSegmentListType $outboundFlightSegments
+     * @param \traveltainment\SOAP17\StructType\FlightSegmentListType $inboundFlightSegments
+     * @param \traveltainment\SOAP17\StructType\MandatoryInformationType $termsAndConditions
      */
-    public function __construct(\StructType\DateTimeSpanType $flightDateTimeSpan = null, \StructType\FlightSegmentListType $outboundFlightSegments = null, \StructType\FlightSegmentListType $inboundFlightSegments = null, \StructType\MandatoryInformationType $termsAndConditions = null)
+    public function __construct(\traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan = null, \traveltainment\SOAP17\StructType\FlightSegmentListType $outboundFlightSegments = null, \traveltainment\SOAP17\StructType\FlightSegmentListType $inboundFlightSegments = null, \traveltainment\SOAP17\StructType\MandatoryInformationType $termsAndConditions = null)
     {
         $this
             ->setFlightDateTimeSpan($flightDateTimeSpan)
@@ -58,7 +58,7 @@ class FlightType extends AbstractStructBase
     }
     /**
      * Get FlightDateTimeSpan value
-     * @return \StructType\DateTimeSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateTimeSpanType|null
      */
     public function getFlightDateTimeSpan()
     {
@@ -66,17 +66,17 @@ class FlightType extends AbstractStructBase
     }
     /**
      * Set FlightDateTimeSpan value
-     * @param \StructType\DateTimeSpanType $flightDateTimeSpan
-     * @return \StructType\FlightType
+     * @param \traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan
+     * @return \traveltainment\SOAP17\StructType\FlightType
      */
-    public function setFlightDateTimeSpan(\StructType\DateTimeSpanType $flightDateTimeSpan = null)
+    public function setFlightDateTimeSpan(\traveltainment\SOAP17\StructType\DateTimeSpanType $flightDateTimeSpan = null)
     {
         $this->FlightDateTimeSpan = $flightDateTimeSpan;
         return $this;
     }
     /**
      * Get OutboundFlightSegments value
-     * @return \StructType\FlightSegmentListType|null
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType|null
      */
     public function getOutboundFlightSegments()
     {
@@ -84,17 +84,17 @@ class FlightType extends AbstractStructBase
     }
     /**
      * Set OutboundFlightSegments value
-     * @param \StructType\FlightSegmentListType $outboundFlightSegments
-     * @return \StructType\FlightType
+     * @param \traveltainment\SOAP17\StructType\FlightSegmentListType $outboundFlightSegments
+     * @return \traveltainment\SOAP17\StructType\FlightType
      */
-    public function setOutboundFlightSegments(\StructType\FlightSegmentListType $outboundFlightSegments = null)
+    public function setOutboundFlightSegments(\traveltainment\SOAP17\StructType\FlightSegmentListType $outboundFlightSegments = null)
     {
         $this->OutboundFlightSegments = $outboundFlightSegments;
         return $this;
     }
     /**
      * Get InboundFlightSegments value
-     * @return \StructType\FlightSegmentListType|null
+     * @return \traveltainment\SOAP17\StructType\FlightSegmentListType|null
      */
     public function getInboundFlightSegments()
     {
@@ -102,17 +102,17 @@ class FlightType extends AbstractStructBase
     }
     /**
      * Set InboundFlightSegments value
-     * @param \StructType\FlightSegmentListType $inboundFlightSegments
-     * @return \StructType\FlightType
+     * @param \traveltainment\SOAP17\StructType\FlightSegmentListType $inboundFlightSegments
+     * @return \traveltainment\SOAP17\StructType\FlightType
      */
-    public function setInboundFlightSegments(\StructType\FlightSegmentListType $inboundFlightSegments = null)
+    public function setInboundFlightSegments(\traveltainment\SOAP17\StructType\FlightSegmentListType $inboundFlightSegments = null)
     {
         $this->InboundFlightSegments = $inboundFlightSegments;
         return $this;
     }
     /**
      * Get TermsAndConditions value
-     * @return \StructType\MandatoryInformationType|null
+     * @return \traveltainment\SOAP17\StructType\MandatoryInformationType|null
      */
     public function getTermsAndConditions()
     {
@@ -120,10 +120,10 @@ class FlightType extends AbstractStructBase
     }
     /**
      * Set TermsAndConditions value
-     * @param \StructType\MandatoryInformationType $termsAndConditions
-     * @return \StructType\FlightType
+     * @param \traveltainment\SOAP17\StructType\MandatoryInformationType $termsAndConditions
+     * @return \traveltainment\SOAP17\StructType\FlightType
      */
-    public function setTermsAndConditions(\StructType\MandatoryInformationType $termsAndConditions = null)
+    public function setTermsAndConditions(\traveltainment\SOAP17\StructType\MandatoryInformationType $termsAndConditions = null)
     {
         $this->TermsAndConditions = $termsAndConditions;
         return $this;
@@ -134,7 +134,7 @@ class FlightType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FlightType
+     * @return \traveltainment\SOAP17\StructType\FlightType
      */
     public static function __set_state(array $array)
     {

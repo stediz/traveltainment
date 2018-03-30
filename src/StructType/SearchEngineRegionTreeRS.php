@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class SearchEngineRegionTreeRS extends XmlInterfaceRS
 {
     /**
      * The Regions
-     * @var \StructType\RegionNodeList
+     * @var \traveltainment\SOAP17\StructType\RegionNodeList
      */
     public $Regions;
     /**
      * Constructor method for SearchEngineRegionTreeRS
      * @uses SearchEngineRegionTreeRS::setRegions()
-     * @param \StructType\RegionNodeList $regions
+     * @param \traveltainment\SOAP17\StructType\RegionNodeList $regions
      */
-    public function __construct(\StructType\RegionNodeList $regions = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionNodeList $regions = null)
     {
         $this
             ->setRegions($regions);
     }
     /**
      * Get Regions value
-     * @return \StructType\RegionNodeList|null
+     * @return \traveltainment\SOAP17\StructType\RegionNodeList|null
      */
     public function getRegions()
     {
@@ -35,10 +35,10 @@ class SearchEngineRegionTreeRS extends XmlInterfaceRS
     }
     /**
      * Set Regions value
-     * @param \StructType\RegionNodeList $regions
-     * @return \StructType\SearchEngineRegionTreeRS
+     * @param \traveltainment\SOAP17\StructType\RegionNodeList $regions
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS
      */
-    public function setRegions(\StructType\RegionNodeList $regions = null)
+    public function setRegions(\traveltainment\SOAP17\StructType\RegionNodeList $regions = null)
     {
         $this->Regions = $regions;
         return $this;
@@ -49,7 +49,7 @@ class SearchEngineRegionTreeRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineRegionTreeRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS
      */
     public static function __set_state(array $array)
     {

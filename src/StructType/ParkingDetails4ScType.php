@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class ParkingDetails4ScType extends AbstractStructBase
 {
     /**
      * The ParkingDateTimes
-     * @var \StructType\ParkingDateTimesType
+     * @var \traveltainment\SOAP17\StructType\ParkingDateTimesType
      */
     public $ParkingDateTimes;
     /**
@@ -22,7 +22,7 @@ class ParkingDetails4ScType extends AbstractStructBase
     public $TermsAndConditionsURL;
     /**
      * The ParkingDetails
-     * @var \StructType\ParkingDetailsType
+     * @var \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public $ParkingDetails;
     /**
@@ -30,11 +30,11 @@ class ParkingDetails4ScType extends AbstractStructBase
      * @uses ParkingDetails4ScType::setParkingDateTimes()
      * @uses ParkingDetails4ScType::setTermsAndConditionsURL()
      * @uses ParkingDetails4ScType::setParkingDetails()
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
      * @param string $termsAndConditionsURL
-     * @param \StructType\ParkingDetailsType $parkingDetails
+     * @param \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails
      */
-    public function __construct(\StructType\ParkingDateTimesType $parkingDateTimes = null, $termsAndConditionsURL = null, \StructType\ParkingDetailsType $parkingDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null, $termsAndConditionsURL = null, \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails = null)
     {
         $this
             ->setParkingDateTimes($parkingDateTimes)
@@ -43,7 +43,7 @@ class ParkingDetails4ScType extends AbstractStructBase
     }
     /**
      * Get ParkingDateTimes value
-     * @return \StructType\ParkingDateTimesType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDateTimesType|null
      */
     public function getParkingDateTimes()
     {
@@ -51,10 +51,10 @@ class ParkingDetails4ScType extends AbstractStructBase
     }
     /**
      * Set ParkingDateTimes value
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
-     * @return \StructType\ParkingDetails4ScType
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
+     * @return \traveltainment\SOAP17\StructType\ParkingDetails4ScType
      */
-    public function setParkingDateTimes(\StructType\ParkingDateTimesType $parkingDateTimes = null)
+    public function setParkingDateTimes(\traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null)
     {
         $this->ParkingDateTimes = $parkingDateTimes;
         return $this;
@@ -70,7 +70,7 @@ class ParkingDetails4ScType extends AbstractStructBase
     /**
      * Set TermsAndConditionsURL value
      * @param string $termsAndConditionsURL
-     * @return \StructType\ParkingDetails4ScType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetails4ScType
      */
     public function setTermsAndConditionsURL($termsAndConditionsURL = null)
     {
@@ -83,7 +83,7 @@ class ParkingDetails4ScType extends AbstractStructBase
     }
     /**
      * Get ParkingDetails value
-     * @return \StructType\ParkingDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType|null
      */
     public function getParkingDetails()
     {
@@ -91,10 +91,10 @@ class ParkingDetails4ScType extends AbstractStructBase
     }
     /**
      * Set ParkingDetails value
-     * @param \StructType\ParkingDetailsType $parkingDetails
-     * @return \StructType\ParkingDetails4ScType
+     * @param \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails
+     * @return \traveltainment\SOAP17\StructType\ParkingDetails4ScType
      */
-    public function setParkingDetails(\StructType\ParkingDetailsType $parkingDetails = null)
+    public function setParkingDetails(\traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails = null)
     {
         $this->ParkingDetails = $parkingDetails;
         return $this;
@@ -105,7 +105,7 @@ class ParkingDetails4ScType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParkingDetails4ScType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetails4ScType
      */
     public static function __set_state(array $array)
     {

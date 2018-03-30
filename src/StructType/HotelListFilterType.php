@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,14 +44,14 @@ class HotelListFilterType extends AbstractStructBase
      * The HotelReview
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewRequestType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public $HotelReview;
     /**
      * The FlightDuration
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\FlightDurationFilterType
+     * @var \traveltainment\SOAP17\StructType\FlightDurationFilterType
      */
     public $FlightDuration;
     /**
@@ -66,10 +66,10 @@ class HotelListFilterType extends AbstractStructBase
      * @param string $cityName
      * @param int $cityIDs
      * @param string $objectName
-     * @param \StructType\HotelReviewRequestType $hotelReview
-     * @param \StructType\FlightDurationFilterType $flightDuration
+     * @param \traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview
+     * @param \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration
      */
-    public function __construct($offerScope = null, $cityName = null, $cityIDs = null, $objectName = null, \StructType\HotelReviewRequestType $hotelReview = null, \StructType\FlightDurationFilterType $flightDuration = null)
+    public function __construct($offerScope = null, $cityName = null, $cityIDs = null, $objectName = null, \traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview = null, \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration = null)
     {
         $this
             ->setOfferScope($offerScope)
@@ -89,17 +89,17 @@ class HotelListFilterType extends AbstractStructBase
     }
     /**
      * Set OfferScope value
-     * @uses \EnumType\OfferScopeEnum::valueIsValid()
-     * @uses \EnumType\OfferScopeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $offerScope
-     * @return \StructType\HotelListFilterType
+     * @return \traveltainment\SOAP17\StructType\HotelListFilterType
      */
     public function setOfferScope($offerScope = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \EnumType\OfferScopeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues())), __LINE__);
         }
         $this->OfferScope = $offerScope;
         return $this;
@@ -115,7 +115,7 @@ class HotelListFilterType extends AbstractStructBase
     /**
      * Set CityName value
      * @param string $cityName
-     * @return \StructType\HotelListFilterType
+     * @return \traveltainment\SOAP17\StructType\HotelListFilterType
      */
     public function setCityName($cityName = null)
     {
@@ -137,7 +137,7 @@ class HotelListFilterType extends AbstractStructBase
     /**
      * Set CityIDs value
      * @param int $cityIDs
-     * @return \StructType\HotelListFilterType
+     * @return \traveltainment\SOAP17\StructType\HotelListFilterType
      */
     public function setCityIDs($cityIDs = null)
     {
@@ -167,7 +167,7 @@ class HotelListFilterType extends AbstractStructBase
     /**
      * Set ObjectName value
      * @param string $objectName
-     * @return \StructType\HotelListFilterType
+     * @return \traveltainment\SOAP17\StructType\HotelListFilterType
      */
     public function setObjectName($objectName = null)
     {
@@ -180,7 +180,7 @@ class HotelListFilterType extends AbstractStructBase
     }
     /**
      * Get HotelReview value
-     * @return \StructType\HotelReviewRequestType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType|null
      */
     public function getHotelReview()
     {
@@ -188,17 +188,17 @@ class HotelListFilterType extends AbstractStructBase
     }
     /**
      * Set HotelReview value
-     * @param \StructType\HotelReviewRequestType $hotelReview
-     * @return \StructType\HotelListFilterType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview
+     * @return \traveltainment\SOAP17\StructType\HotelListFilterType
      */
-    public function setHotelReview(\StructType\HotelReviewRequestType $hotelReview = null)
+    public function setHotelReview(\traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview = null)
     {
         $this->HotelReview = $hotelReview;
         return $this;
     }
     /**
      * Get FlightDuration value
-     * @return \StructType\FlightDurationFilterType|null
+     * @return \traveltainment\SOAP17\StructType\FlightDurationFilterType|null
      */
     public function getFlightDuration()
     {
@@ -206,10 +206,10 @@ class HotelListFilterType extends AbstractStructBase
     }
     /**
      * Set FlightDuration value
-     * @param \StructType\FlightDurationFilterType $flightDuration
-     * @return \StructType\HotelListFilterType
+     * @param \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration
+     * @return \traveltainment\SOAP17\StructType\HotelListFilterType
      */
-    public function setFlightDuration(\StructType\FlightDurationFilterType $flightDuration = null)
+    public function setFlightDuration(\traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration = null)
     {
         $this->FlightDuration = $flightDuration;
         return $this;
@@ -220,7 +220,7 @@ class HotelListFilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelListFilterType
+     * @return \traveltainment\SOAP17\StructType\HotelListFilterType
      */
     public static function __set_state(array $array)
     {

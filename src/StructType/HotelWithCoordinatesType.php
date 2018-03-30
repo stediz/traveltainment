@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class HotelWithCoordinatesType extends HotelType
 {
     /**
      * The Coordinates
-     * @var \StructType\Coordinates
+     * @var \traveltainment\SOAP17\StructType\Coordinates
      */
     public $Coordinates;
     /**
@@ -24,10 +24,10 @@ class HotelWithCoordinatesType extends HotelType
      * Constructor method for HotelWithCoordinatesType
      * @uses HotelWithCoordinatesType::setCoordinates()
      * @uses HotelWithCoordinatesType::setDistance()
-     * @param \StructType\Coordinates $coordinates
+     * @param \traveltainment\SOAP17\StructType\Coordinates $coordinates
      * @param float $distance
      */
-    public function __construct(\StructType\Coordinates $coordinates = null, $distance = null)
+    public function __construct(\traveltainment\SOAP17\StructType\Coordinates $coordinates = null, $distance = null)
     {
         $this
             ->setCoordinates($coordinates)
@@ -35,7 +35,7 @@ class HotelWithCoordinatesType extends HotelType
     }
     /**
      * Get Coordinates value
-     * @return \StructType\Coordinates|null
+     * @return \traveltainment\SOAP17\StructType\Coordinates|null
      */
     public function getCoordinates()
     {
@@ -43,10 +43,10 @@ class HotelWithCoordinatesType extends HotelType
     }
     /**
      * Set Coordinates value
-     * @param \StructType\Coordinates $coordinates
-     * @return \StructType\HotelWithCoordinatesType
+     * @param \traveltainment\SOAP17\StructType\Coordinates $coordinates
+     * @return \traveltainment\SOAP17\StructType\HotelWithCoordinatesType
      */
-    public function setCoordinates(\StructType\Coordinates $coordinates = null)
+    public function setCoordinates(\traveltainment\SOAP17\StructType\Coordinates $coordinates = null)
     {
         $this->Coordinates = $coordinates;
         return $this;
@@ -62,7 +62,7 @@ class HotelWithCoordinatesType extends HotelType
     /**
      * Set Distance value
      * @param float $distance
-     * @return \StructType\HotelWithCoordinatesType
+     * @return \traveltainment\SOAP17\StructType\HotelWithCoordinatesType
      */
     public function setDistance($distance = null)
     {
@@ -75,7 +75,7 @@ class HotelWithCoordinatesType extends HotelType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelWithCoordinatesType
+     * @return \traveltainment\SOAP17\StructType\HotelWithCoordinatesType
      */
     public static function __set_state(array $array)
     {

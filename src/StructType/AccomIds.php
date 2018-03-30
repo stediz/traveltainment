@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class AccomIds extends AbstractStructBase
      * The Id
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\Id[]
+     * @var \traveltainment\SOAP17\StructType\Id[]
      */
     public $Id;
     /**
      * Constructor method for AccomIds
      * @uses AccomIds::setId()
-     * @param \StructType\Id[] $id
+     * @param \traveltainment\SOAP17\StructType\Id[] $id
      */
     public function __construct(array $id = array())
     {
@@ -29,7 +29,7 @@ class AccomIds extends AbstractStructBase
     }
     /**
      * Get Id value
-     * @return \StructType\Id[]|null
+     * @return \traveltainment\SOAP17\StructType\Id[]|null
      */
     public function getId()
     {
@@ -38,15 +38,15 @@ class AccomIds extends AbstractStructBase
     /**
      * Set Id value
      * @throws \InvalidArgumentException
-     * @param \StructType\Id[] $id
-     * @return \StructType\AccomIds
+     * @param \traveltainment\SOAP17\StructType\Id[] $id
+     * @return \traveltainment\SOAP17\StructType\AccomIds
      */
     public function setId(array $id = array())
     {
         foreach ($id as $accomIdsIdItem) {
             // validation for constraint: itemType
-            if (!$accomIdsIdItem instanceof \StructType\Id) {
-                throw new \InvalidArgumentException(sprintf('The Id property can only contain items of \StructType\Id, "%s" given', is_object($accomIdsIdItem) ? get_class($accomIdsIdItem) : gettype($accomIdsIdItem)), __LINE__);
+            if (!$accomIdsIdItem instanceof \traveltainment\SOAP17\StructType\Id) {
+                throw new \InvalidArgumentException(sprintf('The Id property can only contain items of \traveltainment\SOAP17\StructType\Id, "%s" given', is_object($accomIdsIdItem) ? get_class($accomIdsIdItem) : gettype($accomIdsIdItem)), __LINE__);
             }
         }
         $this->Id = $id;
@@ -55,14 +55,14 @@ class AccomIds extends AbstractStructBase
     /**
      * Add item to Id value
      * @throws \InvalidArgumentException
-     * @param \StructType\Id $item
-     * @return \StructType\AccomIds
+     * @param \traveltainment\SOAP17\StructType\Id $item
+     * @return \traveltainment\SOAP17\StructType\AccomIds
      */
-    public function addToId(\StructType\Id $item)
+    public function addToId(\traveltainment\SOAP17\StructType\Id $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Id) {
-            throw new \InvalidArgumentException(sprintf('The Id property can only contain items of \StructType\Id, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\Id) {
+            throw new \InvalidArgumentException(sprintf('The Id property can only contain items of \traveltainment\SOAP17\StructType\Id, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Id[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class AccomIds extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AccomIds
+     * @return \traveltainment\SOAP17\StructType\AccomIds
      */
     public static function __set_state(array $array)
     {

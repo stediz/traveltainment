@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,12 +17,12 @@ class Transfer4SearchType extends AbstractStructBase
     public $TransferMinutes;
     /**
      * The Pickup
-     * @var \StructType\TransferEventType
+     * @var \traveltainment\SOAP17\StructType\TransferEventType
      */
     public $Pickup;
     /**
      * The Dropoff
-     * @var \StructType\TransferEventType
+     * @var \traveltainment\SOAP17\StructType\TransferEventType
      */
     public $Dropoff;
     /**
@@ -31,10 +31,10 @@ class Transfer4SearchType extends AbstractStructBase
      * @uses Transfer4SearchType::setPickup()
      * @uses Transfer4SearchType::setDropoff()
      * @param int $transferMinutes
-     * @param \StructType\TransferEventType $pickup
-     * @param \StructType\TransferEventType $dropoff
+     * @param \traveltainment\SOAP17\StructType\TransferEventType $pickup
+     * @param \traveltainment\SOAP17\StructType\TransferEventType $dropoff
      */
-    public function __construct($transferMinutes = null, \StructType\TransferEventType $pickup = null, \StructType\TransferEventType $dropoff = null)
+    public function __construct($transferMinutes = null, \traveltainment\SOAP17\StructType\TransferEventType $pickup = null, \traveltainment\SOAP17\StructType\TransferEventType $dropoff = null)
     {
         $this
             ->setTransferMinutes($transferMinutes)
@@ -52,7 +52,7 @@ class Transfer4SearchType extends AbstractStructBase
     /**
      * Set TransferMinutes value
      * @param int $transferMinutes
-     * @return \StructType\Transfer4SearchType
+     * @return \traveltainment\SOAP17\StructType\Transfer4SearchType
      */
     public function setTransferMinutes($transferMinutes = null)
     {
@@ -65,7 +65,7 @@ class Transfer4SearchType extends AbstractStructBase
     }
     /**
      * Get Pickup value
-     * @return \StructType\TransferEventType|null
+     * @return \traveltainment\SOAP17\StructType\TransferEventType|null
      */
     public function getPickup()
     {
@@ -73,17 +73,17 @@ class Transfer4SearchType extends AbstractStructBase
     }
     /**
      * Set Pickup value
-     * @param \StructType\TransferEventType $pickup
-     * @return \StructType\Transfer4SearchType
+     * @param \traveltainment\SOAP17\StructType\TransferEventType $pickup
+     * @return \traveltainment\SOAP17\StructType\Transfer4SearchType
      */
-    public function setPickup(\StructType\TransferEventType $pickup = null)
+    public function setPickup(\traveltainment\SOAP17\StructType\TransferEventType $pickup = null)
     {
         $this->Pickup = $pickup;
         return $this;
     }
     /**
      * Get Dropoff value
-     * @return \StructType\TransferEventType|null
+     * @return \traveltainment\SOAP17\StructType\TransferEventType|null
      */
     public function getDropoff()
     {
@@ -91,10 +91,10 @@ class Transfer4SearchType extends AbstractStructBase
     }
     /**
      * Set Dropoff value
-     * @param \StructType\TransferEventType $dropoff
-     * @return \StructType\Transfer4SearchType
+     * @param \traveltainment\SOAP17\StructType\TransferEventType $dropoff
+     * @return \traveltainment\SOAP17\StructType\Transfer4SearchType
      */
-    public function setDropoff(\StructType\TransferEventType $dropoff = null)
+    public function setDropoff(\traveltainment\SOAP17\StructType\TransferEventType $dropoff = null)
     {
         $this->Dropoff = $dropoff;
         return $this;
@@ -105,7 +105,7 @@ class Transfer4SearchType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Transfer4SearchType
+     * @return \traveltainment\SOAP17\StructType\Transfer4SearchType
      */
     public static function __set_state(array $array)
     {

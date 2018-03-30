@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class GetAvailableOfferDataRQOptionsType extends AbstractStructBase
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\GetAvailableOfferDataRQOptionsType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -55,7 +55,7 @@ class GetAvailableOfferDataRQOptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetAvailableOfferDataRQOptionsType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType
      */
     public static function __set_state(array $array)
     {

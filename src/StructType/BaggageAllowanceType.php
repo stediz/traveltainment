@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class BaggageAllowanceType extends AbstractStructBase
     /**
      * Set MaxBags value
      * @param int $maxBags
-     * @return \StructType\BaggageAllowanceType
+     * @return \traveltainment\SOAP17\StructType\BaggageAllowanceType
      */
     public function setMaxBags($maxBags = null)
     {
@@ -70,7 +70,7 @@ class BaggageAllowanceType extends AbstractStructBase
     /**
      * Set MaxWeight value
      * @param int $maxWeight
-     * @return \StructType\BaggageAllowanceType
+     * @return \traveltainment\SOAP17\StructType\BaggageAllowanceType
      */
     public function setMaxWeight($maxWeight = null)
     {
@@ -87,7 +87,7 @@ class BaggageAllowanceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BaggageAllowanceType
+     * @return \traveltainment\SOAP17\StructType\BaggageAllowanceType
      */
     public static function __set_state(array $array)
     {

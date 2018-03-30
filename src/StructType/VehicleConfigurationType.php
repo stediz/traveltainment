@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class VehicleConfigurationType extends AbstractStructBase
     /**
      * Set AirConditionAvailable value
      * @param bool $airConditionAvailable
-     * @return \StructType\VehicleConfigurationType
+     * @return \traveltainment\SOAP17\StructType\VehicleConfigurationType
      */
     public function setAirConditionAvailable($airConditionAvailable = null)
     {
@@ -55,7 +55,7 @@ class VehicleConfigurationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\VehicleConfigurationType
+     * @return \traveltainment\SOAP17\StructType\VehicleConfigurationType
      */
     public static function __set_state(array $array)
     {

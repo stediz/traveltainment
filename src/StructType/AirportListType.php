@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,7 +53,7 @@ class AirportListType extends AbstractStructBase
      * Set Airport value
      * @throws \InvalidArgumentException
      * @param string[] $airport
-     * @return \StructType\AirportListType
+     * @return \traveltainment\SOAP17\StructType\AirportListType
      */
     public function setAirport(array $airport = array())
     {
@@ -74,7 +74,7 @@ class AirportListType extends AbstractStructBase
      * Add item to Airport value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\AirportListType
+     * @return \traveltainment\SOAP17\StructType\AirportListType
      */
     public function addToAirport($item)
     {
@@ -100,7 +100,7 @@ class AirportListType extends AbstractStructBase
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\AirportListType
+     * @return \traveltainment\SOAP17\StructType\AirportListType
      */
     public function setWeightage($weightage = '0')
     {
@@ -125,7 +125,7 @@ class AirportListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AirportListType
+     * @return \traveltainment\SOAP17\StructType\AirportListType
      */
     public static function __set_state(array $array)
     {

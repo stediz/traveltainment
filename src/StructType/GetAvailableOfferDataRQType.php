@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class GetAvailableOfferDataRQType extends RequestType
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetAvailableOfferDataRQOptionsType
+     * @var \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType
      */
     public $Options;
     /**
@@ -38,9 +38,9 @@ class GetAvailableOfferDataRQType extends RequestType
      * @uses GetAvailableOfferDataRQType::setOptions()
      * @param string $sessionID
      * @param string $cID
-     * @param \StructType\GetAvailableOfferDataRQOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType $options
      */
-    public function __construct($sessionID = null, $cID = null, \StructType\GetAvailableOfferDataRQOptionsType $options = null)
+    public function __construct($sessionID = null, $cID = null, \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType $options = null)
     {
         $this
             ->setSessionID($sessionID)
@@ -58,7 +58,7 @@ class GetAvailableOfferDataRQType extends RequestType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\GetAvailableOfferDataRQType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType
      */
     public function setSessionID($sessionID = null)
     {
@@ -80,7 +80,7 @@ class GetAvailableOfferDataRQType extends RequestType
     /**
      * Set CID value
      * @param string $cID
-     * @return \StructType\GetAvailableOfferDataRQType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType
      */
     public function setCID($cID = null)
     {
@@ -93,7 +93,7 @@ class GetAvailableOfferDataRQType extends RequestType
     }
     /**
      * Get Options value
-     * @return \StructType\GetAvailableOfferDataRQOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType|null
      */
     public function getOptions()
     {
@@ -101,10 +101,10 @@ class GetAvailableOfferDataRQType extends RequestType
     }
     /**
      * Set Options value
-     * @param \StructType\GetAvailableOfferDataRQOptionsType $options
-     * @return \StructType\GetAvailableOfferDataRQType
+     * @param \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType
      */
-    public function setOptions(\StructType\GetAvailableOfferDataRQOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\GetAvailableOfferDataRQOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -115,7 +115,7 @@ class GetAvailableOfferDataRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetAvailableOfferDataRQType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType
      */
     public static function __set_state(array $array)
     {

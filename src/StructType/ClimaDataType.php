@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ClimaDataType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 6
      * - minOccurs: 0
-     * @var \StructType\YearOverviewType[]
+     * @var \traveltainment\SOAP17\StructType\YearOverviewType[]
      */
     public $YearOverview;
     /**
      * Constructor method for ClimaDataType
      * @uses ClimaDataType::setYearOverview()
-     * @param \StructType\YearOverviewType[] $yearOverview
+     * @param \traveltainment\SOAP17\StructType\YearOverviewType[] $yearOverview
      */
     public function __construct(array $yearOverview = array())
     {
@@ -30,7 +30,7 @@ class ClimaDataType extends AbstractStructBase
     }
     /**
      * Get YearOverview value
-     * @return \StructType\YearOverviewType[]|null
+     * @return \traveltainment\SOAP17\StructType\YearOverviewType[]|null
      */
     public function getYearOverview()
     {
@@ -39,15 +39,15 @@ class ClimaDataType extends AbstractStructBase
     /**
      * Set YearOverview value
      * @throws \InvalidArgumentException
-     * @param \StructType\YearOverviewType[] $yearOverview
-     * @return \StructType\ClimaDataType
+     * @param \traveltainment\SOAP17\StructType\YearOverviewType[] $yearOverview
+     * @return \traveltainment\SOAP17\StructType\ClimaDataType
      */
     public function setYearOverview(array $yearOverview = array())
     {
         foreach ($yearOverview as $climaDataTypeYearOverviewItem) {
             // validation for constraint: itemType
-            if (!$climaDataTypeYearOverviewItem instanceof \StructType\YearOverviewType) {
-                throw new \InvalidArgumentException(sprintf('The YearOverview property can only contain items of \StructType\YearOverviewType, "%s" given', is_object($climaDataTypeYearOverviewItem) ? get_class($climaDataTypeYearOverviewItem) : gettype($climaDataTypeYearOverviewItem)), __LINE__);
+            if (!$climaDataTypeYearOverviewItem instanceof \traveltainment\SOAP17\StructType\YearOverviewType) {
+                throw new \InvalidArgumentException(sprintf('The YearOverview property can only contain items of \traveltainment\SOAP17\StructType\YearOverviewType, "%s" given', is_object($climaDataTypeYearOverviewItem) ? get_class($climaDataTypeYearOverviewItem) : gettype($climaDataTypeYearOverviewItem)), __LINE__);
             }
         }
         $this->YearOverview = $yearOverview;
@@ -56,14 +56,14 @@ class ClimaDataType extends AbstractStructBase
     /**
      * Add item to YearOverview value
      * @throws \InvalidArgumentException
-     * @param \StructType\YearOverviewType $item
-     * @return \StructType\ClimaDataType
+     * @param \traveltainment\SOAP17\StructType\YearOverviewType $item
+     * @return \traveltainment\SOAP17\StructType\ClimaDataType
      */
-    public function addToYearOverview(\StructType\YearOverviewType $item)
+    public function addToYearOverview(\traveltainment\SOAP17\StructType\YearOverviewType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\YearOverviewType) {
-            throw new \InvalidArgumentException(sprintf('The YearOverview property can only contain items of \StructType\YearOverviewType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\YearOverviewType) {
+            throw new \InvalidArgumentException(sprintf('The YearOverview property can only contain items of \traveltainment\SOAP17\StructType\YearOverviewType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->YearOverview[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ClimaDataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ClimaDataType
+     * @return \traveltainment\SOAP17\StructType\ClimaDataType
      */
     public static function __set_state(array $array)
     {

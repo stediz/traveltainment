@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class TransferOfferType extends Offer3pType
 {
     /**
      * The TransferDetails
-     * @var \StructType\TransferDetails4SearchType
+     * @var \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
     public $TransferDetails;
     /**
      * Constructor method for TransferOfferType
      * @uses TransferOfferType::setTransferDetails()
-     * @param \StructType\TransferDetails4SearchType $transferDetails
+     * @param \traveltainment\SOAP17\StructType\TransferDetails4SearchType $transferDetails
      */
-    public function __construct(\StructType\TransferDetails4SearchType $transferDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\TransferDetails4SearchType $transferDetails = null)
     {
         $this
             ->setTransferDetails($transferDetails);
     }
     /**
      * Get TransferDetails value
-     * @return \StructType\TransferDetails4SearchType|null
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType|null
      */
     public function getTransferDetails()
     {
@@ -35,10 +35,10 @@ class TransferOfferType extends Offer3pType
     }
     /**
      * Set TransferDetails value
-     * @param \StructType\TransferDetails4SearchType $transferDetails
-     * @return \StructType\TransferOfferType
+     * @param \traveltainment\SOAP17\StructType\TransferDetails4SearchType $transferDetails
+     * @return \traveltainment\SOAP17\StructType\TransferOfferType
      */
-    public function setTransferDetails(\StructType\TransferDetails4SearchType $transferDetails = null)
+    public function setTransferDetails(\traveltainment\SOAP17\StructType\TransferDetails4SearchType $transferDetails = null)
     {
         $this->TransferDetails = $transferDetails;
         return $this;
@@ -49,7 +49,7 @@ class TransferOfferType extends Offer3pType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferOfferType
+     * @return \traveltainment\SOAP17\StructType\TransferOfferType
      */
     public static function __set_state(array $array)
     {

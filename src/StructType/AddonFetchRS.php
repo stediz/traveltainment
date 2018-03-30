@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,21 +12,21 @@ class AddonFetchRS extends XmlInterfaceRS
 {
     /**
      * The AddonInfos
-     * @var \StructType\AddonFetchType
+     * @var \traveltainment\SOAP17\StructType\AddonFetchType
      */
     public $AddonInfos;
     /**
      * The CommentList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CommentListType
+     * @var \traveltainment\SOAP17\StructType\CommentListType
      */
     public $CommentList;
     /**
      * The ParamList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ExtendedKeyValueListType
+     * @var \traveltainment\SOAP17\StructType\ExtendedKeyValueListType
      */
     public $ParamList;
     /**
@@ -34,11 +34,11 @@ class AddonFetchRS extends XmlInterfaceRS
      * @uses AddonFetchRS::setAddonInfos()
      * @uses AddonFetchRS::setCommentList()
      * @uses AddonFetchRS::setParamList()
-     * @param \StructType\AddonFetchType $addonInfos
-     * @param \StructType\CommentListType $commentList
-     * @param \StructType\ExtendedKeyValueListType $paramList
+     * @param \traveltainment\SOAP17\StructType\AddonFetchType $addonInfos
+     * @param \traveltainment\SOAP17\StructType\CommentListType $commentList
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
      */
-    public function __construct(\StructType\AddonFetchType $addonInfos = null, \StructType\CommentListType $commentList = null, \StructType\ExtendedKeyValueListType $paramList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonFetchType $addonInfos = null, \traveltainment\SOAP17\StructType\CommentListType $commentList = null, \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this
             ->setAddonInfos($addonInfos)
@@ -47,7 +47,7 @@ class AddonFetchRS extends XmlInterfaceRS
     }
     /**
      * Get AddonInfos value
-     * @return \StructType\AddonFetchType|null
+     * @return \traveltainment\SOAP17\StructType\AddonFetchType|null
      */
     public function getAddonInfos()
     {
@@ -55,17 +55,17 @@ class AddonFetchRS extends XmlInterfaceRS
     }
     /**
      * Set AddonInfos value
-     * @param \StructType\AddonFetchType $addonInfos
-     * @return \StructType\AddonFetchRS
+     * @param \traveltainment\SOAP17\StructType\AddonFetchType $addonInfos
+     * @return \traveltainment\SOAP17\StructType\AddonFetchRS
      */
-    public function setAddonInfos(\StructType\AddonFetchType $addonInfos = null)
+    public function setAddonInfos(\traveltainment\SOAP17\StructType\AddonFetchType $addonInfos = null)
     {
         $this->AddonInfos = $addonInfos;
         return $this;
     }
     /**
      * Get CommentList value
-     * @return \StructType\CommentListType|null
+     * @return \traveltainment\SOAP17\StructType\CommentListType|null
      */
     public function getCommentList()
     {
@@ -73,17 +73,17 @@ class AddonFetchRS extends XmlInterfaceRS
     }
     /**
      * Set CommentList value
-     * @param \StructType\CommentListType $commentList
-     * @return \StructType\AddonFetchRS
+     * @param \traveltainment\SOAP17\StructType\CommentListType $commentList
+     * @return \traveltainment\SOAP17\StructType\AddonFetchRS
      */
-    public function setCommentList(\StructType\CommentListType $commentList = null)
+    public function setCommentList(\traveltainment\SOAP17\StructType\CommentListType $commentList = null)
     {
         $this->CommentList = $commentList;
         return $this;
     }
     /**
      * Get ParamList value
-     * @return \StructType\ExtendedKeyValueListType|null
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueListType|null
      */
     public function getParamList()
     {
@@ -91,10 +91,10 @@ class AddonFetchRS extends XmlInterfaceRS
     }
     /**
      * Set ParamList value
-     * @param \StructType\ExtendedKeyValueListType $paramList
-     * @return \StructType\AddonFetchRS
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
+     * @return \traveltainment\SOAP17\StructType\AddonFetchRS
      */
-    public function setParamList(\StructType\ExtendedKeyValueListType $paramList = null)
+    public function setParamList(\traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this->ParamList = $paramList;
         return $this;
@@ -105,7 +105,7 @@ class AddonFetchRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonFetchRS
+     * @return \traveltainment\SOAP17\StructType\AddonFetchRS
      */
     public static function __set_state(array $array)
     {

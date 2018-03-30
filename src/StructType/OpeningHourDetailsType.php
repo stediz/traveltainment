@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class OpeningHourDetailsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 7
      * - minOccurs: 7
-     * @var \StructType\OpeningHoursType[]
+     * @var \traveltainment\SOAP17\StructType\OpeningHoursType[]
      */
     public $OpeningHours;
     /**
      * Constructor method for OpeningHourDetailsType
      * @uses OpeningHourDetailsType::setOpeningHours()
-     * @param \StructType\OpeningHoursType[] $openingHours
+     * @param \traveltainment\SOAP17\StructType\OpeningHoursType[] $openingHours
      */
     public function __construct(array $openingHours = array())
     {
@@ -30,7 +30,7 @@ class OpeningHourDetailsType extends AbstractStructBase
     }
     /**
      * Get OpeningHours value
-     * @return \StructType\OpeningHoursType[]
+     * @return \traveltainment\SOAP17\StructType\OpeningHoursType[]
      */
     public function getOpeningHours()
     {
@@ -39,15 +39,15 @@ class OpeningHourDetailsType extends AbstractStructBase
     /**
      * Set OpeningHours value
      * @throws \InvalidArgumentException
-     * @param \StructType\OpeningHoursType[] $openingHours
-     * @return \StructType\OpeningHourDetailsType
+     * @param \traveltainment\SOAP17\StructType\OpeningHoursType[] $openingHours
+     * @return \traveltainment\SOAP17\StructType\OpeningHourDetailsType
      */
     public function setOpeningHours(array $openingHours = array())
     {
         foreach ($openingHours as $openingHourDetailsTypeOpeningHoursItem) {
             // validation for constraint: itemType
-            if (!$openingHourDetailsTypeOpeningHoursItem instanceof \StructType\OpeningHoursType) {
-                throw new \InvalidArgumentException(sprintf('The OpeningHours property can only contain items of \StructType\OpeningHoursType, "%s" given', is_object($openingHourDetailsTypeOpeningHoursItem) ? get_class($openingHourDetailsTypeOpeningHoursItem) : gettype($openingHourDetailsTypeOpeningHoursItem)), __LINE__);
+            if (!$openingHourDetailsTypeOpeningHoursItem instanceof \traveltainment\SOAP17\StructType\OpeningHoursType) {
+                throw new \InvalidArgumentException(sprintf('The OpeningHours property can only contain items of \traveltainment\SOAP17\StructType\OpeningHoursType, "%s" given', is_object($openingHourDetailsTypeOpeningHoursItem) ? get_class($openingHourDetailsTypeOpeningHoursItem) : gettype($openingHourDetailsTypeOpeningHoursItem)), __LINE__);
             }
         }
         $this->OpeningHours = $openingHours;
@@ -56,14 +56,14 @@ class OpeningHourDetailsType extends AbstractStructBase
     /**
      * Add item to OpeningHours value
      * @throws \InvalidArgumentException
-     * @param \StructType\OpeningHoursType $item
-     * @return \StructType\OpeningHourDetailsType
+     * @param \traveltainment\SOAP17\StructType\OpeningHoursType $item
+     * @return \traveltainment\SOAP17\StructType\OpeningHourDetailsType
      */
-    public function addToOpeningHours(\StructType\OpeningHoursType $item)
+    public function addToOpeningHours(\traveltainment\SOAP17\StructType\OpeningHoursType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OpeningHoursType) {
-            throw new \InvalidArgumentException(sprintf('The OpeningHours property can only contain items of \StructType\OpeningHoursType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\OpeningHoursType) {
+            throw new \InvalidArgumentException(sprintf('The OpeningHours property can only contain items of \traveltainment\SOAP17\StructType\OpeningHoursType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->OpeningHours[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class OpeningHourDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OpeningHourDetailsType
+     * @return \traveltainment\SOAP17\StructType\OpeningHourDetailsType
      */
     public static function __set_state(array $array)
     {

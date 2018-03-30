@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class Selection extends SelectionType
      * The ObjectIDs
      * Meta informations extracted from the WSDL
      * - nillable: false
-     * @var \StructType\ObjectIDListType
+     * @var \traveltainment\SOAP17\StructType\ObjectIDListType
      */
     public $ObjectIDs;
     /**
@@ -29,10 +29,10 @@ class Selection extends SelectionType
      * Constructor method for Selection
      * @uses Selection::setObjectIDs()
      * @uses Selection::setRegionIDs()
-     * @param \StructType\ObjectIDListType $objectIDs
+     * @param \traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs
      * @param int $regionIDs
      */
-    public function __construct(\StructType\ObjectIDListType $objectIDs = null, $regionIDs = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs = null, $regionIDs = null)
     {
         $this
             ->setObjectIDs($objectIDs)
@@ -40,7 +40,7 @@ class Selection extends SelectionType
     }
     /**
      * Get ObjectIDs value
-     * @return \StructType\ObjectIDListType|null
+     * @return \traveltainment\SOAP17\StructType\ObjectIDListType|null
      */
     public function getObjectIDs()
     {
@@ -48,10 +48,10 @@ class Selection extends SelectionType
     }
     /**
      * Set ObjectIDs value
-     * @param \StructType\ObjectIDListType $objectIDs
-     * @return \StructType\Selection
+     * @param \traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs
+     * @return \traveltainment\SOAP17\StructType\Selection
      */
-    public function setObjectIDs(\StructType\ObjectIDListType $objectIDs = null)
+    public function setObjectIDs(\traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs = null)
     {
         $this->ObjectIDs = $objectIDs;
         return $this;
@@ -67,7 +67,7 @@ class Selection extends SelectionType
     /**
      * Set RegionIDs value
      * @param int $regionIDs
-     * @return \StructType\Selection
+     * @return \traveltainment\SOAP17\StructType\Selection
      */
     public function setRegionIDs($regionIDs = null)
     {
@@ -92,7 +92,7 @@ class Selection extends SelectionType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Selection
+     * @return \traveltainment\SOAP17\StructType\Selection
      */
     public static function __set_state(array $array)
     {

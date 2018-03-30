@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class RequestType extends AbstractStructBase
     public $Version;
     /**
      * The RQ_Metadata
-     * @var \StructType\RQ_MetadataType
+     * @var \traveltainment\SOAP17\StructType\RQ_MetadataType
      */
     public $RQ_Metadata;
     /**
@@ -29,9 +29,9 @@ class RequestType extends AbstractStructBase
      * @uses RequestType::setVersion()
      * @uses RequestType::setRQ_Metadata()
      * @param float $version
-     * @param \StructType\RQ_MetadataType $rQ_Metadata
+     * @param \traveltainment\SOAP17\StructType\RQ_MetadataType $rQ_Metadata
      */
-    public function __construct($version = null, \StructType\RQ_MetadataType $rQ_Metadata = null)
+    public function __construct($version = null, \traveltainment\SOAP17\StructType\RQ_MetadataType $rQ_Metadata = null)
     {
         $this
             ->setVersion($version)
@@ -48,7 +48,7 @@ class RequestType extends AbstractStructBase
     /**
      * Set Version value
      * @param float $version
-     * @return \StructType\RequestType
+     * @return \traveltainment\SOAP17\StructType\RequestType
      */
     public function setVersion($version = null)
     {
@@ -65,7 +65,7 @@ class RequestType extends AbstractStructBase
     }
     /**
      * Get RQ_Metadata value
-     * @return \StructType\RQ_MetadataType|null
+     * @return \traveltainment\SOAP17\StructType\RQ_MetadataType|null
      */
     public function getRQ_Metadata()
     {
@@ -73,10 +73,10 @@ class RequestType extends AbstractStructBase
     }
     /**
      * Set RQ_Metadata value
-     * @param \StructType\RQ_MetadataType $rQ_Metadata
-     * @return \StructType\RequestType
+     * @param \traveltainment\SOAP17\StructType\RQ_MetadataType $rQ_Metadata
+     * @return \traveltainment\SOAP17\StructType\RequestType
      */
-    public function setRQ_Metadata(\StructType\RQ_MetadataType $rQ_Metadata = null)
+    public function setRQ_Metadata(\traveltainment\SOAP17\StructType\RQ_MetadataType $rQ_Metadata = null)
     {
         $this->RQ_Metadata = $rQ_Metadata;
         return $this;
@@ -87,7 +87,7 @@ class RequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RequestType
+     * @return \traveltainment\SOAP17\StructType\RequestType
      */
     public static function __set_state(array $array)
     {

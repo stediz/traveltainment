@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -26,12 +26,12 @@ class BookInsuranceRequestType extends AbstractStructBase
     public $OfferID;
     /**
      * The PaymentTokens
-     * @var \StructType\PaymentTokensType
+     * @var \traveltainment\SOAP17\StructType\PaymentTokensType
      */
     public $PaymentTokens;
     /**
      * The InsuranceData
-     * @var \StructType\InsuranceDataType
+     * @var \traveltainment\SOAP17\StructType\InsuranceDataType
      */
     public $InsuranceData;
     /**
@@ -42,10 +42,10 @@ class BookInsuranceRequestType extends AbstractStructBase
      * @uses BookInsuranceRequestType::setInsuranceData()
      * @param string $bookRequestID
      * @param string $offerID
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @param \StructType\InsuranceDataType $insuranceData
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @param \traveltainment\SOAP17\StructType\InsuranceDataType $insuranceData
      */
-    public function __construct($bookRequestID = null, $offerID = null, \StructType\PaymentTokensType $paymentTokens = null, \StructType\InsuranceDataType $insuranceData = null)
+    public function __construct($bookRequestID = null, $offerID = null, \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null, \traveltainment\SOAP17\StructType\InsuranceDataType $insuranceData = null)
     {
         $this
             ->setBookRequestID($bookRequestID)
@@ -64,7 +64,7 @@ class BookInsuranceRequestType extends AbstractStructBase
     /**
      * Set BookRequestID value
      * @param string $bookRequestID
-     * @return \StructType\BookInsuranceRequestType
+     * @return \traveltainment\SOAP17\StructType\BookInsuranceRequestType
      */
     public function setBookRequestID($bookRequestID = null)
     {
@@ -86,7 +86,7 @@ class BookInsuranceRequestType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\BookInsuranceRequestType
+     * @return \traveltainment\SOAP17\StructType\BookInsuranceRequestType
      */
     public function setOfferID($offerID = null)
     {
@@ -99,7 +99,7 @@ class BookInsuranceRequestType extends AbstractStructBase
     }
     /**
      * Get PaymentTokens value
-     * @return \StructType\PaymentTokensType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType|null
      */
     public function getPaymentTokens()
     {
@@ -107,17 +107,17 @@ class BookInsuranceRequestType extends AbstractStructBase
     }
     /**
      * Set PaymentTokens value
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @return \StructType\BookInsuranceRequestType
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @return \traveltainment\SOAP17\StructType\BookInsuranceRequestType
      */
-    public function setPaymentTokens(\StructType\PaymentTokensType $paymentTokens = null)
+    public function setPaymentTokens(\traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null)
     {
         $this->PaymentTokens = $paymentTokens;
         return $this;
     }
     /**
      * Get InsuranceData value
-     * @return \StructType\InsuranceDataType|null
+     * @return \traveltainment\SOAP17\StructType\InsuranceDataType|null
      */
     public function getInsuranceData()
     {
@@ -125,10 +125,10 @@ class BookInsuranceRequestType extends AbstractStructBase
     }
     /**
      * Set InsuranceData value
-     * @param \StructType\InsuranceDataType $insuranceData
-     * @return \StructType\BookInsuranceRequestType
+     * @param \traveltainment\SOAP17\StructType\InsuranceDataType $insuranceData
+     * @return \traveltainment\SOAP17\StructType\BookInsuranceRequestType
      */
-    public function setInsuranceData(\StructType\InsuranceDataType $insuranceData = null)
+    public function setInsuranceData(\traveltainment\SOAP17\StructType\InsuranceDataType $insuranceData = null)
     {
         $this->InsuranceData = $insuranceData;
         return $this;
@@ -139,7 +139,7 @@ class BookInsuranceRequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookInsuranceRequestType
+     * @return \traveltainment\SOAP17\StructType\BookInsuranceRequestType
      */
     public static function __set_state(array $array)
     {

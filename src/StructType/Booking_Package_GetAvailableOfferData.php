@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_Package_GetAvailableOfferData extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetAvailableOfferDataRQType
+     * @var \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType
      */
     public $request;
     /**
      * Constructor method for Booking_Package_GetAvailableOfferData
      * @uses Booking_Package_GetAvailableOfferData::setRequest()
-     * @param \StructType\GetAvailableOfferDataRQType $request
+     * @param \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType $request
      */
-    public function __construct(\StructType\GetAvailableOfferDataRQType $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetAvailableOfferDataRQType|null
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Booking_Package_GetAvailableOfferData extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetAvailableOfferDataRQType $request
-     * @return \StructType\Booking_Package_GetAvailableOfferData
+     * @param \traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType $request
+     * @return \traveltainment\SOAP17\StructType\Booking_Package_GetAvailableOfferData
      */
-    public function setRequest(\StructType\GetAvailableOfferDataRQType $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\GetAvailableOfferDataRQType $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Booking_Package_GetAvailableOfferData extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_Package_GetAvailableOfferData
+     * @return \traveltainment\SOAP17\StructType\Booking_Package_GetAvailableOfferData
      */
     public static function __set_state(array $array)
     {

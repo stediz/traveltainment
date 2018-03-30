@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_CrossSelling_ParkingDetails extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetParkingDetailsRQType
+     * @var \traveltainment\SOAP17\StructType\GetParkingDetailsRQType
      */
     public $request;
     /**
      * Constructor method for Search_CrossSelling_ParkingDetails
      * @uses Search_CrossSelling_ParkingDetails::setRequest()
-     * @param \StructType\GetParkingDetailsRQType $request
+     * @param \traveltainment\SOAP17\StructType\GetParkingDetailsRQType $request
      */
-    public function __construct(\StructType\GetParkingDetailsRQType $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetParkingDetailsRQType $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetParkingDetailsRQType|null
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRQType|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_CrossSelling_ParkingDetails extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetParkingDetailsRQType $request
-     * @return \StructType\Search_CrossSelling_ParkingDetails
+     * @param \traveltainment\SOAP17\StructType\GetParkingDetailsRQType $request
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_ParkingDetails
      */
-    public function setRequest(\StructType\GetParkingDetailsRQType $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\GetParkingDetailsRQType $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_CrossSelling_ParkingDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_CrossSelling_ParkingDetails
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_ParkingDetails
      */
     public static function __set_state(array $array)
     {

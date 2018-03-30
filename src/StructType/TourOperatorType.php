@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -66,7 +66,7 @@ class TourOperatorType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\TourOperatorType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public function setCode($code = null)
     {
@@ -88,7 +88,7 @@ class TourOperatorType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\TourOperatorType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public function setName($name = null)
     {
@@ -110,7 +110,7 @@ class TourOperatorType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \StructType\TourOperatorType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public function setDescription($description = null)
     {
@@ -132,7 +132,7 @@ class TourOperatorType extends AbstractStructBase
     /**
      * Set LogoURL value
      * @param string $logoURL
-     * @return \StructType\TourOperatorType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public function setLogoURL($logoURL = null)
     {
@@ -149,7 +149,7 @@ class TourOperatorType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TourOperatorType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public static function __set_state(array $array)
     {

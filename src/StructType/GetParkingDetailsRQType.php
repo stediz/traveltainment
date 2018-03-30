@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class GetParkingDetailsRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetParkingDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -66,7 +66,7 @@ class GetParkingDetailsRQType extends RequestType
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\GetParkingDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRQType
      */
     public function setOfferID($offerID = null)
     {
@@ -83,7 +83,7 @@ class GetParkingDetailsRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetParkingDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRQType
      */
     public static function __set_state(array $array)
     {

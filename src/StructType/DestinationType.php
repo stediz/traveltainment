@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class DestinationType extends AbstractStructBase
 {
     /**
      * The CountryName
-     * @var \StructType\CountryNameInfoType
+     * @var \traveltainment\SOAP17\StructType\CountryNameInfoType
      */
     public $CountryName;
     /**
@@ -30,11 +30,11 @@ class DestinationType extends AbstractStructBase
      * @uses DestinationType::setCountryName()
      * @uses DestinationType::setDepartureDate()
      * @uses DestinationType::setArrivalDate()
-     * @param \StructType\CountryNameInfoType $countryName
+     * @param \traveltainment\SOAP17\StructType\CountryNameInfoType $countryName
      * @param string $departureDate
      * @param string $arrivalDate
      */
-    public function __construct(\StructType\CountryNameInfoType $countryName = null, $departureDate = null, $arrivalDate = null)
+    public function __construct(\traveltainment\SOAP17\StructType\CountryNameInfoType $countryName = null, $departureDate = null, $arrivalDate = null)
     {
         $this
             ->setCountryName($countryName)
@@ -43,7 +43,7 @@ class DestinationType extends AbstractStructBase
     }
     /**
      * Get CountryName value
-     * @return \StructType\CountryNameInfoType|null
+     * @return \traveltainment\SOAP17\StructType\CountryNameInfoType|null
      */
     public function getCountryName()
     {
@@ -51,10 +51,10 @@ class DestinationType extends AbstractStructBase
     }
     /**
      * Set CountryName value
-     * @param \StructType\CountryNameInfoType $countryName
-     * @return \StructType\DestinationType
+     * @param \traveltainment\SOAP17\StructType\CountryNameInfoType $countryName
+     * @return \traveltainment\SOAP17\StructType\DestinationType
      */
-    public function setCountryName(\StructType\CountryNameInfoType $countryName = null)
+    public function setCountryName(\traveltainment\SOAP17\StructType\CountryNameInfoType $countryName = null)
     {
         $this->CountryName = $countryName;
         return $this;
@@ -70,7 +70,7 @@ class DestinationType extends AbstractStructBase
     /**
      * Set DepartureDate value
      * @param string $departureDate
-     * @return \StructType\DestinationType
+     * @return \traveltainment\SOAP17\StructType\DestinationType
      */
     public function setDepartureDate($departureDate = null)
     {
@@ -92,7 +92,7 @@ class DestinationType extends AbstractStructBase
     /**
      * Set ArrivalDate value
      * @param string $arrivalDate
-     * @return \StructType\DestinationType
+     * @return \traveltainment\SOAP17\StructType\DestinationType
      */
     public function setArrivalDate($arrivalDate = null)
     {
@@ -109,7 +109,7 @@ class DestinationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DestinationType
+     * @return \traveltainment\SOAP17\StructType\DestinationType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -81,7 +81,7 @@ class PersonNameType extends AbstractStructBase
     /**
      * Set FirstName value
      * @param string $firstName
-     * @return \StructType\PersonNameType
+     * @return \traveltainment\SOAP17\StructType\PersonNameType
      */
     public function setFirstName($firstName = null)
     {
@@ -103,7 +103,7 @@ class PersonNameType extends AbstractStructBase
     /**
      * Set MiddleName value
      * @param string $middleName
-     * @return \StructType\PersonNameType
+     * @return \traveltainment\SOAP17\StructType\PersonNameType
      */
     public function setMiddleName($middleName = null)
     {
@@ -125,7 +125,7 @@ class PersonNameType extends AbstractStructBase
     /**
      * Set LastName value
      * @param string $lastName
-     * @return \StructType\PersonNameType
+     * @return \traveltainment\SOAP17\StructType\PersonNameType
      */
     public function setLastName($lastName = null)
     {
@@ -147,7 +147,7 @@ class PersonNameType extends AbstractStructBase
     /**
      * Set Title value
      * @param string $title
-     * @return \StructType\PersonNameType
+     * @return \traveltainment\SOAP17\StructType\PersonNameType
      */
     public function setTitle($title = null)
     {
@@ -169,7 +169,7 @@ class PersonNameType extends AbstractStructBase
     /**
      * Set Salutation value
      * @param string $salutation
-     * @return \StructType\PersonNameType
+     * @return \traveltainment\SOAP17\StructType\PersonNameType
      */
     public function setSalutation($salutation = null)
     {
@@ -186,7 +186,7 @@ class PersonNameType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PersonNameType
+     * @return \traveltainment\SOAP17\StructType\PersonNameType
      */
     public static function __set_state(array $array)
     {

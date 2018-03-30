@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -8,7 +8,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for ShoppingCartListSortingType StructType
  * @subpackage Structs
  */
-class ShoppingCartListSortingType extends \EnumType\ShoppingCartSortCriteriaEnum
+class ShoppingCartListSortingType extends \traveltainment\SOAP17\EnumType\ShoppingCartSortCriteriaEnum
 {
     /**
      * The _
@@ -43,17 +43,17 @@ class ShoppingCartListSortingType extends \EnumType\ShoppingCartSortCriteriaEnum
     }
     /**
      * Set _ value
-     * @uses \EnumType\ShoppingCartSortCriteriaEnum::valueIsValid()
-     * @uses \EnumType\ShoppingCartSortCriteriaEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ShoppingCartSortCriteriaEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ShoppingCartSortCriteriaEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\ShoppingCartListSortingType
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListSortingType
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ShoppingCartSortCriteriaEnum::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \EnumType\ShoppingCartSortCriteriaEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ShoppingCartSortCriteriaEnum::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \traveltainment\SOAP17\EnumType\ShoppingCartSortCriteriaEnum::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -68,17 +68,17 @@ class ShoppingCartListSortingType extends \EnumType\ShoppingCartSortCriteriaEnum
     }
     /**
      * Set Direction value
-     * @uses \EnumType\SortDirectionEnum::valueIsValid()
-     * @uses \EnumType\SortDirectionEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\SortDirectionEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\SortDirectionEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $direction
-     * @return \StructType\ShoppingCartListSortingType
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListSortingType
      */
     public function setDirection($direction = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\SortDirectionEnum::valueIsValid($direction)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $direction, implode(', ', \EnumType\SortDirectionEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\SortDirectionEnum::valueIsValid($direction)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $direction, implode(', ', \traveltainment\SOAP17\EnumType\SortDirectionEnum::getValidValues())), __LINE__);
         }
         $this->Direction = $direction;
         return $this;
@@ -89,7 +89,7 @@ class ShoppingCartListSortingType extends \EnumType\ShoppingCartSortCriteriaEnum
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ShoppingCartListSortingType
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListSortingType
      */
     public static function __set_state(array $array)
     {

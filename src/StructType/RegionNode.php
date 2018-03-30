@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class RegionNode extends AbstractStructBase
      * The SubRegions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionNodeList
+     * @var \traveltainment\SOAP17\StructType\RegionNodeList
      */
     public $SubRegions;
     /**
@@ -34,9 +34,9 @@ class RegionNode extends AbstractStructBase
      * @uses RegionNode::setSubRegions()
      * @param int $iD
      * @param string $regionName
-     * @param \StructType\RegionNodeList $subRegions
+     * @param \traveltainment\SOAP17\StructType\RegionNodeList $subRegions
      */
-    public function __construct($iD = null, $regionName = null, \StructType\RegionNodeList $subRegions = null)
+    public function __construct($iD = null, $regionName = null, \traveltainment\SOAP17\StructType\RegionNodeList $subRegions = null)
     {
         $this
             ->setID($iD)
@@ -54,7 +54,7 @@ class RegionNode extends AbstractStructBase
     /**
      * Set ID value
      * @param int $iD
-     * @return \StructType\RegionNode
+     * @return \traveltainment\SOAP17\StructType\RegionNode
      */
     public function setID($iD = null)
     {
@@ -76,7 +76,7 @@ class RegionNode extends AbstractStructBase
     /**
      * Set RegionName value
      * @param string $regionName
-     * @return \StructType\RegionNode
+     * @return \traveltainment\SOAP17\StructType\RegionNode
      */
     public function setRegionName($regionName = null)
     {
@@ -89,7 +89,7 @@ class RegionNode extends AbstractStructBase
     }
     /**
      * Get SubRegions value
-     * @return \StructType\RegionNodeList|null
+     * @return \traveltainment\SOAP17\StructType\RegionNodeList|null
      */
     public function getSubRegions()
     {
@@ -97,10 +97,10 @@ class RegionNode extends AbstractStructBase
     }
     /**
      * Set SubRegions value
-     * @param \StructType\RegionNodeList $subRegions
-     * @return \StructType\RegionNode
+     * @param \traveltainment\SOAP17\StructType\RegionNodeList $subRegions
+     * @return \traveltainment\SOAP17\StructType\RegionNode
      */
-    public function setSubRegions(\StructType\RegionNodeList $subRegions = null)
+    public function setSubRegions(\traveltainment\SOAP17\StructType\RegionNodeList $subRegions = null)
     {
         $this->SubRegions = $subRegions;
         return $this;
@@ -111,7 +111,7 @@ class RegionNode extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionNode
+     * @return \traveltainment\SOAP17\StructType\RegionNode
      */
     public static function __set_state(array $array)
     {

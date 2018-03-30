@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,14 +31,14 @@ class AddonInsertType extends AbstractStructBase
     public $CreationDate;
     /**
      * The Locale
-     * @var \StructType\OriginType
+     * @var \traveltainment\SOAP17\StructType\OriginType
      */
     public $Locale;
     /**
      * The MiscInfos
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddonMiscInfoType
+     * @var \traveltainment\SOAP17\StructType\AddonMiscInfoType
      */
     public $MiscInfos;
     /**
@@ -57,11 +57,11 @@ class AddonInsertType extends AbstractStructBase
      * @param string $addonType
      * @param string $shoppingCartId
      * @param string $creationDate
-     * @param \StructType\OriginType $locale
-     * @param \StructType\AddonMiscInfoType $miscInfos
+     * @param \traveltainment\SOAP17\StructType\OriginType $locale
+     * @param \traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos
      * @param string $uID
      */
-    public function __construct($addonType = null, $shoppingCartId = null, $creationDate = null, \StructType\OriginType $locale = null, \StructType\AddonMiscInfoType $miscInfos = null, $uID = null)
+    public function __construct($addonType = null, $shoppingCartId = null, $creationDate = null, \traveltainment\SOAP17\StructType\OriginType $locale = null, \traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos = null, $uID = null)
     {
         $this
             ->setAddonType($addonType)
@@ -81,17 +81,17 @@ class AddonInsertType extends AbstractStructBase
     }
     /**
      * Set AddonType value
-     * @uses \EnumType\AddonCategoryType::valueIsValid()
-     * @uses \EnumType\AddonCategoryType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\AddonCategoryType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\AddonCategoryType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $addonType
-     * @return \StructType\AddonInsertType
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType
      */
     public function setAddonType($addonType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AddonCategoryType::valueIsValid($addonType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addonType, implode(', ', \EnumType\AddonCategoryType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\AddonCategoryType::valueIsValid($addonType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addonType, implode(', ', \traveltainment\SOAP17\EnumType\AddonCategoryType::getValidValues())), __LINE__);
         }
         $this->AddonType = $addonType;
         return $this;
@@ -107,7 +107,7 @@ class AddonInsertType extends AbstractStructBase
     /**
      * Set ShoppingCartId value
      * @param string $shoppingCartId
-     * @return \StructType\AddonInsertType
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType
      */
     public function setShoppingCartId($shoppingCartId = null)
     {
@@ -133,7 +133,7 @@ class AddonInsertType extends AbstractStructBase
     /**
      * Set CreationDate value
      * @param string $creationDate
-     * @return \StructType\AddonInsertType
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType
      */
     public function setCreationDate($creationDate = null)
     {
@@ -146,7 +146,7 @@ class AddonInsertType extends AbstractStructBase
     }
     /**
      * Get Locale value
-     * @return \StructType\OriginType|null
+     * @return \traveltainment\SOAP17\StructType\OriginType|null
      */
     public function getLocale()
     {
@@ -154,17 +154,17 @@ class AddonInsertType extends AbstractStructBase
     }
     /**
      * Set Locale value
-     * @param \StructType\OriginType $locale
-     * @return \StructType\AddonInsertType
+     * @param \traveltainment\SOAP17\StructType\OriginType $locale
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType
      */
-    public function setLocale(\StructType\OriginType $locale = null)
+    public function setLocale(\traveltainment\SOAP17\StructType\OriginType $locale = null)
     {
         $this->Locale = $locale;
         return $this;
     }
     /**
      * Get MiscInfos value
-     * @return \StructType\AddonMiscInfoType|null
+     * @return \traveltainment\SOAP17\StructType\AddonMiscInfoType|null
      */
     public function getMiscInfos()
     {
@@ -172,10 +172,10 @@ class AddonInsertType extends AbstractStructBase
     }
     /**
      * Set MiscInfos value
-     * @param \StructType\AddonMiscInfoType $miscInfos
-     * @return \StructType\AddonInsertType
+     * @param \traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType
      */
-    public function setMiscInfos(\StructType\AddonMiscInfoType $miscInfos = null)
+    public function setMiscInfos(\traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos = null)
     {
         $this->MiscInfos = $miscInfos;
         return $this;
@@ -191,7 +191,7 @@ class AddonInsertType extends AbstractStructBase
     /**
      * Set UID value
      * @param string $uID
-     * @return \StructType\AddonInsertType
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType
      */
     public function setUID($uID = null)
     {
@@ -208,7 +208,7 @@ class AddonInsertType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonInsertType
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType
      */
     public static function __set_state(array $array)
     {

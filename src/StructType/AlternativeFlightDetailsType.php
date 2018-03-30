@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class AlternativeFlightDetailsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * @var \StructType\FlightDetailsType
+     * @var \traveltainment\SOAP17\StructType\FlightDetailsType
      */
     public $Details;
     /**
      * Constructor method for AlternativeFlightDetailsType
      * @uses AlternativeFlightDetailsType::setDetails()
-     * @param \StructType\FlightDetailsType $details
+     * @param \traveltainment\SOAP17\StructType\FlightDetailsType $details
      */
-    public function __construct(\StructType\FlightDetailsType $details = null)
+    public function __construct(\traveltainment\SOAP17\StructType\FlightDetailsType $details = null)
     {
         $this
             ->setDetails($details);
     }
     /**
      * Get Details value
-     * @return \StructType\FlightDetailsType
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
     public function getDetails()
     {
@@ -38,10 +38,10 @@ class AlternativeFlightDetailsType extends AbstractStructBase
     }
     /**
      * Set Details value
-     * @param \StructType\FlightDetailsType $details
-     * @return \StructType\AlternativeFlightDetailsType
+     * @param \traveltainment\SOAP17\StructType\FlightDetailsType $details
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
-    public function setDetails(\StructType\FlightDetailsType $details = null)
+    public function setDetails(\traveltainment\SOAP17\StructType\FlightDetailsType $details = null)
     {
         $this->Details = $details;
         return $this;
@@ -52,7 +52,7 @@ class AlternativeFlightDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AlternativeFlightDetailsType
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
     public static function __set_state(array $array)
     {

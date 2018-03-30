@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,24 +12,24 @@ class GetParkingTeaserRSType extends ResponseType
 {
     /**
      * The Errors
-     * @var \StructType\ErrorsType
+     * @var \traveltainment\SOAP17\StructType\ErrorsType
      */
     public $Errors;
     /**
      * The Offer
-     * @var \StructType\ParkingOfferType
+     * @var \traveltainment\SOAP17\StructType\ParkingOfferType
      */
     public $Offer;
     /**
      * The ProviderDetails
-     * @var \StructType\ProviderDetailsType
+     * @var \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
     public $ProviderDetails;
     /**
      * The ParkingDetails
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ParkingDetailsType
+     * @var \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public $ParkingDetails;
     /**
@@ -38,12 +38,12 @@ class GetParkingTeaserRSType extends ResponseType
      * @uses GetParkingTeaserRSType::setOffer()
      * @uses GetParkingTeaserRSType::setProviderDetails()
      * @uses GetParkingTeaserRSType::setParkingDetails()
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\ParkingOfferType $offer
-     * @param \StructType\ProviderDetailsType $providerDetails
-     * @param \StructType\ParkingDetailsType $parkingDetails
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @param \traveltainment\SOAP17\StructType\ParkingOfferType $offer
+     * @param \traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails
+     * @param \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails
      */
-    public function __construct(\StructType\ErrorsType $errors = null, \StructType\ParkingOfferType $offer = null, \StructType\ProviderDetailsType $providerDetails = null, \StructType\ParkingDetailsType $parkingDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ErrorsType $errors = null, \traveltainment\SOAP17\StructType\ParkingOfferType $offer = null, \traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails = null, \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails = null)
     {
         $this
             ->setErrors($errors)
@@ -53,7 +53,7 @@ class GetParkingTeaserRSType extends ResponseType
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -61,17 +61,17 @@ class GetParkingTeaserRSType extends ResponseType
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\GetParkingTeaserRSType
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRSType
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\traveltainment\SOAP17\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\ParkingOfferType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType|null
      */
     public function getOffer()
     {
@@ -79,17 +79,17 @@ class GetParkingTeaserRSType extends ResponseType
     }
     /**
      * Set Offer value
-     * @param \StructType\ParkingOfferType $offer
-     * @return \StructType\GetParkingTeaserRSType
+     * @param \traveltainment\SOAP17\StructType\ParkingOfferType $offer
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRSType
      */
-    public function setOffer(\StructType\ParkingOfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\ParkingOfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
     }
     /**
      * Get ProviderDetails value
-     * @return \StructType\ProviderDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType|null
      */
     public function getProviderDetails()
     {
@@ -97,17 +97,17 @@ class GetParkingTeaserRSType extends ResponseType
     }
     /**
      * Set ProviderDetails value
-     * @param \StructType\ProviderDetailsType $providerDetails
-     * @return \StructType\GetParkingTeaserRSType
+     * @param \traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRSType
      */
-    public function setProviderDetails(\StructType\ProviderDetailsType $providerDetails = null)
+    public function setProviderDetails(\traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails = null)
     {
         $this->ProviderDetails = $providerDetails;
         return $this;
     }
     /**
      * Get ParkingDetails value
-     * @return \StructType\ParkingDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType|null
      */
     public function getParkingDetails()
     {
@@ -115,10 +115,10 @@ class GetParkingTeaserRSType extends ResponseType
     }
     /**
      * Set ParkingDetails value
-     * @param \StructType\ParkingDetailsType $parkingDetails
-     * @return \StructType\GetParkingTeaserRSType
+     * @param \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRSType
      */
-    public function setParkingDetails(\StructType\ParkingDetailsType $parkingDetails = null)
+    public function setParkingDetails(\traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails = null)
     {
         $this->ParkingDetails = $parkingDetails;
         return $this;
@@ -129,7 +129,7 @@ class GetParkingTeaserRSType extends ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetParkingTeaserRSType
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRSType
      */
     public static function __set_state(array $array)
     {

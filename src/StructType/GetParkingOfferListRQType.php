@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class GetParkingOfferListRQType extends RequestType
      * The ParkingDateTimes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ParkingDateTimesType
+     * @var \traveltainment\SOAP17\StructType\ParkingDateTimesType
      */
     public $ParkingDateTimes;
     /**
@@ -42,10 +42,10 @@ class GetParkingOfferListRQType extends RequestType
      * @uses GetParkingOfferListRQType::setAdditionalCurrencies()
      * @param string $sessionID
      * @param string $providerID
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
      * @param string $additionalCurrencies
      */
-    public function __construct($sessionID = null, $providerID = null, \StructType\ParkingDateTimesType $parkingDateTimes = null, $additionalCurrencies = null)
+    public function __construct($sessionID = null, $providerID = null, \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null, $additionalCurrencies = null)
     {
         $this
             ->setSessionID($sessionID)
@@ -64,7 +64,7 @@ class GetParkingOfferListRQType extends RequestType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\GetParkingOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingOfferListRQType
      */
     public function setSessionID($sessionID = null)
     {
@@ -86,7 +86,7 @@ class GetParkingOfferListRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetParkingOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingOfferListRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -99,7 +99,7 @@ class GetParkingOfferListRQType extends RequestType
     }
     /**
      * Get ParkingDateTimes value
-     * @return \StructType\ParkingDateTimesType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDateTimesType|null
      */
     public function getParkingDateTimes()
     {
@@ -107,10 +107,10 @@ class GetParkingOfferListRQType extends RequestType
     }
     /**
      * Set ParkingDateTimes value
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
-     * @return \StructType\GetParkingOfferListRQType
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
+     * @return \traveltainment\SOAP17\StructType\GetParkingOfferListRQType
      */
-    public function setParkingDateTimes(\StructType\ParkingDateTimesType $parkingDateTimes = null)
+    public function setParkingDateTimes(\traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null)
     {
         $this->ParkingDateTimes = $parkingDateTimes;
         return $this;
@@ -126,7 +126,7 @@ class GetParkingOfferListRQType extends RequestType
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\GetParkingOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingOfferListRQType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -143,7 +143,7 @@ class GetParkingOfferListRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetParkingOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingOfferListRQType
      */
     public static function __set_state(array $array)
     {

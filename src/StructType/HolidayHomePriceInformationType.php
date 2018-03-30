@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,24 +14,24 @@ class HolidayHomePriceInformationType extends AbstractStructBase
      * The TotalPrice
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceType
+     * @var \traveltainment\SOAP17\StructType\PriceType
      */
     public $TotalPrice;
     /**
      * The ConvertedTotalPriceList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ConvertedTotalPriceListType
+     * @var \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType
      */
     public $ConvertedTotalPriceList;
     /**
      * Constructor method for HolidayHomePriceInformationType
      * @uses HolidayHomePriceInformationType::setTotalPrice()
      * @uses HolidayHomePriceInformationType::setConvertedTotalPriceList()
-     * @param \StructType\PriceType $totalPrice
-     * @param \StructType\ConvertedTotalPriceListType $convertedTotalPriceList
+     * @param \traveltainment\SOAP17\StructType\PriceType $totalPrice
+     * @param \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList
      */
-    public function __construct(\StructType\PriceType $totalPrice = null, \StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\PriceType $totalPrice = null, \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null)
     {
         $this
             ->setTotalPrice($totalPrice)
@@ -39,7 +39,7 @@ class HolidayHomePriceInformationType extends AbstractStructBase
     }
     /**
      * Get TotalPrice value
-     * @return \StructType\PriceType|null
+     * @return \traveltainment\SOAP17\StructType\PriceType|null
      */
     public function getTotalPrice()
     {
@@ -47,17 +47,17 @@ class HolidayHomePriceInformationType extends AbstractStructBase
     }
     /**
      * Set TotalPrice value
-     * @param \StructType\PriceType $totalPrice
-     * @return \StructType\HolidayHomePriceInformationType
+     * @param \traveltainment\SOAP17\StructType\PriceType $totalPrice
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType
      */
-    public function setTotalPrice(\StructType\PriceType $totalPrice = null)
+    public function setTotalPrice(\traveltainment\SOAP17\StructType\PriceType $totalPrice = null)
     {
         $this->TotalPrice = $totalPrice;
         return $this;
     }
     /**
      * Get ConvertedTotalPriceList value
-     * @return \StructType\ConvertedTotalPriceListType|null
+     * @return \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType|null
      */
     public function getConvertedTotalPriceList()
     {
@@ -65,10 +65,10 @@ class HolidayHomePriceInformationType extends AbstractStructBase
     }
     /**
      * Set ConvertedTotalPriceList value
-     * @param \StructType\ConvertedTotalPriceListType $convertedTotalPriceList
-     * @return \StructType\HolidayHomePriceInformationType
+     * @param \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType
      */
-    public function setConvertedTotalPriceList(\StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null)
+    public function setConvertedTotalPriceList(\traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null)
     {
         $this->ConvertedTotalPriceList = $convertedTotalPriceList;
         return $this;
@@ -79,7 +79,7 @@ class HolidayHomePriceInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomePriceInformationType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType
      */
     public static function __set_state(array $array)
     {

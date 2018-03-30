@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -41,17 +41,17 @@ class BookShoppingCartRQType extends RequestType
     public $TravellersCount;
     /**
      * The Travellers
-     * @var \StructType\TravellersType
+     * @var \traveltainment\SOAP17\StructType\TravellersType
      */
     public $Travellers;
     /**
      * The Customer
-     * @var \StructType\CustomerType
+     * @var \traveltainment\SOAP17\StructType\CustomerType
      */
     public $Customer;
     /**
      * The BookRequests
-     * @var \StructType\BookRequestsType
+     * @var \traveltainment\SOAP17\StructType\BookRequestsType
      */
     public $BookRequests;
     /**
@@ -67,11 +67,11 @@ class BookShoppingCartRQType extends RequestType
      * @param string $cID
      * @param string $sessionID
      * @param int $travellersCount
-     * @param \StructType\TravellersType $travellers
-     * @param \StructType\CustomerType $customer
-     * @param \StructType\BookRequestsType $bookRequests
+     * @param \traveltainment\SOAP17\StructType\TravellersType $travellers
+     * @param \traveltainment\SOAP17\StructType\CustomerType $customer
+     * @param \traveltainment\SOAP17\StructType\BookRequestsType $bookRequests
      */
-    public function __construct($clientIP = null, $cID = null, $sessionID = null, $travellersCount = null, \StructType\TravellersType $travellers = null, \StructType\CustomerType $customer = null, \StructType\BookRequestsType $bookRequests = null)
+    public function __construct($clientIP = null, $cID = null, $sessionID = null, $travellersCount = null, \traveltainment\SOAP17\StructType\TravellersType $travellers = null, \traveltainment\SOAP17\StructType\CustomerType $customer = null, \traveltainment\SOAP17\StructType\BookRequestsType $bookRequests = null)
     {
         $this
             ->setClientIP($clientIP)
@@ -93,7 +93,7 @@ class BookShoppingCartRQType extends RequestType
     /**
      * Set ClientIP value
      * @param string $clientIP
-     * @return \StructType\BookShoppingCartRQType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
     public function setClientIP($clientIP = null)
     {
@@ -119,7 +119,7 @@ class BookShoppingCartRQType extends RequestType
     /**
      * Set CID value
      * @param string $cID
-     * @return \StructType\BookShoppingCartRQType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
     public function setCID($cID = null)
     {
@@ -141,7 +141,7 @@ class BookShoppingCartRQType extends RequestType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\BookShoppingCartRQType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
     public function setSessionID($sessionID = null)
     {
@@ -163,7 +163,7 @@ class BookShoppingCartRQType extends RequestType
     /**
      * Set TravellersCount value
      * @param int $travellersCount
-     * @return \StructType\BookShoppingCartRQType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
     public function setTravellersCount($travellersCount = null)
     {
@@ -180,7 +180,7 @@ class BookShoppingCartRQType extends RequestType
     }
     /**
      * Get Travellers value
-     * @return \StructType\TravellersType|null
+     * @return \traveltainment\SOAP17\StructType\TravellersType|null
      */
     public function getTravellers()
     {
@@ -188,17 +188,17 @@ class BookShoppingCartRQType extends RequestType
     }
     /**
      * Set Travellers value
-     * @param \StructType\TravellersType $travellers
-     * @return \StructType\BookShoppingCartRQType
+     * @param \traveltainment\SOAP17\StructType\TravellersType $travellers
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
-    public function setTravellers(\StructType\TravellersType $travellers = null)
+    public function setTravellers(\traveltainment\SOAP17\StructType\TravellersType $travellers = null)
     {
         $this->Travellers = $travellers;
         return $this;
     }
     /**
      * Get Customer value
-     * @return \StructType\CustomerType|null
+     * @return \traveltainment\SOAP17\StructType\CustomerType|null
      */
     public function getCustomer()
     {
@@ -206,17 +206,17 @@ class BookShoppingCartRQType extends RequestType
     }
     /**
      * Set Customer value
-     * @param \StructType\CustomerType $customer
-     * @return \StructType\BookShoppingCartRQType
+     * @param \traveltainment\SOAP17\StructType\CustomerType $customer
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
-    public function setCustomer(\StructType\CustomerType $customer = null)
+    public function setCustomer(\traveltainment\SOAP17\StructType\CustomerType $customer = null)
     {
         $this->Customer = $customer;
         return $this;
     }
     /**
      * Get BookRequests value
-     * @return \StructType\BookRequestsType|null
+     * @return \traveltainment\SOAP17\StructType\BookRequestsType|null
      */
     public function getBookRequests()
     {
@@ -224,10 +224,10 @@ class BookShoppingCartRQType extends RequestType
     }
     /**
      * Set BookRequests value
-     * @param \StructType\BookRequestsType $bookRequests
-     * @return \StructType\BookShoppingCartRQType
+     * @param \traveltainment\SOAP17\StructType\BookRequestsType $bookRequests
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
-    public function setBookRequests(\StructType\BookRequestsType $bookRequests = null)
+    public function setBookRequests(\traveltainment\SOAP17\StructType\BookRequestsType $bookRequests = null)
     {
         $this->BookRequests = $bookRequests;
         return $this;
@@ -238,7 +238,7 @@ class BookShoppingCartRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookShoppingCartRQType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRQType
      */
     public static function __set_state(array $array)
     {

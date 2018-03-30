@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,12 +29,12 @@ class GetCarRentalOfferListRQType extends RequestType
     public $AvailabilityStatus;
     /**
      * The Pickup
-     * @var \StructType\CarRentalEventType
+     * @var \traveltainment\SOAP17\StructType\CarRentalEventType
      */
     public $Pickup;
     /**
      * The Return
-     * @var \StructType\CarRentalEventType
+     * @var \traveltainment\SOAP17\StructType\CarRentalEventType
      */
     public $Return;
     /**
@@ -63,12 +63,12 @@ class GetCarRentalOfferListRQType extends RequestType
      * @param string $providerID
      * @param VehicleClassEnum $vehicleClasses
      * @param string $availabilityStatus
-     * @param \StructType\CarRentalEventType $pickup
-     * @param \StructType\CarRentalEventType $return
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventType $pickup
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventType $return
      * @param int $maxOffers
      * @param string $additionalCurrencies
      */
-    public function __construct($providerID = null, VehicleClassEnum $vehicleClasses = null, $availabilityStatus = null, \StructType\CarRentalEventType $pickup = null, \StructType\CarRentalEventType $return = null, $maxOffers = null, $additionalCurrencies = null)
+    public function __construct($providerID = null, VehicleClassEnum $vehicleClasses = null, $availabilityStatus = null, \traveltainment\SOAP17\StructType\CarRentalEventType $pickup = null, \traveltainment\SOAP17\StructType\CarRentalEventType $return = null, $maxOffers = null, $additionalCurrencies = null)
     {
         $this
             ->setProviderID($providerID)
@@ -90,7 +90,7 @@ class GetCarRentalOfferListRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -112,7 +112,7 @@ class GetCarRentalOfferListRQType extends RequestType
     /**
      * Set VehicleClasses value
      * @param VehicleClassEnum $vehicleClasses
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
     public function setVehicleClasses(VehicleClassEnum $vehicleClasses = null)
     {
@@ -129,24 +129,24 @@ class GetCarRentalOfferListRQType extends RequestType
     }
     /**
      * Set AvailabilityStatus value
-     * @uses \EnumType\OTA_InventoryStatusEnum::valueIsValid()
-     * @uses \EnumType\OTA_InventoryStatusEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $availabilityStatus
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
     public function setAvailabilityStatus($availabilityStatus = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OTA_InventoryStatusEnum::valueIsValid($availabilityStatus)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $availabilityStatus, implode(', ', \EnumType\OTA_InventoryStatusEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::valueIsValid($availabilityStatus)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $availabilityStatus, implode(', ', \traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::getValidValues())), __LINE__);
         }
         $this->AvailabilityStatus = $availabilityStatus;
         return $this;
     }
     /**
      * Get Pickup value
-     * @return \StructType\CarRentalEventType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventType|null
      */
     public function getPickup()
     {
@@ -154,17 +154,17 @@ class GetCarRentalOfferListRQType extends RequestType
     }
     /**
      * Set Pickup value
-     * @param \StructType\CarRentalEventType $pickup
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventType $pickup
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
-    public function setPickup(\StructType\CarRentalEventType $pickup = null)
+    public function setPickup(\traveltainment\SOAP17\StructType\CarRentalEventType $pickup = null)
     {
         $this->Pickup = $pickup;
         return $this;
     }
     /**
      * Get Return value
-     * @return \StructType\CarRentalEventType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventType|null
      */
     public function getReturn()
     {
@@ -172,10 +172,10 @@ class GetCarRentalOfferListRQType extends RequestType
     }
     /**
      * Set Return value
-     * @param \StructType\CarRentalEventType $return
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventType $return
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
-    public function setReturn(\StructType\CarRentalEventType $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\CarRentalEventType $return = null)
     {
         $this->Return = $return;
         return $this;
@@ -191,7 +191,7 @@ class GetCarRentalOfferListRQType extends RequestType
     /**
      * Set MaxOffers value
      * @param int $maxOffers
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
     public function setMaxOffers($maxOffers = null)
     {
@@ -213,7 +213,7 @@ class GetCarRentalOfferListRQType extends RequestType
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -230,7 +230,7 @@ class GetCarRentalOfferListRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetCarRentalOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferListRQType
      */
     public static function __set_state(array $array)
     {

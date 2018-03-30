@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,24 +14,24 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
      * The Hotel
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelType
+     * @var \traveltainment\SOAP17\StructType\HotelType
      */
     public $Hotel;
     /**
      * The OfferGridSummary
-     * @var \StructType\OffersSummaryType
+     * @var \traveltainment\SOAP17\StructType\OffersSummaryType
      */
     public $OfferGridSummary;
     /**
      * The OfferGrid
-     * @var \StructType\OfferGridType
+     * @var \traveltainment\SOAP17\StructType\OfferGridType
      */
     public $OfferGrid;
     /**
@@ -40,12 +40,12 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
      * @uses SearchEngineOfferGridRS::setHotel()
      * @uses SearchEngineOfferGridRS::setOfferGridSummary()
      * @uses SearchEngineOfferGridRS::setOfferGrid()
-     * @param \StructType\RegionType $region
-     * @param \StructType\HotelType $hotel
-     * @param \StructType\OffersSummaryType $offerGridSummary
-     * @param \StructType\OfferGridType $offerGrid
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @param \traveltainment\SOAP17\StructType\OffersSummaryType $offerGridSummary
+     * @param \traveltainment\SOAP17\StructType\OfferGridType $offerGrid
      */
-    public function __construct(\StructType\RegionType $region = null, \StructType\HotelType $hotel = null, \StructType\OffersSummaryType $offerGridSummary = null, \StructType\OfferGridType $offerGrid = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionType $region = null, \traveltainment\SOAP17\StructType\HotelType $hotel = null, \traveltainment\SOAP17\StructType\OffersSummaryType $offerGridSummary = null, \traveltainment\SOAP17\StructType\OfferGridType $offerGrid = null)
     {
         $this
             ->setRegion($region)
@@ -55,7 +55,7 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -63,17 +63,17 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\SearchEngineOfferGridRS
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
     }
     /**
      * Get Hotel value
-     * @return \StructType\HotelType|null
+     * @return \traveltainment\SOAP17\StructType\HotelType|null
      */
     public function getHotel()
     {
@@ -81,17 +81,17 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
     }
     /**
      * Set Hotel value
-     * @param \StructType\HotelType $hotel
-     * @return \StructType\SearchEngineOfferGridRS
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS
      */
-    public function setHotel(\StructType\HotelType $hotel = null)
+    public function setHotel(\traveltainment\SOAP17\StructType\HotelType $hotel = null)
     {
         $this->Hotel = $hotel;
         return $this;
     }
     /**
      * Get OfferGridSummary value
-     * @return \StructType\OffersSummaryType|null
+     * @return \traveltainment\SOAP17\StructType\OffersSummaryType|null
      */
     public function getOfferGridSummary()
     {
@@ -99,17 +99,17 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
     }
     /**
      * Set OfferGridSummary value
-     * @param \StructType\OffersSummaryType $offerGridSummary
-     * @return \StructType\SearchEngineOfferGridRS
+     * @param \traveltainment\SOAP17\StructType\OffersSummaryType $offerGridSummary
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS
      */
-    public function setOfferGridSummary(\StructType\OffersSummaryType $offerGridSummary = null)
+    public function setOfferGridSummary(\traveltainment\SOAP17\StructType\OffersSummaryType $offerGridSummary = null)
     {
         $this->OfferGridSummary = $offerGridSummary;
         return $this;
     }
     /**
      * Get OfferGrid value
-     * @return \StructType\OfferGridType|null
+     * @return \traveltainment\SOAP17\StructType\OfferGridType|null
      */
     public function getOfferGrid()
     {
@@ -117,10 +117,10 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
     }
     /**
      * Set OfferGrid value
-     * @param \StructType\OfferGridType $offerGrid
-     * @return \StructType\SearchEngineOfferGridRS
+     * @param \traveltainment\SOAP17\StructType\OfferGridType $offerGrid
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS
      */
-    public function setOfferGrid(\StructType\OfferGridType $offerGrid = null)
+    public function setOfferGrid(\traveltainment\SOAP17\StructType\OfferGridType $offerGrid = null)
     {
         $this->OfferGrid = $offerGrid;
         return $this;
@@ -131,7 +131,7 @@ class SearchEngineOfferGridRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineOfferGridRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS
      */
     public static function __set_state(array $array)
     {

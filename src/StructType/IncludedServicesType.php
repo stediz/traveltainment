@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class IncludedServicesType extends AbstractStructBase
      * The IncludedService
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\IncludedServiceType[]
+     * @var \traveltainment\SOAP17\StructType\IncludedServiceType[]
      */
     public $IncludedService;
     /**
      * Constructor method for IncludedServicesType
      * @uses IncludedServicesType::setIncludedService()
-     * @param \StructType\IncludedServiceType[] $includedService
+     * @param \traveltainment\SOAP17\StructType\IncludedServiceType[] $includedService
      */
     public function __construct(array $includedService = array())
     {
@@ -29,7 +29,7 @@ class IncludedServicesType extends AbstractStructBase
     }
     /**
      * Get IncludedService value
-     * @return \StructType\IncludedServiceType[]|null
+     * @return \traveltainment\SOAP17\StructType\IncludedServiceType[]|null
      */
     public function getIncludedService()
     {
@@ -38,15 +38,15 @@ class IncludedServicesType extends AbstractStructBase
     /**
      * Set IncludedService value
      * @throws \InvalidArgumentException
-     * @param \StructType\IncludedServiceType[] $includedService
-     * @return \StructType\IncludedServicesType
+     * @param \traveltainment\SOAP17\StructType\IncludedServiceType[] $includedService
+     * @return \traveltainment\SOAP17\StructType\IncludedServicesType
      */
     public function setIncludedService(array $includedService = array())
     {
         foreach ($includedService as $includedServicesTypeIncludedServiceItem) {
             // validation for constraint: itemType
-            if (!$includedServicesTypeIncludedServiceItem instanceof \StructType\IncludedServiceType) {
-                throw new \InvalidArgumentException(sprintf('The IncludedService property can only contain items of \StructType\IncludedServiceType, "%s" given', is_object($includedServicesTypeIncludedServiceItem) ? get_class($includedServicesTypeIncludedServiceItem) : gettype($includedServicesTypeIncludedServiceItem)), __LINE__);
+            if (!$includedServicesTypeIncludedServiceItem instanceof \traveltainment\SOAP17\StructType\IncludedServiceType) {
+                throw new \InvalidArgumentException(sprintf('The IncludedService property can only contain items of \traveltainment\SOAP17\StructType\IncludedServiceType, "%s" given', is_object($includedServicesTypeIncludedServiceItem) ? get_class($includedServicesTypeIncludedServiceItem) : gettype($includedServicesTypeIncludedServiceItem)), __LINE__);
             }
         }
         $this->IncludedService = $includedService;
@@ -55,14 +55,14 @@ class IncludedServicesType extends AbstractStructBase
     /**
      * Add item to IncludedService value
      * @throws \InvalidArgumentException
-     * @param \StructType\IncludedServiceType $item
-     * @return \StructType\IncludedServicesType
+     * @param \traveltainment\SOAP17\StructType\IncludedServiceType $item
+     * @return \traveltainment\SOAP17\StructType\IncludedServicesType
      */
-    public function addToIncludedService(\StructType\IncludedServiceType $item)
+    public function addToIncludedService(\traveltainment\SOAP17\StructType\IncludedServiceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\IncludedServiceType) {
-            throw new \InvalidArgumentException(sprintf('The IncludedService property can only contain items of \StructType\IncludedServiceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\IncludedServiceType) {
+            throw new \InvalidArgumentException(sprintf('The IncludedService property can only contain items of \traveltainment\SOAP17\StructType\IncludedServiceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->IncludedService[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class IncludedServicesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\IncludedServicesType
+     * @return \traveltainment\SOAP17\StructType\IncludedServicesType
      */
     public static function __set_state(array $array)
     {

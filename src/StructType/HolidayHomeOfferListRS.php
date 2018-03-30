@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,35 +14,35 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
      * The HolidayHome
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public $HolidayHome;
     /**
      * The OffersSummary
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOffersSummaryType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType
      */
     public $OffersSummary;
     /**
      * The Offers
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOffersType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOffersType
      */
     public $Offers;
     /**
      * The AlternativeOffers
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOffersType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOffersType
      */
     public $AlternativeOffers;
     /**
@@ -52,13 +52,13 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
      * @uses HolidayHomeOfferListRS::setOffersSummary()
      * @uses HolidayHomeOfferListRS::setOffers()
      * @uses HolidayHomeOfferListRS::setAlternativeOffers()
-     * @param \StructType\RegionType $region
-     * @param \StructType\HolidayHomeType $holidayHome
-     * @param \StructType\HolidayHomeOffersSummaryType $offersSummary
-     * @param \StructType\HolidayHomeOffersType $offers
-     * @param \StructType\HolidayHomeOffersType $alternativeOffers
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType $offersSummary
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOffersType $offers
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOffersType $alternativeOffers
      */
-    public function __construct(\StructType\RegionType $region = null, \StructType\HolidayHomeType $holidayHome = null, \StructType\HolidayHomeOffersSummaryType $offersSummary = null, \StructType\HolidayHomeOffersType $offers = null, \StructType\HolidayHomeOffersType $alternativeOffers = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionType $region = null, \traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome = null, \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType $offersSummary = null, \traveltainment\SOAP17\StructType\HolidayHomeOffersType $offers = null, \traveltainment\SOAP17\StructType\HolidayHomeOffersType $alternativeOffers = null)
     {
         $this
             ->setRegion($region)
@@ -69,7 +69,7 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -77,17 +77,17 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\HolidayHomeOfferListRS
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRS
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
     }
     /**
      * Get HolidayHome value
-     * @return \StructType\HolidayHomeType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType|null
      */
     public function getHolidayHome()
     {
@@ -95,17 +95,17 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
     }
     /**
      * Set HolidayHome value
-     * @param \StructType\HolidayHomeType $holidayHome
-     * @return \StructType\HolidayHomeOfferListRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRS
      */
-    public function setHolidayHome(\StructType\HolidayHomeType $holidayHome = null)
+    public function setHolidayHome(\traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome = null)
     {
         $this->HolidayHome = $holidayHome;
         return $this;
     }
     /**
      * Get OffersSummary value
-     * @return \StructType\HolidayHomeOffersSummaryType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType|null
      */
     public function getOffersSummary()
     {
@@ -113,17 +113,17 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
     }
     /**
      * Set OffersSummary value
-     * @param \StructType\HolidayHomeOffersSummaryType $offersSummary
-     * @return \StructType\HolidayHomeOfferListRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType $offersSummary
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRS
      */
-    public function setOffersSummary(\StructType\HolidayHomeOffersSummaryType $offersSummary = null)
+    public function setOffersSummary(\traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType $offersSummary = null)
     {
         $this->OffersSummary = $offersSummary;
         return $this;
     }
     /**
      * Get Offers value
-     * @return \StructType\HolidayHomeOffersType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersType|null
      */
     public function getOffers()
     {
@@ -131,17 +131,17 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
     }
     /**
      * Set Offers value
-     * @param \StructType\HolidayHomeOffersType $offers
-     * @return \StructType\HolidayHomeOfferListRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOffersType $offers
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRS
      */
-    public function setOffers(\StructType\HolidayHomeOffersType $offers = null)
+    public function setOffers(\traveltainment\SOAP17\StructType\HolidayHomeOffersType $offers = null)
     {
         $this->Offers = $offers;
         return $this;
     }
     /**
      * Get AlternativeOffers value
-     * @return \StructType\HolidayHomeOffersType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersType|null
      */
     public function getAlternativeOffers()
     {
@@ -149,10 +149,10 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
     }
     /**
      * Set AlternativeOffers value
-     * @param \StructType\HolidayHomeOffersType $alternativeOffers
-     * @return \StructType\HolidayHomeOfferListRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOffersType $alternativeOffers
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRS
      */
-    public function setAlternativeOffers(\StructType\HolidayHomeOffersType $alternativeOffers = null)
+    public function setAlternativeOffers(\traveltainment\SOAP17\StructType\HolidayHomeOffersType $alternativeOffers = null)
     {
         $this->AlternativeOffers = $alternativeOffers;
         return $this;
@@ -163,7 +163,7 @@ class HolidayHomeOfferListRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOfferListRS
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRS
      */
     public static function __set_state(array $array)
     {

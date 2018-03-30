@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class AddressBaseType extends AbstractStructBase
 {
     /**
      * The StreetNumber
-     * @var \StructType\StreetNumberType
+     * @var \traveltainment\SOAP17\StructType\StreetNumberType
      */
     public $StreetNumber;
     /**
@@ -38,7 +38,7 @@ class AddressBaseType extends AbstractStructBase
     public $AdditionalAddressLine;
     /**
      * The CityName
-     * @var \StructType\CityNameType
+     * @var \traveltainment\SOAP17\StructType\CityNameType
      */
     public $CityName;
     /**
@@ -50,7 +50,7 @@ class AddressBaseType extends AbstractStructBase
     public $County;
     /**
      * The CountryName
-     * @var \StructType\CountryNameType
+     * @var \traveltainment\SOAP17\StructType\CountryNameType
      */
     public $CountryName;
     /**
@@ -62,15 +62,15 @@ class AddressBaseType extends AbstractStructBase
      * @uses AddressBaseType::setCityName()
      * @uses AddressBaseType::setCounty()
      * @uses AddressBaseType::setCountryName()
-     * @param \StructType\StreetNumberType $streetNumber
+     * @param \traveltainment\SOAP17\StructType\StreetNumberType $streetNumber
      * @param string $buildingRoom
      * @param string $postOfficeBoxNumber
      * @param string $additionalAddressLine
-     * @param \StructType\CityNameType $cityName
+     * @param \traveltainment\SOAP17\StructType\CityNameType $cityName
      * @param string $county
-     * @param \StructType\CountryNameType $countryName
+     * @param \traveltainment\SOAP17\StructType\CountryNameType $countryName
      */
-    public function __construct(\StructType\StreetNumberType $streetNumber = null, $buildingRoom = null, $postOfficeBoxNumber = null, $additionalAddressLine = null, \StructType\CityNameType $cityName = null, $county = null, \StructType\CountryNameType $countryName = null)
+    public function __construct(\traveltainment\SOAP17\StructType\StreetNumberType $streetNumber = null, $buildingRoom = null, $postOfficeBoxNumber = null, $additionalAddressLine = null, \traveltainment\SOAP17\StructType\CityNameType $cityName = null, $county = null, \traveltainment\SOAP17\StructType\CountryNameType $countryName = null)
     {
         $this
             ->setStreetNumber($streetNumber)
@@ -83,7 +83,7 @@ class AddressBaseType extends AbstractStructBase
     }
     /**
      * Get StreetNumber value
-     * @return \StructType\StreetNumberType|null
+     * @return \traveltainment\SOAP17\StructType\StreetNumberType|null
      */
     public function getStreetNumber()
     {
@@ -91,10 +91,10 @@ class AddressBaseType extends AbstractStructBase
     }
     /**
      * Set StreetNumber value
-     * @param \StructType\StreetNumberType $streetNumber
-     * @return \StructType\AddressBaseType
+     * @param \traveltainment\SOAP17\StructType\StreetNumberType $streetNumber
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
-    public function setStreetNumber(\StructType\StreetNumberType $streetNumber = null)
+    public function setStreetNumber(\traveltainment\SOAP17\StructType\StreetNumberType $streetNumber = null)
     {
         $this->StreetNumber = $streetNumber;
         return $this;
@@ -110,7 +110,7 @@ class AddressBaseType extends AbstractStructBase
     /**
      * Set BuildingRoom value
      * @param string $buildingRoom
-     * @return \StructType\AddressBaseType
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
     public function setBuildingRoom($buildingRoom = null)
     {
@@ -132,7 +132,7 @@ class AddressBaseType extends AbstractStructBase
     /**
      * Set PostOfficeBoxNumber value
      * @param string $postOfficeBoxNumber
-     * @return \StructType\AddressBaseType
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
     public function setPostOfficeBoxNumber($postOfficeBoxNumber = null)
     {
@@ -154,7 +154,7 @@ class AddressBaseType extends AbstractStructBase
     /**
      * Set AdditionalAddressLine value
      * @param string $additionalAddressLine
-     * @return \StructType\AddressBaseType
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
     public function setAdditionalAddressLine($additionalAddressLine = null)
     {
@@ -167,7 +167,7 @@ class AddressBaseType extends AbstractStructBase
     }
     /**
      * Get CityName value
-     * @return \StructType\CityNameType|null
+     * @return \traveltainment\SOAP17\StructType\CityNameType|null
      */
     public function getCityName()
     {
@@ -175,10 +175,10 @@ class AddressBaseType extends AbstractStructBase
     }
     /**
      * Set CityName value
-     * @param \StructType\CityNameType $cityName
-     * @return \StructType\AddressBaseType
+     * @param \traveltainment\SOAP17\StructType\CityNameType $cityName
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
-    public function setCityName(\StructType\CityNameType $cityName = null)
+    public function setCityName(\traveltainment\SOAP17\StructType\CityNameType $cityName = null)
     {
         $this->CityName = $cityName;
         return $this;
@@ -194,7 +194,7 @@ class AddressBaseType extends AbstractStructBase
     /**
      * Set County value
      * @param string $county
-     * @return \StructType\AddressBaseType
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
     public function setCounty($county = null)
     {
@@ -207,7 +207,7 @@ class AddressBaseType extends AbstractStructBase
     }
     /**
      * Get CountryName value
-     * @return \StructType\CountryNameType|null
+     * @return \traveltainment\SOAP17\StructType\CountryNameType|null
      */
     public function getCountryName()
     {
@@ -215,10 +215,10 @@ class AddressBaseType extends AbstractStructBase
     }
     /**
      * Set CountryName value
-     * @param \StructType\CountryNameType $countryName
-     * @return \StructType\AddressBaseType
+     * @param \traveltainment\SOAP17\StructType\CountryNameType $countryName
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
-    public function setCountryName(\StructType\CountryNameType $countryName = null)
+    public function setCountryName(\traveltainment\SOAP17\StructType\CountryNameType $countryName = null)
     {
         $this->CountryName = $countryName;
         return $this;
@@ -229,7 +229,7 @@ class AddressBaseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddressBaseType
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType
      */
     public static function __set_state(array $array)
     {

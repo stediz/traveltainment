@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HolidayHomeResultSetList extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeListItemType[]
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeListItemType[]
      */
     public $ListItem;
     /**
@@ -37,7 +37,7 @@ class HolidayHomeResultSetList extends AbstractStructBase
      * @uses HolidayHomeResultSetList::setListItem()
      * @uses HolidayHomeResultSetList::setTotalNumberOfResults()
      * @uses HolidayHomeResultSetList::setAlternatives()
-     * @param \StructType\HolidayHomeListItemType[] $listItem
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListItemType[] $listItem
      * @param int $totalNumberOfResults
      * @param bool $alternatives
      */
@@ -50,7 +50,7 @@ class HolidayHomeResultSetList extends AbstractStructBase
     }
     /**
      * Get ListItem value
-     * @return \StructType\HolidayHomeListItemType[]|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListItemType[]|null
      */
     public function getListItem()
     {
@@ -59,15 +59,15 @@ class HolidayHomeResultSetList extends AbstractStructBase
     /**
      * Set ListItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeListItemType[] $listItem
-     * @return \StructType\HolidayHomeResultSetList
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListItemType[] $listItem
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSetList
      */
     public function setListItem(array $listItem = array())
     {
         foreach ($listItem as $holidayHomeResultSetListListItemItem) {
             // validation for constraint: itemType
-            if (!$holidayHomeResultSetListListItemItem instanceof \StructType\HolidayHomeListItemType) {
-                throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \StructType\HolidayHomeListItemType, "%s" given', is_object($holidayHomeResultSetListListItemItem) ? get_class($holidayHomeResultSetListListItemItem) : gettype($holidayHomeResultSetListListItemItem)), __LINE__);
+            if (!$holidayHomeResultSetListListItemItem instanceof \traveltainment\SOAP17\StructType\HolidayHomeListItemType) {
+                throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeListItemType, "%s" given', is_object($holidayHomeResultSetListListItemItem) ? get_class($holidayHomeResultSetListListItemItem) : gettype($holidayHomeResultSetListListItemItem)), __LINE__);
             }
         }
         $this->ListItem = $listItem;
@@ -76,14 +76,14 @@ class HolidayHomeResultSetList extends AbstractStructBase
     /**
      * Add item to ListItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeListItemType $item
-     * @return \StructType\HolidayHomeResultSetList
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListItemType $item
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSetList
      */
-    public function addToListItem(\StructType\HolidayHomeListItemType $item)
+    public function addToListItem(\traveltainment\SOAP17\StructType\HolidayHomeListItemType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HolidayHomeListItemType) {
-            throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \StructType\HolidayHomeListItemType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\HolidayHomeListItemType) {
+            throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeListItemType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ListItem[] = $item;
         return $this;
@@ -99,7 +99,7 @@ class HolidayHomeResultSetList extends AbstractStructBase
     /**
      * Set TotalNumberOfResults value
      * @param int $totalNumberOfResults
-     * @return \StructType\HolidayHomeResultSetList
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSetList
      */
     public function setTotalNumberOfResults($totalNumberOfResults = null)
     {
@@ -121,7 +121,7 @@ class HolidayHomeResultSetList extends AbstractStructBase
     /**
      * Set Alternatives value
      * @param bool $alternatives
-     * @return \StructType\HolidayHomeResultSetList
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSetList
      */
     public function setAlternatives($alternatives = null)
     {
@@ -138,7 +138,7 @@ class HolidayHomeResultSetList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeResultSetList
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSetList
      */
     public static function __set_state(array $array)
     {

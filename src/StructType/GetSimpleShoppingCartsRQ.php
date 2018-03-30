@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class GetSimpleShoppingCartsRQ extends XmlInterfaceRQ
 {
     /**
      * The Filter
-     * @var \StructType\FilterType
+     * @var \traveltainment\SOAP17\StructType\FilterType
      */
     public $Filter;
     /**
      * The Options
-     * @var \StructType\ShoppingCartListOptionsType
+     * @var \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType
      */
     public $Options;
     /**
      * Constructor method for GetSimpleShoppingCartsRQ
      * @uses GetSimpleShoppingCartsRQ::setFilter()
      * @uses GetSimpleShoppingCartsRQ::setOptions()
-     * @param \StructType\FilterType $filter
-     * @param \StructType\ShoppingCartListOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\FilterType $filter
+     * @param \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType $options
      */
-    public function __construct(\StructType\FilterType $filter = null, \StructType\ShoppingCartListOptionsType $options = null)
+    public function __construct(\traveltainment\SOAP17\StructType\FilterType $filter = null, \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType $options = null)
     {
         $this
             ->setFilter($filter)
@@ -35,7 +35,7 @@ class GetSimpleShoppingCartsRQ extends XmlInterfaceRQ
     }
     /**
      * Get Filter value
-     * @return \StructType\FilterType|null
+     * @return \traveltainment\SOAP17\StructType\FilterType|null
      */
     public function getFilter()
     {
@@ -43,17 +43,17 @@ class GetSimpleShoppingCartsRQ extends XmlInterfaceRQ
     }
     /**
      * Set Filter value
-     * @param \StructType\FilterType $filter
-     * @return \StructType\GetSimpleShoppingCartsRQ
+     * @param \traveltainment\SOAP17\StructType\FilterType $filter
+     * @return \traveltainment\SOAP17\StructType\GetSimpleShoppingCartsRQ
      */
-    public function setFilter(\StructType\FilterType $filter = null)
+    public function setFilter(\traveltainment\SOAP17\StructType\FilterType $filter = null)
     {
         $this->Filter = $filter;
         return $this;
     }
     /**
      * Get Options value
-     * @return \StructType\ShoppingCartListOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType|null
      */
     public function getOptions()
     {
@@ -61,10 +61,10 @@ class GetSimpleShoppingCartsRQ extends XmlInterfaceRQ
     }
     /**
      * Set Options value
-     * @param \StructType\ShoppingCartListOptionsType $options
-     * @return \StructType\GetSimpleShoppingCartsRQ
+     * @param \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\GetSimpleShoppingCartsRQ
      */
-    public function setOptions(\StructType\ShoppingCartListOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\ShoppingCartListOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -75,7 +75,7 @@ class GetSimpleShoppingCartsRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetSimpleShoppingCartsRQ
+     * @return \traveltainment\SOAP17\StructType\GetSimpleShoppingCartsRQ
      */
     public static function __set_state(array $array)
     {

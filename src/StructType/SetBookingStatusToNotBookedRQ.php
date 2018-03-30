@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class SetBookingStatusToNotBookedRQ extends XmlInterfaceRQ
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\SetBookingStatusToNotBookedRQ
+     * @return \traveltainment\SOAP17\StructType\SetBookingStatusToNotBookedRQ
      */
     public function setBookingID($bookingID = null)
     {
@@ -73,17 +73,17 @@ class SetBookingStatusToNotBookedRQ extends XmlInterfaceRQ
     }
     /**
      * Set NotBookedReasonType value
-     * @uses \EnumType\NotBookedStatusDefinitionType::valueIsValid()
-     * @uses \EnumType\NotBookedStatusDefinitionType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $notBookedReasonType
-     * @return \StructType\SetBookingStatusToNotBookedRQ
+     * @return \traveltainment\SOAP17\StructType\SetBookingStatusToNotBookedRQ
      */
     public function setNotBookedReasonType($notBookedReasonType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\NotBookedStatusDefinitionType::valueIsValid($notBookedReasonType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $notBookedReasonType, implode(', ', \EnumType\NotBookedStatusDefinitionType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::valueIsValid($notBookedReasonType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $notBookedReasonType, implode(', ', \traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::getValidValues())), __LINE__);
         }
         $this->NotBookedReasonType = $notBookedReasonType;
         return $this;
@@ -98,17 +98,17 @@ class SetBookingStatusToNotBookedRQ extends XmlInterfaceRQ
     }
     /**
      * Set Comment value
-     * @uses \EnumType\CommentType::valueIsValid()
-     * @uses \EnumType\CommentType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $comment
-     * @return \StructType\SetBookingStatusToNotBookedRQ
+     * @return \traveltainment\SOAP17\StructType\SetBookingStatusToNotBookedRQ
      */
     public function setComment($comment = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CommentType::valueIsValid($comment)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $comment, implode(', ', \EnumType\CommentType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CommentType::valueIsValid($comment)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $comment, implode(', ', \traveltainment\SOAP17\EnumType\CommentType::getValidValues())), __LINE__);
         }
         $this->Comment = $comment;
         return $this;
@@ -119,7 +119,7 @@ class SetBookingStatusToNotBookedRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SetBookingStatusToNotBookedRQ
+     * @return \traveltainment\SOAP17\StructType\SetBookingStatusToNotBookedRQ
      */
     public static function __set_state(array $array)
     {

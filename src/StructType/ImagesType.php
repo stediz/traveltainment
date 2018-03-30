@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class ImagesType extends AbstractStructBase
      * Set ImageURL value
      * @throws \InvalidArgumentException
      * @param string[] $imageURL
-     * @return \StructType\ImagesType
+     * @return \traveltainment\SOAP17\StructType\ImagesType
      */
     public function setImageURL(array $imageURL = array())
     {
@@ -57,7 +57,7 @@ class ImagesType extends AbstractStructBase
      * Add item to ImageURL value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\ImagesType
+     * @return \traveltainment\SOAP17\StructType\ImagesType
      */
     public function addToImageURL($item)
     {
@@ -74,7 +74,7 @@ class ImagesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ImagesType
+     * @return \traveltainment\SOAP17\StructType\ImagesType
      */
     public static function __set_state(array $array)
     {

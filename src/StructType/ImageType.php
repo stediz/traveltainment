@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class ImageType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\ImageType
+     * @return \traveltainment\SOAP17\StructType\ImageType
      */
     public function set_($_ = null)
     {
@@ -74,7 +74,7 @@ class ImageType extends AbstractStructBase
     /**
      * Set Width value
      * @param int $width
-     * @return \StructType\ImageType
+     * @return \traveltainment\SOAP17\StructType\ImageType
      */
     public function setWidth($width = null)
     {
@@ -96,7 +96,7 @@ class ImageType extends AbstractStructBase
     /**
      * Set Height value
      * @param int $height
-     * @return \StructType\ImageType
+     * @return \traveltainment\SOAP17\StructType\ImageType
      */
     public function setHeight($height = null)
     {
@@ -113,7 +113,7 @@ class ImageType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ImageType
+     * @return \traveltainment\SOAP17\StructType\ImageType
      */
     public static function __set_state(array $array)
     {

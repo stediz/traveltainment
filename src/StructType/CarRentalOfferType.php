@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class CarRentalOfferType extends Offer3pType
 {
     /**
      * The CarRentalDetails
-     * @var \StructType\CarRentalDetails4SearchType
+     * @var \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
     public $CarRentalDetails;
     /**
      * Constructor method for CarRentalOfferType
      * @uses CarRentalOfferType::setCarRentalDetails()
-     * @param \StructType\CarRentalDetails4SearchType $carRentalDetails
+     * @param \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType $carRentalDetails
      */
-    public function __construct(\StructType\CarRentalDetails4SearchType $carRentalDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\CarRentalDetails4SearchType $carRentalDetails = null)
     {
         $this
             ->setCarRentalDetails($carRentalDetails);
     }
     /**
      * Get CarRentalDetails value
-     * @return \StructType\CarRentalDetails4SearchType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType|null
      */
     public function getCarRentalDetails()
     {
@@ -35,10 +35,10 @@ class CarRentalOfferType extends Offer3pType
     }
     /**
      * Set CarRentalDetails value
-     * @param \StructType\CarRentalDetails4SearchType $carRentalDetails
-     * @return \StructType\CarRentalOfferType
+     * @param \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType $carRentalDetails
+     * @return \traveltainment\SOAP17\StructType\CarRentalOfferType
      */
-    public function setCarRentalDetails(\StructType\CarRentalDetails4SearchType $carRentalDetails = null)
+    public function setCarRentalDetails(\traveltainment\SOAP17\StructType\CarRentalDetails4SearchType $carRentalDetails = null)
     {
         $this->CarRentalDetails = $carRentalDetails;
         return $this;
@@ -49,7 +49,7 @@ class CarRentalOfferType extends Offer3pType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalOfferType
+     * @return \traveltainment\SOAP17\StructType\CarRentalOfferType
      */
     public static function __set_state(array $array)
     {

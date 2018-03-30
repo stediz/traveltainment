@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class TransferDetails4BookType extends AbstractStructBase
     public $ProviderID;
     /**
      * The TravellerContacts
-     * @var \StructType\ContactsType
+     * @var \traveltainment\SOAP17\StructType\ContactsType
      */
     public $TravellerContacts;
     /**
      * The TransferCost
      * Meta informations extracted from the WSDL
      * - documentation: Der Gesamtpreis des Transfers.
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $TransferCost;
     /**
@@ -46,12 +46,12 @@ class TransferDetails4BookType extends AbstractStructBase
      * The Vehicles
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\VehiclesType
+     * @var \traveltainment\SOAP17\StructType\VehiclesType
      */
     public $Vehicles;
     /**
      * The Transfers
-     * @var \StructType\Transfers4BookType
+     * @var \traveltainment\SOAP17\StructType\Transfers4BookType
      */
     public $Transfers;
     /**
@@ -65,15 +65,15 @@ class TransferDetails4BookType extends AbstractStructBase
      * @uses TransferDetails4BookType::setVehicles()
      * @uses TransferDetails4BookType::setTransfers()
      * @param string $providerID
-     * @param \StructType\ContactsType $travellerContacts
-     * @param \StructType\SimplePriceType $transferCost
+     * @param \traveltainment\SOAP17\StructType\ContactsType $travellerContacts
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $transferCost
      * @param string $transferType
      * @param string $serviceType
      * @param bool $disabilityVehicleIndicator
-     * @param \StructType\VehiclesType $vehicles
-     * @param \StructType\Transfers4BookType $transfers
+     * @param \traveltainment\SOAP17\StructType\VehiclesType $vehicles
+     * @param \traveltainment\SOAP17\StructType\Transfers4BookType $transfers
      */
-    public function __construct($providerID = null, \StructType\ContactsType $travellerContacts = null, \StructType\SimplePriceType $transferCost = null, $transferType = null, $serviceType = null, $disabilityVehicleIndicator = null, \StructType\VehiclesType $vehicles = null, \StructType\Transfers4BookType $transfers = null)
+    public function __construct($providerID = null, \traveltainment\SOAP17\StructType\ContactsType $travellerContacts = null, \traveltainment\SOAP17\StructType\SimplePriceType $transferCost = null, $transferType = null, $serviceType = null, $disabilityVehicleIndicator = null, \traveltainment\SOAP17\StructType\VehiclesType $vehicles = null, \traveltainment\SOAP17\StructType\Transfers4BookType $transfers = null)
     {
         $this
             ->setProviderID($providerID)
@@ -96,7 +96,7 @@ class TransferDetails4BookType extends AbstractStructBase
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\TransferDetails4BookType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
     public function setProviderID($providerID = null)
     {
@@ -109,7 +109,7 @@ class TransferDetails4BookType extends AbstractStructBase
     }
     /**
      * Get TravellerContacts value
-     * @return \StructType\ContactsType|null
+     * @return \traveltainment\SOAP17\StructType\ContactsType|null
      */
     public function getTravellerContacts()
     {
@@ -117,17 +117,17 @@ class TransferDetails4BookType extends AbstractStructBase
     }
     /**
      * Set TravellerContacts value
-     * @param \StructType\ContactsType $travellerContacts
-     * @return \StructType\TransferDetails4BookType
+     * @param \traveltainment\SOAP17\StructType\ContactsType $travellerContacts
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
-    public function setTravellerContacts(\StructType\ContactsType $travellerContacts = null)
+    public function setTravellerContacts(\traveltainment\SOAP17\StructType\ContactsType $travellerContacts = null)
     {
         $this->TravellerContacts = $travellerContacts;
         return $this;
     }
     /**
      * Get TransferCost value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function getTransferCost()
     {
@@ -135,10 +135,10 @@ class TransferDetails4BookType extends AbstractStructBase
     }
     /**
      * Set TransferCost value
-     * @param \StructType\SimplePriceType $transferCost
-     * @return \StructType\TransferDetails4BookType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $transferCost
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
-    public function setTransferCost(\StructType\SimplePriceType $transferCost = null)
+    public function setTransferCost(\traveltainment\SOAP17\StructType\SimplePriceType $transferCost = null)
     {
         $this->TransferCost = $transferCost;
         return $this;
@@ -153,17 +153,17 @@ class TransferDetails4BookType extends AbstractStructBase
     }
     /**
      * Set TransferType value
-     * @uses \EnumType\TransferTypeEnum::valueIsValid()
-     * @uses \EnumType\TransferTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\TransferTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\TransferTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $transferType
-     * @return \StructType\TransferDetails4BookType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
     public function setTransferType($transferType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TransferTypeEnum::valueIsValid($transferType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $transferType, implode(', ', \EnumType\TransferTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\TransferTypeEnum::valueIsValid($transferType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $transferType, implode(', ', \traveltainment\SOAP17\EnumType\TransferTypeEnum::getValidValues())), __LINE__);
         }
         $this->TransferType = $transferType;
         return $this;
@@ -179,7 +179,7 @@ class TransferDetails4BookType extends AbstractStructBase
     /**
      * Set ServiceType value
      * @param string $serviceType
-     * @return \StructType\TransferDetails4BookType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
     public function setServiceType($serviceType = null)
     {
@@ -201,7 +201,7 @@ class TransferDetails4BookType extends AbstractStructBase
     /**
      * Set DisabilityVehicleIndicator value
      * @param bool $disabilityVehicleIndicator
-     * @return \StructType\TransferDetails4BookType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
     public function setDisabilityVehicleIndicator($disabilityVehicleIndicator = null)
     {
@@ -214,7 +214,7 @@ class TransferDetails4BookType extends AbstractStructBase
     }
     /**
      * Get Vehicles value
-     * @return \StructType\VehiclesType|null
+     * @return \traveltainment\SOAP17\StructType\VehiclesType|null
      */
     public function getVehicles()
     {
@@ -222,17 +222,17 @@ class TransferDetails4BookType extends AbstractStructBase
     }
     /**
      * Set Vehicles value
-     * @param \StructType\VehiclesType $vehicles
-     * @return \StructType\TransferDetails4BookType
+     * @param \traveltainment\SOAP17\StructType\VehiclesType $vehicles
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
-    public function setVehicles(\StructType\VehiclesType $vehicles = null)
+    public function setVehicles(\traveltainment\SOAP17\StructType\VehiclesType $vehicles = null)
     {
         $this->Vehicles = $vehicles;
         return $this;
     }
     /**
      * Get Transfers value
-     * @return \StructType\Transfers4BookType|null
+     * @return \traveltainment\SOAP17\StructType\Transfers4BookType|null
      */
     public function getTransfers()
     {
@@ -240,10 +240,10 @@ class TransferDetails4BookType extends AbstractStructBase
     }
     /**
      * Set Transfers value
-     * @param \StructType\Transfers4BookType $transfers
-     * @return \StructType\TransferDetails4BookType
+     * @param \traveltainment\SOAP17\StructType\Transfers4BookType $transfers
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
-    public function setTransfers(\StructType\Transfers4BookType $transfers = null)
+    public function setTransfers(\traveltainment\SOAP17\StructType\Transfers4BookType $transfers = null)
     {
         $this->Transfers = $transfers;
         return $this;
@@ -254,7 +254,7 @@ class TransferDetails4BookType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferDetails4BookType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
     public static function __set_state(array $array)
     {

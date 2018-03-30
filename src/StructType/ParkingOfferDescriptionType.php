@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class ParkingOfferDescriptionType extends AbstractStructBase
      * The Images
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ImagesType
+     * @var \traveltainment\SOAP17\StructType\ImagesType
      */
     public $Images;
     /**
@@ -52,9 +52,9 @@ class ParkingOfferDescriptionType extends AbstractStructBase
      * @param int $transferMinutes
      * @param bool $isRefundable
      * @param string $termsAndConditionsURL
-     * @param \StructType\ImagesType $images
+     * @param \traveltainment\SOAP17\StructType\ImagesType $images
      */
-    public function __construct($carParkName = null, $transferMinutes = null, $isRefundable = null, $termsAndConditionsURL = null, \StructType\ImagesType $images = null)
+    public function __construct($carParkName = null, $transferMinutes = null, $isRefundable = null, $termsAndConditionsURL = null, \traveltainment\SOAP17\StructType\ImagesType $images = null)
     {
         $this
             ->setCarParkName($carParkName)
@@ -74,7 +74,7 @@ class ParkingOfferDescriptionType extends AbstractStructBase
     /**
      * Set CarParkName value
      * @param string $carParkName
-     * @return \StructType\ParkingOfferDescriptionType
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType
      */
     public function setCarParkName($carParkName = null)
     {
@@ -96,7 +96,7 @@ class ParkingOfferDescriptionType extends AbstractStructBase
     /**
      * Set TransferMinutes value
      * @param int $transferMinutes
-     * @return \StructType\ParkingOfferDescriptionType
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType
      */
     public function setTransferMinutes($transferMinutes = null)
     {
@@ -118,7 +118,7 @@ class ParkingOfferDescriptionType extends AbstractStructBase
     /**
      * Set IsRefundable value
      * @param bool $isRefundable
-     * @return \StructType\ParkingOfferDescriptionType
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType
      */
     public function setIsRefundable($isRefundable = null)
     {
@@ -140,7 +140,7 @@ class ParkingOfferDescriptionType extends AbstractStructBase
     /**
      * Set TermsAndConditionsURL value
      * @param string $termsAndConditionsURL
-     * @return \StructType\ParkingOfferDescriptionType
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType
      */
     public function setTermsAndConditionsURL($termsAndConditionsURL = null)
     {
@@ -153,7 +153,7 @@ class ParkingOfferDescriptionType extends AbstractStructBase
     }
     /**
      * Get Images value
-     * @return \StructType\ImagesType|null
+     * @return \traveltainment\SOAP17\StructType\ImagesType|null
      */
     public function getImages()
     {
@@ -161,10 +161,10 @@ class ParkingOfferDescriptionType extends AbstractStructBase
     }
     /**
      * Set Images value
-     * @param \StructType\ImagesType $images
-     * @return \StructType\ParkingOfferDescriptionType
+     * @param \traveltainment\SOAP17\StructType\ImagesType $images
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType
      */
-    public function setImages(\StructType\ImagesType $images = null)
+    public function setImages(\traveltainment\SOAP17\StructType\ImagesType $images = null)
     {
         $this->Images = $images;
         return $this;
@@ -175,7 +175,7 @@ class ParkingOfferDescriptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParkingOfferDescriptionType
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType
      */
     public static function __set_state(array $array)
     {

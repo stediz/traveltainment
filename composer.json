@@ -1,6 +1,6 @@
 {
     "name": "stediz/traveltainment",
-    "description": "Package generated from traveltainment using wsdltophp/packagegenerator",
+    "description": "Package generated from common/flux/SOAP/Client/wsdl/1.7/DispatcherWS_1.wsdl using wsdltophp/packagegenerator",
     "require": {
         "php": ">=5.3.3",
         "ext-soap": "*",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "./src/"
+            "traveltainment\\SOAP17\\": "./vendor/stediz/traveltainment/src/"
         }
     }
 }

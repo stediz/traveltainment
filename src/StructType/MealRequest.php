@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -8,7 +8,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for MealRequest StructType
  * @subpackage Structs
  */
-class MealRequest extends \EnumType\Meal
+class MealRequest extends \traveltainment\SOAP17\EnumType\Meal
 {
     /**
      * The _
@@ -47,17 +47,17 @@ class MealRequest extends \EnumType\Meal
     }
     /**
      * Set _ value
-     * @uses \EnumType\Meal::valueIsValid()
-     * @uses \EnumType\Meal::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\MealRequest
+     * @return \traveltainment\SOAP17\StructType\MealRequest
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Meal::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \EnumType\Meal::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Meal::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \traveltainment\SOAP17\EnumType\Meal::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -73,7 +73,7 @@ class MealRequest extends \EnumType\Meal
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\MealRequest
+     * @return \traveltainment\SOAP17\StructType\MealRequest
      */
     public function setWeightage($weightage = '0')
     {
@@ -98,7 +98,7 @@ class MealRequest extends \EnumType\Meal
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MealRequest
+     * @return \traveltainment\SOAP17\StructType\MealRequest
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class CarRentalDriverType extends AbstractStructBase
     /**
      * Set FirstName value
      * @param string $firstName
-     * @return \StructType\CarRentalDriverType
+     * @return \traveltainment\SOAP17\StructType\CarRentalDriverType
      */
     public function setFirstName($firstName = null)
     {
@@ -82,7 +82,7 @@ class CarRentalDriverType extends AbstractStructBase
     /**
      * Set LastName value
      * @param string $lastName
-     * @return \StructType\CarRentalDriverType
+     * @return \traveltainment\SOAP17\StructType\CarRentalDriverType
      */
     public function setLastName($lastName = null)
     {
@@ -104,7 +104,7 @@ class CarRentalDriverType extends AbstractStructBase
     /**
      * Set Salutation value
      * @param string $salutation
-     * @return \StructType\CarRentalDriverType
+     * @return \traveltainment\SOAP17\StructType\CarRentalDriverType
      */
     public function setSalutation($salutation = null)
     {
@@ -126,7 +126,7 @@ class CarRentalDriverType extends AbstractStructBase
     /**
      * Set Birthdate value
      * @param string $birthdate
-     * @return \StructType\CarRentalDriverType
+     * @return \traveltainment\SOAP17\StructType\CarRentalDriverType
      */
     public function setBirthdate($birthdate = null)
     {
@@ -143,7 +143,7 @@ class CarRentalDriverType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalDriverType
+     * @return \traveltainment\SOAP17\StructType\CarRentalDriverType
      */
     public static function __set_state(array $array)
     {

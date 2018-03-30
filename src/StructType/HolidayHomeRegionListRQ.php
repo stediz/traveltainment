@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,24 +12,24 @@ class HolidayHomeRegionListRQ extends XmlInterfaceRQ
 {
     /**
      * The Search
-     * @var \StructType\HolidayHomeRegionListSearchType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeRegionListSearchType
      */
     public $Search;
     /**
      * The Filter
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeRegionListFilterType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType
      */
     public $Filter;
     /**
      * Constructor method for HolidayHomeRegionListRQ
      * @uses HolidayHomeRegionListRQ::setSearch()
      * @uses HolidayHomeRegionListRQ::setFilter()
-     * @param \StructType\HolidayHomeRegionListSearchType $search
-     * @param \StructType\HolidayHomeRegionListFilterType $filter
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeRegionListSearchType $search
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType $filter
      */
-    public function __construct(\StructType\HolidayHomeRegionListSearchType $search = null, \StructType\HolidayHomeRegionListFilterType $filter = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeRegionListSearchType $search = null, \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType $filter = null)
     {
         $this
             ->setSearch($search)
@@ -37,7 +37,7 @@ class HolidayHomeRegionListRQ extends XmlInterfaceRQ
     }
     /**
      * Get Search value
-     * @return \StructType\HolidayHomeRegionListSearchType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListSearchType|null
      */
     public function getSearch()
     {
@@ -45,17 +45,17 @@ class HolidayHomeRegionListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Search value
-     * @param \StructType\HolidayHomeRegionListSearchType $search
-     * @return \StructType\HolidayHomeRegionListRQ
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeRegionListSearchType $search
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListRQ
      */
-    public function setSearch(\StructType\HolidayHomeRegionListSearchType $search = null)
+    public function setSearch(\traveltainment\SOAP17\StructType\HolidayHomeRegionListSearchType $search = null)
     {
         $this->Search = $search;
         return $this;
     }
     /**
      * Get Filter value
-     * @return \StructType\HolidayHomeRegionListFilterType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType|null
      */
     public function getFilter()
     {
@@ -63,10 +63,10 @@ class HolidayHomeRegionListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Filter value
-     * @param \StructType\HolidayHomeRegionListFilterType $filter
-     * @return \StructType\HolidayHomeRegionListRQ
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType $filter
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListRQ
      */
-    public function setFilter(\StructType\HolidayHomeRegionListFilterType $filter = null)
+    public function setFilter(\traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType $filter = null)
     {
         $this->Filter = $filter;
         return $this;
@@ -77,7 +77,7 @@ class HolidayHomeRegionListRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeRegionListRQ
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListRQ
      */
     public static function __set_state(array $array)
     {

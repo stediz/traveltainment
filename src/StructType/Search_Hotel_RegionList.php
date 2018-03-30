@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Hotel_RegionList extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineRegionListRQ
+     * @var \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ
      */
     public $request;
     /**
      * Constructor method for Search_Hotel_RegionList
      * @uses Search_Hotel_RegionList::setRequest()
-     * @param \StructType\SearchEngineRegionListRQ $request
+     * @param \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ $request
      */
-    public function __construct(\StructType\SearchEngineRegionListRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineRegionListRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\SearchEngineRegionListRQ|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_Hotel_RegionList extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\SearchEngineRegionListRQ $request
-     * @return \StructType\Search_Hotel_RegionList
+     * @param \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_Hotel_RegionList
      */
-    public function setRequest(\StructType\SearchEngineRegionListRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\SearchEngineRegionListRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_Hotel_RegionList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Hotel_RegionList
+     * @return \traveltainment\SOAP17\StructType\Search_Hotel_RegionList
      */
     public static function __set_state(array $array)
     {

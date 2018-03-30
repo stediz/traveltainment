@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class StreetNumberType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\StreetNumberType
+     * @return \traveltainment\SOAP17\StructType\StreetNumberType
      */
     public function set_($_ = null)
     {
@@ -74,7 +74,7 @@ class StreetNumberType extends AbstractStructBase
     /**
      * Set Number value
      * @param string $number
-     * @return \StructType\StreetNumberType
+     * @return \traveltainment\SOAP17\StructType\StreetNumberType
      */
     public function setNumber($number = null)
     {
@@ -96,7 +96,7 @@ class StreetNumberType extends AbstractStructBase
     /**
      * Set Appendix value
      * @param string $appendix
-     * @return \StructType\StreetNumberType
+     * @return \traveltainment\SOAP17\StructType\StreetNumberType
      */
     public function setAppendix($appendix = null)
     {
@@ -113,7 +113,7 @@ class StreetNumberType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\StreetNumberType
+     * @return \traveltainment\SOAP17\StructType\StreetNumberType
      */
     public static function __set_state(array $array)
     {

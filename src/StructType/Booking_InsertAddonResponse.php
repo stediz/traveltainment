@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_InsertAddonResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddonInsertRS
+     * @var \traveltainment\SOAP17\StructType\AddonInsertRS
      */
     public $return;
     /**
      * Constructor method for Booking_InsertAddonResponse
      * @uses Booking_InsertAddonResponse::setReturn()
-     * @param \StructType\AddonInsertRS $return
+     * @param \traveltainment\SOAP17\StructType\AddonInsertRS $return
      */
-    public function __construct(\StructType\AddonInsertRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonInsertRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\AddonInsertRS|null
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Booking_InsertAddonResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\AddonInsertRS $return
-     * @return \StructType\Booking_InsertAddonResponse
+     * @param \traveltainment\SOAP17\StructType\AddonInsertRS $return
+     * @return \traveltainment\SOAP17\StructType\Booking_InsertAddonResponse
      */
-    public function setReturn(\StructType\AddonInsertRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\AddonInsertRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Booking_InsertAddonResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_InsertAddonResponse
+     * @return \traveltainment\SOAP17\StructType\Booking_InsertAddonResponse
      */
     public static function __set_state(array $array)
     {

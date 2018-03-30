@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class ObjectImagesType extends AbstractStructBase
     /**
      * Set Thumbnail value
      * @param string $thumbnail
-     * @return \StructType\ObjectImagesType
+     * @return \traveltainment\SOAP17\StructType\ObjectImagesType
      */
     public function setThumbnail($thumbnail = null)
     {
@@ -80,7 +80,7 @@ class ObjectImagesType extends AbstractStructBase
     /**
      * Set MediumImage value
      * @param string $mediumImage
-     * @return \StructType\ObjectImagesType
+     * @return \traveltainment\SOAP17\StructType\ObjectImagesType
      */
     public function setMediumImage($mediumImage = null)
     {
@@ -102,7 +102,7 @@ class ObjectImagesType extends AbstractStructBase
     /**
      * Set LargeImage value
      * @param string $largeImage
-     * @return \StructType\ObjectImagesType
+     * @return \traveltainment\SOAP17\StructType\ObjectImagesType
      */
     public function setLargeImage($largeImage = null)
     {
@@ -119,7 +119,7 @@ class ObjectImagesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ObjectImagesType
+     * @return \traveltainment\SOAP17\StructType\ObjectImagesType
      */
     public static function __set_state(array $array)
     {

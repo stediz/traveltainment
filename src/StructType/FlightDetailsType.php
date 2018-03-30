@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,27 +15,27 @@ class FlightDetailsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * @var \StructType\OptionalTimeDateType
+     * @var \traveltainment\SOAP17\StructType\OptionalTimeDateType
      */
     public $DepartureDateTime;
     /**
      * The Airline
-     * @var \StructType\AirlineType
+     * @var \traveltainment\SOAP17\StructType\AirlineType
      */
     public $Airline;
     /**
      * The OperatingAirline
-     * @var \StructType\AirlineType
+     * @var \traveltainment\SOAP17\StructType\AirlineType
      */
     public $OperatingAirline;
     /**
      * The DepartureAirport
-     * @var \StructType\AirportType
+     * @var \traveltainment\SOAP17\StructType\AirportType
      */
     public $DepartureAirport;
     /**
      * The DestinationAirport
-     * @var \StructType\AirportType
+     * @var \traveltainment\SOAP17\StructType\AirportType
      */
     public $DestinationAirport;
     /**
@@ -43,7 +43,7 @@ class FlightDetailsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OptionalTimeDateType
+     * @var \traveltainment\SOAP17\StructType\OptionalTimeDateType
      */
     public $ArrivalDateTime;
     /**
@@ -54,14 +54,14 @@ class FlightDetailsType extends AbstractStructBase
      * @uses FlightDetailsType::setDepartureAirport()
      * @uses FlightDetailsType::setDestinationAirport()
      * @uses FlightDetailsType::setArrivalDateTime()
-     * @param \StructType\OptionalTimeDateType $departureDateTime
-     * @param \StructType\AirlineType $airline
-     * @param \StructType\AirlineType $operatingAirline
-     * @param \StructType\AirportType $departureAirport
-     * @param \StructType\AirportType $destinationAirport
-     * @param \StructType\OptionalTimeDateType $arrivalDateTime
+     * @param \traveltainment\SOAP17\StructType\OptionalTimeDateType $departureDateTime
+     * @param \traveltainment\SOAP17\StructType\AirlineType $airline
+     * @param \traveltainment\SOAP17\StructType\AirlineType $operatingAirline
+     * @param \traveltainment\SOAP17\StructType\AirportType $departureAirport
+     * @param \traveltainment\SOAP17\StructType\AirportType $destinationAirport
+     * @param \traveltainment\SOAP17\StructType\OptionalTimeDateType $arrivalDateTime
      */
-    public function __construct(\StructType\OptionalTimeDateType $departureDateTime = null, \StructType\AirlineType $airline = null, \StructType\AirlineType $operatingAirline = null, \StructType\AirportType $departureAirport = null, \StructType\AirportType $destinationAirport = null, \StructType\OptionalTimeDateType $arrivalDateTime = null)
+    public function __construct(\traveltainment\SOAP17\StructType\OptionalTimeDateType $departureDateTime = null, \traveltainment\SOAP17\StructType\AirlineType $airline = null, \traveltainment\SOAP17\StructType\AirlineType $operatingAirline = null, \traveltainment\SOAP17\StructType\AirportType $departureAirport = null, \traveltainment\SOAP17\StructType\AirportType $destinationAirport = null, \traveltainment\SOAP17\StructType\OptionalTimeDateType $arrivalDateTime = null)
     {
         $this
             ->setDepartureDateTime($departureDateTime)
@@ -73,7 +73,7 @@ class FlightDetailsType extends AbstractStructBase
     }
     /**
      * Get DepartureDateTime value
-     * @return \StructType\OptionalTimeDateType
+     * @return \traveltainment\SOAP17\StructType\OptionalTimeDateType
      */
     public function getDepartureDateTime()
     {
@@ -81,17 +81,17 @@ class FlightDetailsType extends AbstractStructBase
     }
     /**
      * Set DepartureDateTime value
-     * @param \StructType\OptionalTimeDateType $departureDateTime
-     * @return \StructType\FlightDetailsType
+     * @param \traveltainment\SOAP17\StructType\OptionalTimeDateType $departureDateTime
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
-    public function setDepartureDateTime(\StructType\OptionalTimeDateType $departureDateTime = null)
+    public function setDepartureDateTime(\traveltainment\SOAP17\StructType\OptionalTimeDateType $departureDateTime = null)
     {
         $this->DepartureDateTime = $departureDateTime;
         return $this;
     }
     /**
      * Get Airline value
-     * @return \StructType\AirlineType|null
+     * @return \traveltainment\SOAP17\StructType\AirlineType|null
      */
     public function getAirline()
     {
@@ -99,17 +99,17 @@ class FlightDetailsType extends AbstractStructBase
     }
     /**
      * Set Airline value
-     * @param \StructType\AirlineType $airline
-     * @return \StructType\FlightDetailsType
+     * @param \traveltainment\SOAP17\StructType\AirlineType $airline
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
-    public function setAirline(\StructType\AirlineType $airline = null)
+    public function setAirline(\traveltainment\SOAP17\StructType\AirlineType $airline = null)
     {
         $this->Airline = $airline;
         return $this;
     }
     /**
      * Get OperatingAirline value
-     * @return \StructType\AirlineType|null
+     * @return \traveltainment\SOAP17\StructType\AirlineType|null
      */
     public function getOperatingAirline()
     {
@@ -117,17 +117,17 @@ class FlightDetailsType extends AbstractStructBase
     }
     /**
      * Set OperatingAirline value
-     * @param \StructType\AirlineType $operatingAirline
-     * @return \StructType\FlightDetailsType
+     * @param \traveltainment\SOAP17\StructType\AirlineType $operatingAirline
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
-    public function setOperatingAirline(\StructType\AirlineType $operatingAirline = null)
+    public function setOperatingAirline(\traveltainment\SOAP17\StructType\AirlineType $operatingAirline = null)
     {
         $this->OperatingAirline = $operatingAirline;
         return $this;
     }
     /**
      * Get DepartureAirport value
-     * @return \StructType\AirportType|null
+     * @return \traveltainment\SOAP17\StructType\AirportType|null
      */
     public function getDepartureAirport()
     {
@@ -135,17 +135,17 @@ class FlightDetailsType extends AbstractStructBase
     }
     /**
      * Set DepartureAirport value
-     * @param \StructType\AirportType $departureAirport
-     * @return \StructType\FlightDetailsType
+     * @param \traveltainment\SOAP17\StructType\AirportType $departureAirport
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
-    public function setDepartureAirport(\StructType\AirportType $departureAirport = null)
+    public function setDepartureAirport(\traveltainment\SOAP17\StructType\AirportType $departureAirport = null)
     {
         $this->DepartureAirport = $departureAirport;
         return $this;
     }
     /**
      * Get DestinationAirport value
-     * @return \StructType\AirportType|null
+     * @return \traveltainment\SOAP17\StructType\AirportType|null
      */
     public function getDestinationAirport()
     {
@@ -153,17 +153,17 @@ class FlightDetailsType extends AbstractStructBase
     }
     /**
      * Set DestinationAirport value
-     * @param \StructType\AirportType $destinationAirport
-     * @return \StructType\FlightDetailsType
+     * @param \traveltainment\SOAP17\StructType\AirportType $destinationAirport
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
-    public function setDestinationAirport(\StructType\AirportType $destinationAirport = null)
+    public function setDestinationAirport(\traveltainment\SOAP17\StructType\AirportType $destinationAirport = null)
     {
         $this->DestinationAirport = $destinationAirport;
         return $this;
     }
     /**
      * Get ArrivalDateTime value
-     * @return \StructType\OptionalTimeDateType|null
+     * @return \traveltainment\SOAP17\StructType\OptionalTimeDateType|null
      */
     public function getArrivalDateTime()
     {
@@ -171,10 +171,10 @@ class FlightDetailsType extends AbstractStructBase
     }
     /**
      * Set ArrivalDateTime value
-     * @param \StructType\OptionalTimeDateType $arrivalDateTime
-     * @return \StructType\FlightDetailsType
+     * @param \traveltainment\SOAP17\StructType\OptionalTimeDateType $arrivalDateTime
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
-    public function setArrivalDateTime(\StructType\OptionalTimeDateType $arrivalDateTime = null)
+    public function setArrivalDateTime(\traveltainment\SOAP17\StructType\OptionalTimeDateType $arrivalDateTime = null)
     {
         $this->ArrivalDateTime = $arrivalDateTime;
         return $this;
@@ -185,7 +185,7 @@ class FlightDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FlightDetailsType
+     * @return \traveltainment\SOAP17\StructType\FlightDetailsType
      */
     public static function __set_state(array $array)
     {

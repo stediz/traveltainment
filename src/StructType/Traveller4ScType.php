@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class Traveller4ScType extends TravellerType
      * The RussianMarketScoped
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RussianMarketScopedType
+     * @var \traveltainment\SOAP17\StructType\RussianMarketScopedType
      */
     public $RussianMarketScoped;
     /**
      * Constructor method for Traveller4ScType
      * @uses Traveller4ScType::setRussianMarketScoped()
-     * @param \StructType\RussianMarketScopedType $russianMarketScoped
+     * @param \traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped
      */
-    public function __construct(\StructType\RussianMarketScopedType $russianMarketScoped = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped = null)
     {
         $this
             ->setRussianMarketScoped($russianMarketScoped);
     }
     /**
      * Get RussianMarketScoped value
-     * @return \StructType\RussianMarketScopedType|null
+     * @return \traveltainment\SOAP17\StructType\RussianMarketScopedType|null
      */
     public function getRussianMarketScoped()
     {
@@ -37,10 +37,10 @@ class Traveller4ScType extends TravellerType
     }
     /**
      * Set RussianMarketScoped value
-     * @param \StructType\RussianMarketScopedType $russianMarketScoped
-     * @return \StructType\Traveller4ScType
+     * @param \traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped
+     * @return \traveltainment\SOAP17\StructType\Traveller4ScType
      */
-    public function setRussianMarketScoped(\StructType\RussianMarketScopedType $russianMarketScoped = null)
+    public function setRussianMarketScoped(\traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped = null)
     {
         $this->RussianMarketScoped = $russianMarketScoped;
         return $this;
@@ -51,7 +51,7 @@ class Traveller4ScType extends TravellerType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Traveller4ScType
+     * @return \traveltainment\SOAP17\StructType\Traveller4ScType
      */
     public static function __set_state(array $array)
     {

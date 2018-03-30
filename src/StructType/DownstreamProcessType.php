@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -8,7 +8,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DownstreamProcessType StructType
  * @subpackage Structs
  */
-class DownstreamProcessType extends \EnumType\DownstreamProcessDefinitionEnum
+class DownstreamProcessType extends \traveltainment\SOAP17\EnumType\DownstreamProcessDefinitionEnum
 {
     /**
      * The isAccepted
@@ -45,17 +45,17 @@ class DownstreamProcessType extends \EnumType\DownstreamProcessDefinitionEnum
     }
     /**
      * Set isAccepted value
-     * @uses \EnumType\DownstreamProcessAcceptedDefinitionEnum::valueIsValid()
-     * @uses \EnumType\DownstreamProcessAcceptedDefinitionEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\DownstreamProcessAcceptedDefinitionEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\DownstreamProcessAcceptedDefinitionEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $isAccepted
-     * @return \StructType\DownstreamProcessType
+     * @return \traveltainment\SOAP17\StructType\DownstreamProcessType
      */
     public function setIsAccepted($isAccepted = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\DownstreamProcessAcceptedDefinitionEnum::valueIsValid($isAccepted)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $isAccepted, implode(', ', \EnumType\DownstreamProcessAcceptedDefinitionEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\DownstreamProcessAcceptedDefinitionEnum::valueIsValid($isAccepted)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $isAccepted, implode(', ', \traveltainment\SOAP17\EnumType\DownstreamProcessAcceptedDefinitionEnum::getValidValues())), __LINE__);
         }
         $this->isAccepted = $isAccepted;
         return $this;
@@ -70,17 +70,17 @@ class DownstreamProcessType extends \EnumType\DownstreamProcessDefinitionEnum
     }
     /**
      * Set _ value
-     * @uses \EnumType\DownstreamProcessDefinitionEnum::valueIsValid()
-     * @uses \EnumType\DownstreamProcessDefinitionEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\DownstreamProcessDefinitionEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\DownstreamProcessDefinitionEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\DownstreamProcessType
+     * @return \traveltainment\SOAP17\StructType\DownstreamProcessType
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\DownstreamProcessDefinitionEnum::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \EnumType\DownstreamProcessDefinitionEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\DownstreamProcessDefinitionEnum::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \traveltainment\SOAP17\EnumType\DownstreamProcessDefinitionEnum::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -91,7 +91,7 @@ class DownstreamProcessType extends \EnumType\DownstreamProcessDefinitionEnum
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DownstreamProcessType
+     * @return \traveltainment\SOAP17\StructType\DownstreamProcessType
      */
     public static function __set_state(array $array)
     {

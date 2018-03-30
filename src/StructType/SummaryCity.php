@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class SummaryCity extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SummaryItemCity[]
+     * @var \traveltainment\SOAP17\StructType\SummaryItemCity[]
      */
     public $City;
     /**
      * Constructor method for SummaryCity
      * @uses SummaryCity::setCity()
-     * @param \StructType\SummaryItemCity[] $city
+     * @param \traveltainment\SOAP17\StructType\SummaryItemCity[] $city
      */
     public function __construct(array $city = array())
     {
@@ -30,7 +30,7 @@ class SummaryCity extends AbstractStructBase
     }
     /**
      * Get City value
-     * @return \StructType\SummaryItemCity[]|null
+     * @return \traveltainment\SOAP17\StructType\SummaryItemCity[]|null
      */
     public function getCity()
     {
@@ -39,15 +39,15 @@ class SummaryCity extends AbstractStructBase
     /**
      * Set City value
      * @throws \InvalidArgumentException
-     * @param \StructType\SummaryItemCity[] $city
-     * @return \StructType\SummaryCity
+     * @param \traveltainment\SOAP17\StructType\SummaryItemCity[] $city
+     * @return \traveltainment\SOAP17\StructType\SummaryCity
      */
     public function setCity(array $city = array())
     {
         foreach ($city as $summaryCityCityItem) {
             // validation for constraint: itemType
-            if (!$summaryCityCityItem instanceof \StructType\SummaryItemCity) {
-                throw new \InvalidArgumentException(sprintf('The City property can only contain items of \StructType\SummaryItemCity, "%s" given', is_object($summaryCityCityItem) ? get_class($summaryCityCityItem) : gettype($summaryCityCityItem)), __LINE__);
+            if (!$summaryCityCityItem instanceof \traveltainment\SOAP17\StructType\SummaryItemCity) {
+                throw new \InvalidArgumentException(sprintf('The City property can only contain items of \traveltainment\SOAP17\StructType\SummaryItemCity, "%s" given', is_object($summaryCityCityItem) ? get_class($summaryCityCityItem) : gettype($summaryCityCityItem)), __LINE__);
             }
         }
         $this->City = $city;
@@ -56,14 +56,14 @@ class SummaryCity extends AbstractStructBase
     /**
      * Add item to City value
      * @throws \InvalidArgumentException
-     * @param \StructType\SummaryItemCity $item
-     * @return \StructType\SummaryCity
+     * @param \traveltainment\SOAP17\StructType\SummaryItemCity $item
+     * @return \traveltainment\SOAP17\StructType\SummaryCity
      */
-    public function addToCity(\StructType\SummaryItemCity $item)
+    public function addToCity(\traveltainment\SOAP17\StructType\SummaryItemCity $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SummaryItemCity) {
-            throw new \InvalidArgumentException(sprintf('The City property can only contain items of \StructType\SummaryItemCity, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\SummaryItemCity) {
+            throw new \InvalidArgumentException(sprintf('The City property can only contain items of \traveltainment\SOAP17\StructType\SummaryItemCity, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->City[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class SummaryCity extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SummaryCity
+     * @return \traveltainment\SOAP17\StructType\SummaryCity
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class DateSpanType extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\DateSpanType
+     * @return \traveltainment\SOAP17\StructType\DateSpanType
      */
     public function setStart($start = null)
     {
@@ -66,7 +66,7 @@ class DateSpanType extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\DateSpanType
+     * @return \traveltainment\SOAP17\StructType\DateSpanType
      */
     public function setEnd($end = null)
     {
@@ -83,7 +83,7 @@ class DateSpanType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DateSpanType
+     * @return \traveltainment\SOAP17\StructType\DateSpanType
      */
     public static function __set_state(array $array)
     {

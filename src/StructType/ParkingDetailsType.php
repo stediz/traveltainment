@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class ParkingDetailsType extends AbstractStructBase
      * The CarParkByProviderGeoPoint
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GeoPointType
+     * @var \traveltainment\SOAP17\StructType\GeoPointType
      */
     public $CarParkByProviderGeoPoint;
     /**
@@ -54,14 +54,14 @@ class ParkingDetailsType extends AbstractStructBase
      * The Procedures
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ProceduresType
+     * @var \traveltainment\SOAP17\StructType\ProceduresType
      */
     public $Procedures;
     /**
      * The Transfer
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TransferType
+     * @var \traveltainment\SOAP17\StructType\TransferType
      */
     public $Transfer;
     /**
@@ -103,7 +103,7 @@ class ParkingDetailsType extends AbstractStructBase
      * The AddInfos
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddInfosType
+     * @var \traveltainment\SOAP17\StructType\AddInfosType
      */
     public $AddInfos;
     /**
@@ -122,22 +122,22 @@ class ParkingDetailsType extends AbstractStructBase
      * @uses ParkingDetailsType::setSecurity()
      * @uses ParkingDetailsType::setInsurance()
      * @uses ParkingDetailsType::setAddInfos()
-     * @param \StructType\GeoPointType $carParkByProviderGeoPoint
+     * @param \traveltainment\SOAP17\StructType\GeoPointType $carParkByProviderGeoPoint
      * @param string $carParkName
      * @param string $directions
      * @param string $address
      * @param string $phoneNumber
      * @param string $maxCarSize
-     * @param \StructType\ProceduresType $procedures
-     * @param \StructType\TransferType $transfer
+     * @param \traveltainment\SOAP17\StructType\ProceduresType $procedures
+     * @param \traveltainment\SOAP17\StructType\TransferType $transfer
      * @param string $accessibility
      * @param string $usageHints
      * @param string $operatorHints
      * @param string $security
      * @param string $insurance
-     * @param \StructType\AddInfosType $addInfos
+     * @param \traveltainment\SOAP17\StructType\AddInfosType $addInfos
      */
-    public function __construct(\StructType\GeoPointType $carParkByProviderGeoPoint = null, $carParkName = null, $directions = null, $address = null, $phoneNumber = null, $maxCarSize = null, \StructType\ProceduresType $procedures = null, \StructType\TransferType $transfer = null, $accessibility = null, $usageHints = null, $operatorHints = null, $security = null, $insurance = null, \StructType\AddInfosType $addInfos = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GeoPointType $carParkByProviderGeoPoint = null, $carParkName = null, $directions = null, $address = null, $phoneNumber = null, $maxCarSize = null, \traveltainment\SOAP17\StructType\ProceduresType $procedures = null, \traveltainment\SOAP17\StructType\TransferType $transfer = null, $accessibility = null, $usageHints = null, $operatorHints = null, $security = null, $insurance = null, \traveltainment\SOAP17\StructType\AddInfosType $addInfos = null)
     {
         $this
             ->setCarParkByProviderGeoPoint($carParkByProviderGeoPoint)
@@ -157,7 +157,7 @@ class ParkingDetailsType extends AbstractStructBase
     }
     /**
      * Get CarParkByProviderGeoPoint value
-     * @return \StructType\GeoPointType|null
+     * @return \traveltainment\SOAP17\StructType\GeoPointType|null
      */
     public function getCarParkByProviderGeoPoint()
     {
@@ -165,10 +165,10 @@ class ParkingDetailsType extends AbstractStructBase
     }
     /**
      * Set CarParkByProviderGeoPoint value
-     * @param \StructType\GeoPointType $carParkByProviderGeoPoint
-     * @return \StructType\ParkingDetailsType
+     * @param \traveltainment\SOAP17\StructType\GeoPointType $carParkByProviderGeoPoint
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
-    public function setCarParkByProviderGeoPoint(\StructType\GeoPointType $carParkByProviderGeoPoint = null)
+    public function setCarParkByProviderGeoPoint(\traveltainment\SOAP17\StructType\GeoPointType $carParkByProviderGeoPoint = null)
     {
         $this->CarParkByProviderGeoPoint = $carParkByProviderGeoPoint;
         return $this;
@@ -184,7 +184,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set CarParkName value
      * @param string $carParkName
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setCarParkName($carParkName = null)
     {
@@ -206,7 +206,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set Directions value
      * @param string $directions
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setDirections($directions = null)
     {
@@ -228,7 +228,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set Address value
      * @param string $address
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setAddress($address = null)
     {
@@ -250,7 +250,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set PhoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -272,7 +272,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set MaxCarSize value
      * @param string $maxCarSize
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setMaxCarSize($maxCarSize = null)
     {
@@ -285,7 +285,7 @@ class ParkingDetailsType extends AbstractStructBase
     }
     /**
      * Get Procedures value
-     * @return \StructType\ProceduresType|null
+     * @return \traveltainment\SOAP17\StructType\ProceduresType|null
      */
     public function getProcedures()
     {
@@ -293,17 +293,17 @@ class ParkingDetailsType extends AbstractStructBase
     }
     /**
      * Set Procedures value
-     * @param \StructType\ProceduresType $procedures
-     * @return \StructType\ParkingDetailsType
+     * @param \traveltainment\SOAP17\StructType\ProceduresType $procedures
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
-    public function setProcedures(\StructType\ProceduresType $procedures = null)
+    public function setProcedures(\traveltainment\SOAP17\StructType\ProceduresType $procedures = null)
     {
         $this->Procedures = $procedures;
         return $this;
     }
     /**
      * Get Transfer value
-     * @return \StructType\TransferType|null
+     * @return \traveltainment\SOAP17\StructType\TransferType|null
      */
     public function getTransfer()
     {
@@ -311,10 +311,10 @@ class ParkingDetailsType extends AbstractStructBase
     }
     /**
      * Set Transfer value
-     * @param \StructType\TransferType $transfer
-     * @return \StructType\ParkingDetailsType
+     * @param \traveltainment\SOAP17\StructType\TransferType $transfer
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
-    public function setTransfer(\StructType\TransferType $transfer = null)
+    public function setTransfer(\traveltainment\SOAP17\StructType\TransferType $transfer = null)
     {
         $this->Transfer = $transfer;
         return $this;
@@ -330,7 +330,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set Accessibility value
      * @param string $accessibility
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setAccessibility($accessibility = null)
     {
@@ -352,7 +352,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set UsageHints value
      * @param string $usageHints
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setUsageHints($usageHints = null)
     {
@@ -374,7 +374,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set OperatorHints value
      * @param string $operatorHints
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setOperatorHints($operatorHints = null)
     {
@@ -396,7 +396,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set Security value
      * @param string $security
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setSecurity($security = null)
     {
@@ -418,7 +418,7 @@ class ParkingDetailsType extends AbstractStructBase
     /**
      * Set Insurance value
      * @param string $insurance
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public function setInsurance($insurance = null)
     {
@@ -431,7 +431,7 @@ class ParkingDetailsType extends AbstractStructBase
     }
     /**
      * Get AddInfos value
-     * @return \StructType\AddInfosType|null
+     * @return \traveltainment\SOAP17\StructType\AddInfosType|null
      */
     public function getAddInfos()
     {
@@ -439,10 +439,10 @@ class ParkingDetailsType extends AbstractStructBase
     }
     /**
      * Set AddInfos value
-     * @param \StructType\AddInfosType $addInfos
-     * @return \StructType\ParkingDetailsType
+     * @param \traveltainment\SOAP17\StructType\AddInfosType $addInfos
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
-    public function setAddInfos(\StructType\AddInfosType $addInfos = null)
+    public function setAddInfos(\traveltainment\SOAP17\StructType\AddInfosType $addInfos = null)
     {
         $this->AddInfos = $addInfos;
         return $this;
@@ -453,7 +453,7 @@ class ParkingDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParkingDetailsType
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public static function __set_state(array $array)
     {

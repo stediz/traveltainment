@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,17 +45,17 @@ class CreditCardType extends AbstractStructBase
     }
     /**
      * Set CardType value
-     * @uses \EnumType\CardCodeEnum::valueIsValid()
-     * @uses \EnumType\CardCodeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CardCodeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CardCodeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $cardType
-     * @return \StructType\CreditCardType
+     * @return \traveltainment\SOAP17\StructType\CreditCardType
      */
     public function setCardType($cardType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CardCodeEnum::valueIsValid($cardType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $cardType, implode(', ', \EnumType\CardCodeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CardCodeEnum::valueIsValid($cardType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $cardType, implode(', ', \traveltainment\SOAP17\EnumType\CardCodeEnum::getValidValues())), __LINE__);
         }
         $this->CardType = $cardType;
         return $this;
@@ -70,17 +70,17 @@ class CreditCardType extends AbstractStructBase
     }
     /**
      * Set ServiceProvider value
-     * @uses \EnumType\ServiceProviderEnum::valueIsValid()
-     * @uses \EnumType\ServiceProviderEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ServiceProviderEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ServiceProviderEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $serviceProvider
-     * @return \StructType\CreditCardType
+     * @return \traveltainment\SOAP17\StructType\CreditCardType
      */
     public function setServiceProvider($serviceProvider = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ServiceProviderEnum::valueIsValid($serviceProvider)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $serviceProvider, implode(', ', \EnumType\ServiceProviderEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ServiceProviderEnum::valueIsValid($serviceProvider)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $serviceProvider, implode(', ', \traveltainment\SOAP17\EnumType\ServiceProviderEnum::getValidValues())), __LINE__);
         }
         $this->ServiceProvider = $serviceProvider;
         return $this;
@@ -91,7 +91,7 @@ class CreditCardType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CreditCardType
+     * @return \traveltainment\SOAP17\StructType\CreditCardType
      */
     public static function __set_state(array $array)
     {

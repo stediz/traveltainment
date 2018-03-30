@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,17 +45,17 @@ class AdditionalCostType extends AbstractStructBase
     }
     /**
      * Set AddCostInfoAvailable value
-     * @uses \EnumType\AddCostInfoAvailableEnum::valueIsValid()
-     * @uses \EnumType\AddCostInfoAvailableEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\AddCostInfoAvailableEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\AddCostInfoAvailableEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $addCostInfoAvailable
-     * @return \StructType\AdditionalCostType
+     * @return \traveltainment\SOAP17\StructType\AdditionalCostType
      */
     public function setAddCostInfoAvailable($addCostInfoAvailable = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AddCostInfoAvailableEnum::valueIsValid($addCostInfoAvailable)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addCostInfoAvailable, implode(', ', \EnumType\AddCostInfoAvailableEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\AddCostInfoAvailableEnum::valueIsValid($addCostInfoAvailable)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addCostInfoAvailable, implode(', ', \traveltainment\SOAP17\EnumType\AddCostInfoAvailableEnum::getValidValues())), __LINE__);
         }
         $this->AddCostInfoAvailable = $addCostInfoAvailable;
         return $this;
@@ -71,7 +71,7 @@ class AdditionalCostType extends AbstractStructBase
     /**
      * Set AddCostInfo value
      * @param string $addCostInfo
-     * @return \StructType\AdditionalCostType
+     * @return \traveltainment\SOAP17\StructType\AdditionalCostType
      */
     public function setAddCostInfo($addCostInfo = null)
     {
@@ -88,7 +88,7 @@ class AdditionalCostType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AdditionalCostType
+     * @return \traveltainment\SOAP17\StructType\AdditionalCostType
      */
     public static function __set_state(array $array)
     {

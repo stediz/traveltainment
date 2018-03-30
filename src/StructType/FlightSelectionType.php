@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class FlightSelectionType extends AbstractStructBase
     /**
      * Set RegionID value
      * @param int $regionID
-     * @return \StructType\FlightSelectionType
+     * @return \traveltainment\SOAP17\StructType\FlightSelectionType
      */
     public function setRegionID($regionID = null)
     {
@@ -68,7 +68,7 @@ class FlightSelectionType extends AbstractStructBase
     /**
      * Set AirportOfRegion value
      * @param string $airportOfRegion
-     * @return \StructType\FlightSelectionType
+     * @return \traveltainment\SOAP17\StructType\FlightSelectionType
      */
     public function setAirportOfRegion($airportOfRegion = null)
     {
@@ -89,7 +89,7 @@ class FlightSelectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FlightSelectionType
+     * @return \traveltainment\SOAP17\StructType\FlightSelectionType
      */
     public static function __set_state(array $array)
     {

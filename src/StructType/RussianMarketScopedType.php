@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class RussianMarketScopedType extends AbstractStructBase
     /**
      * Set TravelDocumentToken value
      * @param string $travelDocumentToken
-     * @return \StructType\RussianMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\RussianMarketScopedType
      */
     public function setTravelDocumentToken($travelDocumentToken = null)
     {
@@ -59,7 +59,7 @@ class RussianMarketScopedType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RussianMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\RussianMarketScopedType
      */
     public static function __set_state(array $array)
     {

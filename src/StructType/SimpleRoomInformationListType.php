@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class SimpleRoomInformationListType extends AbstractStructBase
     }
     /**
      * Set Room value
-     * @uses \EnumType\Room::valueIsValid()
-     * @uses \EnumType\Room::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Room::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Room::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $room
-     * @return \StructType\SimpleRoomInformationListType
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomInformationListType
      */
     public function setRoom(array $room = array())
     {
         $invalidValues = array();
         foreach ($room as $simpleRoomInformationListTypeRoomItem) {
-            if (!\EnumType\Room::valueIsValid($simpleRoomInformationListTypeRoomItem)) {
+            if (!\traveltainment\SOAP17\EnumType\Room::valueIsValid($simpleRoomInformationListTypeRoomItem)) {
                 $invalidValues[] = var_export($simpleRoomInformationListTypeRoomItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\Room::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\Room::getValidValues())), __LINE__);
         }
         $this->Room = $room;
         return $this;
     }
     /**
      * Add item to Room value
-     * @uses \EnumType\Room::valueIsValid()
-     * @uses \EnumType\Room::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Room::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Room::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\SimpleRoomInformationListType
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomInformationListType
      */
     public function addToRoom($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Room::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\Room::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Room::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\Room::getValidValues())), __LINE__);
         }
         $this->Room[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class SimpleRoomInformationListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleRoomInformationListType
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomInformationListType
      */
     public static function __set_state(array $array)
     {

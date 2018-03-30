@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,17 +37,17 @@ class OfferListFilterType extends AbstractStructBase
     }
     /**
      * Set OfferScope value
-     * @uses \EnumType\OfferScopeEnum::valueIsValid()
-     * @uses \EnumType\OfferScopeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $offerScope
-     * @return \StructType\OfferListFilterType
+     * @return \traveltainment\SOAP17\StructType\OfferListFilterType
      */
     public function setOfferScope($offerScope = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \EnumType\OfferScopeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues())), __LINE__);
         }
         $this->OfferScope = $offerScope;
         return $this;
@@ -58,7 +58,7 @@ class OfferListFilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferListFilterType
+     * @return \traveltainment\SOAP17\StructType\OfferListFilterType
      */
     public static function __set_state(array $array)
     {

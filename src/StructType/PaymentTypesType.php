@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class PaymentTypesType extends AbstractStructBase
      * The Payment
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\PaymentType[]
+     * @var \traveltainment\SOAP17\StructType\PaymentType[]
      */
     public $Payment;
     /**
      * Constructor method for PaymentTypesType
      * @uses PaymentTypesType::setPayment()
-     * @param \StructType\PaymentType[] $payment
+     * @param \traveltainment\SOAP17\StructType\PaymentType[] $payment
      */
     public function __construct(array $payment = array())
     {
@@ -29,7 +29,7 @@ class PaymentTypesType extends AbstractStructBase
     }
     /**
      * Get Payment value
-     * @return \StructType\PaymentType[]|null
+     * @return \traveltainment\SOAP17\StructType\PaymentType[]|null
      */
     public function getPayment()
     {
@@ -38,15 +38,15 @@ class PaymentTypesType extends AbstractStructBase
     /**
      * Set Payment value
      * @throws \InvalidArgumentException
-     * @param \StructType\PaymentType[] $payment
-     * @return \StructType\PaymentTypesType
+     * @param \traveltainment\SOAP17\StructType\PaymentType[] $payment
+     * @return \traveltainment\SOAP17\StructType\PaymentTypesType
      */
     public function setPayment(array $payment = array())
     {
         foreach ($payment as $paymentTypesTypePaymentItem) {
             // validation for constraint: itemType
-            if (!$paymentTypesTypePaymentItem instanceof \StructType\PaymentType) {
-                throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \StructType\PaymentType, "%s" given', is_object($paymentTypesTypePaymentItem) ? get_class($paymentTypesTypePaymentItem) : gettype($paymentTypesTypePaymentItem)), __LINE__);
+            if (!$paymentTypesTypePaymentItem instanceof \traveltainment\SOAP17\StructType\PaymentType) {
+                throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \traveltainment\SOAP17\StructType\PaymentType, "%s" given', is_object($paymentTypesTypePaymentItem) ? get_class($paymentTypesTypePaymentItem) : gettype($paymentTypesTypePaymentItem)), __LINE__);
             }
         }
         $this->Payment = $payment;
@@ -55,14 +55,14 @@ class PaymentTypesType extends AbstractStructBase
     /**
      * Add item to Payment value
      * @throws \InvalidArgumentException
-     * @param \StructType\PaymentType $item
-     * @return \StructType\PaymentTypesType
+     * @param \traveltainment\SOAP17\StructType\PaymentType $item
+     * @return \traveltainment\SOAP17\StructType\PaymentTypesType
      */
-    public function addToPayment(\StructType\PaymentType $item)
+    public function addToPayment(\traveltainment\SOAP17\StructType\PaymentType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PaymentType) {
-            throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \StructType\PaymentType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\PaymentType) {
+            throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \traveltainment\SOAP17\StructType\PaymentType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Payment[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class PaymentTypesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PaymentTypesType
+     * @return \traveltainment\SOAP17\StructType\PaymentTypesType
      */
     public static function __set_state(array $array)
     {

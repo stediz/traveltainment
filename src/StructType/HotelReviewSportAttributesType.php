@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewSportAttributesType extends AbstractStructBase
     }
     /**
      * Set SportAttribute value
-     * @uses \EnumType\HotelReviewSportAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewSportAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $sportAttribute
-     * @return \StructType\HotelReviewSportAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType
      */
     public function setSportAttribute(array $sportAttribute = array())
     {
         $invalidValues = array();
         foreach ($sportAttribute as $hotelReviewSportAttributesTypeSportAttributeItem) {
-            if (!\EnumType\HotelReviewSportAttribute::valueIsValid($hotelReviewSportAttributesTypeSportAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::valueIsValid($hotelReviewSportAttributesTypeSportAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewSportAttributesTypeSportAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewSportAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::getValidValues())), __LINE__);
         }
         $this->SportAttribute = $sportAttribute;
         return $this;
     }
     /**
      * Add item to SportAttribute value
-     * @uses \EnumType\HotelReviewSportAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewSportAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewSportAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType
      */
     public function addToSportAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewSportAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewSportAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewSportAttribute::getValidValues())), __LINE__);
         }
         $this->SportAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewSportAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewSportAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType
      */
     public static function __set_state(array $array)
     {

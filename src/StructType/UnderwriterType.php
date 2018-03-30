@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class UnderwriterType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\UnderwriterType
+     * @return \traveltainment\SOAP17\StructType\UnderwriterType
      */
     public function set_($_ = null)
     {
@@ -74,7 +74,7 @@ class UnderwriterType extends AbstractStructBase
     /**
      * Set ShortName value
      * @param string $shortName
-     * @return \StructType\UnderwriterType
+     * @return \traveltainment\SOAP17\StructType\UnderwriterType
      */
     public function setShortName($shortName = null)
     {
@@ -96,7 +96,7 @@ class UnderwriterType extends AbstractStructBase
     /**
      * Set LogoURL value
      * @param string $logoURL
-     * @return \StructType\UnderwriterType
+     * @return \traveltainment\SOAP17\StructType\UnderwriterType
      */
     public function setLogoURL($logoURL = null)
     {
@@ -113,7 +113,7 @@ class UnderwriterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\UnderwriterType
+     * @return \traveltainment\SOAP17\StructType\UnderwriterType
      */
     public static function __set_state(array $array)
     {

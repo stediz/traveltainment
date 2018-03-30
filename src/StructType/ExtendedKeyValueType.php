@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -59,7 +59,7 @@ class ExtendedKeyValueType extends AbstractStructBase
     /**
      * Set Key value
      * @param string $key
-     * @return \StructType\ExtendedKeyValueType
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueType
      */
     public function setKey($key = null)
     {
@@ -85,7 +85,7 @@ class ExtendedKeyValueType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\ExtendedKeyValueType
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueType
      */
     public function set_($_ = null)
     {
@@ -111,7 +111,7 @@ class ExtendedKeyValueType extends AbstractStructBase
     /**
      * Set UID value
      * @param string $uID
-     * @return \StructType\ExtendedKeyValueType
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueType
      */
     public function setUID($uID = null)
     {
@@ -128,7 +128,7 @@ class ExtendedKeyValueType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ExtendedKeyValueType
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueType
      */
     public static function __set_state(array $array)
     {

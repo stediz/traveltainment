@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -90,7 +90,7 @@ class Fulfilments extends AbstractStructBase
     /**
      * Set EntireOffer value
      * @param int $entireOffer
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public function setEntireOffer($entireOffer = null)
     {
@@ -112,7 +112,7 @@ class Fulfilments extends AbstractStructBase
     /**
      * Set DepartureAirport value
      * @param int $departureAirport
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public function setDepartureAirport($departureAirport = null)
     {
@@ -134,7 +134,7 @@ class Fulfilments extends AbstractStructBase
     /**
      * Set TravelDuration value
      * @param int $travelDuration
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public function setTravelDuration($travelDuration = null)
     {
@@ -156,7 +156,7 @@ class Fulfilments extends AbstractStructBase
     /**
      * Set TravelDate value
      * @param int $travelDate
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public function setTravelDate($travelDate = null)
     {
@@ -178,7 +178,7 @@ class Fulfilments extends AbstractStructBase
     /**
      * Set RoomType value
      * @param int $roomType
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public function setRoomType($roomType = null)
     {
@@ -200,7 +200,7 @@ class Fulfilments extends AbstractStructBase
     /**
      * Set MealsType value
      * @param int $mealsType
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public function setMealsType($mealsType = null)
     {
@@ -222,7 +222,7 @@ class Fulfilments extends AbstractStructBase
     /**
      * Set Price value
      * @param int $price
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public function setPrice($price = null)
     {
@@ -239,7 +239,7 @@ class Fulfilments extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Fulfilments
+     * @return \traveltainment\SOAP17\StructType\Fulfilments
      */
     public static function __set_state(array $array)
     {

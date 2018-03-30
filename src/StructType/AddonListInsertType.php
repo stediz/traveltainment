@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class AddonListInsertType extends AbstractStructBase
      * The AddonListInsertItem
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\AddonListInsertItemType[]
+     * @var \traveltainment\SOAP17\StructType\AddonListInsertItemType[]
      */
     public $AddonListInsertItem;
     /**
      * Constructor method for AddonListInsertType
      * @uses AddonListInsertType::setAddonListInsertItem()
-     * @param \StructType\AddonListInsertItemType[] $addonListInsertItem
+     * @param \traveltainment\SOAP17\StructType\AddonListInsertItemType[] $addonListInsertItem
      */
     public function __construct(array $addonListInsertItem = array())
     {
@@ -29,7 +29,7 @@ class AddonListInsertType extends AbstractStructBase
     }
     /**
      * Get AddonListInsertItem value
-     * @return \StructType\AddonListInsertItemType[]|null
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertItemType[]|null
      */
     public function getAddonListInsertItem()
     {
@@ -38,15 +38,15 @@ class AddonListInsertType extends AbstractStructBase
     /**
      * Set AddonListInsertItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\AddonListInsertItemType[] $addonListInsertItem
-     * @return \StructType\AddonListInsertType
+     * @param \traveltainment\SOAP17\StructType\AddonListInsertItemType[] $addonListInsertItem
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertType
      */
     public function setAddonListInsertItem(array $addonListInsertItem = array())
     {
         foreach ($addonListInsertItem as $addonListInsertTypeAddonListInsertItemItem) {
             // validation for constraint: itemType
-            if (!$addonListInsertTypeAddonListInsertItemItem instanceof \StructType\AddonListInsertItemType) {
-                throw new \InvalidArgumentException(sprintf('The AddonListInsertItem property can only contain items of \StructType\AddonListInsertItemType, "%s" given', is_object($addonListInsertTypeAddonListInsertItemItem) ? get_class($addonListInsertTypeAddonListInsertItemItem) : gettype($addonListInsertTypeAddonListInsertItemItem)), __LINE__);
+            if (!$addonListInsertTypeAddonListInsertItemItem instanceof \traveltainment\SOAP17\StructType\AddonListInsertItemType) {
+                throw new \InvalidArgumentException(sprintf('The AddonListInsertItem property can only contain items of \traveltainment\SOAP17\StructType\AddonListInsertItemType, "%s" given', is_object($addonListInsertTypeAddonListInsertItemItem) ? get_class($addonListInsertTypeAddonListInsertItemItem) : gettype($addonListInsertTypeAddonListInsertItemItem)), __LINE__);
             }
         }
         $this->AddonListInsertItem = $addonListInsertItem;
@@ -55,14 +55,14 @@ class AddonListInsertType extends AbstractStructBase
     /**
      * Add item to AddonListInsertItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\AddonListInsertItemType $item
-     * @return \StructType\AddonListInsertType
+     * @param \traveltainment\SOAP17\StructType\AddonListInsertItemType $item
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertType
      */
-    public function addToAddonListInsertItem(\StructType\AddonListInsertItemType $item)
+    public function addToAddonListInsertItem(\traveltainment\SOAP17\StructType\AddonListInsertItemType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AddonListInsertItemType) {
-            throw new \InvalidArgumentException(sprintf('The AddonListInsertItem property can only contain items of \StructType\AddonListInsertItemType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\AddonListInsertItemType) {
+            throw new \InvalidArgumentException(sprintf('The AddonListInsertItem property can only contain items of \traveltainment\SOAP17\StructType\AddonListInsertItemType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AddonListInsertItem[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class AddonListInsertType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonListInsertType
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertType
      */
     public static function __set_state(array $array)
     {

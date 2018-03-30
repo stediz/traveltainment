@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class DurationListType extends AbstractStructBase
      * Set Duration value
      * @throws \InvalidArgumentException
      * @param int[] $duration
-     * @return \StructType\DurationListType
+     * @return \traveltainment\SOAP17\StructType\DurationListType
      */
     public function setDuration(array $duration = array())
     {
@@ -56,7 +56,7 @@ class DurationListType extends AbstractStructBase
      * Add item to Duration value
      * @throws \InvalidArgumentException
      * @param int $item
-     * @return \StructType\DurationListType
+     * @return \traveltainment\SOAP17\StructType\DurationListType
      */
     public function addToDuration($item)
     {
@@ -73,7 +73,7 @@ class DurationListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DurationListType
+     * @return \traveltainment\SOAP17\StructType\DurationListType
      */
     public static function __set_state(array $array)
     {

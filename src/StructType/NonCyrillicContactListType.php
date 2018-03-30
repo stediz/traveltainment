@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,13 +16,13 @@ class NonCyrillicContactListType extends AbstractStructBase
      * - documentation: Dieser Knoten beinhaltet einen Kontaktdatensatz, der ueber die Attribute LocationType und TechType definiert wird.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\NonCyrillicContactType[]
+     * @var \traveltainment\SOAP17\StructType\NonCyrillicContactType[]
      */
     public $Contact;
     /**
      * Constructor method for NonCyrillicContactListType
      * @uses NonCyrillicContactListType::setContact()
-     * @param \StructType\NonCyrillicContactType[] $contact
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicContactType[] $contact
      */
     public function __construct(array $contact = array())
     {
@@ -31,7 +31,7 @@ class NonCyrillicContactListType extends AbstractStructBase
     }
     /**
      * Get Contact value
-     * @return \StructType\NonCyrillicContactType[]|null
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactType[]|null
      */
     public function getContact()
     {
@@ -40,15 +40,15 @@ class NonCyrillicContactListType extends AbstractStructBase
     /**
      * Set Contact value
      * @throws \InvalidArgumentException
-     * @param \StructType\NonCyrillicContactType[] $contact
-     * @return \StructType\NonCyrillicContactListType
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicContactType[] $contact
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactListType
      */
     public function setContact(array $contact = array())
     {
         foreach ($contact as $nonCyrillicContactListTypeContactItem) {
             // validation for constraint: itemType
-            if (!$nonCyrillicContactListTypeContactItem instanceof \StructType\NonCyrillicContactType) {
-                throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \StructType\NonCyrillicContactType, "%s" given', is_object($nonCyrillicContactListTypeContactItem) ? get_class($nonCyrillicContactListTypeContactItem) : gettype($nonCyrillicContactListTypeContactItem)), __LINE__);
+            if (!$nonCyrillicContactListTypeContactItem instanceof \traveltainment\SOAP17\StructType\NonCyrillicContactType) {
+                throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \traveltainment\SOAP17\StructType\NonCyrillicContactType, "%s" given', is_object($nonCyrillicContactListTypeContactItem) ? get_class($nonCyrillicContactListTypeContactItem) : gettype($nonCyrillicContactListTypeContactItem)), __LINE__);
             }
         }
         $this->Contact = $contact;
@@ -57,14 +57,14 @@ class NonCyrillicContactListType extends AbstractStructBase
     /**
      * Add item to Contact value
      * @throws \InvalidArgumentException
-     * @param \StructType\NonCyrillicContactType $item
-     * @return \StructType\NonCyrillicContactListType
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicContactType $item
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactListType
      */
-    public function addToContact(\StructType\NonCyrillicContactType $item)
+    public function addToContact(\traveltainment\SOAP17\StructType\NonCyrillicContactType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\NonCyrillicContactType) {
-            throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \StructType\NonCyrillicContactType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\NonCyrillicContactType) {
+            throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \traveltainment\SOAP17\StructType\NonCyrillicContactType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Contact[] = $item;
         return $this;
@@ -75,7 +75,7 @@ class NonCyrillicContactListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\NonCyrillicContactListType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactListType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class HolidayHomeOfferGridOptionsType extends AbstractStructBase
      * The BestPriceDateSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferGridBestPriceDateSpanType
+     * @var \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType
      */
     public $BestPriceDateSpan;
     /**
@@ -29,9 +29,9 @@ class HolidayHomeOfferGridOptionsType extends AbstractStructBase
      * @uses HolidayHomeOfferGridOptionsType::setAdditionalCurrencies()
      * @uses HolidayHomeOfferGridOptionsType::setBestPriceDateSpan()
      * @param string $additionalCurrencies
-     * @param \StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
+     * @param \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
      */
-    public function __construct($additionalCurrencies = null, \StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
+    public function __construct($additionalCurrencies = null, \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
     {
         $this
             ->setAdditionalCurrencies($additionalCurrencies)
@@ -48,7 +48,7 @@ class HolidayHomeOfferGridOptionsType extends AbstractStructBase
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\HolidayHomeOfferGridOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -61,7 +61,7 @@ class HolidayHomeOfferGridOptionsType extends AbstractStructBase
     }
     /**
      * Get BestPriceDateSpan value
-     * @return \StructType\OfferGridBestPriceDateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType|null
      */
     public function getBestPriceDateSpan()
     {
@@ -69,10 +69,10 @@ class HolidayHomeOfferGridOptionsType extends AbstractStructBase
     }
     /**
      * Set BestPriceDateSpan value
-     * @param \StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
-     * @return \StructType\HolidayHomeOfferGridOptionsType
+     * @param \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType
      */
-    public function setBestPriceDateSpan(\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
+    public function setBestPriceDateSpan(\traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
     {
         $this->BestPriceDateSpan = $bestPriceDateSpan;
         return $this;
@@ -83,7 +83,7 @@ class HolidayHomeOfferGridOptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOfferGridOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType
      */
     public static function __set_state(array $array)
     {

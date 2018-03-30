@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class RegionListFilterType extends AbstractStructBase
      * The RegionID
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionID
+     * @var \traveltainment\SOAP17\StructType\RegionID
      */
     public $RegionID;
     /**
@@ -35,28 +35,28 @@ class RegionListFilterType extends AbstractStructBase
      * The HotelReview
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewRequestType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public $HotelReview;
     /**
      * The UDFRegions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\UDFRegionsType
+     * @var \traveltainment\SOAP17\StructType\UDFRegionsType
      */
     public $UDFRegions;
     /**
      * The DLC
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AirportType
+     * @var \traveltainment\SOAP17\StructType\AirportType
      */
     public $DLC;
     /**
      * The FlightDuration
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\FlightDurationFilterType
+     * @var \traveltainment\SOAP17\StructType\FlightDurationFilterType
      */
     public $FlightDuration;
     /**
@@ -69,14 +69,14 @@ class RegionListFilterType extends AbstractStructBase
      * @uses RegionListFilterType::setDLC()
      * @uses RegionListFilterType::setFlightDuration()
      * @param string $offerScope
-     * @param \StructType\RegionID $regionID
+     * @param \traveltainment\SOAP17\StructType\RegionID $regionID
      * @param string $objectName
-     * @param \StructType\HotelReviewRequestType $hotelReview
-     * @param \StructType\UDFRegionsType $uDFRegions
-     * @param \StructType\AirportType $dLC
-     * @param \StructType\FlightDurationFilterType $flightDuration
+     * @param \traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview
+     * @param \traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions
+     * @param \traveltainment\SOAP17\StructType\AirportType $dLC
+     * @param \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration
      */
-    public function __construct($offerScope = null, \StructType\RegionID $regionID = null, $objectName = null, \StructType\HotelReviewRequestType $hotelReview = null, \StructType\UDFRegionsType $uDFRegions = null, \StructType\AirportType $dLC = null, \StructType\FlightDurationFilterType $flightDuration = null)
+    public function __construct($offerScope = null, \traveltainment\SOAP17\StructType\RegionID $regionID = null, $objectName = null, \traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview = null, \traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions = null, \traveltainment\SOAP17\StructType\AirportType $dLC = null, \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration = null)
     {
         $this
             ->setOfferScope($offerScope)
@@ -97,24 +97,24 @@ class RegionListFilterType extends AbstractStructBase
     }
     /**
      * Set OfferScope value
-     * @uses \EnumType\OfferScopeEnum::valueIsValid()
-     * @uses \EnumType\OfferScopeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $offerScope
-     * @return \StructType\RegionListFilterType
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
     public function setOfferScope($offerScope = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \EnumType\OfferScopeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues())), __LINE__);
         }
         $this->OfferScope = $offerScope;
         return $this;
     }
     /**
      * Get RegionID value
-     * @return \StructType\RegionID|null
+     * @return \traveltainment\SOAP17\StructType\RegionID|null
      */
     public function getRegionID()
     {
@@ -122,10 +122,10 @@ class RegionListFilterType extends AbstractStructBase
     }
     /**
      * Set RegionID value
-     * @param \StructType\RegionID $regionID
-     * @return \StructType\RegionListFilterType
+     * @param \traveltainment\SOAP17\StructType\RegionID $regionID
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
-    public function setRegionID(\StructType\RegionID $regionID = null)
+    public function setRegionID(\traveltainment\SOAP17\StructType\RegionID $regionID = null)
     {
         $this->RegionID = $regionID;
         return $this;
@@ -141,7 +141,7 @@ class RegionListFilterType extends AbstractStructBase
     /**
      * Set ObjectName value
      * @param string $objectName
-     * @return \StructType\RegionListFilterType
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
     public function setObjectName($objectName = null)
     {
@@ -154,7 +154,7 @@ class RegionListFilterType extends AbstractStructBase
     }
     /**
      * Get HotelReview value
-     * @return \StructType\HotelReviewRequestType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType|null
      */
     public function getHotelReview()
     {
@@ -162,17 +162,17 @@ class RegionListFilterType extends AbstractStructBase
     }
     /**
      * Set HotelReview value
-     * @param \StructType\HotelReviewRequestType $hotelReview
-     * @return \StructType\RegionListFilterType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
-    public function setHotelReview(\StructType\HotelReviewRequestType $hotelReview = null)
+    public function setHotelReview(\traveltainment\SOAP17\StructType\HotelReviewRequestType $hotelReview = null)
     {
         $this->HotelReview = $hotelReview;
         return $this;
     }
     /**
      * Get UDFRegions value
-     * @return \StructType\UDFRegionsType|null
+     * @return \traveltainment\SOAP17\StructType\UDFRegionsType|null
      */
     public function getUDFRegions()
     {
@@ -180,17 +180,17 @@ class RegionListFilterType extends AbstractStructBase
     }
     /**
      * Set UDFRegions value
-     * @param \StructType\UDFRegionsType $uDFRegions
-     * @return \StructType\RegionListFilterType
+     * @param \traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
-    public function setUDFRegions(\StructType\UDFRegionsType $uDFRegions = null)
+    public function setUDFRegions(\traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions = null)
     {
         $this->UDFRegions = $uDFRegions;
         return $this;
     }
     /**
      * Get DLC value
-     * @return \StructType\AirportType|null
+     * @return \traveltainment\SOAP17\StructType\AirportType|null
      */
     public function getDLC()
     {
@@ -198,17 +198,17 @@ class RegionListFilterType extends AbstractStructBase
     }
     /**
      * Set DLC value
-     * @param \StructType\AirportType $dLC
-     * @return \StructType\RegionListFilterType
+     * @param \traveltainment\SOAP17\StructType\AirportType $dLC
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
-    public function setDLC(\StructType\AirportType $dLC = null)
+    public function setDLC(\traveltainment\SOAP17\StructType\AirportType $dLC = null)
     {
         $this->DLC = $dLC;
         return $this;
     }
     /**
      * Get FlightDuration value
-     * @return \StructType\FlightDurationFilterType|null
+     * @return \traveltainment\SOAP17\StructType\FlightDurationFilterType|null
      */
     public function getFlightDuration()
     {
@@ -216,10 +216,10 @@ class RegionListFilterType extends AbstractStructBase
     }
     /**
      * Set FlightDuration value
-     * @param \StructType\FlightDurationFilterType $flightDuration
-     * @return \StructType\RegionListFilterType
+     * @param \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
-    public function setFlightDuration(\StructType\FlightDurationFilterType $flightDuration = null)
+    public function setFlightDuration(\traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration = null)
     {
         $this->FlightDuration = $flightDuration;
         return $this;
@@ -230,7 +230,7 @@ class RegionListFilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionListFilterType
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType
      */
     public static function __set_state(array $array)
     {

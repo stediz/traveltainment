@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_OfferGridResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineOfferGridRS
+     * @var \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS
      */
     public $return;
     /**
      * Constructor method for Search_Package_OfferGridResponse
      * @uses Search_Package_OfferGridResponse::setReturn()
-     * @param \StructType\SearchEngineOfferGridRS $return
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS $return
      */
-    public function __construct(\StructType\SearchEngineOfferGridRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineOfferGridRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\SearchEngineOfferGridRS|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_Package_OfferGridResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\SearchEngineOfferGridRS $return
-     * @return \StructType\Search_Package_OfferGridResponse
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferGridRS $return
+     * @return \traveltainment\SOAP17\StructType\Search_Package_OfferGridResponse
      */
-    public function setReturn(\StructType\SearchEngineOfferGridRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\SearchEngineOfferGridRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_OfferGridResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_OfferGridResponse
+     * @return \traveltainment\SOAP17\StructType\Search_Package_OfferGridResponse
      */
     public static function __set_state(array $array)
     {

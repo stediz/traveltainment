@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class RegionNodeList extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\RegionNode[]
+     * @var \traveltainment\SOAP17\StructType\RegionNode[]
      */
     public $SubRegion;
     /**
      * Constructor method for RegionNodeList
      * @uses RegionNodeList::setSubRegion()
-     * @param \StructType\RegionNode[] $subRegion
+     * @param \traveltainment\SOAP17\StructType\RegionNode[] $subRegion
      */
     public function __construct(array $subRegion = array())
     {
@@ -30,7 +30,7 @@ class RegionNodeList extends AbstractStructBase
     }
     /**
      * Get SubRegion value
-     * @return \StructType\RegionNode[]|null
+     * @return \traveltainment\SOAP17\StructType\RegionNode[]|null
      */
     public function getSubRegion()
     {
@@ -39,15 +39,15 @@ class RegionNodeList extends AbstractStructBase
     /**
      * Set SubRegion value
      * @throws \InvalidArgumentException
-     * @param \StructType\RegionNode[] $subRegion
-     * @return \StructType\RegionNodeList
+     * @param \traveltainment\SOAP17\StructType\RegionNode[] $subRegion
+     * @return \traveltainment\SOAP17\StructType\RegionNodeList
      */
     public function setSubRegion(array $subRegion = array())
     {
         foreach ($subRegion as $regionNodeListSubRegionItem) {
             // validation for constraint: itemType
-            if (!$regionNodeListSubRegionItem instanceof \StructType\RegionNode) {
-                throw new \InvalidArgumentException(sprintf('The SubRegion property can only contain items of \StructType\RegionNode, "%s" given', is_object($regionNodeListSubRegionItem) ? get_class($regionNodeListSubRegionItem) : gettype($regionNodeListSubRegionItem)), __LINE__);
+            if (!$regionNodeListSubRegionItem instanceof \traveltainment\SOAP17\StructType\RegionNode) {
+                throw new \InvalidArgumentException(sprintf('The SubRegion property can only contain items of \traveltainment\SOAP17\StructType\RegionNode, "%s" given', is_object($regionNodeListSubRegionItem) ? get_class($regionNodeListSubRegionItem) : gettype($regionNodeListSubRegionItem)), __LINE__);
             }
         }
         $this->SubRegion = $subRegion;
@@ -56,14 +56,14 @@ class RegionNodeList extends AbstractStructBase
     /**
      * Add item to SubRegion value
      * @throws \InvalidArgumentException
-     * @param \StructType\RegionNode $item
-     * @return \StructType\RegionNodeList
+     * @param \traveltainment\SOAP17\StructType\RegionNode $item
+     * @return \traveltainment\SOAP17\StructType\RegionNodeList
      */
-    public function addToSubRegion(\StructType\RegionNode $item)
+    public function addToSubRegion(\traveltainment\SOAP17\StructType\RegionNode $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RegionNode) {
-            throw new \InvalidArgumentException(sprintf('The SubRegion property can only contain items of \StructType\RegionNode, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\RegionNode) {
+            throw new \InvalidArgumentException(sprintf('The SubRegion property can only contain items of \traveltainment\SOAP17\StructType\RegionNode, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->SubRegion[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class RegionNodeList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionNodeList
+     * @return \traveltainment\SOAP17\StructType\RegionNodeList
      */
     public static function __set_state(array $array)
     {

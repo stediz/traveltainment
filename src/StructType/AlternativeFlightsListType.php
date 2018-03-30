@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class AlternativeFlightsListType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1000
      * - minOccurs: 0
-     * @var \StructType\AlternativeFlightType[]
+     * @var \traveltainment\SOAP17\StructType\AlternativeFlightType[]
      */
     public $AlternativeFlight;
     /**
      * Constructor method for AlternativeFlightsListType
      * @uses AlternativeFlightsListType::setAlternativeFlight()
-     * @param \StructType\AlternativeFlightType[] $alternativeFlight
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightType[] $alternativeFlight
      */
     public function __construct(array $alternativeFlight = array())
     {
@@ -30,7 +30,7 @@ class AlternativeFlightsListType extends AbstractStructBase
     }
     /**
      * Get AlternativeFlight value
-     * @return \StructType\AlternativeFlightType[]|null
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightType[]|null
      */
     public function getAlternativeFlight()
     {
@@ -39,15 +39,15 @@ class AlternativeFlightsListType extends AbstractStructBase
     /**
      * Set AlternativeFlight value
      * @throws \InvalidArgumentException
-     * @param \StructType\AlternativeFlightType[] $alternativeFlight
-     * @return \StructType\AlternativeFlightsListType
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightType[] $alternativeFlight
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightsListType
      */
     public function setAlternativeFlight(array $alternativeFlight = array())
     {
         foreach ($alternativeFlight as $alternativeFlightsListTypeAlternativeFlightItem) {
             // validation for constraint: itemType
-            if (!$alternativeFlightsListTypeAlternativeFlightItem instanceof \StructType\AlternativeFlightType) {
-                throw new \InvalidArgumentException(sprintf('The AlternativeFlight property can only contain items of \StructType\AlternativeFlightType, "%s" given', is_object($alternativeFlightsListTypeAlternativeFlightItem) ? get_class($alternativeFlightsListTypeAlternativeFlightItem) : gettype($alternativeFlightsListTypeAlternativeFlightItem)), __LINE__);
+            if (!$alternativeFlightsListTypeAlternativeFlightItem instanceof \traveltainment\SOAP17\StructType\AlternativeFlightType) {
+                throw new \InvalidArgumentException(sprintf('The AlternativeFlight property can only contain items of \traveltainment\SOAP17\StructType\AlternativeFlightType, "%s" given', is_object($alternativeFlightsListTypeAlternativeFlightItem) ? get_class($alternativeFlightsListTypeAlternativeFlightItem) : gettype($alternativeFlightsListTypeAlternativeFlightItem)), __LINE__);
             }
         }
         $this->AlternativeFlight = $alternativeFlight;
@@ -56,14 +56,14 @@ class AlternativeFlightsListType extends AbstractStructBase
     /**
      * Add item to AlternativeFlight value
      * @throws \InvalidArgumentException
-     * @param \StructType\AlternativeFlightType $item
-     * @return \StructType\AlternativeFlightsListType
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightType $item
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightsListType
      */
-    public function addToAlternativeFlight(\StructType\AlternativeFlightType $item)
+    public function addToAlternativeFlight(\traveltainment\SOAP17\StructType\AlternativeFlightType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AlternativeFlightType) {
-            throw new \InvalidArgumentException(sprintf('The AlternativeFlight property can only contain items of \StructType\AlternativeFlightType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\AlternativeFlightType) {
+            throw new \InvalidArgumentException(sprintf('The AlternativeFlight property can only contain items of \traveltainment\SOAP17\StructType\AlternativeFlightType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AlternativeFlight[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class AlternativeFlightsListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AlternativeFlightsListType
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightsListType
      */
     public static function __set_state(array $array)
     {

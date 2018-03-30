@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class OfferGridOptionsType extends AbstractStructBase
      * The BestPriceDateSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferGridBestPriceDateSpanType
+     * @var \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType
      */
     public $BestPriceDateSpan;
     /**
@@ -29,9 +29,9 @@ class OfferGridOptionsType extends AbstractStructBase
      * @uses OfferGridOptionsType::setAdditionalCurrencies()
      * @uses OfferGridOptionsType::setBestPriceDateSpan()
      * @param string $additionalCurrencies
-     * @param \StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
+     * @param \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
      */
-    public function __construct($additionalCurrencies = null, \StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
+    public function __construct($additionalCurrencies = null, \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
     {
         $this
             ->setAdditionalCurrencies($additionalCurrencies)
@@ -48,7 +48,7 @@ class OfferGridOptionsType extends AbstractStructBase
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\OfferGridOptionsType
+     * @return \traveltainment\SOAP17\StructType\OfferGridOptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -61,7 +61,7 @@ class OfferGridOptionsType extends AbstractStructBase
     }
     /**
      * Get BestPriceDateSpan value
-     * @return \StructType\OfferGridBestPriceDateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType|null
      */
     public function getBestPriceDateSpan()
     {
@@ -69,10 +69,10 @@ class OfferGridOptionsType extends AbstractStructBase
     }
     /**
      * Set BestPriceDateSpan value
-     * @param \StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
-     * @return \StructType\OfferGridOptionsType
+     * @param \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan
+     * @return \traveltainment\SOAP17\StructType\OfferGridOptionsType
      */
-    public function setBestPriceDateSpan(\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
+    public function setBestPriceDateSpan(\traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType $bestPriceDateSpan = null)
     {
         $this->BestPriceDateSpan = $bestPriceDateSpan;
         return $this;
@@ -83,7 +83,7 @@ class OfferGridOptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferGridOptionsType
+     * @return \traveltainment\SOAP17\StructType\OfferGridOptionsType
      */
     public static function __set_state(array $array)
     {

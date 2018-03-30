@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -18,7 +18,7 @@ abstract class AbstractResponse extends AbstractMessage
      * - documentation: Der InfoMessage Knoten enthaelt metainformationen von z.B. Fehlern die waehrend des Requests entstanden sind.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\InfoMessageType[]
+     * @var \traveltainment\SOAP17\StructType\InfoMessageType[]
      */
     public $InfoMessage;
     /**
@@ -50,7 +50,7 @@ abstract class AbstractResponse extends AbstractMessage
      * @uses AbstractResponse::setProcessingTime()
      * @uses AbstractResponse::setSuccess()
      * @uses AbstractResponse::setCorrelationsID()
-     * @param \StructType\InfoMessageType[] $infoMessage
+     * @param \traveltainment\SOAP17\StructType\InfoMessageType[] $infoMessage
      * @param int $processingTime
      * @param bool $success
      * @param string $correlationsID
@@ -65,7 +65,7 @@ abstract class AbstractResponse extends AbstractMessage
     }
     /**
      * Get InfoMessage value
-     * @return \StructType\InfoMessageType[]|null
+     * @return \traveltainment\SOAP17\StructType\InfoMessageType[]|null
      */
     public function getInfoMessage()
     {
@@ -74,15 +74,15 @@ abstract class AbstractResponse extends AbstractMessage
     /**
      * Set InfoMessage value
      * @throws \InvalidArgumentException
-     * @param \StructType\InfoMessageType[] $infoMessage
-     * @return \StructType\AbstractResponse
+     * @param \traveltainment\SOAP17\StructType\InfoMessageType[] $infoMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractResponse
      */
     public function setInfoMessage(array $infoMessage = array())
     {
         foreach ($infoMessage as $abstractResponseInfoMessageItem) {
             // validation for constraint: itemType
-            if (!$abstractResponseInfoMessageItem instanceof \StructType\InfoMessageType) {
-                throw new \InvalidArgumentException(sprintf('The InfoMessage property can only contain items of \StructType\InfoMessageType, "%s" given', is_object($abstractResponseInfoMessageItem) ? get_class($abstractResponseInfoMessageItem) : gettype($abstractResponseInfoMessageItem)), __LINE__);
+            if (!$abstractResponseInfoMessageItem instanceof \traveltainment\SOAP17\StructType\InfoMessageType) {
+                throw new \InvalidArgumentException(sprintf('The InfoMessage property can only contain items of \traveltainment\SOAP17\StructType\InfoMessageType, "%s" given', is_object($abstractResponseInfoMessageItem) ? get_class($abstractResponseInfoMessageItem) : gettype($abstractResponseInfoMessageItem)), __LINE__);
             }
         }
         $this->InfoMessage = $infoMessage;
@@ -91,14 +91,14 @@ abstract class AbstractResponse extends AbstractMessage
     /**
      * Add item to InfoMessage value
      * @throws \InvalidArgumentException
-     * @param \StructType\InfoMessageType $item
-     * @return \StructType\AbstractResponse
+     * @param \traveltainment\SOAP17\StructType\InfoMessageType $item
+     * @return \traveltainment\SOAP17\StructType\AbstractResponse
      */
-    public function addToInfoMessage(\StructType\InfoMessageType $item)
+    public function addToInfoMessage(\traveltainment\SOAP17\StructType\InfoMessageType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\InfoMessageType) {
-            throw new \InvalidArgumentException(sprintf('The InfoMessage property can only contain items of \StructType\InfoMessageType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\InfoMessageType) {
+            throw new \InvalidArgumentException(sprintf('The InfoMessage property can only contain items of \traveltainment\SOAP17\StructType\InfoMessageType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->InfoMessage[] = $item;
         return $this;
@@ -114,7 +114,7 @@ abstract class AbstractResponse extends AbstractMessage
     /**
      * Set ProcessingTime value
      * @param int $processingTime
-     * @return \StructType\AbstractResponse
+     * @return \traveltainment\SOAP17\StructType\AbstractResponse
      */
     public function setProcessingTime($processingTime = 0)
     {
@@ -136,7 +136,7 @@ abstract class AbstractResponse extends AbstractMessage
     /**
      * Set Success value
      * @param bool $success
-     * @return \StructType\AbstractResponse
+     * @return \traveltainment\SOAP17\StructType\AbstractResponse
      */
     public function setSuccess($success = false)
     {
@@ -158,7 +158,7 @@ abstract class AbstractResponse extends AbstractMessage
     /**
      * Set CorrelationsID value
      * @param string $correlationsID
-     * @return \StructType\AbstractResponse
+     * @return \traveltainment\SOAP17\StructType\AbstractResponse
      */
     public function setCorrelationsID($correlationsID = null)
     {
@@ -175,7 +175,7 @@ abstract class AbstractResponse extends AbstractMessage
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AbstractResponse
+     * @return \traveltainment\SOAP17\StructType\AbstractResponse
      */
     public static function __set_state(array $array)
     {

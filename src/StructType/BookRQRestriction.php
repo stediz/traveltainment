@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class BookRQRestriction extends XmlInterfaceRQ
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\BookRQRestriction
+     * @return \traveltainment\SOAP17\StructType\BookRQRestriction
      */
     public function setSessionID($sessionID = null)
     {
@@ -70,7 +70,7 @@ class BookRQRestriction extends XmlInterfaceRQ
     /**
      * Set CID value
      * @param string $cID
-     * @return \StructType\BookRQRestriction
+     * @return \traveltainment\SOAP17\StructType\BookRQRestriction
      */
     public function setCID($cID = null)
     {
@@ -87,7 +87,7 @@ class BookRQRestriction extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookRQRestriction
+     * @return \traveltainment\SOAP17\StructType\BookRQRestriction
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,14 +14,14 @@ class HolidayHomeListRS extends XmlInterfaceRS
      * The DefaultRegion
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $DefaultRegion;
     /**
      * The ResultSummary
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeResultSummaryType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeResultSummaryType
      */
     public $ResultSummary;
     /**
@@ -29,7 +29,7 @@ class HolidayHomeListRS extends XmlInterfaceRS
      * Meta informations extracted from the WSDL
      * - maxOccurs: 2
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeResultSetList[]
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[]
      */
     public $ResultSet;
     /**
@@ -37,11 +37,11 @@ class HolidayHomeListRS extends XmlInterfaceRS
      * @uses HolidayHomeListRS::setDefaultRegion()
      * @uses HolidayHomeListRS::setResultSummary()
      * @uses HolidayHomeListRS::setResultSet()
-     * @param \StructType\RegionType $defaultRegion
-     * @param \StructType\HolidayHomeResultSummaryType $resultSummary
-     * @param \StructType\HolidayHomeResultSetList[] $resultSet
+     * @param \traveltainment\SOAP17\StructType\RegionType $defaultRegion
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSummaryType $resultSummary
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[] $resultSet
      */
-    public function __construct(\StructType\RegionType $defaultRegion = null, \StructType\HolidayHomeResultSummaryType $resultSummary = null, array $resultSet = array())
+    public function __construct(\traveltainment\SOAP17\StructType\RegionType $defaultRegion = null, \traveltainment\SOAP17\StructType\HolidayHomeResultSummaryType $resultSummary = null, array $resultSet = array())
     {
         $this
             ->setDefaultRegion($defaultRegion)
@@ -50,7 +50,7 @@ class HolidayHomeListRS extends XmlInterfaceRS
     }
     /**
      * Get DefaultRegion value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getDefaultRegion()
     {
@@ -58,17 +58,17 @@ class HolidayHomeListRS extends XmlInterfaceRS
     }
     /**
      * Set DefaultRegion value
-     * @param \StructType\RegionType $defaultRegion
-     * @return \StructType\HolidayHomeListRS
+     * @param \traveltainment\SOAP17\StructType\RegionType $defaultRegion
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRS
      */
-    public function setDefaultRegion(\StructType\RegionType $defaultRegion = null)
+    public function setDefaultRegion(\traveltainment\SOAP17\StructType\RegionType $defaultRegion = null)
     {
         $this->DefaultRegion = $defaultRegion;
         return $this;
     }
     /**
      * Get ResultSummary value
-     * @return \StructType\HolidayHomeResultSummaryType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSummaryType|null
      */
     public function getResultSummary()
     {
@@ -76,17 +76,17 @@ class HolidayHomeListRS extends XmlInterfaceRS
     }
     /**
      * Set ResultSummary value
-     * @param \StructType\HolidayHomeResultSummaryType $resultSummary
-     * @return \StructType\HolidayHomeListRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSummaryType $resultSummary
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRS
      */
-    public function setResultSummary(\StructType\HolidayHomeResultSummaryType $resultSummary = null)
+    public function setResultSummary(\traveltainment\SOAP17\StructType\HolidayHomeResultSummaryType $resultSummary = null)
     {
         $this->ResultSummary = $resultSummary;
         return $this;
     }
     /**
      * Get ResultSet value
-     * @return \StructType\HolidayHomeResultSetList[]|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[]|null
      */
     public function getResultSet()
     {
@@ -95,15 +95,15 @@ class HolidayHomeListRS extends XmlInterfaceRS
     /**
      * Set ResultSet value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeResultSetList[] $resultSet
-     * @return \StructType\HolidayHomeListRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSetList[] $resultSet
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRS
      */
     public function setResultSet(array $resultSet = array())
     {
         foreach ($resultSet as $holidayHomeListRSResultSetItem) {
             // validation for constraint: itemType
-            if (!$holidayHomeListRSResultSetItem instanceof \StructType\HolidayHomeResultSetList) {
-                throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \StructType\HolidayHomeResultSetList, "%s" given', is_object($holidayHomeListRSResultSetItem) ? get_class($holidayHomeListRSResultSetItem) : gettype($holidayHomeListRSResultSetItem)), __LINE__);
+            if (!$holidayHomeListRSResultSetItem instanceof \traveltainment\SOAP17\StructType\HolidayHomeResultSetList) {
+                throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeResultSetList, "%s" given', is_object($holidayHomeListRSResultSetItem) ? get_class($holidayHomeListRSResultSetItem) : gettype($holidayHomeListRSResultSetItem)), __LINE__);
             }
         }
         $this->ResultSet = $resultSet;
@@ -112,14 +112,14 @@ class HolidayHomeListRS extends XmlInterfaceRS
     /**
      * Add item to ResultSet value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeResultSetList $item
-     * @return \StructType\HolidayHomeListRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeResultSetList $item
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRS
      */
-    public function addToResultSet(\StructType\HolidayHomeResultSetList $item)
+    public function addToResultSet(\traveltainment\SOAP17\StructType\HolidayHomeResultSetList $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HolidayHomeResultSetList) {
-            throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \StructType\HolidayHomeResultSetList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\HolidayHomeResultSetList) {
+            throw new \InvalidArgumentException(sprintf('The ResultSet property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeResultSetList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ResultSet[] = $item;
         return $this;
@@ -130,7 +130,7 @@ class HolidayHomeListRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeListRS
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRS
      */
     public static function __set_state(array $array)
     {

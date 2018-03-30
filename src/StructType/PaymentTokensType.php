@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class PaymentTokensType extends AbstractStructBase
      * The PaymentToken
      * Meta informations extracted from the WSDL
      * - maxOccurs: 99
-     * @var \StructType\PaymentTokenType[]
+     * @var \traveltainment\SOAP17\StructType\PaymentTokenType[]
      */
     public $PaymentToken;
     /**
      * Constructor method for PaymentTokensType
      * @uses PaymentTokensType::setPaymentToken()
-     * @param \StructType\PaymentTokenType[] $paymentToken
+     * @param \traveltainment\SOAP17\StructType\PaymentTokenType[] $paymentToken
      */
     public function __construct(array $paymentToken = array())
     {
@@ -29,7 +29,7 @@ class PaymentTokensType extends AbstractStructBase
     }
     /**
      * Get PaymentToken value
-     * @return \StructType\PaymentTokenType[]|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTokenType[]|null
      */
     public function getPaymentToken()
     {
@@ -38,15 +38,15 @@ class PaymentTokensType extends AbstractStructBase
     /**
      * Set PaymentToken value
      * @throws \InvalidArgumentException
-     * @param \StructType\PaymentTokenType[] $paymentToken
-     * @return \StructType\PaymentTokensType
+     * @param \traveltainment\SOAP17\StructType\PaymentTokenType[] $paymentToken
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType
      */
     public function setPaymentToken(array $paymentToken = array())
     {
         foreach ($paymentToken as $paymentTokensTypePaymentTokenItem) {
             // validation for constraint: itemType
-            if (!$paymentTokensTypePaymentTokenItem instanceof \StructType\PaymentTokenType) {
-                throw new \InvalidArgumentException(sprintf('The PaymentToken property can only contain items of \StructType\PaymentTokenType, "%s" given', is_object($paymentTokensTypePaymentTokenItem) ? get_class($paymentTokensTypePaymentTokenItem) : gettype($paymentTokensTypePaymentTokenItem)), __LINE__);
+            if (!$paymentTokensTypePaymentTokenItem instanceof \traveltainment\SOAP17\StructType\PaymentTokenType) {
+                throw new \InvalidArgumentException(sprintf('The PaymentToken property can only contain items of \traveltainment\SOAP17\StructType\PaymentTokenType, "%s" given', is_object($paymentTokensTypePaymentTokenItem) ? get_class($paymentTokensTypePaymentTokenItem) : gettype($paymentTokensTypePaymentTokenItem)), __LINE__);
             }
         }
         $this->PaymentToken = $paymentToken;
@@ -55,14 +55,14 @@ class PaymentTokensType extends AbstractStructBase
     /**
      * Add item to PaymentToken value
      * @throws \InvalidArgumentException
-     * @param \StructType\PaymentTokenType $item
-     * @return \StructType\PaymentTokensType
+     * @param \traveltainment\SOAP17\StructType\PaymentTokenType $item
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType
      */
-    public function addToPaymentToken(\StructType\PaymentTokenType $item)
+    public function addToPaymentToken(\traveltainment\SOAP17\StructType\PaymentTokenType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PaymentTokenType) {
-            throw new \InvalidArgumentException(sprintf('The PaymentToken property can only contain items of \StructType\PaymentTokenType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\PaymentTokenType) {
+            throw new \InvalidArgumentException(sprintf('The PaymentToken property can only contain items of \traveltainment\SOAP17\StructType\PaymentTokenType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->PaymentToken[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class PaymentTokensType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PaymentTokensType
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType
      */
     public static function __set_state(array $array)
     {

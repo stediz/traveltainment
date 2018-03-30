@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_CrossSelling_TransferOfferListResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetTransferOfferListRSType
+     * @var \traveltainment\SOAP17\StructType\GetTransferOfferListRSType
      */
     public $return;
     /**
      * Constructor method for Search_CrossSelling_TransferOfferListResponse
      * @uses Search_CrossSelling_TransferOfferListResponse::setReturn()
-     * @param \StructType\GetTransferOfferListRSType $return
+     * @param \traveltainment\SOAP17\StructType\GetTransferOfferListRSType $return
      */
-    public function __construct(\StructType\GetTransferOfferListRSType $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetTransferOfferListRSType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\GetTransferOfferListRSType|null
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRSType|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_CrossSelling_TransferOfferListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\GetTransferOfferListRSType $return
-     * @return \StructType\Search_CrossSelling_TransferOfferListResponse
+     * @param \traveltainment\SOAP17\StructType\GetTransferOfferListRSType $return
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_TransferOfferListResponse
      */
-    public function setReturn(\StructType\GetTransferOfferListRSType $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\GetTransferOfferListRSType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_CrossSelling_TransferOfferListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_CrossSelling_TransferOfferListResponse
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_TransferOfferListResponse
      */
     public static function __set_state(array $array)
     {

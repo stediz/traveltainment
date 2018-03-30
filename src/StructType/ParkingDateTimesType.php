@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class ParkingDateTimesType extends AbstractStructBase
     /**
      * Set StartDateTime value
      * @param string $startDateTime
-     * @return \StructType\ParkingDateTimesType
+     * @return \traveltainment\SOAP17\StructType\ParkingDateTimesType
      */
     public function setStartDateTime($startDateTime = null)
     {
@@ -70,7 +70,7 @@ class ParkingDateTimesType extends AbstractStructBase
     /**
      * Set EndDateTime value
      * @param string $endDateTime
-     * @return \StructType\ParkingDateTimesType
+     * @return \traveltainment\SOAP17\StructType\ParkingDateTimesType
      */
     public function setEndDateTime($endDateTime = null)
     {
@@ -87,7 +87,7 @@ class ParkingDateTimesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParkingDateTimesType
+     * @return \traveltainment\SOAP17\StructType\ParkingDateTimesType
      */
     public static function __set_state(array $array)
     {

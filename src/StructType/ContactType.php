@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class ContactType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\ContactType
+     * @return \traveltainment\SOAP17\StructType\ContactType
      */
     public function set_($_ = null)
     {
@@ -77,17 +77,17 @@ class ContactType extends AbstractStructBase
     }
     /**
      * Set LocationType value
-     * @uses \EnumType\UseLocationTypeEnum::valueIsValid()
-     * @uses \EnumType\UseLocationTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\UseLocationTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\UseLocationTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $locationType
-     * @return \StructType\ContactType
+     * @return \traveltainment\SOAP17\StructType\ContactType
      */
     public function setLocationType($locationType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\UseLocationTypeEnum::valueIsValid($locationType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $locationType, implode(', ', \EnumType\UseLocationTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\UseLocationTypeEnum::valueIsValid($locationType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $locationType, implode(', ', \traveltainment\SOAP17\EnumType\UseLocationTypeEnum::getValidValues())), __LINE__);
         }
         $this->LocationType = $locationType;
         return $this;
@@ -102,17 +102,17 @@ class ContactType extends AbstractStructBase
     }
     /**
      * Set TechType value
-     * @uses \EnumType\ContactTechTypeEnum::valueIsValid()
-     * @uses \EnumType\ContactTechTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ContactTechTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ContactTechTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $techType
-     * @return \StructType\ContactType
+     * @return \traveltainment\SOAP17\StructType\ContactType
      */
     public function setTechType($techType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ContactTechTypeEnum::valueIsValid($techType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $techType, implode(', ', \EnumType\ContactTechTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ContactTechTypeEnum::valueIsValid($techType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $techType, implode(', ', \traveltainment\SOAP17\EnumType\ContactTechTypeEnum::getValidValues())), __LINE__);
         }
         $this->TechType = $techType;
         return $this;
@@ -123,7 +123,7 @@ class ContactType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ContactType
+     * @return \traveltainment\SOAP17\StructType\ContactType
      */
     public static function __set_state(array $array)
     {

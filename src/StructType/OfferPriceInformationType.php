@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,19 +12,19 @@ class OfferPriceInformationType extends AbstractStructBase
 {
     /**
      * The Prices
-     * @var \StructType\PricesType
+     * @var \traveltainment\SOAP17\StructType\PricesType
      */
     public $Prices;
     /**
      * The CachePrices
-     * @var \StructType\PricesType
+     * @var \traveltainment\SOAP17\StructType\PricesType
      */
     public $CachePrices;
     /**
      * The AdditionalCost
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AdditionalCostType
+     * @var \traveltainment\SOAP17\StructType\AdditionalCostType
      */
     public $AdditionalCost;
     /**
@@ -32,11 +32,11 @@ class OfferPriceInformationType extends AbstractStructBase
      * @uses OfferPriceInformationType::setPrices()
      * @uses OfferPriceInformationType::setCachePrices()
      * @uses OfferPriceInformationType::setAdditionalCost()
-     * @param \StructType\PricesType $prices
-     * @param \StructType\PricesType $cachePrices
-     * @param \StructType\AdditionalCostType $additionalCost
+     * @param \traveltainment\SOAP17\StructType\PricesType $prices
+     * @param \traveltainment\SOAP17\StructType\PricesType $cachePrices
+     * @param \traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost
      */
-    public function __construct(\StructType\PricesType $prices = null, \StructType\PricesType $cachePrices = null, \StructType\AdditionalCostType $additionalCost = null)
+    public function __construct(\traveltainment\SOAP17\StructType\PricesType $prices = null, \traveltainment\SOAP17\StructType\PricesType $cachePrices = null, \traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost = null)
     {
         $this
             ->setPrices($prices)
@@ -45,7 +45,7 @@ class OfferPriceInformationType extends AbstractStructBase
     }
     /**
      * Get Prices value
-     * @return \StructType\PricesType|null
+     * @return \traveltainment\SOAP17\StructType\PricesType|null
      */
     public function getPrices()
     {
@@ -53,17 +53,17 @@ class OfferPriceInformationType extends AbstractStructBase
     }
     /**
      * Set Prices value
-     * @param \StructType\PricesType $prices
-     * @return \StructType\OfferPriceInformationType
+     * @param \traveltainment\SOAP17\StructType\PricesType $prices
+     * @return \traveltainment\SOAP17\StructType\OfferPriceInformationType
      */
-    public function setPrices(\StructType\PricesType $prices = null)
+    public function setPrices(\traveltainment\SOAP17\StructType\PricesType $prices = null)
     {
         $this->Prices = $prices;
         return $this;
     }
     /**
      * Get CachePrices value
-     * @return \StructType\PricesType|null
+     * @return \traveltainment\SOAP17\StructType\PricesType|null
      */
     public function getCachePrices()
     {
@@ -71,17 +71,17 @@ class OfferPriceInformationType extends AbstractStructBase
     }
     /**
      * Set CachePrices value
-     * @param \StructType\PricesType $cachePrices
-     * @return \StructType\OfferPriceInformationType
+     * @param \traveltainment\SOAP17\StructType\PricesType $cachePrices
+     * @return \traveltainment\SOAP17\StructType\OfferPriceInformationType
      */
-    public function setCachePrices(\StructType\PricesType $cachePrices = null)
+    public function setCachePrices(\traveltainment\SOAP17\StructType\PricesType $cachePrices = null)
     {
         $this->CachePrices = $cachePrices;
         return $this;
     }
     /**
      * Get AdditionalCost value
-     * @return \StructType\AdditionalCostType|null
+     * @return \traveltainment\SOAP17\StructType\AdditionalCostType|null
      */
     public function getAdditionalCost()
     {
@@ -89,10 +89,10 @@ class OfferPriceInformationType extends AbstractStructBase
     }
     /**
      * Set AdditionalCost value
-     * @param \StructType\AdditionalCostType $additionalCost
-     * @return \StructType\OfferPriceInformationType
+     * @param \traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost
+     * @return \traveltainment\SOAP17\StructType\OfferPriceInformationType
      */
-    public function setAdditionalCost(\StructType\AdditionalCostType $additionalCost = null)
+    public function setAdditionalCost(\traveltainment\SOAP17\StructType\AdditionalCostType $additionalCost = null)
     {
         $this->AdditionalCost = $additionalCost;
         return $this;
@@ -103,7 +103,7 @@ class OfferPriceInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferPriceInformationType
+     * @return \traveltainment\SOAP17\StructType\OfferPriceInformationType
      */
     public static function __set_state(array $array)
     {

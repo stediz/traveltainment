@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class InsuranceOfferType extends Offer3pType
 {
     /**
      * The InsuranceFeatures
-     * @var \StructType\InsuranceFeaturesType
+     * @var \traveltainment\SOAP17\StructType\InsuranceFeaturesType
      */
     public $InsuranceFeatures;
     /**
      * Constructor method for InsuranceOfferType
      * @uses InsuranceOfferType::setInsuranceFeatures()
-     * @param \StructType\InsuranceFeaturesType $insuranceFeatures
+     * @param \traveltainment\SOAP17\StructType\InsuranceFeaturesType $insuranceFeatures
      */
-    public function __construct(\StructType\InsuranceFeaturesType $insuranceFeatures = null)
+    public function __construct(\traveltainment\SOAP17\StructType\InsuranceFeaturesType $insuranceFeatures = null)
     {
         $this
             ->setInsuranceFeatures($insuranceFeatures);
     }
     /**
      * Get InsuranceFeatures value
-     * @return \StructType\InsuranceFeaturesType|null
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeaturesType|null
      */
     public function getInsuranceFeatures()
     {
@@ -35,10 +35,10 @@ class InsuranceOfferType extends Offer3pType
     }
     /**
      * Set InsuranceFeatures value
-     * @param \StructType\InsuranceFeaturesType $insuranceFeatures
-     * @return \StructType\InsuranceOfferType
+     * @param \traveltainment\SOAP17\StructType\InsuranceFeaturesType $insuranceFeatures
+     * @return \traveltainment\SOAP17\StructType\InsuranceOfferType
      */
-    public function setInsuranceFeatures(\StructType\InsuranceFeaturesType $insuranceFeatures = null)
+    public function setInsuranceFeatures(\traveltainment\SOAP17\StructType\InsuranceFeaturesType $insuranceFeatures = null)
     {
         $this->InsuranceFeatures = $insuranceFeatures;
         return $this;
@@ -49,7 +49,7 @@ class InsuranceOfferType extends Offer3pType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InsuranceOfferType
+     * @return \traveltainment\SOAP17\StructType\InsuranceOfferType
      */
     public static function __set_state(array $array)
     {

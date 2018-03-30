@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,17 +37,17 @@ class HolidayHomeOfferListOptionsType extends HolidayHomeOptionsType
     }
     /**
      * Set Sorting value
-     * @uses \EnumType\HolidayHomeOfferSortEnum::valueIsValid()
-     * @uses \EnumType\HolidayHomeOfferSortEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeOfferSortEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeOfferSortEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $sorting
-     * @return \StructType\HolidayHomeOfferListOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListOptionsType
      */
     public function setSorting($sorting = 'PERCENTAGEFIT')
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HolidayHomeOfferSortEnum::valueIsValid($sorting)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sorting, implode(', ', \EnumType\HolidayHomeOfferSortEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HolidayHomeOfferSortEnum::valueIsValid($sorting)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sorting, implode(', ', \traveltainment\SOAP17\EnumType\HolidayHomeOfferSortEnum::getValidValues())), __LINE__);
         }
         $this->Sorting = $sorting;
         return $this;
@@ -58,7 +58,7 @@ class HolidayHomeOfferListOptionsType extends HolidayHomeOptionsType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOfferListOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListOptionsType
      */
     public static function __set_state(array $array)
     {

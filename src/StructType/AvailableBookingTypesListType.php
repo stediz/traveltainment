@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class AvailableBookingTypesListType extends AbstractStructBase
     }
     /**
      * Set BookingType value
-     * @uses \EnumType\BookingTypeEnum::valueIsValid()
-     * @uses \EnumType\BookingTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $bookingType
-     * @return \StructType\AvailableBookingTypesListType
+     * @return \traveltainment\SOAP17\StructType\AvailableBookingTypesListType
      */
     public function setBookingType(array $bookingType = array())
     {
         $invalidValues = array();
         foreach ($bookingType as $availableBookingTypesListTypeBookingTypeItem) {
-            if (!\EnumType\BookingTypeEnum::valueIsValid($availableBookingTypesListTypeBookingTypeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid($availableBookingTypesListTypeBookingTypeItem)) {
                 $invalidValues[] = var_export($availableBookingTypesListTypeBookingTypeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\BookingTypeEnum::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues())), __LINE__);
         }
         $this->BookingType = $bookingType;
         return $this;
     }
     /**
      * Add item to BookingType value
-     * @uses \EnumType\BookingTypeEnum::valueIsValid()
-     * @uses \EnumType\BookingTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\AvailableBookingTypesListType
+     * @return \traveltainment\SOAP17\StructType\AvailableBookingTypesListType
      */
     public function addToBookingType($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BookingTypeEnum::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\BookingTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues())), __LINE__);
         }
         $this->BookingType[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class AvailableBookingTypesListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailableBookingTypesListType
+     * @return \traveltainment\SOAP17\StructType\AvailableBookingTypesListType
      */
     public static function __set_state(array $array)
     {

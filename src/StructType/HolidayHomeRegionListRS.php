@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class HolidayHomeRegionListRS extends HolidayHomeSearchRS
      * The GeographicalBounds
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GeographicalBounds
+     * @var \traveltainment\SOAP17\StructType\GeographicalBounds
      */
     public $GeographicalBounds;
     /**
      * Constructor method for HolidayHomeRegionListRS
      * @uses HolidayHomeRegionListRS::setGeographicalBounds()
-     * @param \StructType\GeographicalBounds $geographicalBounds
+     * @param \traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds
      */
-    public function __construct(\StructType\GeographicalBounds $geographicalBounds = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds = null)
     {
         $this
             ->setGeographicalBounds($geographicalBounds);
     }
     /**
      * Get GeographicalBounds value
-     * @return \StructType\GeographicalBounds|null
+     * @return \traveltainment\SOAP17\StructType\GeographicalBounds|null
      */
     public function getGeographicalBounds()
     {
@@ -37,10 +37,10 @@ class HolidayHomeRegionListRS extends HolidayHomeSearchRS
     }
     /**
      * Set GeographicalBounds value
-     * @param \StructType\GeographicalBounds $geographicalBounds
-     * @return \StructType\HolidayHomeRegionListRS
+     * @param \traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListRS
      */
-    public function setGeographicalBounds(\StructType\GeographicalBounds $geographicalBounds = null)
+    public function setGeographicalBounds(\traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds = null)
     {
         $this->GeographicalBounds = $geographicalBounds;
         return $this;
@@ -51,7 +51,7 @@ class HolidayHomeRegionListRS extends HolidayHomeSearchRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeRegionListRS
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListRS
      */
     public static function __set_state(array $array)
     {

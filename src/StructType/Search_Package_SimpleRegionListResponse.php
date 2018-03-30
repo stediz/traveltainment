@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_SimpleRegionListResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineSimpleRegionListRS
+     * @var \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS
      */
     public $return;
     /**
      * Constructor method for Search_Package_SimpleRegionListResponse
      * @uses Search_Package_SimpleRegionListResponse::setReturn()
-     * @param \StructType\SearchEngineSimpleRegionListRS $return
+     * @param \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS $return
      */
-    public function __construct(\StructType\SearchEngineSimpleRegionListRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\SearchEngineSimpleRegionListRS|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_Package_SimpleRegionListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\SearchEngineSimpleRegionListRS $return
-     * @return \StructType\Search_Package_SimpleRegionListResponse
+     * @param \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS $return
+     * @return \traveltainment\SOAP17\StructType\Search_Package_SimpleRegionListResponse
      */
-    public function setReturn(\StructType\SearchEngineSimpleRegionListRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_SimpleRegionListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_SimpleRegionListResponse
+     * @return \traveltainment\SOAP17\StructType\Search_Package_SimpleRegionListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class GetParkingDetailsRSType extends ResponseType
 {
     /**
      * The Errors
-     * @var \StructType\ErrorsType
+     * @var \traveltainment\SOAP17\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -22,7 +22,7 @@ class GetParkingDetailsRSType extends ResponseType
     public $OfferID;
     /**
      * The ParkingDetails
-     * @var \StructType\ParkingDetailsType
+     * @var \traveltainment\SOAP17\StructType\ParkingDetailsType
      */
     public $ParkingDetails;
     /**
@@ -30,11 +30,11 @@ class GetParkingDetailsRSType extends ResponseType
      * @uses GetParkingDetailsRSType::setErrors()
      * @uses GetParkingDetailsRSType::setOfferID()
      * @uses GetParkingDetailsRSType::setParkingDetails()
-     * @param \StructType\ErrorsType $errors
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
      * @param string $offerID
-     * @param \StructType\ParkingDetailsType $parkingDetails
+     * @param \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails
      */
-    public function __construct(\StructType\ErrorsType $errors = null, $offerID = null, \StructType\ParkingDetailsType $parkingDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ErrorsType $errors = null, $offerID = null, \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails = null)
     {
         $this
             ->setErrors($errors)
@@ -43,7 +43,7 @@ class GetParkingDetailsRSType extends ResponseType
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -51,10 +51,10 @@ class GetParkingDetailsRSType extends ResponseType
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\GetParkingDetailsRSType
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRSType
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\traveltainment\SOAP17\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
@@ -70,7 +70,7 @@ class GetParkingDetailsRSType extends ResponseType
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\GetParkingDetailsRSType
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRSType
      */
     public function setOfferID($offerID = null)
     {
@@ -83,7 +83,7 @@ class GetParkingDetailsRSType extends ResponseType
     }
     /**
      * Get ParkingDetails value
-     * @return \StructType\ParkingDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDetailsType|null
      */
     public function getParkingDetails()
     {
@@ -91,10 +91,10 @@ class GetParkingDetailsRSType extends ResponseType
     }
     /**
      * Set ParkingDetails value
-     * @param \StructType\ParkingDetailsType $parkingDetails
-     * @return \StructType\GetParkingDetailsRSType
+     * @param \traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRSType
      */
-    public function setParkingDetails(\StructType\ParkingDetailsType $parkingDetails = null)
+    public function setParkingDetails(\traveltainment\SOAP17\StructType\ParkingDetailsType $parkingDetails = null)
     {
         $this->ParkingDetails = $parkingDetails;
         return $this;
@@ -105,7 +105,7 @@ class GetParkingDetailsRSType extends ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetParkingDetailsRSType
+     * @return \traveltainment\SOAP17\StructType\GetParkingDetailsRSType
      */
     public static function __set_state(array $array)
     {

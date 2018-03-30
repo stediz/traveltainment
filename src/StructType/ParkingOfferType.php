@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,24 +17,24 @@ class ParkingOfferType extends AbstractStructBase
     public $OfferID;
     /**
      * The OfferDescription
-     * @var \StructType\ParkingOfferDescriptionType
+     * @var \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType
      */
     public $OfferDescription;
     /**
      * The OfferCost
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $OfferCost;
     /**
      * The ExtendedOfferCost
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $ExtendedOfferCost;
     /**
      * The AvailablePayments
-     * @var \StructType\PaymentTypesType
+     * @var \traveltainment\SOAP17\StructType\PaymentTypesType
      */
     public $AvailablePayments;
     /**
@@ -45,12 +45,12 @@ class ParkingOfferType extends AbstractStructBase
      * @uses ParkingOfferType::setExtendedOfferCost()
      * @uses ParkingOfferType::setAvailablePayments()
      * @param string $offerID
-     * @param \StructType\ParkingOfferDescriptionType $offerDescription
-     * @param \StructType\SimplePriceType $offerCost
-     * @param \StructType\PriceInformationType $extendedOfferCost
-     * @param \StructType\PaymentTypesType $availablePayments
+     * @param \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType $offerDescription
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $offerCost
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost
+     * @param \traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments
      */
-    public function __construct($offerID = null, \StructType\ParkingOfferDescriptionType $offerDescription = null, \StructType\SimplePriceType $offerCost = null, \StructType\PriceInformationType $extendedOfferCost = null, \StructType\PaymentTypesType $availablePayments = null)
+    public function __construct($offerID = null, \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType $offerDescription = null, \traveltainment\SOAP17\StructType\SimplePriceType $offerCost = null, \traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost = null, \traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments = null)
     {
         $this
             ->setOfferID($offerID)
@@ -70,7 +70,7 @@ class ParkingOfferType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\ParkingOfferType
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType
      */
     public function setOfferID($offerID = null)
     {
@@ -83,7 +83,7 @@ class ParkingOfferType extends AbstractStructBase
     }
     /**
      * Get OfferDescription value
-     * @return \StructType\ParkingOfferDescriptionType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType|null
      */
     public function getOfferDescription()
     {
@@ -91,17 +91,17 @@ class ParkingOfferType extends AbstractStructBase
     }
     /**
      * Set OfferDescription value
-     * @param \StructType\ParkingOfferDescriptionType $offerDescription
-     * @return \StructType\ParkingOfferType
+     * @param \traveltainment\SOAP17\StructType\ParkingOfferDescriptionType $offerDescription
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType
      */
-    public function setOfferDescription(\StructType\ParkingOfferDescriptionType $offerDescription = null)
+    public function setOfferDescription(\traveltainment\SOAP17\StructType\ParkingOfferDescriptionType $offerDescription = null)
     {
         $this->OfferDescription = $offerDescription;
         return $this;
     }
     /**
      * Get OfferCost value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function getOfferCost()
     {
@@ -109,17 +109,17 @@ class ParkingOfferType extends AbstractStructBase
     }
     /**
      * Set OfferCost value
-     * @param \StructType\SimplePriceType $offerCost
-     * @return \StructType\ParkingOfferType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $offerCost
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType
      */
-    public function setOfferCost(\StructType\SimplePriceType $offerCost = null)
+    public function setOfferCost(\traveltainment\SOAP17\StructType\SimplePriceType $offerCost = null)
     {
         $this->OfferCost = $offerCost;
         return $this;
     }
     /**
      * Get ExtendedOfferCost value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getExtendedOfferCost()
     {
@@ -127,17 +127,17 @@ class ParkingOfferType extends AbstractStructBase
     }
     /**
      * Set ExtendedOfferCost value
-     * @param \StructType\PriceInformationType $extendedOfferCost
-     * @return \StructType\ParkingOfferType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType
      */
-    public function setExtendedOfferCost(\StructType\PriceInformationType $extendedOfferCost = null)
+    public function setExtendedOfferCost(\traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost = null)
     {
         $this->ExtendedOfferCost = $extendedOfferCost;
         return $this;
     }
     /**
      * Get AvailablePayments value
-     * @return \StructType\PaymentTypesType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTypesType|null
      */
     public function getAvailablePayments()
     {
@@ -145,10 +145,10 @@ class ParkingOfferType extends AbstractStructBase
     }
     /**
      * Set AvailablePayments value
-     * @param \StructType\PaymentTypesType $availablePayments
-     * @return \StructType\ParkingOfferType
+     * @param \traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType
      */
-    public function setAvailablePayments(\StructType\PaymentTypesType $availablePayments = null)
+    public function setAvailablePayments(\traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments = null)
     {
         $this->AvailablePayments = $availablePayments;
         return $this;
@@ -159,7 +159,7 @@ class ParkingOfferType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParkingOfferType
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType
      */
     public static function __set_state(array $array)
     {

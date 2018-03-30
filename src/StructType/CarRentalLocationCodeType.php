@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class CarRentalLocationCodeType extends AbstractStructBase
     /**
      * Set AirportCode value
      * @param string $airportCode
-     * @return \StructType\CarRentalLocationCodeType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationCodeType
      */
     public function setAirportCode($airportCode = null)
     {
@@ -74,7 +74,7 @@ class CarRentalLocationCodeType extends AbstractStructBase
     /**
      * Set CityCode value
      * @param string $cityCode
-     * @return \StructType\CarRentalLocationCodeType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationCodeType
      */
     public function setCityCode($cityCode = null)
     {
@@ -95,7 +95,7 @@ class CarRentalLocationCodeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalLocationCodeType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationCodeType
      */
     public static function __set_state(array $array)
     {

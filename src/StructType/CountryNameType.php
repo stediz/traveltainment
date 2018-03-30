@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,17 +45,17 @@ class CountryNameType extends AbstractStructBase
     }
     /**
      * Set Code value
-     * @uses \EnumType\CountryCodeType::valueIsValid()
-     * @uses \EnumType\CountryCodeType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CountryCodeType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CountryCodeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $code
-     * @return \StructType\CountryNameType
+     * @return \traveltainment\SOAP17\StructType\CountryNameType
      */
     public function setCode($code = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CountryCodeType::valueIsValid($code)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $code, implode(', ', \EnumType\CountryCodeType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CountryCodeType::valueIsValid($code)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $code, implode(', ', \traveltainment\SOAP17\EnumType\CountryCodeType::getValidValues())), __LINE__);
         }
         $this->Code = $code;
         return $this;
@@ -71,7 +71,7 @@ class CountryNameType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\CountryNameType
+     * @return \traveltainment\SOAP17\StructType\CountryNameType
      */
     public function set_($_ = null)
     {
@@ -88,7 +88,7 @@ class CountryNameType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CountryNameType
+     * @return \traveltainment\SOAP17\StructType\CountryNameType
      */
     public static function __set_state(array $array)
     {

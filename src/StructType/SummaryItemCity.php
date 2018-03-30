@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class SummaryItemCity extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\SummaryItemCity
+     * @return \traveltainment\SOAP17\StructType\SummaryItemCity
      */
     public function setCity($city = null)
     {
@@ -82,7 +82,7 @@ class SummaryItemCity extends AbstractStructBase
     /**
      * Set CityID value
      * @param int $cityID
-     * @return \StructType\SummaryItemCity
+     * @return \traveltainment\SOAP17\StructType\SummaryItemCity
      */
     public function setCityID($cityID = null)
     {
@@ -104,7 +104,7 @@ class SummaryItemCity extends AbstractStructBase
     /**
      * Set HotelNumber value
      * @param int $hotelNumber
-     * @return \StructType\SummaryItemCity
+     * @return \traveltainment\SOAP17\StructType\SummaryItemCity
      */
     public function setHotelNumber($hotelNumber = null)
     {
@@ -126,7 +126,7 @@ class SummaryItemCity extends AbstractStructBase
     /**
      * Set MinPrice value
      * @param int $minPrice
-     * @return \StructType\SummaryItemCity
+     * @return \traveltainment\SOAP17\StructType\SummaryItemCity
      */
     public function setMinPrice($minPrice = null)
     {
@@ -143,7 +143,7 @@ class SummaryItemCity extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SummaryItemCity
+     * @return \traveltainment\SOAP17\StructType\SummaryItemCity
      */
     public static function __set_state(array $array)
     {

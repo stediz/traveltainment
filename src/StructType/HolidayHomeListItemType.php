@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,19 +14,19 @@ class HolidayHomeListItemType extends AbstractStructBase
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
      * The HolidayHome
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeType
      */
     public $HolidayHome;
     /**
      * The Offer
-     * @var \StructType\HolidayHomeOfferType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferType
      */
     public $Offer;
     /**
@@ -34,11 +34,11 @@ class HolidayHomeListItemType extends AbstractStructBase
      * @uses HolidayHomeListItemType::setRegion()
      * @uses HolidayHomeListItemType::setHolidayHome()
      * @uses HolidayHomeListItemType::setOffer()
-     * @param \StructType\RegionType $region
-     * @param \StructType\HolidayHomeType $holidayHome
-     * @param \StructType\HolidayHomeOfferType $offer
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer
      */
-    public function __construct(\StructType\RegionType $region = null, \StructType\HolidayHomeType $holidayHome = null, \StructType\HolidayHomeOfferType $offer = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionType $region = null, \traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome = null, \traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer = null)
     {
         $this
             ->setRegion($region)
@@ -47,7 +47,7 @@ class HolidayHomeListItemType extends AbstractStructBase
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -55,17 +55,17 @@ class HolidayHomeListItemType extends AbstractStructBase
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\HolidayHomeListItemType
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListItemType
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
     }
     /**
      * Get HolidayHome value
-     * @return \StructType\HolidayHomeType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeType|null
      */
     public function getHolidayHome()
     {
@@ -73,17 +73,17 @@ class HolidayHomeListItemType extends AbstractStructBase
     }
     /**
      * Set HolidayHome value
-     * @param \StructType\HolidayHomeType $holidayHome
-     * @return \StructType\HolidayHomeListItemType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListItemType
      */
-    public function setHolidayHome(\StructType\HolidayHomeType $holidayHome = null)
+    public function setHolidayHome(\traveltainment\SOAP17\StructType\HolidayHomeType $holidayHome = null)
     {
         $this->HolidayHome = $holidayHome;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\HolidayHomeOfferType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferType|null
      */
     public function getOffer()
     {
@@ -91,10 +91,10 @@ class HolidayHomeListItemType extends AbstractStructBase
     }
     /**
      * Set Offer value
-     * @param \StructType\HolidayHomeOfferType $offer
-     * @return \StructType\HolidayHomeListItemType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListItemType
      */
-    public function setOffer(\StructType\HolidayHomeOfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
@@ -105,7 +105,7 @@ class HolidayHomeListItemType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeListItemType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListItemType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Flight_OfferListResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineOfferListRS
+     * @var \traveltainment\SOAP17\StructType\SearchEngineOfferListRS
      */
     public $return;
     /**
      * Constructor method for Search_Flight_OfferListResponse
      * @uses Search_Flight_OfferListResponse::setReturn()
-     * @param \StructType\SearchEngineOfferListRS $return
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferListRS $return
      */
-    public function __construct(\StructType\SearchEngineOfferListRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineOfferListRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\SearchEngineOfferListRS|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_Flight_OfferListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\SearchEngineOfferListRS $return
-     * @return \StructType\Search_Flight_OfferListResponse
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferListRS $return
+     * @return \traveltainment\SOAP17\StructType\Search_Flight_OfferListResponse
      */
-    public function setReturn(\StructType\SearchEngineOfferListRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\SearchEngineOfferListRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_Flight_OfferListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Flight_OfferListResponse
+     * @return \traveltainment\SOAP17\StructType\Search_Flight_OfferListResponse
      */
     public static function __set_state(array $array)
     {

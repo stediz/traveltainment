@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,14 +19,14 @@ class HolidayHomeOfferGridElementType extends AbstractStructBase
     public $value;
     /**
      * The Group
-     * @var \StructType\HolidayHomeOfferGridGroupType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType
      */
     public $Group;
     /**
      * The Offer
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeReducedOfferType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeReducedOfferType
      */
     public $Offer;
     /**
@@ -35,10 +35,10 @@ class HolidayHomeOfferGridElementType extends AbstractStructBase
      * @uses HolidayHomeOfferGridElementType::setGroup()
      * @uses HolidayHomeOfferGridElementType::setOffer()
      * @param string $value
-     * @param \StructType\HolidayHomeOfferGridGroupType $group
-     * @param \StructType\HolidayHomeReducedOfferType $offer
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType $group
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeReducedOfferType $offer
      */
-    public function __construct($value = null, \StructType\HolidayHomeOfferGridGroupType $group = null, \StructType\HolidayHomeReducedOfferType $offer = null)
+    public function __construct($value = null, \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType $group = null, \traveltainment\SOAP17\StructType\HolidayHomeReducedOfferType $offer = null)
     {
         $this
             ->setValue($value)
@@ -56,7 +56,7 @@ class HolidayHomeOfferGridElementType extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\HolidayHomeOfferGridElementType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType
      */
     public function setValue($value = null)
     {
@@ -69,7 +69,7 @@ class HolidayHomeOfferGridElementType extends AbstractStructBase
     }
     /**
      * Get Group value
-     * @return \StructType\HolidayHomeOfferGridGroupType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType|null
      */
     public function getGroup()
     {
@@ -77,17 +77,17 @@ class HolidayHomeOfferGridElementType extends AbstractStructBase
     }
     /**
      * Set Group value
-     * @param \StructType\HolidayHomeOfferGridGroupType $group
-     * @return \StructType\HolidayHomeOfferGridElementType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType $group
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType
      */
-    public function setGroup(\StructType\HolidayHomeOfferGridGroupType $group = null)
+    public function setGroup(\traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType $group = null)
     {
         $this->Group = $group;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\HolidayHomeReducedOfferType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeReducedOfferType|null
      */
     public function getOffer()
     {
@@ -95,10 +95,10 @@ class HolidayHomeOfferGridElementType extends AbstractStructBase
     }
     /**
      * Set Offer value
-     * @param \StructType\HolidayHomeReducedOfferType $offer
-     * @return \StructType\HolidayHomeOfferGridElementType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeReducedOfferType $offer
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType
      */
-    public function setOffer(\StructType\HolidayHomeReducedOfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\HolidayHomeReducedOfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
@@ -109,7 +109,7 @@ class HolidayHomeOfferGridElementType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOfferGridElementType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class TokenList extends AbstractStructBase
      * The Token
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\Token[]
+     * @var \traveltainment\SOAP17\StructType\Token[]
      */
     public $Token;
     /**
      * Constructor method for TokenList
      * @uses TokenList::setToken()
-     * @param \StructType\Token[] $token
+     * @param \traveltainment\SOAP17\StructType\Token[] $token
      */
     public function __construct(array $token = array())
     {
@@ -29,7 +29,7 @@ class TokenList extends AbstractStructBase
     }
     /**
      * Get Token value
-     * @return \StructType\Token[]|null
+     * @return \traveltainment\SOAP17\StructType\Token[]|null
      */
     public function getToken()
     {
@@ -38,15 +38,15 @@ class TokenList extends AbstractStructBase
     /**
      * Set Token value
      * @throws \InvalidArgumentException
-     * @param \StructType\Token[] $token
-     * @return \StructType\TokenList
+     * @param \traveltainment\SOAP17\StructType\Token[] $token
+     * @return \traveltainment\SOAP17\StructType\TokenList
      */
     public function setToken(array $token = array())
     {
         foreach ($token as $tokenListTokenItem) {
             // validation for constraint: itemType
-            if (!$tokenListTokenItem instanceof \StructType\Token) {
-                throw new \InvalidArgumentException(sprintf('The Token property can only contain items of \StructType\Token, "%s" given', is_object($tokenListTokenItem) ? get_class($tokenListTokenItem) : gettype($tokenListTokenItem)), __LINE__);
+            if (!$tokenListTokenItem instanceof \traveltainment\SOAP17\StructType\Token) {
+                throw new \InvalidArgumentException(sprintf('The Token property can only contain items of \traveltainment\SOAP17\StructType\Token, "%s" given', is_object($tokenListTokenItem) ? get_class($tokenListTokenItem) : gettype($tokenListTokenItem)), __LINE__);
             }
         }
         $this->Token = $token;
@@ -55,14 +55,14 @@ class TokenList extends AbstractStructBase
     /**
      * Add item to Token value
      * @throws \InvalidArgumentException
-     * @param \StructType\Token $item
-     * @return \StructType\TokenList
+     * @param \traveltainment\SOAP17\StructType\Token $item
+     * @return \traveltainment\SOAP17\StructType\TokenList
      */
-    public function addToToken(\StructType\Token $item)
+    public function addToToken(\traveltainment\SOAP17\StructType\Token $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Token) {
-            throw new \InvalidArgumentException(sprintf('The Token property can only contain items of \StructType\Token, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\Token) {
+            throw new \InvalidArgumentException(sprintf('The Token property can only contain items of \traveltainment\SOAP17\StructType\Token, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Token[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class TokenList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TokenList
+     * @return \traveltainment\SOAP17\StructType\TokenList
      */
     public static function __set_state(array $array)
     {

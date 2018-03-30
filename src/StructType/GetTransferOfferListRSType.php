@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,17 +12,17 @@ class GetTransferOfferListRSType extends ResponseType
 {
     /**
      * The Errors
-     * @var \StructType\ErrorsType
+     * @var \traveltainment\SOAP17\StructType\ErrorsType
      */
     public $Errors;
     /**
      * The Offers
-     * @var \StructType\TransferOffersType
+     * @var \traveltainment\SOAP17\StructType\TransferOffersType
      */
     public $Offers;
     /**
      * The ProviderDetails
-     * @var \StructType\ProviderDetailsType
+     * @var \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
     public $ProviderDetails;
     /**
@@ -30,11 +30,11 @@ class GetTransferOfferListRSType extends ResponseType
      * @uses GetTransferOfferListRSType::setErrors()
      * @uses GetTransferOfferListRSType::setOffers()
      * @uses GetTransferOfferListRSType::setProviderDetails()
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\TransferOffersType $offers
-     * @param \StructType\ProviderDetailsType $providerDetails
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @param \traveltainment\SOAP17\StructType\TransferOffersType $offers
+     * @param \traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails
      */
-    public function __construct(\StructType\ErrorsType $errors = null, \StructType\TransferOffersType $offers = null, \StructType\ProviderDetailsType $providerDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ErrorsType $errors = null, \traveltainment\SOAP17\StructType\TransferOffersType $offers = null, \traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails = null)
     {
         $this
             ->setErrors($errors)
@@ -43,7 +43,7 @@ class GetTransferOfferListRSType extends ResponseType
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -51,17 +51,17 @@ class GetTransferOfferListRSType extends ResponseType
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\GetTransferOfferListRSType
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRSType
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\traveltainment\SOAP17\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get Offers value
-     * @return \StructType\TransferOffersType|null
+     * @return \traveltainment\SOAP17\StructType\TransferOffersType|null
      */
     public function getOffers()
     {
@@ -69,17 +69,17 @@ class GetTransferOfferListRSType extends ResponseType
     }
     /**
      * Set Offers value
-     * @param \StructType\TransferOffersType $offers
-     * @return \StructType\GetTransferOfferListRSType
+     * @param \traveltainment\SOAP17\StructType\TransferOffersType $offers
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRSType
      */
-    public function setOffers(\StructType\TransferOffersType $offers = null)
+    public function setOffers(\traveltainment\SOAP17\StructType\TransferOffersType $offers = null)
     {
         $this->Offers = $offers;
         return $this;
     }
     /**
      * Get ProviderDetails value
-     * @return \StructType\ProviderDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType|null
      */
     public function getProviderDetails()
     {
@@ -87,10 +87,10 @@ class GetTransferOfferListRSType extends ResponseType
     }
     /**
      * Set ProviderDetails value
-     * @param \StructType\ProviderDetailsType $providerDetails
-     * @return \StructType\GetTransferOfferListRSType
+     * @param \traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRSType
      */
-    public function setProviderDetails(\StructType\ProviderDetailsType $providerDetails = null)
+    public function setProviderDetails(\traveltainment\SOAP17\StructType\ProviderDetailsType $providerDetails = null)
     {
         $this->ProviderDetails = $providerDetails;
         return $this;
@@ -101,7 +101,7 @@ class GetTransferOfferListRSType extends ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetTransferOfferListRSType
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRSType
      */
     public static function __set_state(array $array)
     {

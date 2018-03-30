@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class TransferLocationType extends AbstractStructBase
 {
     /**
      * The AirportInfo
-     * @var \StructType\AirportInfoType
+     * @var \traveltainment\SOAP17\StructType\AirportInfoType
      */
     public $AirportInfo;
     /**
@@ -22,7 +22,7 @@ class TransferLocationType extends AbstractStructBase
     public $AccomCode;
     /**
      * The AccomLocator
-     * @var \StructType\AccomLocatorType
+     * @var \traveltainment\SOAP17\StructType\AccomLocatorType
      */
     public $AccomLocator;
     /**
@@ -30,11 +30,11 @@ class TransferLocationType extends AbstractStructBase
      * @uses TransferLocationType::setAirportInfo()
      * @uses TransferLocationType::setAccomCode()
      * @uses TransferLocationType::setAccomLocator()
-     * @param \StructType\AirportInfoType $airportInfo
+     * @param \traveltainment\SOAP17\StructType\AirportInfoType $airportInfo
      * @param string $accomCode
-     * @param \StructType\AccomLocatorType $accomLocator
+     * @param \traveltainment\SOAP17\StructType\AccomLocatorType $accomLocator
      */
-    public function __construct(\StructType\AirportInfoType $airportInfo = null, $accomCode = null, \StructType\AccomLocatorType $accomLocator = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AirportInfoType $airportInfo = null, $accomCode = null, \traveltainment\SOAP17\StructType\AccomLocatorType $accomLocator = null)
     {
         $this
             ->setAirportInfo($airportInfo)
@@ -43,7 +43,7 @@ class TransferLocationType extends AbstractStructBase
     }
     /**
      * Get AirportInfo value
-     * @return \StructType\AirportInfoType|null
+     * @return \traveltainment\SOAP17\StructType\AirportInfoType|null
      */
     public function getAirportInfo()
     {
@@ -51,10 +51,10 @@ class TransferLocationType extends AbstractStructBase
     }
     /**
      * Set AirportInfo value
-     * @param \StructType\AirportInfoType $airportInfo
-     * @return \StructType\TransferLocationType
+     * @param \traveltainment\SOAP17\StructType\AirportInfoType $airportInfo
+     * @return \traveltainment\SOAP17\StructType\TransferLocationType
      */
-    public function setAirportInfo(\StructType\AirportInfoType $airportInfo = null)
+    public function setAirportInfo(\traveltainment\SOAP17\StructType\AirportInfoType $airportInfo = null)
     {
         $this->AirportInfo = $airportInfo;
         return $this;
@@ -70,7 +70,7 @@ class TransferLocationType extends AbstractStructBase
     /**
      * Set AccomCode value
      * @param string $accomCode
-     * @return \StructType\TransferLocationType
+     * @return \traveltainment\SOAP17\StructType\TransferLocationType
      */
     public function setAccomCode($accomCode = null)
     {
@@ -83,7 +83,7 @@ class TransferLocationType extends AbstractStructBase
     }
     /**
      * Get AccomLocator value
-     * @return \StructType\AccomLocatorType|null
+     * @return \traveltainment\SOAP17\StructType\AccomLocatorType|null
      */
     public function getAccomLocator()
     {
@@ -91,10 +91,10 @@ class TransferLocationType extends AbstractStructBase
     }
     /**
      * Set AccomLocator value
-     * @param \StructType\AccomLocatorType $accomLocator
-     * @return \StructType\TransferLocationType
+     * @param \traveltainment\SOAP17\StructType\AccomLocatorType $accomLocator
+     * @return \traveltainment\SOAP17\StructType\TransferLocationType
      */
-    public function setAccomLocator(\StructType\AccomLocatorType $accomLocator = null)
+    public function setAccomLocator(\traveltainment\SOAP17\StructType\AccomLocatorType $accomLocator = null)
     {
         $this->AccomLocator = $accomLocator;
         return $this;
@@ -105,7 +105,7 @@ class TransferLocationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferLocationType
+     * @return \traveltainment\SOAP17\StructType\TransferLocationType
      */
     public static function __set_state(array $array)
     {

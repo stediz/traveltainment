@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class UsageHintsType extends AbstractStructBase
      * Set UsageHint value
      * @throws \InvalidArgumentException
      * @param string[] $usageHint
-     * @return \StructType\UsageHintsType
+     * @return \traveltainment\SOAP17\StructType\UsageHintsType
      */
     public function setUsageHint(array $usageHint = array())
     {
@@ -57,7 +57,7 @@ class UsageHintsType extends AbstractStructBase
      * Add item to UsageHint value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\UsageHintsType
+     * @return \traveltainment\SOAP17\StructType\UsageHintsType
      */
     public function addToUsageHint($item)
     {
@@ -74,7 +74,7 @@ class UsageHintsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\UsageHintsType
+     * @return \traveltainment\SOAP17\StructType\UsageHintsType
      */
     public static function __set_state(array $array)
     {

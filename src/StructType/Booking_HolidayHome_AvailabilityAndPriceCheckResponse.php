@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Booking_HolidayHome_AvailabilityAndPriceCheckResponse extends AbstractStru
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailabilityAndPriceCheckRS
+     * @var \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
     public $return;
     /**
      * Constructor method for Booking_HolidayHome_AvailabilityAndPriceCheckResponse
      * @uses Booking_HolidayHome_AvailabilityAndPriceCheckResponse::setReturn()
-     * @param \StructType\AvailabilityAndPriceCheckRS $return
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS $return
      */
-    public function __construct(\StructType\AvailabilityAndPriceCheckRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\AvailabilityAndPriceCheckRS|null
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS|null
      */
     public function getReturn()
     {
@@ -40,10 +40,10 @@ class Booking_HolidayHome_AvailabilityAndPriceCheckResponse extends AbstractStru
     }
     /**
      * Set return value
-     * @param \StructType\AvailabilityAndPriceCheckRS $return
-     * @return \StructType\Booking_HolidayHome_AvailabilityAndPriceCheckResponse
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS $return
+     * @return \traveltainment\SOAP17\StructType\Booking_HolidayHome_AvailabilityAndPriceCheckResponse
      */
-    public function setReturn(\StructType\AvailabilityAndPriceCheckRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -54,7 +54,7 @@ class Booking_HolidayHome_AvailabilityAndPriceCheckResponse extends AbstractStru
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_HolidayHome_AvailabilityAndPriceCheckResponse
+     * @return \traveltainment\SOAP17\StructType\Booking_HolidayHome_AvailabilityAndPriceCheckResponse
      */
     public static function __set_state(array $array)
     {

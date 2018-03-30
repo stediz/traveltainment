@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class TransferDetails4SearchType extends AbstractStructBase
     public $ServiceType;
     /**
      * The PassengerRestriction
-     * @var \StructType\PosIntIntervalType
+     * @var \traveltainment\SOAP17\StructType\PosIntIntervalType
      */
     public $PassengerRestriction;
     /**
@@ -29,17 +29,17 @@ class TransferDetails4SearchType extends AbstractStructBase
      * The Vehicles
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\VehiclesType
+     * @var \traveltainment\SOAP17\StructType\VehiclesType
      */
     public $Vehicles;
     /**
      * The Transfers
-     * @var \StructType\Transfers4SearchType
+     * @var \traveltainment\SOAP17\StructType\Transfers4SearchType
      */
     public $Transfers;
     /**
      * The TransferPriceDetails
-     * @var \StructType\TransferPriceDetailsType
+     * @var \traveltainment\SOAP17\StructType\TransferPriceDetailsType
      */
     public $TransferPriceDetails;
     /**
@@ -51,13 +51,13 @@ class TransferDetails4SearchType extends AbstractStructBase
      * @uses TransferDetails4SearchType::setTransfers()
      * @uses TransferDetails4SearchType::setTransferPriceDetails()
      * @param string $serviceType
-     * @param \StructType\PosIntIntervalType $passengerRestriction
+     * @param \traveltainment\SOAP17\StructType\PosIntIntervalType $passengerRestriction
      * @param bool $disabilityVehicleIndicator
-     * @param \StructType\VehiclesType $vehicles
-     * @param \StructType\Transfers4SearchType $transfers
-     * @param \StructType\TransferPriceDetailsType $transferPriceDetails
+     * @param \traveltainment\SOAP17\StructType\VehiclesType $vehicles
+     * @param \traveltainment\SOAP17\StructType\Transfers4SearchType $transfers
+     * @param \traveltainment\SOAP17\StructType\TransferPriceDetailsType $transferPriceDetails
      */
-    public function __construct($serviceType = null, \StructType\PosIntIntervalType $passengerRestriction = null, $disabilityVehicleIndicator = null, \StructType\VehiclesType $vehicles = null, \StructType\Transfers4SearchType $transfers = null, \StructType\TransferPriceDetailsType $transferPriceDetails = null)
+    public function __construct($serviceType = null, \traveltainment\SOAP17\StructType\PosIntIntervalType $passengerRestriction = null, $disabilityVehicleIndicator = null, \traveltainment\SOAP17\StructType\VehiclesType $vehicles = null, \traveltainment\SOAP17\StructType\Transfers4SearchType $transfers = null, \traveltainment\SOAP17\StructType\TransferPriceDetailsType $transferPriceDetails = null)
     {
         $this
             ->setServiceType($serviceType)
@@ -78,7 +78,7 @@ class TransferDetails4SearchType extends AbstractStructBase
     /**
      * Set ServiceType value
      * @param string $serviceType
-     * @return \StructType\TransferDetails4SearchType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
     public function setServiceType($serviceType = null)
     {
@@ -91,7 +91,7 @@ class TransferDetails4SearchType extends AbstractStructBase
     }
     /**
      * Get PassengerRestriction value
-     * @return \StructType\PosIntIntervalType|null
+     * @return \traveltainment\SOAP17\StructType\PosIntIntervalType|null
      */
     public function getPassengerRestriction()
     {
@@ -99,10 +99,10 @@ class TransferDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set PassengerRestriction value
-     * @param \StructType\PosIntIntervalType $passengerRestriction
-     * @return \StructType\TransferDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\PosIntIntervalType $passengerRestriction
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
-    public function setPassengerRestriction(\StructType\PosIntIntervalType $passengerRestriction = null)
+    public function setPassengerRestriction(\traveltainment\SOAP17\StructType\PosIntIntervalType $passengerRestriction = null)
     {
         $this->PassengerRestriction = $passengerRestriction;
         return $this;
@@ -118,7 +118,7 @@ class TransferDetails4SearchType extends AbstractStructBase
     /**
      * Set DisabilityVehicleIndicator value
      * @param bool $disabilityVehicleIndicator
-     * @return \StructType\TransferDetails4SearchType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
     public function setDisabilityVehicleIndicator($disabilityVehicleIndicator = null)
     {
@@ -131,7 +131,7 @@ class TransferDetails4SearchType extends AbstractStructBase
     }
     /**
      * Get Vehicles value
-     * @return \StructType\VehiclesType|null
+     * @return \traveltainment\SOAP17\StructType\VehiclesType|null
      */
     public function getVehicles()
     {
@@ -139,17 +139,17 @@ class TransferDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set Vehicles value
-     * @param \StructType\VehiclesType $vehicles
-     * @return \StructType\TransferDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\VehiclesType $vehicles
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
-    public function setVehicles(\StructType\VehiclesType $vehicles = null)
+    public function setVehicles(\traveltainment\SOAP17\StructType\VehiclesType $vehicles = null)
     {
         $this->Vehicles = $vehicles;
         return $this;
     }
     /**
      * Get Transfers value
-     * @return \StructType\Transfers4SearchType|null
+     * @return \traveltainment\SOAP17\StructType\Transfers4SearchType|null
      */
     public function getTransfers()
     {
@@ -157,17 +157,17 @@ class TransferDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set Transfers value
-     * @param \StructType\Transfers4SearchType $transfers
-     * @return \StructType\TransferDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\Transfers4SearchType $transfers
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
-    public function setTransfers(\StructType\Transfers4SearchType $transfers = null)
+    public function setTransfers(\traveltainment\SOAP17\StructType\Transfers4SearchType $transfers = null)
     {
         $this->Transfers = $transfers;
         return $this;
     }
     /**
      * Get TransferPriceDetails value
-     * @return \StructType\TransferPriceDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\TransferPriceDetailsType|null
      */
     public function getTransferPriceDetails()
     {
@@ -175,10 +175,10 @@ class TransferDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set TransferPriceDetails value
-     * @param \StructType\TransferPriceDetailsType $transferPriceDetails
-     * @return \StructType\TransferDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\TransferPriceDetailsType $transferPriceDetails
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
-    public function setTransferPriceDetails(\StructType\TransferPriceDetailsType $transferPriceDetails = null)
+    public function setTransferPriceDetails(\traveltainment\SOAP17\StructType\TransferPriceDetailsType $transferPriceDetails = null)
     {
         $this->TransferPriceDetails = $transferPriceDetails;
         return $this;
@@ -189,7 +189,7 @@ class TransferDetails4SearchType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferDetails4SearchType
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4SearchType
      */
     public static function __set_state(array $array)
     {

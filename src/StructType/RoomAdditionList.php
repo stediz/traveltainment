@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class RoomAdditionList extends AbstractStructBase
     }
     /**
      * Set RoomAddition value
-     * @uses \EnumType\RoomAddition::valueIsValid()
-     * @uses \EnumType\RoomAddition::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\RoomAddition::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\RoomAddition::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $roomAddition
-     * @return \StructType\RoomAdditionList
+     * @return \traveltainment\SOAP17\StructType\RoomAdditionList
      */
     public function setRoomAddition(array $roomAddition = array())
     {
         $invalidValues = array();
         foreach ($roomAddition as $roomAdditionListRoomAdditionItem) {
-            if (!\EnumType\RoomAddition::valueIsValid($roomAdditionListRoomAdditionItem)) {
+            if (!\traveltainment\SOAP17\EnumType\RoomAddition::valueIsValid($roomAdditionListRoomAdditionItem)) {
                 $invalidValues[] = var_export($roomAdditionListRoomAdditionItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\RoomAddition::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\RoomAddition::getValidValues())), __LINE__);
         }
         $this->RoomAddition = $roomAddition;
         return $this;
     }
     /**
      * Add item to RoomAddition value
-     * @uses \EnumType\RoomAddition::valueIsValid()
-     * @uses \EnumType\RoomAddition::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\RoomAddition::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\RoomAddition::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\RoomAdditionList
+     * @return \traveltainment\SOAP17\StructType\RoomAdditionList
      */
     public function addToRoomAddition($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\RoomAddition::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\RoomAddition::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\RoomAddition::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\RoomAddition::getValidValues())), __LINE__);
         }
         $this->RoomAddition[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class RoomAdditionList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomAdditionList
+     * @return \traveltainment\SOAP17\StructType\RoomAdditionList
      */
     public static function __set_state(array $array)
     {

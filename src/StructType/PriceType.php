@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class PriceType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Geldbetrag
      * - nillable: true
-     * @var \StructType\AmountType
+     * @var \traveltainment\SOAP17\StructType\AmountType
      */
     public $Amount;
     /**
@@ -55,10 +55,10 @@ class PriceType extends AbstractStructBase
      * @uses PriceType::setTaxesAndFees()
      * @param string $currency
      * @param float $_
-     * @param \StructType\AmountType $amount
+     * @param \traveltainment\SOAP17\StructType\AmountType $amount
      * @param float $taxesAndFees
      */
-    public function __construct($currency = null, $_ = null, \StructType\AmountType $amount = null, $taxesAndFees = null)
+    public function __construct($currency = null, $_ = null, \traveltainment\SOAP17\StructType\AmountType $amount = null, $taxesAndFees = null)
     {
         $this
             ->setCurrency($currency)
@@ -76,17 +76,17 @@ class PriceType extends AbstractStructBase
     }
     /**
      * Set Currency value
-     * @uses \EnumType\CurrencyCode::valueIsValid()
-     * @uses \EnumType\CurrencyCode::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $currency
-     * @return \StructType\PriceType
+     * @return \traveltainment\SOAP17\StructType\PriceType
      */
     public function setCurrency($currency = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CurrencyCode::valueIsValid($currency)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency, implode(', ', \EnumType\CurrencyCode::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid($currency)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency, implode(', ', \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues())), __LINE__);
         }
         $this->Currency = $currency;
         return $this;
@@ -102,7 +102,7 @@ class PriceType extends AbstractStructBase
     /**
      * Set _ value
      * @param float $_
-     * @return \StructType\PriceType
+     * @return \traveltainment\SOAP17\StructType\PriceType
      */
     public function set_($_ = null)
     {
@@ -123,7 +123,7 @@ class PriceType extends AbstractStructBase
     }
     /**
      * Get Amount value
-     * @return \StructType\AmountType|null
+     * @return \traveltainment\SOAP17\StructType\AmountType|null
      */
     public function getAmount()
     {
@@ -131,10 +131,10 @@ class PriceType extends AbstractStructBase
     }
     /**
      * Set Amount value
-     * @param \StructType\AmountType $amount
-     * @return \StructType\PriceType
+     * @param \traveltainment\SOAP17\StructType\AmountType $amount
+     * @return \traveltainment\SOAP17\StructType\PriceType
      */
-    public function setAmount(\StructType\AmountType $amount = null)
+    public function setAmount(\traveltainment\SOAP17\StructType\AmountType $amount = null)
     {
         $this->Amount = $amount;
         return $this;
@@ -150,7 +150,7 @@ class PriceType extends AbstractStructBase
     /**
      * Set TaxesAndFees value
      * @param float $taxesAndFees
-     * @return \StructType\PriceType
+     * @return \traveltainment\SOAP17\StructType\PriceType
      */
     public function setTaxesAndFees($taxesAndFees = null)
     {
@@ -175,7 +175,7 @@ class PriceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PriceType
+     * @return \traveltainment\SOAP17\StructType\PriceType
      */
     public static function __set_state(array $array)
     {

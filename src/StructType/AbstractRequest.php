@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,7 +42,7 @@ abstract class AbstractRequest extends AbstractMessage
     /**
      * Set ClientIP value
      * @param string $clientIP
-     * @return \StructType\AbstractRequest
+     * @return \traveltainment\SOAP17\StructType\AbstractRequest
      */
     public function setClientIP($clientIP = null)
     {
@@ -59,7 +59,7 @@ abstract class AbstractRequest extends AbstractMessage
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AbstractRequest
+     * @return \traveltainment\SOAP17\StructType\AbstractRequest
      */
     public static function __set_state(array $array)
     {

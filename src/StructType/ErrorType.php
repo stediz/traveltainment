@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class ErrorType extends AbstractStructBase
     public $ErrorCode;
     /**
      * The ErrorMsg
-     * @var \StructType\ErrorMsgType
+     * @var \traveltainment\SOAP17\StructType\ErrorMsgType
      */
     public $ErrorMsg;
     /**
      * The ErrorDetails
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ErrorDetailsType
+     * @var \traveltainment\SOAP17\StructType\ErrorDetailsType
      */
     public $ErrorDetails;
     /**
@@ -33,10 +33,10 @@ class ErrorType extends AbstractStructBase
      * @uses ErrorType::setErrorMsg()
      * @uses ErrorType::setErrorDetails()
      * @param string $errorCode
-     * @param \StructType\ErrorMsgType $errorMsg
-     * @param \StructType\ErrorDetailsType $errorDetails
+     * @param \traveltainment\SOAP17\StructType\ErrorMsgType $errorMsg
+     * @param \traveltainment\SOAP17\StructType\ErrorDetailsType $errorDetails
      */
-    public function __construct($errorCode = null, \StructType\ErrorMsgType $errorMsg = null, \StructType\ErrorDetailsType $errorDetails = null)
+    public function __construct($errorCode = null, \traveltainment\SOAP17\StructType\ErrorMsgType $errorMsg = null, \traveltainment\SOAP17\StructType\ErrorDetailsType $errorDetails = null)
     {
         $this
             ->setErrorCode($errorCode)
@@ -53,24 +53,24 @@ class ErrorType extends AbstractStructBase
     }
     /**
      * Set ErrorCode value
-     * @uses \EnumType\ErrorCodeEnum::valueIsValid()
-     * @uses \EnumType\ErrorCodeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ErrorCodeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ErrorCodeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $errorCode
-     * @return \StructType\ErrorType
+     * @return \traveltainment\SOAP17\StructType\ErrorType
      */
     public function setErrorCode($errorCode = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ErrorCodeEnum::valueIsValid($errorCode)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $errorCode, implode(', ', \EnumType\ErrorCodeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ErrorCodeEnum::valueIsValid($errorCode)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $errorCode, implode(', ', \traveltainment\SOAP17\EnumType\ErrorCodeEnum::getValidValues())), __LINE__);
         }
         $this->ErrorCode = $errorCode;
         return $this;
     }
     /**
      * Get ErrorMsg value
-     * @return \StructType\ErrorMsgType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorMsgType|null
      */
     public function getErrorMsg()
     {
@@ -78,17 +78,17 @@ class ErrorType extends AbstractStructBase
     }
     /**
      * Set ErrorMsg value
-     * @param \StructType\ErrorMsgType $errorMsg
-     * @return \StructType\ErrorType
+     * @param \traveltainment\SOAP17\StructType\ErrorMsgType $errorMsg
+     * @return \traveltainment\SOAP17\StructType\ErrorType
      */
-    public function setErrorMsg(\StructType\ErrorMsgType $errorMsg = null)
+    public function setErrorMsg(\traveltainment\SOAP17\StructType\ErrorMsgType $errorMsg = null)
     {
         $this->ErrorMsg = $errorMsg;
         return $this;
     }
     /**
      * Get ErrorDetails value
-     * @return \StructType\ErrorDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorDetailsType|null
      */
     public function getErrorDetails()
     {
@@ -96,10 +96,10 @@ class ErrorType extends AbstractStructBase
     }
     /**
      * Set ErrorDetails value
-     * @param \StructType\ErrorDetailsType $errorDetails
-     * @return \StructType\ErrorType
+     * @param \traveltainment\SOAP17\StructType\ErrorDetailsType $errorDetails
+     * @return \traveltainment\SOAP17\StructType\ErrorType
      */
-    public function setErrorDetails(\StructType\ErrorDetailsType $errorDetails = null)
+    public function setErrorDetails(\traveltainment\SOAP17\StructType\ErrorDetailsType $errorDetails = null)
     {
         $this->ErrorDetails = $errorDetails;
         return $this;
@@ -110,7 +110,7 @@ class ErrorType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ErrorType
+     * @return \traveltainment\SOAP17\StructType\ErrorType
      */
     public static function __set_state(array $array)
     {

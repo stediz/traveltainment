@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,12 +22,12 @@ class SimpleShoppingCart extends AbstractStructBase
     public $CreationDate;
     /**
      * The BookingList
-     * @var \StructType\SimpleBookingList
+     * @var \traveltainment\SOAP17\StructType\SimpleBookingList
      */
     public $BookingList;
     /**
      * The AddonList
-     * @var \StructType\SimpleAddonList
+     * @var \traveltainment\SOAP17\StructType\SimpleAddonList
      */
     public $AddonList;
     /**
@@ -38,10 +38,10 @@ class SimpleShoppingCart extends AbstractStructBase
      * @uses SimpleShoppingCart::setAddonList()
      * @param string $shoppingCartID
      * @param string $creationDate
-     * @param \StructType\SimpleBookingList $bookingList
-     * @param \StructType\SimpleAddonList $addonList
+     * @param \traveltainment\SOAP17\StructType\SimpleBookingList $bookingList
+     * @param \traveltainment\SOAP17\StructType\SimpleAddonList $addonList
      */
-    public function __construct($shoppingCartID = null, $creationDate = null, \StructType\SimpleBookingList $bookingList = null, \StructType\SimpleAddonList $addonList = null)
+    public function __construct($shoppingCartID = null, $creationDate = null, \traveltainment\SOAP17\StructType\SimpleBookingList $bookingList = null, \traveltainment\SOAP17\StructType\SimpleAddonList $addonList = null)
     {
         $this
             ->setShoppingCartID($shoppingCartID)
@@ -60,7 +60,7 @@ class SimpleShoppingCart extends AbstractStructBase
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\SimpleShoppingCart
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCart
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -82,7 +82,7 @@ class SimpleShoppingCart extends AbstractStructBase
     /**
      * Set CreationDate value
      * @param string $creationDate
-     * @return \StructType\SimpleShoppingCart
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCart
      */
     public function setCreationDate($creationDate = null)
     {
@@ -95,7 +95,7 @@ class SimpleShoppingCart extends AbstractStructBase
     }
     /**
      * Get BookingList value
-     * @return \StructType\SimpleBookingList|null
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingList|null
      */
     public function getBookingList()
     {
@@ -103,17 +103,17 @@ class SimpleShoppingCart extends AbstractStructBase
     }
     /**
      * Set BookingList value
-     * @param \StructType\SimpleBookingList $bookingList
-     * @return \StructType\SimpleShoppingCart
+     * @param \traveltainment\SOAP17\StructType\SimpleBookingList $bookingList
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCart
      */
-    public function setBookingList(\StructType\SimpleBookingList $bookingList = null)
+    public function setBookingList(\traveltainment\SOAP17\StructType\SimpleBookingList $bookingList = null)
     {
         $this->BookingList = $bookingList;
         return $this;
     }
     /**
      * Get AddonList value
-     * @return \StructType\SimpleAddonList|null
+     * @return \traveltainment\SOAP17\StructType\SimpleAddonList|null
      */
     public function getAddonList()
     {
@@ -121,10 +121,10 @@ class SimpleShoppingCart extends AbstractStructBase
     }
     /**
      * Set AddonList value
-     * @param \StructType\SimpleAddonList $addonList
-     * @return \StructType\SimpleShoppingCart
+     * @param \traveltainment\SOAP17\StructType\SimpleAddonList $addonList
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCart
      */
-    public function setAddonList(\StructType\SimpleAddonList $addonList = null)
+    public function setAddonList(\traveltainment\SOAP17\StructType\SimpleAddonList $addonList = null)
     {
         $this->AddonList = $addonList;
         return $this;
@@ -135,7 +135,7 @@ class SimpleShoppingCart extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleShoppingCart
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCart
      */
     public static function __set_state(array $array)
     {

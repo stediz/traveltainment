@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,24 +14,24 @@ class TravelDateSpanType extends AbstractStructBase
      * The DepartureDate
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\DepartureDate
+     * @var \traveltainment\SOAP17\StructType\DepartureDate
      */
     public $DepartureDate;
     /**
      * The ReturnDate
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ReturnDate
+     * @var \traveltainment\SOAP17\StructType\ReturnDate
      */
     public $ReturnDate;
     /**
      * Constructor method for TravelDateSpanType
      * @uses TravelDateSpanType::setDepartureDate()
      * @uses TravelDateSpanType::setReturnDate()
-     * @param \StructType\DepartureDate $departureDate
-     * @param \StructType\ReturnDate $returnDate
+     * @param \traveltainment\SOAP17\StructType\DepartureDate $departureDate
+     * @param \traveltainment\SOAP17\StructType\ReturnDate $returnDate
      */
-    public function __construct(\StructType\DepartureDate $departureDate = null, \StructType\ReturnDate $returnDate = null)
+    public function __construct(\traveltainment\SOAP17\StructType\DepartureDate $departureDate = null, \traveltainment\SOAP17\StructType\ReturnDate $returnDate = null)
     {
         $this
             ->setDepartureDate($departureDate)
@@ -39,7 +39,7 @@ class TravelDateSpanType extends AbstractStructBase
     }
     /**
      * Get DepartureDate value
-     * @return \StructType\DepartureDate|null
+     * @return \traveltainment\SOAP17\StructType\DepartureDate|null
      */
     public function getDepartureDate()
     {
@@ -47,17 +47,17 @@ class TravelDateSpanType extends AbstractStructBase
     }
     /**
      * Set DepartureDate value
-     * @param \StructType\DepartureDate $departureDate
-     * @return \StructType\TravelDateSpanType
+     * @param \traveltainment\SOAP17\StructType\DepartureDate $departureDate
+     * @return \traveltainment\SOAP17\StructType\TravelDateSpanType
      */
-    public function setDepartureDate(\StructType\DepartureDate $departureDate = null)
+    public function setDepartureDate(\traveltainment\SOAP17\StructType\DepartureDate $departureDate = null)
     {
         $this->DepartureDate = $departureDate;
         return $this;
     }
     /**
      * Get ReturnDate value
-     * @return \StructType\ReturnDate|null
+     * @return \traveltainment\SOAP17\StructType\ReturnDate|null
      */
     public function getReturnDate()
     {
@@ -65,10 +65,10 @@ class TravelDateSpanType extends AbstractStructBase
     }
     /**
      * Set ReturnDate value
-     * @param \StructType\ReturnDate $returnDate
-     * @return \StructType\TravelDateSpanType
+     * @param \traveltainment\SOAP17\StructType\ReturnDate $returnDate
+     * @return \traveltainment\SOAP17\StructType\TravelDateSpanType
      */
-    public function setReturnDate(\StructType\ReturnDate $returnDate = null)
+    public function setReturnDate(\traveltainment\SOAP17\StructType\ReturnDate $returnDate = null)
     {
         $this->ReturnDate = $returnDate;
         return $this;
@@ -79,7 +79,7 @@ class TravelDateSpanType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravelDateSpanType
+     * @return \traveltainment\SOAP17\StructType\TravelDateSpanType
      */
     public static function __set_state(array $array)
     {

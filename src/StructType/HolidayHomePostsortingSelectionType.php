@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -55,17 +55,17 @@ class HolidayHomePostsortingSelectionType extends AbstractStructBase
     }
     /**
      * Set Order value
-     * @uses \EnumType\SortDirectionEnum::valueIsValid()
-     * @uses \EnumType\SortDirectionEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\SortDirectionEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\SortDirectionEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $order
-     * @return \StructType\HolidayHomePostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType
      */
     public function setOrder($order = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\SortDirectionEnum::valueIsValid($order)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order, implode(', ', \EnumType\SortDirectionEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\SortDirectionEnum::valueIsValid($order)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order, implode(', ', \traveltainment\SOAP17\EnumType\SortDirectionEnum::getValidValues())), __LINE__);
         }
         $this->Order = $order;
         return $this;
@@ -81,7 +81,7 @@ class HolidayHomePostsortingSelectionType extends AbstractStructBase
     /**
      * Set GroupByRegion value
      * @param bool $groupByRegion
-     * @return \StructType\HolidayHomePostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType
      */
     public function setGroupByRegion($groupByRegion = null)
     {
@@ -102,17 +102,17 @@ class HolidayHomePostsortingSelectionType extends AbstractStructBase
     }
     /**
      * Set Postsorting value
-     * @uses \EnumType\HolidayHomePostsortingEnum::valueIsValid()
-     * @uses \EnumType\HolidayHomePostsortingEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomePostsortingEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomePostsortingEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $postsorting
-     * @return \StructType\HolidayHomePostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType
      */
     public function setPostsorting($postsorting = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HolidayHomePostsortingEnum::valueIsValid($postsorting)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $postsorting, implode(', ', \EnumType\HolidayHomePostsortingEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HolidayHomePostsortingEnum::valueIsValid($postsorting)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $postsorting, implode(', ', \traveltainment\SOAP17\EnumType\HolidayHomePostsortingEnum::getValidValues())), __LINE__);
         }
         $this->Postsorting = $postsorting;
         return $this;
@@ -123,7 +123,7 @@ class HolidayHomePostsortingSelectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomePostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType
      */
     public static function __set_state(array $array)
     {

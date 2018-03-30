@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,12 +24,12 @@ class BookTransferRequestType extends AbstractStructBase
     public $OfferID;
     /**
      * The PaymentTokens
-     * @var \StructType\PaymentTokensType
+     * @var \traveltainment\SOAP17\StructType\PaymentTokensType
      */
     public $PaymentTokens;
     /**
      * The TransferData
-     * @var \StructType\TransferDetails4BookType
+     * @var \traveltainment\SOAP17\StructType\TransferDetails4BookType
      */
     public $TransferData;
     /**
@@ -40,10 +40,10 @@ class BookTransferRequestType extends AbstractStructBase
      * @uses BookTransferRequestType::setTransferData()
      * @param string $bookRequestID
      * @param string $offerID
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @param \StructType\TransferDetails4BookType $transferData
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @param \traveltainment\SOAP17\StructType\TransferDetails4BookType $transferData
      */
-    public function __construct($bookRequestID = null, $offerID = null, \StructType\PaymentTokensType $paymentTokens = null, \StructType\TransferDetails4BookType $transferData = null)
+    public function __construct($bookRequestID = null, $offerID = null, \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null, \traveltainment\SOAP17\StructType\TransferDetails4BookType $transferData = null)
     {
         $this
             ->setBookRequestID($bookRequestID)
@@ -62,7 +62,7 @@ class BookTransferRequestType extends AbstractStructBase
     /**
      * Set BookRequestID value
      * @param string $bookRequestID
-     * @return \StructType\BookTransferRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTransferRequestType
      */
     public function setBookRequestID($bookRequestID = null)
     {
@@ -84,7 +84,7 @@ class BookTransferRequestType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\BookTransferRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTransferRequestType
      */
     public function setOfferID($offerID = null)
     {
@@ -97,7 +97,7 @@ class BookTransferRequestType extends AbstractStructBase
     }
     /**
      * Get PaymentTokens value
-     * @return \StructType\PaymentTokensType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType|null
      */
     public function getPaymentTokens()
     {
@@ -105,17 +105,17 @@ class BookTransferRequestType extends AbstractStructBase
     }
     /**
      * Set PaymentTokens value
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @return \StructType\BookTransferRequestType
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @return \traveltainment\SOAP17\StructType\BookTransferRequestType
      */
-    public function setPaymentTokens(\StructType\PaymentTokensType $paymentTokens = null)
+    public function setPaymentTokens(\traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null)
     {
         $this->PaymentTokens = $paymentTokens;
         return $this;
     }
     /**
      * Get TransferData value
-     * @return \StructType\TransferDetails4BookType|null
+     * @return \traveltainment\SOAP17\StructType\TransferDetails4BookType|null
      */
     public function getTransferData()
     {
@@ -123,10 +123,10 @@ class BookTransferRequestType extends AbstractStructBase
     }
     /**
      * Set TransferData value
-     * @param \StructType\TransferDetails4BookType $transferData
-     * @return \StructType\BookTransferRequestType
+     * @param \traveltainment\SOAP17\StructType\TransferDetails4BookType $transferData
+     * @return \traveltainment\SOAP17\StructType\BookTransferRequestType
      */
-    public function setTransferData(\StructType\TransferDetails4BookType $transferData = null)
+    public function setTransferData(\traveltainment\SOAP17\StructType\TransferDetails4BookType $transferData = null)
     {
         $this->TransferData = $transferData;
         return $this;
@@ -137,7 +137,7 @@ class BookTransferRequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookTransferRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTransferRequestType
      */
     public static function __set_state(array $array)
     {

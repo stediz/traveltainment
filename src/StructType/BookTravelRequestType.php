@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class BookTravelRequestType extends AbstractStructBase
     public $BookingType;
     /**
      * The PaymentTokens
-     * @var \StructType\PaymentTokensType
+     * @var \traveltainment\SOAP17\StructType\PaymentTokensType
      */
     public $PaymentTokens;
     /**
@@ -64,11 +64,11 @@ class BookTravelRequestType extends AbstractStructBase
      * @param string $offerID
      * @param string $bookingID
      * @param string $bookingType
-     * @param \StructType\PaymentTokensType $paymentTokens
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
      * @param string $customerRemarks
      * @param string $portalRemarks
      */
-    public function __construct($bookRequestID = null, $offerID = null, $bookingID = null, $bookingType = null, \StructType\PaymentTokensType $paymentTokens = null, $customerRemarks = null, $portalRemarks = null)
+    public function __construct($bookRequestID = null, $offerID = null, $bookingID = null, $bookingType = null, \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null, $customerRemarks = null, $portalRemarks = null)
     {
         $this
             ->setBookRequestID($bookRequestID)
@@ -90,7 +90,7 @@ class BookTravelRequestType extends AbstractStructBase
     /**
      * Set BookRequestID value
      * @param string $bookRequestID
-     * @return \StructType\BookTravelRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public function setBookRequestID($bookRequestID = null)
     {
@@ -112,7 +112,7 @@ class BookTravelRequestType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\BookTravelRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public function setOfferID($offerID = null)
     {
@@ -134,7 +134,7 @@ class BookTravelRequestType extends AbstractStructBase
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\BookTravelRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public function setBookingID($bookingID = null)
     {
@@ -155,24 +155,24 @@ class BookTravelRequestType extends AbstractStructBase
     }
     /**
      * Set BookingType value
-     * @uses \EnumType\BookingTypeEnum::valueIsValid()
-     * @uses \EnumType\BookingTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $bookingType
-     * @return \StructType\BookTravelRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public function setBookingType($bookingType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BookingTypeEnum::valueIsValid($bookingType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingType, implode(', ', \EnumType\BookingTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid($bookingType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingType, implode(', ', \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues())), __LINE__);
         }
         $this->BookingType = $bookingType;
         return $this;
     }
     /**
      * Get PaymentTokens value
-     * @return \StructType\PaymentTokensType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType|null
      */
     public function getPaymentTokens()
     {
@@ -180,10 +180,10 @@ class BookTravelRequestType extends AbstractStructBase
     }
     /**
      * Set PaymentTokens value
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @return \StructType\BookTravelRequestType
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
-    public function setPaymentTokens(\StructType\PaymentTokensType $paymentTokens = null)
+    public function setPaymentTokens(\traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null)
     {
         $this->PaymentTokens = $paymentTokens;
         return $this;
@@ -199,7 +199,7 @@ class BookTravelRequestType extends AbstractStructBase
     /**
      * Set CustomerRemarks value
      * @param string $customerRemarks
-     * @return \StructType\BookTravelRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public function setCustomerRemarks($customerRemarks = null)
     {
@@ -221,7 +221,7 @@ class BookTravelRequestType extends AbstractStructBase
     /**
      * Set PortalRemarks value
      * @param string $portalRemarks
-     * @return \StructType\BookTravelRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public function setPortalRemarks($portalRemarks = null)
     {
@@ -238,7 +238,7 @@ class BookTravelRequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookTravelRequestType
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,17 +37,17 @@ class DetailedMealType extends AbstractStructBase
     }
     /**
      * Set Meal value
-     * @uses \EnumType\Meal::valueIsValid()
-     * @uses \EnumType\Meal::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $meal
-     * @return \StructType\DetailedMealType
+     * @return \traveltainment\SOAP17\StructType\DetailedMealType
      */
     public function setMeal($meal = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Meal::valueIsValid($meal)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $meal, implode(', ', \EnumType\Meal::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Meal::valueIsValid($meal)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $meal, implode(', ', \traveltainment\SOAP17\EnumType\Meal::getValidValues())), __LINE__);
         }
         $this->Meal = $meal;
         return $this;
@@ -58,7 +58,7 @@ class DetailedMealType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DetailedMealType
+     * @return \traveltainment\SOAP17\StructType\DetailedMealType
      */
     public static function __set_state(array $array)
     {

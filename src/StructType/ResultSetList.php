@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ResultSetList extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ListItemType[]
+     * @var \traveltainment\SOAP17\StructType\ListItemType[]
      */
     public $ListItem;
     /**
@@ -37,7 +37,7 @@ class ResultSetList extends AbstractStructBase
      * @uses ResultSetList::setListItem()
      * @uses ResultSetList::setTotalNumberOfResults()
      * @uses ResultSetList::setAlternatives()
-     * @param \StructType\ListItemType[] $listItem
+     * @param \traveltainment\SOAP17\StructType\ListItemType[] $listItem
      * @param int $totalNumberOfResults
      * @param bool $alternatives
      */
@@ -50,7 +50,7 @@ class ResultSetList extends AbstractStructBase
     }
     /**
      * Get ListItem value
-     * @return \StructType\ListItemType[]|null
+     * @return \traveltainment\SOAP17\StructType\ListItemType[]|null
      */
     public function getListItem()
     {
@@ -59,15 +59,15 @@ class ResultSetList extends AbstractStructBase
     /**
      * Set ListItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\ListItemType[] $listItem
-     * @return \StructType\ResultSetList
+     * @param \traveltainment\SOAP17\StructType\ListItemType[] $listItem
+     * @return \traveltainment\SOAP17\StructType\ResultSetList
      */
     public function setListItem(array $listItem = array())
     {
         foreach ($listItem as $resultSetListListItemItem) {
             // validation for constraint: itemType
-            if (!$resultSetListListItemItem instanceof \StructType\ListItemType) {
-                throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \StructType\ListItemType, "%s" given', is_object($resultSetListListItemItem) ? get_class($resultSetListListItemItem) : gettype($resultSetListListItemItem)), __LINE__);
+            if (!$resultSetListListItemItem instanceof \traveltainment\SOAP17\StructType\ListItemType) {
+                throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \traveltainment\SOAP17\StructType\ListItemType, "%s" given', is_object($resultSetListListItemItem) ? get_class($resultSetListListItemItem) : gettype($resultSetListListItemItem)), __LINE__);
             }
         }
         $this->ListItem = $listItem;
@@ -76,14 +76,14 @@ class ResultSetList extends AbstractStructBase
     /**
      * Add item to ListItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\ListItemType $item
-     * @return \StructType\ResultSetList
+     * @param \traveltainment\SOAP17\StructType\ListItemType $item
+     * @return \traveltainment\SOAP17\StructType\ResultSetList
      */
-    public function addToListItem(\StructType\ListItemType $item)
+    public function addToListItem(\traveltainment\SOAP17\StructType\ListItemType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ListItemType) {
-            throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \StructType\ListItemType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ListItemType) {
+            throw new \InvalidArgumentException(sprintf('The ListItem property can only contain items of \traveltainment\SOAP17\StructType\ListItemType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ListItem[] = $item;
         return $this;
@@ -99,7 +99,7 @@ class ResultSetList extends AbstractStructBase
     /**
      * Set TotalNumberOfResults value
      * @param int $totalNumberOfResults
-     * @return \StructType\ResultSetList
+     * @return \traveltainment\SOAP17\StructType\ResultSetList
      */
     public function setTotalNumberOfResults($totalNumberOfResults = null)
     {
@@ -121,7 +121,7 @@ class ResultSetList extends AbstractStructBase
     /**
      * Set Alternatives value
      * @param bool $alternatives
-     * @return \StructType\ResultSetList
+     * @return \traveltainment\SOAP17\StructType\ResultSetList
      */
     public function setAlternatives($alternatives = null)
     {
@@ -138,7 +138,7 @@ class ResultSetList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ResultSetList
+     * @return \traveltainment\SOAP17\StructType\ResultSetList
      */
     public static function __set_state(array $array)
     {

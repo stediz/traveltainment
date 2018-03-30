@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class RegionListSearchType extends SearchType
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionListOptionsType
+     * @var \traveltainment\SOAP17\StructType\RegionListOptionsType
      */
     public $Options;
     /**
      * Constructor method for RegionListSearchType
      * @uses RegionListSearchType::setOptions()
-     * @param \StructType\RegionListOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\RegionListOptionsType $options
      */
-    public function __construct(\StructType\RegionListOptionsType $options = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionListOptionsType $options = null)
     {
         $this
             ->setOptions($options);
     }
     /**
      * Get Options value
-     * @return \StructType\RegionListOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\RegionListOptionsType|null
      */
     public function getOptions()
     {
@@ -37,10 +37,10 @@ class RegionListSearchType extends SearchType
     }
     /**
      * Set Options value
-     * @param \StructType\RegionListOptionsType $options
-     * @return \StructType\RegionListSearchType
+     * @param \traveltainment\SOAP17\StructType\RegionListOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\RegionListSearchType
      */
-    public function setOptions(\StructType\RegionListOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\RegionListOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -51,7 +51,7 @@ class RegionListSearchType extends SearchType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionListSearchType
+     * @return \traveltainment\SOAP17\StructType\RegionListSearchType
      */
     public static function __set_state(array $array)
     {

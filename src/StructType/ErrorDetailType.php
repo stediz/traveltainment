@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class ErrorDetailType extends AbstractStructBase
      * @uses \DOMDocument::hasChildNodes()
      * @uses \DOMDocument::saveXML()
      * @uses \DOMNode::item()
-     * @uses \StructType\ErrorDetailType::setAny()
+     * @uses \traveltainment\SOAP17\StructType\ErrorDetailType::setAny()
      * @param bool $asString true: returns XML string, false: returns \DOMDocument
      * @return \DOMDocument|null
      */
@@ -66,7 +66,7 @@ class ErrorDetailType extends AbstractStructBase
     /**
      * Set any value
      * @param \DOMDocument $any
-     * @return \StructType\ErrorDetailType
+     * @return \traveltainment\SOAP17\StructType\ErrorDetailType
      */
     public function setAny(\DOMDocument $any = null)
     {
@@ -84,7 +84,7 @@ class ErrorDetailType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\ErrorDetailType
+     * @return \traveltainment\SOAP17\StructType\ErrorDetailType
      */
     public function setName($name = null)
     {
@@ -106,7 +106,7 @@ class ErrorDetailType extends AbstractStructBase
     /**
      * Set Value value
      * @param string $value
-     * @return \StructType\ErrorDetailType
+     * @return \traveltainment\SOAP17\StructType\ErrorDetailType
      */
     public function setValue($value = null)
     {
@@ -123,7 +123,7 @@ class ErrorDetailType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ErrorDetailType
+     * @return \traveltainment\SOAP17\StructType\ErrorDetailType
      */
     public static function __set_state(array $array)
     {

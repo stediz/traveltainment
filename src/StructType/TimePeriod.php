@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class TimePeriod extends AbstractStructBase
     /**
      * Set FromDate value
      * @param string $fromDate
-     * @return \StructType\TimePeriod
+     * @return \traveltainment\SOAP17\StructType\TimePeriod
      */
     public function setFromDate($fromDate = null)
     {
@@ -66,7 +66,7 @@ class TimePeriod extends AbstractStructBase
     /**
      * Set ToDate value
      * @param string $toDate
-     * @return \StructType\TimePeriod
+     * @return \traveltainment\SOAP17\StructType\TimePeriod
      */
     public function setToDate($toDate = null)
     {
@@ -83,7 +83,7 @@ class TimePeriod extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TimePeriod
+     * @return \traveltainment\SOAP17\StructType\TimePeriod
      */
     public static function __set_state(array $array)
     {

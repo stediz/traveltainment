@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class BookingScList extends AbstractStructBase
      * The Booking
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\BookingScType[]
+     * @var \traveltainment\SOAP17\StructType\BookingScType[]
      */
     public $Booking;
     /**
      * Constructor method for BookingScList
      * @uses BookingScList::setBooking()
-     * @param \StructType\BookingScType[] $booking
+     * @param \traveltainment\SOAP17\StructType\BookingScType[] $booking
      */
     public function __construct(array $booking = array())
     {
@@ -29,7 +29,7 @@ class BookingScList extends AbstractStructBase
     }
     /**
      * Get Booking value
-     * @return \StructType\BookingScType[]|null
+     * @return \traveltainment\SOAP17\StructType\BookingScType[]|null
      */
     public function getBooking()
     {
@@ -38,15 +38,15 @@ class BookingScList extends AbstractStructBase
     /**
      * Set Booking value
      * @throws \InvalidArgumentException
-     * @param \StructType\BookingScType[] $booking
-     * @return \StructType\BookingScList
+     * @param \traveltainment\SOAP17\StructType\BookingScType[] $booking
+     * @return \traveltainment\SOAP17\StructType\BookingScList
      */
     public function setBooking(array $booking = array())
     {
         foreach ($booking as $bookingScListBookingItem) {
             // validation for constraint: itemType
-            if (!$bookingScListBookingItem instanceof \StructType\BookingScType) {
-                throw new \InvalidArgumentException(sprintf('The Booking property can only contain items of \StructType\BookingScType, "%s" given', is_object($bookingScListBookingItem) ? get_class($bookingScListBookingItem) : gettype($bookingScListBookingItem)), __LINE__);
+            if (!$bookingScListBookingItem instanceof \traveltainment\SOAP17\StructType\BookingScType) {
+                throw new \InvalidArgumentException(sprintf('The Booking property can only contain items of \traveltainment\SOAP17\StructType\BookingScType, "%s" given', is_object($bookingScListBookingItem) ? get_class($bookingScListBookingItem) : gettype($bookingScListBookingItem)), __LINE__);
             }
         }
         $this->Booking = $booking;
@@ -55,14 +55,14 @@ class BookingScList extends AbstractStructBase
     /**
      * Add item to Booking value
      * @throws \InvalidArgumentException
-     * @param \StructType\BookingScType $item
-     * @return \StructType\BookingScList
+     * @param \traveltainment\SOAP17\StructType\BookingScType $item
+     * @return \traveltainment\SOAP17\StructType\BookingScList
      */
-    public function addToBooking(\StructType\BookingScType $item)
+    public function addToBooking(\traveltainment\SOAP17\StructType\BookingScType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\BookingScType) {
-            throw new \InvalidArgumentException(sprintf('The Booking property can only contain items of \StructType\BookingScType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\BookingScType) {
+            throw new \InvalidArgumentException(sprintf('The Booking property can only contain items of \traveltainment\SOAP17\StructType\BookingScType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Booking[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class BookingScList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingScList
+     * @return \traveltainment\SOAP17\StructType\BookingScList
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -27,17 +27,17 @@ class AddonType extends AbstractStructBase
     public $CreationDate;
     /**
      * The Credentials
-     * @var \StructType\CredentialsType
+     * @var \traveltainment\SOAP17\StructType\CredentialsType
      */
     public $Credentials;
     /**
      * The Comments
-     * @var \StructType\CommentList
+     * @var \traveltainment\SOAP17\StructType\CommentList
      */
     public $Comments;
     /**
      * The Params
-     * @var \StructType\ParamList
+     * @var \traveltainment\SOAP17\StructType\ParamList
      */
     public $Params;
     /**
@@ -51,11 +51,11 @@ class AddonType extends AbstractStructBase
      * @param string $addonID
      * @param string $addonType
      * @param string $creationDate
-     * @param \StructType\CredentialsType $credentials
-     * @param \StructType\CommentList $comments
-     * @param \StructType\ParamList $params
+     * @param \traveltainment\SOAP17\StructType\CredentialsType $credentials
+     * @param \traveltainment\SOAP17\StructType\CommentList $comments
+     * @param \traveltainment\SOAP17\StructType\ParamList $params
      */
-    public function __construct($addonID = null, $addonType = null, $creationDate = null, \StructType\CredentialsType $credentials = null, \StructType\CommentList $comments = null, \StructType\ParamList $params = null)
+    public function __construct($addonID = null, $addonType = null, $creationDate = null, \traveltainment\SOAP17\StructType\CredentialsType $credentials = null, \traveltainment\SOAP17\StructType\CommentList $comments = null, \traveltainment\SOAP17\StructType\ParamList $params = null)
     {
         $this
             ->setAddonID($addonID)
@@ -76,7 +76,7 @@ class AddonType extends AbstractStructBase
     /**
      * Set AddonID value
      * @param string $addonID
-     * @return \StructType\AddonType
+     * @return \traveltainment\SOAP17\StructType\AddonType
      */
     public function setAddonID($addonID = null)
     {
@@ -97,17 +97,17 @@ class AddonType extends AbstractStructBase
     }
     /**
      * Set AddonType value
-     * @uses \EnumType\AddonDefinitionTypeEnum::valueIsValid()
-     * @uses \EnumType\AddonDefinitionTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\AddonDefinitionTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\AddonDefinitionTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $addonType
-     * @return \StructType\AddonType
+     * @return \traveltainment\SOAP17\StructType\AddonType
      */
     public function setAddonType($addonType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AddonDefinitionTypeEnum::valueIsValid($addonType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addonType, implode(', ', \EnumType\AddonDefinitionTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\AddonDefinitionTypeEnum::valueIsValid($addonType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addonType, implode(', ', \traveltainment\SOAP17\EnumType\AddonDefinitionTypeEnum::getValidValues())), __LINE__);
         }
         $this->AddonType = $addonType;
         return $this;
@@ -123,7 +123,7 @@ class AddonType extends AbstractStructBase
     /**
      * Set CreationDate value
      * @param string $creationDate
-     * @return \StructType\AddonType
+     * @return \traveltainment\SOAP17\StructType\AddonType
      */
     public function setCreationDate($creationDate = null)
     {
@@ -136,7 +136,7 @@ class AddonType extends AbstractStructBase
     }
     /**
      * Get Credentials value
-     * @return \StructType\CredentialsType|null
+     * @return \traveltainment\SOAP17\StructType\CredentialsType|null
      */
     public function getCredentials()
     {
@@ -144,17 +144,17 @@ class AddonType extends AbstractStructBase
     }
     /**
      * Set Credentials value
-     * @param \StructType\CredentialsType $credentials
-     * @return \StructType\AddonType
+     * @param \traveltainment\SOAP17\StructType\CredentialsType $credentials
+     * @return \traveltainment\SOAP17\StructType\AddonType
      */
-    public function setCredentials(\StructType\CredentialsType $credentials = null)
+    public function setCredentials(\traveltainment\SOAP17\StructType\CredentialsType $credentials = null)
     {
         $this->Credentials = $credentials;
         return $this;
     }
     /**
      * Get Comments value
-     * @return \StructType\CommentList|null
+     * @return \traveltainment\SOAP17\StructType\CommentList|null
      */
     public function getComments()
     {
@@ -162,17 +162,17 @@ class AddonType extends AbstractStructBase
     }
     /**
      * Set Comments value
-     * @param \StructType\CommentList $comments
-     * @return \StructType\AddonType
+     * @param \traveltainment\SOAP17\StructType\CommentList $comments
+     * @return \traveltainment\SOAP17\StructType\AddonType
      */
-    public function setComments(\StructType\CommentList $comments = null)
+    public function setComments(\traveltainment\SOAP17\StructType\CommentList $comments = null)
     {
         $this->Comments = $comments;
         return $this;
     }
     /**
      * Get Params value
-     * @return \StructType\ParamList|null
+     * @return \traveltainment\SOAP17\StructType\ParamList|null
      */
     public function getParams()
     {
@@ -180,10 +180,10 @@ class AddonType extends AbstractStructBase
     }
     /**
      * Set Params value
-     * @param \StructType\ParamList $params
-     * @return \StructType\AddonType
+     * @param \traveltainment\SOAP17\StructType\ParamList $params
+     * @return \traveltainment\SOAP17\StructType\AddonType
      */
-    public function setParams(\StructType\ParamList $params = null)
+    public function setParams(\traveltainment\SOAP17\StructType\ParamList $params = null)
     {
         $this->Params = $params;
         return $this;
@@ -194,7 +194,7 @@ class AddonType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonType
+     * @return \traveltainment\SOAP17\StructType\AddonType
      */
     public static function __set_state(array $array)
     {

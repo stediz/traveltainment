@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class CarRentalLocationsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CarRentalLocationType[]
+     * @var \traveltainment\SOAP17\StructType\CarRentalLocationType[]
      */
     public $Location;
     /**
      * Constructor method for CarRentalLocationsType
      * @uses CarRentalLocationsType::setLocation()
-     * @param \StructType\CarRentalLocationType[] $location
+     * @param \traveltainment\SOAP17\StructType\CarRentalLocationType[] $location
      */
     public function __construct(array $location = array())
     {
@@ -30,7 +30,7 @@ class CarRentalLocationsType extends AbstractStructBase
     }
     /**
      * Get Location value
-     * @return \StructType\CarRentalLocationType[]|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType[]|null
      */
     public function getLocation()
     {
@@ -39,15 +39,15 @@ class CarRentalLocationsType extends AbstractStructBase
     /**
      * Set Location value
      * @throws \InvalidArgumentException
-     * @param \StructType\CarRentalLocationType[] $location
-     * @return \StructType\CarRentalLocationsType
+     * @param \traveltainment\SOAP17\StructType\CarRentalLocationType[] $location
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationsType
      */
     public function setLocation(array $location = array())
     {
         foreach ($location as $carRentalLocationsTypeLocationItem) {
             // validation for constraint: itemType
-            if (!$carRentalLocationsTypeLocationItem instanceof \StructType\CarRentalLocationType) {
-                throw new \InvalidArgumentException(sprintf('The Location property can only contain items of \StructType\CarRentalLocationType, "%s" given', is_object($carRentalLocationsTypeLocationItem) ? get_class($carRentalLocationsTypeLocationItem) : gettype($carRentalLocationsTypeLocationItem)), __LINE__);
+            if (!$carRentalLocationsTypeLocationItem instanceof \traveltainment\SOAP17\StructType\CarRentalLocationType) {
+                throw new \InvalidArgumentException(sprintf('The Location property can only contain items of \traveltainment\SOAP17\StructType\CarRentalLocationType, "%s" given', is_object($carRentalLocationsTypeLocationItem) ? get_class($carRentalLocationsTypeLocationItem) : gettype($carRentalLocationsTypeLocationItem)), __LINE__);
             }
         }
         $this->Location = $location;
@@ -56,14 +56,14 @@ class CarRentalLocationsType extends AbstractStructBase
     /**
      * Add item to Location value
      * @throws \InvalidArgumentException
-     * @param \StructType\CarRentalLocationType $item
-     * @return \StructType\CarRentalLocationsType
+     * @param \traveltainment\SOAP17\StructType\CarRentalLocationType $item
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationsType
      */
-    public function addToLocation(\StructType\CarRentalLocationType $item)
+    public function addToLocation(\traveltainment\SOAP17\StructType\CarRentalLocationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CarRentalLocationType) {
-            throw new \InvalidArgumentException(sprintf('The Location property can only contain items of \StructType\CarRentalLocationType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\CarRentalLocationType) {
+            throw new \InvalidArgumentException(sprintf('The Location property can only contain items of \traveltainment\SOAP17\StructType\CarRentalLocationType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Location[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class CarRentalLocationsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalLocationsType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationsType
      */
     public static function __set_state(array $array)
     {

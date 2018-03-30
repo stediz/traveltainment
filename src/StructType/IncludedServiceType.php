@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class IncludedServiceType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\IncludedServiceType
+     * @return \traveltainment\SOAP17\StructType\IncludedServiceType
      */
     public function set_($_ = null)
     {
@@ -66,7 +66,7 @@ class IncludedServiceType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\IncludedServiceType
+     * @return \traveltainment\SOAP17\StructType\IncludedServiceType
      */
     public function setCode($code = null)
     {
@@ -83,7 +83,7 @@ class IncludedServiceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\IncludedServiceType
+     * @return \traveltainment\SOAP17\StructType\IncludedServiceType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class GeographicalBounds extends AbstractStructBase
 {
     /**
      * The MinCoordinates
-     * @var \StructType\Coordinates
+     * @var \traveltainment\SOAP17\StructType\Coordinates
      */
     public $MinCoordinates;
     /**
      * The MaxCoordinates
-     * @var \StructType\Coordinates
+     * @var \traveltainment\SOAP17\StructType\Coordinates
      */
     public $MaxCoordinates;
     /**
      * Constructor method for GeographicalBounds
      * @uses GeographicalBounds::setMinCoordinates()
      * @uses GeographicalBounds::setMaxCoordinates()
-     * @param \StructType\Coordinates $minCoordinates
-     * @param \StructType\Coordinates $maxCoordinates
+     * @param \traveltainment\SOAP17\StructType\Coordinates $minCoordinates
+     * @param \traveltainment\SOAP17\StructType\Coordinates $maxCoordinates
      */
-    public function __construct(\StructType\Coordinates $minCoordinates = null, \StructType\Coordinates $maxCoordinates = null)
+    public function __construct(\traveltainment\SOAP17\StructType\Coordinates $minCoordinates = null, \traveltainment\SOAP17\StructType\Coordinates $maxCoordinates = null)
     {
         $this
             ->setMinCoordinates($minCoordinates)
@@ -35,7 +35,7 @@ class GeographicalBounds extends AbstractStructBase
     }
     /**
      * Get MinCoordinates value
-     * @return \StructType\Coordinates|null
+     * @return \traveltainment\SOAP17\StructType\Coordinates|null
      */
     public function getMinCoordinates()
     {
@@ -43,17 +43,17 @@ class GeographicalBounds extends AbstractStructBase
     }
     /**
      * Set MinCoordinates value
-     * @param \StructType\Coordinates $minCoordinates
-     * @return \StructType\GeographicalBounds
+     * @param \traveltainment\SOAP17\StructType\Coordinates $minCoordinates
+     * @return \traveltainment\SOAP17\StructType\GeographicalBounds
      */
-    public function setMinCoordinates(\StructType\Coordinates $minCoordinates = null)
+    public function setMinCoordinates(\traveltainment\SOAP17\StructType\Coordinates $minCoordinates = null)
     {
         $this->MinCoordinates = $minCoordinates;
         return $this;
     }
     /**
      * Get MaxCoordinates value
-     * @return \StructType\Coordinates|null
+     * @return \traveltainment\SOAP17\StructType\Coordinates|null
      */
     public function getMaxCoordinates()
     {
@@ -61,10 +61,10 @@ class GeographicalBounds extends AbstractStructBase
     }
     /**
      * Set MaxCoordinates value
-     * @param \StructType\Coordinates $maxCoordinates
-     * @return \StructType\GeographicalBounds
+     * @param \traveltainment\SOAP17\StructType\Coordinates $maxCoordinates
+     * @return \traveltainment\SOAP17\StructType\GeographicalBounds
      */
-    public function setMaxCoordinates(\StructType\Coordinates $maxCoordinates = null)
+    public function setMaxCoordinates(\traveltainment\SOAP17\StructType\Coordinates $maxCoordinates = null)
     {
         $this->MaxCoordinates = $maxCoordinates;
         return $this;
@@ -75,7 +75,7 @@ class GeographicalBounds extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GeographicalBounds
+     * @return \traveltainment\SOAP17\StructType\GeographicalBounds
      */
     public static function __set_state(array $array)
     {

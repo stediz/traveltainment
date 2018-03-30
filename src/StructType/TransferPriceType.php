@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class TransferPriceType extends SimplePriceType
 {
     /**
      * The _
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $_;
     /**
@@ -24,10 +24,10 @@ class TransferPriceType extends SimplePriceType
      * Constructor method for TransferPriceType
      * @uses TransferPriceType::set_()
      * @uses TransferPriceType::setType()
-     * @param \StructType\SimplePriceType $_
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $_
      * @param string $type
      */
-    public function __construct(\StructType\SimplePriceType $_ = null, $type = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SimplePriceType $_ = null, $type = null)
     {
         $this
             ->set_($_)
@@ -35,7 +35,7 @@ class TransferPriceType extends SimplePriceType
     }
     /**
      * Get _ value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function get_()
     {
@@ -43,10 +43,10 @@ class TransferPriceType extends SimplePriceType
     }
     /**
      * Set _ value
-     * @param \StructType\SimplePriceType $_
-     * @return \StructType\TransferPriceType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $_
+     * @return \traveltainment\SOAP17\StructType\TransferPriceType
      */
-    public function set_(\StructType\SimplePriceType $_ = null)
+    public function set_(\traveltainment\SOAP17\StructType\SimplePriceType $_ = null)
     {
         $this->_ = $_;
         return $this;
@@ -61,17 +61,17 @@ class TransferPriceType extends SimplePriceType
     }
     /**
      * Set Type value
-     * @uses \EnumType\TransferPriceTypeEnum::valueIsValid()
-     * @uses \EnumType\TransferPriceTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\TransferPriceTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\TransferPriceTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\TransferPriceType
+     * @return \traveltainment\SOAP17\StructType\TransferPriceType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TransferPriceTypeEnum::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\TransferPriceTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\TransferPriceTypeEnum::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \traveltainment\SOAP17\EnumType\TransferPriceTypeEnum::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -82,7 +82,7 @@ class TransferPriceType extends SimplePriceType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferPriceType
+     * @return \traveltainment\SOAP17\StructType\TransferPriceType
      */
     public static function __set_state(array $array)
     {

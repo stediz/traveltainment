@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class HotelSelectionType extends AbstractStructBase
 {
     /**
      * The ObjectID
-     * @var \StructType\ObjectIDType
+     * @var \traveltainment\SOAP17\StructType\ObjectIDType
      */
     public $ObjectID;
     /**
      * The AccomCode
-     * @var \StructType\AccomCodeType
+     * @var \traveltainment\SOAP17\StructType\AccomCodeType
      */
     public $AccomCode;
     /**
      * Constructor method for HotelSelectionType
      * @uses HotelSelectionType::setObjectID()
      * @uses HotelSelectionType::setAccomCode()
-     * @param \StructType\ObjectIDType $objectID
-     * @param \StructType\AccomCodeType $accomCode
+     * @param \traveltainment\SOAP17\StructType\ObjectIDType $objectID
+     * @param \traveltainment\SOAP17\StructType\AccomCodeType $accomCode
      */
-    public function __construct(\StructType\ObjectIDType $objectID = null, \StructType\AccomCodeType $accomCode = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ObjectIDType $objectID = null, \traveltainment\SOAP17\StructType\AccomCodeType $accomCode = null)
     {
         $this
             ->setObjectID($objectID)
@@ -35,7 +35,7 @@ class HotelSelectionType extends AbstractStructBase
     }
     /**
      * Get ObjectID value
-     * @return \StructType\ObjectIDType|null
+     * @return \traveltainment\SOAP17\StructType\ObjectIDType|null
      */
     public function getObjectID()
     {
@@ -43,17 +43,17 @@ class HotelSelectionType extends AbstractStructBase
     }
     /**
      * Set ObjectID value
-     * @param \StructType\ObjectIDType $objectID
-     * @return \StructType\HotelSelectionType
+     * @param \traveltainment\SOAP17\StructType\ObjectIDType $objectID
+     * @return \traveltainment\SOAP17\StructType\HotelSelectionType
      */
-    public function setObjectID(\StructType\ObjectIDType $objectID = null)
+    public function setObjectID(\traveltainment\SOAP17\StructType\ObjectIDType $objectID = null)
     {
         $this->ObjectID = $objectID;
         return $this;
     }
     /**
      * Get AccomCode value
-     * @return \StructType\AccomCodeType|null
+     * @return \traveltainment\SOAP17\StructType\AccomCodeType|null
      */
     public function getAccomCode()
     {
@@ -61,10 +61,10 @@ class HotelSelectionType extends AbstractStructBase
     }
     /**
      * Set AccomCode value
-     * @param \StructType\AccomCodeType $accomCode
-     * @return \StructType\HotelSelectionType
+     * @param \traveltainment\SOAP17\StructType\AccomCodeType $accomCode
+     * @return \traveltainment\SOAP17\StructType\HotelSelectionType
      */
-    public function setAccomCode(\StructType\AccomCodeType $accomCode = null)
+    public function setAccomCode(\traveltainment\SOAP17\StructType\AccomCodeType $accomCode = null)
     {
         $this->AccomCode = $accomCode;
         return $this;
@@ -75,7 +75,7 @@ class HotelSelectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelSelectionType
+     * @return \traveltainment\SOAP17\StructType\HotelSelectionType
      */
     public static function __set_state(array $array)
     {

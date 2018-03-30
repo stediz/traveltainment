@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class AirportType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\AirportType
+     * @return \traveltainment\SOAP17\StructType\AirportType
      */
     public function set_($_ = null)
     {
@@ -84,7 +84,7 @@ class AirportType extends AbstractStructBase
     /**
      * Set IataCode value
      * @param string $iataCode
-     * @return \StructType\AirportType
+     * @return \traveltainment\SOAP17\StructType\AirportType
      */
     public function setIataCode($iataCode = null)
     {
@@ -110,7 +110,7 @@ class AirportType extends AbstractStructBase
     /**
      * Set Country value
      * @param string $country
-     * @return \StructType\AirportType
+     * @return \traveltainment\SOAP17\StructType\AirportType
      */
     public function setCountry($country = null)
     {
@@ -132,7 +132,7 @@ class AirportType extends AbstractStructBase
     /**
      * Set CityName value
      * @param string $cityName
-     * @return \StructType\AirportType
+     * @return \traveltainment\SOAP17\StructType\AirportType
      */
     public function setCityName($cityName = null)
     {
@@ -149,7 +149,7 @@ class AirportType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AirportType
+     * @return \traveltainment\SOAP17\StructType\AirportType
      */
     public static function __set_state(array $array)
     {

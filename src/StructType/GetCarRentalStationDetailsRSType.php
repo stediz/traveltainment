@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
 {
     /**
      * The Errors
-     * @var \StructType\ErrorsType
+     * @var \traveltainment\SOAP17\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -45,7 +45,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     public $OperatingProviderName;
     /**
      * The Details
-     * @var \StructType\CarRentalStationDetailsType
+     * @var \traveltainment\SOAP17\StructType\CarRentalStationDetailsType
      */
     public $Details;
     /**
@@ -56,14 +56,14 @@ class GetCarRentalStationDetailsRSType extends ResponseType
      * @uses GetCarRentalStationDetailsRSType::setLocationName()
      * @uses GetCarRentalStationDetailsRSType::setOperatingProviderName()
      * @uses GetCarRentalStationDetailsRSType::setDetails()
-     * @param \StructType\ErrorsType $errors
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
      * @param string $noDetailsReason
      * @param string $stationCode
      * @param string $locationName
      * @param string $operatingProviderName
-     * @param \StructType\CarRentalStationDetailsType $details
+     * @param \traveltainment\SOAP17\StructType\CarRentalStationDetailsType $details
      */
-    public function __construct(\StructType\ErrorsType $errors = null, $noDetailsReason = null, $stationCode = null, $locationName = null, $operatingProviderName = null, \StructType\CarRentalStationDetailsType $details = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ErrorsType $errors = null, $noDetailsReason = null, $stationCode = null, $locationName = null, $operatingProviderName = null, \traveltainment\SOAP17\StructType\CarRentalStationDetailsType $details = null)
     {
         $this
             ->setErrors($errors)
@@ -75,7 +75,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -83,10 +83,10 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\GetCarRentalStationDetailsRSType
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRSType
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\traveltainment\SOAP17\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
@@ -102,7 +102,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     /**
      * Set NoDetailsReason value
      * @param string $noDetailsReason
-     * @return \StructType\GetCarRentalStationDetailsRSType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRSType
      */
     public function setNoDetailsReason($noDetailsReason = null)
     {
@@ -124,7 +124,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     /**
      * Set StationCode value
      * @param string $stationCode
-     * @return \StructType\GetCarRentalStationDetailsRSType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRSType
      */
     public function setStationCode($stationCode = null)
     {
@@ -154,7 +154,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     /**
      * Set LocationName value
      * @param string $locationName
-     * @return \StructType\GetCarRentalStationDetailsRSType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRSType
      */
     public function setLocationName($locationName = null)
     {
@@ -184,7 +184,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     /**
      * Set OperatingProviderName value
      * @param string $operatingProviderName
-     * @return \StructType\GetCarRentalStationDetailsRSType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRSType
      */
     public function setOperatingProviderName($operatingProviderName = null)
     {
@@ -197,7 +197,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     }
     /**
      * Get Details value
-     * @return \StructType\CarRentalStationDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalStationDetailsType|null
      */
     public function getDetails()
     {
@@ -205,10 +205,10 @@ class GetCarRentalStationDetailsRSType extends ResponseType
     }
     /**
      * Set Details value
-     * @param \StructType\CarRentalStationDetailsType $details
-     * @return \StructType\GetCarRentalStationDetailsRSType
+     * @param \traveltainment\SOAP17\StructType\CarRentalStationDetailsType $details
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRSType
      */
-    public function setDetails(\StructType\CarRentalStationDetailsType $details = null)
+    public function setDetails(\traveltainment\SOAP17\StructType\CarRentalStationDetailsType $details = null)
     {
         $this->Details = $details;
         return $this;
@@ -219,7 +219,7 @@ class GetCarRentalStationDetailsRSType extends ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetCarRentalStationDetailsRSType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRSType
      */
     public static function __set_state(array $array)
     {

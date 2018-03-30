@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class AddonListInsertRQ extends XmlInterfaceRQ
 {
     /**
      * The AddonListInsert
-     * @var \StructType\AddonListInsertType
+     * @var \traveltainment\SOAP17\StructType\AddonListInsertType
      */
     public $AddonListInsert;
     /**
      * Constructor method for AddonListInsertRQ
      * @uses AddonListInsertRQ::setAddonListInsert()
-     * @param \StructType\AddonListInsertType $addonListInsert
+     * @param \traveltainment\SOAP17\StructType\AddonListInsertType $addonListInsert
      */
-    public function __construct(\StructType\AddonListInsertType $addonListInsert = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonListInsertType $addonListInsert = null)
     {
         $this
             ->setAddonListInsert($addonListInsert);
     }
     /**
      * Get AddonListInsert value
-     * @return \StructType\AddonListInsertType|null
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertType|null
      */
     public function getAddonListInsert()
     {
@@ -35,10 +35,10 @@ class AddonListInsertRQ extends XmlInterfaceRQ
     }
     /**
      * Set AddonListInsert value
-     * @param \StructType\AddonListInsertType $addonListInsert
-     * @return \StructType\AddonListInsertRQ
+     * @param \traveltainment\SOAP17\StructType\AddonListInsertType $addonListInsert
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertRQ
      */
-    public function setAddonListInsert(\StructType\AddonListInsertType $addonListInsert = null)
+    public function setAddonListInsert(\traveltainment\SOAP17\StructType\AddonListInsertType $addonListInsert = null)
     {
         $this->AddonListInsert = $addonListInsert;
         return $this;
@@ -49,7 +49,7 @@ class AddonListInsertRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonListInsertRQ
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertRQ
      */
     public static function __set_state(array $array)
     {

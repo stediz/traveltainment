@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class SecurityType extends AbstractStructBase
     /**
      * Set SecurityInfo value
      * @param string $securityInfo
-     * @return \StructType\SecurityType
+     * @return \traveltainment\SOAP17\StructType\SecurityType
      */
     public function setSecurityInfo($securityInfo = null)
     {
@@ -70,7 +70,7 @@ class SecurityType extends AbstractStructBase
     /**
      * Set SecurityShortInfo value
      * @param string $securityShortInfo
-     * @return \StructType\SecurityType
+     * @return \traveltainment\SOAP17\StructType\SecurityType
      */
     public function setSecurityShortInfo($securityShortInfo = null)
     {
@@ -87,7 +87,7 @@ class SecurityType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SecurityType
+     * @return \traveltainment\SOAP17\StructType\SecurityType
      */
     public static function __set_state(array $array)
     {

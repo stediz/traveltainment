@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_Package_GetAlternativeFlightsList extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetAlternativeFlightsListRQ
+     * @var \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ
      */
     public $request;
     /**
      * Constructor method for Booking_Package_GetAlternativeFlightsList
      * @uses Booking_Package_GetAlternativeFlightsList::setRequest()
-     * @param \StructType\GetAlternativeFlightsListRQ $request
+     * @param \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ $request
      */
-    public function __construct(\StructType\GetAlternativeFlightsListRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetAlternativeFlightsListRQ|null
+     * @return \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Booking_Package_GetAlternativeFlightsList extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetAlternativeFlightsListRQ $request
-     * @return \StructType\Booking_Package_GetAlternativeFlightsList
+     * @param \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ $request
+     * @return \traveltainment\SOAP17\StructType\Booking_Package_GetAlternativeFlightsList
      */
-    public function setRequest(\StructType\GetAlternativeFlightsListRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Booking_Package_GetAlternativeFlightsList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_Package_GetAlternativeFlightsList
+     * @return \traveltainment\SOAP17\StructType\Booking_Package_GetAlternativeFlightsList
      */
     public static function __set_state(array $array)
     {

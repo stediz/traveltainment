@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Flight_OfferList extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineOfferListRQ
+     * @var \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ
      */
     public $request;
     /**
      * Constructor method for Search_Flight_OfferList
      * @uses Search_Flight_OfferList::setRequest()
-     * @param \StructType\SearchEngineOfferListRQ $request
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ $request
      */
-    public function __construct(\StructType\SearchEngineOfferListRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineOfferListRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\SearchEngineOfferListRQ|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_Flight_OfferList extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\SearchEngineOfferListRQ $request
-     * @return \StructType\Search_Flight_OfferList
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_Flight_OfferList
      */
-    public function setRequest(\StructType\SearchEngineOfferListRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\SearchEngineOfferListRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_Flight_OfferList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Flight_OfferList
+     * @return \traveltainment\SOAP17\StructType\Search_Flight_OfferList
      */
     public static function __set_state(array $array)
     {

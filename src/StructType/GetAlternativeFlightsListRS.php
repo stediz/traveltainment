@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,17 +14,17 @@ class GetAlternativeFlightsListRS extends XmlInterfaceRS
      * The Status
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\StatusType
+     * @var \traveltainment\SOAP17\StructType\StatusType
      */
     public $Status;
     /**
      * The OriginalOfferInformation
-     * @var \StructType\OriginalOfferInformationType
+     * @var \traveltainment\SOAP17\StructType\OriginalOfferInformationType
      */
     public $OriginalOfferInformation;
     /**
      * The AlternativeFlightsList
-     * @var \StructType\AlternativeFlightsListType
+     * @var \traveltainment\SOAP17\StructType\AlternativeFlightsListType
      */
     public $AlternativeFlightsList;
     /**
@@ -32,11 +32,11 @@ class GetAlternativeFlightsListRS extends XmlInterfaceRS
      * @uses GetAlternativeFlightsListRS::setStatus()
      * @uses GetAlternativeFlightsListRS::setOriginalOfferInformation()
      * @uses GetAlternativeFlightsListRS::setAlternativeFlightsList()
-     * @param \StructType\StatusType $status
-     * @param \StructType\OriginalOfferInformationType $originalOfferInformation
-     * @param \StructType\AlternativeFlightsListType $alternativeFlightsList
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
+     * @param \traveltainment\SOAP17\StructType\OriginalOfferInformationType $originalOfferInformation
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightsListType $alternativeFlightsList
      */
-    public function __construct(\StructType\StatusType $status = null, \StructType\OriginalOfferInformationType $originalOfferInformation = null, \StructType\AlternativeFlightsListType $alternativeFlightsList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\StatusType $status = null, \traveltainment\SOAP17\StructType\OriginalOfferInformationType $originalOfferInformation = null, \traveltainment\SOAP17\StructType\AlternativeFlightsListType $alternativeFlightsList = null)
     {
         $this
             ->setStatus($status)
@@ -45,7 +45,7 @@ class GetAlternativeFlightsListRS extends XmlInterfaceRS
     }
     /**
      * Get Status value
-     * @return \StructType\StatusType|null
+     * @return \traveltainment\SOAP17\StructType\StatusType|null
      */
     public function getStatus()
     {
@@ -53,17 +53,17 @@ class GetAlternativeFlightsListRS extends XmlInterfaceRS
     }
     /**
      * Set Status value
-     * @param \StructType\StatusType $status
-     * @return \StructType\GetAlternativeFlightsListRS
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
+     * @return \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRS
      */
-    public function setStatus(\StructType\StatusType $status = null)
+    public function setStatus(\traveltainment\SOAP17\StructType\StatusType $status = null)
     {
         $this->Status = $status;
         return $this;
     }
     /**
      * Get OriginalOfferInformation value
-     * @return \StructType\OriginalOfferInformationType|null
+     * @return \traveltainment\SOAP17\StructType\OriginalOfferInformationType|null
      */
     public function getOriginalOfferInformation()
     {
@@ -71,17 +71,17 @@ class GetAlternativeFlightsListRS extends XmlInterfaceRS
     }
     /**
      * Set OriginalOfferInformation value
-     * @param \StructType\OriginalOfferInformationType $originalOfferInformation
-     * @return \StructType\GetAlternativeFlightsListRS
+     * @param \traveltainment\SOAP17\StructType\OriginalOfferInformationType $originalOfferInformation
+     * @return \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRS
      */
-    public function setOriginalOfferInformation(\StructType\OriginalOfferInformationType $originalOfferInformation = null)
+    public function setOriginalOfferInformation(\traveltainment\SOAP17\StructType\OriginalOfferInformationType $originalOfferInformation = null)
     {
         $this->OriginalOfferInformation = $originalOfferInformation;
         return $this;
     }
     /**
      * Get AlternativeFlightsList value
-     * @return \StructType\AlternativeFlightsListType|null
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightsListType|null
      */
     public function getAlternativeFlightsList()
     {
@@ -89,10 +89,10 @@ class GetAlternativeFlightsListRS extends XmlInterfaceRS
     }
     /**
      * Set AlternativeFlightsList value
-     * @param \StructType\AlternativeFlightsListType $alternativeFlightsList
-     * @return \StructType\GetAlternativeFlightsListRS
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightsListType $alternativeFlightsList
+     * @return \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRS
      */
-    public function setAlternativeFlightsList(\StructType\AlternativeFlightsListType $alternativeFlightsList = null)
+    public function setAlternativeFlightsList(\traveltainment\SOAP17\StructType\AlternativeFlightsListType $alternativeFlightsList = null)
     {
         $this->AlternativeFlightsList = $alternativeFlightsList;
         return $this;
@@ -103,7 +103,7 @@ class GetAlternativeFlightsListRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetAlternativeFlightsListRS
+     * @return \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRS
      */
     public static function __set_state(array $array)
     {

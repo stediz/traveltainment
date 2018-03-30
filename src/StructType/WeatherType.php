@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class WeatherType extends AbstractStructBase
      * The ClimaData
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ClimaDataType
+     * @var \traveltainment\SOAP17\StructType\ClimaDataType
      */
     public $ClimaData;
     /**
      * Constructor method for WeatherType
      * @uses WeatherType::setClimaData()
-     * @param \StructType\ClimaDataType $climaData
+     * @param \traveltainment\SOAP17\StructType\ClimaDataType $climaData
      */
-    public function __construct(\StructType\ClimaDataType $climaData = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ClimaDataType $climaData = null)
     {
         $this
             ->setClimaData($climaData);
     }
     /**
      * Get ClimaData value
-     * @return \StructType\ClimaDataType|null
+     * @return \traveltainment\SOAP17\StructType\ClimaDataType|null
      */
     public function getClimaData()
     {
@@ -37,10 +37,10 @@ class WeatherType extends AbstractStructBase
     }
     /**
      * Set ClimaData value
-     * @param \StructType\ClimaDataType $climaData
-     * @return \StructType\WeatherType
+     * @param \traveltainment\SOAP17\StructType\ClimaDataType $climaData
+     * @return \traveltainment\SOAP17\StructType\WeatherType
      */
-    public function setClimaData(\StructType\ClimaDataType $climaData = null)
+    public function setClimaData(\traveltainment\SOAP17\StructType\ClimaDataType $climaData = null)
     {
         $this->ClimaData = $climaData;
         return $this;
@@ -51,7 +51,7 @@ class WeatherType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\WeatherType
+     * @return \traveltainment\SOAP17\StructType\WeatherType
      */
     public static function __set_state(array $array)
     {

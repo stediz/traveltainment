@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class PersonPricesType extends AbstractStructBase
      * The PersonPrice
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\PersonPriceType[]
+     * @var \traveltainment\SOAP17\StructType\PersonPriceType[]
      */
     public $PersonPrice;
     /**
      * Constructor method for PersonPricesType
      * @uses PersonPricesType::setPersonPrice()
-     * @param \StructType\PersonPriceType[] $personPrice
+     * @param \traveltainment\SOAP17\StructType\PersonPriceType[] $personPrice
      */
     public function __construct(array $personPrice = array())
     {
@@ -29,7 +29,7 @@ class PersonPricesType extends AbstractStructBase
     }
     /**
      * Get PersonPrice value
-     * @return \StructType\PersonPriceType[]|null
+     * @return \traveltainment\SOAP17\StructType\PersonPriceType[]|null
      */
     public function getPersonPrice()
     {
@@ -38,15 +38,15 @@ class PersonPricesType extends AbstractStructBase
     /**
      * Set PersonPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\PersonPriceType[] $personPrice
-     * @return \StructType\PersonPricesType
+     * @param \traveltainment\SOAP17\StructType\PersonPriceType[] $personPrice
+     * @return \traveltainment\SOAP17\StructType\PersonPricesType
      */
     public function setPersonPrice(array $personPrice = array())
     {
         foreach ($personPrice as $personPricesTypePersonPriceItem) {
             // validation for constraint: itemType
-            if (!$personPricesTypePersonPriceItem instanceof \StructType\PersonPriceType) {
-                throw new \InvalidArgumentException(sprintf('The PersonPrice property can only contain items of \StructType\PersonPriceType, "%s" given', is_object($personPricesTypePersonPriceItem) ? get_class($personPricesTypePersonPriceItem) : gettype($personPricesTypePersonPriceItem)), __LINE__);
+            if (!$personPricesTypePersonPriceItem instanceof \traveltainment\SOAP17\StructType\PersonPriceType) {
+                throw new \InvalidArgumentException(sprintf('The PersonPrice property can only contain items of \traveltainment\SOAP17\StructType\PersonPriceType, "%s" given', is_object($personPricesTypePersonPriceItem) ? get_class($personPricesTypePersonPriceItem) : gettype($personPricesTypePersonPriceItem)), __LINE__);
             }
         }
         $this->PersonPrice = $personPrice;
@@ -55,14 +55,14 @@ class PersonPricesType extends AbstractStructBase
     /**
      * Add item to PersonPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\PersonPriceType $item
-     * @return \StructType\PersonPricesType
+     * @param \traveltainment\SOAP17\StructType\PersonPriceType $item
+     * @return \traveltainment\SOAP17\StructType\PersonPricesType
      */
-    public function addToPersonPrice(\StructType\PersonPriceType $item)
+    public function addToPersonPrice(\traveltainment\SOAP17\StructType\PersonPriceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PersonPriceType) {
-            throw new \InvalidArgumentException(sprintf('The PersonPrice property can only contain items of \StructType\PersonPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\PersonPriceType) {
+            throw new \InvalidArgumentException(sprintf('The PersonPrice property can only contain items of \traveltainment\SOAP17\StructType\PersonPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->PersonPrice[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class PersonPricesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PersonPricesType
+     * @return \traveltainment\SOAP17\StructType\PersonPricesType
      */
     public static function __set_state(array $array)
     {

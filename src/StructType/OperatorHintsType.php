@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class OperatorHintsType extends AbstractStructBase
      * Set OperatorHint value
      * @throws \InvalidArgumentException
      * @param string[] $operatorHint
-     * @return \StructType\OperatorHintsType
+     * @return \traveltainment\SOAP17\StructType\OperatorHintsType
      */
     public function setOperatorHint(array $operatorHint = array())
     {
@@ -57,7 +57,7 @@ class OperatorHintsType extends AbstractStructBase
      * Add item to OperatorHint value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\OperatorHintsType
+     * @return \traveltainment\SOAP17\StructType\OperatorHintsType
      */
     public function addToOperatorHint($item)
     {
@@ -74,7 +74,7 @@ class OperatorHintsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OperatorHintsType
+     * @return \traveltainment\SOAP17\StructType\OperatorHintsType
      */
     public static function __set_state(array $array)
     {

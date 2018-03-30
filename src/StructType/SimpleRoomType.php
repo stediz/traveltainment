@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -8,7 +8,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for SimpleRoomType StructType
  * @subpackage Structs
  */
-class SimpleRoomType extends \EnumType\Room
+class SimpleRoomType extends \traveltainment\SOAP17\EnumType\Room
 {
     /**
      * The _
@@ -43,17 +43,17 @@ class SimpleRoomType extends \EnumType\Room
     }
     /**
      * Set _ value
-     * @uses \EnumType\Room::valueIsValid()
-     * @uses \EnumType\Room::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Room::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Room::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\SimpleRoomType
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomType
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Room::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \EnumType\Room::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Room::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \traveltainment\SOAP17\EnumType\Room::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -69,7 +69,7 @@ class SimpleRoomType extends \EnumType\Room
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\SimpleRoomType
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomType
      */
     public function setName($name = null)
     {
@@ -86,7 +86,7 @@ class SimpleRoomType extends \EnumType\Room
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleRoomType
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomType
      */
     public static function __set_state(array $array)
     {

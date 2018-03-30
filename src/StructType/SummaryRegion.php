@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class SummaryRegion extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Region[]
+     * @var \traveltainment\SOAP17\StructType\Region[]
      */
     public $Region;
     /**
      * Constructor method for SummaryRegion
      * @uses SummaryRegion::setRegion()
-     * @param \StructType\Region[] $region
+     * @param \traveltainment\SOAP17\StructType\Region[] $region
      */
     public function __construct(array $region = array())
     {
@@ -30,7 +30,7 @@ class SummaryRegion extends AbstractStructBase
     }
     /**
      * Get Region value
-     * @return \StructType\Region[]|null
+     * @return \traveltainment\SOAP17\StructType\Region[]|null
      */
     public function getRegion()
     {
@@ -39,15 +39,15 @@ class SummaryRegion extends AbstractStructBase
     /**
      * Set Region value
      * @throws \InvalidArgumentException
-     * @param \StructType\Region[] $region
-     * @return \StructType\SummaryRegion
+     * @param \traveltainment\SOAP17\StructType\Region[] $region
+     * @return \traveltainment\SOAP17\StructType\SummaryRegion
      */
     public function setRegion(array $region = array())
     {
         foreach ($region as $summaryRegionRegionItem) {
             // validation for constraint: itemType
-            if (!$summaryRegionRegionItem instanceof \StructType\Region) {
-                throw new \InvalidArgumentException(sprintf('The Region property can only contain items of \StructType\Region, "%s" given', is_object($summaryRegionRegionItem) ? get_class($summaryRegionRegionItem) : gettype($summaryRegionRegionItem)), __LINE__);
+            if (!$summaryRegionRegionItem instanceof \traveltainment\SOAP17\StructType\Region) {
+                throw new \InvalidArgumentException(sprintf('The Region property can only contain items of \traveltainment\SOAP17\StructType\Region, "%s" given', is_object($summaryRegionRegionItem) ? get_class($summaryRegionRegionItem) : gettype($summaryRegionRegionItem)), __LINE__);
             }
         }
         $this->Region = $region;
@@ -56,14 +56,14 @@ class SummaryRegion extends AbstractStructBase
     /**
      * Add item to Region value
      * @throws \InvalidArgumentException
-     * @param \StructType\Region $item
-     * @return \StructType\SummaryRegion
+     * @param \traveltainment\SOAP17\StructType\Region $item
+     * @return \traveltainment\SOAP17\StructType\SummaryRegion
      */
-    public function addToRegion(\StructType\Region $item)
+    public function addToRegion(\traveltainment\SOAP17\StructType\Region $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Region) {
-            throw new \InvalidArgumentException(sprintf('The Region property can only contain items of \StructType\Region, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\Region) {
+            throw new \InvalidArgumentException(sprintf('The Region property can only contain items of \traveltainment\SOAP17\StructType\Region, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Region[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class SummaryRegion extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SummaryRegion
+     * @return \traveltainment\SOAP17\StructType\SummaryRegion
      */
     public static function __set_state(array $array)
     {

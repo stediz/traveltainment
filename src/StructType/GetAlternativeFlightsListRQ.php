@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class GetAlternativeFlightsListRQ extends XmlInterfaceRQ
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AlternativeFlightsOptionsType
+     * @var \traveltainment\SOAP17\StructType\AlternativeFlightsOptionsType
      */
     public $Options;
     /**
      * Constructor method for GetAlternativeFlightsListRQ
      * @uses GetAlternativeFlightsListRQ::setOptions()
-     * @param \StructType\AlternativeFlightsOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightsOptionsType $options
      */
-    public function __construct(\StructType\AlternativeFlightsOptionsType $options = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AlternativeFlightsOptionsType $options = null)
     {
         $this
             ->setOptions($options);
     }
     /**
      * Get Options value
-     * @return \StructType\AlternativeFlightsOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightsOptionsType|null
      */
     public function getOptions()
     {
@@ -37,10 +37,10 @@ class GetAlternativeFlightsListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Options value
-     * @param \StructType\AlternativeFlightsOptionsType $options
-     * @return \StructType\GetAlternativeFlightsListRQ
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightsOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ
      */
-    public function setOptions(\StructType\AlternativeFlightsOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\AlternativeFlightsOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -51,7 +51,7 @@ class GetAlternativeFlightsListRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetAlternativeFlightsListRQ
+     * @return \traveltainment\SOAP17\StructType\GetAlternativeFlightsListRQ
      */
     public static function __set_state(array $array)
     {

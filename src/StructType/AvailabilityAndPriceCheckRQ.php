@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,21 +29,21 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
      * Meta informations extracted from the WSDL
      * - documentation: Alternativen
      * - minOccurs: 0
-     * @var \StructType\ChosenAlternativesInformation
+     * @var \traveltainment\SOAP17\StructType\ChosenAlternativesInformation
      */
     public $ChosenAlternatives;
     /**
      * The TravellerList
      * Meta informations extracted from the WSDL
      * - documentation: Die TravellerList enthaelt 1 bis 8 Traveller.
-     * @var \StructType\TravellerListType
+     * @var \traveltainment\SOAP17\StructType\TravellerListType
      */
     public $TravellerList;
     /**
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailabilityAndPriceCheckOptionsType
+     * @var \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType
      */
     public $Options;
     /**
@@ -55,11 +55,11 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
      * @uses AvailabilityAndPriceCheckRQ::setOptions()
      * @param string $offerID
      * @param string $bookingID
-     * @param \StructType\ChosenAlternativesInformation $chosenAlternatives
-     * @param \StructType\TravellerListType $travellerList
-     * @param \StructType\AvailabilityAndPriceCheckOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\ChosenAlternativesInformation $chosenAlternatives
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options
      */
-    public function __construct($offerID = null, $bookingID = null, \StructType\ChosenAlternativesInformation $chosenAlternatives = null, \StructType\TravellerListType $travellerList = null, \StructType\AvailabilityAndPriceCheckOptionsType $options = null)
+    public function __construct($offerID = null, $bookingID = null, \traveltainment\SOAP17\StructType\ChosenAlternativesInformation $chosenAlternatives = null, \traveltainment\SOAP17\StructType\TravellerListType $travellerList = null, \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options = null)
     {
         $this
             ->setOfferID($offerID)
@@ -79,7 +79,7 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\AvailabilityAndPriceCheckRQ
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ
      */
     public function setOfferID($offerID = null)
     {
@@ -101,7 +101,7 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\AvailabilityAndPriceCheckRQ
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ
      */
     public function setBookingID($bookingID = null)
     {
@@ -114,7 +114,7 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     }
     /**
      * Get ChosenAlternatives value
-     * @return \StructType\ChosenAlternativesInformation|null
+     * @return \traveltainment\SOAP17\StructType\ChosenAlternativesInformation|null
      */
     public function getChosenAlternatives()
     {
@@ -122,17 +122,17 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     }
     /**
      * Set ChosenAlternatives value
-     * @param \StructType\ChosenAlternativesInformation $chosenAlternatives
-     * @return \StructType\AvailabilityAndPriceCheckRQ
+     * @param \traveltainment\SOAP17\StructType\ChosenAlternativesInformation $chosenAlternatives
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ
      */
-    public function setChosenAlternatives(\StructType\ChosenAlternativesInformation $chosenAlternatives = null)
+    public function setChosenAlternatives(\traveltainment\SOAP17\StructType\ChosenAlternativesInformation $chosenAlternatives = null)
     {
         $this->ChosenAlternatives = $chosenAlternatives;
         return $this;
     }
     /**
      * Get TravellerList value
-     * @return \StructType\TravellerListType|null
+     * @return \traveltainment\SOAP17\StructType\TravellerListType|null
      */
     public function getTravellerList()
     {
@@ -140,17 +140,17 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     }
     /**
      * Set TravellerList value
-     * @param \StructType\TravellerListType $travellerList
-     * @return \StructType\AvailabilityAndPriceCheckRQ
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ
      */
-    public function setTravellerList(\StructType\TravellerListType $travellerList = null)
+    public function setTravellerList(\traveltainment\SOAP17\StructType\TravellerListType $travellerList = null)
     {
         $this->TravellerList = $travellerList;
         return $this;
     }
     /**
      * Get Options value
-     * @return \StructType\AvailabilityAndPriceCheckOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType|null
      */
     public function getOptions()
     {
@@ -158,10 +158,10 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     }
     /**
      * Set Options value
-     * @param \StructType\AvailabilityAndPriceCheckOptionsType $options
-     * @return \StructType\AvailabilityAndPriceCheckRQ
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ
      */
-    public function setOptions(\StructType\AvailabilityAndPriceCheckOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -172,7 +172,7 @@ class AvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailabilityAndPriceCheckRQ
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class ReadBookRQ extends XmlInterfaceRQ
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\ReadBookRQ
+     * @return \traveltainment\SOAP17\StructType\ReadBookRQ
      */
     public function setBookingID($bookingID = null)
     {
@@ -53,7 +53,7 @@ class ReadBookRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReadBookRQ
+     * @return \traveltainment\SOAP17\StructType\ReadBookRQ
      */
     public static function __set_state(array $array)
     {

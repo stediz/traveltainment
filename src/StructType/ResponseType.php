@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class ResponseType extends AbstractStructBase
     public $Version;
     /**
      * The RS_Metadata
-     * @var \StructType\RS_MetadataType
+     * @var \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public $RS_Metadata;
     /**
@@ -29,9 +29,9 @@ class ResponseType extends AbstractStructBase
      * @uses ResponseType::setVersion()
      * @uses ResponseType::setRS_Metadata()
      * @param float $version
-     * @param \StructType\RS_MetadataType $rS_Metadata
+     * @param \traveltainment\SOAP17\StructType\RS_MetadataType $rS_Metadata
      */
-    public function __construct($version = null, \StructType\RS_MetadataType $rS_Metadata = null)
+    public function __construct($version = null, \traveltainment\SOAP17\StructType\RS_MetadataType $rS_Metadata = null)
     {
         $this
             ->setVersion($version)
@@ -48,7 +48,7 @@ class ResponseType extends AbstractStructBase
     /**
      * Set Version value
      * @param float $version
-     * @return \StructType\ResponseType
+     * @return \traveltainment\SOAP17\StructType\ResponseType
      */
     public function setVersion($version = null)
     {
@@ -65,7 +65,7 @@ class ResponseType extends AbstractStructBase
     }
     /**
      * Get RS_Metadata value
-     * @return \StructType\RS_MetadataType|null
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType|null
      */
     public function getRS_Metadata()
     {
@@ -73,10 +73,10 @@ class ResponseType extends AbstractStructBase
     }
     /**
      * Set RS_Metadata value
-     * @param \StructType\RS_MetadataType $rS_Metadata
-     * @return \StructType\ResponseType
+     * @param \traveltainment\SOAP17\StructType\RS_MetadataType $rS_Metadata
+     * @return \traveltainment\SOAP17\StructType\ResponseType
      */
-    public function setRS_Metadata(\StructType\RS_MetadataType $rS_Metadata = null)
+    public function setRS_Metadata(\traveltainment\SOAP17\StructType\RS_MetadataType $rS_Metadata = null)
     {
         $this->RS_Metadata = $rS_Metadata;
         return $this;
@@ -87,7 +87,7 @@ class ResponseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ResponseType
+     * @return \traveltainment\SOAP17\StructType\ResponseType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class RegionGroupType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\RegionGroupType
+     * @return \traveltainment\SOAP17\StructType\RegionGroupType
      */
     public function setName($name = null)
     {
@@ -76,7 +76,7 @@ class RegionGroupType extends AbstractStructBase
      * Set RegionID value
      * @throws \InvalidArgumentException
      * @param int[] $regionID
-     * @return \StructType\RegionGroupType
+     * @return \traveltainment\SOAP17\StructType\RegionGroupType
      */
     public function setRegionID(array $regionID = array())
     {
@@ -93,7 +93,7 @@ class RegionGroupType extends AbstractStructBase
      * Add item to RegionID value
      * @throws \InvalidArgumentException
      * @param int $item
-     * @return \StructType\RegionGroupType
+     * @return \traveltainment\SOAP17\StructType\RegionGroupType
      */
     public function addToRegionID($item)
     {
@@ -110,7 +110,7 @@ class RegionGroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionGroupType
+     * @return \traveltainment\SOAP17\StructType\RegionGroupType
      */
     public static function __set_state(array $array)
     {

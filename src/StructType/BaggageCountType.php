@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class BaggageCountType extends AbstractStructBase
     /**
      * Set BigBaggageCount value
      * @param int $bigBaggageCount
-     * @return \StructType\BaggageCountType
+     * @return \traveltainment\SOAP17\StructType\BaggageCountType
      */
     public function setBigBaggageCount($bigBaggageCount = null)
     {
@@ -66,7 +66,7 @@ class BaggageCountType extends AbstractStructBase
     /**
      * Set SmallBaggageCount value
      * @param int $smallBaggageCount
-     * @return \StructType\BaggageCountType
+     * @return \traveltainment\SOAP17\StructType\BaggageCountType
      */
     public function setSmallBaggageCount($smallBaggageCount = null)
     {
@@ -83,7 +83,7 @@ class BaggageCountType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BaggageCountType
+     * @return \traveltainment\SOAP17\StructType\BaggageCountType
      */
     public static function __set_state(array $array)
     {

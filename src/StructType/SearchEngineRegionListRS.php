@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class SearchEngineRegionListRS extends XmlInterfaceSearchRS
      * The GeographicalBounds
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GeographicalBounds
+     * @var \traveltainment\SOAP17\StructType\GeographicalBounds
      */
     public $GeographicalBounds;
     /**
      * Constructor method for SearchEngineRegionListRS
      * @uses SearchEngineRegionListRS::setGeographicalBounds()
-     * @param \StructType\GeographicalBounds $geographicalBounds
+     * @param \traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds
      */
-    public function __construct(\StructType\GeographicalBounds $geographicalBounds = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds = null)
     {
         $this
             ->setGeographicalBounds($geographicalBounds);
     }
     /**
      * Get GeographicalBounds value
-     * @return \StructType\GeographicalBounds|null
+     * @return \traveltainment\SOAP17\StructType\GeographicalBounds|null
      */
     public function getGeographicalBounds()
     {
@@ -37,10 +37,10 @@ class SearchEngineRegionListRS extends XmlInterfaceSearchRS
     }
     /**
      * Set GeographicalBounds value
-     * @param \StructType\GeographicalBounds $geographicalBounds
-     * @return \StructType\SearchEngineRegionListRS
+     * @param \traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionListRS
      */
-    public function setGeographicalBounds(\StructType\GeographicalBounds $geographicalBounds = null)
+    public function setGeographicalBounds(\traveltainment\SOAP17\StructType\GeographicalBounds $geographicalBounds = null)
     {
         $this->GeographicalBounds = $geographicalBounds;
         return $this;
@@ -51,7 +51,7 @@ class SearchEngineRegionListRS extends XmlInterfaceSearchRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineRegionListRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionListRS
      */
     public static function __set_state(array $array)
     {

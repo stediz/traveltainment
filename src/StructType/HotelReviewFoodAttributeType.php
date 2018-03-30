@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewFoodAttributeType extends AbstractStructBase
     }
     /**
      * Set FoodAttribute value
-     * @uses \EnumType\HotelReviewFoodAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewFoodAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $foodAttribute
-     * @return \StructType\HotelReviewFoodAttributeType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType
      */
     public function setFoodAttribute(array $foodAttribute = array())
     {
         $invalidValues = array();
         foreach ($foodAttribute as $hotelReviewFoodAttributeTypeFoodAttributeItem) {
-            if (!\EnumType\HotelReviewFoodAttribute::valueIsValid($hotelReviewFoodAttributeTypeFoodAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::valueIsValid($hotelReviewFoodAttributeTypeFoodAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewFoodAttributeTypeFoodAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewFoodAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::getValidValues())), __LINE__);
         }
         $this->FoodAttribute = $foodAttribute;
         return $this;
     }
     /**
      * Add item to FoodAttribute value
-     * @uses \EnumType\HotelReviewFoodAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewFoodAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewFoodAttributeType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType
      */
     public function addToFoodAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewFoodAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewFoodAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewFoodAttribute::getValidValues())), __LINE__);
         }
         $this->FoodAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewFoodAttributeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewFoodAttributeType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class ProceduresType extends AbstractStructBase
     /**
      * Set ArrivalProcedure value
      * @param string $arrivalProcedure
-     * @return \StructType\ProceduresType
+     * @return \traveltainment\SOAP17\StructType\ProceduresType
      */
     public function setArrivalProcedure($arrivalProcedure = null)
     {
@@ -80,7 +80,7 @@ class ProceduresType extends AbstractStructBase
     /**
      * Set DepartureProcedure value
      * @param string $departureProcedure
-     * @return \StructType\ProceduresType
+     * @return \traveltainment\SOAP17\StructType\ProceduresType
      */
     public function setDepartureProcedure($departureProcedure = null)
     {
@@ -102,7 +102,7 @@ class ProceduresType extends AbstractStructBase
     /**
      * Set WithValet value
      * @param bool $withValet
-     * @return \StructType\ProceduresType
+     * @return \traveltainment\SOAP17\StructType\ProceduresType
      */
     public function setWithValet($withValet = null)
     {
@@ -119,7 +119,7 @@ class ProceduresType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProceduresType
+     * @return \traveltainment\SOAP17\StructType\ProceduresType
      */
     public static function __set_state(array $array)
     {

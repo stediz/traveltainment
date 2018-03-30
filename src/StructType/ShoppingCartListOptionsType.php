@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class ShoppingCartListOptionsType extends OptionsType
      * The ShoppingCartListSortingType
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ShoppingCartListSortingType
+     * @var \traveltainment\SOAP17\StructType\ShoppingCartListSortingType
      */
     public $ShoppingCartListSortingType;
     /**
@@ -28,10 +28,10 @@ class ShoppingCartListOptionsType extends OptionsType
      * Constructor method for ShoppingCartListOptionsType
      * @uses ShoppingCartListOptionsType::setShoppingCartListSortingType()
      * @uses ShoppingCartListOptionsType::setAdditionalCurrencies()
-     * @param \StructType\ShoppingCartListSortingType $shoppingCartListSortingType
+     * @param \traveltainment\SOAP17\StructType\ShoppingCartListSortingType $shoppingCartListSortingType
      * @param string $additionalCurrencies
      */
-    public function __construct(\StructType\ShoppingCartListSortingType $shoppingCartListSortingType = null, $additionalCurrencies = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ShoppingCartListSortingType $shoppingCartListSortingType = null, $additionalCurrencies = null)
     {
         $this
             ->setShoppingCartListSortingType($shoppingCartListSortingType)
@@ -39,7 +39,7 @@ class ShoppingCartListOptionsType extends OptionsType
     }
     /**
      * Get ShoppingCartListSortingType value
-     * @return \StructType\ShoppingCartListSortingType|null
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListSortingType|null
      */
     public function getShoppingCartListSortingType()
     {
@@ -47,10 +47,10 @@ class ShoppingCartListOptionsType extends OptionsType
     }
     /**
      * Set ShoppingCartListSortingType value
-     * @param \StructType\ShoppingCartListSortingType $shoppingCartListSortingType
-     * @return \StructType\ShoppingCartListOptionsType
+     * @param \traveltainment\SOAP17\StructType\ShoppingCartListSortingType $shoppingCartListSortingType
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType
      */
-    public function setShoppingCartListSortingType(\StructType\ShoppingCartListSortingType $shoppingCartListSortingType = null)
+    public function setShoppingCartListSortingType(\traveltainment\SOAP17\StructType\ShoppingCartListSortingType $shoppingCartListSortingType = null)
     {
         $this->ShoppingCartListSortingType = $shoppingCartListSortingType;
         return $this;
@@ -66,7 +66,7 @@ class ShoppingCartListOptionsType extends OptionsType
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\ShoppingCartListOptionsType
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -83,7 +83,7 @@ class ShoppingCartListOptionsType extends OptionsType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ShoppingCartListOptionsType
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartListOptionsType
      */
     public static function __set_state(array $array)
     {

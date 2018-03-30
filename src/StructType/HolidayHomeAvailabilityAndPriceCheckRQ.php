@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailabilityAndPriceCheckOptionsType
+     * @var \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType
      */
     public $Options;
     /**
@@ -48,9 +48,9 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
      * @param string $offerID
      * @param string $bookingID
      * @param int $travellerCount
-     * @param \StructType\AvailabilityAndPriceCheckOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options
      */
-    public function __construct($offerID = null, $bookingID = null, $travellerCount = null, \StructType\AvailabilityAndPriceCheckOptionsType $options = null)
+    public function __construct($offerID = null, $bookingID = null, $travellerCount = null, \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options = null)
     {
         $this
             ->setOfferID($offerID)
@@ -69,7 +69,7 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRQ
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRQ
      */
     public function setOfferID($offerID = null)
     {
@@ -91,7 +91,7 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRQ
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRQ
      */
     public function setBookingID($bookingID = null)
     {
@@ -113,7 +113,7 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     /**
      * Set TravellerCount value
      * @param int $travellerCount
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRQ
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRQ
      */
     public function setTravellerCount($travellerCount = null)
     {
@@ -134,7 +134,7 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     }
     /**
      * Get Options value
-     * @return \StructType\AvailabilityAndPriceCheckOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType|null
      */
     public function getOptions()
     {
@@ -142,10 +142,10 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
     }
     /**
      * Set Options value
-     * @param \StructType\AvailabilityAndPriceCheckOptionsType $options
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRQ
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRQ
      */
-    public function setOptions(\StructType\AvailabilityAndPriceCheckOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -156,7 +156,7 @@ class HolidayHomeAvailabilityAndPriceCheckRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRQ
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRQ
      */
     public static function __set_state(array $array)
     {

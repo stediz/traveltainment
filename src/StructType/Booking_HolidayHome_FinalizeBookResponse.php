@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_HolidayHome_FinalizeBookResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\BookRS
+     * @var \traveltainment\SOAP17\StructType\BookRS
      */
     public $return;
     /**
      * Constructor method for Booking_HolidayHome_FinalizeBookResponse
      * @uses Booking_HolidayHome_FinalizeBookResponse::setReturn()
-     * @param \StructType\BookRS $return
+     * @param \traveltainment\SOAP17\StructType\BookRS $return
      */
-    public function __construct(\StructType\BookRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\BookRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\BookRS|null
+     * @return \traveltainment\SOAP17\StructType\BookRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Booking_HolidayHome_FinalizeBookResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\BookRS $return
-     * @return \StructType\Booking_HolidayHome_FinalizeBookResponse
+     * @param \traveltainment\SOAP17\StructType\BookRS $return
+     * @return \traveltainment\SOAP17\StructType\Booking_HolidayHome_FinalizeBookResponse
      */
-    public function setReturn(\StructType\BookRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\BookRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Booking_HolidayHome_FinalizeBookResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_HolidayHome_FinalizeBookResponse
+     * @return \traveltainment\SOAP17\StructType\Booking_HolidayHome_FinalizeBookResponse
      */
     public static function __set_state(array $array)
     {

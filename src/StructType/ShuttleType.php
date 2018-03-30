@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -68,7 +68,7 @@ class ShuttleType extends AbstractStructBase
     /**
      * Set ShuttleFrom value
      * @param string $shuttleFrom
-     * @return \StructType\ShuttleType
+     * @return \traveltainment\SOAP17\StructType\ShuttleType
      */
     public function setShuttleFrom($shuttleFrom = null)
     {
@@ -90,7 +90,7 @@ class ShuttleType extends AbstractStructBase
     /**
      * Set ShuttleTo value
      * @param string $shuttleTo
-     * @return \StructType\ShuttleType
+     * @return \traveltainment\SOAP17\StructType\ShuttleType
      */
     public function setShuttleTo($shuttleTo = null)
     {
@@ -112,7 +112,7 @@ class ShuttleType extends AbstractStructBase
     /**
      * Set ShuttleOpeningHours value
      * @param string $shuttleOpeningHours
-     * @return \StructType\ShuttleType
+     * @return \traveltainment\SOAP17\StructType\ShuttleType
      */
     public function setShuttleOpeningHours($shuttleOpeningHours = null)
     {
@@ -134,7 +134,7 @@ class ShuttleType extends AbstractStructBase
     /**
      * Set ShuttleFrequency value
      * @param string $shuttleFrequency
-     * @return \StructType\ShuttleType
+     * @return \traveltainment\SOAP17\StructType\ShuttleType
      */
     public function setShuttleFrequency($shuttleFrequency = null)
     {
@@ -151,7 +151,7 @@ class ShuttleType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ShuttleType
+     * @return \traveltainment\SOAP17\StructType\ShuttleType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class VehiclesType extends AbstractStructBase
      * The Vehicle
      * Meta informations extracted from the WSDL
      * - maxOccurs: 99
-     * @var \StructType\VehicleType[]
+     * @var \traveltainment\SOAP17\StructType\VehicleType[]
      */
     public $Vehicle;
     /**
      * Constructor method for VehiclesType
      * @uses VehiclesType::setVehicle()
-     * @param \StructType\VehicleType[] $vehicle
+     * @param \traveltainment\SOAP17\StructType\VehicleType[] $vehicle
      */
     public function __construct(array $vehicle = array())
     {
@@ -29,7 +29,7 @@ class VehiclesType extends AbstractStructBase
     }
     /**
      * Get Vehicle value
-     * @return \StructType\VehicleType[]|null
+     * @return \traveltainment\SOAP17\StructType\VehicleType[]|null
      */
     public function getVehicle()
     {
@@ -38,15 +38,15 @@ class VehiclesType extends AbstractStructBase
     /**
      * Set Vehicle value
      * @throws \InvalidArgumentException
-     * @param \StructType\VehicleType[] $vehicle
-     * @return \StructType\VehiclesType
+     * @param \traveltainment\SOAP17\StructType\VehicleType[] $vehicle
+     * @return \traveltainment\SOAP17\StructType\VehiclesType
      */
     public function setVehicle(array $vehicle = array())
     {
         foreach ($vehicle as $vehiclesTypeVehicleItem) {
             // validation for constraint: itemType
-            if (!$vehiclesTypeVehicleItem instanceof \StructType\VehicleType) {
-                throw new \InvalidArgumentException(sprintf('The Vehicle property can only contain items of \StructType\VehicleType, "%s" given', is_object($vehiclesTypeVehicleItem) ? get_class($vehiclesTypeVehicleItem) : gettype($vehiclesTypeVehicleItem)), __LINE__);
+            if (!$vehiclesTypeVehicleItem instanceof \traveltainment\SOAP17\StructType\VehicleType) {
+                throw new \InvalidArgumentException(sprintf('The Vehicle property can only contain items of \traveltainment\SOAP17\StructType\VehicleType, "%s" given', is_object($vehiclesTypeVehicleItem) ? get_class($vehiclesTypeVehicleItem) : gettype($vehiclesTypeVehicleItem)), __LINE__);
             }
         }
         $this->Vehicle = $vehicle;
@@ -55,14 +55,14 @@ class VehiclesType extends AbstractStructBase
     /**
      * Add item to Vehicle value
      * @throws \InvalidArgumentException
-     * @param \StructType\VehicleType $item
-     * @return \StructType\VehiclesType
+     * @param \traveltainment\SOAP17\StructType\VehicleType $item
+     * @return \traveltainment\SOAP17\StructType\VehiclesType
      */
-    public function addToVehicle(\StructType\VehicleType $item)
+    public function addToVehicle(\traveltainment\SOAP17\StructType\VehicleType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\VehicleType) {
-            throw new \InvalidArgumentException(sprintf('The Vehicle property can only contain items of \StructType\VehicleType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\VehicleType) {
+            throw new \InvalidArgumentException(sprintf('The Vehicle property can only contain items of \traveltainment\SOAP17\StructType\VehicleType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Vehicle[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class VehiclesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\VehiclesType
+     * @return \traveltainment\SOAP17\StructType\VehiclesType
      */
     public static function __set_state(array $array)
     {

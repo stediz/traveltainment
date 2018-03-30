@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,14 +21,14 @@ class CityListFilterType extends AbstractStructBase
      * The CityIDList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CityIDList
+     * @var \traveltainment\SOAP17\StructType\CityIDList
      */
     public $CityIDList;
     /**
      * The FlightDuration
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\FlightDurationFilterType
+     * @var \traveltainment\SOAP17\StructType\FlightDurationFilterType
      */
     public $FlightDuration;
     /**
@@ -37,10 +37,10 @@ class CityListFilterType extends AbstractStructBase
      * @uses CityListFilterType::setCityIDList()
      * @uses CityListFilterType::setFlightDuration()
      * @param string $offerScope
-     * @param \StructType\CityIDList $cityIDList
-     * @param \StructType\FlightDurationFilterType $flightDuration
+     * @param \traveltainment\SOAP17\StructType\CityIDList $cityIDList
+     * @param \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration
      */
-    public function __construct($offerScope = null, \StructType\CityIDList $cityIDList = null, \StructType\FlightDurationFilterType $flightDuration = null)
+    public function __construct($offerScope = null, \traveltainment\SOAP17\StructType\CityIDList $cityIDList = null, \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration = null)
     {
         $this
             ->setOfferScope($offerScope)
@@ -57,24 +57,24 @@ class CityListFilterType extends AbstractStructBase
     }
     /**
      * Set OfferScope value
-     * @uses \EnumType\OfferScopeEnum::valueIsValid()
-     * @uses \EnumType\OfferScopeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $offerScope
-     * @return \StructType\CityListFilterType
+     * @return \traveltainment\SOAP17\StructType\CityListFilterType
      */
     public function setOfferScope($offerScope = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \EnumType\OfferScopeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferScopeEnum::valueIsValid($offerScope)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $offerScope, implode(', ', \traveltainment\SOAP17\EnumType\OfferScopeEnum::getValidValues())), __LINE__);
         }
         $this->OfferScope = $offerScope;
         return $this;
     }
     /**
      * Get CityIDList value
-     * @return \StructType\CityIDList|null
+     * @return \traveltainment\SOAP17\StructType\CityIDList|null
      */
     public function getCityIDList()
     {
@@ -82,17 +82,17 @@ class CityListFilterType extends AbstractStructBase
     }
     /**
      * Set CityIDList value
-     * @param \StructType\CityIDList $cityIDList
-     * @return \StructType\CityListFilterType
+     * @param \traveltainment\SOAP17\StructType\CityIDList $cityIDList
+     * @return \traveltainment\SOAP17\StructType\CityListFilterType
      */
-    public function setCityIDList(\StructType\CityIDList $cityIDList = null)
+    public function setCityIDList(\traveltainment\SOAP17\StructType\CityIDList $cityIDList = null)
     {
         $this->CityIDList = $cityIDList;
         return $this;
     }
     /**
      * Get FlightDuration value
-     * @return \StructType\FlightDurationFilterType|null
+     * @return \traveltainment\SOAP17\StructType\FlightDurationFilterType|null
      */
     public function getFlightDuration()
     {
@@ -100,10 +100,10 @@ class CityListFilterType extends AbstractStructBase
     }
     /**
      * Set FlightDuration value
-     * @param \StructType\FlightDurationFilterType $flightDuration
-     * @return \StructType\CityListFilterType
+     * @param \traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration
+     * @return \traveltainment\SOAP17\StructType\CityListFilterType
      */
-    public function setFlightDuration(\StructType\FlightDurationFilterType $flightDuration = null)
+    public function setFlightDuration(\traveltainment\SOAP17\StructType\FlightDurationFilterType $flightDuration = null)
     {
         $this->FlightDuration = $flightDuration;
         return $this;
@@ -114,7 +114,7 @@ class CityListFilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CityListFilterType
+     * @return \traveltainment\SOAP17\StructType\CityListFilterType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Coordinates extends AbstractStructBase
     /**
      * Set Longitude value
      * @param float $longitude
-     * @return \StructType\Coordinates
+     * @return \traveltainment\SOAP17\StructType\Coordinates
      */
     public function setLongitude($longitude = null)
     {
@@ -62,7 +62,7 @@ class Coordinates extends AbstractStructBase
     /**
      * Set Latitude value
      * @param float $latitude
-     * @return \StructType\Coordinates
+     * @return \traveltainment\SOAP17\StructType\Coordinates
      */
     public function setLatitude($latitude = null)
     {
@@ -75,7 +75,7 @@ class Coordinates extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Coordinates
+     * @return \traveltainment\SOAP17\StructType\Coordinates
      */
     public static function __set_state(array $array)
     {

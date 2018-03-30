@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,14 +14,14 @@ class TourOperatorRequest extends AbstractStructBase
      * The Limit
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TourOperator
+     * @var \traveltainment\SOAP17\StructType\TourOperator
      */
     public $Limit;
     /**
      * The Skip
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TourOperator
+     * @var \traveltainment\SOAP17\StructType\TourOperator
      */
     public $Skip;
     /**
@@ -60,14 +60,14 @@ class TourOperatorRequest extends AbstractStructBase
      * @uses TourOperatorRequest::setRoomCode()
      * @uses TourOperatorRequest::setTravelType()
      * @uses TourOperatorRequest::setProgramType()
-     * @param \StructType\TourOperator $limit
-     * @param \StructType\TourOperator $skip
+     * @param \traveltainment\SOAP17\StructType\TourOperator $limit
+     * @param \traveltainment\SOAP17\StructType\TourOperator $skip
      * @param string $accomCode
      * @param string $roomCode
      * @param string $travelType
      * @param string $programType
      */
-    public function __construct(\StructType\TourOperator $limit = null, \StructType\TourOperator $skip = null, $accomCode = null, $roomCode = null, $travelType = null, $programType = null)
+    public function __construct(\traveltainment\SOAP17\StructType\TourOperator $limit = null, \traveltainment\SOAP17\StructType\TourOperator $skip = null, $accomCode = null, $roomCode = null, $travelType = null, $programType = null)
     {
         $this
             ->setLimit($limit)
@@ -79,7 +79,7 @@ class TourOperatorRequest extends AbstractStructBase
     }
     /**
      * Get Limit value
-     * @return \StructType\TourOperator|null
+     * @return \traveltainment\SOAP17\StructType\TourOperator|null
      */
     public function getLimit()
     {
@@ -87,17 +87,17 @@ class TourOperatorRequest extends AbstractStructBase
     }
     /**
      * Set Limit value
-     * @param \StructType\TourOperator $limit
-     * @return \StructType\TourOperatorRequest
+     * @param \traveltainment\SOAP17\StructType\TourOperator $limit
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
-    public function setLimit(\StructType\TourOperator $limit = null)
+    public function setLimit(\traveltainment\SOAP17\StructType\TourOperator $limit = null)
     {
         $this->Limit = $limit;
         return $this;
     }
     /**
      * Get Skip value
-     * @return \StructType\TourOperator|null
+     * @return \traveltainment\SOAP17\StructType\TourOperator|null
      */
     public function getSkip()
     {
@@ -105,10 +105,10 @@ class TourOperatorRequest extends AbstractStructBase
     }
     /**
      * Set Skip value
-     * @param \StructType\TourOperator $skip
-     * @return \StructType\TourOperatorRequest
+     * @param \traveltainment\SOAP17\StructType\TourOperator $skip
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
-    public function setSkip(\StructType\TourOperator $skip = null)
+    public function setSkip(\traveltainment\SOAP17\StructType\TourOperator $skip = null)
     {
         $this->Skip = $skip;
         return $this;
@@ -124,7 +124,7 @@ class TourOperatorRequest extends AbstractStructBase
     /**
      * Set AccomCode value
      * @param string $accomCode
-     * @return \StructType\TourOperatorRequest
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
     public function setAccomCode($accomCode = null)
     {
@@ -146,7 +146,7 @@ class TourOperatorRequest extends AbstractStructBase
     /**
      * Set RoomCode value
      * @param string $roomCode
-     * @return \StructType\TourOperatorRequest
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
     public function setRoomCode($roomCode = null)
     {
@@ -168,7 +168,7 @@ class TourOperatorRequest extends AbstractStructBase
     /**
      * Set TravelType value
      * @param string $travelType
-     * @return \StructType\TourOperatorRequest
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
     public function setTravelType($travelType = null)
     {
@@ -190,7 +190,7 @@ class TourOperatorRequest extends AbstractStructBase
     /**
      * Set ProgramType value
      * @param string $programType
-     * @return \StructType\TourOperatorRequest
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
     public function setProgramType($programType = null)
     {
@@ -207,7 +207,7 @@ class TourOperatorRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TourOperatorRequest
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
     public static function __set_state(array $array)
     {

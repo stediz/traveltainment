@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class AddonInformation extends AddonInformationType
     /**
      * Set Id value
      * @param string $id
-     * @return \StructType\AddonInformation
+     * @return \traveltainment\SOAP17\StructType\AddonInformation
      */
     public function setId($id = null)
     {
@@ -55,7 +55,7 @@ class AddonInformation extends AddonInformationType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonInformation
+     * @return \traveltainment\SOAP17\StructType\AddonInformation
      */
     public static function __set_state(array $array)
     {

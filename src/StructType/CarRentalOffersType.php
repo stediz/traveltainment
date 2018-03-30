@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class CarRentalOffersType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CarRentalOfferType[]
+     * @var \traveltainment\SOAP17\StructType\CarRentalOfferType[]
      */
     public $Offer;
     /**
      * Constructor method for CarRentalOffersType
      * @uses CarRentalOffersType::setOffer()
-     * @param \StructType\CarRentalOfferType[] $offer
+     * @param \traveltainment\SOAP17\StructType\CarRentalOfferType[] $offer
      */
     public function __construct(array $offer = array())
     {
@@ -30,7 +30,7 @@ class CarRentalOffersType extends AbstractStructBase
     }
     /**
      * Get Offer value
-     * @return \StructType\CarRentalOfferType[]|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalOfferType[]|null
      */
     public function getOffer()
     {
@@ -39,15 +39,15 @@ class CarRentalOffersType extends AbstractStructBase
     /**
      * Set Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\CarRentalOfferType[] $offer
-     * @return \StructType\CarRentalOffersType
+     * @param \traveltainment\SOAP17\StructType\CarRentalOfferType[] $offer
+     * @return \traveltainment\SOAP17\StructType\CarRentalOffersType
      */
     public function setOffer(array $offer = array())
     {
         foreach ($offer as $carRentalOffersTypeOfferItem) {
             // validation for constraint: itemType
-            if (!$carRentalOffersTypeOfferItem instanceof \StructType\CarRentalOfferType) {
-                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\CarRentalOfferType, "%s" given', is_object($carRentalOffersTypeOfferItem) ? get_class($carRentalOffersTypeOfferItem) : gettype($carRentalOffersTypeOfferItem)), __LINE__);
+            if (!$carRentalOffersTypeOfferItem instanceof \traveltainment\SOAP17\StructType\CarRentalOfferType) {
+                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\CarRentalOfferType, "%s" given', is_object($carRentalOffersTypeOfferItem) ? get_class($carRentalOffersTypeOfferItem) : gettype($carRentalOffersTypeOfferItem)), __LINE__);
             }
         }
         $this->Offer = $offer;
@@ -56,14 +56,14 @@ class CarRentalOffersType extends AbstractStructBase
     /**
      * Add item to Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\CarRentalOfferType $item
-     * @return \StructType\CarRentalOffersType
+     * @param \traveltainment\SOAP17\StructType\CarRentalOfferType $item
+     * @return \traveltainment\SOAP17\StructType\CarRentalOffersType
      */
-    public function addToOffer(\StructType\CarRentalOfferType $item)
+    public function addToOffer(\traveltainment\SOAP17\StructType\CarRentalOfferType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CarRentalOfferType) {
-            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\CarRentalOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\CarRentalOfferType) {
+            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\CarRentalOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Offer[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class CarRentalOffersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalOffersType
+     * @return \traveltainment\SOAP17\StructType\CarRentalOffersType
      */
     public static function __set_state(array $array)
     {

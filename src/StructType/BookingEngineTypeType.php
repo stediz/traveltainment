@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -8,7 +8,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for BookingEngineTypeType StructType
  * @subpackage Structs
  */
-class BookingEngineTypeType extends \EnumType\OfferDefinitionType
+class BookingEngineTypeType extends \traveltainment\SOAP17\EnumType\OfferDefinitionType
 {
     /**
      * The _
@@ -43,17 +43,17 @@ class BookingEngineTypeType extends \EnumType\OfferDefinitionType
     }
     /**
      * Set _ value
-     * @uses \EnumType\OfferDefinitionType::valueIsValid()
-     * @uses \EnumType\OfferDefinitionType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferDefinitionType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferDefinitionType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\BookingEngineTypeType
+     * @return \traveltainment\SOAP17\StructType\BookingEngineTypeType
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferDefinitionType::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \EnumType\OfferDefinitionType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferDefinitionType::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \traveltainment\SOAP17\EnumType\OfferDefinitionType::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -69,7 +69,7 @@ class BookingEngineTypeType extends \EnumType\OfferDefinitionType
     /**
      * Set ExclusiveData value
      * @param bool $exclusiveData
-     * @return \StructType\BookingEngineTypeType
+     * @return \traveltainment\SOAP17\StructType\BookingEngineTypeType
      */
     public function setExclusiveData($exclusiveData = null)
     {
@@ -86,7 +86,7 @@ class BookingEngineTypeType extends \EnumType\OfferDefinitionType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingEngineTypeType
+     * @return \traveltainment\SOAP17\StructType\BookingEngineTypeType
      */
     public static function __set_state(array $array)
     {

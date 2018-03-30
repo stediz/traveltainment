@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,19 +12,19 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
 {
     /**
      * The Search
-     * @var \StructType\OfferGridSearchType
+     * @var \traveltainment\SOAP17\StructType\OfferGridSearchType
      */
     public $Search;
     /**
      * The Selection
-     * @var \StructType\OfferListSelectionType
+     * @var \traveltainment\SOAP17\StructType\OfferListSelectionType
      */
     public $Selection;
     /**
      * The Filter
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferListFilterType
+     * @var \traveltainment\SOAP17\StructType\OfferListFilterType
      */
     public $Filter;
     /**
@@ -38,12 +38,12 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
      * @uses SearchEngineOfferGridRQ::setSelection()
      * @uses SearchEngineOfferGridRQ::setFilter()
      * @uses SearchEngineOfferGridRQ::setGridGroupList()
-     * @param \StructType\OfferGridSearchType $search
-     * @param \StructType\OfferListSelectionType $selection
-     * @param \StructType\OfferListFilterType $filter
+     * @param \traveltainment\SOAP17\StructType\OfferGridSearchType $search
+     * @param \traveltainment\SOAP17\StructType\OfferListSelectionType $selection
+     * @param \traveltainment\SOAP17\StructType\OfferListFilterType $filter
      * @param OfferGridGroupTypeEnum $gridGroupList
      */
-    public function __construct(\StructType\OfferGridSearchType $search = null, \StructType\OfferListSelectionType $selection = null, \StructType\OfferListFilterType $filter = null, OfferGridGroupTypeEnum $gridGroupList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\OfferGridSearchType $search = null, \traveltainment\SOAP17\StructType\OfferListSelectionType $selection = null, \traveltainment\SOAP17\StructType\OfferListFilterType $filter = null, OfferGridGroupTypeEnum $gridGroupList = null)
     {
         $this
             ->setSearch($search)
@@ -53,7 +53,7 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
     }
     /**
      * Get Search value
-     * @return \StructType\OfferGridSearchType|null
+     * @return \traveltainment\SOAP17\StructType\OfferGridSearchType|null
      */
     public function getSearch()
     {
@@ -61,17 +61,17 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
     }
     /**
      * Set Search value
-     * @param \StructType\OfferGridSearchType $search
-     * @return \StructType\SearchEngineOfferGridRQ
+     * @param \traveltainment\SOAP17\StructType\OfferGridSearchType $search
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ
      */
-    public function setSearch(\StructType\OfferGridSearchType $search = null)
+    public function setSearch(\traveltainment\SOAP17\StructType\OfferGridSearchType $search = null)
     {
         $this->Search = $search;
         return $this;
     }
     /**
      * Get Selection value
-     * @return \StructType\OfferListSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\OfferListSelectionType|null
      */
     public function getSelection()
     {
@@ -79,17 +79,17 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
     }
     /**
      * Set Selection value
-     * @param \StructType\OfferListSelectionType $selection
-     * @return \StructType\SearchEngineOfferGridRQ
+     * @param \traveltainment\SOAP17\StructType\OfferListSelectionType $selection
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ
      */
-    public function setSelection(\StructType\OfferListSelectionType $selection = null)
+    public function setSelection(\traveltainment\SOAP17\StructType\OfferListSelectionType $selection = null)
     {
         $this->Selection = $selection;
         return $this;
     }
     /**
      * Get Filter value
-     * @return \StructType\OfferListFilterType|null
+     * @return \traveltainment\SOAP17\StructType\OfferListFilterType|null
      */
     public function getFilter()
     {
@@ -97,10 +97,10 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
     }
     /**
      * Set Filter value
-     * @param \StructType\OfferListFilterType $filter
-     * @return \StructType\SearchEngineOfferGridRQ
+     * @param \traveltainment\SOAP17\StructType\OfferListFilterType $filter
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ
      */
-    public function setFilter(\StructType\OfferListFilterType $filter = null)
+    public function setFilter(\traveltainment\SOAP17\StructType\OfferListFilterType $filter = null)
     {
         $this->Filter = $filter;
         return $this;
@@ -116,7 +116,7 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
     /**
      * Set GridGroupList value
      * @param OfferGridGroupTypeEnum $gridGroupList
-     * @return \StructType\SearchEngineOfferGridRQ
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ
      */
     public function setGridGroupList(OfferGridGroupTypeEnum $gridGroupList = null)
     {
@@ -129,7 +129,7 @@ class SearchEngineOfferGridRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineOfferGridRQ
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ
      */
     public static function __set_state(array $array)
     {

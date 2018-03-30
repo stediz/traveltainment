@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class CarRentalLocationType extends AbstractStructBase
      * The Address
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddressShortType
+     * @var \traveltainment\SOAP17\StructType\AddressShortType
      */
     public $Address;
     /**
@@ -68,10 +68,10 @@ class CarRentalLocationType extends AbstractStructBase
      * @param string $locationCode
      * @param string $locationName
      * @param string $operatingProviderName
-     * @param \StructType\AddressShortType $address
+     * @param \traveltainment\SOAP17\StructType\AddressShortType $address
      * @param string $phoneNumber
      */
-    public function __construct($isAtAirport = null, $locationCode = null, $locationName = null, $operatingProviderName = null, \StructType\AddressShortType $address = null, $phoneNumber = null)
+    public function __construct($isAtAirport = null, $locationCode = null, $locationName = null, $operatingProviderName = null, \traveltainment\SOAP17\StructType\AddressShortType $address = null, $phoneNumber = null)
     {
         $this
             ->setIsAtAirport($isAtAirport)
@@ -92,7 +92,7 @@ class CarRentalLocationType extends AbstractStructBase
     /**
      * Set IsAtAirport value
      * @param bool $isAtAirport
-     * @return \StructType\CarRentalLocationType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType
      */
     public function setIsAtAirport($isAtAirport = null)
     {
@@ -114,7 +114,7 @@ class CarRentalLocationType extends AbstractStructBase
     /**
      * Set LocationCode value
      * @param string $locationCode
-     * @return \StructType\CarRentalLocationType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType
      */
     public function setLocationCode($locationCode = null)
     {
@@ -144,7 +144,7 @@ class CarRentalLocationType extends AbstractStructBase
     /**
      * Set LocationName value
      * @param string $locationName
-     * @return \StructType\CarRentalLocationType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType
      */
     public function setLocationName($locationName = null)
     {
@@ -174,7 +174,7 @@ class CarRentalLocationType extends AbstractStructBase
     /**
      * Set OperatingProviderName value
      * @param string $operatingProviderName
-     * @return \StructType\CarRentalLocationType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType
      */
     public function setOperatingProviderName($operatingProviderName = null)
     {
@@ -187,7 +187,7 @@ class CarRentalLocationType extends AbstractStructBase
     }
     /**
      * Get Address value
-     * @return \StructType\AddressShortType|null
+     * @return \traveltainment\SOAP17\StructType\AddressShortType|null
      */
     public function getAddress()
     {
@@ -195,10 +195,10 @@ class CarRentalLocationType extends AbstractStructBase
     }
     /**
      * Set Address value
-     * @param \StructType\AddressShortType $address
-     * @return \StructType\CarRentalLocationType
+     * @param \traveltainment\SOAP17\StructType\AddressShortType $address
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType
      */
-    public function setAddress(\StructType\AddressShortType $address = null)
+    public function setAddress(\traveltainment\SOAP17\StructType\AddressShortType $address = null)
     {
         $this->Address = $address;
         return $this;
@@ -214,7 +214,7 @@ class CarRentalLocationType extends AbstractStructBase
     /**
      * Set PhoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\CarRentalLocationType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -239,7 +239,7 @@ class CarRentalLocationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalLocationType
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class TextSectionType extends AbstractStructBase
      * Set Text value
      * @throws \InvalidArgumentException
      * @param string[] $text
-     * @return \StructType\TextSectionType
+     * @return \traveltainment\SOAP17\StructType\TextSectionType
      */
     public function setText(array $text = array())
     {
@@ -57,7 +57,7 @@ class TextSectionType extends AbstractStructBase
      * Add item to Text value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\TextSectionType
+     * @return \traveltainment\SOAP17\StructType\TextSectionType
      */
     public function addToText($item)
     {
@@ -74,7 +74,7 @@ class TextSectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TextSectionType
+     * @return \traveltainment\SOAP17\StructType\TextSectionType
      */
     public static function __set_state(array $array)
     {

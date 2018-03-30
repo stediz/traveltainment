@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,24 +12,24 @@ class GetCarRentalOfferConditionsRSType extends ResponseType
 {
     /**
      * The Errors
-     * @var \StructType\ErrorsType
+     * @var \traveltainment\SOAP17\StructType\ErrorsType
      */
     public $Errors;
     /**
      * The Conditions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ConditionsType
+     * @var \traveltainment\SOAP17\StructType\ConditionsType
      */
     public $Conditions;
     /**
      * Constructor method for GetCarRentalOfferConditionsRSType
      * @uses GetCarRentalOfferConditionsRSType::setErrors()
      * @uses GetCarRentalOfferConditionsRSType::setConditions()
-     * @param \StructType\ErrorsType $errors
-     * @param \StructType\ConditionsType $conditions
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @param \traveltainment\SOAP17\StructType\ConditionsType $conditions
      */
-    public function __construct(\StructType\ErrorsType $errors = null, \StructType\ConditionsType $conditions = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ErrorsType $errors = null, \traveltainment\SOAP17\StructType\ConditionsType $conditions = null)
     {
         $this
             ->setErrors($errors)
@@ -37,7 +37,7 @@ class GetCarRentalOfferConditionsRSType extends ResponseType
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -45,17 +45,17 @@ class GetCarRentalOfferConditionsRSType extends ResponseType
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\GetCarRentalOfferConditionsRSType
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\traveltainment\SOAP17\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
     }
     /**
      * Get Conditions value
-     * @return \StructType\ConditionsType|null
+     * @return \traveltainment\SOAP17\StructType\ConditionsType|null
      */
     public function getConditions()
     {
@@ -63,10 +63,10 @@ class GetCarRentalOfferConditionsRSType extends ResponseType
     }
     /**
      * Set Conditions value
-     * @param \StructType\ConditionsType $conditions
-     * @return \StructType\GetCarRentalOfferConditionsRSType
+     * @param \traveltainment\SOAP17\StructType\ConditionsType $conditions
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType
      */
-    public function setConditions(\StructType\ConditionsType $conditions = null)
+    public function setConditions(\traveltainment\SOAP17\StructType\ConditionsType $conditions = null)
     {
         $this->Conditions = $conditions;
         return $this;
@@ -77,7 +77,7 @@ class GetCarRentalOfferConditionsRSType extends ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetCarRentalOfferConditionsRSType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType
      */
     public static function __set_state(array $array)
     {

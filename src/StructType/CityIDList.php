@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -51,7 +51,7 @@ class CityIDList extends AbstractStructBase
     /**
      * Set TopRegionIDs value
      * @param int $topRegionIDs
-     * @return \StructType\CityIDList
+     * @return \traveltainment\SOAP17\StructType\CityIDList
      */
     public function setTopRegionIDs($topRegionIDs = null)
     {
@@ -82,7 +82,7 @@ class CityIDList extends AbstractStructBase
      * Set CityID value
      * @throws \InvalidArgumentException
      * @param int[] $cityID
-     * @return \StructType\CityIDList
+     * @return \traveltainment\SOAP17\StructType\CityIDList
      */
     public function setCityID(array $cityID = array())
     {
@@ -99,7 +99,7 @@ class CityIDList extends AbstractStructBase
      * Add item to CityID value
      * @throws \InvalidArgumentException
      * @param int $item
-     * @return \StructType\CityIDList
+     * @return \traveltainment\SOAP17\StructType\CityIDList
      */
     public function addToCityID($item)
     {
@@ -116,7 +116,7 @@ class CityIDList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CityIDList
+     * @return \traveltainment\SOAP17\StructType\CityIDList
      */
     public static function __set_state(array $array)
     {

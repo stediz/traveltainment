@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,12 +24,12 @@ class BookCarRentalRequestType extends AbstractStructBase
     public $OfferID;
     /**
      * The PaymentTokens
-     * @var \StructType\PaymentTokensType
+     * @var \traveltainment\SOAP17\StructType\PaymentTokensType
      */
     public $PaymentTokens;
     /**
      * The CarRentalData
-     * @var \StructType\CarRentalDataType
+     * @var \traveltainment\SOAP17\StructType\CarRentalDataType
      */
     public $CarRentalData;
     /**
@@ -40,10 +40,10 @@ class BookCarRentalRequestType extends AbstractStructBase
      * @uses BookCarRentalRequestType::setCarRentalData()
      * @param string $bookRequestID
      * @param string $offerID
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @param \StructType\CarRentalDataType $carRentalData
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @param \traveltainment\SOAP17\StructType\CarRentalDataType $carRentalData
      */
-    public function __construct($bookRequestID = null, $offerID = null, \StructType\PaymentTokensType $paymentTokens = null, \StructType\CarRentalDataType $carRentalData = null)
+    public function __construct($bookRequestID = null, $offerID = null, \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null, \traveltainment\SOAP17\StructType\CarRentalDataType $carRentalData = null)
     {
         $this
             ->setBookRequestID($bookRequestID)
@@ -62,7 +62,7 @@ class BookCarRentalRequestType extends AbstractStructBase
     /**
      * Set BookRequestID value
      * @param string $bookRequestID
-     * @return \StructType\BookCarRentalRequestType
+     * @return \traveltainment\SOAP17\StructType\BookCarRentalRequestType
      */
     public function setBookRequestID($bookRequestID = null)
     {
@@ -84,7 +84,7 @@ class BookCarRentalRequestType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\BookCarRentalRequestType
+     * @return \traveltainment\SOAP17\StructType\BookCarRentalRequestType
      */
     public function setOfferID($offerID = null)
     {
@@ -97,7 +97,7 @@ class BookCarRentalRequestType extends AbstractStructBase
     }
     /**
      * Get PaymentTokens value
-     * @return \StructType\PaymentTokensType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType|null
      */
     public function getPaymentTokens()
     {
@@ -105,17 +105,17 @@ class BookCarRentalRequestType extends AbstractStructBase
     }
     /**
      * Set PaymentTokens value
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @return \StructType\BookCarRentalRequestType
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @return \traveltainment\SOAP17\StructType\BookCarRentalRequestType
      */
-    public function setPaymentTokens(\StructType\PaymentTokensType $paymentTokens = null)
+    public function setPaymentTokens(\traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null)
     {
         $this->PaymentTokens = $paymentTokens;
         return $this;
     }
     /**
      * Get CarRentalData value
-     * @return \StructType\CarRentalDataType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalDataType|null
      */
     public function getCarRentalData()
     {
@@ -123,10 +123,10 @@ class BookCarRentalRequestType extends AbstractStructBase
     }
     /**
      * Set CarRentalData value
-     * @param \StructType\CarRentalDataType $carRentalData
-     * @return \StructType\BookCarRentalRequestType
+     * @param \traveltainment\SOAP17\StructType\CarRentalDataType $carRentalData
+     * @return \traveltainment\SOAP17\StructType\BookCarRentalRequestType
      */
-    public function setCarRentalData(\StructType\CarRentalDataType $carRentalData = null)
+    public function setCarRentalData(\traveltainment\SOAP17\StructType\CarRentalDataType $carRentalData = null)
     {
         $this->CarRentalData = $carRentalData;
         return $this;
@@ -137,7 +137,7 @@ class BookCarRentalRequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookCarRentalRequestType
+     * @return \traveltainment\SOAP17\StructType\BookCarRentalRequestType
      */
     public static function __set_state(array $array)
     {

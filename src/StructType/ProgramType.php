@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -51,17 +51,17 @@ class ProgramType extends AbstractStructBase
     }
     /**
      * Set Code value
-     * @uses \EnumType\FrequentFlierCode::valueIsValid()
-     * @uses \EnumType\FrequentFlierCode::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\FrequentFlierCode::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\FrequentFlierCode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $code
-     * @return \StructType\ProgramType
+     * @return \traveltainment\SOAP17\StructType\ProgramType
      */
     public function setCode($code = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\FrequentFlierCode::valueIsValid($code)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $code, implode(', ', \EnumType\FrequentFlierCode::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\FrequentFlierCode::valueIsValid($code)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $code, implode(', ', \traveltainment\SOAP17\EnumType\FrequentFlierCode::getValidValues())), __LINE__);
         }
         $this->Code = $code;
         return $this;
@@ -76,17 +76,17 @@ class ProgramType extends AbstractStructBase
     }
     /**
      * Set Airline value
-     * @uses \EnumType\FrequentFlierAirline::valueIsValid()
-     * @uses \EnumType\FrequentFlierAirline::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\FrequentFlierAirline::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\FrequentFlierAirline::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $airline
-     * @return \StructType\ProgramType
+     * @return \traveltainment\SOAP17\StructType\ProgramType
      */
     public function setAirline($airline = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\FrequentFlierAirline::valueIsValid($airline)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $airline, implode(', ', \EnumType\FrequentFlierAirline::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\FrequentFlierAirline::valueIsValid($airline)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $airline, implode(', ', \traveltainment\SOAP17\EnumType\FrequentFlierAirline::getValidValues())), __LINE__);
         }
         $this->Airline = $airline;
         return $this;
@@ -101,17 +101,17 @@ class ProgramType extends AbstractStructBase
     }
     /**
      * Set Name value
-     * @uses \EnumType\FrequentFlierProgram::valueIsValid()
-     * @uses \EnumType\FrequentFlierProgram::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\FrequentFlierProgram::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\FrequentFlierProgram::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $name
-     * @return \StructType\ProgramType
+     * @return \traveltainment\SOAP17\StructType\ProgramType
      */
     public function setName($name = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\FrequentFlierProgram::valueIsValid($name)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $name, implode(', ', \EnumType\FrequentFlierProgram::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\FrequentFlierProgram::valueIsValid($name)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $name, implode(', ', \traveltainment\SOAP17\EnumType\FrequentFlierProgram::getValidValues())), __LINE__);
         }
         $this->Name = $name;
         return $this;
@@ -122,7 +122,7 @@ class ProgramType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProgramType
+     * @return \traveltainment\SOAP17\StructType\ProgramType
      */
     public static function __set_state(array $array)
     {

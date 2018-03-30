@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class GetTermsAndConditionsRQ extends XmlInterfaceRQ
     /**
      * Set TourOperator value
      * @param string $tourOperator
-     * @return \StructType\GetTermsAndConditionsRQ
+     * @return \traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ
      */
     public function setTourOperator($tourOperator = null)
     {
@@ -66,7 +66,7 @@ class GetTermsAndConditionsRQ extends XmlInterfaceRQ
     /**
      * Set TravelBeginDate value
      * @param string $travelBeginDate
-     * @return \StructType\GetTermsAndConditionsRQ
+     * @return \traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ
      */
     public function setTravelBeginDate($travelBeginDate = null)
     {
@@ -83,7 +83,7 @@ class GetTermsAndConditionsRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetTermsAndConditionsRQ
+     * @return \traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ
      */
     public static function __set_state(array $array)
     {

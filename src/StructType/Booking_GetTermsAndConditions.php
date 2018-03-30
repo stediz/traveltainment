@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_GetTermsAndConditions extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetTermsAndConditionsRQ
+     * @var \traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ
      */
     public $request;
     /**
      * Constructor method for Booking_GetTermsAndConditions
      * @uses Booking_GetTermsAndConditions::setRequest()
-     * @param \StructType\GetTermsAndConditionsRQ $request
+     * @param \traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ $request
      */
-    public function __construct(\StructType\GetTermsAndConditionsRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetTermsAndConditionsRQ|null
+     * @return \traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Booking_GetTermsAndConditions extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetTermsAndConditionsRQ $request
-     * @return \StructType\Booking_GetTermsAndConditions
+     * @param \traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ $request
+     * @return \traveltainment\SOAP17\StructType\Booking_GetTermsAndConditions
      */
-    public function setRequest(\StructType\GetTermsAndConditionsRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\GetTermsAndConditionsRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Booking_GetTermsAndConditions extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_GetTermsAndConditions
+     * @return \traveltainment\SOAP17\StructType\Booking_GetTermsAndConditions
      */
     public static function __set_state(array $array)
     {

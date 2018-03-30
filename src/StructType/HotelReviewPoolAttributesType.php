@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewPoolAttributesType extends AbstractStructBase
     }
     /**
      * Set PoolAttribute value
-     * @uses \EnumType\HotelReviewPoolAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewPoolAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $poolAttribute
-     * @return \StructType\HotelReviewPoolAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType
      */
     public function setPoolAttribute(array $poolAttribute = array())
     {
         $invalidValues = array();
         foreach ($poolAttribute as $hotelReviewPoolAttributesTypePoolAttributeItem) {
-            if (!\EnumType\HotelReviewPoolAttribute::valueIsValid($hotelReviewPoolAttributesTypePoolAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::valueIsValid($hotelReviewPoolAttributesTypePoolAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewPoolAttributesTypePoolAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewPoolAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::getValidValues())), __LINE__);
         }
         $this->PoolAttribute = $poolAttribute;
         return $this;
     }
     /**
      * Add item to PoolAttribute value
-     * @uses \EnumType\HotelReviewPoolAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewPoolAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewPoolAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType
      */
     public function addToPoolAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewPoolAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewPoolAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewPoolAttribute::getValidValues())), __LINE__);
         }
         $this->PoolAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewPoolAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewPoolAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType
      */
     public static function __set_state(array $array)
     {

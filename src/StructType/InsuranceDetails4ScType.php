@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class InsuranceDetails4ScType extends AbstractStructBase
      * The CoverageDetail
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CoverageDetailType
+     * @var \traveltainment\SOAP17\StructType\CoverageDetailType
      */
     public $CoverageDetail;
     /**
@@ -27,9 +27,9 @@ class InsuranceDetails4ScType extends AbstractStructBase
      * @uses InsuranceDetails4ScType::setProductName()
      * @uses InsuranceDetails4ScType::setCoverageDetail()
      * @param string $productName
-     * @param \StructType\CoverageDetailType $coverageDetail
+     * @param \traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail
      */
-    public function __construct($productName = null, \StructType\CoverageDetailType $coverageDetail = null)
+    public function __construct($productName = null, \traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail = null)
     {
         $this
             ->setProductName($productName)
@@ -46,7 +46,7 @@ class InsuranceDetails4ScType extends AbstractStructBase
     /**
      * Set ProductName value
      * @param string $productName
-     * @return \StructType\InsuranceDetails4ScType
+     * @return \traveltainment\SOAP17\StructType\InsuranceDetails4ScType
      */
     public function setProductName($productName = null)
     {
@@ -59,7 +59,7 @@ class InsuranceDetails4ScType extends AbstractStructBase
     }
     /**
      * Get CoverageDetail value
-     * @return \StructType\CoverageDetailType|null
+     * @return \traveltainment\SOAP17\StructType\CoverageDetailType|null
      */
     public function getCoverageDetail()
     {
@@ -67,10 +67,10 @@ class InsuranceDetails4ScType extends AbstractStructBase
     }
     /**
      * Set CoverageDetail value
-     * @param \StructType\CoverageDetailType $coverageDetail
-     * @return \StructType\InsuranceDetails4ScType
+     * @param \traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail
+     * @return \traveltainment\SOAP17\StructType\InsuranceDetails4ScType
      */
-    public function setCoverageDetail(\StructType\CoverageDetailType $coverageDetail = null)
+    public function setCoverageDetail(\traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail = null)
     {
         $this->CoverageDetail = $coverageDetail;
         return $this;
@@ -81,7 +81,7 @@ class InsuranceDetails4ScType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InsuranceDetails4ScType
+     * @return \traveltainment\SOAP17\StructType\InsuranceDetails4ScType
      */
     public static function __set_state(array $array)
     {

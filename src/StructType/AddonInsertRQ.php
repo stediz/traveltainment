@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,21 +12,21 @@ class AddonInsertRQ extends XmlInterfaceRQ
 {
     /**
      * The AddonInfos
-     * @var \StructType\AddonInsertType
+     * @var \traveltainment\SOAP17\StructType\AddonInsertType
      */
     public $AddonInfos;
     /**
      * The CommentList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CommentListType
+     * @var \traveltainment\SOAP17\StructType\CommentListType
      */
     public $CommentList;
     /**
      * The ParamList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ExtendedKeyValueListType
+     * @var \traveltainment\SOAP17\StructType\ExtendedKeyValueListType
      */
     public $ParamList;
     /**
@@ -34,11 +34,11 @@ class AddonInsertRQ extends XmlInterfaceRQ
      * @uses AddonInsertRQ::setAddonInfos()
      * @uses AddonInsertRQ::setCommentList()
      * @uses AddonInsertRQ::setParamList()
-     * @param \StructType\AddonInsertType $addonInfos
-     * @param \StructType\CommentListType $commentList
-     * @param \StructType\ExtendedKeyValueListType $paramList
+     * @param \traveltainment\SOAP17\StructType\AddonInsertType $addonInfos
+     * @param \traveltainment\SOAP17\StructType\CommentListType $commentList
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
      */
-    public function __construct(\StructType\AddonInsertType $addonInfos = null, \StructType\CommentListType $commentList = null, \StructType\ExtendedKeyValueListType $paramList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonInsertType $addonInfos = null, \traveltainment\SOAP17\StructType\CommentListType $commentList = null, \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this
             ->setAddonInfos($addonInfos)
@@ -47,7 +47,7 @@ class AddonInsertRQ extends XmlInterfaceRQ
     }
     /**
      * Get AddonInfos value
-     * @return \StructType\AddonInsertType|null
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType|null
      */
     public function getAddonInfos()
     {
@@ -55,17 +55,17 @@ class AddonInsertRQ extends XmlInterfaceRQ
     }
     /**
      * Set AddonInfos value
-     * @param \StructType\AddonInsertType $addonInfos
-     * @return \StructType\AddonInsertRQ
+     * @param \traveltainment\SOAP17\StructType\AddonInsertType $addonInfos
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRQ
      */
-    public function setAddonInfos(\StructType\AddonInsertType $addonInfos = null)
+    public function setAddonInfos(\traveltainment\SOAP17\StructType\AddonInsertType $addonInfos = null)
     {
         $this->AddonInfos = $addonInfos;
         return $this;
     }
     /**
      * Get CommentList value
-     * @return \StructType\CommentListType|null
+     * @return \traveltainment\SOAP17\StructType\CommentListType|null
      */
     public function getCommentList()
     {
@@ -73,17 +73,17 @@ class AddonInsertRQ extends XmlInterfaceRQ
     }
     /**
      * Set CommentList value
-     * @param \StructType\CommentListType $commentList
-     * @return \StructType\AddonInsertRQ
+     * @param \traveltainment\SOAP17\StructType\CommentListType $commentList
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRQ
      */
-    public function setCommentList(\StructType\CommentListType $commentList = null)
+    public function setCommentList(\traveltainment\SOAP17\StructType\CommentListType $commentList = null)
     {
         $this->CommentList = $commentList;
         return $this;
     }
     /**
      * Get ParamList value
-     * @return \StructType\ExtendedKeyValueListType|null
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueListType|null
      */
     public function getParamList()
     {
@@ -91,10 +91,10 @@ class AddonInsertRQ extends XmlInterfaceRQ
     }
     /**
      * Set ParamList value
-     * @param \StructType\ExtendedKeyValueListType $paramList
-     * @return \StructType\AddonInsertRQ
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRQ
      */
-    public function setParamList(\StructType\ExtendedKeyValueListType $paramList = null)
+    public function setParamList(\traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this->ParamList = $paramList;
         return $this;
@@ -105,7 +105,7 @@ class AddonInsertRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonInsertRQ
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRQ
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class InclusiveDetailsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ConditionDetailType[]
+     * @var \traveltainment\SOAP17\StructType\ConditionDetailType[]
      */
     public $InclusiveDetail;
     /**
      * Constructor method for InclusiveDetailsType
      * @uses InclusiveDetailsType::setInclusiveDetail()
-     * @param \StructType\ConditionDetailType[] $inclusiveDetail
+     * @param \traveltainment\SOAP17\StructType\ConditionDetailType[] $inclusiveDetail
      */
     public function __construct(array $inclusiveDetail = array())
     {
@@ -30,7 +30,7 @@ class InclusiveDetailsType extends AbstractStructBase
     }
     /**
      * Get InclusiveDetail value
-     * @return \StructType\ConditionDetailType[]|null
+     * @return \traveltainment\SOAP17\StructType\ConditionDetailType[]|null
      */
     public function getInclusiveDetail()
     {
@@ -39,15 +39,15 @@ class InclusiveDetailsType extends AbstractStructBase
     /**
      * Set InclusiveDetail value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConditionDetailType[] $inclusiveDetail
-     * @return \StructType\InclusiveDetailsType
+     * @param \traveltainment\SOAP17\StructType\ConditionDetailType[] $inclusiveDetail
+     * @return \traveltainment\SOAP17\StructType\InclusiveDetailsType
      */
     public function setInclusiveDetail(array $inclusiveDetail = array())
     {
         foreach ($inclusiveDetail as $inclusiveDetailsTypeInclusiveDetailItem) {
             // validation for constraint: itemType
-            if (!$inclusiveDetailsTypeInclusiveDetailItem instanceof \StructType\ConditionDetailType) {
-                throw new \InvalidArgumentException(sprintf('The InclusiveDetail property can only contain items of \StructType\ConditionDetailType, "%s" given', is_object($inclusiveDetailsTypeInclusiveDetailItem) ? get_class($inclusiveDetailsTypeInclusiveDetailItem) : gettype($inclusiveDetailsTypeInclusiveDetailItem)), __LINE__);
+            if (!$inclusiveDetailsTypeInclusiveDetailItem instanceof \traveltainment\SOAP17\StructType\ConditionDetailType) {
+                throw new \InvalidArgumentException(sprintf('The InclusiveDetail property can only contain items of \traveltainment\SOAP17\StructType\ConditionDetailType, "%s" given', is_object($inclusiveDetailsTypeInclusiveDetailItem) ? get_class($inclusiveDetailsTypeInclusiveDetailItem) : gettype($inclusiveDetailsTypeInclusiveDetailItem)), __LINE__);
             }
         }
         $this->InclusiveDetail = $inclusiveDetail;
@@ -56,14 +56,14 @@ class InclusiveDetailsType extends AbstractStructBase
     /**
      * Add item to InclusiveDetail value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConditionDetailType $item
-     * @return \StructType\InclusiveDetailsType
+     * @param \traveltainment\SOAP17\StructType\ConditionDetailType $item
+     * @return \traveltainment\SOAP17\StructType\InclusiveDetailsType
      */
-    public function addToInclusiveDetail(\StructType\ConditionDetailType $item)
+    public function addToInclusiveDetail(\traveltainment\SOAP17\StructType\ConditionDetailType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ConditionDetailType) {
-            throw new \InvalidArgumentException(sprintf('The InclusiveDetail property can only contain items of \StructType\ConditionDetailType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ConditionDetailType) {
+            throw new \InvalidArgumentException(sprintf('The InclusiveDetail property can only contain items of \traveltainment\SOAP17\StructType\ConditionDetailType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->InclusiveDetail[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class InclusiveDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InclusiveDetailsType
+     * @return \traveltainment\SOAP17\StructType\InclusiveDetailsType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class ConditionDetailType extends AbstractStructBase
      * The TextSections
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TextSectionsType
+     * @var \traveltainment\SOAP17\StructType\TextSectionsType
      */
     public $TextSections;
     /**
@@ -27,9 +27,9 @@ class ConditionDetailType extends AbstractStructBase
      * @uses ConditionDetailType::setTitle()
      * @uses ConditionDetailType::setTextSections()
      * @param string $title
-     * @param \StructType\TextSectionsType $textSections
+     * @param \traveltainment\SOAP17\StructType\TextSectionsType $textSections
      */
-    public function __construct($title = null, \StructType\TextSectionsType $textSections = null)
+    public function __construct($title = null, \traveltainment\SOAP17\StructType\TextSectionsType $textSections = null)
     {
         $this
             ->setTitle($title)
@@ -46,7 +46,7 @@ class ConditionDetailType extends AbstractStructBase
     /**
      * Set Title value
      * @param string $title
-     * @return \StructType\ConditionDetailType
+     * @return \traveltainment\SOAP17\StructType\ConditionDetailType
      */
     public function setTitle($title = null)
     {
@@ -59,7 +59,7 @@ class ConditionDetailType extends AbstractStructBase
     }
     /**
      * Get TextSections value
-     * @return \StructType\TextSectionsType|null
+     * @return \traveltainment\SOAP17\StructType\TextSectionsType|null
      */
     public function getTextSections()
     {
@@ -67,10 +67,10 @@ class ConditionDetailType extends AbstractStructBase
     }
     /**
      * Set TextSections value
-     * @param \StructType\TextSectionsType $textSections
-     * @return \StructType\ConditionDetailType
+     * @param \traveltainment\SOAP17\StructType\TextSectionsType $textSections
+     * @return \traveltainment\SOAP17\StructType\ConditionDetailType
      */
-    public function setTextSections(\StructType\TextSectionsType $textSections = null)
+    public function setTextSections(\traveltainment\SOAP17\StructType\TextSectionsType $textSections = null)
     {
         $this->TextSections = $textSections;
         return $this;
@@ -81,7 +81,7 @@ class ConditionDetailType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConditionDetailType
+     * @return \traveltainment\SOAP17\StructType\ConditionDetailType
      */
     public static function __set_state(array $array)
     {

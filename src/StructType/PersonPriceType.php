@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class PersonPriceType extends AbstractStructBase
     /**
      * Set TravellerRef value
      * @param string $travellerRef
-     * @return \StructType\PersonPriceType
+     * @return \traveltainment\SOAP17\StructType\PersonPriceType
      */
     public function setTravellerRef($travellerRef = null)
     {
@@ -82,7 +82,7 @@ class PersonPriceType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\PersonPriceType
+     * @return \traveltainment\SOAP17\StructType\PersonPriceType
      */
     public function set_($_ = null)
     {
@@ -120,7 +120,7 @@ class PersonPriceType extends AbstractStructBase
     /**
      * Set Currency value
      * @param string $currency
-     * @return \StructType\PersonPriceType
+     * @return \traveltainment\SOAP17\StructType\PersonPriceType
      */
     public function setCurrency($currency = null)
     {
@@ -141,7 +141,7 @@ class PersonPriceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PersonPriceType
+     * @return \traveltainment\SOAP17\StructType\PersonPriceType
      */
     public static function __set_state(array $array)
     {

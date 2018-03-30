@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_HolidayHome_OfferList extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOfferListRQ
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ
      */
     public $request;
     /**
      * Constructor method for Search_HolidayHome_OfferList
      * @uses Search_HolidayHome_OfferList::setRequest()
-     * @param \StructType\HolidayHomeOfferListRQ $request
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ $request
      */
-    public function __construct(\StructType\HolidayHomeOfferListRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\HolidayHomeOfferListRQ|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_HolidayHome_OfferList extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\HolidayHomeOfferListRQ $request
-     * @return \StructType\Search_HolidayHome_OfferList
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_HolidayHome_OfferList
      */
-    public function setRequest(\StructType\HolidayHomeOfferListRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_HolidayHome_OfferList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_HolidayHome_OfferList
+     * @return \traveltainment\SOAP17\StructType\Search_HolidayHome_OfferList
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,21 +19,21 @@ class AddonListInsertItemType extends AbstractStructBase
     public $Id;
     /**
      * The AddonInfos
-     * @var \StructType\AddonInsertType
+     * @var \traveltainment\SOAP17\StructType\AddonInsertType
      */
     public $AddonInfos;
     /**
      * The CommentList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CommentListType
+     * @var \traveltainment\SOAP17\StructType\CommentListType
      */
     public $CommentList;
     /**
      * The ParamList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ExtendedKeyValueListType
+     * @var \traveltainment\SOAP17\StructType\ExtendedKeyValueListType
      */
     public $ParamList;
     /**
@@ -43,11 +43,11 @@ class AddonListInsertItemType extends AbstractStructBase
      * @uses AddonListInsertItemType::setCommentList()
      * @uses AddonListInsertItemType::setParamList()
      * @param string $id
-     * @param \StructType\AddonInsertType $addonInfos
-     * @param \StructType\CommentListType $commentList
-     * @param \StructType\ExtendedKeyValueListType $paramList
+     * @param \traveltainment\SOAP17\StructType\AddonInsertType $addonInfos
+     * @param \traveltainment\SOAP17\StructType\CommentListType $commentList
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
      */
-    public function __construct($id = null, \StructType\AddonInsertType $addonInfos = null, \StructType\CommentListType $commentList = null, \StructType\ExtendedKeyValueListType $paramList = null)
+    public function __construct($id = null, \traveltainment\SOAP17\StructType\AddonInsertType $addonInfos = null, \traveltainment\SOAP17\StructType\CommentListType $commentList = null, \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this
             ->setId($id)
@@ -66,7 +66,7 @@ class AddonListInsertItemType extends AbstractStructBase
     /**
      * Set Id value
      * @param string $id
-     * @return \StructType\AddonListInsertItemType
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertItemType
      */
     public function setId($id = null)
     {
@@ -79,7 +79,7 @@ class AddonListInsertItemType extends AbstractStructBase
     }
     /**
      * Get AddonInfos value
-     * @return \StructType\AddonInsertType|null
+     * @return \traveltainment\SOAP17\StructType\AddonInsertType|null
      */
     public function getAddonInfos()
     {
@@ -87,17 +87,17 @@ class AddonListInsertItemType extends AbstractStructBase
     }
     /**
      * Set AddonInfos value
-     * @param \StructType\AddonInsertType $addonInfos
-     * @return \StructType\AddonListInsertItemType
+     * @param \traveltainment\SOAP17\StructType\AddonInsertType $addonInfos
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertItemType
      */
-    public function setAddonInfos(\StructType\AddonInsertType $addonInfos = null)
+    public function setAddonInfos(\traveltainment\SOAP17\StructType\AddonInsertType $addonInfos = null)
     {
         $this->AddonInfos = $addonInfos;
         return $this;
     }
     /**
      * Get CommentList value
-     * @return \StructType\CommentListType|null
+     * @return \traveltainment\SOAP17\StructType\CommentListType|null
      */
     public function getCommentList()
     {
@@ -105,17 +105,17 @@ class AddonListInsertItemType extends AbstractStructBase
     }
     /**
      * Set CommentList value
-     * @param \StructType\CommentListType $commentList
-     * @return \StructType\AddonListInsertItemType
+     * @param \traveltainment\SOAP17\StructType\CommentListType $commentList
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertItemType
      */
-    public function setCommentList(\StructType\CommentListType $commentList = null)
+    public function setCommentList(\traveltainment\SOAP17\StructType\CommentListType $commentList = null)
     {
         $this->CommentList = $commentList;
         return $this;
     }
     /**
      * Get ParamList value
-     * @return \StructType\ExtendedKeyValueListType|null
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueListType|null
      */
     public function getParamList()
     {
@@ -123,10 +123,10 @@ class AddonListInsertItemType extends AbstractStructBase
     }
     /**
      * Set ParamList value
-     * @param \StructType\ExtendedKeyValueListType $paramList
-     * @return \StructType\AddonListInsertItemType
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertItemType
      */
-    public function setParamList(\StructType\ExtendedKeyValueListType $paramList = null)
+    public function setParamList(\traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this->ParamList = $paramList;
         return $this;
@@ -137,7 +137,7 @@ class AddonListInsertItemType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonListInsertItemType
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertItemType
      */
     public static function __set_state(array $array)
     {

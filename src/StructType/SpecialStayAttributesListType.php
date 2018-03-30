@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class SpecialStayAttributesListType extends AbstractStructBase
     }
     /**
      * Set SpecialStayAttribute value
-     * @uses \EnumType\SpecialStayAttribute::valueIsValid()
-     * @uses \EnumType\SpecialStayAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\SpecialStayAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\SpecialStayAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $specialStayAttribute
-     * @return \StructType\SpecialStayAttributesListType
+     * @return \traveltainment\SOAP17\StructType\SpecialStayAttributesListType
      */
     public function setSpecialStayAttribute(array $specialStayAttribute = array())
     {
         $invalidValues = array();
         foreach ($specialStayAttribute as $specialStayAttributesListTypeSpecialStayAttributeItem) {
-            if (!\EnumType\SpecialStayAttribute::valueIsValid($specialStayAttributesListTypeSpecialStayAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\SpecialStayAttribute::valueIsValid($specialStayAttributesListTypeSpecialStayAttributeItem)) {
                 $invalidValues[] = var_export($specialStayAttributesListTypeSpecialStayAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\SpecialStayAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\SpecialStayAttribute::getValidValues())), __LINE__);
         }
         $this->SpecialStayAttribute = $specialStayAttribute;
         return $this;
     }
     /**
      * Add item to SpecialStayAttribute value
-     * @uses \EnumType\SpecialStayAttribute::valueIsValid()
-     * @uses \EnumType\SpecialStayAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\SpecialStayAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\SpecialStayAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\SpecialStayAttributesListType
+     * @return \traveltainment\SOAP17\StructType\SpecialStayAttributesListType
      */
     public function addToSpecialStayAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\SpecialStayAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\SpecialStayAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\SpecialStayAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\SpecialStayAttribute::getValidValues())), __LINE__);
         }
         $this->SpecialStayAttribute[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class SpecialStayAttributesListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SpecialStayAttributesListType
+     * @return \traveltainment\SOAP17\StructType\SpecialStayAttributesListType
      */
     public static function __set_state(array $array)
     {

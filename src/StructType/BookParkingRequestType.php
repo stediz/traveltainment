@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,12 +24,12 @@ class BookParkingRequestType extends AbstractStructBase
     public $OfferID;
     /**
      * The PaymentTokens
-     * @var \StructType\PaymentTokensType
+     * @var \traveltainment\SOAP17\StructType\PaymentTokensType
      */
     public $PaymentTokens;
     /**
      * The ParkingData
-     * @var \StructType\ParkingDataType
+     * @var \traveltainment\SOAP17\StructType\ParkingDataType
      */
     public $ParkingData;
     /**
@@ -40,10 +40,10 @@ class BookParkingRequestType extends AbstractStructBase
      * @uses BookParkingRequestType::setParkingData()
      * @param string $bookRequestID
      * @param string $offerID
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @param \StructType\ParkingDataType $parkingData
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @param \traveltainment\SOAP17\StructType\ParkingDataType $parkingData
      */
-    public function __construct($bookRequestID = null, $offerID = null, \StructType\PaymentTokensType $paymentTokens = null, \StructType\ParkingDataType $parkingData = null)
+    public function __construct($bookRequestID = null, $offerID = null, \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null, \traveltainment\SOAP17\StructType\ParkingDataType $parkingData = null)
     {
         $this
             ->setBookRequestID($bookRequestID)
@@ -62,7 +62,7 @@ class BookParkingRequestType extends AbstractStructBase
     /**
      * Set BookRequestID value
      * @param string $bookRequestID
-     * @return \StructType\BookParkingRequestType
+     * @return \traveltainment\SOAP17\StructType\BookParkingRequestType
      */
     public function setBookRequestID($bookRequestID = null)
     {
@@ -84,7 +84,7 @@ class BookParkingRequestType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\BookParkingRequestType
+     * @return \traveltainment\SOAP17\StructType\BookParkingRequestType
      */
     public function setOfferID($offerID = null)
     {
@@ -97,7 +97,7 @@ class BookParkingRequestType extends AbstractStructBase
     }
     /**
      * Get PaymentTokens value
-     * @return \StructType\PaymentTokensType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTokensType|null
      */
     public function getPaymentTokens()
     {
@@ -105,17 +105,17 @@ class BookParkingRequestType extends AbstractStructBase
     }
     /**
      * Set PaymentTokens value
-     * @param \StructType\PaymentTokensType $paymentTokens
-     * @return \StructType\BookParkingRequestType
+     * @param \traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens
+     * @return \traveltainment\SOAP17\StructType\BookParkingRequestType
      */
-    public function setPaymentTokens(\StructType\PaymentTokensType $paymentTokens = null)
+    public function setPaymentTokens(\traveltainment\SOAP17\StructType\PaymentTokensType $paymentTokens = null)
     {
         $this->PaymentTokens = $paymentTokens;
         return $this;
     }
     /**
      * Get ParkingData value
-     * @return \StructType\ParkingDataType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDataType|null
      */
     public function getParkingData()
     {
@@ -123,10 +123,10 @@ class BookParkingRequestType extends AbstractStructBase
     }
     /**
      * Set ParkingData value
-     * @param \StructType\ParkingDataType $parkingData
-     * @return \StructType\BookParkingRequestType
+     * @param \traveltainment\SOAP17\StructType\ParkingDataType $parkingData
+     * @return \traveltainment\SOAP17\StructType\BookParkingRequestType
      */
-    public function setParkingData(\StructType\ParkingDataType $parkingData = null)
+    public function setParkingData(\traveltainment\SOAP17\StructType\ParkingDataType $parkingData = null)
     {
         $this->ParkingData = $parkingData;
         return $this;
@@ -137,7 +137,7 @@ class BookParkingRequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookParkingRequestType
+     * @return \traveltainment\SOAP17\StructType\BookParkingRequestType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_InsertAddon extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddonInsertRQ
+     * @var \traveltainment\SOAP17\StructType\AddonInsertRQ
      */
     public $request;
     /**
      * Constructor method for Booking_InsertAddon
      * @uses Booking_InsertAddon::setRequest()
-     * @param \StructType\AddonInsertRQ $request
+     * @param \traveltainment\SOAP17\StructType\AddonInsertRQ $request
      */
-    public function __construct(\StructType\AddonInsertRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonInsertRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\AddonInsertRQ|null
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Booking_InsertAddon extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\AddonInsertRQ $request
-     * @return \StructType\Booking_InsertAddon
+     * @param \traveltainment\SOAP17\StructType\AddonInsertRQ $request
+     * @return \traveltainment\SOAP17\StructType\Booking_InsertAddon
      */
-    public function setRequest(\StructType\AddonInsertRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\AddonInsertRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Booking_InsertAddon extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_InsertAddon
+     * @return \traveltainment\SOAP17\StructType\Booking_InsertAddon
      */
     public static function __set_state(array $array)
     {

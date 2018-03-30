@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class SearchType extends AbstractStructBase
 {
     /**
      * The Trip
-     * @var \StructType\TripType
+     * @var \traveltainment\SOAP17\StructType\TripType
      */
     public $Trip;
     /**
      * Constructor method for SearchType
      * @uses SearchType::setTrip()
-     * @param \StructType\TripType $trip
+     * @param \traveltainment\SOAP17\StructType\TripType $trip
      */
-    public function __construct(\StructType\TripType $trip = null)
+    public function __construct(\traveltainment\SOAP17\StructType\TripType $trip = null)
     {
         $this
             ->setTrip($trip);
     }
     /**
      * Get Trip value
-     * @return \StructType\TripType|null
+     * @return \traveltainment\SOAP17\StructType\TripType|null
      */
     public function getTrip()
     {
@@ -35,10 +35,10 @@ class SearchType extends AbstractStructBase
     }
     /**
      * Set Trip value
-     * @param \StructType\TripType $trip
-     * @return \StructType\SearchType
+     * @param \traveltainment\SOAP17\StructType\TripType $trip
+     * @return \traveltainment\SOAP17\StructType\SearchType
      */
-    public function setTrip(\StructType\TripType $trip = null)
+    public function setTrip(\traveltainment\SOAP17\StructType\TripType $trip = null)
     {
         $this->Trip = $trip;
         return $this;
@@ -49,7 +49,7 @@ class SearchType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchType
+     * @return \traveltainment\SOAP17\StructType\SearchType
      */
     public static function __set_state(array $array)
     {

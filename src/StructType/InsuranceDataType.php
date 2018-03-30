@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,12 +24,12 @@ class InsuranceDataType extends AbstractStructBase
      * The CoverageDetail
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CoverageDetailType
+     * @var \traveltainment\SOAP17\StructType\CoverageDetailType
      */
     public $CoverageDetail;
     /**
      * The InsuranceCost
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $InsuranceCost;
     /**
@@ -40,10 +40,10 @@ class InsuranceDataType extends AbstractStructBase
      * @uses InsuranceDataType::setInsuranceCost()
      * @param string $providerID
      * @param string $productName
-     * @param \StructType\CoverageDetailType $coverageDetail
-     * @param \StructType\SimplePriceType $insuranceCost
+     * @param \traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $insuranceCost
      */
-    public function __construct($providerID = null, $productName = null, \StructType\CoverageDetailType $coverageDetail = null, \StructType\SimplePriceType $insuranceCost = null)
+    public function __construct($providerID = null, $productName = null, \traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail = null, \traveltainment\SOAP17\StructType\SimplePriceType $insuranceCost = null)
     {
         $this
             ->setProviderID($providerID)
@@ -62,7 +62,7 @@ class InsuranceDataType extends AbstractStructBase
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\InsuranceDataType
+     * @return \traveltainment\SOAP17\StructType\InsuranceDataType
      */
     public function setProviderID($providerID = null)
     {
@@ -84,7 +84,7 @@ class InsuranceDataType extends AbstractStructBase
     /**
      * Set ProductName value
      * @param string $productName
-     * @return \StructType\InsuranceDataType
+     * @return \traveltainment\SOAP17\StructType\InsuranceDataType
      */
     public function setProductName($productName = null)
     {
@@ -97,7 +97,7 @@ class InsuranceDataType extends AbstractStructBase
     }
     /**
      * Get CoverageDetail value
-     * @return \StructType\CoverageDetailType|null
+     * @return \traveltainment\SOAP17\StructType\CoverageDetailType|null
      */
     public function getCoverageDetail()
     {
@@ -105,17 +105,17 @@ class InsuranceDataType extends AbstractStructBase
     }
     /**
      * Set CoverageDetail value
-     * @param \StructType\CoverageDetailType $coverageDetail
-     * @return \StructType\InsuranceDataType
+     * @param \traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail
+     * @return \traveltainment\SOAP17\StructType\InsuranceDataType
      */
-    public function setCoverageDetail(\StructType\CoverageDetailType $coverageDetail = null)
+    public function setCoverageDetail(\traveltainment\SOAP17\StructType\CoverageDetailType $coverageDetail = null)
     {
         $this->CoverageDetail = $coverageDetail;
         return $this;
     }
     /**
      * Get InsuranceCost value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function getInsuranceCost()
     {
@@ -123,10 +123,10 @@ class InsuranceDataType extends AbstractStructBase
     }
     /**
      * Set InsuranceCost value
-     * @param \StructType\SimplePriceType $insuranceCost
-     * @return \StructType\InsuranceDataType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $insuranceCost
+     * @return \traveltainment\SOAP17\StructType\InsuranceDataType
      */
-    public function setInsuranceCost(\StructType\SimplePriceType $insuranceCost = null)
+    public function setInsuranceCost(\traveltainment\SOAP17\StructType\SimplePriceType $insuranceCost = null)
     {
         $this->InsuranceCost = $insuranceCost;
         return $this;
@@ -137,7 +137,7 @@ class InsuranceDataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InsuranceDataType
+     * @return \traveltainment\SOAP17\StructType\InsuranceDataType
      */
     public static function __set_state(array $array)
     {

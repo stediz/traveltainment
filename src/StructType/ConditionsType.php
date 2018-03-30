@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ConditionsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ConditionType[]
+     * @var \traveltainment\SOAP17\StructType\ConditionType[]
      */
     public $Condition;
     /**
      * Constructor method for ConditionsType
      * @uses ConditionsType::setCondition()
-     * @param \StructType\ConditionType[] $condition
+     * @param \traveltainment\SOAP17\StructType\ConditionType[] $condition
      */
     public function __construct(array $condition = array())
     {
@@ -30,7 +30,7 @@ class ConditionsType extends AbstractStructBase
     }
     /**
      * Get Condition value
-     * @return \StructType\ConditionType[]|null
+     * @return \traveltainment\SOAP17\StructType\ConditionType[]|null
      */
     public function getCondition()
     {
@@ -39,15 +39,15 @@ class ConditionsType extends AbstractStructBase
     /**
      * Set Condition value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConditionType[] $condition
-     * @return \StructType\ConditionsType
+     * @param \traveltainment\SOAP17\StructType\ConditionType[] $condition
+     * @return \traveltainment\SOAP17\StructType\ConditionsType
      */
     public function setCondition(array $condition = array())
     {
         foreach ($condition as $conditionsTypeConditionItem) {
             // validation for constraint: itemType
-            if (!$conditionsTypeConditionItem instanceof \StructType\ConditionType) {
-                throw new \InvalidArgumentException(sprintf('The Condition property can only contain items of \StructType\ConditionType, "%s" given', is_object($conditionsTypeConditionItem) ? get_class($conditionsTypeConditionItem) : gettype($conditionsTypeConditionItem)), __LINE__);
+            if (!$conditionsTypeConditionItem instanceof \traveltainment\SOAP17\StructType\ConditionType) {
+                throw new \InvalidArgumentException(sprintf('The Condition property can only contain items of \traveltainment\SOAP17\StructType\ConditionType, "%s" given', is_object($conditionsTypeConditionItem) ? get_class($conditionsTypeConditionItem) : gettype($conditionsTypeConditionItem)), __LINE__);
             }
         }
         $this->Condition = $condition;
@@ -56,14 +56,14 @@ class ConditionsType extends AbstractStructBase
     /**
      * Add item to Condition value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConditionType $item
-     * @return \StructType\ConditionsType
+     * @param \traveltainment\SOAP17\StructType\ConditionType $item
+     * @return \traveltainment\SOAP17\StructType\ConditionsType
      */
-    public function addToCondition(\StructType\ConditionType $item)
+    public function addToCondition(\traveltainment\SOAP17\StructType\ConditionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ConditionType) {
-            throw new \InvalidArgumentException(sprintf('The Condition property can only contain items of \StructType\ConditionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ConditionType) {
+            throw new \InvalidArgumentException(sprintf('The Condition property can only contain items of \traveltainment\SOAP17\StructType\ConditionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Condition[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ConditionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConditionsType
+     * @return \traveltainment\SOAP17\StructType\ConditionsType
      */
     public static function __set_state(array $array)
     {

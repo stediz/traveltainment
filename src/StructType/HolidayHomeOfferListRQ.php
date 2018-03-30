@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class HolidayHomeOfferListRQ extends XmlInterfaceRQ
 {
     /**
      * The Search
-     * @var \StructType\HolidayHomeOfferListSearchType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferListSearchType
      */
     public $Search;
     /**
      * The Selection
-     * @var \StructType\HolidayHomeOfferListSelectionType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferListSelectionType
      */
     public $Selection;
     /**
      * Constructor method for HolidayHomeOfferListRQ
      * @uses HolidayHomeOfferListRQ::setSearch()
      * @uses HolidayHomeOfferListRQ::setSelection()
-     * @param \StructType\HolidayHomeOfferListSearchType $search
-     * @param \StructType\HolidayHomeOfferListSelectionType $selection
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferListSearchType $search
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferListSelectionType $selection
      */
-    public function __construct(\StructType\HolidayHomeOfferListSearchType $search = null, \StructType\HolidayHomeOfferListSelectionType $selection = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeOfferListSearchType $search = null, \traveltainment\SOAP17\StructType\HolidayHomeOfferListSelectionType $selection = null)
     {
         $this
             ->setSearch($search)
@@ -35,7 +35,7 @@ class HolidayHomeOfferListRQ extends XmlInterfaceRQ
     }
     /**
      * Get Search value
-     * @return \StructType\HolidayHomeOfferListSearchType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListSearchType|null
      */
     public function getSearch()
     {
@@ -43,17 +43,17 @@ class HolidayHomeOfferListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Search value
-     * @param \StructType\HolidayHomeOfferListSearchType $search
-     * @return \StructType\HolidayHomeOfferListRQ
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferListSearchType $search
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ
      */
-    public function setSearch(\StructType\HolidayHomeOfferListSearchType $search = null)
+    public function setSearch(\traveltainment\SOAP17\StructType\HolidayHomeOfferListSearchType $search = null)
     {
         $this->Search = $search;
         return $this;
     }
     /**
      * Get Selection value
-     * @return \StructType\HolidayHomeOfferListSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListSelectionType|null
      */
     public function getSelection()
     {
@@ -61,10 +61,10 @@ class HolidayHomeOfferListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Selection value
-     * @param \StructType\HolidayHomeOfferListSelectionType $selection
-     * @return \StructType\HolidayHomeOfferListRQ
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferListSelectionType $selection
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ
      */
-    public function setSelection(\StructType\HolidayHomeOfferListSelectionType $selection = null)
+    public function setSelection(\traveltainment\SOAP17\StructType\HolidayHomeOfferListSelectionType $selection = null)
     {
         $this->Selection = $selection;
         return $this;
@@ -75,7 +75,7 @@ class HolidayHomeOfferListRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOfferListRQ
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferListRQ
      */
     public static function __set_state(array $array)
     {

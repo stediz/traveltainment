@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class DepartureAirportListType extends AbstractStructBase
      * The Airport
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\AirportType[]
+     * @var \traveltainment\SOAP17\StructType\AirportType[]
      */
     public $Airport;
     /**
      * Constructor method for DepartureAirportListType
      * @uses DepartureAirportListType::setAirport()
-     * @param \StructType\AirportType[] $airport
+     * @param \traveltainment\SOAP17\StructType\AirportType[] $airport
      */
     public function __construct(array $airport = array())
     {
@@ -29,7 +29,7 @@ class DepartureAirportListType extends AbstractStructBase
     }
     /**
      * Get Airport value
-     * @return \StructType\AirportType[]|null
+     * @return \traveltainment\SOAP17\StructType\AirportType[]|null
      */
     public function getAirport()
     {
@@ -38,15 +38,15 @@ class DepartureAirportListType extends AbstractStructBase
     /**
      * Set Airport value
      * @throws \InvalidArgumentException
-     * @param \StructType\AirportType[] $airport
-     * @return \StructType\DepartureAirportListType
+     * @param \traveltainment\SOAP17\StructType\AirportType[] $airport
+     * @return \traveltainment\SOAP17\StructType\DepartureAirportListType
      */
     public function setAirport(array $airport = array())
     {
         foreach ($airport as $departureAirportListTypeAirportItem) {
             // validation for constraint: itemType
-            if (!$departureAirportListTypeAirportItem instanceof \StructType\AirportType) {
-                throw new \InvalidArgumentException(sprintf('The Airport property can only contain items of \StructType\AirportType, "%s" given', is_object($departureAirportListTypeAirportItem) ? get_class($departureAirportListTypeAirportItem) : gettype($departureAirportListTypeAirportItem)), __LINE__);
+            if (!$departureAirportListTypeAirportItem instanceof \traveltainment\SOAP17\StructType\AirportType) {
+                throw new \InvalidArgumentException(sprintf('The Airport property can only contain items of \traveltainment\SOAP17\StructType\AirportType, "%s" given', is_object($departureAirportListTypeAirportItem) ? get_class($departureAirportListTypeAirportItem) : gettype($departureAirportListTypeAirportItem)), __LINE__);
             }
         }
         $this->Airport = $airport;
@@ -55,14 +55,14 @@ class DepartureAirportListType extends AbstractStructBase
     /**
      * Add item to Airport value
      * @throws \InvalidArgumentException
-     * @param \StructType\AirportType $item
-     * @return \StructType\DepartureAirportListType
+     * @param \traveltainment\SOAP17\StructType\AirportType $item
+     * @return \traveltainment\SOAP17\StructType\DepartureAirportListType
      */
-    public function addToAirport(\StructType\AirportType $item)
+    public function addToAirport(\traveltainment\SOAP17\StructType\AirportType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AirportType) {
-            throw new \InvalidArgumentException(sprintf('The Airport property can only contain items of \StructType\AirportType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\AirportType) {
+            throw new \InvalidArgumentException(sprintf('The Airport property can only contain items of \traveltainment\SOAP17\StructType\AirportType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Airport[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class DepartureAirportListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DepartureAirportListType
+     * @return \traveltainment\SOAP17\StructType\DepartureAirportListType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class SimpleAddonType extends AbstractStructBase
     public $CreationDate;
     /**
      * The Credentials
-     * @var \StructType\CredentialsType
+     * @var \traveltainment\SOAP17\StructType\CredentialsType
      */
     public $Credentials;
     /**
@@ -32,9 +32,9 @@ class SimpleAddonType extends AbstractStructBase
      * @uses SimpleAddonType::setCredentials()
      * @param string $addonID
      * @param string $creationDate
-     * @param \StructType\CredentialsType $credentials
+     * @param \traveltainment\SOAP17\StructType\CredentialsType $credentials
      */
-    public function __construct($addonID = null, $creationDate = null, \StructType\CredentialsType $credentials = null)
+    public function __construct($addonID = null, $creationDate = null, \traveltainment\SOAP17\StructType\CredentialsType $credentials = null)
     {
         $this
             ->setAddonID($addonID)
@@ -52,7 +52,7 @@ class SimpleAddonType extends AbstractStructBase
     /**
      * Set AddonID value
      * @param string $addonID
-     * @return \StructType\SimpleAddonType
+     * @return \traveltainment\SOAP17\StructType\SimpleAddonType
      */
     public function setAddonID($addonID = null)
     {
@@ -74,7 +74,7 @@ class SimpleAddonType extends AbstractStructBase
     /**
      * Set CreationDate value
      * @param string $creationDate
-     * @return \StructType\SimpleAddonType
+     * @return \traveltainment\SOAP17\StructType\SimpleAddonType
      */
     public function setCreationDate($creationDate = null)
     {
@@ -87,7 +87,7 @@ class SimpleAddonType extends AbstractStructBase
     }
     /**
      * Get Credentials value
-     * @return \StructType\CredentialsType|null
+     * @return \traveltainment\SOAP17\StructType\CredentialsType|null
      */
     public function getCredentials()
     {
@@ -95,10 +95,10 @@ class SimpleAddonType extends AbstractStructBase
     }
     /**
      * Set Credentials value
-     * @param \StructType\CredentialsType $credentials
-     * @return \StructType\SimpleAddonType
+     * @param \traveltainment\SOAP17\StructType\CredentialsType $credentials
+     * @return \traveltainment\SOAP17\StructType\SimpleAddonType
      */
-    public function setCredentials(\StructType\CredentialsType $credentials = null)
+    public function setCredentials(\traveltainment\SOAP17\StructType\CredentialsType $credentials = null)
     {
         $this->Credentials = $credentials;
         return $this;
@@ -109,7 +109,7 @@ class SimpleAddonType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleAddonType
+     * @return \traveltainment\SOAP17\StructType\SimpleAddonType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class CarRentalReturnInfoType extends AbstractStructBase
     /**
      * Set ReturnStationCode value
      * @param string $returnStationCode
-     * @return \StructType\CarRentalReturnInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalReturnInfoType
      */
     public function setReturnStationCode($returnStationCode = null)
     {
@@ -77,7 +77,7 @@ class CarRentalReturnInfoType extends AbstractStructBase
     /**
      * Set ReturnDateTime value
      * @param string $returnDateTime
-     * @return \StructType\CarRentalReturnInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalReturnInfoType
      */
     public function setReturnDateTime($returnDateTime = null)
     {
@@ -94,7 +94,7 @@ class CarRentalReturnInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalReturnInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalReturnInfoType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class GetSimpleShoppingCartsRS extends XmlInterfaceRS
 {
     /**
      * The ShoppingCarts
-     * @var \StructType\SimpleShoppingCartList
+     * @var \traveltainment\SOAP17\StructType\SimpleShoppingCartList
      */
     public $ShoppingCarts;
     /**
      * Constructor method for GetSimpleShoppingCartsRS
      * @uses GetSimpleShoppingCartsRS::setShoppingCarts()
-     * @param \StructType\SimpleShoppingCartList $shoppingCarts
+     * @param \traveltainment\SOAP17\StructType\SimpleShoppingCartList $shoppingCarts
      */
-    public function __construct(\StructType\SimpleShoppingCartList $shoppingCarts = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SimpleShoppingCartList $shoppingCarts = null)
     {
         $this
             ->setShoppingCarts($shoppingCarts);
     }
     /**
      * Get ShoppingCarts value
-     * @return \StructType\SimpleShoppingCartList|null
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCartList|null
      */
     public function getShoppingCarts()
     {
@@ -35,10 +35,10 @@ class GetSimpleShoppingCartsRS extends XmlInterfaceRS
     }
     /**
      * Set ShoppingCarts value
-     * @param \StructType\SimpleShoppingCartList $shoppingCarts
-     * @return \StructType\GetSimpleShoppingCartsRS
+     * @param \traveltainment\SOAP17\StructType\SimpleShoppingCartList $shoppingCarts
+     * @return \traveltainment\SOAP17\StructType\GetSimpleShoppingCartsRS
      */
-    public function setShoppingCarts(\StructType\SimpleShoppingCartList $shoppingCarts = null)
+    public function setShoppingCarts(\traveltainment\SOAP17\StructType\SimpleShoppingCartList $shoppingCarts = null)
     {
         $this->ShoppingCarts = $shoppingCarts;
         return $this;
@@ -49,7 +49,7 @@ class GetSimpleShoppingCartsRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetSimpleShoppingCartsRS
+     * @return \traveltainment\SOAP17\StructType\GetSimpleShoppingCartsRS
      */
     public static function __set_state(array $array)
     {

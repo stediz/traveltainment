@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -71,17 +71,17 @@ class StatusType extends AbstractStructBase
     }
     /**
      * Set StatusType value
-     * @uses \EnumType\BookingStatusTypeEnum::valueIsValid()
-     * @uses \EnumType\BookingStatusTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $statusType
-     * @return \StructType\StatusType
+     * @return \traveltainment\SOAP17\StructType\StatusType
      */
     public function setStatusType($statusType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BookingStatusTypeEnum::valueIsValid($statusType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $statusType, implode(', ', \EnumType\BookingStatusTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::valueIsValid($statusType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $statusType, implode(', ', \traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::getValidValues())), __LINE__);
         }
         $this->StatusType = $statusType;
         return $this;
@@ -97,7 +97,7 @@ class StatusType extends AbstractStructBase
     /**
      * Set StatusNo value
      * @param int $statusNo
-     * @return \StructType\StatusType
+     * @return \traveltainment\SOAP17\StructType\StatusType
      */
     public function setStatusNo($statusNo = null)
     {
@@ -119,7 +119,7 @@ class StatusType extends AbstractStructBase
     /**
      * Set StatusNoText value
      * @param string $statusNoText
-     * @return \StructType\StatusType
+     * @return \traveltainment\SOAP17\StructType\StatusType
      */
     public function setStatusNoText($statusNoText = null)
     {
@@ -141,7 +141,7 @@ class StatusType extends AbstractStructBase
     /**
      * Set StatusText value
      * @param string $statusText
-     * @return \StructType\StatusType
+     * @return \traveltainment\SOAP17\StructType\StatusType
      */
     public function setStatusText($statusText = null)
     {
@@ -162,17 +162,17 @@ class StatusType extends AbstractStructBase
     }
     /**
      * Set Status value
-     * @uses \EnumType\StatusEnum::valueIsValid()
-     * @uses \EnumType\StatusEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\StatusEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\StatusEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $status
-     * @return \StructType\StatusType
+     * @return \traveltainment\SOAP17\StructType\StatusType
      */
     public function setStatus($status = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\StatusEnum::valueIsValid($status)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \EnumType\StatusEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\StatusEnum::valueIsValid($status)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \traveltainment\SOAP17\EnumType\StatusEnum::getValidValues())), __LINE__);
         }
         $this->Status = $status;
         return $this;
@@ -183,7 +183,7 @@ class StatusType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\StatusType
+     * @return \traveltainment\SOAP17\StructType\StatusType
      */
     public static function __set_state(array $array)
     {

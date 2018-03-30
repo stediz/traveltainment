@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class AlternativeFlightType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * @var \StructType\AlternativeFlightDetailsType
+     * @var \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
     public $OutboundFlight;
     /**
@@ -31,12 +31,12 @@ class AlternativeFlightType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AlternativeFlightDetailsType
+     * @var \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
     public $InboundFlight;
     /**
      * The PriceInformation
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $PriceInformation;
     /**
@@ -45,12 +45,12 @@ class AlternativeFlightType extends AbstractStructBase
      * @uses AlternativeFlightType::setAlternativeFlightKey()
      * @uses AlternativeFlightType::setInboundFlight()
      * @uses AlternativeFlightType::setPriceInformation()
-     * @param \StructType\AlternativeFlightDetailsType $outboundFlight
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight
      * @param string $alternativeFlightKey
-     * @param \StructType\AlternativeFlightDetailsType $inboundFlight
-     * @param \StructType\PriceInformationType $priceInformation
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
      */
-    public function __construct(\StructType\AlternativeFlightDetailsType $outboundFlight = null, $alternativeFlightKey = null, \StructType\AlternativeFlightDetailsType $inboundFlight = null, \StructType\PriceInformationType $priceInformation = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight = null, $alternativeFlightKey = null, \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight = null, \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this
             ->setOutboundFlight($outboundFlight)
@@ -60,7 +60,7 @@ class AlternativeFlightType extends AbstractStructBase
     }
     /**
      * Get OutboundFlight value
-     * @return \StructType\AlternativeFlightDetailsType
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
     public function getOutboundFlight()
     {
@@ -68,10 +68,10 @@ class AlternativeFlightType extends AbstractStructBase
     }
     /**
      * Set OutboundFlight value
-     * @param \StructType\AlternativeFlightDetailsType $outboundFlight
-     * @return \StructType\AlternativeFlightType
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightType
      */
-    public function setOutboundFlight(\StructType\AlternativeFlightDetailsType $outboundFlight = null)
+    public function setOutboundFlight(\traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight = null)
     {
         $this->OutboundFlight = $outboundFlight;
         return $this;
@@ -87,7 +87,7 @@ class AlternativeFlightType extends AbstractStructBase
     /**
      * Set AlternativeFlightKey value
      * @param string $alternativeFlightKey
-     * @return \StructType\AlternativeFlightType
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightType
      */
     public function setAlternativeFlightKey($alternativeFlightKey = null)
     {
@@ -100,7 +100,7 @@ class AlternativeFlightType extends AbstractStructBase
     }
     /**
      * Get InboundFlight value
-     * @return \StructType\AlternativeFlightDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType|null
      */
     public function getInboundFlight()
     {
@@ -108,17 +108,17 @@ class AlternativeFlightType extends AbstractStructBase
     }
     /**
      * Set InboundFlight value
-     * @param \StructType\AlternativeFlightDetailsType $inboundFlight
-     * @return \StructType\AlternativeFlightType
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightType
      */
-    public function setInboundFlight(\StructType\AlternativeFlightDetailsType $inboundFlight = null)
+    public function setInboundFlight(\traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight = null)
     {
         $this->InboundFlight = $inboundFlight;
         return $this;
     }
     /**
      * Get PriceInformation value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getPriceInformation()
     {
@@ -126,10 +126,10 @@ class AlternativeFlightType extends AbstractStructBase
     }
     /**
      * Set PriceInformation value
-     * @param \StructType\PriceInformationType $priceInformation
-     * @return \StructType\AlternativeFlightType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightType
      */
-    public function setPriceInformation(\StructType\PriceInformationType $priceInformation = null)
+    public function setPriceInformation(\traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this->PriceInformation = $priceInformation;
         return $this;
@@ -140,7 +140,7 @@ class AlternativeFlightType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AlternativeFlightType
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightType
      */
     public static function __set_state(array $array)
     {

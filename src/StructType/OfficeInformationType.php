@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class OfficeInformationType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\OfficeInformationType
+     * @return \traveltainment\SOAP17\StructType\OfficeInformationType
      */
     public function set_($_ = null)
     {
@@ -82,7 +82,7 @@ class OfficeInformationType extends AbstractStructBase
     /**
      * Set OfficeID value
      * @param int $officeID
-     * @return \StructType\OfficeInformationType
+     * @return \traveltainment\SOAP17\StructType\OfficeInformationType
      */
     public function setOfficeID($officeID = null)
     {
@@ -104,7 +104,7 @@ class OfficeInformationType extends AbstractStructBase
     /**
      * Set TTBranchOfficeNumber value
      * @param int $tTBranchOfficeNumber
-     * @return \StructType\OfficeInformationType
+     * @return \traveltainment\SOAP17\StructType\OfficeInformationType
      */
     public function setTTBranchOfficeNumber($tTBranchOfficeNumber = null)
     {
@@ -126,7 +126,7 @@ class OfficeInformationType extends AbstractStructBase
     /**
      * Set TTAgencyNumber value
      * @param int $tTAgencyNumber
-     * @return \StructType\OfficeInformationType
+     * @return \traveltainment\SOAP17\StructType\OfficeInformationType
      */
     public function setTTAgencyNumber($tTAgencyNumber = null)
     {
@@ -143,7 +143,7 @@ class OfficeInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfficeInformationType
+     * @return \traveltainment\SOAP17\StructType\OfficeInformationType
      */
     public static function __set_state(array $array)
     {

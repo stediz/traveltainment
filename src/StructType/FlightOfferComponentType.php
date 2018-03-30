@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class FlightOfferComponentType extends OfferComponentType
 {
     /**
      * The Flight
-     * @var \StructType\FlightType
+     * @var \traveltainment\SOAP17\StructType\FlightType
      */
     public $Flight;
     /**
      * Constructor method for FlightOfferComponentType
      * @uses FlightOfferComponentType::setFlight()
-     * @param \StructType\FlightType $flight
+     * @param \traveltainment\SOAP17\StructType\FlightType $flight
      */
-    public function __construct(\StructType\FlightType $flight = null)
+    public function __construct(\traveltainment\SOAP17\StructType\FlightType $flight = null)
     {
         $this
             ->setFlight($flight);
     }
     /**
      * Get Flight value
-     * @return \StructType\FlightType|null
+     * @return \traveltainment\SOAP17\StructType\FlightType|null
      */
     public function getFlight()
     {
@@ -35,10 +35,10 @@ class FlightOfferComponentType extends OfferComponentType
     }
     /**
      * Set Flight value
-     * @param \StructType\FlightType $flight
-     * @return \StructType\FlightOfferComponentType
+     * @param \traveltainment\SOAP17\StructType\FlightType $flight
+     * @return \traveltainment\SOAP17\StructType\FlightOfferComponentType
      */
-    public function setFlight(\StructType\FlightType $flight = null)
+    public function setFlight(\traveltainment\SOAP17\StructType\FlightType $flight = null)
     {
         $this->Flight = $flight;
         return $this;
@@ -49,7 +49,7 @@ class FlightOfferComponentType extends OfferComponentType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FlightOfferComponentType
+     * @return \traveltainment\SOAP17\StructType\FlightOfferComponentType
      */
     public static function __set_state(array $array)
     {

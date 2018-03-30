@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class AddonFetchRQ extends XmlInterfaceRQ
     /**
      * Set ShoppingCartId value
      * @param string $shoppingCartId
-     * @return \StructType\AddonFetchRQ
+     * @return \traveltainment\SOAP17\StructType\AddonFetchRQ
      */
     public function setShoppingCartId($shoppingCartId = null)
     {
@@ -74,7 +74,7 @@ class AddonFetchRQ extends XmlInterfaceRQ
     /**
      * Set AddonId value
      * @param string $addonId
-     * @return \StructType\AddonFetchRQ
+     * @return \traveltainment\SOAP17\StructType\AddonFetchRQ
      */
     public function setAddonId($addonId = null)
     {
@@ -95,7 +95,7 @@ class AddonFetchRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonFetchRQ
+     * @return \traveltainment\SOAP17\StructType\AddonFetchRQ
      */
     public static function __set_state(array $array)
     {

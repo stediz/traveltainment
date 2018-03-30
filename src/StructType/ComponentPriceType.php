@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -29,7 +29,7 @@ class ComponentPriceType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Geldbetrag
      * - nillable: true
-     * @var \StructType\SimpleAmountType
+     * @var \traveltainment\SOAP17\StructType\SimpleAmountType
      */
     public $Amount;
     /**
@@ -37,7 +37,7 @@ class ComponentPriceType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ConvertedAmountType[]
+     * @var \traveltainment\SOAP17\StructType\ConvertedAmountType[]
      */
     public $ConvertedAmount;
     /**
@@ -48,10 +48,10 @@ class ComponentPriceType extends AbstractStructBase
      * @uses ComponentPriceType::setConvertedAmount()
      * @param string $componentName
      * @param string $componentType
-     * @param \StructType\SimpleAmountType $amount
-     * @param \StructType\ConvertedAmountType[] $convertedAmount
+     * @param \traveltainment\SOAP17\StructType\SimpleAmountType $amount
+     * @param \traveltainment\SOAP17\StructType\ConvertedAmountType[] $convertedAmount
      */
-    public function __construct($componentName = null, $componentType = null, \StructType\SimpleAmountType $amount = null, array $convertedAmount = array())
+    public function __construct($componentName = null, $componentType = null, \traveltainment\SOAP17\StructType\SimpleAmountType $amount = null, array $convertedAmount = array())
     {
         $this
             ->setComponentName($componentName)
@@ -70,7 +70,7 @@ class ComponentPriceType extends AbstractStructBase
     /**
      * Set ComponentName value
      * @param string $componentName
-     * @return \StructType\ComponentPriceType
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceType
      */
     public function setComponentName($componentName = null)
     {
@@ -91,24 +91,24 @@ class ComponentPriceType extends AbstractStructBase
     }
     /**
      * Set ComponentType value
-     * @uses \EnumType\OfferCategory::valueIsValid()
-     * @uses \EnumType\OfferCategory::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferCategory::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferCategory::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $componentType
-     * @return \StructType\ComponentPriceType
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceType
      */
     public function setComponentType($componentType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferCategory::valueIsValid($componentType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $componentType, implode(', ', \EnumType\OfferCategory::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferCategory::valueIsValid($componentType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $componentType, implode(', ', \traveltainment\SOAP17\EnumType\OfferCategory::getValidValues())), __LINE__);
         }
         $this->ComponentType = $componentType;
         return $this;
     }
     /**
      * Get Amount value
-     * @return \StructType\SimpleAmountType|null
+     * @return \traveltainment\SOAP17\StructType\SimpleAmountType|null
      */
     public function getAmount()
     {
@@ -116,17 +116,17 @@ class ComponentPriceType extends AbstractStructBase
     }
     /**
      * Set Amount value
-     * @param \StructType\SimpleAmountType $amount
-     * @return \StructType\ComponentPriceType
+     * @param \traveltainment\SOAP17\StructType\SimpleAmountType $amount
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceType
      */
-    public function setAmount(\StructType\SimpleAmountType $amount = null)
+    public function setAmount(\traveltainment\SOAP17\StructType\SimpleAmountType $amount = null)
     {
         $this->Amount = $amount;
         return $this;
     }
     /**
      * Get ConvertedAmount value
-     * @return \StructType\ConvertedAmountType[]|null
+     * @return \traveltainment\SOAP17\StructType\ConvertedAmountType[]|null
      */
     public function getConvertedAmount()
     {
@@ -135,15 +135,15 @@ class ComponentPriceType extends AbstractStructBase
     /**
      * Set ConvertedAmount value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConvertedAmountType[] $convertedAmount
-     * @return \StructType\ComponentPriceType
+     * @param \traveltainment\SOAP17\StructType\ConvertedAmountType[] $convertedAmount
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceType
      */
     public function setConvertedAmount(array $convertedAmount = array())
     {
         foreach ($convertedAmount as $componentPriceTypeConvertedAmountItem) {
             // validation for constraint: itemType
-            if (!$componentPriceTypeConvertedAmountItem instanceof \StructType\ConvertedAmountType) {
-                throw new \InvalidArgumentException(sprintf('The ConvertedAmount property can only contain items of \StructType\ConvertedAmountType, "%s" given', is_object($componentPriceTypeConvertedAmountItem) ? get_class($componentPriceTypeConvertedAmountItem) : gettype($componentPriceTypeConvertedAmountItem)), __LINE__);
+            if (!$componentPriceTypeConvertedAmountItem instanceof \traveltainment\SOAP17\StructType\ConvertedAmountType) {
+                throw new \InvalidArgumentException(sprintf('The ConvertedAmount property can only contain items of \traveltainment\SOAP17\StructType\ConvertedAmountType, "%s" given', is_object($componentPriceTypeConvertedAmountItem) ? get_class($componentPriceTypeConvertedAmountItem) : gettype($componentPriceTypeConvertedAmountItem)), __LINE__);
             }
         }
         $this->ConvertedAmount = $convertedAmount;
@@ -152,14 +152,14 @@ class ComponentPriceType extends AbstractStructBase
     /**
      * Add item to ConvertedAmount value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConvertedAmountType $item
-     * @return \StructType\ComponentPriceType
+     * @param \traveltainment\SOAP17\StructType\ConvertedAmountType $item
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceType
      */
-    public function addToConvertedAmount(\StructType\ConvertedAmountType $item)
+    public function addToConvertedAmount(\traveltainment\SOAP17\StructType\ConvertedAmountType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ConvertedAmountType) {
-            throw new \InvalidArgumentException(sprintf('The ConvertedAmount property can only contain items of \StructType\ConvertedAmountType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ConvertedAmountType) {
+            throw new \InvalidArgumentException(sprintf('The ConvertedAmount property can only contain items of \traveltainment\SOAP17\StructType\ConvertedAmountType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ConvertedAmount[] = $item;
         return $this;
@@ -170,7 +170,7 @@ class ComponentPriceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ComponentPriceType
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceType
      */
     public static function __set_state(array $array)
     {

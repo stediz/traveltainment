@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_CrossSelling_InsuranceOfferList extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetInsuranceOfferListRQType
+     * @var \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType
      */
     public $request;
     /**
      * Constructor method for Search_CrossSelling_InsuranceOfferList
      * @uses Search_CrossSelling_InsuranceOfferList::setRequest()
-     * @param \StructType\GetInsuranceOfferListRQType $request
+     * @param \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType $request
      */
-    public function __construct(\StructType\GetInsuranceOfferListRQType $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetInsuranceOfferListRQType|null
+     * @return \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_CrossSelling_InsuranceOfferList extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetInsuranceOfferListRQType $request
-     * @return \StructType\Search_CrossSelling_InsuranceOfferList
+     * @param \traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType $request
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_InsuranceOfferList
      */
-    public function setRequest(\StructType\GetInsuranceOfferListRQType $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\GetInsuranceOfferListRQType $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_CrossSelling_InsuranceOfferList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_CrossSelling_InsuranceOfferList
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_InsuranceOfferList
      */
     public static function __set_state(array $array)
     {

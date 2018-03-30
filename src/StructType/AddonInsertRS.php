@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class AddonInsertRS extends XmlInterfaceRS
 {
     /**
      * The AddonInformation
-     * @var \StructType\AddonInformationType
+     * @var \traveltainment\SOAP17\StructType\AddonInformationType
      */
     public $AddonInformation;
     /**
      * Constructor method for AddonInsertRS
      * @uses AddonInsertRS::setAddonInformation()
-     * @param \StructType\AddonInformationType $addonInformation
+     * @param \traveltainment\SOAP17\StructType\AddonInformationType $addonInformation
      */
-    public function __construct(\StructType\AddonInformationType $addonInformation = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonInformationType $addonInformation = null)
     {
         $this
             ->setAddonInformation($addonInformation);
     }
     /**
      * Get AddonInformation value
-     * @return \StructType\AddonInformationType|null
+     * @return \traveltainment\SOAP17\StructType\AddonInformationType|null
      */
     public function getAddonInformation()
     {
@@ -35,10 +35,10 @@ class AddonInsertRS extends XmlInterfaceRS
     }
     /**
      * Set AddonInformation value
-     * @param \StructType\AddonInformationType $addonInformation
-     * @return \StructType\AddonInsertRS
+     * @param \traveltainment\SOAP17\StructType\AddonInformationType $addonInformation
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRS
      */
-    public function setAddonInformation(\StructType\AddonInformationType $addonInformation = null)
+    public function setAddonInformation(\traveltainment\SOAP17\StructType\AddonInformationType $addonInformation = null)
     {
         $this->AddonInformation = $addonInformation;
         return $this;
@@ -49,7 +49,7 @@ class AddonInsertRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonInsertRS
+     * @return \traveltainment\SOAP17\StructType\AddonInsertRS
      */
     public static function __set_state(array $array)
     {

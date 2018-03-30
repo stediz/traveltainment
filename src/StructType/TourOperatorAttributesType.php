@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class TourOperatorAttributesType extends AbstractStructBase
     }
     /**
      * Set Attribute value
-     * @uses \EnumType\TourOperatorAttributeEnum::valueIsValid()
-     * @uses \EnumType\TourOperatorAttributeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $attribute
-     * @return \StructType\TourOperatorAttributesType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorAttributesType
      */
     public function setAttribute(array $attribute = array())
     {
         $invalidValues = array();
         foreach ($attribute as $tourOperatorAttributesTypeAttributeItem) {
-            if (!\EnumType\TourOperatorAttributeEnum::valueIsValid($tourOperatorAttributesTypeAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::valueIsValid($tourOperatorAttributesTypeAttributeItem)) {
                 $invalidValues[] = var_export($tourOperatorAttributesTypeAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\TourOperatorAttributeEnum::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::getValidValues())), __LINE__);
         }
         $this->Attribute = $attribute;
         return $this;
     }
     /**
      * Add item to Attribute value
-     * @uses \EnumType\TourOperatorAttributeEnum::valueIsValid()
-     * @uses \EnumType\TourOperatorAttributeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\TourOperatorAttributesType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorAttributesType
      */
     public function addToAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TourOperatorAttributeEnum::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\TourOperatorAttributeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\TourOperatorAttributeEnum::getValidValues())), __LINE__);
         }
         $this->Attribute[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class TourOperatorAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TourOperatorAttributesType
+     * @return \traveltainment\SOAP17\StructType\TourOperatorAttributesType
      */
     public static function __set_state(array $array)
     {

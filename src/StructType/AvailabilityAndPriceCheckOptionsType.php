@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class AvailabilityAndPriceCheckOptionsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OptionType[]
+     * @var \traveltainment\SOAP17\StructType\OptionType[]
      */
     public $Option;
     /**
@@ -30,7 +30,7 @@ class AvailabilityAndPriceCheckOptionsType extends AbstractStructBase
      * @uses AvailabilityAndPriceCheckOptionsType::setAdditionalCurrencies()
      * @uses AvailabilityAndPriceCheckOptionsType::setOption()
      * @param string $additionalCurrencies
-     * @param \StructType\OptionType[] $option
+     * @param \traveltainment\SOAP17\StructType\OptionType[] $option
      */
     public function __construct($additionalCurrencies = null, array $option = array())
     {
@@ -49,7 +49,7 @@ class AvailabilityAndPriceCheckOptionsType extends AbstractStructBase
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\AvailabilityAndPriceCheckOptionsType
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -62,7 +62,7 @@ class AvailabilityAndPriceCheckOptionsType extends AbstractStructBase
     }
     /**
      * Get Option value
-     * @return \StructType\OptionType[]|null
+     * @return \traveltainment\SOAP17\StructType\OptionType[]|null
      */
     public function getOption()
     {
@@ -71,15 +71,15 @@ class AvailabilityAndPriceCheckOptionsType extends AbstractStructBase
     /**
      * Set Option value
      * @throws \InvalidArgumentException
-     * @param \StructType\OptionType[] $option
-     * @return \StructType\AvailabilityAndPriceCheckOptionsType
+     * @param \traveltainment\SOAP17\StructType\OptionType[] $option
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType
      */
     public function setOption(array $option = array())
     {
         foreach ($option as $availabilityAndPriceCheckOptionsTypeOptionItem) {
             // validation for constraint: itemType
-            if (!$availabilityAndPriceCheckOptionsTypeOptionItem instanceof \StructType\OptionType) {
-                throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \StructType\OptionType, "%s" given', is_object($availabilityAndPriceCheckOptionsTypeOptionItem) ? get_class($availabilityAndPriceCheckOptionsTypeOptionItem) : gettype($availabilityAndPriceCheckOptionsTypeOptionItem)), __LINE__);
+            if (!$availabilityAndPriceCheckOptionsTypeOptionItem instanceof \traveltainment\SOAP17\StructType\OptionType) {
+                throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \traveltainment\SOAP17\StructType\OptionType, "%s" given', is_object($availabilityAndPriceCheckOptionsTypeOptionItem) ? get_class($availabilityAndPriceCheckOptionsTypeOptionItem) : gettype($availabilityAndPriceCheckOptionsTypeOptionItem)), __LINE__);
             }
         }
         $this->Option = $option;
@@ -88,14 +88,14 @@ class AvailabilityAndPriceCheckOptionsType extends AbstractStructBase
     /**
      * Add item to Option value
      * @throws \InvalidArgumentException
-     * @param \StructType\OptionType $item
-     * @return \StructType\AvailabilityAndPriceCheckOptionsType
+     * @param \traveltainment\SOAP17\StructType\OptionType $item
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType
      */
-    public function addToOption(\StructType\OptionType $item)
+    public function addToOption(\traveltainment\SOAP17\StructType\OptionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OptionType) {
-            throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \StructType\OptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\OptionType) {
+            throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \traveltainment\SOAP17\StructType\OptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Option[] = $item;
         return $this;
@@ -106,7 +106,7 @@ class AvailabilityAndPriceCheckOptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailabilityAndPriceCheckOptionsType
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckOptionsType
      */
     public static function __set_state(array $array)
     {

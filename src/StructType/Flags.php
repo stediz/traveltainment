@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class Flags extends AbstractStructBase
     /**
      * Set Alternative value
      * @param bool $alternative
-     * @return \StructType\Flags
+     * @return \traveltainment\SOAP17\StructType\Flags
      */
     public function setAlternative($alternative = null)
     {
@@ -80,7 +80,7 @@ class Flags extends AbstractStructBase
     /**
      * Set ChildAllowance value
      * @param bool $childAllowance
-     * @return \StructType\Flags
+     * @return \traveltainment\SOAP17\StructType\Flags
      */
     public function setChildAllowance($childAllowance = null)
     {
@@ -102,7 +102,7 @@ class Flags extends AbstractStructBase
     /**
      * Set EarlyBirdOffer value
      * @param bool $earlyBirdOffer
-     * @return \StructType\Flags
+     * @return \traveltainment\SOAP17\StructType\Flags
      */
     public function setEarlyBirdOffer($earlyBirdOffer = null)
     {
@@ -119,7 +119,7 @@ class Flags extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Flags
+     * @return \traveltainment\SOAP17\StructType\Flags
      */
     public static function __set_state(array $array)
     {

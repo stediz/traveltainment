@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class StartDatesType extends AbstractStructBase
      * Set StartDate value
      * @throws \InvalidArgumentException
      * @param string[] $startDate
-     * @return \StructType\StartDatesType
+     * @return \traveltainment\SOAP17\StructType\StartDatesType
      */
     public function setStartDate(array $startDate = array())
     {
@@ -56,7 +56,7 @@ class StartDatesType extends AbstractStructBase
      * Add item to StartDate value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\StartDatesType
+     * @return \traveltainment\SOAP17\StructType\StartDatesType
      */
     public function addToStartDate($item)
     {
@@ -73,7 +73,7 @@ class StartDatesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\StartDatesType
+     * @return \traveltainment\SOAP17\StructType\StartDatesType
      */
     public static function __set_state(array $array)
     {

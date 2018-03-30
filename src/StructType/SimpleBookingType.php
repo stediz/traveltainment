@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class SimpleBookingType extends AbstractStructBase
      * The Credentials
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CredentialsType
+     * @var \traveltainment\SOAP17\StructType\CredentialsType
      */
     public $Credentials;
     /**
@@ -49,28 +49,28 @@ class SimpleBookingType extends AbstractStructBase
      * The CustomerName
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PersonNameType
+     * @var \traveltainment\SOAP17\StructType\PersonNameType
      */
     public $CustomerName;
     /**
      * The Total
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \traveltainment\SOAP17\StructType\TotalType
      */
     public $Total;
     /**
      * The TravelDateSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\DateSpanType
+     * @var \traveltainment\SOAP17\StructType\DateSpanType
      */
     public $TravelDateSpan;
     /**
      * The TourOperator
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TourOperatorType
+     * @var \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public $TourOperator;
     /**
@@ -84,7 +84,7 @@ class SimpleBookingType extends AbstractStructBase
      * The BookingStatus
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\BookingStatusType
+     * @var \traveltainment\SOAP17\StructType\BookingStatusType
      */
     public $BookingStatus;
     /**
@@ -103,16 +103,16 @@ class SimpleBookingType extends AbstractStructBase
      * @param string $bookingID
      * @param string $creationDate
      * @param string $bookingDate
-     * @param \StructType\CredentialsType $credentials
+     * @param \traveltainment\SOAP17\StructType\CredentialsType $credentials
      * @param string $bookingEngineType
-     * @param \StructType\PersonNameType $customerName
-     * @param \StructType\TotalType $total
-     * @param \StructType\DateSpanType $travelDateSpan
-     * @param \StructType\TourOperatorType $tourOperator
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $customerName
+     * @param \traveltainment\SOAP17\StructType\TotalType $total
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $travelDateSpan
+     * @param \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator
      * @param string $processNumber
-     * @param \StructType\BookingStatusType $bookingStatus
+     * @param \traveltainment\SOAP17\StructType\BookingStatusType $bookingStatus
      */
-    public function __construct($bookingID = null, $creationDate = null, $bookingDate = null, \StructType\CredentialsType $credentials = null, $bookingEngineType = null, \StructType\PersonNameType $customerName = null, \StructType\TotalType $total = null, \StructType\DateSpanType $travelDateSpan = null, \StructType\TourOperatorType $tourOperator = null, $processNumber = null, \StructType\BookingStatusType $bookingStatus = null)
+    public function __construct($bookingID = null, $creationDate = null, $bookingDate = null, \traveltainment\SOAP17\StructType\CredentialsType $credentials = null, $bookingEngineType = null, \traveltainment\SOAP17\StructType\PersonNameType $customerName = null, \traveltainment\SOAP17\StructType\TotalType $total = null, \traveltainment\SOAP17\StructType\DateSpanType $travelDateSpan = null, \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator = null, $processNumber = null, \traveltainment\SOAP17\StructType\BookingStatusType $bookingStatus = null)
     {
         $this
             ->setBookingID($bookingID)
@@ -138,7 +138,7 @@ class SimpleBookingType extends AbstractStructBase
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\SimpleBookingType
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
     public function setBookingID($bookingID = null)
     {
@@ -160,7 +160,7 @@ class SimpleBookingType extends AbstractStructBase
     /**
      * Set CreationDate value
      * @param string $creationDate
-     * @return \StructType\SimpleBookingType
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
     public function setCreationDate($creationDate = null)
     {
@@ -182,7 +182,7 @@ class SimpleBookingType extends AbstractStructBase
     /**
      * Set BookingDate value
      * @param string $bookingDate
-     * @return \StructType\SimpleBookingType
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
     public function setBookingDate($bookingDate = null)
     {
@@ -195,7 +195,7 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Get Credentials value
-     * @return \StructType\CredentialsType|null
+     * @return \traveltainment\SOAP17\StructType\CredentialsType|null
      */
     public function getCredentials()
     {
@@ -203,10 +203,10 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Set Credentials value
-     * @param \StructType\CredentialsType $credentials
-     * @return \StructType\SimpleBookingType
+     * @param \traveltainment\SOAP17\StructType\CredentialsType $credentials
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
-    public function setCredentials(\StructType\CredentialsType $credentials = null)
+    public function setCredentials(\traveltainment\SOAP17\StructType\CredentialsType $credentials = null)
     {
         $this->Credentials = $credentials;
         return $this;
@@ -221,24 +221,24 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Set BookingEngineType value
-     * @uses \EnumType\OfferDefinitionType::valueIsValid()
-     * @uses \EnumType\OfferDefinitionType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferDefinitionType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferDefinitionType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $bookingEngineType
-     * @return \StructType\SimpleBookingType
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
     public function setBookingEngineType($bookingEngineType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferDefinitionType::valueIsValid($bookingEngineType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingEngineType, implode(', ', \EnumType\OfferDefinitionType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferDefinitionType::valueIsValid($bookingEngineType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingEngineType, implode(', ', \traveltainment\SOAP17\EnumType\OfferDefinitionType::getValidValues())), __LINE__);
         }
         $this->BookingEngineType = $bookingEngineType;
         return $this;
     }
     /**
      * Get CustomerName value
-     * @return \StructType\PersonNameType|null
+     * @return \traveltainment\SOAP17\StructType\PersonNameType|null
      */
     public function getCustomerName()
     {
@@ -246,17 +246,17 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Set CustomerName value
-     * @param \StructType\PersonNameType $customerName
-     * @return \StructType\SimpleBookingType
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $customerName
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
-    public function setCustomerName(\StructType\PersonNameType $customerName = null)
+    public function setCustomerName(\traveltainment\SOAP17\StructType\PersonNameType $customerName = null)
     {
         $this->CustomerName = $customerName;
         return $this;
     }
     /**
      * Get Total value
-     * @return \StructType\TotalType|null
+     * @return \traveltainment\SOAP17\StructType\TotalType|null
      */
     public function getTotal()
     {
@@ -264,17 +264,17 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Set Total value
-     * @param \StructType\TotalType $total
-     * @return \StructType\SimpleBookingType
+     * @param \traveltainment\SOAP17\StructType\TotalType $total
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
-    public function setTotal(\StructType\TotalType $total = null)
+    public function setTotal(\traveltainment\SOAP17\StructType\TotalType $total = null)
     {
         $this->Total = $total;
         return $this;
     }
     /**
      * Get TravelDateSpan value
-     * @return \StructType\DateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateSpanType|null
      */
     public function getTravelDateSpan()
     {
@@ -282,17 +282,17 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Set TravelDateSpan value
-     * @param \StructType\DateSpanType $travelDateSpan
-     * @return \StructType\SimpleBookingType
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $travelDateSpan
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
-    public function setTravelDateSpan(\StructType\DateSpanType $travelDateSpan = null)
+    public function setTravelDateSpan(\traveltainment\SOAP17\StructType\DateSpanType $travelDateSpan = null)
     {
         $this->TravelDateSpan = $travelDateSpan;
         return $this;
     }
     /**
      * Get TourOperator value
-     * @return \StructType\TourOperatorType|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType|null
      */
     public function getTourOperator()
     {
@@ -300,10 +300,10 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Set TourOperator value
-     * @param \StructType\TourOperatorType $tourOperator
-     * @return \StructType\SimpleBookingType
+     * @param \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
-    public function setTourOperator(\StructType\TourOperatorType $tourOperator = null)
+    public function setTourOperator(\traveltainment\SOAP17\StructType\TourOperatorType $tourOperator = null)
     {
         $this->TourOperator = $tourOperator;
         return $this;
@@ -319,7 +319,7 @@ class SimpleBookingType extends AbstractStructBase
     /**
      * Set ProcessNumber value
      * @param string $processNumber
-     * @return \StructType\SimpleBookingType
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
     public function setProcessNumber($processNumber = null)
     {
@@ -332,7 +332,7 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Get BookingStatus value
-     * @return \StructType\BookingStatusType|null
+     * @return \traveltainment\SOAP17\StructType\BookingStatusType|null
      */
     public function getBookingStatus()
     {
@@ -340,10 +340,10 @@ class SimpleBookingType extends AbstractStructBase
     }
     /**
      * Set BookingStatus value
-     * @param \StructType\BookingStatusType $bookingStatus
-     * @return \StructType\SimpleBookingType
+     * @param \traveltainment\SOAP17\StructType\BookingStatusType $bookingStatus
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
-    public function setBookingStatus(\StructType\BookingStatusType $bookingStatus = null)
+    public function setBookingStatus(\traveltainment\SOAP17\StructType\BookingStatusType $bookingStatus = null)
     {
         $this->BookingStatus = $bookingStatus;
         return $this;
@@ -354,7 +354,7 @@ class SimpleBookingType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleBookingType
+     * @return \traveltainment\SOAP17\StructType\SimpleBookingType
      */
     public static function __set_state(array $array)
     {

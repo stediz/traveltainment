@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class ChosenAlternativesInformation extends AbstractStructBase
     /**
      * Set Flight value
      * @param string $flight
-     * @return \StructType\ChosenAlternativesInformation
+     * @return \traveltainment\SOAP17\StructType\ChosenAlternativesInformation
      */
     public function setFlight($flight = null)
     {
@@ -53,7 +53,7 @@ class ChosenAlternativesInformation extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ChosenAlternativesInformation
+     * @return \traveltainment\SOAP17\StructType\ChosenAlternativesInformation
      */
     public static function __set_state(array $array)
     {

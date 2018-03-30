@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class ProvidersType extends AbstractStructBase
      * Set ProviderID value
      * @throws \InvalidArgumentException
      * @param string[] $providerID
-     * @return \StructType\ProvidersType
+     * @return \traveltainment\SOAP17\StructType\ProvidersType
      */
     public function setProviderID(array $providerID = array())
     {
@@ -57,7 +57,7 @@ class ProvidersType extends AbstractStructBase
      * Add item to ProviderID value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\ProvidersType
+     * @return \traveltainment\SOAP17\StructType\ProvidersType
      */
     public function addToProviderID($item)
     {
@@ -74,7 +74,7 @@ class ProvidersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProvidersType
+     * @return \traveltainment\SOAP17\StructType\ProvidersType
      */
     public static function __set_state(array $array)
     {

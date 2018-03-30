@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -32,17 +32,17 @@ class BookRQ extends BookRQRestriction
     public $BookingType;
     /**
      * The TravellerList
-     * @var \StructType\TravellerListType
+     * @var \traveltainment\SOAP17\StructType\TravellerListType
      */
     public $TravellerList;
     /**
      * The Customer
-     * @var \StructType\CustomerType
+     * @var \traveltainment\SOAP17\StructType\CustomerType
      */
     public $Customer;
     /**
      * The Payment
-     * @var \StructType\PaymentType
+     * @var \traveltainment\SOAP17\StructType\PaymentType
      */
     public $Payment;
     /**
@@ -56,7 +56,7 @@ class BookRQ extends BookRQRestriction
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\BookRQOptionsType
+     * @var \traveltainment\SOAP17\StructType\BookRQOptionsType
      */
     public $Options;
     /**
@@ -74,13 +74,13 @@ class BookRQ extends BookRQRestriction
      * @param string $bookingID
      * @param string $shoppingCartID
      * @param string $bookingType
-     * @param \StructType\TravellerListType $travellerList
-     * @param \StructType\CustomerType $customer
-     * @param \StructType\PaymentType $payment
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @param \traveltainment\SOAP17\StructType\CustomerType $customer
+     * @param \traveltainment\SOAP17\StructType\PaymentType $payment
      * @param string $customerRemarks
-     * @param \StructType\BookRQOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\BookRQOptionsType $options
      */
-    public function __construct($offerID = null, $bookingID = null, $shoppingCartID = null, $bookingType = null, \StructType\TravellerListType $travellerList = null, \StructType\CustomerType $customer = null, \StructType\PaymentType $payment = null, $customerRemarks = null, \StructType\BookRQOptionsType $options = null)
+    public function __construct($offerID = null, $bookingID = null, $shoppingCartID = null, $bookingType = null, \traveltainment\SOAP17\StructType\TravellerListType $travellerList = null, \traveltainment\SOAP17\StructType\CustomerType $customer = null, \traveltainment\SOAP17\StructType\PaymentType $payment = null, $customerRemarks = null, \traveltainment\SOAP17\StructType\BookRQOptionsType $options = null)
     {
         $this
             ->setOfferID($offerID)
@@ -104,7 +104,7 @@ class BookRQ extends BookRQRestriction
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\BookRQ
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
     public function setOfferID($offerID = null)
     {
@@ -126,7 +126,7 @@ class BookRQ extends BookRQRestriction
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\BookRQ
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
     public function setBookingID($bookingID = null)
     {
@@ -148,7 +148,7 @@ class BookRQ extends BookRQRestriction
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\BookRQ
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -169,24 +169,24 @@ class BookRQ extends BookRQRestriction
     }
     /**
      * Set BookingType value
-     * @uses \EnumType\BookingTypeEnum::valueIsValid()
-     * @uses \EnumType\BookingTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $bookingType
-     * @return \StructType\BookRQ
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
     public function setBookingType($bookingType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BookingTypeEnum::valueIsValid($bookingType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingType, implode(', ', \EnumType\BookingTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid($bookingType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingType, implode(', ', \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues())), __LINE__);
         }
         $this->BookingType = $bookingType;
         return $this;
     }
     /**
      * Get TravellerList value
-     * @return \StructType\TravellerListType|null
+     * @return \traveltainment\SOAP17\StructType\TravellerListType|null
      */
     public function getTravellerList()
     {
@@ -194,17 +194,17 @@ class BookRQ extends BookRQRestriction
     }
     /**
      * Set TravellerList value
-     * @param \StructType\TravellerListType $travellerList
-     * @return \StructType\BookRQ
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
-    public function setTravellerList(\StructType\TravellerListType $travellerList = null)
+    public function setTravellerList(\traveltainment\SOAP17\StructType\TravellerListType $travellerList = null)
     {
         $this->TravellerList = $travellerList;
         return $this;
     }
     /**
      * Get Customer value
-     * @return \StructType\CustomerType|null
+     * @return \traveltainment\SOAP17\StructType\CustomerType|null
      */
     public function getCustomer()
     {
@@ -212,17 +212,17 @@ class BookRQ extends BookRQRestriction
     }
     /**
      * Set Customer value
-     * @param \StructType\CustomerType $customer
-     * @return \StructType\BookRQ
+     * @param \traveltainment\SOAP17\StructType\CustomerType $customer
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
-    public function setCustomer(\StructType\CustomerType $customer = null)
+    public function setCustomer(\traveltainment\SOAP17\StructType\CustomerType $customer = null)
     {
         $this->Customer = $customer;
         return $this;
     }
     /**
      * Get Payment value
-     * @return \StructType\PaymentType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentType|null
      */
     public function getPayment()
     {
@@ -230,10 +230,10 @@ class BookRQ extends BookRQRestriction
     }
     /**
      * Set Payment value
-     * @param \StructType\PaymentType $payment
-     * @return \StructType\BookRQ
+     * @param \traveltainment\SOAP17\StructType\PaymentType $payment
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
-    public function setPayment(\StructType\PaymentType $payment = null)
+    public function setPayment(\traveltainment\SOAP17\StructType\PaymentType $payment = null)
     {
         $this->Payment = $payment;
         return $this;
@@ -249,7 +249,7 @@ class BookRQ extends BookRQRestriction
     /**
      * Set CustomerRemarks value
      * @param string $customerRemarks
-     * @return \StructType\BookRQ
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
     public function setCustomerRemarks($customerRemarks = null)
     {
@@ -262,7 +262,7 @@ class BookRQ extends BookRQRestriction
     }
     /**
      * Get Options value
-     * @return \StructType\BookRQOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\BookRQOptionsType|null
      */
     public function getOptions()
     {
@@ -270,10 +270,10 @@ class BookRQ extends BookRQRestriction
     }
     /**
      * Set Options value
-     * @param \StructType\BookRQOptionsType $options
-     * @return \StructType\BookRQ
+     * @param \traveltainment\SOAP17\StructType\BookRQOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
-    public function setOptions(\StructType\BookRQOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\BookRQOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -284,7 +284,7 @@ class BookRQ extends BookRQRestriction
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookRQ
+     * @return \traveltainment\SOAP17\StructType\BookRQ
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class NonCyrillicContactType extends AbstractStructBase
 {
     /**
      * The _
-     * @var \StructType\NonCyrillicContactType
+     * @var \traveltainment\SOAP17\StructType\NonCyrillicContactType
      */
     public $_;
     /**
      * Constructor method for NonCyrillicContactType
      * @uses NonCyrillicContactType::set_()
-     * @param \StructType\NonCyrillicContactType $_
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicContactType $_
      */
-    public function __construct(\StructType\NonCyrillicContactType $_ = null)
+    public function __construct(\traveltainment\SOAP17\StructType\NonCyrillicContactType $_ = null)
     {
         $this
             ->set_($_);
     }
     /**
      * Get _ value
-     * @return \StructType\NonCyrillicContactType|null
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactType|null
      */
     public function get_()
     {
@@ -37,10 +37,10 @@ class NonCyrillicContactType extends AbstractStructBase
     }
     /**
      * Set _ value
-     * @param \StructType\NonCyrillicContactType $_
-     * @return \StructType\NonCyrillicContactType
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicContactType $_
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactType
      */
-    public function set_(\StructType\NonCyrillicContactType $_ = null)
+    public function set_(\traveltainment\SOAP17\StructType\NonCyrillicContactType $_ = null)
     {
         $this->_ = $_;
         return $this;
@@ -51,7 +51,7 @@ class NonCyrillicContactType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\NonCyrillicContactType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ParkingOffersType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ParkingOfferType[]
+     * @var \traveltainment\SOAP17\StructType\ParkingOfferType[]
      */
     public $Offer;
     /**
      * Constructor method for ParkingOffersType
      * @uses ParkingOffersType::setOffer()
-     * @param \StructType\ParkingOfferType[] $offer
+     * @param \traveltainment\SOAP17\StructType\ParkingOfferType[] $offer
      */
     public function __construct(array $offer = array())
     {
@@ -30,7 +30,7 @@ class ParkingOffersType extends AbstractStructBase
     }
     /**
      * Get Offer value
-     * @return \StructType\ParkingOfferType[]|null
+     * @return \traveltainment\SOAP17\StructType\ParkingOfferType[]|null
      */
     public function getOffer()
     {
@@ -39,15 +39,15 @@ class ParkingOffersType extends AbstractStructBase
     /**
      * Set Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParkingOfferType[] $offer
-     * @return \StructType\ParkingOffersType
+     * @param \traveltainment\SOAP17\StructType\ParkingOfferType[] $offer
+     * @return \traveltainment\SOAP17\StructType\ParkingOffersType
      */
     public function setOffer(array $offer = array())
     {
         foreach ($offer as $parkingOffersTypeOfferItem) {
             // validation for constraint: itemType
-            if (!$parkingOffersTypeOfferItem instanceof \StructType\ParkingOfferType) {
-                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\ParkingOfferType, "%s" given', is_object($parkingOffersTypeOfferItem) ? get_class($parkingOffersTypeOfferItem) : gettype($parkingOffersTypeOfferItem)), __LINE__);
+            if (!$parkingOffersTypeOfferItem instanceof \traveltainment\SOAP17\StructType\ParkingOfferType) {
+                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\ParkingOfferType, "%s" given', is_object($parkingOffersTypeOfferItem) ? get_class($parkingOffersTypeOfferItem) : gettype($parkingOffersTypeOfferItem)), __LINE__);
             }
         }
         $this->Offer = $offer;
@@ -56,14 +56,14 @@ class ParkingOffersType extends AbstractStructBase
     /**
      * Add item to Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParkingOfferType $item
-     * @return \StructType\ParkingOffersType
+     * @param \traveltainment\SOAP17\StructType\ParkingOfferType $item
+     * @return \traveltainment\SOAP17\StructType\ParkingOffersType
      */
-    public function addToOffer(\StructType\ParkingOfferType $item)
+    public function addToOffer(\traveltainment\SOAP17\StructType\ParkingOfferType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ParkingOfferType) {
-            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\ParkingOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ParkingOfferType) {
+            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\ParkingOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Offer[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ParkingOffersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParkingOffersType
+     * @return \traveltainment\SOAP17\StructType\ParkingOffersType
      */
     public static function __set_state(array $array)
     {

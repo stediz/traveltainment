@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class CommentListType extends AbstractStructBase
      * The Comment
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\CommentDefinitionType[]
+     * @var \traveltainment\SOAP17\StructType\CommentDefinitionType[]
      */
     public $Comment;
     /**
      * Constructor method for CommentListType
      * @uses CommentListType::setComment()
-     * @param \StructType\CommentDefinitionType[] $comment
+     * @param \traveltainment\SOAP17\StructType\CommentDefinitionType[] $comment
      */
     public function __construct(array $comment = array())
     {
@@ -29,7 +29,7 @@ class CommentListType extends AbstractStructBase
     }
     /**
      * Get Comment value
-     * @return \StructType\CommentDefinitionType[]|null
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType[]|null
      */
     public function getComment()
     {
@@ -38,15 +38,15 @@ class CommentListType extends AbstractStructBase
     /**
      * Set Comment value
      * @throws \InvalidArgumentException
-     * @param \StructType\CommentDefinitionType[] $comment
-     * @return \StructType\CommentListType
+     * @param \traveltainment\SOAP17\StructType\CommentDefinitionType[] $comment
+     * @return \traveltainment\SOAP17\StructType\CommentListType
      */
     public function setComment(array $comment = array())
     {
         foreach ($comment as $commentListTypeCommentItem) {
             // validation for constraint: itemType
-            if (!$commentListTypeCommentItem instanceof \StructType\CommentDefinitionType) {
-                throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \StructType\CommentDefinitionType, "%s" given', is_object($commentListTypeCommentItem) ? get_class($commentListTypeCommentItem) : gettype($commentListTypeCommentItem)), __LINE__);
+            if (!$commentListTypeCommentItem instanceof \traveltainment\SOAP17\StructType\CommentDefinitionType) {
+                throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \traveltainment\SOAP17\StructType\CommentDefinitionType, "%s" given', is_object($commentListTypeCommentItem) ? get_class($commentListTypeCommentItem) : gettype($commentListTypeCommentItem)), __LINE__);
             }
         }
         $this->Comment = $comment;
@@ -55,14 +55,14 @@ class CommentListType extends AbstractStructBase
     /**
      * Add item to Comment value
      * @throws \InvalidArgumentException
-     * @param \StructType\CommentDefinitionType $item
-     * @return \StructType\CommentListType
+     * @param \traveltainment\SOAP17\StructType\CommentDefinitionType $item
+     * @return \traveltainment\SOAP17\StructType\CommentListType
      */
-    public function addToComment(\StructType\CommentDefinitionType $item)
+    public function addToComment(\traveltainment\SOAP17\StructType\CommentDefinitionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CommentDefinitionType) {
-            throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \StructType\CommentDefinitionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\CommentDefinitionType) {
+            throw new \InvalidArgumentException(sprintf('The Comment property can only contain items of \traveltainment\SOAP17\StructType\CommentDefinitionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Comment[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class CommentListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CommentListType
+     * @return \traveltainment\SOAP17\StructType\CommentListType
      */
     public static function __set_state(array $array)
     {

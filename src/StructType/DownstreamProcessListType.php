@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class DownstreamProcessListType extends AbstractStructBase
      * The Process
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\DownstreamProcessType[]
+     * @var \traveltainment\SOAP17\StructType\DownstreamProcessType[]
      */
     public $Process;
     /**
      * Constructor method for DownstreamProcessListType
      * @uses DownstreamProcessListType::setProcess()
-     * @param \StructType\DownstreamProcessType[] $process
+     * @param \traveltainment\SOAP17\StructType\DownstreamProcessType[] $process
      */
     public function __construct(array $process = array())
     {
@@ -29,7 +29,7 @@ class DownstreamProcessListType extends AbstractStructBase
     }
     /**
      * Get Process value
-     * @return \StructType\DownstreamProcessType[]|null
+     * @return \traveltainment\SOAP17\StructType\DownstreamProcessType[]|null
      */
     public function getProcess()
     {
@@ -38,15 +38,15 @@ class DownstreamProcessListType extends AbstractStructBase
     /**
      * Set Process value
      * @throws \InvalidArgumentException
-     * @param \StructType\DownstreamProcessType[] $process
-     * @return \StructType\DownstreamProcessListType
+     * @param \traveltainment\SOAP17\StructType\DownstreamProcessType[] $process
+     * @return \traveltainment\SOAP17\StructType\DownstreamProcessListType
      */
     public function setProcess(array $process = array())
     {
         foreach ($process as $downstreamProcessListTypeProcessItem) {
             // validation for constraint: itemType
-            if (!$downstreamProcessListTypeProcessItem instanceof \StructType\DownstreamProcessType) {
-                throw new \InvalidArgumentException(sprintf('The Process property can only contain items of \StructType\DownstreamProcessType, "%s" given', is_object($downstreamProcessListTypeProcessItem) ? get_class($downstreamProcessListTypeProcessItem) : gettype($downstreamProcessListTypeProcessItem)), __LINE__);
+            if (!$downstreamProcessListTypeProcessItem instanceof \traveltainment\SOAP17\StructType\DownstreamProcessType) {
+                throw new \InvalidArgumentException(sprintf('The Process property can only contain items of \traveltainment\SOAP17\StructType\DownstreamProcessType, "%s" given', is_object($downstreamProcessListTypeProcessItem) ? get_class($downstreamProcessListTypeProcessItem) : gettype($downstreamProcessListTypeProcessItem)), __LINE__);
             }
         }
         $this->Process = $process;
@@ -55,14 +55,14 @@ class DownstreamProcessListType extends AbstractStructBase
     /**
      * Add item to Process value
      * @throws \InvalidArgumentException
-     * @param \StructType\DownstreamProcessType $item
-     * @return \StructType\DownstreamProcessListType
+     * @param \traveltainment\SOAP17\StructType\DownstreamProcessType $item
+     * @return \traveltainment\SOAP17\StructType\DownstreamProcessListType
      */
-    public function addToProcess(\StructType\DownstreamProcessType $item)
+    public function addToProcess(\traveltainment\SOAP17\StructType\DownstreamProcessType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DownstreamProcessType) {
-            throw new \InvalidArgumentException(sprintf('The Process property can only contain items of \StructType\DownstreamProcessType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\DownstreamProcessType) {
+            throw new \InvalidArgumentException(sprintf('The Process property can only contain items of \traveltainment\SOAP17\StructType\DownstreamProcessType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Process[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class DownstreamProcessListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DownstreamProcessListType
+     * @return \traveltainment\SOAP17\StructType\DownstreamProcessListType
      */
     public static function __set_state(array $array)
     {

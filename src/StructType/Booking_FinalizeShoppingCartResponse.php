@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_FinalizeShoppingCartResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\FinalizeShoppingCartRS
+     * @var \traveltainment\SOAP17\StructType\FinalizeShoppingCartRS
      */
     public $return;
     /**
      * Constructor method for Booking_FinalizeShoppingCartResponse
      * @uses Booking_FinalizeShoppingCartResponse::setReturn()
-     * @param \StructType\FinalizeShoppingCartRS $return
+     * @param \traveltainment\SOAP17\StructType\FinalizeShoppingCartRS $return
      */
-    public function __construct(\StructType\FinalizeShoppingCartRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\FinalizeShoppingCartRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\FinalizeShoppingCartRS|null
+     * @return \traveltainment\SOAP17\StructType\FinalizeShoppingCartRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Booking_FinalizeShoppingCartResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\FinalizeShoppingCartRS $return
-     * @return \StructType\Booking_FinalizeShoppingCartResponse
+     * @param \traveltainment\SOAP17\StructType\FinalizeShoppingCartRS $return
+     * @return \traveltainment\SOAP17\StructType\Booking_FinalizeShoppingCartResponse
      */
-    public function setReturn(\StructType\FinalizeShoppingCartRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\FinalizeShoppingCartRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Booking_FinalizeShoppingCartResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_FinalizeShoppingCartResponse
+     * @return \traveltainment\SOAP17\StructType\Booking_FinalizeShoppingCartResponse
      */
     public static function __set_state(array $array)
     {

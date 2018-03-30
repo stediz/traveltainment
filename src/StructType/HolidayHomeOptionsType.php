@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class HolidayHomeOptionsType extends AbstractStructBase
      * The PostsortingSelection
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomePostsortingSelectionType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType
      */
     public $PostsortingSelection;
     /**
@@ -46,10 +46,10 @@ class HolidayHomeOptionsType extends AbstractStructBase
      * @uses HolidayHomeOptionsType::setAdditionalCurrencies()
      * @param int $resultsPerPage
      * @param int $resultOffset
-     * @param \StructType\HolidayHomePostsortingSelectionType $postsortingSelection
+     * @param \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType $postsortingSelection
      * @param string $additionalCurrencies
      */
-    public function __construct($resultsPerPage = 20, $resultOffset = 0, \StructType\HolidayHomePostsortingSelectionType $postsortingSelection = null, $additionalCurrencies = null)
+    public function __construct($resultsPerPage = 20, $resultOffset = 0, \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType $postsortingSelection = null, $additionalCurrencies = null)
     {
         $this
             ->setResultsPerPage($resultsPerPage)
@@ -68,7 +68,7 @@ class HolidayHomeOptionsType extends AbstractStructBase
     /**
      * Set ResultsPerPage value
      * @param int $resultsPerPage
-     * @return \StructType\HolidayHomeOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOptionsType
      */
     public function setResultsPerPage($resultsPerPage = 20)
     {
@@ -90,7 +90,7 @@ class HolidayHomeOptionsType extends AbstractStructBase
     /**
      * Set ResultOffset value
      * @param int $resultOffset
-     * @return \StructType\HolidayHomeOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOptionsType
      */
     public function setResultOffset($resultOffset = 0)
     {
@@ -103,7 +103,7 @@ class HolidayHomeOptionsType extends AbstractStructBase
     }
     /**
      * Get PostsortingSelection value
-     * @return \StructType\HolidayHomePostsortingSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType|null
      */
     public function getPostsortingSelection()
     {
@@ -111,10 +111,10 @@ class HolidayHomeOptionsType extends AbstractStructBase
     }
     /**
      * Set PostsortingSelection value
-     * @param \StructType\HolidayHomePostsortingSelectionType $postsortingSelection
-     * @return \StructType\HolidayHomeOptionsType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType $postsortingSelection
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOptionsType
      */
-    public function setPostsortingSelection(\StructType\HolidayHomePostsortingSelectionType $postsortingSelection = null)
+    public function setPostsortingSelection(\traveltainment\SOAP17\StructType\HolidayHomePostsortingSelectionType $postsortingSelection = null)
     {
         $this->PostsortingSelection = $postsortingSelection;
         return $this;
@@ -130,7 +130,7 @@ class HolidayHomeOptionsType extends AbstractStructBase
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\HolidayHomeOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -147,7 +147,7 @@ class HolidayHomeOptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOptionsType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOptionsType
      */
     public static function __set_state(array $array)
     {

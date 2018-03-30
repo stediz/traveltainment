@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Hotel_RegionTreeResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineRegionTreeRS
+     * @var \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS
      */
     public $return;
     /**
      * Constructor method for Search_Hotel_RegionTreeResponse
      * @uses Search_Hotel_RegionTreeResponse::setReturn()
-     * @param \StructType\SearchEngineRegionTreeRS $return
+     * @param \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS $return
      */
-    public function __construct(\StructType\SearchEngineRegionTreeRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\SearchEngineRegionTreeRS|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_Hotel_RegionTreeResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\SearchEngineRegionTreeRS $return
-     * @return \StructType\Search_Hotel_RegionTreeResponse
+     * @param \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS $return
+     * @return \traveltainment\SOAP17\StructType\Search_Hotel_RegionTreeResponse
      */
-    public function setReturn(\StructType\SearchEngineRegionTreeRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\SearchEngineRegionTreeRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_Hotel_RegionTreeResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Hotel_RegionTreeResponse
+     * @return \traveltainment\SOAP17\StructType\Search_Hotel_RegionTreeResponse
      */
     public static function __set_state(array $array)
     {

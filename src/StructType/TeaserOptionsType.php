@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,7 +21,7 @@ class TeaserOptionsType extends AbstractStructBase
      * The TourOperator
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TourOperator
+     * @var \traveltainment\SOAP17\StructType\TourOperator
      */
     public $TourOperator;
     /**
@@ -29,9 +29,9 @@ class TeaserOptionsType extends AbstractStructBase
      * @uses TeaserOptionsType::setAllowAlternativeTourOperator()
      * @uses TeaserOptionsType::setTourOperator()
      * @param bool $allowAlternativeTourOperator
-     * @param \StructType\TourOperator $tourOperator
+     * @param \traveltainment\SOAP17\StructType\TourOperator $tourOperator
      */
-    public function __construct($allowAlternativeTourOperator = null, \StructType\TourOperator $tourOperator = null)
+    public function __construct($allowAlternativeTourOperator = null, \traveltainment\SOAP17\StructType\TourOperator $tourOperator = null)
     {
         $this
             ->setAllowAlternativeTourOperator($allowAlternativeTourOperator)
@@ -48,7 +48,7 @@ class TeaserOptionsType extends AbstractStructBase
     /**
      * Set AllowAlternativeTourOperator value
      * @param bool $allowAlternativeTourOperator
-     * @return \StructType\TeaserOptionsType
+     * @return \traveltainment\SOAP17\StructType\TeaserOptionsType
      */
     public function setAllowAlternativeTourOperator($allowAlternativeTourOperator = null)
     {
@@ -61,7 +61,7 @@ class TeaserOptionsType extends AbstractStructBase
     }
     /**
      * Get TourOperator value
-     * @return \StructType\TourOperator|null
+     * @return \traveltainment\SOAP17\StructType\TourOperator|null
      */
     public function getTourOperator()
     {
@@ -69,10 +69,10 @@ class TeaserOptionsType extends AbstractStructBase
     }
     /**
      * Set TourOperator value
-     * @param \StructType\TourOperator $tourOperator
-     * @return \StructType\TeaserOptionsType
+     * @param \traveltainment\SOAP17\StructType\TourOperator $tourOperator
+     * @return \traveltainment\SOAP17\StructType\TeaserOptionsType
      */
-    public function setTourOperator(\StructType\TourOperator $tourOperator = null)
+    public function setTourOperator(\traveltainment\SOAP17\StructType\TourOperator $tourOperator = null)
     {
         $this->TourOperator = $tourOperator;
         return $this;
@@ -83,7 +83,7 @@ class TeaserOptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TeaserOptionsType
+     * @return \traveltainment\SOAP17\StructType\TeaserOptionsType
      */
     public static function __set_state(array $array)
     {

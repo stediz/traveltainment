@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class SimpleShoppingCartList extends AbstractStructBase
      * The ShoppingCart
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\SimpleShoppingCart[]
+     * @var \traveltainment\SOAP17\StructType\SimpleShoppingCart[]
      */
     public $ShoppingCart;
     /**
      * Constructor method for SimpleShoppingCartList
      * @uses SimpleShoppingCartList::setShoppingCart()
-     * @param \StructType\SimpleShoppingCart[] $shoppingCart
+     * @param \traveltainment\SOAP17\StructType\SimpleShoppingCart[] $shoppingCart
      */
     public function __construct(array $shoppingCart = array())
     {
@@ -29,7 +29,7 @@ class SimpleShoppingCartList extends AbstractStructBase
     }
     /**
      * Get ShoppingCart value
-     * @return \StructType\SimpleShoppingCart[]|null
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCart[]|null
      */
     public function getShoppingCart()
     {
@@ -38,15 +38,15 @@ class SimpleShoppingCartList extends AbstractStructBase
     /**
      * Set ShoppingCart value
      * @throws \InvalidArgumentException
-     * @param \StructType\SimpleShoppingCart[] $shoppingCart
-     * @return \StructType\SimpleShoppingCartList
+     * @param \traveltainment\SOAP17\StructType\SimpleShoppingCart[] $shoppingCart
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCartList
      */
     public function setShoppingCart(array $shoppingCart = array())
     {
         foreach ($shoppingCart as $simpleShoppingCartListShoppingCartItem) {
             // validation for constraint: itemType
-            if (!$simpleShoppingCartListShoppingCartItem instanceof \StructType\SimpleShoppingCart) {
-                throw new \InvalidArgumentException(sprintf('The ShoppingCart property can only contain items of \StructType\SimpleShoppingCart, "%s" given', is_object($simpleShoppingCartListShoppingCartItem) ? get_class($simpleShoppingCartListShoppingCartItem) : gettype($simpleShoppingCartListShoppingCartItem)), __LINE__);
+            if (!$simpleShoppingCartListShoppingCartItem instanceof \traveltainment\SOAP17\StructType\SimpleShoppingCart) {
+                throw new \InvalidArgumentException(sprintf('The ShoppingCart property can only contain items of \traveltainment\SOAP17\StructType\SimpleShoppingCart, "%s" given', is_object($simpleShoppingCartListShoppingCartItem) ? get_class($simpleShoppingCartListShoppingCartItem) : gettype($simpleShoppingCartListShoppingCartItem)), __LINE__);
             }
         }
         $this->ShoppingCart = $shoppingCart;
@@ -55,14 +55,14 @@ class SimpleShoppingCartList extends AbstractStructBase
     /**
      * Add item to ShoppingCart value
      * @throws \InvalidArgumentException
-     * @param \StructType\SimpleShoppingCart $item
-     * @return \StructType\SimpleShoppingCartList
+     * @param \traveltainment\SOAP17\StructType\SimpleShoppingCart $item
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCartList
      */
-    public function addToShoppingCart(\StructType\SimpleShoppingCart $item)
+    public function addToShoppingCart(\traveltainment\SOAP17\StructType\SimpleShoppingCart $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SimpleShoppingCart) {
-            throw new \InvalidArgumentException(sprintf('The ShoppingCart property can only contain items of \StructType\SimpleShoppingCart, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\SimpleShoppingCart) {
+            throw new \InvalidArgumentException(sprintf('The ShoppingCart property can only contain items of \traveltainment\SOAP17\StructType\SimpleShoppingCart, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ShoppingCart[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class SimpleShoppingCartList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleShoppingCartList
+     * @return \traveltainment\SOAP17\StructType\SimpleShoppingCartList
      */
     public static function __set_state(array $array)
     {

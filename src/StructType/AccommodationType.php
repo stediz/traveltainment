@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class AccommodationType extends AbstractStructBase
      * The RoomAdditions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RoomAdditionList
+     * @var \traveltainment\SOAP17\StructType\RoomAdditionList
      */
     public $RoomAdditions;
     /**
@@ -86,28 +86,28 @@ class AccommodationType extends AbstractStructBase
      * The StayDateSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\DateSpanType
+     * @var \traveltainment\SOAP17\StructType\DateSpanType
      */
     public $StayDateSpan;
     /**
      * The Address
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddressType
+     * @var \traveltainment\SOAP17\StructType\AddressType
      */
     public $Address;
     /**
      * The Contacts
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ContactListType
+     * @var \traveltainment\SOAP17\StructType\ContactListType
      */
     public $Contacts;
     /**
      * The ObjectImages
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ObjectImagesType
+     * @var \traveltainment\SOAP17\StructType\ObjectImagesType
      */
     public $ObjectImages;
     /**
@@ -131,7 +131,7 @@ class AccommodationType extends AbstractStructBase
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
@@ -159,19 +159,19 @@ class AccommodationType extends AbstractStructBase
      * @param string $roomCode
      * @param string $room
      * @param string $roomTypeName
-     * @param \StructType\RoomAdditionList $roomAdditions
+     * @param \traveltainment\SOAP17\StructType\RoomAdditionList $roomAdditions
      * @param string $mealPlanCode
      * @param string $meal
      * @param string $hotelRegionCode
-     * @param \StructType\DateSpanType $stayDateSpan
-     * @param \StructType\AddressType $address
-     * @param \StructType\ContactListType $contacts
-     * @param \StructType\ObjectImagesType $objectImages
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $stayDateSpan
+     * @param \traveltainment\SOAP17\StructType\AddressType $address
+     * @param \traveltainment\SOAP17\StructType\ContactListType $contacts
+     * @param \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages
      * @param bool $isRefundable
      * @param float $category
-     * @param \StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
      */
-    public function __construct($objectID = null, $objectName = null, $accomCode = null, $roomCode = null, $room = null, $roomTypeName = null, \StructType\RoomAdditionList $roomAdditions = null, $mealPlanCode = null, $meal = null, $hotelRegionCode = null, \StructType\DateSpanType $stayDateSpan = null, \StructType\AddressType $address = null, \StructType\ContactListType $contacts = null, \StructType\ObjectImagesType $objectImages = null, $isRefundable = null, $category = null, \StructType\RegionType $region = null)
+    public function __construct($objectID = null, $objectName = null, $accomCode = null, $roomCode = null, $room = null, $roomTypeName = null, \traveltainment\SOAP17\StructType\RoomAdditionList $roomAdditions = null, $mealPlanCode = null, $meal = null, $hotelRegionCode = null, \traveltainment\SOAP17\StructType\DateSpanType $stayDateSpan = null, \traveltainment\SOAP17\StructType\AddressType $address = null, \traveltainment\SOAP17\StructType\ContactListType $contacts = null, \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages = null, $isRefundable = null, $category = null, \traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this
             ->setObjectID($objectID)
@@ -203,7 +203,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set ObjectID value
      * @param int $objectID
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setObjectID($objectID = null)
     {
@@ -225,7 +225,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set ObjectName value
      * @param string $objectName
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setObjectName($objectName = null)
     {
@@ -247,7 +247,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set AccomCode value
      * @param string $accomCode
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setAccomCode($accomCode = null)
     {
@@ -269,7 +269,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set RoomCode value
      * @param string $roomCode
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setRoomCode($roomCode = null)
     {
@@ -290,17 +290,17 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set Room value
-     * @uses \EnumType\Room::valueIsValid()
-     * @uses \EnumType\Room::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Room::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Room::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $room
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setRoom($room = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Room::valueIsValid($room)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $room, implode(', ', \EnumType\Room::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Room::valueIsValid($room)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $room, implode(', ', \traveltainment\SOAP17\EnumType\Room::getValidValues())), __LINE__);
         }
         $this->Room = $room;
         return $this;
@@ -316,7 +316,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set RoomTypeName value
      * @param string $roomTypeName
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setRoomTypeName($roomTypeName = null)
     {
@@ -329,7 +329,7 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Get RoomAdditions value
-     * @return \StructType\RoomAdditionList|null
+     * @return \traveltainment\SOAP17\StructType\RoomAdditionList|null
      */
     public function getRoomAdditions()
     {
@@ -337,10 +337,10 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set RoomAdditions value
-     * @param \StructType\RoomAdditionList $roomAdditions
-     * @return \StructType\AccommodationType
+     * @param \traveltainment\SOAP17\StructType\RoomAdditionList $roomAdditions
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
-    public function setRoomAdditions(\StructType\RoomAdditionList $roomAdditions = null)
+    public function setRoomAdditions(\traveltainment\SOAP17\StructType\RoomAdditionList $roomAdditions = null)
     {
         $this->RoomAdditions = $roomAdditions;
         return $this;
@@ -356,7 +356,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set MealPlanCode value
      * @param string $mealPlanCode
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setMealPlanCode($mealPlanCode = null)
     {
@@ -377,17 +377,17 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set Meal value
-     * @uses \EnumType\Meal::valueIsValid()
-     * @uses \EnumType\Meal::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $meal
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setMeal($meal = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Meal::valueIsValid($meal)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $meal, implode(', ', \EnumType\Meal::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Meal::valueIsValid($meal)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $meal, implode(', ', \traveltainment\SOAP17\EnumType\Meal::getValidValues())), __LINE__);
         }
         $this->Meal = $meal;
         return $this;
@@ -403,7 +403,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set HotelRegionCode value
      * @param string $hotelRegionCode
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setHotelRegionCode($hotelRegionCode = null)
     {
@@ -416,7 +416,7 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Get StayDateSpan value
-     * @return \StructType\DateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateSpanType|null
      */
     public function getStayDateSpan()
     {
@@ -424,17 +424,17 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set StayDateSpan value
-     * @param \StructType\DateSpanType $stayDateSpan
-     * @return \StructType\AccommodationType
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $stayDateSpan
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
-    public function setStayDateSpan(\StructType\DateSpanType $stayDateSpan = null)
+    public function setStayDateSpan(\traveltainment\SOAP17\StructType\DateSpanType $stayDateSpan = null)
     {
         $this->StayDateSpan = $stayDateSpan;
         return $this;
     }
     /**
      * Get Address value
-     * @return \StructType\AddressType|null
+     * @return \traveltainment\SOAP17\StructType\AddressType|null
      */
     public function getAddress()
     {
@@ -442,17 +442,17 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set Address value
-     * @param \StructType\AddressType $address
-     * @return \StructType\AccommodationType
+     * @param \traveltainment\SOAP17\StructType\AddressType $address
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
-    public function setAddress(\StructType\AddressType $address = null)
+    public function setAddress(\traveltainment\SOAP17\StructType\AddressType $address = null)
     {
         $this->Address = $address;
         return $this;
     }
     /**
      * Get Contacts value
-     * @return \StructType\ContactListType|null
+     * @return \traveltainment\SOAP17\StructType\ContactListType|null
      */
     public function getContacts()
     {
@@ -460,17 +460,17 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set Contacts value
-     * @param \StructType\ContactListType $contacts
-     * @return \StructType\AccommodationType
+     * @param \traveltainment\SOAP17\StructType\ContactListType $contacts
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
-    public function setContacts(\StructType\ContactListType $contacts = null)
+    public function setContacts(\traveltainment\SOAP17\StructType\ContactListType $contacts = null)
     {
         $this->Contacts = $contacts;
         return $this;
     }
     /**
      * Get ObjectImages value
-     * @return \StructType\ObjectImagesType|null
+     * @return \traveltainment\SOAP17\StructType\ObjectImagesType|null
      */
     public function getObjectImages()
     {
@@ -478,10 +478,10 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set ObjectImages value
-     * @param \StructType\ObjectImagesType $objectImages
-     * @return \StructType\AccommodationType
+     * @param \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
-    public function setObjectImages(\StructType\ObjectImagesType $objectImages = null)
+    public function setObjectImages(\traveltainment\SOAP17\StructType\ObjectImagesType $objectImages = null)
     {
         $this->ObjectImages = $objectImages;
         return $this;
@@ -497,7 +497,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set IsRefundable value
      * @param bool $isRefundable
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setIsRefundable($isRefundable = null)
     {
@@ -519,7 +519,7 @@ class AccommodationType extends AbstractStructBase
     /**
      * Set Category value
      * @param float $category
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public function setCategory($category = null)
     {
@@ -540,7 +540,7 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -548,10 +548,10 @@ class AccommodationType extends AbstractStructBase
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\AccommodationType
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
@@ -562,7 +562,7 @@ class AccommodationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AccommodationType
+     * @return \traveltainment\SOAP17\StructType\AccommodationType
      */
     public static function __set_state(array $array)
     {

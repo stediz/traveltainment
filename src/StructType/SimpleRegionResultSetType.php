@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class SimpleRegionResultSetType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 400
      * - minOccurs: 0
-     * @var \StructType\SimpleRegionOfferType[]
+     * @var \traveltainment\SOAP17\StructType\SimpleRegionOfferType[]
      */
     public $SimpleListItem;
     /**
@@ -37,7 +37,7 @@ class SimpleRegionResultSetType extends AbstractStructBase
      * @uses SimpleRegionResultSetType::setSimpleListItem()
      * @uses SimpleRegionResultSetType::setAlternatives()
      * @uses SimpleRegionResultSetType::setTotalNumberOfResults()
-     * @param \StructType\SimpleRegionOfferType[] $simpleListItem
+     * @param \traveltainment\SOAP17\StructType\SimpleRegionOfferType[] $simpleListItem
      * @param bool $alternatives
      * @param int $totalNumberOfResults
      */
@@ -50,7 +50,7 @@ class SimpleRegionResultSetType extends AbstractStructBase
     }
     /**
      * Get SimpleListItem value
-     * @return \StructType\SimpleRegionOfferType[]|null
+     * @return \traveltainment\SOAP17\StructType\SimpleRegionOfferType[]|null
      */
     public function getSimpleListItem()
     {
@@ -59,15 +59,15 @@ class SimpleRegionResultSetType extends AbstractStructBase
     /**
      * Set SimpleListItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\SimpleRegionOfferType[] $simpleListItem
-     * @return \StructType\SimpleRegionResultSetType
+     * @param \traveltainment\SOAP17\StructType\SimpleRegionOfferType[] $simpleListItem
+     * @return \traveltainment\SOAP17\StructType\SimpleRegionResultSetType
      */
     public function setSimpleListItem(array $simpleListItem = array())
     {
         foreach ($simpleListItem as $simpleRegionResultSetTypeSimpleListItemItem) {
             // validation for constraint: itemType
-            if (!$simpleRegionResultSetTypeSimpleListItemItem instanceof \StructType\SimpleRegionOfferType) {
-                throw new \InvalidArgumentException(sprintf('The SimpleListItem property can only contain items of \StructType\SimpleRegionOfferType, "%s" given', is_object($simpleRegionResultSetTypeSimpleListItemItem) ? get_class($simpleRegionResultSetTypeSimpleListItemItem) : gettype($simpleRegionResultSetTypeSimpleListItemItem)), __LINE__);
+            if (!$simpleRegionResultSetTypeSimpleListItemItem instanceof \traveltainment\SOAP17\StructType\SimpleRegionOfferType) {
+                throw new \InvalidArgumentException(sprintf('The SimpleListItem property can only contain items of \traveltainment\SOAP17\StructType\SimpleRegionOfferType, "%s" given', is_object($simpleRegionResultSetTypeSimpleListItemItem) ? get_class($simpleRegionResultSetTypeSimpleListItemItem) : gettype($simpleRegionResultSetTypeSimpleListItemItem)), __LINE__);
             }
         }
         $this->SimpleListItem = $simpleListItem;
@@ -76,14 +76,14 @@ class SimpleRegionResultSetType extends AbstractStructBase
     /**
      * Add item to SimpleListItem value
      * @throws \InvalidArgumentException
-     * @param \StructType\SimpleRegionOfferType $item
-     * @return \StructType\SimpleRegionResultSetType
+     * @param \traveltainment\SOAP17\StructType\SimpleRegionOfferType $item
+     * @return \traveltainment\SOAP17\StructType\SimpleRegionResultSetType
      */
-    public function addToSimpleListItem(\StructType\SimpleRegionOfferType $item)
+    public function addToSimpleListItem(\traveltainment\SOAP17\StructType\SimpleRegionOfferType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SimpleRegionOfferType) {
-            throw new \InvalidArgumentException(sprintf('The SimpleListItem property can only contain items of \StructType\SimpleRegionOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\SimpleRegionOfferType) {
+            throw new \InvalidArgumentException(sprintf('The SimpleListItem property can only contain items of \traveltainment\SOAP17\StructType\SimpleRegionOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->SimpleListItem[] = $item;
         return $this;
@@ -99,7 +99,7 @@ class SimpleRegionResultSetType extends AbstractStructBase
     /**
      * Set Alternatives value
      * @param bool $alternatives
-     * @return \StructType\SimpleRegionResultSetType
+     * @return \traveltainment\SOAP17\StructType\SimpleRegionResultSetType
      */
     public function setAlternatives($alternatives = null)
     {
@@ -121,7 +121,7 @@ class SimpleRegionResultSetType extends AbstractStructBase
     /**
      * Set TotalNumberOfResults value
      * @param int $totalNumberOfResults
-     * @return \StructType\SimpleRegionResultSetType
+     * @return \traveltainment\SOAP17\StructType\SimpleRegionResultSetType
      */
     public function setTotalNumberOfResults($totalNumberOfResults = null)
     {
@@ -138,7 +138,7 @@ class SimpleRegionResultSetType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleRegionResultSetType
+     * @return \traveltainment\SOAP17\StructType\SimpleRegionResultSetType
      */
     public static function __set_state(array $array)
     {

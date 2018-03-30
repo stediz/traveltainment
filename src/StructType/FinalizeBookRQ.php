@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class FinalizeBookRQ extends XmlInterfaceRQ
     public $ShoppingCartID;
     /**
      * The Payment
-     * @var \StructType\PaymentType
+     * @var \traveltainment\SOAP17\StructType\PaymentType
      */
     public $Payment;
     /**
@@ -32,9 +32,9 @@ class FinalizeBookRQ extends XmlInterfaceRQ
      * @uses FinalizeBookRQ::setPayment()
      * @param string $bookingID
      * @param string $shoppingCartID
-     * @param \StructType\PaymentType $payment
+     * @param \traveltainment\SOAP17\StructType\PaymentType $payment
      */
-    public function __construct($bookingID = null, $shoppingCartID = null, \StructType\PaymentType $payment = null)
+    public function __construct($bookingID = null, $shoppingCartID = null, \traveltainment\SOAP17\StructType\PaymentType $payment = null)
     {
         $this
             ->setBookingID($bookingID)
@@ -52,7 +52,7 @@ class FinalizeBookRQ extends XmlInterfaceRQ
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\FinalizeBookRQ
+     * @return \traveltainment\SOAP17\StructType\FinalizeBookRQ
      */
     public function setBookingID($bookingID = null)
     {
@@ -74,7 +74,7 @@ class FinalizeBookRQ extends XmlInterfaceRQ
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\FinalizeBookRQ
+     * @return \traveltainment\SOAP17\StructType\FinalizeBookRQ
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -87,7 +87,7 @@ class FinalizeBookRQ extends XmlInterfaceRQ
     }
     /**
      * Get Payment value
-     * @return \StructType\PaymentType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentType|null
      */
     public function getPayment()
     {
@@ -95,10 +95,10 @@ class FinalizeBookRQ extends XmlInterfaceRQ
     }
     /**
      * Set Payment value
-     * @param \StructType\PaymentType $payment
-     * @return \StructType\FinalizeBookRQ
+     * @param \traveltainment\SOAP17\StructType\PaymentType $payment
+     * @return \traveltainment\SOAP17\StructType\FinalizeBookRQ
      */
-    public function setPayment(\StructType\PaymentType $payment = null)
+    public function setPayment(\traveltainment\SOAP17\StructType\PaymentType $payment = null)
     {
         $this->Payment = $payment;
         return $this;
@@ -109,7 +109,7 @@ class FinalizeBookRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FinalizeBookRQ
+     * @return \traveltainment\SOAP17\StructType\FinalizeBookRQ
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class HolidayHomeOfferGridSearchType extends HolidayHomeSearchType
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOfferGridOptionsType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType
      */
     public $Options;
     /**
      * Constructor method for HolidayHomeOfferGridSearchType
      * @uses HolidayHomeOfferGridSearchType::setOptions()
-     * @param \StructType\HolidayHomeOfferGridOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType $options
      */
-    public function __construct(\StructType\HolidayHomeOfferGridOptionsType $options = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType $options = null)
     {
         $this
             ->setOptions($options);
     }
     /**
      * Get Options value
-     * @return \StructType\HolidayHomeOfferGridOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType|null
      */
     public function getOptions()
     {
@@ -37,10 +37,10 @@ class HolidayHomeOfferGridSearchType extends HolidayHomeSearchType
     }
     /**
      * Set Options value
-     * @param \StructType\HolidayHomeOfferGridOptionsType $options
-     * @return \StructType\HolidayHomeOfferGridSearchType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridSearchType
      */
-    public function setOptions(\StructType\HolidayHomeOfferGridOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\HolidayHomeOfferGridOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -51,7 +51,7 @@ class HolidayHomeOfferGridSearchType extends HolidayHomeSearchType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOfferGridSearchType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridSearchType
      */
     public static function __set_state(array $array)
     {

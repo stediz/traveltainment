@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewInfrastructureAttributesType extends AbstractStructBase
     }
     /**
      * Set InfrastructureAttribute value
-     * @uses \EnumType\HotelReviewInfrastructureAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewInfrastructureAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $infrastructureAttribute
-     * @return \StructType\HotelReviewInfrastructureAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType
      */
     public function setInfrastructureAttribute(array $infrastructureAttribute = array())
     {
         $invalidValues = array();
         foreach ($infrastructureAttribute as $hotelReviewInfrastructureAttributesTypeInfrastructureAttributeItem) {
-            if (!\EnumType\HotelReviewInfrastructureAttribute::valueIsValid($hotelReviewInfrastructureAttributesTypeInfrastructureAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::valueIsValid($hotelReviewInfrastructureAttributesTypeInfrastructureAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewInfrastructureAttributesTypeInfrastructureAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewInfrastructureAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::getValidValues())), __LINE__);
         }
         $this->InfrastructureAttribute = $infrastructureAttribute;
         return $this;
     }
     /**
      * Add item to InfrastructureAttribute value
-     * @uses \EnumType\HotelReviewInfrastructureAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewInfrastructureAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewInfrastructureAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType
      */
     public function addToInfrastructureAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewInfrastructureAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewInfrastructureAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewInfrastructureAttribute::getValidValues())), __LINE__);
         }
         $this->InfrastructureAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewInfrastructureAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewInfrastructureAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType
      */
     public static function __set_state(array $array)
     {

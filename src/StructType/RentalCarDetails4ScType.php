@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,24 +24,24 @@ class RentalCarDetails4ScType extends AbstractStructBase
      * The ProviderInfoMessages
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ProviderInfoMessagesType
+     * @var \traveltainment\SOAP17\StructType\ProviderInfoMessagesType
      */
     public $ProviderInfoMessages;
     /**
      * The Pickup
-     * @var \StructType\CarRentalEventInfoType
+     * @var \traveltainment\SOAP17\StructType\CarRentalEventInfoType
      */
     public $Pickup;
     /**
      * The Return
-     * @var \StructType\CarRentalEventInfoType
+     * @var \traveltainment\SOAP17\StructType\CarRentalEventInfoType
      */
     public $Return;
     /**
      * The ReplacementDriver
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CarRentalDriverType
+     * @var \traveltainment\SOAP17\StructType\CarRentalDriverType
      */
     public $ReplacementDriver;
     /**
@@ -54,12 +54,12 @@ class RentalCarDetails4ScType extends AbstractStructBase
      * @uses RentalCarDetails4ScType::setReplacementDriver()
      * @param string $productName
      * @param string $vehicleClass
-     * @param \StructType\ProviderInfoMessagesType $providerInfoMessages
-     * @param \StructType\CarRentalEventInfoType $pickup
-     * @param \StructType\CarRentalEventInfoType $return
-     * @param \StructType\CarRentalDriverType $replacementDriver
+     * @param \traveltainment\SOAP17\StructType\ProviderInfoMessagesType $providerInfoMessages
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventInfoType $pickup
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventInfoType $return
+     * @param \traveltainment\SOAP17\StructType\CarRentalDriverType $replacementDriver
      */
-    public function __construct($productName = null, $vehicleClass = null, \StructType\ProviderInfoMessagesType $providerInfoMessages = null, \StructType\CarRentalEventInfoType $pickup = null, \StructType\CarRentalEventInfoType $return = null, \StructType\CarRentalDriverType $replacementDriver = null)
+    public function __construct($productName = null, $vehicleClass = null, \traveltainment\SOAP17\StructType\ProviderInfoMessagesType $providerInfoMessages = null, \traveltainment\SOAP17\StructType\CarRentalEventInfoType $pickup = null, \traveltainment\SOAP17\StructType\CarRentalEventInfoType $return = null, \traveltainment\SOAP17\StructType\CarRentalDriverType $replacementDriver = null)
     {
         $this
             ->setProductName($productName)
@@ -80,7 +80,7 @@ class RentalCarDetails4ScType extends AbstractStructBase
     /**
      * Set ProductName value
      * @param string $productName
-     * @return \StructType\RentalCarDetails4ScType
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
     public function setProductName($productName = null)
     {
@@ -101,24 +101,24 @@ class RentalCarDetails4ScType extends AbstractStructBase
     }
     /**
      * Set VehicleClass value
-     * @uses \EnumType\VehicleClassEnum::valueIsValid()
-     * @uses \EnumType\VehicleClassEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\VehicleClassEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\VehicleClassEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $vehicleClass
-     * @return \StructType\RentalCarDetails4ScType
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
     public function setVehicleClass($vehicleClass = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\VehicleClassEnum::valueIsValid($vehicleClass)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $vehicleClass, implode(', ', \EnumType\VehicleClassEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\VehicleClassEnum::valueIsValid($vehicleClass)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $vehicleClass, implode(', ', \traveltainment\SOAP17\EnumType\VehicleClassEnum::getValidValues())), __LINE__);
         }
         $this->VehicleClass = $vehicleClass;
         return $this;
     }
     /**
      * Get ProviderInfoMessages value
-     * @return \StructType\ProviderInfoMessagesType|null
+     * @return \traveltainment\SOAP17\StructType\ProviderInfoMessagesType|null
      */
     public function getProviderInfoMessages()
     {
@@ -126,17 +126,17 @@ class RentalCarDetails4ScType extends AbstractStructBase
     }
     /**
      * Set ProviderInfoMessages value
-     * @param \StructType\ProviderInfoMessagesType $providerInfoMessages
-     * @return \StructType\RentalCarDetails4ScType
+     * @param \traveltainment\SOAP17\StructType\ProviderInfoMessagesType $providerInfoMessages
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
-    public function setProviderInfoMessages(\StructType\ProviderInfoMessagesType $providerInfoMessages = null)
+    public function setProviderInfoMessages(\traveltainment\SOAP17\StructType\ProviderInfoMessagesType $providerInfoMessages = null)
     {
         $this->ProviderInfoMessages = $providerInfoMessages;
         return $this;
     }
     /**
      * Get Pickup value
-     * @return \StructType\CarRentalEventInfoType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventInfoType|null
      */
     public function getPickup()
     {
@@ -144,17 +144,17 @@ class RentalCarDetails4ScType extends AbstractStructBase
     }
     /**
      * Set Pickup value
-     * @param \StructType\CarRentalEventInfoType $pickup
-     * @return \StructType\RentalCarDetails4ScType
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventInfoType $pickup
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
-    public function setPickup(\StructType\CarRentalEventInfoType $pickup = null)
+    public function setPickup(\traveltainment\SOAP17\StructType\CarRentalEventInfoType $pickup = null)
     {
         $this->Pickup = $pickup;
         return $this;
     }
     /**
      * Get Return value
-     * @return \StructType\CarRentalEventInfoType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventInfoType|null
      */
     public function getReturn()
     {
@@ -162,17 +162,17 @@ class RentalCarDetails4ScType extends AbstractStructBase
     }
     /**
      * Set Return value
-     * @param \StructType\CarRentalEventInfoType $return
-     * @return \StructType\RentalCarDetails4ScType
+     * @param \traveltainment\SOAP17\StructType\CarRentalEventInfoType $return
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
-    public function setReturn(\StructType\CarRentalEventInfoType $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\CarRentalEventInfoType $return = null)
     {
         $this->Return = $return;
         return $this;
     }
     /**
      * Get ReplacementDriver value
-     * @return \StructType\CarRentalDriverType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalDriverType|null
      */
     public function getReplacementDriver()
     {
@@ -180,10 +180,10 @@ class RentalCarDetails4ScType extends AbstractStructBase
     }
     /**
      * Set ReplacementDriver value
-     * @param \StructType\CarRentalDriverType $replacementDriver
-     * @return \StructType\RentalCarDetails4ScType
+     * @param \traveltainment\SOAP17\StructType\CarRentalDriverType $replacementDriver
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
-    public function setReplacementDriver(\StructType\CarRentalDriverType $replacementDriver = null)
+    public function setReplacementDriver(\traveltainment\SOAP17\StructType\CarRentalDriverType $replacementDriver = null)
     {
         $this->ReplacementDriver = $replacementDriver;
         return $this;
@@ -194,7 +194,7 @@ class RentalCarDetails4ScType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RentalCarDetails4ScType
+     * @return \traveltainment\SOAP17\StructType\RentalCarDetails4ScType
      */
     public static function __set_state(array $array)
     {

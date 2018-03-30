@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class HolidayHomeOffersType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOfferType[]
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferType[]
      */
     public $Offer;
     /**
@@ -30,7 +30,7 @@ class HolidayHomeOffersType extends AbstractStructBase
      * @uses HolidayHomeOffersType::setOfferCount()
      * @uses HolidayHomeOffersType::setOffer()
      * @param int $offerCount
-     * @param \StructType\HolidayHomeOfferType[] $offer
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferType[] $offer
      */
     public function __construct($offerCount = null, array $offer = array())
     {
@@ -49,7 +49,7 @@ class HolidayHomeOffersType extends AbstractStructBase
     /**
      * Set OfferCount value
      * @param int $offerCount
-     * @return \StructType\HolidayHomeOffersType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersType
      */
     public function setOfferCount($offerCount = null)
     {
@@ -62,7 +62,7 @@ class HolidayHomeOffersType extends AbstractStructBase
     }
     /**
      * Get Offer value
-     * @return \StructType\HolidayHomeOfferType[]|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferType[]|null
      */
     public function getOffer()
     {
@@ -71,15 +71,15 @@ class HolidayHomeOffersType extends AbstractStructBase
     /**
      * Set Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeOfferType[] $offer
-     * @return \StructType\HolidayHomeOffersType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferType[] $offer
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersType
      */
     public function setOffer(array $offer = array())
     {
         foreach ($offer as $holidayHomeOffersTypeOfferItem) {
             // validation for constraint: itemType
-            if (!$holidayHomeOffersTypeOfferItem instanceof \StructType\HolidayHomeOfferType) {
-                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\HolidayHomeOfferType, "%s" given', is_object($holidayHomeOffersTypeOfferItem) ? get_class($holidayHomeOffersTypeOfferItem) : gettype($holidayHomeOffersTypeOfferItem)), __LINE__);
+            if (!$holidayHomeOffersTypeOfferItem instanceof \traveltainment\SOAP17\StructType\HolidayHomeOfferType) {
+                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeOfferType, "%s" given', is_object($holidayHomeOffersTypeOfferItem) ? get_class($holidayHomeOffersTypeOfferItem) : gettype($holidayHomeOffersTypeOfferItem)), __LINE__);
             }
         }
         $this->Offer = $offer;
@@ -88,14 +88,14 @@ class HolidayHomeOffersType extends AbstractStructBase
     /**
      * Add item to Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeOfferType $item
-     * @return \StructType\HolidayHomeOffersType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferType $item
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersType
      */
-    public function addToOffer(\StructType\HolidayHomeOfferType $item)
+    public function addToOffer(\traveltainment\SOAP17\StructType\HolidayHomeOfferType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HolidayHomeOfferType) {
-            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\HolidayHomeOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\HolidayHomeOfferType) {
+            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Offer[] = $item;
         return $this;
@@ -106,7 +106,7 @@ class HolidayHomeOffersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOffersType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersType
      */
     public static function __set_state(array $array)
     {

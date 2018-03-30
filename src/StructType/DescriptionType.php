@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,21 +19,21 @@ class DescriptionType extends AbstractStructBase
      * The AdditionalInfo
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AdditionalInfoType
+     * @var \traveltainment\SOAP17\StructType\AdditionalInfoType
      */
     public $AdditionalInfo;
     /**
      * The Images
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ImagesType
+     * @var \traveltainment\SOAP17\StructType\ImagesType
      */
     public $Images;
     /**
      * The Text
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TextType
+     * @var \traveltainment\SOAP17\StructType\TextType
      */
     public $Text;
     /**
@@ -43,11 +43,11 @@ class DescriptionType extends AbstractStructBase
      * @uses DescriptionType::setImages()
      * @uses DescriptionType::setText()
      * @param string $name
-     * @param \StructType\AdditionalInfoType $additionalInfo
-     * @param \StructType\ImagesType $images
-     * @param \StructType\TextType $text
+     * @param \traveltainment\SOAP17\StructType\AdditionalInfoType $additionalInfo
+     * @param \traveltainment\SOAP17\StructType\ImagesType $images
+     * @param \traveltainment\SOAP17\StructType\TextType $text
      */
-    public function __construct($name = null, \StructType\AdditionalInfoType $additionalInfo = null, \StructType\ImagesType $images = null, \StructType\TextType $text = null)
+    public function __construct($name = null, \traveltainment\SOAP17\StructType\AdditionalInfoType $additionalInfo = null, \traveltainment\SOAP17\StructType\ImagesType $images = null, \traveltainment\SOAP17\StructType\TextType $text = null)
     {
         $this
             ->setName($name)
@@ -66,7 +66,7 @@ class DescriptionType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\DescriptionType
+     * @return \traveltainment\SOAP17\StructType\DescriptionType
      */
     public function setName($name = null)
     {
@@ -79,7 +79,7 @@ class DescriptionType extends AbstractStructBase
     }
     /**
      * Get AdditionalInfo value
-     * @return \StructType\AdditionalInfoType|null
+     * @return \traveltainment\SOAP17\StructType\AdditionalInfoType|null
      */
     public function getAdditionalInfo()
     {
@@ -87,17 +87,17 @@ class DescriptionType extends AbstractStructBase
     }
     /**
      * Set AdditionalInfo value
-     * @param \StructType\AdditionalInfoType $additionalInfo
-     * @return \StructType\DescriptionType
+     * @param \traveltainment\SOAP17\StructType\AdditionalInfoType $additionalInfo
+     * @return \traveltainment\SOAP17\StructType\DescriptionType
      */
-    public function setAdditionalInfo(\StructType\AdditionalInfoType $additionalInfo = null)
+    public function setAdditionalInfo(\traveltainment\SOAP17\StructType\AdditionalInfoType $additionalInfo = null)
     {
         $this->AdditionalInfo = $additionalInfo;
         return $this;
     }
     /**
      * Get Images value
-     * @return \StructType\ImagesType|null
+     * @return \traveltainment\SOAP17\StructType\ImagesType|null
      */
     public function getImages()
     {
@@ -105,17 +105,17 @@ class DescriptionType extends AbstractStructBase
     }
     /**
      * Set Images value
-     * @param \StructType\ImagesType $images
-     * @return \StructType\DescriptionType
+     * @param \traveltainment\SOAP17\StructType\ImagesType $images
+     * @return \traveltainment\SOAP17\StructType\DescriptionType
      */
-    public function setImages(\StructType\ImagesType $images = null)
+    public function setImages(\traveltainment\SOAP17\StructType\ImagesType $images = null)
     {
         $this->Images = $images;
         return $this;
     }
     /**
      * Get Text value
-     * @return \StructType\TextType|null
+     * @return \traveltainment\SOAP17\StructType\TextType|null
      */
     public function getText()
     {
@@ -123,10 +123,10 @@ class DescriptionType extends AbstractStructBase
     }
     /**
      * Set Text value
-     * @param \StructType\TextType $text
-     * @return \StructType\DescriptionType
+     * @param \traveltainment\SOAP17\StructType\TextType $text
+     * @return \traveltainment\SOAP17\StructType\DescriptionType
      */
-    public function setText(\StructType\TextType $text = null)
+    public function setText(\traveltainment\SOAP17\StructType\TextType $text = null)
     {
         $this->Text = $text;
         return $this;
@@ -137,7 +137,7 @@ class DescriptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DescriptionType
+     * @return \traveltainment\SOAP17\StructType\DescriptionType
      */
     public static function __set_state(array $array)
     {

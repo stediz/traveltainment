@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_HotelListResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineHotelListRS
+     * @var \traveltainment\SOAP17\StructType\SearchEngineHotelListRS
      */
     public $return;
     /**
      * Constructor method for Search_Package_HotelListResponse
      * @uses Search_Package_HotelListResponse::setReturn()
-     * @param \StructType\SearchEngineHotelListRS $return
+     * @param \traveltainment\SOAP17\StructType\SearchEngineHotelListRS $return
      */
-    public function __construct(\StructType\SearchEngineHotelListRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineHotelListRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\SearchEngineHotelListRS|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineHotelListRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_Package_HotelListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\SearchEngineHotelListRS $return
-     * @return \StructType\Search_Package_HotelListResponse
+     * @param \traveltainment\SOAP17\StructType\SearchEngineHotelListRS $return
+     * @return \traveltainment\SOAP17\StructType\Search_Package_HotelListResponse
      */
-    public function setReturn(\StructType\SearchEngineHotelListRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\SearchEngineHotelListRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_HotelListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_HotelListResponse
+     * @return \traveltainment\SOAP17\StructType\Search_Package_HotelListResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class DateTimeType extends AbstractStructBase
     /**
      * Set Date value
      * @param string $date
-     * @return \StructType\DateTimeType
+     * @return \traveltainment\SOAP17\StructType\DateTimeType
      */
     public function setDate($date = null)
     {
@@ -68,7 +68,7 @@ class DateTimeType extends AbstractStructBase
     /**
      * Set Time value
      * @param string $time
-     * @return \StructType\DateTimeType
+     * @return \traveltainment\SOAP17\StructType\DateTimeType
      */
     public function setTime($time = null)
     {
@@ -85,7 +85,7 @@ class DateTimeType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DateTimeType
+     * @return \traveltainment\SOAP17\StructType\DateTimeType
      */
     public static function __set_state(array $array)
     {

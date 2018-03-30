@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class InsuranceFeatureType extends AbstractStructBase
     /**
      * Set FeatureID value
      * @param int $featureID
-     * @return \StructType\InsuranceFeatureType
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeatureType
      */
     public function setFeatureID($featureID = null)
     {
@@ -78,7 +78,7 @@ class InsuranceFeatureType extends AbstractStructBase
     /**
      * Set FeatureName value
      * @param string $featureName
-     * @return \StructType\InsuranceFeatureType
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeatureType
      */
     public function setFeatureName($featureName = null)
     {
@@ -100,7 +100,7 @@ class InsuranceFeatureType extends AbstractStructBase
     /**
      * Set FeatueURL value
      * @param string $featueURL
-     * @return \StructType\InsuranceFeatureType
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeatureType
      */
     public function setFeatueURL($featueURL = null)
     {
@@ -117,7 +117,7 @@ class InsuranceFeatureType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InsuranceFeatureType
+     * @return \traveltainment\SOAP17\StructType\InsuranceFeatureType
      */
     public static function __set_state(array $array)
     {

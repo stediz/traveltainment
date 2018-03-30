@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class TransferOffersType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\TransferOfferType[]
+     * @var \traveltainment\SOAP17\StructType\TransferOfferType[]
      */
     public $Offer;
     /**
      * Constructor method for TransferOffersType
      * @uses TransferOffersType::setOffer()
-     * @param \StructType\TransferOfferType[] $offer
+     * @param \traveltainment\SOAP17\StructType\TransferOfferType[] $offer
      */
     public function __construct(array $offer = array())
     {
@@ -30,7 +30,7 @@ class TransferOffersType extends AbstractStructBase
     }
     /**
      * Get Offer value
-     * @return \StructType\TransferOfferType[]|null
+     * @return \traveltainment\SOAP17\StructType\TransferOfferType[]|null
      */
     public function getOffer()
     {
@@ -39,15 +39,15 @@ class TransferOffersType extends AbstractStructBase
     /**
      * Set Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\TransferOfferType[] $offer
-     * @return \StructType\TransferOffersType
+     * @param \traveltainment\SOAP17\StructType\TransferOfferType[] $offer
+     * @return \traveltainment\SOAP17\StructType\TransferOffersType
      */
     public function setOffer(array $offer = array())
     {
         foreach ($offer as $transferOffersTypeOfferItem) {
             // validation for constraint: itemType
-            if (!$transferOffersTypeOfferItem instanceof \StructType\TransferOfferType) {
-                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\TransferOfferType, "%s" given', is_object($transferOffersTypeOfferItem) ? get_class($transferOffersTypeOfferItem) : gettype($transferOffersTypeOfferItem)), __LINE__);
+            if (!$transferOffersTypeOfferItem instanceof \traveltainment\SOAP17\StructType\TransferOfferType) {
+                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\TransferOfferType, "%s" given', is_object($transferOffersTypeOfferItem) ? get_class($transferOffersTypeOfferItem) : gettype($transferOffersTypeOfferItem)), __LINE__);
             }
         }
         $this->Offer = $offer;
@@ -56,14 +56,14 @@ class TransferOffersType extends AbstractStructBase
     /**
      * Add item to Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\TransferOfferType $item
-     * @return \StructType\TransferOffersType
+     * @param \traveltainment\SOAP17\StructType\TransferOfferType $item
+     * @return \traveltainment\SOAP17\StructType\TransferOffersType
      */
-    public function addToOffer(\StructType\TransferOfferType $item)
+    public function addToOffer(\traveltainment\SOAP17\StructType\TransferOfferType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\TransferOfferType) {
-            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\TransferOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\TransferOfferType) {
+            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\TransferOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Offer[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class TransferOffersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferOffersType
+     * @return \traveltainment\SOAP17\StructType\TransferOffersType
      */
     public static function __set_state(array $array)
     {

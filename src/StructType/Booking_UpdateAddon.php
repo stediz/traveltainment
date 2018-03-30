@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_UpdateAddon extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddonUpdateRQ
+     * @var \traveltainment\SOAP17\StructType\AddonUpdateRQ
      */
     public $request;
     /**
      * Constructor method for Booking_UpdateAddon
      * @uses Booking_UpdateAddon::setRequest()
-     * @param \StructType\AddonUpdateRQ $request
+     * @param \traveltainment\SOAP17\StructType\AddonUpdateRQ $request
      */
-    public function __construct(\StructType\AddonUpdateRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonUpdateRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\AddonUpdateRQ|null
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Booking_UpdateAddon extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\AddonUpdateRQ $request
-     * @return \StructType\Booking_UpdateAddon
+     * @param \traveltainment\SOAP17\StructType\AddonUpdateRQ $request
+     * @return \traveltainment\SOAP17\StructType\Booking_UpdateAddon
      */
-    public function setRequest(\StructType\AddonUpdateRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\AddonUpdateRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Booking_UpdateAddon extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_UpdateAddon
+     * @return \traveltainment\SOAP17\StructType\Booking_UpdateAddon
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,14 +19,14 @@ class OfferGridElementType extends AbstractStructBase
     public $value;
     /**
      * The Group
-     * @var \StructType\OfferGridGroupType
+     * @var \traveltainment\SOAP17\StructType\OfferGridGroupType
      */
     public $Group;
     /**
      * The Offer
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ReducedOfferType
+     * @var \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public $Offer;
     /**
@@ -35,10 +35,10 @@ class OfferGridElementType extends AbstractStructBase
      * @uses OfferGridElementType::setGroup()
      * @uses OfferGridElementType::setOffer()
      * @param string $value
-     * @param \StructType\OfferGridGroupType $group
-     * @param \StructType\ReducedOfferType $offer
+     * @param \traveltainment\SOAP17\StructType\OfferGridGroupType $group
+     * @param \traveltainment\SOAP17\StructType\ReducedOfferType $offer
      */
-    public function __construct($value = null, \StructType\OfferGridGroupType $group = null, \StructType\ReducedOfferType $offer = null)
+    public function __construct($value = null, \traveltainment\SOAP17\StructType\OfferGridGroupType $group = null, \traveltainment\SOAP17\StructType\ReducedOfferType $offer = null)
     {
         $this
             ->setValue($value)
@@ -56,7 +56,7 @@ class OfferGridElementType extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\OfferGridElementType
+     * @return \traveltainment\SOAP17\StructType\OfferGridElementType
      */
     public function setValue($value = null)
     {
@@ -69,7 +69,7 @@ class OfferGridElementType extends AbstractStructBase
     }
     /**
      * Get Group value
-     * @return \StructType\OfferGridGroupType|null
+     * @return \traveltainment\SOAP17\StructType\OfferGridGroupType|null
      */
     public function getGroup()
     {
@@ -77,17 +77,17 @@ class OfferGridElementType extends AbstractStructBase
     }
     /**
      * Set Group value
-     * @param \StructType\OfferGridGroupType $group
-     * @return \StructType\OfferGridElementType
+     * @param \traveltainment\SOAP17\StructType\OfferGridGroupType $group
+     * @return \traveltainment\SOAP17\StructType\OfferGridElementType
      */
-    public function setGroup(\StructType\OfferGridGroupType $group = null)
+    public function setGroup(\traveltainment\SOAP17\StructType\OfferGridGroupType $group = null)
     {
         $this->Group = $group;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\ReducedOfferType|null
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType|null
      */
     public function getOffer()
     {
@@ -95,10 +95,10 @@ class OfferGridElementType extends AbstractStructBase
     }
     /**
      * Set Offer value
-     * @param \StructType\ReducedOfferType $offer
-     * @return \StructType\OfferGridElementType
+     * @param \traveltainment\SOAP17\StructType\ReducedOfferType $offer
+     * @return \traveltainment\SOAP17\StructType\OfferGridElementType
      */
-    public function setOffer(\StructType\ReducedOfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\ReducedOfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
@@ -109,7 +109,7 @@ class OfferGridElementType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferGridElementType
+     * @return \traveltainment\SOAP17\StructType\OfferGridElementType
      */
     public static function __set_state(array $array)
     {

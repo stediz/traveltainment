@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class StartEndType extends AbstractStructBase
 {
     /**
      * The Start
-     * @var \StructType\DateTimeType
+     * @var \traveltainment\SOAP17\StructType\DateTimeType
      */
     public $Start;
     /**
      * The End
-     * @var \StructType\DateTimeType
+     * @var \traveltainment\SOAP17\StructType\DateTimeType
      */
     public $End;
     /**
      * Constructor method for StartEndType
      * @uses StartEndType::setStart()
      * @uses StartEndType::setEnd()
-     * @param \StructType\DateTimeType $start
-     * @param \StructType\DateTimeType $end
+     * @param \traveltainment\SOAP17\StructType\DateTimeType $start
+     * @param \traveltainment\SOAP17\StructType\DateTimeType $end
      */
-    public function __construct(\StructType\DateTimeType $start = null, \StructType\DateTimeType $end = null)
+    public function __construct(\traveltainment\SOAP17\StructType\DateTimeType $start = null, \traveltainment\SOAP17\StructType\DateTimeType $end = null)
     {
         $this
             ->setStart($start)
@@ -35,7 +35,7 @@ class StartEndType extends AbstractStructBase
     }
     /**
      * Get Start value
-     * @return \StructType\DateTimeType|null
+     * @return \traveltainment\SOAP17\StructType\DateTimeType|null
      */
     public function getStart()
     {
@@ -43,17 +43,17 @@ class StartEndType extends AbstractStructBase
     }
     /**
      * Set Start value
-     * @param \StructType\DateTimeType $start
-     * @return \StructType\StartEndType
+     * @param \traveltainment\SOAP17\StructType\DateTimeType $start
+     * @return \traveltainment\SOAP17\StructType\StartEndType
      */
-    public function setStart(\StructType\DateTimeType $start = null)
+    public function setStart(\traveltainment\SOAP17\StructType\DateTimeType $start = null)
     {
         $this->Start = $start;
         return $this;
     }
     /**
      * Get End value
-     * @return \StructType\DateTimeType|null
+     * @return \traveltainment\SOAP17\StructType\DateTimeType|null
      */
     public function getEnd()
     {
@@ -61,10 +61,10 @@ class StartEndType extends AbstractStructBase
     }
     /**
      * Set End value
-     * @param \StructType\DateTimeType $end
-     * @return \StructType\StartEndType
+     * @param \traveltainment\SOAP17\StructType\DateTimeType $end
+     * @return \traveltainment\SOAP17\StructType\StartEndType
      */
-    public function setEnd(\StructType\DateTimeType $end = null)
+    public function setEnd(\traveltainment\SOAP17\StructType\DateTimeType $end = null)
     {
         $this->End = $end;
         return $this;
@@ -75,7 +75,7 @@ class StartEndType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\StartEndType
+     * @return \traveltainment\SOAP17\StructType\StartEndType
      */
     public static function __set_state(array $array)
     {

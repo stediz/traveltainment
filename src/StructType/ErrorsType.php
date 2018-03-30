@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class ErrorsType extends AbstractStructBase
      * The Error
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\ErrorType[]
+     * @var \traveltainment\SOAP17\StructType\ErrorType[]
      */
     public $Error;
     /**
      * Constructor method for ErrorsType
      * @uses ErrorsType::setError()
-     * @param \StructType\ErrorType[] $error
+     * @param \traveltainment\SOAP17\StructType\ErrorType[] $error
      */
     public function __construct(array $error = array())
     {
@@ -29,7 +29,7 @@ class ErrorsType extends AbstractStructBase
     }
     /**
      * Get Error value
-     * @return \StructType\ErrorType[]|null
+     * @return \traveltainment\SOAP17\StructType\ErrorType[]|null
      */
     public function getError()
     {
@@ -38,15 +38,15 @@ class ErrorsType extends AbstractStructBase
     /**
      * Set Error value
      * @throws \InvalidArgumentException
-     * @param \StructType\ErrorType[] $error
-     * @return \StructType\ErrorsType
+     * @param \traveltainment\SOAP17\StructType\ErrorType[] $error
+     * @return \traveltainment\SOAP17\StructType\ErrorsType
      */
     public function setError(array $error = array())
     {
         foreach ($error as $errorsTypeErrorItem) {
             // validation for constraint: itemType
-            if (!$errorsTypeErrorItem instanceof \StructType\ErrorType) {
-                throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \StructType\ErrorType, "%s" given', is_object($errorsTypeErrorItem) ? get_class($errorsTypeErrorItem) : gettype($errorsTypeErrorItem)), __LINE__);
+            if (!$errorsTypeErrorItem instanceof \traveltainment\SOAP17\StructType\ErrorType) {
+                throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \traveltainment\SOAP17\StructType\ErrorType, "%s" given', is_object($errorsTypeErrorItem) ? get_class($errorsTypeErrorItem) : gettype($errorsTypeErrorItem)), __LINE__);
             }
         }
         $this->Error = $error;
@@ -55,14 +55,14 @@ class ErrorsType extends AbstractStructBase
     /**
      * Add item to Error value
      * @throws \InvalidArgumentException
-     * @param \StructType\ErrorType $item
-     * @return \StructType\ErrorsType
+     * @param \traveltainment\SOAP17\StructType\ErrorType $item
+     * @return \traveltainment\SOAP17\StructType\ErrorsType
      */
-    public function addToError(\StructType\ErrorType $item)
+    public function addToError(\traveltainment\SOAP17\StructType\ErrorType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ErrorType) {
-            throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \StructType\ErrorType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ErrorType) {
+            throw new \InvalidArgumentException(sprintf('The Error property can only contain items of \traveltainment\SOAP17\StructType\ErrorType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Error[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class ErrorsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ErrorsType
+     * @return \traveltainment\SOAP17\StructType\ErrorsType
      */
     public static function __set_state(array $array)
     {

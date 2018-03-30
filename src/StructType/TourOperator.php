@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class TourOperator extends AbstractStructBase
     /**
      * Set UseNormalSearchAsFallback value
      * @param bool $useNormalSearchAsFallback
-     * @return \StructType\TourOperator
+     * @return \traveltainment\SOAP17\StructType\TourOperator
      */
     public function setUseNormalSearchAsFallback($useNormalSearchAsFallback = null)
     {
@@ -78,7 +78,7 @@ class TourOperator extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\TourOperator
+     * @return \traveltainment\SOAP17\StructType\TourOperator
      */
     public function set_($_ = null)
     {
@@ -101,7 +101,7 @@ class TourOperator extends AbstractStructBase
      * Set TourOperator value
      * @throws \InvalidArgumentException
      * @param string[] $tourOperator
-     * @return \StructType\TourOperator
+     * @return \traveltainment\SOAP17\StructType\TourOperator
      */
     public function setTourOperator(array $tourOperator = array())
     {
@@ -118,7 +118,7 @@ class TourOperator extends AbstractStructBase
      * Add item to TourOperator value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\TourOperator
+     * @return \traveltainment\SOAP17\StructType\TourOperator
      */
     public function addToTourOperator($item)
     {
@@ -135,7 +135,7 @@ class TourOperator extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TourOperator
+     * @return \traveltainment\SOAP17\StructType\TourOperator
      */
     public static function __set_state(array $array)
     {

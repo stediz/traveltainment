@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class GetCarRentalOfferConditionsRQType extends RequestType
     public $OfferID;
     /**
      * The Pickup
-     * @var \StructType\CarRentalPickupInfoType
+     * @var \traveltainment\SOAP17\StructType\CarRentalPickupInfoType
      */
     public $Pickup;
     /**
@@ -32,9 +32,9 @@ class GetCarRentalOfferConditionsRQType extends RequestType
      * @uses GetCarRentalOfferConditionsRQType::setPickup()
      * @param string $providerID
      * @param string $offerID
-     * @param \StructType\CarRentalPickupInfoType $pickup
+     * @param \traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup
      */
-    public function __construct($providerID = null, $offerID = null, \StructType\CarRentalPickupInfoType $pickup = null)
+    public function __construct($providerID = null, $offerID = null, \traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup = null)
     {
         $this
             ->setProviderID($providerID)
@@ -52,7 +52,7 @@ class GetCarRentalOfferConditionsRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetCarRentalOfferConditionsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -74,7 +74,7 @@ class GetCarRentalOfferConditionsRQType extends RequestType
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\GetCarRentalOfferConditionsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRQType
      */
     public function setOfferID($offerID = null)
     {
@@ -87,7 +87,7 @@ class GetCarRentalOfferConditionsRQType extends RequestType
     }
     /**
      * Get Pickup value
-     * @return \StructType\CarRentalPickupInfoType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalPickupInfoType|null
      */
     public function getPickup()
     {
@@ -95,10 +95,10 @@ class GetCarRentalOfferConditionsRQType extends RequestType
     }
     /**
      * Set Pickup value
-     * @param \StructType\CarRentalPickupInfoType $pickup
-     * @return \StructType\GetCarRentalOfferConditionsRQType
+     * @param \traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRQType
      */
-    public function setPickup(\StructType\CarRentalPickupInfoType $pickup = null)
+    public function setPickup(\traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup = null)
     {
         $this->Pickup = $pickup;
         return $this;
@@ -109,7 +109,7 @@ class GetCarRentalOfferConditionsRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetCarRentalOfferConditionsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRQType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -78,7 +78,7 @@ class Category extends AbstractStructBase
     /**
      * Set _ value
      * @param int $_
-     * @return \StructType\Category
+     * @return \traveltainment\SOAP17\StructType\Category
      */
     public function set_($_ = null)
     {
@@ -108,7 +108,7 @@ class Category extends AbstractStructBase
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\Category
+     * @return \traveltainment\SOAP17\StructType\Category
      */
     public function setWeightage($weightage = '0')
     {
@@ -138,7 +138,7 @@ class Category extends AbstractStructBase
     /**
      * Set Stars value
      * @param float $stars
-     * @return \StructType\Category
+     * @return \traveltainment\SOAP17\StructType\Category
      */
     public function setStars($stars = null)
     {
@@ -156,7 +156,7 @@ class Category extends AbstractStructBase
     /**
      * Set MinStars value
      * @param float $minStars
-     * @return \StructType\Category
+     * @return \traveltainment\SOAP17\StructType\Category
      */
     public function setMinStars($minStars = null)
     {
@@ -174,7 +174,7 @@ class Category extends AbstractStructBase
     /**
      * Set MaxStars value
      * @param float $maxStars
-     * @return \StructType\Category
+     * @return \traveltainment\SOAP17\StructType\Category
      */
     public function setMaxStars($maxStars = null)
     {
@@ -187,7 +187,7 @@ class Category extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Category
+     * @return \traveltainment\SOAP17\StructType\Category
      */
     public static function __set_state(array $array)
     {

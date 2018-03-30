@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class RoomListType extends AbstractStructBase
      * The RoomAdditions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RoomAdditionListType
+     * @var \traveltainment\SOAP17\StructType\RoomAdditionListType
      */
     public $RoomAdditions;
     /**
@@ -40,10 +40,10 @@ class RoomListType extends AbstractStructBase
      * @uses RoomListType::setRoomAdditions()
      * @uses RoomListType::setWeightage()
      * @param string[] $room
-     * @param \StructType\RoomAdditionListType $roomAdditions
+     * @param \traveltainment\SOAP17\StructType\RoomAdditionListType $roomAdditions
      * @param int $weightage
      */
-    public function __construct(array $room = array(), \StructType\RoomAdditionListType $roomAdditions = null, $weightage = '0')
+    public function __construct(array $room = array(), \traveltainment\SOAP17\StructType\RoomAdditionListType $roomAdditions = null, $weightage = '0')
     {
         $this
             ->setRoom($room)
@@ -60,46 +60,46 @@ class RoomListType extends AbstractStructBase
     }
     /**
      * Set Room value
-     * @uses \EnumType\Room::valueIsValid()
-     * @uses \EnumType\Room::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Room::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Room::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $room
-     * @return \StructType\RoomListType
+     * @return \traveltainment\SOAP17\StructType\RoomListType
      */
     public function setRoom(array $room = array())
     {
         $invalidValues = array();
         foreach ($room as $roomListTypeRoomItem) {
-            if (!\EnumType\Room::valueIsValid($roomListTypeRoomItem)) {
+            if (!\traveltainment\SOAP17\EnumType\Room::valueIsValid($roomListTypeRoomItem)) {
                 $invalidValues[] = var_export($roomListTypeRoomItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\Room::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\Room::getValidValues())), __LINE__);
         }
         $this->Room = $room;
         return $this;
     }
     /**
      * Add item to Room value
-     * @uses \EnumType\Room::valueIsValid()
-     * @uses \EnumType\Room::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Room::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Room::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\RoomListType
+     * @return \traveltainment\SOAP17\StructType\RoomListType
      */
     public function addToRoom($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Room::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\Room::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Room::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\Room::getValidValues())), __LINE__);
         }
         $this->Room[] = $item;
         return $this;
     }
     /**
      * Get RoomAdditions value
-     * @return \StructType\RoomAdditionListType|null
+     * @return \traveltainment\SOAP17\StructType\RoomAdditionListType|null
      */
     public function getRoomAdditions()
     {
@@ -107,10 +107,10 @@ class RoomListType extends AbstractStructBase
     }
     /**
      * Set RoomAdditions value
-     * @param \StructType\RoomAdditionListType $roomAdditions
-     * @return \StructType\RoomListType
+     * @param \traveltainment\SOAP17\StructType\RoomAdditionListType $roomAdditions
+     * @return \traveltainment\SOAP17\StructType\RoomListType
      */
-    public function setRoomAdditions(\StructType\RoomAdditionListType $roomAdditions = null)
+    public function setRoomAdditions(\traveltainment\SOAP17\StructType\RoomAdditionListType $roomAdditions = null)
     {
         $this->RoomAdditions = $roomAdditions;
         return $this;
@@ -126,7 +126,7 @@ class RoomListType extends AbstractStructBase
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\RoomListType
+     * @return \traveltainment\SOAP17\StructType\RoomListType
      */
     public function setWeightage($weightage = '0')
     {
@@ -151,7 +151,7 @@ class RoomListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RoomListType
+     * @return \traveltainment\SOAP17\StructType\RoomListType
      */
     public static function __set_state(array $array)
     {

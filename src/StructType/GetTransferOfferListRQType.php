@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class GetTransferOfferListRQType extends RequestType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\GetTransferOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRQType
      */
     public function setSessionID($sessionID = null)
     {
@@ -80,7 +80,7 @@ class GetTransferOfferListRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetTransferOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -102,7 +102,7 @@ class GetTransferOfferListRQType extends RequestType
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\GetTransferOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRQType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -119,7 +119,7 @@ class GetTransferOfferListRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetTransferOfferListRQType
+     * @return \traveltainment\SOAP17\StructType\GetTransferOfferListRQType
      */
     public static function __set_state(array $array)
     {

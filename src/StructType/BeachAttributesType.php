@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class BeachAttributesType extends AbstractStructBase
     }
     /**
      * Set BeachAttribute value
-     * @uses \EnumType\BeachAttribute::valueIsValid()
-     * @uses \EnumType\BeachAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BeachAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BeachAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $beachAttribute
-     * @return \StructType\BeachAttributesType
+     * @return \traveltainment\SOAP17\StructType\BeachAttributesType
      */
     public function setBeachAttribute(array $beachAttribute = array())
     {
         $invalidValues = array();
         foreach ($beachAttribute as $beachAttributesTypeBeachAttributeItem) {
-            if (!\EnumType\BeachAttribute::valueIsValid($beachAttributesTypeBeachAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\BeachAttribute::valueIsValid($beachAttributesTypeBeachAttributeItem)) {
                 $invalidValues[] = var_export($beachAttributesTypeBeachAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\BeachAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\BeachAttribute::getValidValues())), __LINE__);
         }
         $this->BeachAttribute = $beachAttribute;
         return $this;
     }
     /**
      * Add item to BeachAttribute value
-     * @uses \EnumType\BeachAttribute::valueIsValid()
-     * @uses \EnumType\BeachAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BeachAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BeachAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\BeachAttributesType
+     * @return \traveltainment\SOAP17\StructType\BeachAttributesType
      */
     public function addToBeachAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BeachAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\BeachAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BeachAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\BeachAttribute::getValidValues())), __LINE__);
         }
         $this->BeachAttribute[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class BeachAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BeachAttributesType
+     * @return \traveltainment\SOAP17\StructType\BeachAttributesType
      */
     public static function __set_state(array $array)
     {

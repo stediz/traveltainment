@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,17 +53,17 @@ class BookingStatusType extends AbstractStructBase
     }
     /**
      * Set StatusType value
-     * @uses \EnumType\BookingStatusTypeEnum::valueIsValid()
-     * @uses \EnumType\BookingStatusTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $statusType
-     * @return \StructType\BookingStatusType
+     * @return \traveltainment\SOAP17\StructType\BookingStatusType
      */
     public function setStatusType($statusType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BookingStatusTypeEnum::valueIsValid($statusType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $statusType, implode(', ', \EnumType\BookingStatusTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::valueIsValid($statusType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $statusType, implode(', ', \traveltainment\SOAP17\EnumType\BookingStatusTypeEnum::getValidValues())), __LINE__);
         }
         $this->StatusType = $statusType;
         return $this;
@@ -78,17 +78,17 @@ class BookingStatusType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\BookingTypeEnum::valueIsValid()
-     * @uses \EnumType\BookingTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\BookingStatusType
+     * @return \traveltainment\SOAP17\StructType\BookingStatusType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BookingTypeEnum::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\BookingTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BookingTypeEnum::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \traveltainment\SOAP17\EnumType\BookingTypeEnum::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -103,17 +103,17 @@ class BookingStatusType extends AbstractStructBase
     }
     /**
      * Set NotBookedReasonType value
-     * @uses \EnumType\NotBookedStatusDefinitionType::valueIsValid()
-     * @uses \EnumType\NotBookedStatusDefinitionType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $notBookedReasonType
-     * @return \StructType\BookingStatusType
+     * @return \traveltainment\SOAP17\StructType\BookingStatusType
      */
     public function setNotBookedReasonType($notBookedReasonType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\NotBookedStatusDefinitionType::valueIsValid($notBookedReasonType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $notBookedReasonType, implode(', ', \EnumType\NotBookedStatusDefinitionType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::valueIsValid($notBookedReasonType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $notBookedReasonType, implode(', ', \traveltainment\SOAP17\EnumType\NotBookedStatusDefinitionType::getValidValues())), __LINE__);
         }
         $this->NotBookedReasonType = $notBookedReasonType;
         return $this;
@@ -124,7 +124,7 @@ class BookingStatusType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingStatusType
+     * @return \traveltainment\SOAP17\StructType\BookingStatusType
      */
     public static function __set_state(array $array)
     {

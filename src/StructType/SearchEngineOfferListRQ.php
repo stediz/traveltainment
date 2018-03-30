@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,19 +12,19 @@ class SearchEngineOfferListRQ extends XmlInterfaceRQ
 {
     /**
      * The Search
-     * @var \StructType\OfferListSearchType
+     * @var \traveltainment\SOAP17\StructType\OfferListSearchType
      */
     public $Search;
     /**
      * The Selection
-     * @var \StructType\OfferListSelectionType
+     * @var \traveltainment\SOAP17\StructType\OfferListSelectionType
      */
     public $Selection;
     /**
      * The Filter
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferListFilterType
+     * @var \traveltainment\SOAP17\StructType\OfferListFilterType
      */
     public $Filter;
     /**
@@ -32,11 +32,11 @@ class SearchEngineOfferListRQ extends XmlInterfaceRQ
      * @uses SearchEngineOfferListRQ::setSearch()
      * @uses SearchEngineOfferListRQ::setSelection()
      * @uses SearchEngineOfferListRQ::setFilter()
-     * @param \StructType\OfferListSearchType $search
-     * @param \StructType\OfferListSelectionType $selection
-     * @param \StructType\OfferListFilterType $filter
+     * @param \traveltainment\SOAP17\StructType\OfferListSearchType $search
+     * @param \traveltainment\SOAP17\StructType\OfferListSelectionType $selection
+     * @param \traveltainment\SOAP17\StructType\OfferListFilterType $filter
      */
-    public function __construct(\StructType\OfferListSearchType $search = null, \StructType\OfferListSelectionType $selection = null, \StructType\OfferListFilterType $filter = null)
+    public function __construct(\traveltainment\SOAP17\StructType\OfferListSearchType $search = null, \traveltainment\SOAP17\StructType\OfferListSelectionType $selection = null, \traveltainment\SOAP17\StructType\OfferListFilterType $filter = null)
     {
         $this
             ->setSearch($search)
@@ -45,7 +45,7 @@ class SearchEngineOfferListRQ extends XmlInterfaceRQ
     }
     /**
      * Get Search value
-     * @return \StructType\OfferListSearchType|null
+     * @return \traveltainment\SOAP17\StructType\OfferListSearchType|null
      */
     public function getSearch()
     {
@@ -53,17 +53,17 @@ class SearchEngineOfferListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Search value
-     * @param \StructType\OfferListSearchType $search
-     * @return \StructType\SearchEngineOfferListRQ
+     * @param \traveltainment\SOAP17\StructType\OfferListSearchType $search
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ
      */
-    public function setSearch(\StructType\OfferListSearchType $search = null)
+    public function setSearch(\traveltainment\SOAP17\StructType\OfferListSearchType $search = null)
     {
         $this->Search = $search;
         return $this;
     }
     /**
      * Get Selection value
-     * @return \StructType\OfferListSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\OfferListSelectionType|null
      */
     public function getSelection()
     {
@@ -71,17 +71,17 @@ class SearchEngineOfferListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Selection value
-     * @param \StructType\OfferListSelectionType $selection
-     * @return \StructType\SearchEngineOfferListRQ
+     * @param \traveltainment\SOAP17\StructType\OfferListSelectionType $selection
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ
      */
-    public function setSelection(\StructType\OfferListSelectionType $selection = null)
+    public function setSelection(\traveltainment\SOAP17\StructType\OfferListSelectionType $selection = null)
     {
         $this->Selection = $selection;
         return $this;
     }
     /**
      * Get Filter value
-     * @return \StructType\OfferListFilterType|null
+     * @return \traveltainment\SOAP17\StructType\OfferListFilterType|null
      */
     public function getFilter()
     {
@@ -89,10 +89,10 @@ class SearchEngineOfferListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Filter value
-     * @param \StructType\OfferListFilterType $filter
-     * @return \StructType\SearchEngineOfferListRQ
+     * @param \traveltainment\SOAP17\StructType\OfferListFilterType $filter
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ
      */
-    public function setFilter(\StructType\OfferListFilterType $filter = null)
+    public function setFilter(\traveltainment\SOAP17\StructType\OfferListFilterType $filter = null)
     {
         $this->Filter = $filter;
         return $this;
@@ -103,7 +103,7 @@ class SearchEngineOfferListRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineOfferListRQ
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRQ
      */
     public static function __set_state(array $array)
     {

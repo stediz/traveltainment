@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class ShuttleServiceType extends AbstractStructBase
      * The ShuttleOpeningHours
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OpeningHourDetailsType
+     * @var \traveltainment\SOAP17\StructType\OpeningHourDetailsType
      */
     public $ShuttleOpeningHours;
     /**
@@ -28,10 +28,10 @@ class ShuttleServiceType extends AbstractStructBase
      * Constructor method for ShuttleServiceType
      * @uses ShuttleServiceType::setShuttleOpeningHours()
      * @uses ShuttleServiceType::setShuttleFrequency()
-     * @param \StructType\OpeningHourDetailsType $shuttleOpeningHours
+     * @param \traveltainment\SOAP17\StructType\OpeningHourDetailsType $shuttleOpeningHours
      * @param string $shuttleFrequency
      */
-    public function __construct(\StructType\OpeningHourDetailsType $shuttleOpeningHours = null, $shuttleFrequency = null)
+    public function __construct(\traveltainment\SOAP17\StructType\OpeningHourDetailsType $shuttleOpeningHours = null, $shuttleFrequency = null)
     {
         $this
             ->setShuttleOpeningHours($shuttleOpeningHours)
@@ -39,7 +39,7 @@ class ShuttleServiceType extends AbstractStructBase
     }
     /**
      * Get ShuttleOpeningHours value
-     * @return \StructType\OpeningHourDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\OpeningHourDetailsType|null
      */
     public function getShuttleOpeningHours()
     {
@@ -47,10 +47,10 @@ class ShuttleServiceType extends AbstractStructBase
     }
     /**
      * Set ShuttleOpeningHours value
-     * @param \StructType\OpeningHourDetailsType $shuttleOpeningHours
-     * @return \StructType\ShuttleServiceType
+     * @param \traveltainment\SOAP17\StructType\OpeningHourDetailsType $shuttleOpeningHours
+     * @return \traveltainment\SOAP17\StructType\ShuttleServiceType
      */
-    public function setShuttleOpeningHours(\StructType\OpeningHourDetailsType $shuttleOpeningHours = null)
+    public function setShuttleOpeningHours(\traveltainment\SOAP17\StructType\OpeningHourDetailsType $shuttleOpeningHours = null)
     {
         $this->ShuttleOpeningHours = $shuttleOpeningHours;
         return $this;
@@ -66,7 +66,7 @@ class ShuttleServiceType extends AbstractStructBase
     /**
      * Set ShuttleFrequency value
      * @param string $shuttleFrequency
-     * @return \StructType\ShuttleServiceType
+     * @return \traveltainment\SOAP17\StructType\ShuttleServiceType
      */
     public function setShuttleFrequency($shuttleFrequency = null)
     {
@@ -83,7 +83,7 @@ class ShuttleServiceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ShuttleServiceType
+     * @return \traveltainment\SOAP17\StructType\ShuttleServiceType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class RegionListOptionsType extends RegionOptionsType
     /**
      * Set ShowSeparateAlternatives value
      * @param bool $showSeparateAlternatives
-     * @return \StructType\RegionListOptionsType
+     * @return \traveltainment\SOAP17\StructType\RegionListOptionsType
      */
     public function setShowSeparateAlternatives($showSeparateAlternatives = null)
     {
@@ -55,7 +55,7 @@ class RegionListOptionsType extends RegionOptionsType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionListOptionsType
+     * @return \traveltainment\SOAP17\StructType\RegionListOptionsType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,21 +14,21 @@ class CarRentalStationDetailsType extends AbstractStructBase
      * The ConditionDetails
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ConditionDetailsType
+     * @var \traveltainment\SOAP17\StructType\ConditionDetailsType
      */
     public $ConditionDetails;
     /**
      * The InclusiveDetails
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\InclusiveDetailsType
+     * @var \traveltainment\SOAP17\StructType\InclusiveDetailsType
      */
     public $InclusiveDetails;
     /**
      * The OpeningHourDetails
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OpeningHourDetailsType
+     * @var \traveltainment\SOAP17\StructType\OpeningHourDetailsType
      */
     public $OpeningHourDetails;
     /**
@@ -36,11 +36,11 @@ class CarRentalStationDetailsType extends AbstractStructBase
      * @uses CarRentalStationDetailsType::setConditionDetails()
      * @uses CarRentalStationDetailsType::setInclusiveDetails()
      * @uses CarRentalStationDetailsType::setOpeningHourDetails()
-     * @param \StructType\ConditionDetailsType $conditionDetails
-     * @param \StructType\InclusiveDetailsType $inclusiveDetails
-     * @param \StructType\OpeningHourDetailsType $openingHourDetails
+     * @param \traveltainment\SOAP17\StructType\ConditionDetailsType $conditionDetails
+     * @param \traveltainment\SOAP17\StructType\InclusiveDetailsType $inclusiveDetails
+     * @param \traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails
      */
-    public function __construct(\StructType\ConditionDetailsType $conditionDetails = null, \StructType\InclusiveDetailsType $inclusiveDetails = null, \StructType\OpeningHourDetailsType $openingHourDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ConditionDetailsType $conditionDetails = null, \traveltainment\SOAP17\StructType\InclusiveDetailsType $inclusiveDetails = null, \traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails = null)
     {
         $this
             ->setConditionDetails($conditionDetails)
@@ -49,7 +49,7 @@ class CarRentalStationDetailsType extends AbstractStructBase
     }
     /**
      * Get ConditionDetails value
-     * @return \StructType\ConditionDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\ConditionDetailsType|null
      */
     public function getConditionDetails()
     {
@@ -57,17 +57,17 @@ class CarRentalStationDetailsType extends AbstractStructBase
     }
     /**
      * Set ConditionDetails value
-     * @param \StructType\ConditionDetailsType $conditionDetails
-     * @return \StructType\CarRentalStationDetailsType
+     * @param \traveltainment\SOAP17\StructType\ConditionDetailsType $conditionDetails
+     * @return \traveltainment\SOAP17\StructType\CarRentalStationDetailsType
      */
-    public function setConditionDetails(\StructType\ConditionDetailsType $conditionDetails = null)
+    public function setConditionDetails(\traveltainment\SOAP17\StructType\ConditionDetailsType $conditionDetails = null)
     {
         $this->ConditionDetails = $conditionDetails;
         return $this;
     }
     /**
      * Get InclusiveDetails value
-     * @return \StructType\InclusiveDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\InclusiveDetailsType|null
      */
     public function getInclusiveDetails()
     {
@@ -75,17 +75,17 @@ class CarRentalStationDetailsType extends AbstractStructBase
     }
     /**
      * Set InclusiveDetails value
-     * @param \StructType\InclusiveDetailsType $inclusiveDetails
-     * @return \StructType\CarRentalStationDetailsType
+     * @param \traveltainment\SOAP17\StructType\InclusiveDetailsType $inclusiveDetails
+     * @return \traveltainment\SOAP17\StructType\CarRentalStationDetailsType
      */
-    public function setInclusiveDetails(\StructType\InclusiveDetailsType $inclusiveDetails = null)
+    public function setInclusiveDetails(\traveltainment\SOAP17\StructType\InclusiveDetailsType $inclusiveDetails = null)
     {
         $this->InclusiveDetails = $inclusiveDetails;
         return $this;
     }
     /**
      * Get OpeningHourDetails value
-     * @return \StructType\OpeningHourDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\OpeningHourDetailsType|null
      */
     public function getOpeningHourDetails()
     {
@@ -93,10 +93,10 @@ class CarRentalStationDetailsType extends AbstractStructBase
     }
     /**
      * Set OpeningHourDetails value
-     * @param \StructType\OpeningHourDetailsType $openingHourDetails
-     * @return \StructType\CarRentalStationDetailsType
+     * @param \traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails
+     * @return \traveltainment\SOAP17\StructType\CarRentalStationDetailsType
      */
-    public function setOpeningHourDetails(\StructType\OpeningHourDetailsType $openingHourDetails = null)
+    public function setOpeningHourDetails(\traveltainment\SOAP17\StructType\OpeningHourDetailsType $openingHourDetails = null)
     {
         $this->OpeningHourDetails = $openingHourDetails;
         return $this;
@@ -107,7 +107,7 @@ class CarRentalStationDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalStationDetailsType
+     * @return \traveltainment\SOAP17\StructType\CarRentalStationDetailsType
      */
     public static function __set_state(array $array)
     {

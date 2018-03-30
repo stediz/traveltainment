@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class NonCyrillicPersonType extends AbstractStructBase
      * The PersonName
      * Meta informations extracted from the WSDL
      * - documentation: Der Knoten PersonName beinhaltet Namensangaben zu einer Person.
-     * @var \StructType\NonCyrillicPersonNameType
+     * @var \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public $PersonName;
     /**
@@ -29,7 +29,7 @@ class NonCyrillicPersonType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Der Knoten Contacts beinhaltet eine Liste mit unterschiedlichen Kontaktangaben.
      * - minOccurs: 0
-     * @var \StructType\NonCyrillicContactListType
+     * @var \traveltainment\SOAP17\StructType\NonCyrillicContactListType
      */
     public $Contacts;
     /**
@@ -37,11 +37,11 @@ class NonCyrillicPersonType extends AbstractStructBase
      * @uses NonCyrillicPersonType::setPersonName()
      * @uses NonCyrillicPersonType::setGender()
      * @uses NonCyrillicPersonType::setContacts()
-     * @param \StructType\NonCyrillicPersonNameType $personName
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName
      * @param string $gender
-     * @param \StructType\NonCyrillicContactListType $contacts
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicContactListType $contacts
      */
-    public function __construct(\StructType\NonCyrillicPersonNameType $personName = null, $gender = null, \StructType\NonCyrillicContactListType $contacts = null)
+    public function __construct(\traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName = null, $gender = null, \traveltainment\SOAP17\StructType\NonCyrillicContactListType $contacts = null)
     {
         $this
             ->setPersonName($personName)
@@ -50,7 +50,7 @@ class NonCyrillicPersonType extends AbstractStructBase
     }
     /**
      * Get PersonName value
-     * @return \StructType\NonCyrillicPersonNameType|null
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType|null
      */
     public function getPersonName()
     {
@@ -58,10 +58,10 @@ class NonCyrillicPersonType extends AbstractStructBase
     }
     /**
      * Set PersonName value
-     * @param \StructType\NonCyrillicPersonNameType $personName
-     * @return \StructType\NonCyrillicPersonType
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonType
      */
-    public function setPersonName(\StructType\NonCyrillicPersonNameType $personName = null)
+    public function setPersonName(\traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName = null)
     {
         $this->PersonName = $personName;
         return $this;
@@ -76,24 +76,24 @@ class NonCyrillicPersonType extends AbstractStructBase
     }
     /**
      * Set Gender value
-     * @uses \EnumType\GenderType::valueIsValid()
-     * @uses \EnumType\GenderType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $gender
-     * @return \StructType\NonCyrillicPersonType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonType
      */
     public function setGender($gender = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\GenderType::valueIsValid($gender)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \EnumType\GenderType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\GenderType::valueIsValid($gender)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \traveltainment\SOAP17\EnumType\GenderType::getValidValues())), __LINE__);
         }
         $this->Gender = $gender;
         return $this;
     }
     /**
      * Get Contacts value
-     * @return \StructType\NonCyrillicContactListType|null
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicContactListType|null
      */
     public function getContacts()
     {
@@ -101,10 +101,10 @@ class NonCyrillicPersonType extends AbstractStructBase
     }
     /**
      * Set Contacts value
-     * @param \StructType\NonCyrillicContactListType $contacts
-     * @return \StructType\NonCyrillicPersonType
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicContactListType $contacts
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonType
      */
-    public function setContacts(\StructType\NonCyrillicContactListType $contacts = null)
+    public function setContacts(\traveltainment\SOAP17\StructType\NonCyrillicContactListType $contacts = null)
     {
         $this->Contacts = $contacts;
         return $this;
@@ -115,7 +115,7 @@ class NonCyrillicPersonType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\NonCyrillicPersonType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonType
      */
     public static function __set_state(array $array)
     {

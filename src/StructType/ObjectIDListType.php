@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class ObjectIDListType extends AbstractStructBase
     /**
      * Set _ value
      * @param int $_
-     * @return \StructType\ObjectIDListType
+     * @return \traveltainment\SOAP17\StructType\ObjectIDListType
      */
     public function set_($_ = null)
     {
@@ -81,17 +81,17 @@ class ObjectIDListType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\ObjectIDEnum::valueIsValid()
-     * @uses \EnumType\ObjectIDEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ObjectIDEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ObjectIDEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ObjectIDListType
+     * @return \traveltainment\SOAP17\StructType\ObjectIDListType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ObjectIDEnum::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\ObjectIDEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ObjectIDEnum::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \traveltainment\SOAP17\EnumType\ObjectIDEnum::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -102,7 +102,7 @@ class ObjectIDListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ObjectIDListType
+     * @return \traveltainment\SOAP17\StructType\ObjectIDListType
      */
     public static function __set_state(array $array)
     {

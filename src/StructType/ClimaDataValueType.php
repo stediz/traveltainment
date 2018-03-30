@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class ClimaDataValueType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\ClimaDataValueType
+     * @return \traveltainment\SOAP17\StructType\ClimaDataValueType
      */
     public function set_($_ = null)
     {
@@ -69,7 +69,7 @@ class ClimaDataValueType extends AbstractStructBase
     /**
      * Set Month value
      * @param int $month
-     * @return \StructType\ClimaDataValueType
+     * @return \traveltainment\SOAP17\StructType\ClimaDataValueType
      */
     public function setMonth($month = null)
     {
@@ -94,7 +94,7 @@ class ClimaDataValueType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ClimaDataValueType
+     * @return \traveltainment\SOAP17\StructType\ClimaDataValueType
      */
     public static function __set_state(array $array)
     {

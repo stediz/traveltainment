@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class PosIntIntervalType extends AbstractStructBase
     /**
      * Set Min value
      * @param int $min
-     * @return \StructType\PosIntIntervalType
+     * @return \traveltainment\SOAP17\StructType\PosIntIntervalType
      */
     public function setMin($min = null)
     {
@@ -66,7 +66,7 @@ class PosIntIntervalType extends AbstractStructBase
     /**
      * Set Max value
      * @param int $max
-     * @return \StructType\PosIntIntervalType
+     * @return \traveltainment\SOAP17\StructType\PosIntIntervalType
      */
     public function setMax($max = null)
     {
@@ -83,7 +83,7 @@ class PosIntIntervalType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PosIntIntervalType
+     * @return \traveltainment\SOAP17\StructType\PosIntIntervalType
      */
     public static function __set_state(array $array)
     {

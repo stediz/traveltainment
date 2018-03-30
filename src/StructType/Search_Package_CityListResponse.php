@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_CityListResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineCityListRS
+     * @var \traveltainment\SOAP17\StructType\SearchEngineCityListRS
      */
     public $return;
     /**
      * Constructor method for Search_Package_CityListResponse
      * @uses Search_Package_CityListResponse::setReturn()
-     * @param \StructType\SearchEngineCityListRS $return
+     * @param \traveltainment\SOAP17\StructType\SearchEngineCityListRS $return
      */
-    public function __construct(\StructType\SearchEngineCityListRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineCityListRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\SearchEngineCityListRS|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineCityListRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_Package_CityListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\SearchEngineCityListRS $return
-     * @return \StructType\Search_Package_CityListResponse
+     * @param \traveltainment\SOAP17\StructType\SearchEngineCityListRS $return
+     * @return \traveltainment\SOAP17\StructType\Search_Package_CityListResponse
      */
-    public function setReturn(\StructType\SearchEngineCityListRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\SearchEngineCityListRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_CityListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_CityListResponse
+     * @return \traveltainment\SOAP17\StructType\Search_Package_CityListResponse
      */
     public static function __set_state(array $array)
     {

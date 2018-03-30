@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -73,7 +73,7 @@ class GetCarRentalStationDetailsRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetCarRentalStationDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -95,7 +95,7 @@ class GetCarRentalStationDetailsRQType extends RequestType
     /**
      * Set StationCode value
      * @param string $stationCode
-     * @return \StructType\GetCarRentalStationDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRQType
      */
     public function setStationCode($stationCode = null)
     {
@@ -125,7 +125,7 @@ class GetCarRentalStationDetailsRQType extends RequestType
     /**
      * Set PickupDateTime value
      * @param string $pickupDateTime
-     * @return \StructType\GetCarRentalStationDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRQType
      */
     public function setPickupDateTime($pickupDateTime = null)
     {
@@ -147,7 +147,7 @@ class GetCarRentalStationDetailsRQType extends RequestType
     /**
      * Set ReturnDateTime value
      * @param string $returnDateTime
-     * @return \StructType\GetCarRentalStationDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRQType
      */
     public function setReturnDateTime($returnDateTime = null)
     {
@@ -168,17 +168,17 @@ class GetCarRentalStationDetailsRQType extends RequestType
     }
     /**
      * Set DetailType value
-     * @uses \EnumType\CarRentalStationDetailTypeEnum::valueIsValid()
-     * @uses \EnumType\CarRentalStationDetailTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CarRentalStationDetailTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CarRentalStationDetailTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $detailType
-     * @return \StructType\GetCarRentalStationDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRQType
      */
     public function setDetailType($detailType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CarRentalStationDetailTypeEnum::valueIsValid($detailType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $detailType, implode(', ', \EnumType\CarRentalStationDetailTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CarRentalStationDetailTypeEnum::valueIsValid($detailType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $detailType, implode(', ', \traveltainment\SOAP17\EnumType\CarRentalStationDetailTypeEnum::getValidValues())), __LINE__);
         }
         $this->DetailType = $detailType;
         return $this;
@@ -189,7 +189,7 @@ class GetCarRentalStationDetailsRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetCarRentalStationDetailsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalStationDetailsRQType
      */
     public static function __set_state(array $array)
     {

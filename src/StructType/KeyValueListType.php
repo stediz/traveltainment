@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class KeyValueListType extends AbstractStructBase
      * The Param
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\KeyValueType[]
+     * @var \traveltainment\SOAP17\StructType\KeyValueType[]
      */
     public $Param;
     /**
      * Constructor method for KeyValueListType
      * @uses KeyValueListType::setParam()
-     * @param \StructType\KeyValueType[] $param
+     * @param \traveltainment\SOAP17\StructType\KeyValueType[] $param
      */
     public function __construct(array $param = array())
     {
@@ -29,7 +29,7 @@ class KeyValueListType extends AbstractStructBase
     }
     /**
      * Get Param value
-     * @return \StructType\KeyValueType[]|null
+     * @return \traveltainment\SOAP17\StructType\KeyValueType[]|null
      */
     public function getParam()
     {
@@ -38,15 +38,15 @@ class KeyValueListType extends AbstractStructBase
     /**
      * Set Param value
      * @throws \InvalidArgumentException
-     * @param \StructType\KeyValueType[] $param
-     * @return \StructType\KeyValueListType
+     * @param \traveltainment\SOAP17\StructType\KeyValueType[] $param
+     * @return \traveltainment\SOAP17\StructType\KeyValueListType
      */
     public function setParam(array $param = array())
     {
         foreach ($param as $keyValueListTypeParamItem) {
             // validation for constraint: itemType
-            if (!$keyValueListTypeParamItem instanceof \StructType\KeyValueType) {
-                throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \StructType\KeyValueType, "%s" given', is_object($keyValueListTypeParamItem) ? get_class($keyValueListTypeParamItem) : gettype($keyValueListTypeParamItem)), __LINE__);
+            if (!$keyValueListTypeParamItem instanceof \traveltainment\SOAP17\StructType\KeyValueType) {
+                throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \traveltainment\SOAP17\StructType\KeyValueType, "%s" given', is_object($keyValueListTypeParamItem) ? get_class($keyValueListTypeParamItem) : gettype($keyValueListTypeParamItem)), __LINE__);
             }
         }
         $this->Param = $param;
@@ -55,14 +55,14 @@ class KeyValueListType extends AbstractStructBase
     /**
      * Add item to Param value
      * @throws \InvalidArgumentException
-     * @param \StructType\KeyValueType $item
-     * @return \StructType\KeyValueListType
+     * @param \traveltainment\SOAP17\StructType\KeyValueType $item
+     * @return \traveltainment\SOAP17\StructType\KeyValueListType
      */
-    public function addToParam(\StructType\KeyValueType $item)
+    public function addToParam(\traveltainment\SOAP17\StructType\KeyValueType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\KeyValueType) {
-            throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \StructType\KeyValueType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\KeyValueType) {
+            throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \traveltainment\SOAP17\StructType\KeyValueType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Param[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class KeyValueListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\KeyValueListType
+     * @return \traveltainment\SOAP17\StructType\KeyValueListType
      */
     public static function __set_state(array $array)
     {

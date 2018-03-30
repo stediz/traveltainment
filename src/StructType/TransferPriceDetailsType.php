@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class TransferPriceDetailsType extends AbstractStructBase
      * The TransferPrice
      * Meta informations extracted from the WSDL
      * - maxOccurs: 99
-     * @var \StructType\TransferPriceType[]
+     * @var \traveltainment\SOAP17\StructType\TransferPriceType[]
      */
     public $TransferPrice;
     /**
      * Constructor method for TransferPriceDetailsType
      * @uses TransferPriceDetailsType::setTransferPrice()
-     * @param \StructType\TransferPriceType[] $transferPrice
+     * @param \traveltainment\SOAP17\StructType\TransferPriceType[] $transferPrice
      */
     public function __construct(array $transferPrice = array())
     {
@@ -29,7 +29,7 @@ class TransferPriceDetailsType extends AbstractStructBase
     }
     /**
      * Get TransferPrice value
-     * @return \StructType\TransferPriceType[]|null
+     * @return \traveltainment\SOAP17\StructType\TransferPriceType[]|null
      */
     public function getTransferPrice()
     {
@@ -38,15 +38,15 @@ class TransferPriceDetailsType extends AbstractStructBase
     /**
      * Set TransferPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\TransferPriceType[] $transferPrice
-     * @return \StructType\TransferPriceDetailsType
+     * @param \traveltainment\SOAP17\StructType\TransferPriceType[] $transferPrice
+     * @return \traveltainment\SOAP17\StructType\TransferPriceDetailsType
      */
     public function setTransferPrice(array $transferPrice = array())
     {
         foreach ($transferPrice as $transferPriceDetailsTypeTransferPriceItem) {
             // validation for constraint: itemType
-            if (!$transferPriceDetailsTypeTransferPriceItem instanceof \StructType\TransferPriceType) {
-                throw new \InvalidArgumentException(sprintf('The TransferPrice property can only contain items of \StructType\TransferPriceType, "%s" given', is_object($transferPriceDetailsTypeTransferPriceItem) ? get_class($transferPriceDetailsTypeTransferPriceItem) : gettype($transferPriceDetailsTypeTransferPriceItem)), __LINE__);
+            if (!$transferPriceDetailsTypeTransferPriceItem instanceof \traveltainment\SOAP17\StructType\TransferPriceType) {
+                throw new \InvalidArgumentException(sprintf('The TransferPrice property can only contain items of \traveltainment\SOAP17\StructType\TransferPriceType, "%s" given', is_object($transferPriceDetailsTypeTransferPriceItem) ? get_class($transferPriceDetailsTypeTransferPriceItem) : gettype($transferPriceDetailsTypeTransferPriceItem)), __LINE__);
             }
         }
         $this->TransferPrice = $transferPrice;
@@ -55,14 +55,14 @@ class TransferPriceDetailsType extends AbstractStructBase
     /**
      * Add item to TransferPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\TransferPriceType $item
-     * @return \StructType\TransferPriceDetailsType
+     * @param \traveltainment\SOAP17\StructType\TransferPriceType $item
+     * @return \traveltainment\SOAP17\StructType\TransferPriceDetailsType
      */
-    public function addToTransferPrice(\StructType\TransferPriceType $item)
+    public function addToTransferPrice(\traveltainment\SOAP17\StructType\TransferPriceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\TransferPriceType) {
-            throw new \InvalidArgumentException(sprintf('The TransferPrice property can only contain items of \StructType\TransferPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\TransferPriceType) {
+            throw new \InvalidArgumentException(sprintf('The TransferPrice property can only contain items of \traveltainment\SOAP17\StructType\TransferPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->TransferPrice[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class TransferPriceDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferPriceDetailsType
+     * @return \traveltainment\SOAP17\StructType\TransferPriceDetailsType
      */
     public static function __set_state(array $array)
     {

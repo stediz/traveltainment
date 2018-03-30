@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,7 +38,7 @@ class OriginType extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\OriginType
+     * @return \traveltainment\SOAP17\StructType\OriginType
      */
     public function setCode($code = null)
     {
@@ -55,7 +55,7 @@ class OriginType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OriginType
+     * @return \traveltainment\SOAP17\StructType\OriginType
      */
     public static function __set_state(array $array)
     {

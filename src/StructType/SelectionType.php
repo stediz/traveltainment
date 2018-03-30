@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,12 +12,12 @@ class SelectionType extends AbstractStructBase
 {
     /**
      * The ObjectID
-     * @var \StructType\ObjectIDType
+     * @var \traveltainment\SOAP17\StructType\ObjectIDType
      */
     public $ObjectID;
     /**
      * The ObjectIDs
-     * @var \StructType\ObjectIDListType
+     * @var \traveltainment\SOAP17\StructType\ObjectIDListType
      */
     public $ObjectIDs;
     /**
@@ -47,13 +47,13 @@ class SelectionType extends AbstractStructBase
      * @uses SelectionType::setRegionID()
      * @uses SelectionType::setAirportOfRegion()
      * @uses SelectionType::setRegionIDs()
-     * @param \StructType\ObjectIDType $objectID
-     * @param \StructType\ObjectIDListType $objectIDs
+     * @param \traveltainment\SOAP17\StructType\ObjectIDType $objectID
+     * @param \traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs
      * @param int $regionID
      * @param string $airportOfRegion
      * @param int $regionIDs
      */
-    public function __construct(\StructType\ObjectIDType $objectID = null, \StructType\ObjectIDListType $objectIDs = null, $regionID = null, $airportOfRegion = null, $regionIDs = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ObjectIDType $objectID = null, \traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs = null, $regionID = null, $airportOfRegion = null, $regionIDs = null)
     {
         $this
             ->setObjectID($objectID)
@@ -64,7 +64,7 @@ class SelectionType extends AbstractStructBase
     }
     /**
      * Get ObjectID value
-     * @return \StructType\ObjectIDType|null
+     * @return \traveltainment\SOAP17\StructType\ObjectIDType|null
      */
     public function getObjectID()
     {
@@ -72,17 +72,17 @@ class SelectionType extends AbstractStructBase
     }
     /**
      * Set ObjectID value
-     * @param \StructType\ObjectIDType $objectID
-     * @return \StructType\SelectionType
+     * @param \traveltainment\SOAP17\StructType\ObjectIDType $objectID
+     * @return \traveltainment\SOAP17\StructType\SelectionType
      */
-    public function setObjectID(\StructType\ObjectIDType $objectID = null)
+    public function setObjectID(\traveltainment\SOAP17\StructType\ObjectIDType $objectID = null)
     {
         $this->ObjectID = $objectID;
         return $this;
     }
     /**
      * Get ObjectIDs value
-     * @return \StructType\ObjectIDListType|null
+     * @return \traveltainment\SOAP17\StructType\ObjectIDListType|null
      */
     public function getObjectIDs()
     {
@@ -90,10 +90,10 @@ class SelectionType extends AbstractStructBase
     }
     /**
      * Set ObjectIDs value
-     * @param \StructType\ObjectIDListType $objectIDs
-     * @return \StructType\SelectionType
+     * @param \traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs
+     * @return \traveltainment\SOAP17\StructType\SelectionType
      */
-    public function setObjectIDs(\StructType\ObjectIDListType $objectIDs = null)
+    public function setObjectIDs(\traveltainment\SOAP17\StructType\ObjectIDListType $objectIDs = null)
     {
         $this->ObjectIDs = $objectIDs;
         return $this;
@@ -109,7 +109,7 @@ class SelectionType extends AbstractStructBase
     /**
      * Set RegionID value
      * @param int $regionID
-     * @return \StructType\SelectionType
+     * @return \traveltainment\SOAP17\StructType\SelectionType
      */
     public function setRegionID($regionID = null)
     {
@@ -131,7 +131,7 @@ class SelectionType extends AbstractStructBase
     /**
      * Set AirportOfRegion value
      * @param string $airportOfRegion
-     * @return \StructType\SelectionType
+     * @return \traveltainment\SOAP17\StructType\SelectionType
      */
     public function setAirportOfRegion($airportOfRegion = null)
     {
@@ -157,7 +157,7 @@ class SelectionType extends AbstractStructBase
     /**
      * Set RegionIDs value
      * @param int $regionIDs
-     * @return \StructType\SelectionType
+     * @return \traveltainment\SOAP17\StructType\SelectionType
      */
     public function setRegionIDs($regionIDs = null)
     {
@@ -182,7 +182,7 @@ class SelectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SelectionType
+     * @return \traveltainment\SOAP17\StructType\SelectionType
      */
     public static function __set_state(array $array)
     {

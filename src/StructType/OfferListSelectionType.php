@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class OfferListSelectionType extends AbstractStructBase
 {
     /**
      * The HotelSelection
-     * @var \StructType\HotelSelectionType
+     * @var \traveltainment\SOAP17\StructType\HotelSelectionType
      */
     public $HotelSelection;
     /**
      * The FlightSelection
-     * @var \StructType\FlightSelectionType
+     * @var \traveltainment\SOAP17\StructType\FlightSelectionType
      */
     public $FlightSelection;
     /**
      * Constructor method for OfferListSelectionType
      * @uses OfferListSelectionType::setHotelSelection()
      * @uses OfferListSelectionType::setFlightSelection()
-     * @param \StructType\HotelSelectionType $hotelSelection
-     * @param \StructType\FlightSelectionType $flightSelection
+     * @param \traveltainment\SOAP17\StructType\HotelSelectionType $hotelSelection
+     * @param \traveltainment\SOAP17\StructType\FlightSelectionType $flightSelection
      */
-    public function __construct(\StructType\HotelSelectionType $hotelSelection = null, \StructType\FlightSelectionType $flightSelection = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HotelSelectionType $hotelSelection = null, \traveltainment\SOAP17\StructType\FlightSelectionType $flightSelection = null)
     {
         $this
             ->setHotelSelection($hotelSelection)
@@ -35,7 +35,7 @@ class OfferListSelectionType extends AbstractStructBase
     }
     /**
      * Get HotelSelection value
-     * @return \StructType\HotelSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\HotelSelectionType|null
      */
     public function getHotelSelection()
     {
@@ -43,17 +43,17 @@ class OfferListSelectionType extends AbstractStructBase
     }
     /**
      * Set HotelSelection value
-     * @param \StructType\HotelSelectionType $hotelSelection
-     * @return \StructType\OfferListSelectionType
+     * @param \traveltainment\SOAP17\StructType\HotelSelectionType $hotelSelection
+     * @return \traveltainment\SOAP17\StructType\OfferListSelectionType
      */
-    public function setHotelSelection(\StructType\HotelSelectionType $hotelSelection = null)
+    public function setHotelSelection(\traveltainment\SOAP17\StructType\HotelSelectionType $hotelSelection = null)
     {
         $this->HotelSelection = $hotelSelection;
         return $this;
     }
     /**
      * Get FlightSelection value
-     * @return \StructType\FlightSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\FlightSelectionType|null
      */
     public function getFlightSelection()
     {
@@ -61,10 +61,10 @@ class OfferListSelectionType extends AbstractStructBase
     }
     /**
      * Set FlightSelection value
-     * @param \StructType\FlightSelectionType $flightSelection
-     * @return \StructType\OfferListSelectionType
+     * @param \traveltainment\SOAP17\StructType\FlightSelectionType $flightSelection
+     * @return \traveltainment\SOAP17\StructType\OfferListSelectionType
      */
-    public function setFlightSelection(\StructType\FlightSelectionType $flightSelection = null)
+    public function setFlightSelection(\traveltainment\SOAP17\StructType\FlightSelectionType $flightSelection = null)
     {
         $this->FlightSelection = $flightSelection;
         return $this;
@@ -75,7 +75,7 @@ class OfferListSelectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferListSelectionType
+     * @return \traveltainment\SOAP17\StructType\OfferListSelectionType
      */
     public static function __set_state(array $array)
     {

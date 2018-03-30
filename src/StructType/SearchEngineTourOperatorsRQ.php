@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class SearchEngineTourOperatorsRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineTourOperatorsRQ
+     * @return \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRQ
      */
     public static function __set_state(array $array)
     {

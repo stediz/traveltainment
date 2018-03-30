@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,13 +17,13 @@ class CautionsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\CautionType[]
+     * @var \traveltainment\SOAP17\StructType\CautionType[]
      */
     public $Caution;
     /**
      * Constructor method for CautionsType
      * @uses CautionsType::setCaution()
-     * @param \StructType\CautionType[] $caution
+     * @param \traveltainment\SOAP17\StructType\CautionType[] $caution
      */
     public function __construct(array $caution = array())
     {
@@ -32,7 +32,7 @@ class CautionsType extends AbstractStructBase
     }
     /**
      * Get Caution value
-     * @return \StructType\CautionType[]|null
+     * @return \traveltainment\SOAP17\StructType\CautionType[]|null
      */
     public function getCaution()
     {
@@ -41,15 +41,15 @@ class CautionsType extends AbstractStructBase
     /**
      * Set Caution value
      * @throws \InvalidArgumentException
-     * @param \StructType\CautionType[] $caution
-     * @return \StructType\CautionsType
+     * @param \traveltainment\SOAP17\StructType\CautionType[] $caution
+     * @return \traveltainment\SOAP17\StructType\CautionsType
      */
     public function setCaution(array $caution = array())
     {
         foreach ($caution as $cautionsTypeCautionItem) {
             // validation for constraint: itemType
-            if (!$cautionsTypeCautionItem instanceof \StructType\CautionType) {
-                throw new \InvalidArgumentException(sprintf('The Caution property can only contain items of \StructType\CautionType, "%s" given', is_object($cautionsTypeCautionItem) ? get_class($cautionsTypeCautionItem) : gettype($cautionsTypeCautionItem)), __LINE__);
+            if (!$cautionsTypeCautionItem instanceof \traveltainment\SOAP17\StructType\CautionType) {
+                throw new \InvalidArgumentException(sprintf('The Caution property can only contain items of \traveltainment\SOAP17\StructType\CautionType, "%s" given', is_object($cautionsTypeCautionItem) ? get_class($cautionsTypeCautionItem) : gettype($cautionsTypeCautionItem)), __LINE__);
             }
         }
         $this->Caution = $caution;
@@ -58,14 +58,14 @@ class CautionsType extends AbstractStructBase
     /**
      * Add item to Caution value
      * @throws \InvalidArgumentException
-     * @param \StructType\CautionType $item
-     * @return \StructType\CautionsType
+     * @param \traveltainment\SOAP17\StructType\CautionType $item
+     * @return \traveltainment\SOAP17\StructType\CautionsType
      */
-    public function addToCaution(\StructType\CautionType $item)
+    public function addToCaution(\traveltainment\SOAP17\StructType\CautionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CautionType) {
-            throw new \InvalidArgumentException(sprintf('The Caution property can only contain items of \StructType\CautionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\CautionType) {
+            throw new \InvalidArgumentException(sprintf('The Caution property can only contain items of \traveltainment\SOAP17\StructType\CautionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Caution[] = $item;
         return $this;
@@ -76,7 +76,7 @@ class CautionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CautionsType
+     * @return \traveltainment\SOAP17\StructType\CautionsType
      */
     public static function __set_state(array $array)
     {

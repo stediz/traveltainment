@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,19 +12,19 @@ class HolidayHomeListRQ extends XmlInterfaceRQ
 {
     /**
      * The Search
-     * @var \StructType\HolidayHomeListSearchType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeListSearchType
      */
     public $Search;
     /**
      * The Selection
-     * @var \StructType\HolidayHomeSelectionType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeSelectionType
      */
     public $Selection;
     /**
      * The Filter
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeListFilterType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeListFilterType
      */
     public $Filter;
     /**
@@ -32,11 +32,11 @@ class HolidayHomeListRQ extends XmlInterfaceRQ
      * @uses HolidayHomeListRQ::setSearch()
      * @uses HolidayHomeListRQ::setSelection()
      * @uses HolidayHomeListRQ::setFilter()
-     * @param \StructType\HolidayHomeListSearchType $search
-     * @param \StructType\HolidayHomeSelectionType $selection
-     * @param \StructType\HolidayHomeListFilterType $filter
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListSearchType $search
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeSelectionType $selection
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListFilterType $filter
      */
-    public function __construct(\StructType\HolidayHomeListSearchType $search = null, \StructType\HolidayHomeSelectionType $selection = null, \StructType\HolidayHomeListFilterType $filter = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeListSearchType $search = null, \traveltainment\SOAP17\StructType\HolidayHomeSelectionType $selection = null, \traveltainment\SOAP17\StructType\HolidayHomeListFilterType $filter = null)
     {
         $this
             ->setSearch($search)
@@ -45,7 +45,7 @@ class HolidayHomeListRQ extends XmlInterfaceRQ
     }
     /**
      * Get Search value
-     * @return \StructType\HolidayHomeListSearchType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListSearchType|null
      */
     public function getSearch()
     {
@@ -53,17 +53,17 @@ class HolidayHomeListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Search value
-     * @param \StructType\HolidayHomeListSearchType $search
-     * @return \StructType\HolidayHomeListRQ
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListSearchType $search
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRQ
      */
-    public function setSearch(\StructType\HolidayHomeListSearchType $search = null)
+    public function setSearch(\traveltainment\SOAP17\StructType\HolidayHomeListSearchType $search = null)
     {
         $this->Search = $search;
         return $this;
     }
     /**
      * Get Selection value
-     * @return \StructType\HolidayHomeSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSelectionType|null
      */
     public function getSelection()
     {
@@ -71,17 +71,17 @@ class HolidayHomeListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Selection value
-     * @param \StructType\HolidayHomeSelectionType $selection
-     * @return \StructType\HolidayHomeListRQ
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeSelectionType $selection
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRQ
      */
-    public function setSelection(\StructType\HolidayHomeSelectionType $selection = null)
+    public function setSelection(\traveltainment\SOAP17\StructType\HolidayHomeSelectionType $selection = null)
     {
         $this->Selection = $selection;
         return $this;
     }
     /**
      * Get Filter value
-     * @return \StructType\HolidayHomeListFilterType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListFilterType|null
      */
     public function getFilter()
     {
@@ -89,10 +89,10 @@ class HolidayHomeListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Filter value
-     * @param \StructType\HolidayHomeListFilterType $filter
-     * @return \StructType\HolidayHomeListRQ
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListFilterType $filter
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRQ
      */
-    public function setFilter(\StructType\HolidayHomeListFilterType $filter = null)
+    public function setFilter(\traveltainment\SOAP17\StructType\HolidayHomeListFilterType $filter = null)
     {
         $this->Filter = $filter;
         return $this;
@@ -103,7 +103,7 @@ class HolidayHomeListRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeListRQ
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRQ
      */
     public static function __set_state(array $array)
     {

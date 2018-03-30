@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class Region extends SummaryCity
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Region
+     * @return \traveltainment\SOAP17\StructType\Region
      */
     public function setName($name = null)
     {
@@ -53,7 +53,7 @@ class Region extends SummaryCity
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Region
+     * @return \traveltainment\SOAP17\StructType\Region
      */
     public static function __set_state(array $array)
     {

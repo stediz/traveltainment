@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class AddressListType extends AbstractStructBase
      * The Address
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\AddressType[]
+     * @var \traveltainment\SOAP17\StructType\AddressType[]
      */
     public $Address;
     /**
      * Constructor method for AddressListType
      * @uses AddressListType::setAddress()
-     * @param \StructType\AddressType[] $address
+     * @param \traveltainment\SOAP17\StructType\AddressType[] $address
      */
     public function __construct(array $address = array())
     {
@@ -29,7 +29,7 @@ class AddressListType extends AbstractStructBase
     }
     /**
      * Get Address value
-     * @return \StructType\AddressType[]|null
+     * @return \traveltainment\SOAP17\StructType\AddressType[]|null
      */
     public function getAddress()
     {
@@ -38,15 +38,15 @@ class AddressListType extends AbstractStructBase
     /**
      * Set Address value
      * @throws \InvalidArgumentException
-     * @param \StructType\AddressType[] $address
-     * @return \StructType\AddressListType
+     * @param \traveltainment\SOAP17\StructType\AddressType[] $address
+     * @return \traveltainment\SOAP17\StructType\AddressListType
      */
     public function setAddress(array $address = array())
     {
         foreach ($address as $addressListTypeAddressItem) {
             // validation for constraint: itemType
-            if (!$addressListTypeAddressItem instanceof \StructType\AddressType) {
-                throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \StructType\AddressType, "%s" given', is_object($addressListTypeAddressItem) ? get_class($addressListTypeAddressItem) : gettype($addressListTypeAddressItem)), __LINE__);
+            if (!$addressListTypeAddressItem instanceof \traveltainment\SOAP17\StructType\AddressType) {
+                throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \traveltainment\SOAP17\StructType\AddressType, "%s" given', is_object($addressListTypeAddressItem) ? get_class($addressListTypeAddressItem) : gettype($addressListTypeAddressItem)), __LINE__);
             }
         }
         $this->Address = $address;
@@ -55,14 +55,14 @@ class AddressListType extends AbstractStructBase
     /**
      * Add item to Address value
      * @throws \InvalidArgumentException
-     * @param \StructType\AddressType $item
-     * @return \StructType\AddressListType
+     * @param \traveltainment\SOAP17\StructType\AddressType $item
+     * @return \traveltainment\SOAP17\StructType\AddressListType
      */
-    public function addToAddress(\StructType\AddressType $item)
+    public function addToAddress(\traveltainment\SOAP17\StructType\AddressType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AddressType) {
-            throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \StructType\AddressType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\AddressType) {
+            throw new \InvalidArgumentException(sprintf('The Address property can only contain items of \traveltainment\SOAP17\StructType\AddressType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Address[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class AddressListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddressListType
+     * @return \traveltainment\SOAP17\StructType\AddressListType
      */
     public static function __set_state(array $array)
     {

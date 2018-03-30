@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_TourOperators extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineTourOperatorsRQ
+     * @var \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRQ
      */
     public $request;
     /**
      * Constructor method for Search_Package_TourOperators
      * @uses Search_Package_TourOperators::setRequest()
-     * @param \StructType\SearchEngineTourOperatorsRQ $request
+     * @param \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRQ $request
      */
-    public function __construct(\StructType\SearchEngineTourOperatorsRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\SearchEngineTourOperatorsRQ|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_Package_TourOperators extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\SearchEngineTourOperatorsRQ $request
-     * @return \StructType\Search_Package_TourOperators
+     * @param \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_Package_TourOperators
      */
-    public function setRequest(\StructType\SearchEngineTourOperatorsRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_TourOperators extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_TourOperators
+     * @return \traveltainment\SOAP17\StructType\Search_Package_TourOperators
      */
     public static function __set_state(array $array)
     {

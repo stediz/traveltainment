@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class BookingResultType extends AbstractStructBase
     public $BookingCategory;
     /**
      * The Status
-     * @var \StructType\StatusType
+     * @var \traveltainment\SOAP17\StructType\StatusType
      */
     public $Status;
     /**
@@ -48,9 +48,9 @@ class BookingResultType extends AbstractStructBase
      * @param string $bookingID
      * @param string $reservationID
      * @param string $bookingCategory
-     * @param \StructType\StatusType $status
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
      */
-    public function __construct($bookRequestRef = null, $bookingID = null, $reservationID = null, $bookingCategory = null, \StructType\StatusType $status = null)
+    public function __construct($bookRequestRef = null, $bookingID = null, $reservationID = null, $bookingCategory = null, \traveltainment\SOAP17\StructType\StatusType $status = null)
     {
         $this
             ->setBookRequestRef($bookRequestRef)
@@ -70,7 +70,7 @@ class BookingResultType extends AbstractStructBase
     /**
      * Set BookRequestRef value
      * @param string $bookRequestRef
-     * @return \StructType\BookingResultType
+     * @return \traveltainment\SOAP17\StructType\BookingResultType
      */
     public function setBookRequestRef($bookRequestRef = null)
     {
@@ -92,7 +92,7 @@ class BookingResultType extends AbstractStructBase
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\BookingResultType
+     * @return \traveltainment\SOAP17\StructType\BookingResultType
      */
     public function setBookingID($bookingID = null)
     {
@@ -114,7 +114,7 @@ class BookingResultType extends AbstractStructBase
     /**
      * Set ReservationID value
      * @param string $reservationID
-     * @return \StructType\BookingResultType
+     * @return \traveltainment\SOAP17\StructType\BookingResultType
      */
     public function setReservationID($reservationID = null)
     {
@@ -135,24 +135,24 @@ class BookingResultType extends AbstractStructBase
     }
     /**
      * Set BookingCategory value
-     * @uses \EnumType\BookingCategoryEnum::valueIsValid()
-     * @uses \EnumType\BookingCategoryEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\BookingCategoryEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\BookingCategoryEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $bookingCategory
-     * @return \StructType\BookingResultType
+     * @return \traveltainment\SOAP17\StructType\BookingResultType
      */
     public function setBookingCategory($bookingCategory = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BookingCategoryEnum::valueIsValid($bookingCategory)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingCategory, implode(', ', \EnumType\BookingCategoryEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\BookingCategoryEnum::valueIsValid($bookingCategory)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bookingCategory, implode(', ', \traveltainment\SOAP17\EnumType\BookingCategoryEnum::getValidValues())), __LINE__);
         }
         $this->BookingCategory = $bookingCategory;
         return $this;
     }
     /**
      * Get Status value
-     * @return \StructType\StatusType|null
+     * @return \traveltainment\SOAP17\StructType\StatusType|null
      */
     public function getStatus()
     {
@@ -160,10 +160,10 @@ class BookingResultType extends AbstractStructBase
     }
     /**
      * Set Status value
-     * @param \StructType\StatusType $status
-     * @return \StructType\BookingResultType
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
+     * @return \traveltainment\SOAP17\StructType\BookingResultType
      */
-    public function setStatus(\StructType\StatusType $status = null)
+    public function setStatus(\traveltainment\SOAP17\StructType\StatusType $status = null)
     {
         $this->Status = $status;
         return $this;
@@ -174,7 +174,7 @@ class BookingResultType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingResultType
+     * @return \traveltainment\SOAP17\StructType\BookingResultType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class TransferType extends AbstractStructBase
      * The ShuttleService
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ShuttleServiceType
+     * @var \traveltainment\SOAP17\StructType\ShuttleServiceType
      */
     public $ShuttleService;
     /**
@@ -46,10 +46,10 @@ class TransferType extends AbstractStructBase
      * @uses TransferType::setTransferChildSeatInfo()
      * @param string $transferInfo
      * @param int $transferMinutes
-     * @param \StructType\ShuttleServiceType $shuttleService
+     * @param \traveltainment\SOAP17\StructType\ShuttleServiceType $shuttleService
      * @param string $transferChildSeatInfo
      */
-    public function __construct($transferInfo = null, $transferMinutes = null, \StructType\ShuttleServiceType $shuttleService = null, $transferChildSeatInfo = null)
+    public function __construct($transferInfo = null, $transferMinutes = null, \traveltainment\SOAP17\StructType\ShuttleServiceType $shuttleService = null, $transferChildSeatInfo = null)
     {
         $this
             ->setTransferInfo($transferInfo)
@@ -68,7 +68,7 @@ class TransferType extends AbstractStructBase
     /**
      * Set TransferInfo value
      * @param string $transferInfo
-     * @return \StructType\TransferType
+     * @return \traveltainment\SOAP17\StructType\TransferType
      */
     public function setTransferInfo($transferInfo = null)
     {
@@ -90,7 +90,7 @@ class TransferType extends AbstractStructBase
     /**
      * Set TransferMinutes value
      * @param int $transferMinutes
-     * @return \StructType\TransferType
+     * @return \traveltainment\SOAP17\StructType\TransferType
      */
     public function setTransferMinutes($transferMinutes = null)
     {
@@ -103,7 +103,7 @@ class TransferType extends AbstractStructBase
     }
     /**
      * Get ShuttleService value
-     * @return \StructType\ShuttleServiceType|null
+     * @return \traveltainment\SOAP17\StructType\ShuttleServiceType|null
      */
     public function getShuttleService()
     {
@@ -111,10 +111,10 @@ class TransferType extends AbstractStructBase
     }
     /**
      * Set ShuttleService value
-     * @param \StructType\ShuttleServiceType $shuttleService
-     * @return \StructType\TransferType
+     * @param \traveltainment\SOAP17\StructType\ShuttleServiceType $shuttleService
+     * @return \traveltainment\SOAP17\StructType\TransferType
      */
-    public function setShuttleService(\StructType\ShuttleServiceType $shuttleService = null)
+    public function setShuttleService(\traveltainment\SOAP17\StructType\ShuttleServiceType $shuttleService = null)
     {
         $this->ShuttleService = $shuttleService;
         return $this;
@@ -130,7 +130,7 @@ class TransferType extends AbstractStructBase
     /**
      * Set TransferChildSeatInfo value
      * @param string $transferChildSeatInfo
-     * @return \StructType\TransferType
+     * @return \traveltainment\SOAP17\StructType\TransferType
      */
     public function setTransferChildSeatInfo($transferChildSeatInfo = null)
     {
@@ -147,7 +147,7 @@ class TransferType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferType
+     * @return \traveltainment\SOAP17\StructType\TransferType
      */
     public static function __set_state(array $array)
     {

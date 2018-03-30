@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_HotelList extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineHotelListRQ
+     * @var \traveltainment\SOAP17\StructType\SearchEngineHotelListRQ
      */
     public $request;
     /**
      * Constructor method for Search_Package_HotelList
      * @uses Search_Package_HotelList::setRequest()
-     * @param \StructType\SearchEngineHotelListRQ $request
+     * @param \traveltainment\SOAP17\StructType\SearchEngineHotelListRQ $request
      */
-    public function __construct(\StructType\SearchEngineHotelListRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineHotelListRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\SearchEngineHotelListRQ|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineHotelListRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_Package_HotelList extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\SearchEngineHotelListRQ $request
-     * @return \StructType\Search_Package_HotelList
+     * @param \traveltainment\SOAP17\StructType\SearchEngineHotelListRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_Package_HotelList
      */
-    public function setRequest(\StructType\SearchEngineHotelListRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\SearchEngineHotelListRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_HotelList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_HotelList
+     * @return \traveltainment\SOAP17\StructType\Search_Package_HotelList
      */
     public static function __set_state(array $array)
     {

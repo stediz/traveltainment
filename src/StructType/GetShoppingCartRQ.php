@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class GetShoppingCartRQ extends XmlInterfaceRQ
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ShoppingCartOptionsType
+     * @var \traveltainment\SOAP17\StructType\ShoppingCartOptionsType
      */
     public $Options;
     /**
@@ -27,9 +27,9 @@ class GetShoppingCartRQ extends XmlInterfaceRQ
      * @uses GetShoppingCartRQ::setShoppingCartID()
      * @uses GetShoppingCartRQ::setOptions()
      * @param string $shoppingCartID
-     * @param \StructType\ShoppingCartOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\ShoppingCartOptionsType $options
      */
-    public function __construct($shoppingCartID = null, \StructType\ShoppingCartOptionsType $options = null)
+    public function __construct($shoppingCartID = null, \traveltainment\SOAP17\StructType\ShoppingCartOptionsType $options = null)
     {
         $this
             ->setShoppingCartID($shoppingCartID)
@@ -46,7 +46,7 @@ class GetShoppingCartRQ extends XmlInterfaceRQ
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\GetShoppingCartRQ
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRQ
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -59,7 +59,7 @@ class GetShoppingCartRQ extends XmlInterfaceRQ
     }
     /**
      * Get Options value
-     * @return \StructType\ShoppingCartOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\ShoppingCartOptionsType|null
      */
     public function getOptions()
     {
@@ -67,10 +67,10 @@ class GetShoppingCartRQ extends XmlInterfaceRQ
     }
     /**
      * Set Options value
-     * @param \StructType\ShoppingCartOptionsType $options
-     * @return \StructType\GetShoppingCartRQ
+     * @param \traveltainment\SOAP17\StructType\ShoppingCartOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRQ
      */
-    public function setOptions(\StructType\ShoppingCartOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\ShoppingCartOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -81,7 +81,7 @@ class GetShoppingCartRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetShoppingCartRQ
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRQ
      */
     public static function __set_state(array $array)
     {

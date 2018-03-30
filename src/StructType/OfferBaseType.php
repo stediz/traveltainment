@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class OfferBaseType extends AbstractStructBase
      * The TourOperator
      * Meta informations extracted from the WSDL
      * - documentation: Dieser Knoten beinhaltet den Veranstalter des Angebots
-     * @var \StructType\TourOperatorType
+     * @var \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public $TourOperator;
     /**
@@ -56,7 +56,7 @@ class OfferBaseType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Der Reisezeitraum des Angebots kann man den Knoten OfferDateSpan entnehmen.
      * - minOccurs: 0
-     * @var \StructType\DateTimeSpanType
+     * @var \traveltainment\SOAP17\StructType\DateTimeSpanType
      */
     public $OfferDateSpan;
     /**
@@ -64,7 +64,7 @@ class OfferBaseType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Erweiterung fuer FamiliyTab
      * - minOccurs: 0
-     * @var \StructType\PriceType
+     * @var \traveltainment\SOAP17\StructType\PriceType
      */
     public $CacheTotalPrice;
     /**
@@ -72,7 +72,7 @@ class OfferBaseType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Erweiterung fuer FamiliyTab
      * - minOccurs: 0
-     * @var \StructType\ConvertedTotalPriceListType
+     * @var \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType
      */
     public $ConvertedCacheTotalPrice;
     /**
@@ -86,7 +86,7 @@ class OfferBaseType extends AbstractStructBase
      * The Cautions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CautionsType
+     * @var \traveltainment\SOAP17\StructType\CautionsType
      */
     public $Cautions;
     /**
@@ -108,18 +108,18 @@ class OfferBaseType extends AbstractStructBase
      * @uses OfferBaseType::setCautions()
      * @uses OfferBaseType::setStatus()
      * @param string $offerID
-     * @param \StructType\TourOperatorType $tourOperator
+     * @param \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator
      * @param string $processNumber
      * @param string $travelType
      * @param string $programType
-     * @param \StructType\DateTimeSpanType $offerDateSpan
-     * @param \StructType\PriceType $cacheTotalPrice
-     * @param \StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice
+     * @param \traveltainment\SOAP17\StructType\DateTimeSpanType $offerDateSpan
+     * @param \traveltainment\SOAP17\StructType\PriceType $cacheTotalPrice
+     * @param \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice
      * @param SpecialJourneyAttribute $specialJourneyAttributes
-     * @param \StructType\CautionsType $cautions
+     * @param \traveltainment\SOAP17\StructType\CautionsType $cautions
      * @param string $status
      */
-    public function __construct($offerID = null, \StructType\TourOperatorType $tourOperator = null, $processNumber = null, $travelType = null, $programType = null, \StructType\DateTimeSpanType $offerDateSpan = null, \StructType\PriceType $cacheTotalPrice = null, \StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice = null, SpecialJourneyAttribute $specialJourneyAttributes = null, \StructType\CautionsType $cautions = null, $status = null)
+    public function __construct($offerID = null, \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator = null, $processNumber = null, $travelType = null, $programType = null, \traveltainment\SOAP17\StructType\DateTimeSpanType $offerDateSpan = null, \traveltainment\SOAP17\StructType\PriceType $cacheTotalPrice = null, \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice = null, SpecialJourneyAttribute $specialJourneyAttributes = null, \traveltainment\SOAP17\StructType\CautionsType $cautions = null, $status = null)
     {
         $this
             ->setOfferID($offerID)
@@ -145,7 +145,7 @@ class OfferBaseType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\OfferBaseType
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
     public function setOfferID($offerID = null)
     {
@@ -158,7 +158,7 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Get TourOperator value
-     * @return \StructType\TourOperatorType|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType|null
      */
     public function getTourOperator()
     {
@@ -166,10 +166,10 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Set TourOperator value
-     * @param \StructType\TourOperatorType $tourOperator
-     * @return \StructType\OfferBaseType
+     * @param \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
-    public function setTourOperator(\StructType\TourOperatorType $tourOperator = null)
+    public function setTourOperator(\traveltainment\SOAP17\StructType\TourOperatorType $tourOperator = null)
     {
         $this->TourOperator = $tourOperator;
         return $this;
@@ -185,7 +185,7 @@ class OfferBaseType extends AbstractStructBase
     /**
      * Set ProcessNumber value
      * @param string $processNumber
-     * @return \StructType\OfferBaseType
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
     public function setProcessNumber($processNumber = null)
     {
@@ -211,7 +211,7 @@ class OfferBaseType extends AbstractStructBase
     /**
      * Set TravelType value
      * @param string $travelType
-     * @return \StructType\OfferBaseType
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
     public function setTravelType($travelType = null)
     {
@@ -233,7 +233,7 @@ class OfferBaseType extends AbstractStructBase
     /**
      * Set ProgramType value
      * @param string $programType
-     * @return \StructType\OfferBaseType
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
     public function setProgramType($programType = null)
     {
@@ -246,7 +246,7 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Get OfferDateSpan value
-     * @return \StructType\DateTimeSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateTimeSpanType|null
      */
     public function getOfferDateSpan()
     {
@@ -254,17 +254,17 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Set OfferDateSpan value
-     * @param \StructType\DateTimeSpanType $offerDateSpan
-     * @return \StructType\OfferBaseType
+     * @param \traveltainment\SOAP17\StructType\DateTimeSpanType $offerDateSpan
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
-    public function setOfferDateSpan(\StructType\DateTimeSpanType $offerDateSpan = null)
+    public function setOfferDateSpan(\traveltainment\SOAP17\StructType\DateTimeSpanType $offerDateSpan = null)
     {
         $this->OfferDateSpan = $offerDateSpan;
         return $this;
     }
     /**
      * Get CacheTotalPrice value
-     * @return \StructType\PriceType|null
+     * @return \traveltainment\SOAP17\StructType\PriceType|null
      */
     public function getCacheTotalPrice()
     {
@@ -272,17 +272,17 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Set CacheTotalPrice value
-     * @param \StructType\PriceType $cacheTotalPrice
-     * @return \StructType\OfferBaseType
+     * @param \traveltainment\SOAP17\StructType\PriceType $cacheTotalPrice
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
-    public function setCacheTotalPrice(\StructType\PriceType $cacheTotalPrice = null)
+    public function setCacheTotalPrice(\traveltainment\SOAP17\StructType\PriceType $cacheTotalPrice = null)
     {
         $this->CacheTotalPrice = $cacheTotalPrice;
         return $this;
     }
     /**
      * Get ConvertedCacheTotalPrice value
-     * @return \StructType\ConvertedTotalPriceListType|null
+     * @return \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType|null
      */
     public function getConvertedCacheTotalPrice()
     {
@@ -290,10 +290,10 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Set ConvertedCacheTotalPrice value
-     * @param \StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice
-     * @return \StructType\OfferBaseType
+     * @param \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
-    public function setConvertedCacheTotalPrice(\StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice = null)
+    public function setConvertedCacheTotalPrice(\traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedCacheTotalPrice = null)
     {
         $this->ConvertedCacheTotalPrice = $convertedCacheTotalPrice;
         return $this;
@@ -309,7 +309,7 @@ class OfferBaseType extends AbstractStructBase
     /**
      * Set SpecialJourneyAttributes value
      * @param SpecialJourneyAttribute $specialJourneyAttributes
-     * @return \StructType\OfferBaseType
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
     public function setSpecialJourneyAttributes(SpecialJourneyAttribute $specialJourneyAttributes = null)
     {
@@ -318,7 +318,7 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Get Cautions value
-     * @return \StructType\CautionsType|null
+     * @return \traveltainment\SOAP17\StructType\CautionsType|null
      */
     public function getCautions()
     {
@@ -326,10 +326,10 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Set Cautions value
-     * @param \StructType\CautionsType $cautions
-     * @return \StructType\OfferBaseType
+     * @param \traveltainment\SOAP17\StructType\CautionsType $cautions
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
-    public function setCautions(\StructType\CautionsType $cautions = null)
+    public function setCautions(\traveltainment\SOAP17\StructType\CautionsType $cautions = null)
     {
         $this->Cautions = $cautions;
         return $this;
@@ -344,17 +344,17 @@ class OfferBaseType extends AbstractStructBase
     }
     /**
      * Set Status value
-     * @uses \EnumType\StatusEnum::valueIsValid()
-     * @uses \EnumType\StatusEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\StatusEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\StatusEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $status
-     * @return \StructType\OfferBaseType
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
     public function setStatus($status = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\StatusEnum::valueIsValid($status)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \EnumType\StatusEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\StatusEnum::valueIsValid($status)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \traveltainment\SOAP17\EnumType\StatusEnum::getValidValues())), __LINE__);
         }
         $this->Status = $status;
         return $this;
@@ -365,7 +365,7 @@ class OfferBaseType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferBaseType
+     * @return \traveltainment\SOAP17\StructType\OfferBaseType
      */
     public static function __set_state(array $array)
     {

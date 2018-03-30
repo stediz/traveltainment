@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class Alternatives extends AbstractStructBase
      * The Alternative
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1000
-     * @var \StructType\Alternative[]
+     * @var \traveltainment\SOAP17\StructType\Alternative[]
      */
     public $Alternative;
     /**
      * Constructor method for Alternatives
      * @uses Alternatives::setAlternative()
-     * @param \StructType\Alternative[] $alternative
+     * @param \traveltainment\SOAP17\StructType\Alternative[] $alternative
      */
     public function __construct(array $alternative = array())
     {
@@ -29,7 +29,7 @@ class Alternatives extends AbstractStructBase
     }
     /**
      * Get Alternative value
-     * @return \StructType\Alternative[]|null
+     * @return \traveltainment\SOAP17\StructType\Alternative[]|null
      */
     public function getAlternative()
     {
@@ -38,15 +38,15 @@ class Alternatives extends AbstractStructBase
     /**
      * Set Alternative value
      * @throws \InvalidArgumentException
-     * @param \StructType\Alternative[] $alternative
-     * @return \StructType\Alternatives
+     * @param \traveltainment\SOAP17\StructType\Alternative[] $alternative
+     * @return \traveltainment\SOAP17\StructType\Alternatives
      */
     public function setAlternative(array $alternative = array())
     {
         foreach ($alternative as $alternativesAlternativeItem) {
             // validation for constraint: itemType
-            if (!$alternativesAlternativeItem instanceof \StructType\Alternative) {
-                throw new \InvalidArgumentException(sprintf('The Alternative property can only contain items of \StructType\Alternative, "%s" given', is_object($alternativesAlternativeItem) ? get_class($alternativesAlternativeItem) : gettype($alternativesAlternativeItem)), __LINE__);
+            if (!$alternativesAlternativeItem instanceof \traveltainment\SOAP17\StructType\Alternative) {
+                throw new \InvalidArgumentException(sprintf('The Alternative property can only contain items of \traveltainment\SOAP17\StructType\Alternative, "%s" given', is_object($alternativesAlternativeItem) ? get_class($alternativesAlternativeItem) : gettype($alternativesAlternativeItem)), __LINE__);
             }
         }
         $this->Alternative = $alternative;
@@ -55,14 +55,14 @@ class Alternatives extends AbstractStructBase
     /**
      * Add item to Alternative value
      * @throws \InvalidArgumentException
-     * @param \StructType\Alternative $item
-     * @return \StructType\Alternatives
+     * @param \traveltainment\SOAP17\StructType\Alternative $item
+     * @return \traveltainment\SOAP17\StructType\Alternatives
      */
-    public function addToAlternative(\StructType\Alternative $item)
+    public function addToAlternative(\traveltainment\SOAP17\StructType\Alternative $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Alternative) {
-            throw new \InvalidArgumentException(sprintf('The Alternative property can only contain items of \StructType\Alternative, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\Alternative) {
+            throw new \InvalidArgumentException(sprintf('The Alternative property can only contain items of \traveltainment\SOAP17\StructType\Alternative, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Alternative[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class Alternatives extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Alternatives
+     * @return \traveltainment\SOAP17\StructType\Alternatives
      */
     public static function __set_state(array $array)
     {

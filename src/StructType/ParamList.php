@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class ParamList extends AbstractStructBase
      * The Param
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\ParamType[]
+     * @var \traveltainment\SOAP17\StructType\ParamType[]
      */
     public $Param;
     /**
      * Constructor method for ParamList
      * @uses ParamList::setParam()
-     * @param \StructType\ParamType[] $param
+     * @param \traveltainment\SOAP17\StructType\ParamType[] $param
      */
     public function __construct(array $param = array())
     {
@@ -29,7 +29,7 @@ class ParamList extends AbstractStructBase
     }
     /**
      * Get Param value
-     * @return \StructType\ParamType[]|null
+     * @return \traveltainment\SOAP17\StructType\ParamType[]|null
      */
     public function getParam()
     {
@@ -38,15 +38,15 @@ class ParamList extends AbstractStructBase
     /**
      * Set Param value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParamType[] $param
-     * @return \StructType\ParamList
+     * @param \traveltainment\SOAP17\StructType\ParamType[] $param
+     * @return \traveltainment\SOAP17\StructType\ParamList
      */
     public function setParam(array $param = array())
     {
         foreach ($param as $paramListParamItem) {
             // validation for constraint: itemType
-            if (!$paramListParamItem instanceof \StructType\ParamType) {
-                throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \StructType\ParamType, "%s" given', is_object($paramListParamItem) ? get_class($paramListParamItem) : gettype($paramListParamItem)), __LINE__);
+            if (!$paramListParamItem instanceof \traveltainment\SOAP17\StructType\ParamType) {
+                throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \traveltainment\SOAP17\StructType\ParamType, "%s" given', is_object($paramListParamItem) ? get_class($paramListParamItem) : gettype($paramListParamItem)), __LINE__);
             }
         }
         $this->Param = $param;
@@ -55,14 +55,14 @@ class ParamList extends AbstractStructBase
     /**
      * Add item to Param value
      * @throws \InvalidArgumentException
-     * @param \StructType\ParamType $item
-     * @return \StructType\ParamList
+     * @param \traveltainment\SOAP17\StructType\ParamType $item
+     * @return \traveltainment\SOAP17\StructType\ParamList
      */
-    public function addToParam(\StructType\ParamType $item)
+    public function addToParam(\traveltainment\SOAP17\StructType\ParamType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ParamType) {
-            throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \StructType\ParamType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ParamType) {
+            throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \traveltainment\SOAP17\StructType\ParamType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Param[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class ParamList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParamList
+     * @return \traveltainment\SOAP17\StructType\ParamList
      */
     public static function __set_state(array $array)
     {

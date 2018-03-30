@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -202,7 +202,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set NumberOfRatings value
      * @param int $numberOfRatings
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setNumberOfRatings($numberOfRatings = null)
     {
@@ -224,7 +224,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set Recommendation value
      * @param float $recommendation
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRecommendation($recommendation = null)
     {
@@ -242,7 +242,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingOverAll value
      * @param float $ratingOverAll
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingOverAll($ratingOverAll = null)
     {
@@ -260,7 +260,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingEatAndDrink value
      * @param float $ratingEatAndDrink
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingEatAndDrink($ratingEatAndDrink = null)
     {
@@ -278,7 +278,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingFamily value
      * @param float $ratingFamily
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingFamily($ratingFamily = null)
     {
@@ -296,7 +296,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingHotel value
      * @param float $ratingHotel
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingHotel($ratingHotel = null)
     {
@@ -314,7 +314,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingLocation value
      * @param float $ratingLocation
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingLocation($ratingLocation = null)
     {
@@ -332,7 +332,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingPool value
      * @param float $ratingPool
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingPool($ratingPool = null)
     {
@@ -350,7 +350,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingService value
      * @param float $ratingService
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingService($ratingService = null)
     {
@@ -368,7 +368,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingSport value
      * @param float $ratingSport
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingSport($ratingSport = null)
     {
@@ -386,7 +386,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingBeach value
      * @param float $ratingBeach
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingBeach($ratingBeach = null)
     {
@@ -404,7 +404,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingRoom value
      * @param float $ratingRoom
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingRoom($ratingRoom = null)
     {
@@ -422,7 +422,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingCulture value
      * @param float $ratingCulture
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingCulture($ratingCulture = null)
     {
@@ -440,7 +440,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingInfrastructure value
      * @param float $ratingInfrastructure
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingInfrastructure($ratingInfrastructure = null)
     {
@@ -458,7 +458,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingActivities value
      * @param float $ratingActivities
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingActivities($ratingActivities = null)
     {
@@ -476,7 +476,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingSkiArea value
      * @param float $ratingSkiArea
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingSkiArea($ratingSkiArea = null)
     {
@@ -494,7 +494,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingWinterSportOffer value
      * @param float $ratingWinterSportOffer
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingWinterSportOffer($ratingWinterSportOffer = null)
     {
@@ -512,7 +512,7 @@ class HotelReviewType extends AbstractStructBase
     /**
      * Set RatingWellness value
      * @param float $ratingWellness
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public function setRatingWellness($ratingWellness = null)
     {
@@ -525,7 +525,7 @@ class HotelReviewType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public static function __set_state(array $array)
     {

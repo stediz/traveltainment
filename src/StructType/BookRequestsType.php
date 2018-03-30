@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,27 +12,27 @@ class BookRequestsType extends AbstractStructBase
 {
     /**
      * The BookTravelRequest
-     * @var \StructType\BookTravelRequestType
+     * @var \traveltainment\SOAP17\StructType\BookTravelRequestType
      */
     public $BookTravelRequest;
     /**
      * The BookCarRentalRequest
-     * @var \StructType\BookCarRentalRequestType
+     * @var \traveltainment\SOAP17\StructType\BookCarRentalRequestType
      */
     public $BookCarRentalRequest;
     /**
      * The BookInsuranceRequest
-     * @var \StructType\BookInsuranceRequestType
+     * @var \traveltainment\SOAP17\StructType\BookInsuranceRequestType
      */
     public $BookInsuranceRequest;
     /**
      * The BookTransferRequest
-     * @var \StructType\BookTransferRequestType
+     * @var \traveltainment\SOAP17\StructType\BookTransferRequestType
      */
     public $BookTransferRequest;
     /**
      * The BookParkingRequest
-     * @var \StructType\BookParkingRequestType
+     * @var \traveltainment\SOAP17\StructType\BookParkingRequestType
      */
     public $BookParkingRequest;
     /**
@@ -42,13 +42,13 @@ class BookRequestsType extends AbstractStructBase
      * @uses BookRequestsType::setBookInsuranceRequest()
      * @uses BookRequestsType::setBookTransferRequest()
      * @uses BookRequestsType::setBookParkingRequest()
-     * @param \StructType\BookTravelRequestType $bookTravelRequest
-     * @param \StructType\BookCarRentalRequestType $bookCarRentalRequest
-     * @param \StructType\BookInsuranceRequestType $bookInsuranceRequest
-     * @param \StructType\BookTransferRequestType $bookTransferRequest
-     * @param \StructType\BookParkingRequestType $bookParkingRequest
+     * @param \traveltainment\SOAP17\StructType\BookTravelRequestType $bookTravelRequest
+     * @param \traveltainment\SOAP17\StructType\BookCarRentalRequestType $bookCarRentalRequest
+     * @param \traveltainment\SOAP17\StructType\BookInsuranceRequestType $bookInsuranceRequest
+     * @param \traveltainment\SOAP17\StructType\BookTransferRequestType $bookTransferRequest
+     * @param \traveltainment\SOAP17\StructType\BookParkingRequestType $bookParkingRequest
      */
-    public function __construct(\StructType\BookTravelRequestType $bookTravelRequest = null, \StructType\BookCarRentalRequestType $bookCarRentalRequest = null, \StructType\BookInsuranceRequestType $bookInsuranceRequest = null, \StructType\BookTransferRequestType $bookTransferRequest = null, \StructType\BookParkingRequestType $bookParkingRequest = null)
+    public function __construct(\traveltainment\SOAP17\StructType\BookTravelRequestType $bookTravelRequest = null, \traveltainment\SOAP17\StructType\BookCarRentalRequestType $bookCarRentalRequest = null, \traveltainment\SOAP17\StructType\BookInsuranceRequestType $bookInsuranceRequest = null, \traveltainment\SOAP17\StructType\BookTransferRequestType $bookTransferRequest = null, \traveltainment\SOAP17\StructType\BookParkingRequestType $bookParkingRequest = null)
     {
         $this
             ->setBookTravelRequest($bookTravelRequest)
@@ -59,7 +59,7 @@ class BookRequestsType extends AbstractStructBase
     }
     /**
      * Get BookTravelRequest value
-     * @return \StructType\BookTravelRequestType|null
+     * @return \traveltainment\SOAP17\StructType\BookTravelRequestType|null
      */
     public function getBookTravelRequest()
     {
@@ -67,17 +67,17 @@ class BookRequestsType extends AbstractStructBase
     }
     /**
      * Set BookTravelRequest value
-     * @param \StructType\BookTravelRequestType $bookTravelRequest
-     * @return \StructType\BookRequestsType
+     * @param \traveltainment\SOAP17\StructType\BookTravelRequestType $bookTravelRequest
+     * @return \traveltainment\SOAP17\StructType\BookRequestsType
      */
-    public function setBookTravelRequest(\StructType\BookTravelRequestType $bookTravelRequest = null)
+    public function setBookTravelRequest(\traveltainment\SOAP17\StructType\BookTravelRequestType $bookTravelRequest = null)
     {
         $this->BookTravelRequest = $bookTravelRequest;
         return $this;
     }
     /**
      * Get BookCarRentalRequest value
-     * @return \StructType\BookCarRentalRequestType|null
+     * @return \traveltainment\SOAP17\StructType\BookCarRentalRequestType|null
      */
     public function getBookCarRentalRequest()
     {
@@ -85,17 +85,17 @@ class BookRequestsType extends AbstractStructBase
     }
     /**
      * Set BookCarRentalRequest value
-     * @param \StructType\BookCarRentalRequestType $bookCarRentalRequest
-     * @return \StructType\BookRequestsType
+     * @param \traveltainment\SOAP17\StructType\BookCarRentalRequestType $bookCarRentalRequest
+     * @return \traveltainment\SOAP17\StructType\BookRequestsType
      */
-    public function setBookCarRentalRequest(\StructType\BookCarRentalRequestType $bookCarRentalRequest = null)
+    public function setBookCarRentalRequest(\traveltainment\SOAP17\StructType\BookCarRentalRequestType $bookCarRentalRequest = null)
     {
         $this->BookCarRentalRequest = $bookCarRentalRequest;
         return $this;
     }
     /**
      * Get BookInsuranceRequest value
-     * @return \StructType\BookInsuranceRequestType|null
+     * @return \traveltainment\SOAP17\StructType\BookInsuranceRequestType|null
      */
     public function getBookInsuranceRequest()
     {
@@ -103,17 +103,17 @@ class BookRequestsType extends AbstractStructBase
     }
     /**
      * Set BookInsuranceRequest value
-     * @param \StructType\BookInsuranceRequestType $bookInsuranceRequest
-     * @return \StructType\BookRequestsType
+     * @param \traveltainment\SOAP17\StructType\BookInsuranceRequestType $bookInsuranceRequest
+     * @return \traveltainment\SOAP17\StructType\BookRequestsType
      */
-    public function setBookInsuranceRequest(\StructType\BookInsuranceRequestType $bookInsuranceRequest = null)
+    public function setBookInsuranceRequest(\traveltainment\SOAP17\StructType\BookInsuranceRequestType $bookInsuranceRequest = null)
     {
         $this->BookInsuranceRequest = $bookInsuranceRequest;
         return $this;
     }
     /**
      * Get BookTransferRequest value
-     * @return \StructType\BookTransferRequestType|null
+     * @return \traveltainment\SOAP17\StructType\BookTransferRequestType|null
      */
     public function getBookTransferRequest()
     {
@@ -121,17 +121,17 @@ class BookRequestsType extends AbstractStructBase
     }
     /**
      * Set BookTransferRequest value
-     * @param \StructType\BookTransferRequestType $bookTransferRequest
-     * @return \StructType\BookRequestsType
+     * @param \traveltainment\SOAP17\StructType\BookTransferRequestType $bookTransferRequest
+     * @return \traveltainment\SOAP17\StructType\BookRequestsType
      */
-    public function setBookTransferRequest(\StructType\BookTransferRequestType $bookTransferRequest = null)
+    public function setBookTransferRequest(\traveltainment\SOAP17\StructType\BookTransferRequestType $bookTransferRequest = null)
     {
         $this->BookTransferRequest = $bookTransferRequest;
         return $this;
     }
     /**
      * Get BookParkingRequest value
-     * @return \StructType\BookParkingRequestType|null
+     * @return \traveltainment\SOAP17\StructType\BookParkingRequestType|null
      */
     public function getBookParkingRequest()
     {
@@ -139,10 +139,10 @@ class BookRequestsType extends AbstractStructBase
     }
     /**
      * Set BookParkingRequest value
-     * @param \StructType\BookParkingRequestType $bookParkingRequest
-     * @return \StructType\BookRequestsType
+     * @param \traveltainment\SOAP17\StructType\BookParkingRequestType $bookParkingRequest
+     * @return \traveltainment\SOAP17\StructType\BookRequestsType
      */
-    public function setBookParkingRequest(\StructType\BookParkingRequestType $bookParkingRequest = null)
+    public function setBookParkingRequest(\traveltainment\SOAP17\StructType\BookParkingRequestType $bookParkingRequest = null)
     {
         $this->BookParkingRequest = $bookParkingRequest;
         return $this;
@@ -153,7 +153,7 @@ class BookRequestsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookRequestsType
+     * @return \traveltainment\SOAP17\StructType\BookRequestsType
      */
     public static function __set_state(array $array)
     {

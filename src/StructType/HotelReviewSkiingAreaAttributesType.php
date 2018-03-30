@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewSkiingAreaAttributesType extends AbstractStructBase
     }
     /**
      * Set SkiingAreaAttribute value
-     * @uses \EnumType\HotelReviewSkiingAreaAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewSkiingAreaAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $skiingAreaAttribute
-     * @return \StructType\HotelReviewSkiingAreaAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType
      */
     public function setSkiingAreaAttribute(array $skiingAreaAttribute = array())
     {
         $invalidValues = array();
         foreach ($skiingAreaAttribute as $hotelReviewSkiingAreaAttributesTypeSkiingAreaAttributeItem) {
-            if (!\EnumType\HotelReviewSkiingAreaAttribute::valueIsValid($hotelReviewSkiingAreaAttributesTypeSkiingAreaAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::valueIsValid($hotelReviewSkiingAreaAttributesTypeSkiingAreaAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewSkiingAreaAttributesTypeSkiingAreaAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewSkiingAreaAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::getValidValues())), __LINE__);
         }
         $this->SkiingAreaAttribute = $skiingAreaAttribute;
         return $this;
     }
     /**
      * Add item to SkiingAreaAttribute value
-     * @uses \EnumType\HotelReviewSkiingAreaAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewSkiingAreaAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewSkiingAreaAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType
      */
     public function addToSkiingAreaAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewSkiingAreaAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewSkiingAreaAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewSkiingAreaAttribute::getValidValues())), __LINE__);
         }
         $this->SkiingAreaAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewSkiingAreaAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewSkiingAreaAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,28 +14,28 @@ class AllProvidersType extends AbstractStructBase
      * The RentalCar
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ProvidersType
+     * @var \traveltainment\SOAP17\StructType\ProvidersType
      */
     public $RentalCar;
     /**
      * The Insurance
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ProvidersType
+     * @var \traveltainment\SOAP17\StructType\ProvidersType
      */
     public $Insurance;
     /**
      * The Transfer
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ProvidersType
+     * @var \traveltainment\SOAP17\StructType\ProvidersType
      */
     public $Transfer;
     /**
      * The Parking
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ProvidersType
+     * @var \traveltainment\SOAP17\StructType\ProvidersType
      */
     public $Parking;
     /**
@@ -44,12 +44,12 @@ class AllProvidersType extends AbstractStructBase
      * @uses AllProvidersType::setInsurance()
      * @uses AllProvidersType::setTransfer()
      * @uses AllProvidersType::setParking()
-     * @param \StructType\ProvidersType $rentalCar
-     * @param \StructType\ProvidersType $insurance
-     * @param \StructType\ProvidersType $transfer
-     * @param \StructType\ProvidersType $parking
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $rentalCar
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $insurance
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $transfer
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $parking
      */
-    public function __construct(\StructType\ProvidersType $rentalCar = null, \StructType\ProvidersType $insurance = null, \StructType\ProvidersType $transfer = null, \StructType\ProvidersType $parking = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ProvidersType $rentalCar = null, \traveltainment\SOAP17\StructType\ProvidersType $insurance = null, \traveltainment\SOAP17\StructType\ProvidersType $transfer = null, \traveltainment\SOAP17\StructType\ProvidersType $parking = null)
     {
         $this
             ->setRentalCar($rentalCar)
@@ -59,7 +59,7 @@ class AllProvidersType extends AbstractStructBase
     }
     /**
      * Get RentalCar value
-     * @return \StructType\ProvidersType|null
+     * @return \traveltainment\SOAP17\StructType\ProvidersType|null
      */
     public function getRentalCar()
     {
@@ -67,17 +67,17 @@ class AllProvidersType extends AbstractStructBase
     }
     /**
      * Set RentalCar value
-     * @param \StructType\ProvidersType $rentalCar
-     * @return \StructType\AllProvidersType
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $rentalCar
+     * @return \traveltainment\SOAP17\StructType\AllProvidersType
      */
-    public function setRentalCar(\StructType\ProvidersType $rentalCar = null)
+    public function setRentalCar(\traveltainment\SOAP17\StructType\ProvidersType $rentalCar = null)
     {
         $this->RentalCar = $rentalCar;
         return $this;
     }
     /**
      * Get Insurance value
-     * @return \StructType\ProvidersType|null
+     * @return \traveltainment\SOAP17\StructType\ProvidersType|null
      */
     public function getInsurance()
     {
@@ -85,17 +85,17 @@ class AllProvidersType extends AbstractStructBase
     }
     /**
      * Set Insurance value
-     * @param \StructType\ProvidersType $insurance
-     * @return \StructType\AllProvidersType
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $insurance
+     * @return \traveltainment\SOAP17\StructType\AllProvidersType
      */
-    public function setInsurance(\StructType\ProvidersType $insurance = null)
+    public function setInsurance(\traveltainment\SOAP17\StructType\ProvidersType $insurance = null)
     {
         $this->Insurance = $insurance;
         return $this;
     }
     /**
      * Get Transfer value
-     * @return \StructType\ProvidersType|null
+     * @return \traveltainment\SOAP17\StructType\ProvidersType|null
      */
     public function getTransfer()
     {
@@ -103,17 +103,17 @@ class AllProvidersType extends AbstractStructBase
     }
     /**
      * Set Transfer value
-     * @param \StructType\ProvidersType $transfer
-     * @return \StructType\AllProvidersType
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $transfer
+     * @return \traveltainment\SOAP17\StructType\AllProvidersType
      */
-    public function setTransfer(\StructType\ProvidersType $transfer = null)
+    public function setTransfer(\traveltainment\SOAP17\StructType\ProvidersType $transfer = null)
     {
         $this->Transfer = $transfer;
         return $this;
     }
     /**
      * Get Parking value
-     * @return \StructType\ProvidersType|null
+     * @return \traveltainment\SOAP17\StructType\ProvidersType|null
      */
     public function getParking()
     {
@@ -121,10 +121,10 @@ class AllProvidersType extends AbstractStructBase
     }
     /**
      * Set Parking value
-     * @param \StructType\ProvidersType $parking
-     * @return \StructType\AllProvidersType
+     * @param \traveltainment\SOAP17\StructType\ProvidersType $parking
+     * @return \traveltainment\SOAP17\StructType\AllProvidersType
      */
-    public function setParking(\StructType\ProvidersType $parking = null)
+    public function setParking(\traveltainment\SOAP17\StructType\ProvidersType $parking = null)
     {
         $this->Parking = $parking;
         return $this;
@@ -135,7 +135,7 @@ class AllProvidersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AllProvidersType
+     * @return \traveltainment\SOAP17\StructType\AllProvidersType
      */
     public static function __set_state(array $array)
     {

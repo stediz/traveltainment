@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class AddonInformationType extends AbstractStructBase
     /**
      * Set AddonId value
      * @param string $addonId
-     * @return \StructType\AddonInformationType
+     * @return \traveltainment\SOAP17\StructType\AddonInformationType
      */
     public function setAddonId($addonId = null)
     {
@@ -71,17 +71,17 @@ class AddonInformationType extends AbstractStructBase
     }
     /**
      * Set AddonType value
-     * @uses \EnumType\AddonDefinitionType::valueIsValid()
-     * @uses \EnumType\AddonDefinitionType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\AddonDefinitionType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\AddonDefinitionType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $addonType
-     * @return \StructType\AddonInformationType
+     * @return \traveltainment\SOAP17\StructType\AddonInformationType
      */
     public function setAddonType($addonType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AddonDefinitionType::valueIsValid($addonType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addonType, implode(', ', \EnumType\AddonDefinitionType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\AddonDefinitionType::valueIsValid($addonType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $addonType, implode(', ', \traveltainment\SOAP17\EnumType\AddonDefinitionType::getValidValues())), __LINE__);
         }
         $this->AddonType = $addonType;
         return $this;
@@ -92,7 +92,7 @@ class AddonInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonInformationType
+     * @return \traveltainment\SOAP17\StructType\AddonInformationType
      */
     public static function __set_state(array $array)
     {

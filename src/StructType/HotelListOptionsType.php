@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,17 +37,17 @@ class HotelListOptionsType extends OptionsType
     }
     /**
      * Set Sorting value
-     * @uses \EnumType\HotelListSortingType::valueIsValid()
-     * @uses \EnumType\HotelListSortingType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelListSortingType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelListSortingType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $sorting
-     * @return \StructType\HotelListOptionsType
+     * @return \traveltainment\SOAP17\StructType\HotelListOptionsType
      */
     public function setSorting($sorting = 'PRICE')
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelListSortingType::valueIsValid($sorting)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sorting, implode(', ', \EnumType\HotelListSortingType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelListSortingType::valueIsValid($sorting)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sorting, implode(', ', \traveltainment\SOAP17\EnumType\HotelListSortingType::getValidValues())), __LINE__);
         }
         $this->Sorting = $sorting;
         return $this;
@@ -58,7 +58,7 @@ class HotelListOptionsType extends OptionsType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelListOptionsType
+     * @return \traveltainment\SOAP17\StructType\HotelListOptionsType
      */
     public static function __set_state(array $array)
     {

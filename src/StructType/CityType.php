@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class CityType extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\CityType
+     * @return \traveltainment\SOAP17\StructType\CityType
      */
     public function setCity($city = null)
     {
@@ -66,7 +66,7 @@ class CityType extends AbstractStructBase
     /**
      * Set CityID value
      * @param int $cityID
-     * @return \StructType\CityType
+     * @return \traveltainment\SOAP17\StructType\CityType
      */
     public function setCityID($cityID = null)
     {
@@ -83,7 +83,7 @@ class CityType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CityType
+     * @return \traveltainment\SOAP17\StructType\CityType
      */
     public static function __set_state(array $array)
     {

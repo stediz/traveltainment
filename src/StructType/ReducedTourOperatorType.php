@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -68,7 +68,7 @@ class ReducedTourOperatorType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\ReducedTourOperatorType
+     * @return \traveltainment\SOAP17\StructType\ReducedTourOperatorType
      */
     public function set_($_ = null)
     {
@@ -90,7 +90,7 @@ class ReducedTourOperatorType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\ReducedTourOperatorType
+     * @return \traveltainment\SOAP17\StructType\ReducedTourOperatorType
      */
     public function setName($name = null)
     {
@@ -112,7 +112,7 @@ class ReducedTourOperatorType extends AbstractStructBase
     /**
      * Set LogoURL value
      * @param string $logoURL
-     * @return \StructType\ReducedTourOperatorType
+     * @return \traveltainment\SOAP17\StructType\ReducedTourOperatorType
      */
     public function setLogoURL($logoURL = null)
     {
@@ -134,7 +134,7 @@ class ReducedTourOperatorType extends AbstractStructBase
     /**
      * Set HotelProvider value
      * @param string $hotelProvider
-     * @return \StructType\ReducedTourOperatorType
+     * @return \traveltainment\SOAP17\StructType\ReducedTourOperatorType
      */
     public function setHotelProvider($hotelProvider = null)
     {
@@ -156,7 +156,7 @@ class ReducedTourOperatorType extends AbstractStructBase
     /**
      * Set FlightProvider value
      * @param string $flightProvider
-     * @return \StructType\ReducedTourOperatorType
+     * @return \traveltainment\SOAP17\StructType\ReducedTourOperatorType
      */
     public function setFlightProvider($flightProvider = null)
     {
@@ -173,7 +173,7 @@ class ReducedTourOperatorType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReducedTourOperatorType
+     * @return \traveltainment\SOAP17\StructType\ReducedTourOperatorType
      */
     public static function __set_state(array $array)
     {

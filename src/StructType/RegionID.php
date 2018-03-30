@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class RegionID extends AbstractStructBase
     /**
      * Set _ value
      * @param int $_
-     * @return \StructType\RegionID
+     * @return \traveltainment\SOAP17\StructType\RegionID
      */
     public function set_($_ = null)
     {
@@ -70,7 +70,7 @@ class RegionID extends AbstractStructBase
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\RegionID
+     * @return \traveltainment\SOAP17\StructType\RegionID
      */
     public function setWeightage($weightage = '0')
     {
@@ -95,7 +95,7 @@ class RegionID extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionID
+     * @return \traveltainment\SOAP17\StructType\RegionID
      */
     public static function __set_state(array $array)
     {

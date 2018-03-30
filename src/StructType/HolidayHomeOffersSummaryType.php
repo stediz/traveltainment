@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,17 +12,17 @@ class HolidayHomeOffersSummaryType extends AbstractStructBase
 {
     /**
      * The StartDates
-     * @var \StructType\StartDatesType
+     * @var \traveltainment\SOAP17\StructType\StartDatesType
      */
     public $StartDates;
     /**
      * The StayDurations
-     * @var \StructType\DurationListType
+     * @var \traveltainment\SOAP17\StructType\DurationListType
      */
     public $StayDurations;
     /**
      * The TourOperators
-     * @var \StructType\TourOperatorListType
+     * @var \traveltainment\SOAP17\StructType\TourOperatorListType
      */
     public $TourOperators;
     /**
@@ -30,11 +30,11 @@ class HolidayHomeOffersSummaryType extends AbstractStructBase
      * @uses HolidayHomeOffersSummaryType::setStartDates()
      * @uses HolidayHomeOffersSummaryType::setStayDurations()
      * @uses HolidayHomeOffersSummaryType::setTourOperators()
-     * @param \StructType\StartDatesType $startDates
-     * @param \StructType\DurationListType $stayDurations
-     * @param \StructType\TourOperatorListType $tourOperators
+     * @param \traveltainment\SOAP17\StructType\StartDatesType $startDates
+     * @param \traveltainment\SOAP17\StructType\DurationListType $stayDurations
+     * @param \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators
      */
-    public function __construct(\StructType\StartDatesType $startDates = null, \StructType\DurationListType $stayDurations = null, \StructType\TourOperatorListType $tourOperators = null)
+    public function __construct(\traveltainment\SOAP17\StructType\StartDatesType $startDates = null, \traveltainment\SOAP17\StructType\DurationListType $stayDurations = null, \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators = null)
     {
         $this
             ->setStartDates($startDates)
@@ -43,7 +43,7 @@ class HolidayHomeOffersSummaryType extends AbstractStructBase
     }
     /**
      * Get StartDates value
-     * @return \StructType\StartDatesType|null
+     * @return \traveltainment\SOAP17\StructType\StartDatesType|null
      */
     public function getStartDates()
     {
@@ -51,17 +51,17 @@ class HolidayHomeOffersSummaryType extends AbstractStructBase
     }
     /**
      * Set StartDates value
-     * @param \StructType\StartDatesType $startDates
-     * @return \StructType\HolidayHomeOffersSummaryType
+     * @param \traveltainment\SOAP17\StructType\StartDatesType $startDates
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType
      */
-    public function setStartDates(\StructType\StartDatesType $startDates = null)
+    public function setStartDates(\traveltainment\SOAP17\StructType\StartDatesType $startDates = null)
     {
         $this->StartDates = $startDates;
         return $this;
     }
     /**
      * Get StayDurations value
-     * @return \StructType\DurationListType|null
+     * @return \traveltainment\SOAP17\StructType\DurationListType|null
      */
     public function getStayDurations()
     {
@@ -69,17 +69,17 @@ class HolidayHomeOffersSummaryType extends AbstractStructBase
     }
     /**
      * Set StayDurations value
-     * @param \StructType\DurationListType $stayDurations
-     * @return \StructType\HolidayHomeOffersSummaryType
+     * @param \traveltainment\SOAP17\StructType\DurationListType $stayDurations
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType
      */
-    public function setStayDurations(\StructType\DurationListType $stayDurations = null)
+    public function setStayDurations(\traveltainment\SOAP17\StructType\DurationListType $stayDurations = null)
     {
         $this->StayDurations = $stayDurations;
         return $this;
     }
     /**
      * Get TourOperators value
-     * @return \StructType\TourOperatorListType|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorListType|null
      */
     public function getTourOperators()
     {
@@ -87,10 +87,10 @@ class HolidayHomeOffersSummaryType extends AbstractStructBase
     }
     /**
      * Set TourOperators value
-     * @param \StructType\TourOperatorListType $tourOperators
-     * @return \StructType\HolidayHomeOffersSummaryType
+     * @param \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType
      */
-    public function setTourOperators(\StructType\TourOperatorListType $tourOperators = null)
+    public function setTourOperators(\traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators = null)
     {
         $this->TourOperators = $tourOperators;
         return $this;
@@ -101,7 +101,7 @@ class HolidayHomeOffersSummaryType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOffersSummaryType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOffersSummaryType
      */
     public static function __set_state(array $array)
     {

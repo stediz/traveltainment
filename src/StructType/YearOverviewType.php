@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class YearOverviewType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 12
      * - minOccurs: 0
-     * @var \StructType\ClimaDataValueType[]
+     * @var \traveltainment\SOAP17\StructType\ClimaDataValueType[]
      */
     public $ValueOfMonth;
     /**
@@ -27,7 +27,7 @@ class YearOverviewType extends AbstractStructBase
      * Constructor method for YearOverviewType
      * @uses YearOverviewType::setValueOfMonth()
      * @uses YearOverviewType::setClimaDataType()
-     * @param \StructType\ClimaDataValueType[] $valueOfMonth
+     * @param \traveltainment\SOAP17\StructType\ClimaDataValueType[] $valueOfMonth
      * @param string $climaDataType
      */
     public function __construct(array $valueOfMonth = array(), $climaDataType = null)
@@ -38,7 +38,7 @@ class YearOverviewType extends AbstractStructBase
     }
     /**
      * Get ValueOfMonth value
-     * @return \StructType\ClimaDataValueType[]|null
+     * @return \traveltainment\SOAP17\StructType\ClimaDataValueType[]|null
      */
     public function getValueOfMonth()
     {
@@ -47,15 +47,15 @@ class YearOverviewType extends AbstractStructBase
     /**
      * Set ValueOfMonth value
      * @throws \InvalidArgumentException
-     * @param \StructType\ClimaDataValueType[] $valueOfMonth
-     * @return \StructType\YearOverviewType
+     * @param \traveltainment\SOAP17\StructType\ClimaDataValueType[] $valueOfMonth
+     * @return \traveltainment\SOAP17\StructType\YearOverviewType
      */
     public function setValueOfMonth(array $valueOfMonth = array())
     {
         foreach ($valueOfMonth as $yearOverviewTypeValueOfMonthItem) {
             // validation for constraint: itemType
-            if (!$yearOverviewTypeValueOfMonthItem instanceof \StructType\ClimaDataValueType) {
-                throw new \InvalidArgumentException(sprintf('The ValueOfMonth property can only contain items of \StructType\ClimaDataValueType, "%s" given', is_object($yearOverviewTypeValueOfMonthItem) ? get_class($yearOverviewTypeValueOfMonthItem) : gettype($yearOverviewTypeValueOfMonthItem)), __LINE__);
+            if (!$yearOverviewTypeValueOfMonthItem instanceof \traveltainment\SOAP17\StructType\ClimaDataValueType) {
+                throw new \InvalidArgumentException(sprintf('The ValueOfMonth property can only contain items of \traveltainment\SOAP17\StructType\ClimaDataValueType, "%s" given', is_object($yearOverviewTypeValueOfMonthItem) ? get_class($yearOverviewTypeValueOfMonthItem) : gettype($yearOverviewTypeValueOfMonthItem)), __LINE__);
             }
         }
         $this->ValueOfMonth = $valueOfMonth;
@@ -64,14 +64,14 @@ class YearOverviewType extends AbstractStructBase
     /**
      * Add item to ValueOfMonth value
      * @throws \InvalidArgumentException
-     * @param \StructType\ClimaDataValueType $item
-     * @return \StructType\YearOverviewType
+     * @param \traveltainment\SOAP17\StructType\ClimaDataValueType $item
+     * @return \traveltainment\SOAP17\StructType\YearOverviewType
      */
-    public function addToValueOfMonth(\StructType\ClimaDataValueType $item)
+    public function addToValueOfMonth(\traveltainment\SOAP17\StructType\ClimaDataValueType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ClimaDataValueType) {
-            throw new \InvalidArgumentException(sprintf('The ValueOfMonth property can only contain items of \StructType\ClimaDataValueType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ClimaDataValueType) {
+            throw new \InvalidArgumentException(sprintf('The ValueOfMonth property can only contain items of \traveltainment\SOAP17\StructType\ClimaDataValueType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ValueOfMonth[] = $item;
         return $this;
@@ -86,17 +86,17 @@ class YearOverviewType extends AbstractStructBase
     }
     /**
      * Set ClimaDataType value
-     * @uses \EnumType\ClimaDataTypeEnum::valueIsValid()
-     * @uses \EnumType\ClimaDataTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ClimaDataTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ClimaDataTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $climaDataType
-     * @return \StructType\YearOverviewType
+     * @return \traveltainment\SOAP17\StructType\YearOverviewType
      */
     public function setClimaDataType($climaDataType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ClimaDataTypeEnum::valueIsValid($climaDataType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $climaDataType, implode(', ', \EnumType\ClimaDataTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ClimaDataTypeEnum::valueIsValid($climaDataType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $climaDataType, implode(', ', \traveltainment\SOAP17\EnumType\ClimaDataTypeEnum::getValidValues())), __LINE__);
         }
         $this->ClimaDataType = $climaDataType;
         return $this;
@@ -107,7 +107,7 @@ class YearOverviewType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\YearOverviewType
+     * @return \traveltainment\SOAP17\StructType\YearOverviewType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class ProviderInfoMessagesType extends AbstractStructBase
      * Set ProviderInfoMessage value
      * @throws \InvalidArgumentException
      * @param string[] $providerInfoMessage
-     * @return \StructType\ProviderInfoMessagesType
+     * @return \traveltainment\SOAP17\StructType\ProviderInfoMessagesType
      */
     public function setProviderInfoMessage(array $providerInfoMessage = array())
     {
@@ -57,7 +57,7 @@ class ProviderInfoMessagesType extends AbstractStructBase
      * Add item to ProviderInfoMessage value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\ProviderInfoMessagesType
+     * @return \traveltainment\SOAP17\StructType\ProviderInfoMessagesType
      */
     public function addToProviderInfoMessage($item)
     {
@@ -74,7 +74,7 @@ class ProviderInfoMessagesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProviderInfoMessagesType
+     * @return \traveltainment\SOAP17\StructType\ProviderInfoMessagesType
      */
     public static function __set_state(array $array)
     {

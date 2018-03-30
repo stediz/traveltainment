@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -51,7 +51,7 @@ class Offer3pDescription extends AbstractStructBase
      * The ProductImgURL
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ImageType
+     * @var \traveltainment\SOAP17\StructType\ImageType
      */
     public $ProductImgURL;
     /**
@@ -67,9 +67,9 @@ class Offer3pDescription extends AbstractStructBase
      * @param string $teaserText
      * @param string $detail
      * @param string $detailURL
-     * @param \StructType\ImageType $productImgURL
+     * @param \traveltainment\SOAP17\StructType\ImageType $productImgURL
      */
-    public function __construct($title = null, $name = null, $teaserText = null, $detail = null, $detailURL = null, \StructType\ImageType $productImgURL = null)
+    public function __construct($title = null, $name = null, $teaserText = null, $detail = null, $detailURL = null, \traveltainment\SOAP17\StructType\ImageType $productImgURL = null)
     {
         $this
             ->setTitle($title)
@@ -90,7 +90,7 @@ class Offer3pDescription extends AbstractStructBase
     /**
      * Set Title value
      * @param string $title
-     * @return \StructType\Offer3pDescription
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription
      */
     public function setTitle($title = null)
     {
@@ -112,7 +112,7 @@ class Offer3pDescription extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\Offer3pDescription
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription
      */
     public function setName($name = null)
     {
@@ -134,7 +134,7 @@ class Offer3pDescription extends AbstractStructBase
     /**
      * Set TeaserText value
      * @param string $teaserText
-     * @return \StructType\Offer3pDescription
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription
      */
     public function setTeaserText($teaserText = null)
     {
@@ -156,7 +156,7 @@ class Offer3pDescription extends AbstractStructBase
     /**
      * Set Detail value
      * @param string $detail
-     * @return \StructType\Offer3pDescription
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription
      */
     public function setDetail($detail = null)
     {
@@ -178,7 +178,7 @@ class Offer3pDescription extends AbstractStructBase
     /**
      * Set DetailURL value
      * @param string $detailURL
-     * @return \StructType\Offer3pDescription
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription
      */
     public function setDetailURL($detailURL = null)
     {
@@ -191,7 +191,7 @@ class Offer3pDescription extends AbstractStructBase
     }
     /**
      * Get ProductImgURL value
-     * @return \StructType\ImageType|null
+     * @return \traveltainment\SOAP17\StructType\ImageType|null
      */
     public function getProductImgURL()
     {
@@ -199,10 +199,10 @@ class Offer3pDescription extends AbstractStructBase
     }
     /**
      * Set ProductImgURL value
-     * @param \StructType\ImageType $productImgURL
-     * @return \StructType\Offer3pDescription
+     * @param \traveltainment\SOAP17\StructType\ImageType $productImgURL
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription
      */
-    public function setProductImgURL(\StructType\ImageType $productImgURL = null)
+    public function setProductImgURL(\traveltainment\SOAP17\StructType\ImageType $productImgURL = null)
     {
         $this->ProductImgURL = $productImgURL;
         return $this;
@@ -213,7 +213,7 @@ class Offer3pDescription extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Offer3pDescription
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription
      */
     public static function __set_state(array $array)
     {

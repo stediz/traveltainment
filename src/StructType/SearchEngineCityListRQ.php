@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,24 +12,24 @@ class SearchEngineCityListRQ extends XmlInterfaceRQ
 {
     /**
      * The Search
-     * @var \StructType\CityListSearchType
+     * @var \traveltainment\SOAP17\StructType\CityListSearchType
      */
     public $Search;
     /**
      * The Filter
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CityListFilterType
+     * @var \traveltainment\SOAP17\StructType\CityListFilterType
      */
     public $Filter;
     /**
      * Constructor method for SearchEngineCityListRQ
      * @uses SearchEngineCityListRQ::setSearch()
      * @uses SearchEngineCityListRQ::setFilter()
-     * @param \StructType\CityListSearchType $search
-     * @param \StructType\CityListFilterType $filter
+     * @param \traveltainment\SOAP17\StructType\CityListSearchType $search
+     * @param \traveltainment\SOAP17\StructType\CityListFilterType $filter
      */
-    public function __construct(\StructType\CityListSearchType $search = null, \StructType\CityListFilterType $filter = null)
+    public function __construct(\traveltainment\SOAP17\StructType\CityListSearchType $search = null, \traveltainment\SOAP17\StructType\CityListFilterType $filter = null)
     {
         $this
             ->setSearch($search)
@@ -37,7 +37,7 @@ class SearchEngineCityListRQ extends XmlInterfaceRQ
     }
     /**
      * Get Search value
-     * @return \StructType\CityListSearchType|null
+     * @return \traveltainment\SOAP17\StructType\CityListSearchType|null
      */
     public function getSearch()
     {
@@ -45,17 +45,17 @@ class SearchEngineCityListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Search value
-     * @param \StructType\CityListSearchType $search
-     * @return \StructType\SearchEngineCityListRQ
+     * @param \traveltainment\SOAP17\StructType\CityListSearchType $search
+     * @return \traveltainment\SOAP17\StructType\SearchEngineCityListRQ
      */
-    public function setSearch(\StructType\CityListSearchType $search = null)
+    public function setSearch(\traveltainment\SOAP17\StructType\CityListSearchType $search = null)
     {
         $this->Search = $search;
         return $this;
     }
     /**
      * Get Filter value
-     * @return \StructType\CityListFilterType|null
+     * @return \traveltainment\SOAP17\StructType\CityListFilterType|null
      */
     public function getFilter()
     {
@@ -63,10 +63,10 @@ class SearchEngineCityListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Filter value
-     * @param \StructType\CityListFilterType $filter
-     * @return \StructType\SearchEngineCityListRQ
+     * @param \traveltainment\SOAP17\StructType\CityListFilterType $filter
+     * @return \traveltainment\SOAP17\StructType\SearchEngineCityListRQ
      */
-    public function setFilter(\StructType\CityListFilterType $filter = null)
+    public function setFilter(\traveltainment\SOAP17\StructType\CityListFilterType $filter = null)
     {
         $this->Filter = $filter;
         return $this;
@@ -77,7 +77,7 @@ class SearchEngineCityListRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineCityListRQ
+     * @return \traveltainment\SOAP17\StructType\SearchEngineCityListRQ
      */
     public static function __set_state(array $array)
     {

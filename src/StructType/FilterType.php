@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,17 +12,17 @@ class FilterType extends AbstractStructBase
 {
     /**
      * The CreationDate
-     * @var \StructType\DateSpanType
+     * @var \traveltainment\SOAP17\StructType\DateSpanType
      */
     public $CreationDate;
     /**
      * The DepartureDate
-     * @var \StructType\DateSpanType
+     * @var \traveltainment\SOAP17\StructType\DateSpanType
      */
     public $DepartureDate;
     /**
      * The BookingDate
-     * @var \StructType\DateSpanType
+     * @var \traveltainment\SOAP17\StructType\DateSpanType
      */
     public $BookingDate;
     /**
@@ -50,14 +50,14 @@ class FilterType extends AbstractStructBase
      * The CustomerName
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PersonNameType
+     * @var \traveltainment\SOAP17\StructType\PersonNameType
      */
     public $CustomerName;
     /**
      * The TourOperator
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TourOperatorType
+     * @var \traveltainment\SOAP17\StructType\TourOperatorType
      */
     public $TourOperator;
     /**
@@ -78,17 +78,17 @@ class FilterType extends AbstractStructBase
      * @uses FilterType::setCustomerName()
      * @uses FilterType::setTourOperator()
      * @uses FilterType::setProcessNo()
-     * @param \StructType\DateSpanType $creationDate
-     * @param \StructType\DateSpanType $departureDate
-     * @param \StructType\DateSpanType $bookingDate
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $creationDate
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $departureDate
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $bookingDate
      * @param string $shoppingCartID
      * @param string $addonID
      * @param string $bookingID
-     * @param \StructType\PersonNameType $customerName
-     * @param \StructType\TourOperatorType $tourOperator
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $customerName
+     * @param \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator
      * @param string $processNo
      */
-    public function __construct(\StructType\DateSpanType $creationDate = null, \StructType\DateSpanType $departureDate = null, \StructType\DateSpanType $bookingDate = null, $shoppingCartID = null, $addonID = null, $bookingID = null, \StructType\PersonNameType $customerName = null, \StructType\TourOperatorType $tourOperator = null, $processNo = null)
+    public function __construct(\traveltainment\SOAP17\StructType\DateSpanType $creationDate = null, \traveltainment\SOAP17\StructType\DateSpanType $departureDate = null, \traveltainment\SOAP17\StructType\DateSpanType $bookingDate = null, $shoppingCartID = null, $addonID = null, $bookingID = null, \traveltainment\SOAP17\StructType\PersonNameType $customerName = null, \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator = null, $processNo = null)
     {
         $this
             ->setCreationDate($creationDate)
@@ -103,7 +103,7 @@ class FilterType extends AbstractStructBase
     }
     /**
      * Get CreationDate value
-     * @return \StructType\DateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateSpanType|null
      */
     public function getCreationDate()
     {
@@ -111,17 +111,17 @@ class FilterType extends AbstractStructBase
     }
     /**
      * Set CreationDate value
-     * @param \StructType\DateSpanType $creationDate
-     * @return \StructType\FilterType
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $creationDate
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
-    public function setCreationDate(\StructType\DateSpanType $creationDate = null)
+    public function setCreationDate(\traveltainment\SOAP17\StructType\DateSpanType $creationDate = null)
     {
         $this->CreationDate = $creationDate;
         return $this;
     }
     /**
      * Get DepartureDate value
-     * @return \StructType\DateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateSpanType|null
      */
     public function getDepartureDate()
     {
@@ -129,17 +129,17 @@ class FilterType extends AbstractStructBase
     }
     /**
      * Set DepartureDate value
-     * @param \StructType\DateSpanType $departureDate
-     * @return \StructType\FilterType
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $departureDate
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
-    public function setDepartureDate(\StructType\DateSpanType $departureDate = null)
+    public function setDepartureDate(\traveltainment\SOAP17\StructType\DateSpanType $departureDate = null)
     {
         $this->DepartureDate = $departureDate;
         return $this;
     }
     /**
      * Get BookingDate value
-     * @return \StructType\DateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateSpanType|null
      */
     public function getBookingDate()
     {
@@ -147,10 +147,10 @@ class FilterType extends AbstractStructBase
     }
     /**
      * Set BookingDate value
-     * @param \StructType\DateSpanType $bookingDate
-     * @return \StructType\FilterType
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $bookingDate
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
-    public function setBookingDate(\StructType\DateSpanType $bookingDate = null)
+    public function setBookingDate(\traveltainment\SOAP17\StructType\DateSpanType $bookingDate = null)
     {
         $this->BookingDate = $bookingDate;
         return $this;
@@ -166,7 +166,7 @@ class FilterType extends AbstractStructBase
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\FilterType
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -188,7 +188,7 @@ class FilterType extends AbstractStructBase
     /**
      * Set AddonID value
      * @param string $addonID
-     * @return \StructType\FilterType
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
     public function setAddonID($addonID = null)
     {
@@ -210,7 +210,7 @@ class FilterType extends AbstractStructBase
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\FilterType
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
     public function setBookingID($bookingID = null)
     {
@@ -223,7 +223,7 @@ class FilterType extends AbstractStructBase
     }
     /**
      * Get CustomerName value
-     * @return \StructType\PersonNameType|null
+     * @return \traveltainment\SOAP17\StructType\PersonNameType|null
      */
     public function getCustomerName()
     {
@@ -231,17 +231,17 @@ class FilterType extends AbstractStructBase
     }
     /**
      * Set CustomerName value
-     * @param \StructType\PersonNameType $customerName
-     * @return \StructType\FilterType
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $customerName
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
-    public function setCustomerName(\StructType\PersonNameType $customerName = null)
+    public function setCustomerName(\traveltainment\SOAP17\StructType\PersonNameType $customerName = null)
     {
         $this->CustomerName = $customerName;
         return $this;
     }
     /**
      * Get TourOperator value
-     * @return \StructType\TourOperatorType|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorType|null
      */
     public function getTourOperator()
     {
@@ -249,10 +249,10 @@ class FilterType extends AbstractStructBase
     }
     /**
      * Set TourOperator value
-     * @param \StructType\TourOperatorType $tourOperator
-     * @return \StructType\FilterType
+     * @param \traveltainment\SOAP17\StructType\TourOperatorType $tourOperator
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
-    public function setTourOperator(\StructType\TourOperatorType $tourOperator = null)
+    public function setTourOperator(\traveltainment\SOAP17\StructType\TourOperatorType $tourOperator = null)
     {
         $this->TourOperator = $tourOperator;
         return $this;
@@ -268,7 +268,7 @@ class FilterType extends AbstractStructBase
     /**
      * Set ProcessNo value
      * @param string $processNo
-     * @return \StructType\FilterType
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
     public function setProcessNo($processNo = null)
     {
@@ -285,7 +285,7 @@ class FilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FilterType
+     * @return \traveltainment\SOAP17\StructType\FilterType
      */
     public static function __set_state(array $array)
     {

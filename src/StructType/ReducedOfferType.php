@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class ReducedOfferType extends AbstractStructBase
     public $Alternative;
     /**
      * The PriceInformation
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $PriceInformation;
     /**
@@ -32,7 +32,7 @@ class ReducedOfferType extends AbstractStructBase
     public $TravelDuration;
     /**
      * The TourOperator
-     * @var \StructType\ReducedTourOperatorType
+     * @var \traveltainment\SOAP17\StructType\ReducedTourOperatorType
      */
     public $TourOperator;
     /**
@@ -46,7 +46,7 @@ class ReducedOfferType extends AbstractStructBase
      * The Room
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SimpleRoomType
+     * @var \traveltainment\SOAP17\StructType\SimpleRoomType
      */
     public $Room;
     /**
@@ -60,7 +60,7 @@ class ReducedOfferType extends AbstractStructBase
      * The DepartureAirport
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AirportType
+     * @var \traveltainment\SOAP17\StructType\AirportType
      */
     public $DepartureAirport;
     /**
@@ -84,16 +84,16 @@ class ReducedOfferType extends AbstractStructBase
      * @uses ReducedOfferType::setTravelType()
      * @param string $offerID
      * @param bool $alternative
-     * @param \StructType\PriceInformationType $priceInformation
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
      * @param int $travelDuration
-     * @param \StructType\ReducedTourOperatorType $tourOperator
+     * @param \traveltainment\SOAP17\StructType\ReducedTourOperatorType $tourOperator
      * @param SpecialJourneyAttribute $specialJourneyAttributes
-     * @param \StructType\SimpleRoomType $room
+     * @param \traveltainment\SOAP17\StructType\SimpleRoomType $room
      * @param string $meal
-     * @param \StructType\AirportType $departureAirport
+     * @param \traveltainment\SOAP17\StructType\AirportType $departureAirport
      * @param string $travelType
      */
-    public function __construct($offerID = null, $alternative = null, \StructType\PriceInformationType $priceInformation = null, $travelDuration = null, \StructType\ReducedTourOperatorType $tourOperator = null, SpecialJourneyAttribute $specialJourneyAttributes = null, \StructType\SimpleRoomType $room = null, $meal = null, \StructType\AirportType $departureAirport = null, $travelType = null)
+    public function __construct($offerID = null, $alternative = null, \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null, $travelDuration = null, \traveltainment\SOAP17\StructType\ReducedTourOperatorType $tourOperator = null, SpecialJourneyAttribute $specialJourneyAttributes = null, \traveltainment\SOAP17\StructType\SimpleRoomType $room = null, $meal = null, \traveltainment\SOAP17\StructType\AirportType $departureAirport = null, $travelType = null)
     {
         $this
             ->setOfferID($offerID)
@@ -118,7 +118,7 @@ class ReducedOfferType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\ReducedOfferType
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public function setOfferID($offerID = null)
     {
@@ -140,7 +140,7 @@ class ReducedOfferType extends AbstractStructBase
     /**
      * Set Alternative value
      * @param bool $alternative
-     * @return \StructType\ReducedOfferType
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public function setAlternative($alternative = null)
     {
@@ -153,7 +153,7 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Get PriceInformation value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getPriceInformation()
     {
@@ -161,10 +161,10 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Set PriceInformation value
-     * @param \StructType\PriceInformationType $priceInformation
-     * @return \StructType\ReducedOfferType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
-    public function setPriceInformation(\StructType\PriceInformationType $priceInformation = null)
+    public function setPriceInformation(\traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this->PriceInformation = $priceInformation;
         return $this;
@@ -180,7 +180,7 @@ class ReducedOfferType extends AbstractStructBase
     /**
      * Set TravelDuration value
      * @param int $travelDuration
-     * @return \StructType\ReducedOfferType
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public function setTravelDuration($travelDuration = null)
     {
@@ -193,7 +193,7 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Get TourOperator value
-     * @return \StructType\ReducedTourOperatorType|null
+     * @return \traveltainment\SOAP17\StructType\ReducedTourOperatorType|null
      */
     public function getTourOperator()
     {
@@ -201,10 +201,10 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Set TourOperator value
-     * @param \StructType\ReducedTourOperatorType $tourOperator
-     * @return \StructType\ReducedOfferType
+     * @param \traveltainment\SOAP17\StructType\ReducedTourOperatorType $tourOperator
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
-    public function setTourOperator(\StructType\ReducedTourOperatorType $tourOperator = null)
+    public function setTourOperator(\traveltainment\SOAP17\StructType\ReducedTourOperatorType $tourOperator = null)
     {
         $this->TourOperator = $tourOperator;
         return $this;
@@ -220,7 +220,7 @@ class ReducedOfferType extends AbstractStructBase
     /**
      * Set SpecialJourneyAttributes value
      * @param SpecialJourneyAttribute $specialJourneyAttributes
-     * @return \StructType\ReducedOfferType
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public function setSpecialJourneyAttributes(SpecialJourneyAttribute $specialJourneyAttributes = null)
     {
@@ -229,7 +229,7 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Get Room value
-     * @return \StructType\SimpleRoomType|null
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomType|null
      */
     public function getRoom()
     {
@@ -237,10 +237,10 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Set Room value
-     * @param \StructType\SimpleRoomType $room
-     * @return \StructType\ReducedOfferType
+     * @param \traveltainment\SOAP17\StructType\SimpleRoomType $room
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
-    public function setRoom(\StructType\SimpleRoomType $room = null)
+    public function setRoom(\traveltainment\SOAP17\StructType\SimpleRoomType $room = null)
     {
         $this->Room = $room;
         return $this;
@@ -255,24 +255,24 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Set Meal value
-     * @uses \EnumType\Meal::valueIsValid()
-     * @uses \EnumType\Meal::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $meal
-     * @return \StructType\ReducedOfferType
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public function setMeal($meal = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Meal::valueIsValid($meal)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $meal, implode(', ', \EnumType\Meal::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Meal::valueIsValid($meal)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $meal, implode(', ', \traveltainment\SOAP17\EnumType\Meal::getValidValues())), __LINE__);
         }
         $this->Meal = $meal;
         return $this;
     }
     /**
      * Get DepartureAirport value
-     * @return \StructType\AirportType|null
+     * @return \traveltainment\SOAP17\StructType\AirportType|null
      */
     public function getDepartureAirport()
     {
@@ -280,10 +280,10 @@ class ReducedOfferType extends AbstractStructBase
     }
     /**
      * Set DepartureAirport value
-     * @param \StructType\AirportType $departureAirport
-     * @return \StructType\ReducedOfferType
+     * @param \traveltainment\SOAP17\StructType\AirportType $departureAirport
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
-    public function setDepartureAirport(\StructType\AirportType $departureAirport = null)
+    public function setDepartureAirport(\traveltainment\SOAP17\StructType\AirportType $departureAirport = null)
     {
         $this->DepartureAirport = $departureAirport;
         return $this;
@@ -299,7 +299,7 @@ class ReducedOfferType extends AbstractStructBase
     /**
      * Set TravelType value
      * @param string $travelType
-     * @return \StructType\ReducedOfferType
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public function setTravelType($travelType = null)
     {
@@ -316,7 +316,7 @@ class ReducedOfferType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReducedOfferType
+     * @return \traveltainment\SOAP17\StructType\ReducedOfferType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class CautionType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\CautionType
+     * @return \traveltainment\SOAP17\StructType\CautionType
      */
     public function set_($_ = null)
     {
@@ -70,7 +70,7 @@ class CautionType extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\CautionType
+     * @return \traveltainment\SOAP17\StructType\CautionType
      */
     public function setType($type = null)
     {
@@ -87,7 +87,7 @@ class CautionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CautionType
+     * @return \traveltainment\SOAP17\StructType\CautionType
      */
     public static function __set_state(array $array)
     {

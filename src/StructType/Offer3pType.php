@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -42,31 +42,31 @@ class Offer3pType extends AbstractStructBase
     public $IsPreferredOffer;
     /**
      * The Description
-     * @var \StructType\Offer3pDescription
+     * @var \traveltainment\SOAP17\StructType\Offer3pDescription
      */
     public $Description;
     /**
      * The OfferCost
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $OfferCost;
     /**
      * The ExtendedOfferCost
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $ExtendedOfferCost;
     /**
      * The AvailablePayments
-     * @var \StructType\PaymentTypesType
+     * @var \traveltainment\SOAP17\StructType\PaymentTypesType
      */
     public $AvailablePayments;
     /**
      * The Underwriter
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\UnderwriterType
+     * @var \traveltainment\SOAP17\StructType\UnderwriterType
      */
     public $Underwriter;
     /**
@@ -90,14 +90,14 @@ class Offer3pType extends AbstractStructBase
      * @param string $offerEffectiveDate
      * @param string $offerExpireDate
      * @param bool $isPreferredOffer
-     * @param \StructType\Offer3pDescription $description
-     * @param \StructType\SimplePriceType $offerCost
-     * @param \StructType\PriceInformationType $extendedOfferCost
-     * @param \StructType\PaymentTypesType $availablePayments
-     * @param \StructType\UnderwriterType $underwriter
+     * @param \traveltainment\SOAP17\StructType\Offer3pDescription $description
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $offerCost
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost
+     * @param \traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments
+     * @param \traveltainment\SOAP17\StructType\UnderwriterType $underwriter
      * @param string $termsAndConditionsURL
      */
-    public function __construct($offerID = null, $offerEffectiveDate = null, $offerExpireDate = null, $isPreferredOffer = null, \StructType\Offer3pDescription $description = null, \StructType\SimplePriceType $offerCost = null, \StructType\PriceInformationType $extendedOfferCost = null, \StructType\PaymentTypesType $availablePayments = null, \StructType\UnderwriterType $underwriter = null, $termsAndConditionsURL = null)
+    public function __construct($offerID = null, $offerEffectiveDate = null, $offerExpireDate = null, $isPreferredOffer = null, \traveltainment\SOAP17\StructType\Offer3pDescription $description = null, \traveltainment\SOAP17\StructType\SimplePriceType $offerCost = null, \traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost = null, \traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments = null, \traveltainment\SOAP17\StructType\UnderwriterType $underwriter = null, $termsAndConditionsURL = null)
     {
         $this
             ->setOfferID($offerID)
@@ -122,7 +122,7 @@ class Offer3pType extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\Offer3pType
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
     public function setOfferID($offerID = null)
     {
@@ -144,7 +144,7 @@ class Offer3pType extends AbstractStructBase
     /**
      * Set OfferEffectiveDate value
      * @param string $offerEffectiveDate
-     * @return \StructType\Offer3pType
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
     public function setOfferEffectiveDate($offerEffectiveDate = null)
     {
@@ -166,7 +166,7 @@ class Offer3pType extends AbstractStructBase
     /**
      * Set OfferExpireDate value
      * @param string $offerExpireDate
-     * @return \StructType\Offer3pType
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
     public function setOfferExpireDate($offerExpireDate = null)
     {
@@ -188,7 +188,7 @@ class Offer3pType extends AbstractStructBase
     /**
      * Set IsPreferredOffer value
      * @param bool $isPreferredOffer
-     * @return \StructType\Offer3pType
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
     public function setIsPreferredOffer($isPreferredOffer = null)
     {
@@ -201,7 +201,7 @@ class Offer3pType extends AbstractStructBase
     }
     /**
      * Get Description value
-     * @return \StructType\Offer3pDescription|null
+     * @return \traveltainment\SOAP17\StructType\Offer3pDescription|null
      */
     public function getDescription()
     {
@@ -209,17 +209,17 @@ class Offer3pType extends AbstractStructBase
     }
     /**
      * Set Description value
-     * @param \StructType\Offer3pDescription $description
-     * @return \StructType\Offer3pType
+     * @param \traveltainment\SOAP17\StructType\Offer3pDescription $description
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
-    public function setDescription(\StructType\Offer3pDescription $description = null)
+    public function setDescription(\traveltainment\SOAP17\StructType\Offer3pDescription $description = null)
     {
         $this->Description = $description;
         return $this;
     }
     /**
      * Get OfferCost value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function getOfferCost()
     {
@@ -227,17 +227,17 @@ class Offer3pType extends AbstractStructBase
     }
     /**
      * Set OfferCost value
-     * @param \StructType\SimplePriceType $offerCost
-     * @return \StructType\Offer3pType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $offerCost
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
-    public function setOfferCost(\StructType\SimplePriceType $offerCost = null)
+    public function setOfferCost(\traveltainment\SOAP17\StructType\SimplePriceType $offerCost = null)
     {
         $this->OfferCost = $offerCost;
         return $this;
     }
     /**
      * Get ExtendedOfferCost value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getExtendedOfferCost()
     {
@@ -245,17 +245,17 @@ class Offer3pType extends AbstractStructBase
     }
     /**
      * Set ExtendedOfferCost value
-     * @param \StructType\PriceInformationType $extendedOfferCost
-     * @return \StructType\Offer3pType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
-    public function setExtendedOfferCost(\StructType\PriceInformationType $extendedOfferCost = null)
+    public function setExtendedOfferCost(\traveltainment\SOAP17\StructType\PriceInformationType $extendedOfferCost = null)
     {
         $this->ExtendedOfferCost = $extendedOfferCost;
         return $this;
     }
     /**
      * Get AvailablePayments value
-     * @return \StructType\PaymentTypesType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentTypesType|null
      */
     public function getAvailablePayments()
     {
@@ -263,17 +263,17 @@ class Offer3pType extends AbstractStructBase
     }
     /**
      * Set AvailablePayments value
-     * @param \StructType\PaymentTypesType $availablePayments
-     * @return \StructType\Offer3pType
+     * @param \traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
-    public function setAvailablePayments(\StructType\PaymentTypesType $availablePayments = null)
+    public function setAvailablePayments(\traveltainment\SOAP17\StructType\PaymentTypesType $availablePayments = null)
     {
         $this->AvailablePayments = $availablePayments;
         return $this;
     }
     /**
      * Get Underwriter value
-     * @return \StructType\UnderwriterType|null
+     * @return \traveltainment\SOAP17\StructType\UnderwriterType|null
      */
     public function getUnderwriter()
     {
@@ -281,10 +281,10 @@ class Offer3pType extends AbstractStructBase
     }
     /**
      * Set Underwriter value
-     * @param \StructType\UnderwriterType $underwriter
-     * @return \StructType\Offer3pType
+     * @param \traveltainment\SOAP17\StructType\UnderwriterType $underwriter
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
-    public function setUnderwriter(\StructType\UnderwriterType $underwriter = null)
+    public function setUnderwriter(\traveltainment\SOAP17\StructType\UnderwriterType $underwriter = null)
     {
         $this->Underwriter = $underwriter;
         return $this;
@@ -300,7 +300,7 @@ class Offer3pType extends AbstractStructBase
     /**
      * Set TermsAndConditionsURL value
      * @param string $termsAndConditionsURL
-     * @return \StructType\Offer3pType
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
     public function setTermsAndConditionsURL($termsAndConditionsURL = null)
     {
@@ -317,7 +317,7 @@ class Offer3pType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Offer3pType
+     * @return \traveltainment\SOAP17\StructType\Offer3pType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class OpeningHoursType extends AbstractStructBase
     }
     /**
      * Set Weekday value
-     * @uses \EnumType\WeekdayEnum::valueIsValid()
-     * @uses \EnumType\WeekdayEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\WeekdayEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\WeekdayEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $weekday
-     * @return \StructType\OpeningHoursType
+     * @return \traveltainment\SOAP17\StructType\OpeningHoursType
      */
     public function setWeekday($weekday = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\WeekdayEnum::valueIsValid($weekday)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $weekday, implode(', ', \EnumType\WeekdayEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\WeekdayEnum::valueIsValid($weekday)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $weekday, implode(', ', \traveltainment\SOAP17\EnumType\WeekdayEnum::getValidValues())), __LINE__);
         }
         $this->Weekday = $weekday;
         return $this;
@@ -75,7 +75,7 @@ class OpeningHoursType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\OpeningHoursType
+     * @return \traveltainment\SOAP17\StructType\OpeningHoursType
      */
     public function set_($_ = null)
     {
@@ -96,7 +96,7 @@ class OpeningHoursType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OpeningHoursType
+     * @return \traveltainment\SOAP17\StructType\OpeningHoursType
      */
     public static function __set_state(array $array)
     {

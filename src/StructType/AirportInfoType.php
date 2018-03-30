@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -48,7 +48,7 @@ class AirportInfoType extends AbstractStructBase
     /**
      * Set ArrivalCode value
      * @param string $arrivalCode
-     * @return \StructType\AirportInfoType
+     * @return \traveltainment\SOAP17\StructType\AirportInfoType
      */
     public function setArrivalCode($arrivalCode = null)
     {
@@ -74,7 +74,7 @@ class AirportInfoType extends AbstractStructBase
     /**
      * Set DepartureCode value
      * @param string $departureCode
-     * @return \StructType\AirportInfoType
+     * @return \traveltainment\SOAP17\StructType\AirportInfoType
      */
     public function setDepartureCode($departureCode = null)
     {
@@ -95,7 +95,7 @@ class AirportInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AirportInfoType
+     * @return \traveltainment\SOAP17\StructType\AirportInfoType
      */
     public static function __set_state(array $array)
     {

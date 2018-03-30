@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_SimpleRegionList extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineSimpleRegionListRQ
+     * @var \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRQ
      */
     public $request;
     /**
      * Constructor method for Search_Package_SimpleRegionList
      * @uses Search_Package_SimpleRegionList::setRequest()
-     * @param \StructType\SearchEngineSimpleRegionListRQ $request
+     * @param \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRQ $request
      */
-    public function __construct(\StructType\SearchEngineSimpleRegionListRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\SearchEngineSimpleRegionListRQ|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_Package_SimpleRegionList extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\SearchEngineSimpleRegionListRQ $request
-     * @return \StructType\Search_Package_SimpleRegionList
+     * @param \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_Package_SimpleRegionList
      */
-    public function setRequest(\StructType\SearchEngineSimpleRegionListRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_SimpleRegionList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_SimpleRegionList
+     * @return \traveltainment\SOAP17\StructType\Search_Package_SimpleRegionList
      */
     public static function __set_state(array $array)
     {

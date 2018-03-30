@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,17 +37,17 @@ class OfferListOptionsType extends OptionsType
     }
     /**
      * Set Sorting value
-     * @uses \EnumType\OfferListSortingType::valueIsValid()
-     * @uses \EnumType\OfferListSortingType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferListSortingType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferListSortingType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $sorting
-     * @return \StructType\OfferListOptionsType
+     * @return \traveltainment\SOAP17\StructType\OfferListOptionsType
      */
     public function setSorting($sorting = 'PERCENTAGEFIT')
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferListSortingType::valueIsValid($sorting)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sorting, implode(', ', \EnumType\OfferListSortingType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferListSortingType::valueIsValid($sorting)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $sorting, implode(', ', \traveltainment\SOAP17\EnumType\OfferListSortingType::getValidValues())), __LINE__);
         }
         $this->Sorting = $sorting;
         return $this;
@@ -58,7 +58,7 @@ class OfferListOptionsType extends OptionsType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferListOptionsType
+     * @return \traveltainment\SOAP17\StructType\OfferListOptionsType
      */
     public static function __set_state(array $array)
     {

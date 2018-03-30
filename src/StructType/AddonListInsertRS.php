@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class AddonListInsertRS extends XmlInterfaceRS
 {
     /**
      * The AddonInformationList
-     * @var \StructType\AddonInformationListType
+     * @var \traveltainment\SOAP17\StructType\AddonInformationListType
      */
     public $AddonInformationList;
     /**
      * Constructor method for AddonListInsertRS
      * @uses AddonListInsertRS::setAddonInformationList()
-     * @param \StructType\AddonInformationListType $addonInformationList
+     * @param \traveltainment\SOAP17\StructType\AddonInformationListType $addonInformationList
      */
-    public function __construct(\StructType\AddonInformationListType $addonInformationList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonInformationListType $addonInformationList = null)
     {
         $this
             ->setAddonInformationList($addonInformationList);
     }
     /**
      * Get AddonInformationList value
-     * @return \StructType\AddonInformationListType|null
+     * @return \traveltainment\SOAP17\StructType\AddonInformationListType|null
      */
     public function getAddonInformationList()
     {
@@ -35,10 +35,10 @@ class AddonListInsertRS extends XmlInterfaceRS
     }
     /**
      * Set AddonInformationList value
-     * @param \StructType\AddonInformationListType $addonInformationList
-     * @return \StructType\AddonListInsertRS
+     * @param \traveltainment\SOAP17\StructType\AddonInformationListType $addonInformationList
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertRS
      */
-    public function setAddonInformationList(\StructType\AddonInformationListType $addonInformationList = null)
+    public function setAddonInformationList(\traveltainment\SOAP17\StructType\AddonInformationListType $addonInformationList = null)
     {
         $this->AddonInformationList = $addonInformationList;
         return $this;
@@ -49,7 +49,7 @@ class AddonListInsertRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonListInsertRS
+     * @return \traveltainment\SOAP17\StructType\AddonListInsertRS
      */
     public static function __set_state(array $array)
     {

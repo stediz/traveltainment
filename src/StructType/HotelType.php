@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,35 +14,35 @@ class HotelType extends AbstractStructBase
      * The RoomType
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RoomListType
+     * @var \traveltainment\SOAP17\StructType\RoomListType
      */
     public $RoomType;
     /**
      * The MealType
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\MealRequest
+     * @var \traveltainment\SOAP17\StructType\MealRequest
      */
     public $MealType;
     /**
      * The Category
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Category
+     * @var \traveltainment\SOAP17\StructType\Category
      */
     public $Category;
     /**
      * The SpecialStayAttributes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SpecialStayAttributesListType
+     * @var \traveltainment\SOAP17\StructType\SpecialStayAttributesListType
      */
     public $SpecialStayAttributes;
     /**
      * The HotelAttributes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelAttributesType
      */
     public $HotelAttributes;
     /**
@@ -64,35 +64,35 @@ class HotelType extends AbstractStructBase
     public $ObjectID;
     /**
      * The City
-     * @var \StructType\CityType
+     * @var \traveltainment\SOAP17\StructType\CityType
      */
     public $City;
     /**
      * The HotelReview
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewType
      */
     public $HotelReview;
     /**
      * The ObjectImages
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ObjectImagesType
+     * @var \traveltainment\SOAP17\StructType\ObjectImagesType
      */
     public $ObjectImages;
     /**
      * The TeaserText
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TeaserTextType
+     * @var \traveltainment\SOAP17\StructType\TeaserTextType
      */
     public $TeaserText;
     /**
      * The AccomIds
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AccomIds
+     * @var \traveltainment\SOAP17\StructType\AccomIds
      */
     public $AccomIds;
     /**
@@ -110,21 +110,21 @@ class HotelType extends AbstractStructBase
      * @uses HotelType::setObjectImages()
      * @uses HotelType::setTeaserText()
      * @uses HotelType::setAccomIds()
-     * @param \StructType\RoomListType $roomType
-     * @param \StructType\MealRequest $mealType
-     * @param \StructType\Category $category
-     * @param \StructType\SpecialStayAttributesListType $specialStayAttributes
-     * @param \StructType\HotelAttributesType $hotelAttributes
+     * @param \traveltainment\SOAP17\StructType\RoomListType $roomType
+     * @param \traveltainment\SOAP17\StructType\MealRequest $mealType
+     * @param \traveltainment\SOAP17\StructType\Category $category
+     * @param \traveltainment\SOAP17\StructType\SpecialStayAttributesListType $specialStayAttributes
+     * @param \traveltainment\SOAP17\StructType\HotelAttributesType $hotelAttributes
      * @param string $additionalAttributes
      * @param string $objectName
      * @param int $objectID
-     * @param \StructType\CityType $city
-     * @param \StructType\HotelReviewType $hotelReview
-     * @param \StructType\ObjectImagesType $objectImages
-     * @param \StructType\TeaserTextType $teaserText
-     * @param \StructType\AccomIds $accomIds
+     * @param \traveltainment\SOAP17\StructType\CityType $city
+     * @param \traveltainment\SOAP17\StructType\HotelReviewType $hotelReview
+     * @param \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages
+     * @param \traveltainment\SOAP17\StructType\TeaserTextType $teaserText
+     * @param \traveltainment\SOAP17\StructType\AccomIds $accomIds
      */
-    public function __construct(\StructType\RoomListType $roomType = null, \StructType\MealRequest $mealType = null, \StructType\Category $category = null, \StructType\SpecialStayAttributesListType $specialStayAttributes = null, \StructType\HotelAttributesType $hotelAttributes = null, $additionalAttributes = null, $objectName = null, $objectID = null, \StructType\CityType $city = null, \StructType\HotelReviewType $hotelReview = null, \StructType\ObjectImagesType $objectImages = null, \StructType\TeaserTextType $teaserText = null, \StructType\AccomIds $accomIds = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RoomListType $roomType = null, \traveltainment\SOAP17\StructType\MealRequest $mealType = null, \traveltainment\SOAP17\StructType\Category $category = null, \traveltainment\SOAP17\StructType\SpecialStayAttributesListType $specialStayAttributes = null, \traveltainment\SOAP17\StructType\HotelAttributesType $hotelAttributes = null, $additionalAttributes = null, $objectName = null, $objectID = null, \traveltainment\SOAP17\StructType\CityType $city = null, \traveltainment\SOAP17\StructType\HotelReviewType $hotelReview = null, \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages = null, \traveltainment\SOAP17\StructType\TeaserTextType $teaserText = null, \traveltainment\SOAP17\StructType\AccomIds $accomIds = null)
     {
         $this
             ->setRoomType($roomType)
@@ -143,7 +143,7 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Get RoomType value
-     * @return \StructType\RoomListType|null
+     * @return \traveltainment\SOAP17\StructType\RoomListType|null
      */
     public function getRoomType()
     {
@@ -151,17 +151,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set RoomType value
-     * @param \StructType\RoomListType $roomType
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\RoomListType $roomType
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setRoomType(\StructType\RoomListType $roomType = null)
+    public function setRoomType(\traveltainment\SOAP17\StructType\RoomListType $roomType = null)
     {
         $this->RoomType = $roomType;
         return $this;
     }
     /**
      * Get MealType value
-     * @return \StructType\MealRequest|null
+     * @return \traveltainment\SOAP17\StructType\MealRequest|null
      */
     public function getMealType()
     {
@@ -169,17 +169,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set MealType value
-     * @param \StructType\MealRequest $mealType
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\MealRequest $mealType
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setMealType(\StructType\MealRequest $mealType = null)
+    public function setMealType(\traveltainment\SOAP17\StructType\MealRequest $mealType = null)
     {
         $this->MealType = $mealType;
         return $this;
     }
     /**
      * Get Category value
-     * @return \StructType\Category|null
+     * @return \traveltainment\SOAP17\StructType\Category|null
      */
     public function getCategory()
     {
@@ -187,17 +187,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set Category value
-     * @param \StructType\Category $category
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\Category $category
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setCategory(\StructType\Category $category = null)
+    public function setCategory(\traveltainment\SOAP17\StructType\Category $category = null)
     {
         $this->Category = $category;
         return $this;
     }
     /**
      * Get SpecialStayAttributes value
-     * @return \StructType\SpecialStayAttributesListType|null
+     * @return \traveltainment\SOAP17\StructType\SpecialStayAttributesListType|null
      */
     public function getSpecialStayAttributes()
     {
@@ -205,17 +205,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set SpecialStayAttributes value
-     * @param \StructType\SpecialStayAttributesListType $specialStayAttributes
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\SpecialStayAttributesListType $specialStayAttributes
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setSpecialStayAttributes(\StructType\SpecialStayAttributesListType $specialStayAttributes = null)
+    public function setSpecialStayAttributes(\traveltainment\SOAP17\StructType\SpecialStayAttributesListType $specialStayAttributes = null)
     {
         $this->SpecialStayAttributes = $specialStayAttributes;
         return $this;
     }
     /**
      * Get HotelAttributes value
-     * @return \StructType\HotelAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelAttributesType|null
      */
     public function getHotelAttributes()
     {
@@ -223,10 +223,10 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set HotelAttributes value
-     * @param \StructType\HotelAttributesType $hotelAttributes
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\HotelAttributesType $hotelAttributes
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setHotelAttributes(\StructType\HotelAttributesType $hotelAttributes = null)
+    public function setHotelAttributes(\traveltainment\SOAP17\StructType\HotelAttributesType $hotelAttributes = null)
     {
         $this->HotelAttributes = $hotelAttributes;
         return $this;
@@ -242,7 +242,7 @@ class HotelType extends AbstractStructBase
     /**
      * Set AdditionalAttributes value
      * @param string $additionalAttributes
-     * @return \StructType\HotelType
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
     public function setAdditionalAttributes($additionalAttributes = null)
     {
@@ -264,7 +264,7 @@ class HotelType extends AbstractStructBase
     /**
      * Set ObjectName value
      * @param string $objectName
-     * @return \StructType\HotelType
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
     public function setObjectName($objectName = null)
     {
@@ -286,7 +286,7 @@ class HotelType extends AbstractStructBase
     /**
      * Set ObjectID value
      * @param int $objectID
-     * @return \StructType\HotelType
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
     public function setObjectID($objectID = null)
     {
@@ -299,7 +299,7 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Get City value
-     * @return \StructType\CityType|null
+     * @return \traveltainment\SOAP17\StructType\CityType|null
      */
     public function getCity()
     {
@@ -307,17 +307,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set City value
-     * @param \StructType\CityType $city
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\CityType $city
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setCity(\StructType\CityType $city = null)
+    public function setCity(\traveltainment\SOAP17\StructType\CityType $city = null)
     {
         $this->City = $city;
         return $this;
     }
     /**
      * Get HotelReview value
-     * @return \StructType\HotelReviewType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewType|null
      */
     public function getHotelReview()
     {
@@ -325,17 +325,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set HotelReview value
-     * @param \StructType\HotelReviewType $hotelReview
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewType $hotelReview
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setHotelReview(\StructType\HotelReviewType $hotelReview = null)
+    public function setHotelReview(\traveltainment\SOAP17\StructType\HotelReviewType $hotelReview = null)
     {
         $this->HotelReview = $hotelReview;
         return $this;
     }
     /**
      * Get ObjectImages value
-     * @return \StructType\ObjectImagesType|null
+     * @return \traveltainment\SOAP17\StructType\ObjectImagesType|null
      */
     public function getObjectImages()
     {
@@ -343,17 +343,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set ObjectImages value
-     * @param \StructType\ObjectImagesType $objectImages
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\ObjectImagesType $objectImages
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setObjectImages(\StructType\ObjectImagesType $objectImages = null)
+    public function setObjectImages(\traveltainment\SOAP17\StructType\ObjectImagesType $objectImages = null)
     {
         $this->ObjectImages = $objectImages;
         return $this;
     }
     /**
      * Get TeaserText value
-     * @return \StructType\TeaserTextType|null
+     * @return \traveltainment\SOAP17\StructType\TeaserTextType|null
      */
     public function getTeaserText()
     {
@@ -361,17 +361,17 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set TeaserText value
-     * @param \StructType\TeaserTextType $teaserText
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\TeaserTextType $teaserText
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setTeaserText(\StructType\TeaserTextType $teaserText = null)
+    public function setTeaserText(\traveltainment\SOAP17\StructType\TeaserTextType $teaserText = null)
     {
         $this->TeaserText = $teaserText;
         return $this;
     }
     /**
      * Get AccomIds value
-     * @return \StructType\AccomIds|null
+     * @return \traveltainment\SOAP17\StructType\AccomIds|null
      */
     public function getAccomIds()
     {
@@ -379,10 +379,10 @@ class HotelType extends AbstractStructBase
     }
     /**
      * Set AccomIds value
-     * @param \StructType\AccomIds $accomIds
-     * @return \StructType\HotelType
+     * @param \traveltainment\SOAP17\StructType\AccomIds $accomIds
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
-    public function setAccomIds(\StructType\AccomIds $accomIds = null)
+    public function setAccomIds(\traveltainment\SOAP17\StructType\AccomIds $accomIds = null)
     {
         $this->AccomIds = $accomIds;
         return $this;
@@ -393,7 +393,7 @@ class HotelType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelType
+     * @return \traveltainment\SOAP17\StructType\HotelType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,13 +16,13 @@ class ContactListType extends AbstractStructBase
      * - documentation: Dieser Knoten beinhaltet einen Kontaktdatensatz, der ueber die Attribute LocationType und TechType definiert wird.
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ContactType[]
+     * @var \traveltainment\SOAP17\StructType\ContactType[]
      */
     public $Contact;
     /**
      * Constructor method for ContactListType
      * @uses ContactListType::setContact()
-     * @param \StructType\ContactType[] $contact
+     * @param \traveltainment\SOAP17\StructType\ContactType[] $contact
      */
     public function __construct(array $contact = array())
     {
@@ -31,7 +31,7 @@ class ContactListType extends AbstractStructBase
     }
     /**
      * Get Contact value
-     * @return \StructType\ContactType[]|null
+     * @return \traveltainment\SOAP17\StructType\ContactType[]|null
      */
     public function getContact()
     {
@@ -40,15 +40,15 @@ class ContactListType extends AbstractStructBase
     /**
      * Set Contact value
      * @throws \InvalidArgumentException
-     * @param \StructType\ContactType[] $contact
-     * @return \StructType\ContactListType
+     * @param \traveltainment\SOAP17\StructType\ContactType[] $contact
+     * @return \traveltainment\SOAP17\StructType\ContactListType
      */
     public function setContact(array $contact = array())
     {
         foreach ($contact as $contactListTypeContactItem) {
             // validation for constraint: itemType
-            if (!$contactListTypeContactItem instanceof \StructType\ContactType) {
-                throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \StructType\ContactType, "%s" given', is_object($contactListTypeContactItem) ? get_class($contactListTypeContactItem) : gettype($contactListTypeContactItem)), __LINE__);
+            if (!$contactListTypeContactItem instanceof \traveltainment\SOAP17\StructType\ContactType) {
+                throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \traveltainment\SOAP17\StructType\ContactType, "%s" given', is_object($contactListTypeContactItem) ? get_class($contactListTypeContactItem) : gettype($contactListTypeContactItem)), __LINE__);
             }
         }
         $this->Contact = $contact;
@@ -57,14 +57,14 @@ class ContactListType extends AbstractStructBase
     /**
      * Add item to Contact value
      * @throws \InvalidArgumentException
-     * @param \StructType\ContactType $item
-     * @return \StructType\ContactListType
+     * @param \traveltainment\SOAP17\StructType\ContactType $item
+     * @return \traveltainment\SOAP17\StructType\ContactListType
      */
-    public function addToContact(\StructType\ContactType $item)
+    public function addToContact(\traveltainment\SOAP17\StructType\ContactType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ContactType) {
-            throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \StructType\ContactType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ContactType) {
+            throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \traveltainment\SOAP17\StructType\ContactType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Contact[] = $item;
         return $this;
@@ -75,7 +75,7 @@ class ContactListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ContactListType
+     * @return \traveltainment\SOAP17\StructType\ContactListType
      */
     public static function __set_state(array $array)
     {

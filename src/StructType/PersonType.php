@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class PersonType extends AbstractStructBase
      * The PersonName
      * Meta informations extracted from the WSDL
      * - documentation: Der Knoten PersonName beinhaltet Namensangaben zu einer Person.
-     * @var \StructType\PersonNameType
+     * @var \traveltainment\SOAP17\StructType\PersonNameType
      */
     public $PersonName;
     /**
@@ -29,7 +29,7 @@ class PersonType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Der Knoten Contacts beinhaltet eine Liste mit unterschiedlichen Kontaktangaben.
      * - minOccurs: 0
-     * @var \StructType\ContactListType
+     * @var \traveltainment\SOAP17\StructType\ContactListType
      */
     public $Contacts;
     /**
@@ -37,11 +37,11 @@ class PersonType extends AbstractStructBase
      * @uses PersonType::setPersonName()
      * @uses PersonType::setGender()
      * @uses PersonType::setContacts()
-     * @param \StructType\PersonNameType $personName
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $personName
      * @param string $gender
-     * @param \StructType\ContactListType $contacts
+     * @param \traveltainment\SOAP17\StructType\ContactListType $contacts
      */
-    public function __construct(\StructType\PersonNameType $personName = null, $gender = null, \StructType\ContactListType $contacts = null)
+    public function __construct(\traveltainment\SOAP17\StructType\PersonNameType $personName = null, $gender = null, \traveltainment\SOAP17\StructType\ContactListType $contacts = null)
     {
         $this
             ->setPersonName($personName)
@@ -50,7 +50,7 @@ class PersonType extends AbstractStructBase
     }
     /**
      * Get PersonName value
-     * @return \StructType\PersonNameType|null
+     * @return \traveltainment\SOAP17\StructType\PersonNameType|null
      */
     public function getPersonName()
     {
@@ -58,10 +58,10 @@ class PersonType extends AbstractStructBase
     }
     /**
      * Set PersonName value
-     * @param \StructType\PersonNameType $personName
-     * @return \StructType\PersonType
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $personName
+     * @return \traveltainment\SOAP17\StructType\PersonType
      */
-    public function setPersonName(\StructType\PersonNameType $personName = null)
+    public function setPersonName(\traveltainment\SOAP17\StructType\PersonNameType $personName = null)
     {
         $this->PersonName = $personName;
         return $this;
@@ -76,24 +76,24 @@ class PersonType extends AbstractStructBase
     }
     /**
      * Set Gender value
-     * @uses \EnumType\GenderType::valueIsValid()
-     * @uses \EnumType\GenderType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $gender
-     * @return \StructType\PersonType
+     * @return \traveltainment\SOAP17\StructType\PersonType
      */
     public function setGender($gender = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\GenderType::valueIsValid($gender)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \EnumType\GenderType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\GenderType::valueIsValid($gender)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \traveltainment\SOAP17\EnumType\GenderType::getValidValues())), __LINE__);
         }
         $this->Gender = $gender;
         return $this;
     }
     /**
      * Get Contacts value
-     * @return \StructType\ContactListType|null
+     * @return \traveltainment\SOAP17\StructType\ContactListType|null
      */
     public function getContacts()
     {
@@ -101,10 +101,10 @@ class PersonType extends AbstractStructBase
     }
     /**
      * Set Contacts value
-     * @param \StructType\ContactListType $contacts
-     * @return \StructType\PersonType
+     * @param \traveltainment\SOAP17\StructType\ContactListType $contacts
+     * @return \traveltainment\SOAP17\StructType\PersonType
      */
-    public function setContacts(\StructType\ContactListType $contacts = null)
+    public function setContacts(\traveltainment\SOAP17\StructType\ContactListType $contacts = null)
     {
         $this->Contacts = $contacts;
         return $this;
@@ -115,7 +115,7 @@ class PersonType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PersonType
+     * @return \traveltainment\SOAP17\StructType\PersonType
      */
     public static function __set_state(array $array)
     {

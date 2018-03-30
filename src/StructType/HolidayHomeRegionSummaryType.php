@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class HolidayHomeRegionSummaryType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeCitySummaryType[]
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType[]
      */
     public $City;
     /**
@@ -27,7 +27,7 @@ class HolidayHomeRegionSummaryType extends AbstractStructBase
      * Constructor method for HolidayHomeRegionSummaryType
      * @uses HolidayHomeRegionSummaryType::setCity()
      * @uses HolidayHomeRegionSummaryType::setName()
-     * @param \StructType\HolidayHomeCitySummaryType[] $city
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType[] $city
      * @param string $name
      */
     public function __construct(array $city = array(), $name = null)
@@ -38,7 +38,7 @@ class HolidayHomeRegionSummaryType extends AbstractStructBase
     }
     /**
      * Get City value
-     * @return \StructType\HolidayHomeCitySummaryType[]|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType[]|null
      */
     public function getCity()
     {
@@ -47,15 +47,15 @@ class HolidayHomeRegionSummaryType extends AbstractStructBase
     /**
      * Set City value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeCitySummaryType[] $city
-     * @return \StructType\HolidayHomeRegionSummaryType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType[] $city
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionSummaryType
      */
     public function setCity(array $city = array())
     {
         foreach ($city as $holidayHomeRegionSummaryTypeCityItem) {
             // validation for constraint: itemType
-            if (!$holidayHomeRegionSummaryTypeCityItem instanceof \StructType\HolidayHomeCitySummaryType) {
-                throw new \InvalidArgumentException(sprintf('The City property can only contain items of \StructType\HolidayHomeCitySummaryType, "%s" given', is_object($holidayHomeRegionSummaryTypeCityItem) ? get_class($holidayHomeRegionSummaryTypeCityItem) : gettype($holidayHomeRegionSummaryTypeCityItem)), __LINE__);
+            if (!$holidayHomeRegionSummaryTypeCityItem instanceof \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType) {
+                throw new \InvalidArgumentException(sprintf('The City property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType, "%s" given', is_object($holidayHomeRegionSummaryTypeCityItem) ? get_class($holidayHomeRegionSummaryTypeCityItem) : gettype($holidayHomeRegionSummaryTypeCityItem)), __LINE__);
             }
         }
         $this->City = $city;
@@ -64,14 +64,14 @@ class HolidayHomeRegionSummaryType extends AbstractStructBase
     /**
      * Add item to City value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeCitySummaryType $item
-     * @return \StructType\HolidayHomeRegionSummaryType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType $item
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionSummaryType
      */
-    public function addToCity(\StructType\HolidayHomeCitySummaryType $item)
+    public function addToCity(\traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HolidayHomeCitySummaryType) {
-            throw new \InvalidArgumentException(sprintf('The City property can only contain items of \StructType\HolidayHomeCitySummaryType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType) {
+            throw new \InvalidArgumentException(sprintf('The City property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeCitySummaryType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->City[] = $item;
         return $this;
@@ -87,7 +87,7 @@ class HolidayHomeRegionSummaryType extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\HolidayHomeRegionSummaryType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionSummaryType
      */
     public function setName($name = null)
     {
@@ -104,7 +104,7 @@ class HolidayHomeRegionSummaryType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeRegionSummaryType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionSummaryType
      */
     public static function __set_state(array $array)
     {

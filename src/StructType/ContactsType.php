@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ContactsType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ContactType[]
+     * @var \traveltainment\SOAP17\StructType\ContactType[]
      */
     public $Contact;
     /**
      * Constructor method for ContactsType
      * @uses ContactsType::setContact()
-     * @param \StructType\ContactType[] $contact
+     * @param \traveltainment\SOAP17\StructType\ContactType[] $contact
      */
     public function __construct(array $contact = array())
     {
@@ -30,7 +30,7 @@ class ContactsType extends AbstractStructBase
     }
     /**
      * Get Contact value
-     * @return \StructType\ContactType[]|null
+     * @return \traveltainment\SOAP17\StructType\ContactType[]|null
      */
     public function getContact()
     {
@@ -39,15 +39,15 @@ class ContactsType extends AbstractStructBase
     /**
      * Set Contact value
      * @throws \InvalidArgumentException
-     * @param \StructType\ContactType[] $contact
-     * @return \StructType\ContactsType
+     * @param \traveltainment\SOAP17\StructType\ContactType[] $contact
+     * @return \traveltainment\SOAP17\StructType\ContactsType
      */
     public function setContact(array $contact = array())
     {
         foreach ($contact as $contactsTypeContactItem) {
             // validation for constraint: itemType
-            if (!$contactsTypeContactItem instanceof \StructType\ContactType) {
-                throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \StructType\ContactType, "%s" given', is_object($contactsTypeContactItem) ? get_class($contactsTypeContactItem) : gettype($contactsTypeContactItem)), __LINE__);
+            if (!$contactsTypeContactItem instanceof \traveltainment\SOAP17\StructType\ContactType) {
+                throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \traveltainment\SOAP17\StructType\ContactType, "%s" given', is_object($contactsTypeContactItem) ? get_class($contactsTypeContactItem) : gettype($contactsTypeContactItem)), __LINE__);
             }
         }
         $this->Contact = $contact;
@@ -56,14 +56,14 @@ class ContactsType extends AbstractStructBase
     /**
      * Add item to Contact value
      * @throws \InvalidArgumentException
-     * @param \StructType\ContactType $item
-     * @return \StructType\ContactsType
+     * @param \traveltainment\SOAP17\StructType\ContactType $item
+     * @return \traveltainment\SOAP17\StructType\ContactsType
      */
-    public function addToContact(\StructType\ContactType $item)
+    public function addToContact(\traveltainment\SOAP17\StructType\ContactType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ContactType) {
-            throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \StructType\ContactType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ContactType) {
+            throw new \InvalidArgumentException(sprintf('The Contact property can only contain items of \traveltainment\SOAP17\StructType\ContactType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Contact[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ContactsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ContactsType
+     * @return \traveltainment\SOAP17\StructType\ContactsType
      */
     public static function __set_state(array $array)
     {

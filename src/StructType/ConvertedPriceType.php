@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class ConvertedPriceType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - documentation: Geldbetrag
      * - nillable: true
-     * @var \StructType\AmountType
+     * @var \traveltainment\SOAP17\StructType\AmountType
      */
     public $ConvertedAmount;
     /**
@@ -73,10 +73,10 @@ class ConvertedPriceType extends AbstractStructBase
      * @param string $originalCurrency
      * @param float $exchangeRate
      * @param float $_
-     * @param \StructType\AmountType $convertedAmount
+     * @param \traveltainment\SOAP17\StructType\AmountType $convertedAmount
      * @param float $convertedTaxesAndFees
      */
-    public function __construct($currency = null, $originalCurrency = null, $exchangeRate = null, $_ = null, \StructType\AmountType $convertedAmount = null, $convertedTaxesAndFees = null)
+    public function __construct($currency = null, $originalCurrency = null, $exchangeRate = null, $_ = null, \traveltainment\SOAP17\StructType\AmountType $convertedAmount = null, $convertedTaxesAndFees = null)
     {
         $this
             ->setCurrency($currency)
@@ -96,17 +96,17 @@ class ConvertedPriceType extends AbstractStructBase
     }
     /**
      * Set Currency value
-     * @uses \EnumType\CurrencyCode::valueIsValid()
-     * @uses \EnumType\CurrencyCode::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $currency
-     * @return \StructType\ConvertedPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType
      */
     public function setCurrency($currency = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CurrencyCode::valueIsValid($currency)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency, implode(', ', \EnumType\CurrencyCode::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid($currency)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency, implode(', ', \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues())), __LINE__);
         }
         $this->Currency = $currency;
         return $this;
@@ -121,17 +121,17 @@ class ConvertedPriceType extends AbstractStructBase
     }
     /**
      * Set OriginalCurrency value
-     * @uses \EnumType\CurrencyCode::valueIsValid()
-     * @uses \EnumType\CurrencyCode::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $originalCurrency
-     * @return \StructType\ConvertedPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType
      */
     public function setOriginalCurrency($originalCurrency = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CurrencyCode::valueIsValid($originalCurrency)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $originalCurrency, implode(', ', \EnumType\CurrencyCode::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid($originalCurrency)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $originalCurrency, implode(', ', \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues())), __LINE__);
         }
         $this->OriginalCurrency = $originalCurrency;
         return $this;
@@ -147,7 +147,7 @@ class ConvertedPriceType extends AbstractStructBase
     /**
      * Set ExchangeRate value
      * @param float $exchangeRate
-     * @return \StructType\ConvertedPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType
      */
     public function setExchangeRate($exchangeRate = null)
     {
@@ -165,7 +165,7 @@ class ConvertedPriceType extends AbstractStructBase
     /**
      * Set _ value
      * @param float $_
-     * @return \StructType\ConvertedPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType
      */
     public function set_($_ = null)
     {
@@ -186,7 +186,7 @@ class ConvertedPriceType extends AbstractStructBase
     }
     /**
      * Get ConvertedAmount value
-     * @return \StructType\AmountType|null
+     * @return \traveltainment\SOAP17\StructType\AmountType|null
      */
     public function getConvertedAmount()
     {
@@ -194,10 +194,10 @@ class ConvertedPriceType extends AbstractStructBase
     }
     /**
      * Set ConvertedAmount value
-     * @param \StructType\AmountType $convertedAmount
-     * @return \StructType\ConvertedPriceType
+     * @param \traveltainment\SOAP17\StructType\AmountType $convertedAmount
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType
      */
-    public function setConvertedAmount(\StructType\AmountType $convertedAmount = null)
+    public function setConvertedAmount(\traveltainment\SOAP17\StructType\AmountType $convertedAmount = null)
     {
         $this->ConvertedAmount = $convertedAmount;
         return $this;
@@ -213,7 +213,7 @@ class ConvertedPriceType extends AbstractStructBase
     /**
      * Set ConvertedTaxesAndFees value
      * @param float $convertedTaxesAndFees
-     * @return \StructType\ConvertedPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType
      */
     public function setConvertedTaxesAndFees($convertedTaxesAndFees = null)
     {
@@ -238,7 +238,7 @@ class ConvertedPriceType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConvertedPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class SearchEngineSimpleRegionListRS extends XmlInterfaceRS
      * Meta informations extracted from the WSDL
      * - maxOccurs: 2
      * - minOccurs: 0
-     * @var \StructType\SimpleRegionResultSetType[]
+     * @var \traveltainment\SOAP17\StructType\SimpleRegionResultSetType[]
      */
     public $SimpleRegionResultSet;
     /**
      * Constructor method for SearchEngineSimpleRegionListRS
      * @uses SearchEngineSimpleRegionListRS::setSimpleRegionResultSet()
-     * @param \StructType\SimpleRegionResultSetType[] $simpleRegionResultSet
+     * @param \traveltainment\SOAP17\StructType\SimpleRegionResultSetType[] $simpleRegionResultSet
      */
     public function __construct(array $simpleRegionResultSet = array())
     {
@@ -30,7 +30,7 @@ class SearchEngineSimpleRegionListRS extends XmlInterfaceRS
     }
     /**
      * Get SimpleRegionResultSet value
-     * @return \StructType\SimpleRegionResultSetType[]|null
+     * @return \traveltainment\SOAP17\StructType\SimpleRegionResultSetType[]|null
      */
     public function getSimpleRegionResultSet()
     {
@@ -39,15 +39,15 @@ class SearchEngineSimpleRegionListRS extends XmlInterfaceRS
     /**
      * Set SimpleRegionResultSet value
      * @throws \InvalidArgumentException
-     * @param \StructType\SimpleRegionResultSetType[] $simpleRegionResultSet
-     * @return \StructType\SearchEngineSimpleRegionListRS
+     * @param \traveltainment\SOAP17\StructType\SimpleRegionResultSetType[] $simpleRegionResultSet
+     * @return \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS
      */
     public function setSimpleRegionResultSet(array $simpleRegionResultSet = array())
     {
         foreach ($simpleRegionResultSet as $searchEngineSimpleRegionListRSSimpleRegionResultSetItem) {
             // validation for constraint: itemType
-            if (!$searchEngineSimpleRegionListRSSimpleRegionResultSetItem instanceof \StructType\SimpleRegionResultSetType) {
-                throw new \InvalidArgumentException(sprintf('The SimpleRegionResultSet property can only contain items of \StructType\SimpleRegionResultSetType, "%s" given', is_object($searchEngineSimpleRegionListRSSimpleRegionResultSetItem) ? get_class($searchEngineSimpleRegionListRSSimpleRegionResultSetItem) : gettype($searchEngineSimpleRegionListRSSimpleRegionResultSetItem)), __LINE__);
+            if (!$searchEngineSimpleRegionListRSSimpleRegionResultSetItem instanceof \traveltainment\SOAP17\StructType\SimpleRegionResultSetType) {
+                throw new \InvalidArgumentException(sprintf('The SimpleRegionResultSet property can only contain items of \traveltainment\SOAP17\StructType\SimpleRegionResultSetType, "%s" given', is_object($searchEngineSimpleRegionListRSSimpleRegionResultSetItem) ? get_class($searchEngineSimpleRegionListRSSimpleRegionResultSetItem) : gettype($searchEngineSimpleRegionListRSSimpleRegionResultSetItem)), __LINE__);
             }
         }
         $this->SimpleRegionResultSet = $simpleRegionResultSet;
@@ -56,14 +56,14 @@ class SearchEngineSimpleRegionListRS extends XmlInterfaceRS
     /**
      * Add item to SimpleRegionResultSet value
      * @throws \InvalidArgumentException
-     * @param \StructType\SimpleRegionResultSetType $item
-     * @return \StructType\SearchEngineSimpleRegionListRS
+     * @param \traveltainment\SOAP17\StructType\SimpleRegionResultSetType $item
+     * @return \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS
      */
-    public function addToSimpleRegionResultSet(\StructType\SimpleRegionResultSetType $item)
+    public function addToSimpleRegionResultSet(\traveltainment\SOAP17\StructType\SimpleRegionResultSetType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SimpleRegionResultSetType) {
-            throw new \InvalidArgumentException(sprintf('The SimpleRegionResultSet property can only contain items of \StructType\SimpleRegionResultSetType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\SimpleRegionResultSetType) {
+            throw new \InvalidArgumentException(sprintf('The SimpleRegionResultSet property can only contain items of \traveltainment\SOAP17\StructType\SimpleRegionResultSetType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->SimpleRegionResultSet[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class SearchEngineSimpleRegionListRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineSimpleRegionListRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineSimpleRegionListRS
      */
     public static function __set_state(array $array)
     {

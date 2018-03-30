@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,17 +22,17 @@ class SimpleOffer extends AbstractStructBase
     public $Price;
     /**
      * The Fulfilments
-     * @var \StructType\Fulfilments
+     * @var \traveltainment\SOAP17\StructType\Fulfilments
      */
     public $Fulfilments;
     /**
      * The Flags
-     * @var \StructType\Flags
+     * @var \traveltainment\SOAP17\StructType\Flags
      */
     public $Flags;
     /**
      * The PriceInformation
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $PriceInformation;
     /**
@@ -58,13 +58,13 @@ class SimpleOffer extends AbstractStructBase
      * @uses SimpleOffer::setWeightage()
      * @param string $offerID
      * @param int $price
-     * @param \StructType\Fulfilments $fulfilments
-     * @param \StructType\Flags $flags
-     * @param \StructType\PriceInformationType $priceInformation
+     * @param \traveltainment\SOAP17\StructType\Fulfilments $fulfilments
+     * @param \traveltainment\SOAP17\StructType\Flags $flags
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
      * @param int $averageFlightDuration
      * @param int $weightage
      */
-    public function __construct($offerID = null, $price = null, \StructType\Fulfilments $fulfilments = null, \StructType\Flags $flags = null, \StructType\PriceInformationType $priceInformation = null, $averageFlightDuration = null, $weightage = null)
+    public function __construct($offerID = null, $price = null, \traveltainment\SOAP17\StructType\Fulfilments $fulfilments = null, \traveltainment\SOAP17\StructType\Flags $flags = null, \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null, $averageFlightDuration = null, $weightage = null)
     {
         $this
             ->setOfferID($offerID)
@@ -86,7 +86,7 @@ class SimpleOffer extends AbstractStructBase
     /**
      * Set OfferID value
      * @param string $offerID
-     * @return \StructType\SimpleOffer
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
     public function setOfferID($offerID = null)
     {
@@ -108,7 +108,7 @@ class SimpleOffer extends AbstractStructBase
     /**
      * Set Price value
      * @param int $price
-     * @return \StructType\SimpleOffer
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
     public function setPrice($price = null)
     {
@@ -121,7 +121,7 @@ class SimpleOffer extends AbstractStructBase
     }
     /**
      * Get Fulfilments value
-     * @return \StructType\Fulfilments|null
+     * @return \traveltainment\SOAP17\StructType\Fulfilments|null
      */
     public function getFulfilments()
     {
@@ -129,17 +129,17 @@ class SimpleOffer extends AbstractStructBase
     }
     /**
      * Set Fulfilments value
-     * @param \StructType\Fulfilments $fulfilments
-     * @return \StructType\SimpleOffer
+     * @param \traveltainment\SOAP17\StructType\Fulfilments $fulfilments
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
-    public function setFulfilments(\StructType\Fulfilments $fulfilments = null)
+    public function setFulfilments(\traveltainment\SOAP17\StructType\Fulfilments $fulfilments = null)
     {
         $this->Fulfilments = $fulfilments;
         return $this;
     }
     /**
      * Get Flags value
-     * @return \StructType\Flags|null
+     * @return \traveltainment\SOAP17\StructType\Flags|null
      */
     public function getFlags()
     {
@@ -147,17 +147,17 @@ class SimpleOffer extends AbstractStructBase
     }
     /**
      * Set Flags value
-     * @param \StructType\Flags $flags
-     * @return \StructType\SimpleOffer
+     * @param \traveltainment\SOAP17\StructType\Flags $flags
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
-    public function setFlags(\StructType\Flags $flags = null)
+    public function setFlags(\traveltainment\SOAP17\StructType\Flags $flags = null)
     {
         $this->Flags = $flags;
         return $this;
     }
     /**
      * Get PriceInformation value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getPriceInformation()
     {
@@ -165,10 +165,10 @@ class SimpleOffer extends AbstractStructBase
     }
     /**
      * Set PriceInformation value
-     * @param \StructType\PriceInformationType $priceInformation
-     * @return \StructType\SimpleOffer
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
-    public function setPriceInformation(\StructType\PriceInformationType $priceInformation = null)
+    public function setPriceInformation(\traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this->PriceInformation = $priceInformation;
         return $this;
@@ -184,7 +184,7 @@ class SimpleOffer extends AbstractStructBase
     /**
      * Set AverageFlightDuration value
      * @param int $averageFlightDuration
-     * @return \StructType\SimpleOffer
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
     public function setAverageFlightDuration($averageFlightDuration = null)
     {
@@ -206,7 +206,7 @@ class SimpleOffer extends AbstractStructBase
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\SimpleOffer
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
     public function setWeightage($weightage = null)
     {
@@ -223,7 +223,7 @@ class SimpleOffer extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleOffer
+     * @return \traveltainment\SOAP17\StructType\SimpleOffer
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_CrossSelling_CarRentalLocations extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetCarRentalLocationsRQType
+     * @var \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType
      */
     public $request;
     /**
      * Constructor method for Search_CrossSelling_CarRentalLocations
      * @uses Search_CrossSelling_CarRentalLocations::setRequest()
-     * @param \StructType\GetCarRentalLocationsRQType $request
+     * @param \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType $request
      */
-    public function __construct(\StructType\GetCarRentalLocationsRQType $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetCarRentalLocationsRQType|null
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_CrossSelling_CarRentalLocations extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetCarRentalLocationsRQType $request
-     * @return \StructType\Search_CrossSelling_CarRentalLocations
+     * @param \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType $request
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalLocations
      */
-    public function setRequest(\StructType\GetCarRentalLocationsRQType $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_CrossSelling_CarRentalLocations extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_CrossSelling_CarRentalLocations
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalLocations
      */
     public static function __set_state(array $array)
     {

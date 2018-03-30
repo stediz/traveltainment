@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class BoardListType extends AbstractStructBase
     }
     /**
      * Set Board value
-     * @uses \EnumType\Meal::valueIsValid()
-     * @uses \EnumType\Meal::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $board
-     * @return \StructType\BoardListType
+     * @return \traveltainment\SOAP17\StructType\BoardListType
      */
     public function setBoard(array $board = array())
     {
         $invalidValues = array();
         foreach ($board as $boardListTypeBoardItem) {
-            if (!\EnumType\Meal::valueIsValid($boardListTypeBoardItem)) {
+            if (!\traveltainment\SOAP17\EnumType\Meal::valueIsValid($boardListTypeBoardItem)) {
                 $invalidValues[] = var_export($boardListTypeBoardItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\Meal::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\Meal::getValidValues())), __LINE__);
         }
         $this->Board = $board;
         return $this;
     }
     /**
      * Add item to Board value
-     * @uses \EnumType\Meal::valueIsValid()
-     * @uses \EnumType\Meal::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\Meal::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\BoardListType
+     * @return \traveltainment\SOAP17\StructType\BoardListType
      */
     public function addToBoard($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Meal::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\Meal::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\Meal::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\Meal::getValidValues())), __LINE__);
         }
         $this->Board[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class BoardListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BoardListType
+     * @return \traveltainment\SOAP17\StructType\BoardListType
      */
     public static function __set_state(array $array)
     {

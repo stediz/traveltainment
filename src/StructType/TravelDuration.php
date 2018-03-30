@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class TravelDuration extends AbstractStructBase
     /**
      * Set Duration value
      * @param int $duration
-     * @return \StructType\TravelDuration
+     * @return \traveltainment\SOAP17\StructType\TravelDuration
      */
     public function setDuration($duration = null)
     {
@@ -66,7 +66,7 @@ class TravelDuration extends AbstractStructBase
     /**
      * Set Overnight value
      * @param bool $overnight
-     * @return \StructType\TravelDuration
+     * @return \traveltainment\SOAP17\StructType\TravelDuration
      */
     public function setOvernight($overnight = null)
     {
@@ -83,7 +83,7 @@ class TravelDuration extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravelDuration
+     * @return \traveltainment\SOAP17\StructType\TravelDuration
      */
     public static function __set_state(array $array)
     {

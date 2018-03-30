@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,21 +35,21 @@ class USPDataType extends AbstractStructBase
      * The BookingDate
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\DateSpanType
+     * @var \traveltainment\SOAP17\StructType\DateSpanType
      */
     public $BookingDate;
     /**
      * The TravelDate
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\DateSpanType
+     * @var \traveltainment\SOAP17\StructType\DateSpanType
      */
     public $TravelDate;
     /**
      * The Unit
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Unit
+     * @var \traveltainment\SOAP17\StructType\Unit
      */
     public $Unit;
     /**
@@ -63,11 +63,11 @@ class USPDataType extends AbstractStructBase
      * @param string $category
      * @param string $subCategory
      * @param string $text
-     * @param \StructType\DateSpanType $bookingDate
-     * @param \StructType\DateSpanType $travelDate
-     * @param \StructType\Unit $unit
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $bookingDate
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $travelDate
+     * @param \traveltainment\SOAP17\StructType\Unit $unit
      */
-    public function __construct($category = null, $subCategory = null, $text = null, \StructType\DateSpanType $bookingDate = null, \StructType\DateSpanType $travelDate = null, \StructType\Unit $unit = null)
+    public function __construct($category = null, $subCategory = null, $text = null, \traveltainment\SOAP17\StructType\DateSpanType $bookingDate = null, \traveltainment\SOAP17\StructType\DateSpanType $travelDate = null, \traveltainment\SOAP17\StructType\Unit $unit = null)
     {
         $this
             ->setCategory($category)
@@ -88,7 +88,7 @@ class USPDataType extends AbstractStructBase
     /**
      * Set Category value
      * @param string $category
-     * @return \StructType\USPDataType
+     * @return \traveltainment\SOAP17\StructType\USPDataType
      */
     public function setCategory($category = null)
     {
@@ -110,7 +110,7 @@ class USPDataType extends AbstractStructBase
     /**
      * Set SubCategory value
      * @param string $subCategory
-     * @return \StructType\USPDataType
+     * @return \traveltainment\SOAP17\StructType\USPDataType
      */
     public function setSubCategory($subCategory = null)
     {
@@ -132,7 +132,7 @@ class USPDataType extends AbstractStructBase
     /**
      * Set Text value
      * @param string $text
-     * @return \StructType\USPDataType
+     * @return \traveltainment\SOAP17\StructType\USPDataType
      */
     public function setText($text = null)
     {
@@ -145,7 +145,7 @@ class USPDataType extends AbstractStructBase
     }
     /**
      * Get BookingDate value
-     * @return \StructType\DateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateSpanType|null
      */
     public function getBookingDate()
     {
@@ -153,17 +153,17 @@ class USPDataType extends AbstractStructBase
     }
     /**
      * Set BookingDate value
-     * @param \StructType\DateSpanType $bookingDate
-     * @return \StructType\USPDataType
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $bookingDate
+     * @return \traveltainment\SOAP17\StructType\USPDataType
      */
-    public function setBookingDate(\StructType\DateSpanType $bookingDate = null)
+    public function setBookingDate(\traveltainment\SOAP17\StructType\DateSpanType $bookingDate = null)
     {
         $this->BookingDate = $bookingDate;
         return $this;
     }
     /**
      * Get TravelDate value
-     * @return \StructType\DateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\DateSpanType|null
      */
     public function getTravelDate()
     {
@@ -171,17 +171,17 @@ class USPDataType extends AbstractStructBase
     }
     /**
      * Set TravelDate value
-     * @param \StructType\DateSpanType $travelDate
-     * @return \StructType\USPDataType
+     * @param \traveltainment\SOAP17\StructType\DateSpanType $travelDate
+     * @return \traveltainment\SOAP17\StructType\USPDataType
      */
-    public function setTravelDate(\StructType\DateSpanType $travelDate = null)
+    public function setTravelDate(\traveltainment\SOAP17\StructType\DateSpanType $travelDate = null)
     {
         $this->TravelDate = $travelDate;
         return $this;
     }
     /**
      * Get Unit value
-     * @return \StructType\Unit|null
+     * @return \traveltainment\SOAP17\StructType\Unit|null
      */
     public function getUnit()
     {
@@ -189,10 +189,10 @@ class USPDataType extends AbstractStructBase
     }
     /**
      * Set Unit value
-     * @param \StructType\Unit $unit
-     * @return \StructType\USPDataType
+     * @param \traveltainment\SOAP17\StructType\Unit $unit
+     * @return \traveltainment\SOAP17\StructType\USPDataType
      */
-    public function setUnit(\StructType\Unit $unit = null)
+    public function setUnit(\traveltainment\SOAP17\StructType\Unit $unit = null)
     {
         $this->Unit = $unit;
         return $this;
@@ -203,7 +203,7 @@ class USPDataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\USPDataType
+     * @return \traveltainment\SOAP17\StructType\USPDataType
      */
     public static function __set_state(array $array)
     {

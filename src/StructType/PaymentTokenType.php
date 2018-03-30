@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class PaymentTokenType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\PaymentTokenType
+     * @return \traveltainment\SOAP17\StructType\PaymentTokenType
      */
     public function setID($iD = null)
     {
@@ -77,17 +77,17 @@ class PaymentTokenType extends AbstractStructBase
     }
     /**
      * Set PaymentType value
-     * @uses \EnumType\PaymentTypeEnum::valueIsValid()
-     * @uses \EnumType\PaymentTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\PaymentTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\PaymentTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $paymentType
-     * @return \StructType\PaymentTokenType
+     * @return \traveltainment\SOAP17\StructType\PaymentTokenType
      */
     public function setPaymentType($paymentType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PaymentTypeEnum::valueIsValid($paymentType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $paymentType, implode(', ', \EnumType\PaymentTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\PaymentTypeEnum::valueIsValid($paymentType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $paymentType, implode(', ', \traveltainment\SOAP17\EnumType\PaymentTypeEnum::getValidValues())), __LINE__);
         }
         $this->PaymentType = $paymentType;
         return $this;
@@ -103,7 +103,7 @@ class PaymentTokenType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\PaymentTokenType
+     * @return \traveltainment\SOAP17\StructType\PaymentTokenType
      */
     public function set_($_ = null)
     {
@@ -120,7 +120,7 @@ class PaymentTokenType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PaymentTokenType
+     * @return \traveltainment\SOAP17\StructType\PaymentTokenType
      */
     public static function __set_state(array $array)
     {

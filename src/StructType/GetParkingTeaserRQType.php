@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class GetParkingTeaserRQType extends RequestType
      * The ParkingDateTimes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ParkingDateTimesType
+     * @var \traveltainment\SOAP17\StructType\ParkingDateTimesType
      */
     public $ParkingDateTimes;
     /**
@@ -50,11 +50,11 @@ class GetParkingTeaserRQType extends RequestType
      * @uses GetParkingTeaserRQType::setWithDetails()
      * @param string $sessionID
      * @param string $providerID
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
      * @param string $additionalCurrencies
      * @param bool $withDetails
      */
-    public function __construct($sessionID = null, $providerID = null, \StructType\ParkingDateTimesType $parkingDateTimes = null, $additionalCurrencies = null, $withDetails = null)
+    public function __construct($sessionID = null, $providerID = null, \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null, $additionalCurrencies = null, $withDetails = null)
     {
         $this
             ->setSessionID($sessionID)
@@ -74,7 +74,7 @@ class GetParkingTeaserRQType extends RequestType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\GetParkingTeaserRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRQType
      */
     public function setSessionID($sessionID = null)
     {
@@ -96,7 +96,7 @@ class GetParkingTeaserRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetParkingTeaserRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -109,7 +109,7 @@ class GetParkingTeaserRQType extends RequestType
     }
     /**
      * Get ParkingDateTimes value
-     * @return \StructType\ParkingDateTimesType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDateTimesType|null
      */
     public function getParkingDateTimes()
     {
@@ -117,10 +117,10 @@ class GetParkingTeaserRQType extends RequestType
     }
     /**
      * Set ParkingDateTimes value
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
-     * @return \StructType\GetParkingTeaserRQType
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRQType
      */
-    public function setParkingDateTimes(\StructType\ParkingDateTimesType $parkingDateTimes = null)
+    public function setParkingDateTimes(\traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null)
     {
         $this->ParkingDateTimes = $parkingDateTimes;
         return $this;
@@ -136,7 +136,7 @@ class GetParkingTeaserRQType extends RequestType
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\GetParkingTeaserRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRQType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -158,7 +158,7 @@ class GetParkingTeaserRQType extends RequestType
     /**
      * Set WithDetails value
      * @param bool $withDetails
-     * @return \StructType\GetParkingTeaserRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRQType
      */
     public function setWithDetails($withDetails = null)
     {
@@ -175,7 +175,7 @@ class GetParkingTeaserRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetParkingTeaserRQType
+     * @return \traveltainment\SOAP17\StructType\GetParkingTeaserRQType
      */
     public static function __set_state(array $array)
     {

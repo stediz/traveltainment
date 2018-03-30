@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,14 +14,14 @@ class CoverageDetailType extends AbstractStructBase
      * The TripCost
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $TripCost;
     /**
      * The CoveredTrips
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CoveredTripsType
+     * @var \traveltainment\SOAP17\StructType\CoveredTripsType
      */
     public $CoveredTrips;
     /**
@@ -40,12 +40,12 @@ class CoverageDetailType extends AbstractStructBase
      * @uses CoverageDetailType::setCoveredTrips()
      * @uses CoverageDetailType::setEffectiveDate()
      * @uses CoverageDetailType::setExpireDate()
-     * @param \StructType\SimplePriceType $tripCost
-     * @param \StructType\CoveredTripsType $coveredTrips
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $tripCost
+     * @param \traveltainment\SOAP17\StructType\CoveredTripsType $coveredTrips
      * @param string $effectiveDate
      * @param string $expireDate
      */
-    public function __construct(\StructType\SimplePriceType $tripCost = null, \StructType\CoveredTripsType $coveredTrips = null, $effectiveDate = null, $expireDate = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SimplePriceType $tripCost = null, \traveltainment\SOAP17\StructType\CoveredTripsType $coveredTrips = null, $effectiveDate = null, $expireDate = null)
     {
         $this
             ->setTripCost($tripCost)
@@ -55,7 +55,7 @@ class CoverageDetailType extends AbstractStructBase
     }
     /**
      * Get TripCost value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function getTripCost()
     {
@@ -63,17 +63,17 @@ class CoverageDetailType extends AbstractStructBase
     }
     /**
      * Set TripCost value
-     * @param \StructType\SimplePriceType $tripCost
-     * @return \StructType\CoverageDetailType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $tripCost
+     * @return \traveltainment\SOAP17\StructType\CoverageDetailType
      */
-    public function setTripCost(\StructType\SimplePriceType $tripCost = null)
+    public function setTripCost(\traveltainment\SOAP17\StructType\SimplePriceType $tripCost = null)
     {
         $this->TripCost = $tripCost;
         return $this;
     }
     /**
      * Get CoveredTrips value
-     * @return \StructType\CoveredTripsType|null
+     * @return \traveltainment\SOAP17\StructType\CoveredTripsType|null
      */
     public function getCoveredTrips()
     {
@@ -81,10 +81,10 @@ class CoverageDetailType extends AbstractStructBase
     }
     /**
      * Set CoveredTrips value
-     * @param \StructType\CoveredTripsType $coveredTrips
-     * @return \StructType\CoverageDetailType
+     * @param \traveltainment\SOAP17\StructType\CoveredTripsType $coveredTrips
+     * @return \traveltainment\SOAP17\StructType\CoverageDetailType
      */
-    public function setCoveredTrips(\StructType\CoveredTripsType $coveredTrips = null)
+    public function setCoveredTrips(\traveltainment\SOAP17\StructType\CoveredTripsType $coveredTrips = null)
     {
         $this->CoveredTrips = $coveredTrips;
         return $this;
@@ -100,7 +100,7 @@ class CoverageDetailType extends AbstractStructBase
     /**
      * Set EffectiveDate value
      * @param string $effectiveDate
-     * @return \StructType\CoverageDetailType
+     * @return \traveltainment\SOAP17\StructType\CoverageDetailType
      */
     public function setEffectiveDate($effectiveDate = null)
     {
@@ -122,7 +122,7 @@ class CoverageDetailType extends AbstractStructBase
     /**
      * Set ExpireDate value
      * @param string $expireDate
-     * @return \StructType\CoverageDetailType
+     * @return \traveltainment\SOAP17\StructType\CoverageDetailType
      */
     public function setExpireDate($expireDate = null)
     {
@@ -139,7 +139,7 @@ class CoverageDetailType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CoverageDetailType
+     * @return \traveltainment\SOAP17\StructType\CoverageDetailType
      */
     public static function __set_state(array $array)
     {

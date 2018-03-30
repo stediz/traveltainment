@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -46,7 +46,7 @@ class TermsAndConditions extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\TermsAndConditions
+     * @return \traveltainment\SOAP17\StructType\TermsAndConditions
      */
     public function set_($_ = null)
     {
@@ -68,7 +68,7 @@ class TermsAndConditions extends AbstractStructBase
     /**
      * Set TourOperator value
      * @param string $tourOperator
-     * @return \StructType\TermsAndConditions
+     * @return \traveltainment\SOAP17\StructType\TermsAndConditions
      */
     public function setTourOperator($tourOperator = null)
     {
@@ -85,7 +85,7 @@ class TermsAndConditions extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TermsAndConditions
+     * @return \traveltainment\SOAP17\StructType\TermsAndConditions
      */
     public static function __set_state(array $array)
     {

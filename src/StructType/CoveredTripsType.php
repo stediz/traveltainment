@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class CoveredTripsType extends AbstractStructBase
      * The CoveredTrip
      * Meta informations extracted from the WSDL
      * - maxOccurs: 99
-     * @var \StructType\CoveredTripType[]
+     * @var \traveltainment\SOAP17\StructType\CoveredTripType[]
      */
     public $CoveredTrip;
     /**
      * Constructor method for CoveredTripsType
      * @uses CoveredTripsType::setCoveredTrip()
-     * @param \StructType\CoveredTripType[] $coveredTrip
+     * @param \traveltainment\SOAP17\StructType\CoveredTripType[] $coveredTrip
      */
     public function __construct(array $coveredTrip = array())
     {
@@ -29,7 +29,7 @@ class CoveredTripsType extends AbstractStructBase
     }
     /**
      * Get CoveredTrip value
-     * @return \StructType\CoveredTripType[]|null
+     * @return \traveltainment\SOAP17\StructType\CoveredTripType[]|null
      */
     public function getCoveredTrip()
     {
@@ -38,15 +38,15 @@ class CoveredTripsType extends AbstractStructBase
     /**
      * Set CoveredTrip value
      * @throws \InvalidArgumentException
-     * @param \StructType\CoveredTripType[] $coveredTrip
-     * @return \StructType\CoveredTripsType
+     * @param \traveltainment\SOAP17\StructType\CoveredTripType[] $coveredTrip
+     * @return \traveltainment\SOAP17\StructType\CoveredTripsType
      */
     public function setCoveredTrip(array $coveredTrip = array())
     {
         foreach ($coveredTrip as $coveredTripsTypeCoveredTripItem) {
             // validation for constraint: itemType
-            if (!$coveredTripsTypeCoveredTripItem instanceof \StructType\CoveredTripType) {
-                throw new \InvalidArgumentException(sprintf('The CoveredTrip property can only contain items of \StructType\CoveredTripType, "%s" given', is_object($coveredTripsTypeCoveredTripItem) ? get_class($coveredTripsTypeCoveredTripItem) : gettype($coveredTripsTypeCoveredTripItem)), __LINE__);
+            if (!$coveredTripsTypeCoveredTripItem instanceof \traveltainment\SOAP17\StructType\CoveredTripType) {
+                throw new \InvalidArgumentException(sprintf('The CoveredTrip property can only contain items of \traveltainment\SOAP17\StructType\CoveredTripType, "%s" given', is_object($coveredTripsTypeCoveredTripItem) ? get_class($coveredTripsTypeCoveredTripItem) : gettype($coveredTripsTypeCoveredTripItem)), __LINE__);
             }
         }
         $this->CoveredTrip = $coveredTrip;
@@ -55,14 +55,14 @@ class CoveredTripsType extends AbstractStructBase
     /**
      * Add item to CoveredTrip value
      * @throws \InvalidArgumentException
-     * @param \StructType\CoveredTripType $item
-     * @return \StructType\CoveredTripsType
+     * @param \traveltainment\SOAP17\StructType\CoveredTripType $item
+     * @return \traveltainment\SOAP17\StructType\CoveredTripsType
      */
-    public function addToCoveredTrip(\StructType\CoveredTripType $item)
+    public function addToCoveredTrip(\traveltainment\SOAP17\StructType\CoveredTripType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CoveredTripType) {
-            throw new \InvalidArgumentException(sprintf('The CoveredTrip property can only contain items of \StructType\CoveredTripType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\CoveredTripType) {
+            throw new \InvalidArgumentException(sprintf('The CoveredTrip property can only contain items of \traveltainment\SOAP17\StructType\CoveredTripType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->CoveredTrip[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class CoveredTripsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CoveredTripsType
+     * @return \traveltainment\SOAP17\StructType\CoveredTripsType
      */
     public static function __set_state(array $array)
     {

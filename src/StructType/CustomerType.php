@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class CustomerType extends PersonType
 {
     /**
      * The PersonName
-     * @var \StructType\PersonNameType
+     * @var \traveltainment\SOAP17\StructType\PersonNameType
      */
     public $PersonName;
     /**
@@ -32,12 +32,12 @@ class CustomerType extends PersonType
      * The Contacts
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ContactsType
+     * @var \traveltainment\SOAP17\StructType\ContactsType
      */
     public $Contacts;
     /**
      * The Addresses
-     * @var \StructType\AddressListType
+     * @var \traveltainment\SOAP17\StructType\AddressListType
      */
     public $Addresses;
     /**
@@ -55,14 +55,14 @@ class CustomerType extends PersonType
      * @uses CustomerType::setContacts()
      * @uses CustomerType::setAddresses()
      * @uses CustomerType::setCompliedWithBookingOnRequest()
-     * @param \StructType\PersonNameType $personName
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $personName
      * @param string $gender
      * @param string $birthDate
-     * @param \StructType\ContactsType $contacts
-     * @param \StructType\AddressListType $addresses
+     * @param \traveltainment\SOAP17\StructType\ContactsType $contacts
+     * @param \traveltainment\SOAP17\StructType\AddressListType $addresses
      * @param bool $compliedWithBookingOnRequest
      */
-    public function __construct(\StructType\PersonNameType $personName = null, $gender = null, $birthDate = null, \StructType\ContactsType $contacts = null, \StructType\AddressListType $addresses = null, $compliedWithBookingOnRequest = null)
+    public function __construct(\traveltainment\SOAP17\StructType\PersonNameType $personName = null, $gender = null, $birthDate = null, \traveltainment\SOAP17\StructType\ContactsType $contacts = null, \traveltainment\SOAP17\StructType\AddressListType $addresses = null, $compliedWithBookingOnRequest = null)
     {
         $this
             ->setPersonName($personName)
@@ -74,7 +74,7 @@ class CustomerType extends PersonType
     }
     /**
      * Get PersonName value
-     * @return \StructType\PersonNameType|null
+     * @return \traveltainment\SOAP17\StructType\PersonNameType|null
      */
     public function getPersonName()
     {
@@ -82,10 +82,10 @@ class CustomerType extends PersonType
     }
     /**
      * Set PersonName value
-     * @param \StructType\PersonNameType $personName
-     * @return \StructType\CustomerType
+     * @param \traveltainment\SOAP17\StructType\PersonNameType $personName
+     * @return \traveltainment\SOAP17\StructType\CustomerType
      */
-    public function setPersonName(\StructType\PersonNameType $personName = null)
+    public function setPersonName(\traveltainment\SOAP17\StructType\PersonNameType $personName = null)
     {
         $this->PersonName = $personName;
         return $this;
@@ -100,17 +100,17 @@ class CustomerType extends PersonType
     }
     /**
      * Set Gender value
-     * @uses \EnumType\GenderType::valueIsValid()
-     * @uses \EnumType\GenderType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $gender
-     * @return \StructType\CustomerType
+     * @return \traveltainment\SOAP17\StructType\CustomerType
      */
     public function setGender($gender = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\GenderType::valueIsValid($gender)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \EnumType\GenderType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\GenderType::valueIsValid($gender)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \traveltainment\SOAP17\EnumType\GenderType::getValidValues())), __LINE__);
         }
         $this->Gender = $gender;
         return $this;
@@ -126,7 +126,7 @@ class CustomerType extends PersonType
     /**
      * Set BirthDate value
      * @param string $birthDate
-     * @return \StructType\CustomerType
+     * @return \traveltainment\SOAP17\StructType\CustomerType
      */
     public function setBirthDate($birthDate = null)
     {
@@ -143,7 +143,7 @@ class CustomerType extends PersonType
     }
     /**
      * Get Contacts value
-     * @return \StructType\ContactsType|null
+     * @return \traveltainment\SOAP17\StructType\ContactsType|null
      */
     public function getContacts()
     {
@@ -151,17 +151,17 @@ class CustomerType extends PersonType
     }
     /**
      * Set Contacts value
-     * @param \StructType\ContactsType $contacts
-     * @return \StructType\CustomerType
+     * @param \traveltainment\SOAP17\StructType\ContactsType $contacts
+     * @return \traveltainment\SOAP17\StructType\CustomerType
      */
-    public function setContacts(\StructType\ContactsType $contacts = null)
+    public function setContacts(\traveltainment\SOAP17\StructType\ContactsType $contacts = null)
     {
         $this->Contacts = $contacts;
         return $this;
     }
     /**
      * Get Addresses value
-     * @return \StructType\AddressListType|null
+     * @return \traveltainment\SOAP17\StructType\AddressListType|null
      */
     public function getAddresses()
     {
@@ -169,10 +169,10 @@ class CustomerType extends PersonType
     }
     /**
      * Set Addresses value
-     * @param \StructType\AddressListType $addresses
-     * @return \StructType\CustomerType
+     * @param \traveltainment\SOAP17\StructType\AddressListType $addresses
+     * @return \traveltainment\SOAP17\StructType\CustomerType
      */
-    public function setAddresses(\StructType\AddressListType $addresses = null)
+    public function setAddresses(\traveltainment\SOAP17\StructType\AddressListType $addresses = null)
     {
         $this->Addresses = $addresses;
         return $this;
@@ -188,7 +188,7 @@ class CustomerType extends PersonType
     /**
      * Set CompliedWithBookingOnRequest value
      * @param bool $compliedWithBookingOnRequest
-     * @return \StructType\CustomerType
+     * @return \traveltainment\SOAP17\StructType\CustomerType
      */
     public function setCompliedWithBookingOnRequest($compliedWithBookingOnRequest = null)
     {
@@ -205,7 +205,7 @@ class CustomerType extends PersonType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomerType
+     * @return \traveltainment\SOAP17\StructType\CustomerType
      */
     public static function __set_state(array $array)
     {

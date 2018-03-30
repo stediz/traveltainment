@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class DestinationsType extends AbstractStructBase
      * The Destination
      * Meta informations extracted from the WSDL
      * - maxOccurs: 99
-     * @var \StructType\DestinationType[]
+     * @var \traveltainment\SOAP17\StructType\DestinationType[]
      */
     public $Destination;
     /**
      * Constructor method for DestinationsType
      * @uses DestinationsType::setDestination()
-     * @param \StructType\DestinationType[] $destination
+     * @param \traveltainment\SOAP17\StructType\DestinationType[] $destination
      */
     public function __construct(array $destination = array())
     {
@@ -29,7 +29,7 @@ class DestinationsType extends AbstractStructBase
     }
     /**
      * Get Destination value
-     * @return \StructType\DestinationType[]|null
+     * @return \traveltainment\SOAP17\StructType\DestinationType[]|null
      */
     public function getDestination()
     {
@@ -38,15 +38,15 @@ class DestinationsType extends AbstractStructBase
     /**
      * Set Destination value
      * @throws \InvalidArgumentException
-     * @param \StructType\DestinationType[] $destination
-     * @return \StructType\DestinationsType
+     * @param \traveltainment\SOAP17\StructType\DestinationType[] $destination
+     * @return \traveltainment\SOAP17\StructType\DestinationsType
      */
     public function setDestination(array $destination = array())
     {
         foreach ($destination as $destinationsTypeDestinationItem) {
             // validation for constraint: itemType
-            if (!$destinationsTypeDestinationItem instanceof \StructType\DestinationType) {
-                throw new \InvalidArgumentException(sprintf('The Destination property can only contain items of \StructType\DestinationType, "%s" given', is_object($destinationsTypeDestinationItem) ? get_class($destinationsTypeDestinationItem) : gettype($destinationsTypeDestinationItem)), __LINE__);
+            if (!$destinationsTypeDestinationItem instanceof \traveltainment\SOAP17\StructType\DestinationType) {
+                throw new \InvalidArgumentException(sprintf('The Destination property can only contain items of \traveltainment\SOAP17\StructType\DestinationType, "%s" given', is_object($destinationsTypeDestinationItem) ? get_class($destinationsTypeDestinationItem) : gettype($destinationsTypeDestinationItem)), __LINE__);
             }
         }
         $this->Destination = $destination;
@@ -55,14 +55,14 @@ class DestinationsType extends AbstractStructBase
     /**
      * Add item to Destination value
      * @throws \InvalidArgumentException
-     * @param \StructType\DestinationType $item
-     * @return \StructType\DestinationsType
+     * @param \traveltainment\SOAP17\StructType\DestinationType $item
+     * @return \traveltainment\SOAP17\StructType\DestinationsType
      */
-    public function addToDestination(\StructType\DestinationType $item)
+    public function addToDestination(\traveltainment\SOAP17\StructType\DestinationType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DestinationType) {
-            throw new \InvalidArgumentException(sprintf('The Destination property can only contain items of \StructType\DestinationType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\DestinationType) {
+            throw new \InvalidArgumentException(sprintf('The Destination property can only contain items of \traveltainment\SOAP17\StructType\DestinationType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Destination[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class DestinationsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DestinationsType
+     * @return \traveltainment\SOAP17\StructType\DestinationsType
      */
     public static function __set_state(array $array)
     {

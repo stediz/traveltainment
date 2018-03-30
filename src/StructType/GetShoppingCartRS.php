@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,21 +22,21 @@ class GetShoppingCartRS extends XmlInterfaceRS
     public $CreationDate;
     /**
      * The BookingList
-     * @var \StructType\BookingScList
+     * @var \traveltainment\SOAP17\StructType\BookingScList
      */
     public $BookingList;
     /**
      * The AddonList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddonList
+     * @var \traveltainment\SOAP17\StructType\AddonList
      */
     public $AddonList;
     /**
      * The CommentList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CommentList
+     * @var \traveltainment\SOAP17\StructType\CommentList
      */
     public $CommentList;
     /**
@@ -48,11 +48,11 @@ class GetShoppingCartRS extends XmlInterfaceRS
      * @uses GetShoppingCartRS::setCommentList()
      * @param string $shoppingCartID
      * @param string $creationDate
-     * @param \StructType\BookingScList $bookingList
-     * @param \StructType\AddonList $addonList
-     * @param \StructType\CommentList $commentList
+     * @param \traveltainment\SOAP17\StructType\BookingScList $bookingList
+     * @param \traveltainment\SOAP17\StructType\AddonList $addonList
+     * @param \traveltainment\SOAP17\StructType\CommentList $commentList
      */
-    public function __construct($shoppingCartID = null, $creationDate = null, \StructType\BookingScList $bookingList = null, \StructType\AddonList $addonList = null, \StructType\CommentList $commentList = null)
+    public function __construct($shoppingCartID = null, $creationDate = null, \traveltainment\SOAP17\StructType\BookingScList $bookingList = null, \traveltainment\SOAP17\StructType\AddonList $addonList = null, \traveltainment\SOAP17\StructType\CommentList $commentList = null)
     {
         $this
             ->setShoppingCartID($shoppingCartID)
@@ -72,7 +72,7 @@ class GetShoppingCartRS extends XmlInterfaceRS
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\GetShoppingCartRS
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRS
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -94,7 +94,7 @@ class GetShoppingCartRS extends XmlInterfaceRS
     /**
      * Set CreationDate value
      * @param string $creationDate
-     * @return \StructType\GetShoppingCartRS
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRS
      */
     public function setCreationDate($creationDate = null)
     {
@@ -107,7 +107,7 @@ class GetShoppingCartRS extends XmlInterfaceRS
     }
     /**
      * Get BookingList value
-     * @return \StructType\BookingScList|null
+     * @return \traveltainment\SOAP17\StructType\BookingScList|null
      */
     public function getBookingList()
     {
@@ -115,17 +115,17 @@ class GetShoppingCartRS extends XmlInterfaceRS
     }
     /**
      * Set BookingList value
-     * @param \StructType\BookingScList $bookingList
-     * @return \StructType\GetShoppingCartRS
+     * @param \traveltainment\SOAP17\StructType\BookingScList $bookingList
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRS
      */
-    public function setBookingList(\StructType\BookingScList $bookingList = null)
+    public function setBookingList(\traveltainment\SOAP17\StructType\BookingScList $bookingList = null)
     {
         $this->BookingList = $bookingList;
         return $this;
     }
     /**
      * Get AddonList value
-     * @return \StructType\AddonList|null
+     * @return \traveltainment\SOAP17\StructType\AddonList|null
      */
     public function getAddonList()
     {
@@ -133,17 +133,17 @@ class GetShoppingCartRS extends XmlInterfaceRS
     }
     /**
      * Set AddonList value
-     * @param \StructType\AddonList $addonList
-     * @return \StructType\GetShoppingCartRS
+     * @param \traveltainment\SOAP17\StructType\AddonList $addonList
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRS
      */
-    public function setAddonList(\StructType\AddonList $addonList = null)
+    public function setAddonList(\traveltainment\SOAP17\StructType\AddonList $addonList = null)
     {
         $this->AddonList = $addonList;
         return $this;
     }
     /**
      * Get CommentList value
-     * @return \StructType\CommentList|null
+     * @return \traveltainment\SOAP17\StructType\CommentList|null
      */
     public function getCommentList()
     {
@@ -151,10 +151,10 @@ class GetShoppingCartRS extends XmlInterfaceRS
     }
     /**
      * Set CommentList value
-     * @param \StructType\CommentList $commentList
-     * @return \StructType\GetShoppingCartRS
+     * @param \traveltainment\SOAP17\StructType\CommentList $commentList
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRS
      */
-    public function setCommentList(\StructType\CommentList $commentList = null)
+    public function setCommentList(\traveltainment\SOAP17\StructType\CommentList $commentList = null)
     {
         $this->CommentList = $commentList;
         return $this;
@@ -165,7 +165,7 @@ class GetShoppingCartRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetShoppingCartRS
+     * @return \traveltainment\SOAP17\StructType\GetShoppingCartRS
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -8,7 +8,7 @@ use \WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for FlightDurationFilterType StructType
  * @subpackage Structs
  */
-class FlightDurationFilterType extends \EnumType\FlightDurationEnum
+class FlightDurationFilterType extends \traveltainment\SOAP17\EnumType\FlightDurationEnum
 {
     /**
      * The _
@@ -47,17 +47,17 @@ class FlightDurationFilterType extends \EnumType\FlightDurationEnum
     }
     /**
      * Set _ value
-     * @uses \EnumType\FlightDurationEnum::valueIsValid()
-     * @uses \EnumType\FlightDurationEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\FlightDurationEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\FlightDurationEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $_
-     * @return \StructType\FlightDurationFilterType
+     * @return \traveltainment\SOAP17\StructType\FlightDurationFilterType
      */
     public function set_($_ = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\FlightDurationEnum::valueIsValid($_)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \EnumType\FlightDurationEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\FlightDurationEnum::valueIsValid($_)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $_, implode(', ', \traveltainment\SOAP17\EnumType\FlightDurationEnum::getValidValues())), __LINE__);
         }
         $this->_ = $_;
         return $this;
@@ -73,7 +73,7 @@ class FlightDurationFilterType extends \EnumType\FlightDurationEnum
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\FlightDurationFilterType
+     * @return \traveltainment\SOAP17\StructType\FlightDurationFilterType
      */
     public function setWeightage($weightage = '0')
     {
@@ -98,7 +98,7 @@ class FlightDurationFilterType extends \EnumType\FlightDurationEnum
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FlightDurationFilterType
+     * @return \traveltainment\SOAP17\StructType\FlightDurationFilterType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Flight_RegionTree extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineRegionTreeRQ
+     * @var \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRQ
      */
     public $request;
     /**
      * Constructor method for Search_Flight_RegionTree
      * @uses Search_Flight_RegionTree::setRequest()
-     * @param \StructType\SearchEngineRegionTreeRQ $request
+     * @param \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRQ $request
      */
-    public function __construct(\StructType\SearchEngineRegionTreeRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineRegionTreeRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\SearchEngineRegionTreeRQ|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_Flight_RegionTree extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\SearchEngineRegionTreeRQ $request
-     * @return \StructType\Search_Flight_RegionTree
+     * @param \traveltainment\SOAP17\StructType\SearchEngineRegionTreeRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_Flight_RegionTree
      */
-    public function setRequest(\StructType\SearchEngineRegionTreeRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\SearchEngineRegionTreeRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_Flight_RegionTree extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Flight_RegionTree
+     * @return \traveltainment\SOAP17\StructType\Search_Flight_RegionTree
      */
     public static function __set_state(array $array)
     {

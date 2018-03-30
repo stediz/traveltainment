@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class OptionsType extends AbstractStructBase
      * The TeaserOptions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TeaserOptionsType
+     * @var \traveltainment\SOAP17\StructType\TeaserOptionsType
      */
     public $TeaserOptions;
     /**
@@ -64,12 +64,12 @@ class OptionsType extends AbstractStructBase
      * @uses OptionsType::setNumberOfResults()
      * @param int $resultsPerPage
      * @param int $resultOffset
-     * @param \StructType\TeaserOptionsType $teaserOptions
+     * @param \traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions
      * @param string $additionalCurrencies
      * @param int $offset
      * @param int $numberOfResults
      */
-    public function __construct($resultsPerPage = 20, $resultOffset = 0, \StructType\TeaserOptionsType $teaserOptions = null, $additionalCurrencies = null, $offset = null, $numberOfResults = null)
+    public function __construct($resultsPerPage = 20, $resultOffset = 0, \traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions = null, $additionalCurrencies = null, $offset = null, $numberOfResults = null)
     {
         $this
             ->setResultsPerPage($resultsPerPage)
@@ -90,7 +90,7 @@ class OptionsType extends AbstractStructBase
     /**
      * Set ResultsPerPage value
      * @param int $resultsPerPage
-     * @return \StructType\OptionsType
+     * @return \traveltainment\SOAP17\StructType\OptionsType
      */
     public function setResultsPerPage($resultsPerPage = 20)
     {
@@ -112,7 +112,7 @@ class OptionsType extends AbstractStructBase
     /**
      * Set ResultOffset value
      * @param int $resultOffset
-     * @return \StructType\OptionsType
+     * @return \traveltainment\SOAP17\StructType\OptionsType
      */
     public function setResultOffset($resultOffset = 0)
     {
@@ -125,7 +125,7 @@ class OptionsType extends AbstractStructBase
     }
     /**
      * Get TeaserOptions value
-     * @return \StructType\TeaserOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\TeaserOptionsType|null
      */
     public function getTeaserOptions()
     {
@@ -133,10 +133,10 @@ class OptionsType extends AbstractStructBase
     }
     /**
      * Set TeaserOptions value
-     * @param \StructType\TeaserOptionsType $teaserOptions
-     * @return \StructType\OptionsType
+     * @param \traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions
+     * @return \traveltainment\SOAP17\StructType\OptionsType
      */
-    public function setTeaserOptions(\StructType\TeaserOptionsType $teaserOptions = null)
+    public function setTeaserOptions(\traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions = null)
     {
         $this->TeaserOptions = $teaserOptions;
         return $this;
@@ -152,7 +152,7 @@ class OptionsType extends AbstractStructBase
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\OptionsType
+     * @return \traveltainment\SOAP17\StructType\OptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -174,7 +174,7 @@ class OptionsType extends AbstractStructBase
     /**
      * Set Offset value
      * @param int $offset
-     * @return \StructType\OptionsType
+     * @return \traveltainment\SOAP17\StructType\OptionsType
      */
     public function setOffset($offset = null)
     {
@@ -200,7 +200,7 @@ class OptionsType extends AbstractStructBase
     /**
      * Set NumberOfResults value
      * @param int $numberOfResults
-     * @return \StructType\OptionsType
+     * @return \traveltainment\SOAP17\StructType\OptionsType
      */
     public function setNumberOfResults($numberOfResults = null)
     {
@@ -221,7 +221,7 @@ class OptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OptionsType
+     * @return \traveltainment\SOAP17\StructType\OptionsType
      */
     public static function __set_state(array $array)
     {

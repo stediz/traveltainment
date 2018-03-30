@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,42 +17,42 @@ class JourneyType extends AbstractStructBase
     public $DepartureAirportCountry;
     /**
      * The TravellerList
-     * @var \StructType\TravellerListType
+     * @var \traveltainment\SOAP17\StructType\TravellerListType
      */
     public $TravellerList;
     /**
      * The DepartureAirportList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AirportListType
+     * @var \traveltainment\SOAP17\StructType\AirportListType
      */
     public $DepartureAirportList;
     /**
      * The TravelDateSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TravelDateSpanType
+     * @var \traveltainment\SOAP17\StructType\TravelDateSpanType
      */
     public $TravelDateSpan;
     /**
      * The TravelDurationSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TravelDurationSpanType
+     * @var \traveltainment\SOAP17\StructType\TravelDurationSpanType
      */
     public $TravelDurationSpan;
     /**
      * The ExactTravelDateSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TravelDateSpanType
+     * @var \traveltainment\SOAP17\StructType\TravelDateSpanType
      */
     public $ExactTravelDateSpan;
     /**
      * The PriceSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceSpanType
+     * @var \traveltainment\SOAP17\StructType\PriceSpanType
      */
     public $PriceSpan;
     /**
@@ -66,7 +66,7 @@ class JourneyType extends AbstractStructBase
      * The SpanishMarketScoped
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SpanishMarketScopedType
+     * @var \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public $SpanishMarketScoped;
     /**
@@ -81,16 +81,16 @@ class JourneyType extends AbstractStructBase
      * @uses JourneyType::setSpecialJourneyAttributes()
      * @uses JourneyType::setSpanishMarketScoped()
      * @param string $departureAirportCountry
-     * @param \StructType\TravellerListType $travellerList
-     * @param \StructType\AirportListType $departureAirportList
-     * @param \StructType\TravelDateSpanType $travelDateSpan
-     * @param \StructType\TravelDurationSpanType $travelDurationSpan
-     * @param \StructType\TravelDateSpanType $exactTravelDateSpan
-     * @param \StructType\PriceSpanType $priceSpan
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @param \traveltainment\SOAP17\StructType\AirportListType $departureAirportList
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan
+     * @param \traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan
+     * @param \traveltainment\SOAP17\StructType\PriceSpanType $priceSpan
      * @param SpecialJourneyAttribute $specialJourneyAttributes
-     * @param \StructType\SpanishMarketScopedType $spanishMarketScoped
+     * @param \traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped
      */
-    public function __construct($departureAirportCountry = null, \StructType\TravellerListType $travellerList = null, \StructType\AirportListType $departureAirportList = null, \StructType\TravelDateSpanType $travelDateSpan = null, \StructType\TravelDurationSpanType $travelDurationSpan = null, \StructType\TravelDateSpanType $exactTravelDateSpan = null, \StructType\PriceSpanType $priceSpan = null, SpecialJourneyAttribute $specialJourneyAttributes = null, \StructType\SpanishMarketScopedType $spanishMarketScoped = null)
+    public function __construct($departureAirportCountry = null, \traveltainment\SOAP17\StructType\TravellerListType $travellerList = null, \traveltainment\SOAP17\StructType\AirportListType $departureAirportList = null, \traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan = null, \traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan = null, \traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan = null, \traveltainment\SOAP17\StructType\PriceSpanType $priceSpan = null, SpecialJourneyAttribute $specialJourneyAttributes = null, \traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped = null)
     {
         $this
             ->setDepartureAirportCountry($departureAirportCountry)
@@ -113,24 +113,24 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set DepartureAirportCountry value
-     * @uses \EnumType\CountryCodeType::valueIsValid()
-     * @uses \EnumType\CountryCodeType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CountryCodeType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CountryCodeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $departureAirportCountry
-     * @return \StructType\JourneyType
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
     public function setDepartureAirportCountry($departureAirportCountry = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CountryCodeType::valueIsValid($departureAirportCountry)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $departureAirportCountry, implode(', ', \EnumType\CountryCodeType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CountryCodeType::valueIsValid($departureAirportCountry)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $departureAirportCountry, implode(', ', \traveltainment\SOAP17\EnumType\CountryCodeType::getValidValues())), __LINE__);
         }
         $this->DepartureAirportCountry = $departureAirportCountry;
         return $this;
     }
     /**
      * Get TravellerList value
-     * @return \StructType\TravellerListType|null
+     * @return \traveltainment\SOAP17\StructType\TravellerListType|null
      */
     public function getTravellerList()
     {
@@ -138,17 +138,17 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set TravellerList value
-     * @param \StructType\TravellerListType $travellerList
-     * @return \StructType\JourneyType
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
-    public function setTravellerList(\StructType\TravellerListType $travellerList = null)
+    public function setTravellerList(\traveltainment\SOAP17\StructType\TravellerListType $travellerList = null)
     {
         $this->TravellerList = $travellerList;
         return $this;
     }
     /**
      * Get DepartureAirportList value
-     * @return \StructType\AirportListType|null
+     * @return \traveltainment\SOAP17\StructType\AirportListType|null
      */
     public function getDepartureAirportList()
     {
@@ -156,17 +156,17 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set DepartureAirportList value
-     * @param \StructType\AirportListType $departureAirportList
-     * @return \StructType\JourneyType
+     * @param \traveltainment\SOAP17\StructType\AirportListType $departureAirportList
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
-    public function setDepartureAirportList(\StructType\AirportListType $departureAirportList = null)
+    public function setDepartureAirportList(\traveltainment\SOAP17\StructType\AirportListType $departureAirportList = null)
     {
         $this->DepartureAirportList = $departureAirportList;
         return $this;
     }
     /**
      * Get TravelDateSpan value
-     * @return \StructType\TravelDateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\TravelDateSpanType|null
      */
     public function getTravelDateSpan()
     {
@@ -174,17 +174,17 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set TravelDateSpan value
-     * @param \StructType\TravelDateSpanType $travelDateSpan
-     * @return \StructType\JourneyType
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
-    public function setTravelDateSpan(\StructType\TravelDateSpanType $travelDateSpan = null)
+    public function setTravelDateSpan(\traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan = null)
     {
         $this->TravelDateSpan = $travelDateSpan;
         return $this;
     }
     /**
      * Get TravelDurationSpan value
-     * @return \StructType\TravelDurationSpanType|null
+     * @return \traveltainment\SOAP17\StructType\TravelDurationSpanType|null
      */
     public function getTravelDurationSpan()
     {
@@ -192,17 +192,17 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set TravelDurationSpan value
-     * @param \StructType\TravelDurationSpanType $travelDurationSpan
-     * @return \StructType\JourneyType
+     * @param \traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
-    public function setTravelDurationSpan(\StructType\TravelDurationSpanType $travelDurationSpan = null)
+    public function setTravelDurationSpan(\traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan = null)
     {
         $this->TravelDurationSpan = $travelDurationSpan;
         return $this;
     }
     /**
      * Get ExactTravelDateSpan value
-     * @return \StructType\TravelDateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\TravelDateSpanType|null
      */
     public function getExactTravelDateSpan()
     {
@@ -210,17 +210,17 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set ExactTravelDateSpan value
-     * @param \StructType\TravelDateSpanType $exactTravelDateSpan
-     * @return \StructType\JourneyType
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
-    public function setExactTravelDateSpan(\StructType\TravelDateSpanType $exactTravelDateSpan = null)
+    public function setExactTravelDateSpan(\traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan = null)
     {
         $this->ExactTravelDateSpan = $exactTravelDateSpan;
         return $this;
     }
     /**
      * Get PriceSpan value
-     * @return \StructType\PriceSpanType|null
+     * @return \traveltainment\SOAP17\StructType\PriceSpanType|null
      */
     public function getPriceSpan()
     {
@@ -228,10 +228,10 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set PriceSpan value
-     * @param \StructType\PriceSpanType $priceSpan
-     * @return \StructType\JourneyType
+     * @param \traveltainment\SOAP17\StructType\PriceSpanType $priceSpan
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
-    public function setPriceSpan(\StructType\PriceSpanType $priceSpan = null)
+    public function setPriceSpan(\traveltainment\SOAP17\StructType\PriceSpanType $priceSpan = null)
     {
         $this->PriceSpan = $priceSpan;
         return $this;
@@ -247,7 +247,7 @@ class JourneyType extends AbstractStructBase
     /**
      * Set SpecialJourneyAttributes value
      * @param SpecialJourneyAttribute $specialJourneyAttributes
-     * @return \StructType\JourneyType
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
     public function setSpecialJourneyAttributes(SpecialJourneyAttribute $specialJourneyAttributes = null)
     {
@@ -256,7 +256,7 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Get SpanishMarketScoped value
-     * @return \StructType\SpanishMarketScopedType|null
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType|null
      */
     public function getSpanishMarketScoped()
     {
@@ -264,10 +264,10 @@ class JourneyType extends AbstractStructBase
     }
     /**
      * Set SpanishMarketScoped value
-     * @param \StructType\SpanishMarketScopedType $spanishMarketScoped
-     * @return \StructType\JourneyType
+     * @param \traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
-    public function setSpanishMarketScoped(\StructType\SpanishMarketScopedType $spanishMarketScoped = null)
+    public function setSpanishMarketScoped(\traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped = null)
     {
         $this->SpanishMarketScoped = $spanishMarketScoped;
         return $this;
@@ -278,7 +278,7 @@ class JourneyType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\JourneyType
+     * @return \traveltainment\SOAP17\StructType\JourneyType
      */
     public static function __set_state(array $array)
     {

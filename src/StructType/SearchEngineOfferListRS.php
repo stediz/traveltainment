@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,21 +14,21 @@ class SearchEngineOfferListRS extends XmlInterfaceSearchRS
      * The Header
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferListRSHeader
+     * @var \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
     public $Header;
     /**
      * The Hotel
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelType
+     * @var \traveltainment\SOAP17\StructType\HotelType
      */
     public $Hotel;
     /**
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
@@ -36,11 +36,11 @@ class SearchEngineOfferListRS extends XmlInterfaceSearchRS
      * @uses SearchEngineOfferListRS::setHeader()
      * @uses SearchEngineOfferListRS::setHotel()
      * @uses SearchEngineOfferListRS::setRegion()
-     * @param \StructType\OfferListRSHeader $header
-     * @param \StructType\HotelType $hotel
-     * @param \StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\OfferListRSHeader $header
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
      */
-    public function __construct(\StructType\OfferListRSHeader $header = null, \StructType\HotelType $hotel = null, \StructType\RegionType $region = null)
+    public function __construct(\traveltainment\SOAP17\StructType\OfferListRSHeader $header = null, \traveltainment\SOAP17\StructType\HotelType $hotel = null, \traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this
             ->setHeader($header)
@@ -49,7 +49,7 @@ class SearchEngineOfferListRS extends XmlInterfaceSearchRS
     }
     /**
      * Get Header value
-     * @return \StructType\OfferListRSHeader|null
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader|null
      */
     public function getHeader()
     {
@@ -57,17 +57,17 @@ class SearchEngineOfferListRS extends XmlInterfaceSearchRS
     }
     /**
      * Set Header value
-     * @param \StructType\OfferListRSHeader $header
-     * @return \StructType\SearchEngineOfferListRS
+     * @param \traveltainment\SOAP17\StructType\OfferListRSHeader $header
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRS
      */
-    public function setHeader(\StructType\OfferListRSHeader $header = null)
+    public function setHeader(\traveltainment\SOAP17\StructType\OfferListRSHeader $header = null)
     {
         $this->Header = $header;
         return $this;
     }
     /**
      * Get Hotel value
-     * @return \StructType\HotelType|null
+     * @return \traveltainment\SOAP17\StructType\HotelType|null
      */
     public function getHotel()
     {
@@ -75,17 +75,17 @@ class SearchEngineOfferListRS extends XmlInterfaceSearchRS
     }
     /**
      * Set Hotel value
-     * @param \StructType\HotelType $hotel
-     * @return \StructType\SearchEngineOfferListRS
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRS
      */
-    public function setHotel(\StructType\HotelType $hotel = null)
+    public function setHotel(\traveltainment\SOAP17\StructType\HotelType $hotel = null)
     {
         $this->Hotel = $hotel;
         return $this;
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -93,10 +93,10 @@ class SearchEngineOfferListRS extends XmlInterfaceSearchRS
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\SearchEngineOfferListRS
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRS
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
@@ -107,7 +107,7 @@ class SearchEngineOfferListRS extends XmlInterfaceSearchRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineOfferListRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferListRS
      */
     public static function __set_state(array $array)
     {

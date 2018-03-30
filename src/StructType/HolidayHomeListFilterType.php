@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -68,7 +68,7 @@ class HolidayHomeListFilterType extends AbstractStructBase
     /**
      * Set CityName value
      * @param string $cityName
-     * @return \StructType\HolidayHomeListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListFilterType
      */
     public function setCityName($cityName = null)
     {
@@ -90,7 +90,7 @@ class HolidayHomeListFilterType extends AbstractStructBase
     /**
      * Set CityID value
      * @param string $cityID
-     * @return \StructType\HolidayHomeListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListFilterType
      */
     public function setCityID($cityID = null)
     {
@@ -112,7 +112,7 @@ class HolidayHomeListFilterType extends AbstractStructBase
     /**
      * Set ObjectName value
      * @param string $objectName
-     * @return \StructType\HolidayHomeListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListFilterType
      */
     public function setObjectName($objectName = null)
     {
@@ -134,7 +134,7 @@ class HolidayHomeListFilterType extends AbstractStructBase
     /**
      * Set ObjectCode value
      * @param string $objectCode
-     * @return \StructType\HolidayHomeListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListFilterType
      */
     public function setObjectCode($objectCode = null)
     {
@@ -151,7 +151,7 @@ class HolidayHomeListFilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListFilterType
      */
     public static function __set_state(array $array)
     {

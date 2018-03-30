@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -45,17 +45,17 @@ class OptionType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\OptionEnumerationType::valueIsValid()
-     * @uses \EnumType\OptionEnumerationType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OptionEnumerationType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OptionEnumerationType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\OptionType
+     * @return \traveltainment\SOAP17\StructType\OptionType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OptionEnumerationType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\OptionEnumerationType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OptionEnumerationType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \traveltainment\SOAP17\EnumType\OptionEnumerationType::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -71,7 +71,7 @@ class OptionType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\OptionType
+     * @return \traveltainment\SOAP17\StructType\OptionType
      */
     public function set_($_ = null)
     {
@@ -88,7 +88,7 @@ class OptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OptionType
+     * @return \traveltainment\SOAP17\StructType\OptionType
      */
     public static function __set_state(array $array)
     {

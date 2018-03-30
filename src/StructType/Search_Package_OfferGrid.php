@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_Package_OfferGrid extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SearchEngineOfferGridRQ
+     * @var \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ
      */
     public $request;
     /**
      * Constructor method for Search_Package_OfferGrid
      * @uses Search_Package_OfferGrid::setRequest()
-     * @param \StructType\SearchEngineOfferGridRQ $request
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ $request
      */
-    public function __construct(\StructType\SearchEngineOfferGridRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\SearchEngineOfferGridRQ|null
+     * @return \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Search_Package_OfferGrid extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\SearchEngineOfferGridRQ $request
-     * @return \StructType\Search_Package_OfferGrid
+     * @param \traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ $request
+     * @return \traveltainment\SOAP17\StructType\Search_Package_OfferGrid
      */
-    public function setRequest(\StructType\SearchEngineOfferGridRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\SearchEngineOfferGridRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Search_Package_OfferGrid extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_Package_OfferGrid
+     * @return \traveltainment\SOAP17\StructType\Search_Package_OfferGrid
      */
     public static function __set_state(array $array)
     {

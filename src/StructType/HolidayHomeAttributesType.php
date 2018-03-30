@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,39 +37,39 @@ class HolidayHomeAttributesType extends AbstractStructBase
     }
     /**
      * Set HolidayHomeAttribute value
-     * @uses \EnumType\HolidayHomeAttributeEnum::valueIsValid()
-     * @uses \EnumType\HolidayHomeAttributeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $holidayHomeAttribute
-     * @return \StructType\HolidayHomeAttributesType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAttributesType
      */
     public function setHolidayHomeAttribute(array $holidayHomeAttribute = array())
     {
         $invalidValues = array();
         foreach ($holidayHomeAttribute as $holidayHomeAttributesTypeHolidayHomeAttributeItem) {
-            if (!\EnumType\HolidayHomeAttributeEnum::valueIsValid($holidayHomeAttributesTypeHolidayHomeAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::valueIsValid($holidayHomeAttributesTypeHolidayHomeAttributeItem)) {
                 $invalidValues[] = var_export($holidayHomeAttributesTypeHolidayHomeAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HolidayHomeAttributeEnum::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::getValidValues())), __LINE__);
         }
         $this->HolidayHomeAttribute = $holidayHomeAttribute;
         return $this;
     }
     /**
      * Add item to HolidayHomeAttribute value
-     * @uses \EnumType\HolidayHomeAttributeEnum::valueIsValid()
-     * @uses \EnumType\HolidayHomeAttributeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HolidayHomeAttributesType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAttributesType
      */
     public function addToHolidayHomeAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HolidayHomeAttributeEnum::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HolidayHomeAttributeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HolidayHomeAttributeEnum::getValidValues())), __LINE__);
         }
         $this->HolidayHomeAttribute[] = $item;
         return $this;
@@ -80,7 +80,7 @@ class HolidayHomeAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeAttributesType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAttributesType
      */
     public static function __set_state(array $array)
     {

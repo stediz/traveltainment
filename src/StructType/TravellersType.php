@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,13 +16,13 @@ class TravellersType extends AbstractStructBase
      * - documentation: Der Knoten Traveller bildet einen Reiseteilnehmer ab. Der noetige Detailierungsgrad des Travallers haengt vom Buchungsschritt ab. Der AvailabilityAndPriceCheck benoetigt neben BirthDate und Type zwar einen Vor- und Nachnamen. Diese
      * koennen aber Fakedaten enthalten. Spaetestens bei der Buchung muessen bis auf den Knoten Total alle Echtdaten eingetragen werden. Der Knoten Total ist den Responses vorbehalten. Er enthaelt Preisdaten.
      * - maxOccurs: unbounded
-     * @var \StructType\TravellerType[]
+     * @var \traveltainment\SOAP17\StructType\TravellerType[]
      */
     public $Traveller;
     /**
      * Constructor method for TravellersType
      * @uses TravellersType::setTraveller()
-     * @param \StructType\TravellerType[] $traveller
+     * @param \traveltainment\SOAP17\StructType\TravellerType[] $traveller
      */
     public function __construct(array $traveller = array())
     {
@@ -31,7 +31,7 @@ class TravellersType extends AbstractStructBase
     }
     /**
      * Get Traveller value
-     * @return \StructType\TravellerType[]|null
+     * @return \traveltainment\SOAP17\StructType\TravellerType[]|null
      */
     public function getTraveller()
     {
@@ -40,15 +40,15 @@ class TravellersType extends AbstractStructBase
     /**
      * Set Traveller value
      * @throws \InvalidArgumentException
-     * @param \StructType\TravellerType[] $traveller
-     * @return \StructType\TravellersType
+     * @param \traveltainment\SOAP17\StructType\TravellerType[] $traveller
+     * @return \traveltainment\SOAP17\StructType\TravellersType
      */
     public function setTraveller(array $traveller = array())
     {
         foreach ($traveller as $travellersTypeTravellerItem) {
             // validation for constraint: itemType
-            if (!$travellersTypeTravellerItem instanceof \StructType\TravellerType) {
-                throw new \InvalidArgumentException(sprintf('The Traveller property can only contain items of \StructType\TravellerType, "%s" given', is_object($travellersTypeTravellerItem) ? get_class($travellersTypeTravellerItem) : gettype($travellersTypeTravellerItem)), __LINE__);
+            if (!$travellersTypeTravellerItem instanceof \traveltainment\SOAP17\StructType\TravellerType) {
+                throw new \InvalidArgumentException(sprintf('The Traveller property can only contain items of \traveltainment\SOAP17\StructType\TravellerType, "%s" given', is_object($travellersTypeTravellerItem) ? get_class($travellersTypeTravellerItem) : gettype($travellersTypeTravellerItem)), __LINE__);
             }
         }
         $this->Traveller = $traveller;
@@ -57,14 +57,14 @@ class TravellersType extends AbstractStructBase
     /**
      * Add item to Traveller value
      * @throws \InvalidArgumentException
-     * @param \StructType\TravellerType $item
-     * @return \StructType\TravellersType
+     * @param \traveltainment\SOAP17\StructType\TravellerType $item
+     * @return \traveltainment\SOAP17\StructType\TravellersType
      */
-    public function addToTraveller(\StructType\TravellerType $item)
+    public function addToTraveller(\traveltainment\SOAP17\StructType\TravellerType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\TravellerType) {
-            throw new \InvalidArgumentException(sprintf('The Traveller property can only contain items of \StructType\TravellerType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\TravellerType) {
+            throw new \InvalidArgumentException(sprintf('The Traveller property can only contain items of \traveltainment\SOAP17\StructType\TravellerType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Traveller[] = $item;
         return $this;
@@ -75,7 +75,7 @@ class TravellersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravellersType
+     * @return \traveltainment\SOAP17\StructType\TravellersType
      */
     public static function __set_state(array $array)
     {

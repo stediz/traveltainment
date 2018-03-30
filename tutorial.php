@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'common/flux/SOAP/Client/wsdl/1.7/DispatcherWS_1.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \traveltainment\SOAP17\ClassMap::get(),
 );
 /**
  * Samples for Booking ServiceType
  */
-$booking = new \ServiceType\Booking($options);
+$booking = new \traveltainment\SOAP17\ServiceType\Booking($options);
 /**
  * Sample call for Booking_GetShoppingCart operation/method
  */
-if ($booking->Booking_GetShoppingCart(new \StructType\Booking_GetShoppingCart()) !== false) {
+if ($booking->Booking_GetShoppingCart(new \traveltainment\SOAP17\StructType\Booking_GetShoppingCart()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -36,7 +36,7 @@ if ($booking->Booking_GetShoppingCart(new \StructType\Booking_GetShoppingCart())
 /**
  * Sample call for Booking_GetSimpleShoppingCarts operation/method
  */
-if ($booking->Booking_GetSimpleShoppingCarts(new \StructType\Booking_GetSimpleShoppingCarts()) !== false) {
+if ($booking->Booking_GetSimpleShoppingCarts(new \traveltainment\SOAP17\StructType\Booking_GetSimpleShoppingCarts()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -44,7 +44,7 @@ if ($booking->Booking_GetSimpleShoppingCarts(new \StructType\Booking_GetSimpleSh
 /**
  * Sample call for Booking_FinalizeShoppingCart operation/method
  */
-if ($booking->Booking_FinalizeShoppingCart(new \StructType\Booking_FinalizeShoppingCart()) !== false) {
+if ($booking->Booking_FinalizeShoppingCart(new \traveltainment\SOAP17\StructType\Booking_FinalizeShoppingCart()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -52,7 +52,7 @@ if ($booking->Booking_FinalizeShoppingCart(new \StructType\Booking_FinalizeShopp
 /**
  * Sample call for Booking_GetTermsAndConditions operation/method
  */
-if ($booking->Booking_GetTermsAndConditions(new \StructType\Booking_GetTermsAndConditions()) !== false) {
+if ($booking->Booking_GetTermsAndConditions(new \traveltainment\SOAP17\StructType\Booking_GetTermsAndConditions()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -60,7 +60,7 @@ if ($booking->Booking_GetTermsAndConditions(new \StructType\Booking_GetTermsAndC
 /**
  * Sample call for Booking_BookShoppingCart operation/method
  */
-if ($booking->Booking_BookShoppingCart(new \StructType\Booking_BookShoppingCart()) !== false) {
+if ($booking->Booking_BookShoppingCart(new \traveltainment\SOAP17\StructType\Booking_BookShoppingCart()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -68,7 +68,7 @@ if ($booking->Booking_BookShoppingCart(new \StructType\Booking_BookShoppingCart(
 /**
  * Sample call for Booking_Package_GetAvailableOfferData operation/method
  */
-if ($booking->Booking_Package_GetAvailableOfferData(new \StructType\Booking_Package_GetAvailableOfferData()) !== false) {
+if ($booking->Booking_Package_GetAvailableOfferData(new \traveltainment\SOAP17\StructType\Booking_Package_GetAvailableOfferData()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -76,7 +76,7 @@ if ($booking->Booking_Package_GetAvailableOfferData(new \StructType\Booking_Pack
 /**
  * Sample call for Booking_Hotel_GetAvailableOfferData operation/method
  */
-if ($booking->Booking_Hotel_GetAvailableOfferData(new \StructType\Booking_Hotel_GetAvailableOfferData()) !== false) {
+if ($booking->Booking_Hotel_GetAvailableOfferData(new \traveltainment\SOAP17\StructType\Booking_Hotel_GetAvailableOfferData()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -84,7 +84,7 @@ if ($booking->Booking_Hotel_GetAvailableOfferData(new \StructType\Booking_Hotel_
 /**
  * Sample call for Booking_HolidayHome_GetAvailableOfferData operation/method
  */
-if ($booking->Booking_HolidayHome_GetAvailableOfferData(new \StructType\Booking_HolidayHome_GetAvailableOfferData()) !== false) {
+if ($booking->Booking_HolidayHome_GetAvailableOfferData(new \traveltainment\SOAP17\StructType\Booking_HolidayHome_GetAvailableOfferData()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -92,7 +92,7 @@ if ($booking->Booking_HolidayHome_GetAvailableOfferData(new \StructType\Booking_
 /**
  * Sample call for Booking_Flight_GetAvailableOfferData operation/method
  */
-if ($booking->Booking_Flight_GetAvailableOfferData(new \StructType\Booking_Flight_GetAvailableOfferData()) !== false) {
+if ($booking->Booking_Flight_GetAvailableOfferData(new \traveltainment\SOAP17\StructType\Booking_Flight_GetAvailableOfferData()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -100,7 +100,7 @@ if ($booking->Booking_Flight_GetAvailableOfferData(new \StructType\Booking_Fligh
 /**
  * Sample call for Booking_Package_GetAlternativeFlightsList operation/method
  */
-if ($booking->Booking_Package_GetAlternativeFlightsList(new \StructType\Booking_Package_GetAlternativeFlightsList()) !== false) {
+if ($booking->Booking_Package_GetAlternativeFlightsList(new \traveltainment\SOAP17\StructType\Booking_Package_GetAlternativeFlightsList()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -108,7 +108,7 @@ if ($booking->Booking_Package_GetAlternativeFlightsList(new \StructType\Booking_
 /**
  * Sample call for Booking_Flight_AvailabilityAndPriceCheck operation/method
  */
-if ($booking->Booking_Flight_AvailabilityAndPriceCheck(new \StructType\Booking_Flight_AvailabilityAndPriceCheck()) !== false) {
+if ($booking->Booking_Flight_AvailabilityAndPriceCheck(new \traveltainment\SOAP17\StructType\Booking_Flight_AvailabilityAndPriceCheck()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -116,7 +116,7 @@ if ($booking->Booking_Flight_AvailabilityAndPriceCheck(new \StructType\Booking_F
 /**
  * Sample call for Booking_Hotel_AvailabilityAndPriceCheck operation/method
  */
-if ($booking->Booking_Hotel_AvailabilityAndPriceCheck(new \StructType\Booking_Hotel_AvailabilityAndPriceCheck()) !== false) {
+if ($booking->Booking_Hotel_AvailabilityAndPriceCheck(new \traveltainment\SOAP17\StructType\Booking_Hotel_AvailabilityAndPriceCheck()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -124,7 +124,7 @@ if ($booking->Booking_Hotel_AvailabilityAndPriceCheck(new \StructType\Booking_Ho
 /**
  * Sample call for Booking_Package_AvailabilityAndPriceCheck operation/method
  */
-if ($booking->Booking_Package_AvailabilityAndPriceCheck(new \StructType\Booking_Package_AvailabilityAndPriceCheck()) !== false) {
+if ($booking->Booking_Package_AvailabilityAndPriceCheck(new \traveltainment\SOAP17\StructType\Booking_Package_AvailabilityAndPriceCheck()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -132,7 +132,7 @@ if ($booking->Booking_Package_AvailabilityAndPriceCheck(new \StructType\Booking_
 /**
  * Sample call for Booking_HolidayHome_Book operation/method
  */
-if ($booking->Booking_HolidayHome_Book(new \StructType\Booking_HolidayHome_Book()) !== false) {
+if ($booking->Booking_HolidayHome_Book(new \traveltainment\SOAP17\StructType\Booking_HolidayHome_Book()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -140,7 +140,7 @@ if ($booking->Booking_HolidayHome_Book(new \StructType\Booking_HolidayHome_Book(
 /**
  * Sample call for Booking_Flight_FinalizeBook operation/method
  */
-if ($booking->Booking_Flight_FinalizeBook(new \StructType\Booking_Flight_FinalizeBook()) !== false) {
+if ($booking->Booking_Flight_FinalizeBook(new \traveltainment\SOAP17\StructType\Booking_Flight_FinalizeBook()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -148,7 +148,7 @@ if ($booking->Booking_Flight_FinalizeBook(new \StructType\Booking_Flight_Finaliz
 /**
  * Sample call for Booking_Hotel_FinalizeBook operation/method
  */
-if ($booking->Booking_Hotel_FinalizeBook(new \StructType\Booking_Hotel_FinalizeBook()) !== false) {
+if ($booking->Booking_Hotel_FinalizeBook(new \traveltainment\SOAP17\StructType\Booking_Hotel_FinalizeBook()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -156,7 +156,7 @@ if ($booking->Booking_Hotel_FinalizeBook(new \StructType\Booking_Hotel_FinalizeB
 /**
  * Sample call for Booking_Package_FinalizeBook operation/method
  */
-if ($booking->Booking_Package_FinalizeBook(new \StructType\Booking_Package_FinalizeBook()) !== false) {
+if ($booking->Booking_Package_FinalizeBook(new \traveltainment\SOAP17\StructType\Booking_Package_FinalizeBook()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -164,7 +164,7 @@ if ($booking->Booking_Package_FinalizeBook(new \StructType\Booking_Package_Final
 /**
  * Sample call for Booking_HolidayHome_FinalizeBook operation/method
  */
-if ($booking->Booking_HolidayHome_FinalizeBook(new \StructType\Booking_HolidayHome_FinalizeBook()) !== false) {
+if ($booking->Booking_HolidayHome_FinalizeBook(new \traveltainment\SOAP17\StructType\Booking_HolidayHome_FinalizeBook()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -172,7 +172,7 @@ if ($booking->Booking_HolidayHome_FinalizeBook(new \StructType\Booking_HolidayHo
 /**
  * Sample call for Booking_InsertAddon operation/method
  */
-if ($booking->Booking_InsertAddon(new \StructType\Booking_InsertAddon()) !== false) {
+if ($booking->Booking_InsertAddon(new \traveltainment\SOAP17\StructType\Booking_InsertAddon()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -180,7 +180,7 @@ if ($booking->Booking_InsertAddon(new \StructType\Booking_InsertAddon()) !== fal
 /**
  * Sample call for Booking_UpdateAddon operation/method
  */
-if ($booking->Booking_UpdateAddon(new \StructType\Booking_UpdateAddon()) !== false) {
+if ($booking->Booking_UpdateAddon(new \traveltainment\SOAP17\StructType\Booking_UpdateAddon()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -188,7 +188,7 @@ if ($booking->Booking_UpdateAddon(new \StructType\Booking_UpdateAddon()) !== fal
 /**
  * Sample call for Booking_HolidayHome_AvailabilityAndPriceCheck operation/method
  */
-if ($booking->Booking_HolidayHome_AvailabilityAndPriceCheck(new \StructType\Booking_HolidayHome_AvailabilityAndPriceCheck()) !== false) {
+if ($booking->Booking_HolidayHome_AvailabilityAndPriceCheck(new \traveltainment\SOAP17\StructType\Booking_HolidayHome_AvailabilityAndPriceCheck()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -196,7 +196,7 @@ if ($booking->Booking_HolidayHome_AvailabilityAndPriceCheck(new \StructType\Book
 /**
  * Sample call for Booking_Flight_Book operation/method
  */
-if ($booking->Booking_Flight_Book(new \StructType\Booking_Flight_Book()) !== false) {
+if ($booking->Booking_Flight_Book(new \traveltainment\SOAP17\StructType\Booking_Flight_Book()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -204,7 +204,7 @@ if ($booking->Booking_Flight_Book(new \StructType\Booking_Flight_Book()) !== fal
 /**
  * Sample call for Booking_Hotel_Book operation/method
  */
-if ($booking->Booking_Hotel_Book(new \StructType\Booking_Hotel_Book()) !== false) {
+if ($booking->Booking_Hotel_Book(new \traveltainment\SOAP17\StructType\Booking_Hotel_Book()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -212,7 +212,7 @@ if ($booking->Booking_Hotel_Book(new \StructType\Booking_Hotel_Book()) !== false
 /**
  * Sample call for Booking_Package_Book operation/method
  */
-if ($booking->Booking_Package_Book(new \StructType\Booking_Package_Book()) !== false) {
+if ($booking->Booking_Package_Book(new \traveltainment\SOAP17\StructType\Booking_Package_Book()) !== false) {
     print_r($booking->getResult());
 } else {
     print_r($booking->getLastError());
@@ -220,11 +220,11 @@ if ($booking->Booking_Package_Book(new \StructType\Booking_Package_Book()) !== f
 /**
  * Samples for Search ServiceType
  */
-$search = new \ServiceType\Search($options);
+$search = new \traveltainment\SOAP17\ServiceType\Search($options);
 /**
  * Sample call for Search_HolidayHome_RegionList operation/method
  */
-if ($search->Search_HolidayHome_RegionList(new \StructType\Search_HolidayHome_RegionList()) !== false) {
+if ($search->Search_HolidayHome_RegionList(new \traveltainment\SOAP17\StructType\Search_HolidayHome_RegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -232,7 +232,7 @@ if ($search->Search_HolidayHome_RegionList(new \StructType\Search_HolidayHome_Re
 /**
  * Sample call for Search_HolidayHome_OfferList operation/method
  */
-if ($search->Search_HolidayHome_OfferList(new \StructType\Search_HolidayHome_OfferList()) !== false) {
+if ($search->Search_HolidayHome_OfferList(new \traveltainment\SOAP17\StructType\Search_HolidayHome_OfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -240,7 +240,7 @@ if ($search->Search_HolidayHome_OfferList(new \StructType\Search_HolidayHome_Off
 /**
  * Sample call for Search_HolidayHome_OfferGrid operation/method
  */
-if ($search->Search_HolidayHome_OfferGrid(new \StructType\Search_HolidayHome_OfferGrid()) !== false) {
+if ($search->Search_HolidayHome_OfferGrid(new \traveltainment\SOAP17\StructType\Search_HolidayHome_OfferGrid()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -248,7 +248,7 @@ if ($search->Search_HolidayHome_OfferGrid(new \StructType\Search_HolidayHome_Off
 /**
  * Sample call for Search_HolidayHome_SimpleRegionList operation/method
  */
-if ($search->Search_HolidayHome_SimpleRegionList(new \StructType\Search_HolidayHome_SimpleRegionList()) !== false) {
+if ($search->Search_HolidayHome_SimpleRegionList(new \traveltainment\SOAP17\StructType\Search_HolidayHome_SimpleRegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -256,7 +256,7 @@ if ($search->Search_HolidayHome_SimpleRegionList(new \StructType\Search_HolidayH
 /**
  * Sample call for Search_CrossSelling_InsuranceOfferList operation/method
  */
-if ($search->Search_CrossSelling_InsuranceOfferList(new \StructType\Search_CrossSelling_InsuranceOfferList()) !== false) {
+if ($search->Search_CrossSelling_InsuranceOfferList(new \traveltainment\SOAP17\StructType\Search_CrossSelling_InsuranceOfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -264,7 +264,7 @@ if ($search->Search_CrossSelling_InsuranceOfferList(new \StructType\Search_Cross
 /**
  * Sample call for Search_CrossSelling_TransferOfferList operation/method
  */
-if ($search->Search_CrossSelling_TransferOfferList(new \StructType\Search_CrossSelling_TransferOfferList()) !== false) {
+if ($search->Search_CrossSelling_TransferOfferList(new \traveltainment\SOAP17\StructType\Search_CrossSelling_TransferOfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -272,7 +272,7 @@ if ($search->Search_CrossSelling_TransferOfferList(new \StructType\Search_CrossS
 /**
  * Sample call for Search_CrossSelling_CarRentalLocations operation/method
  */
-if ($search->Search_CrossSelling_CarRentalLocations(new \StructType\Search_CrossSelling_CarRentalLocations()) !== false) {
+if ($search->Search_CrossSelling_CarRentalLocations(new \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalLocations()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -280,7 +280,7 @@ if ($search->Search_CrossSelling_CarRentalLocations(new \StructType\Search_Cross
 /**
  * Sample call for Search_CrossSelling_CarRentalStationDetails operation/method
  */
-if ($search->Search_CrossSelling_CarRentalStationDetails(new \StructType\Search_CrossSelling_CarRentalStationDetails()) !== false) {
+if ($search->Search_CrossSelling_CarRentalStationDetails(new \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalStationDetails()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -288,7 +288,7 @@ if ($search->Search_CrossSelling_CarRentalStationDetails(new \StructType\Search_
 /**
  * Sample call for Search_CrossSelling_ParkingDetails operation/method
  */
-if ($search->Search_CrossSelling_ParkingDetails(new \StructType\Search_CrossSelling_ParkingDetails()) !== false) {
+if ($search->Search_CrossSelling_ParkingDetails(new \traveltainment\SOAP17\StructType\Search_CrossSelling_ParkingDetails()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -296,7 +296,7 @@ if ($search->Search_CrossSelling_ParkingDetails(new \StructType\Search_CrossSell
 /**
  * Sample call for Search_CrossSelling_ParkingOfferList operation/method
  */
-if ($search->Search_CrossSelling_ParkingOfferList(new \StructType\Search_CrossSelling_ParkingOfferList()) !== false) {
+if ($search->Search_CrossSelling_ParkingOfferList(new \traveltainment\SOAP17\StructType\Search_CrossSelling_ParkingOfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -304,7 +304,7 @@ if ($search->Search_CrossSelling_ParkingOfferList(new \StructType\Search_CrossSe
 /**
  * Sample call for Search_CrossSelling_ParkingTeaser operation/method
  */
-if ($search->Search_CrossSelling_ParkingTeaser(new \StructType\Search_CrossSelling_ParkingTeaser()) !== false) {
+if ($search->Search_CrossSelling_ParkingTeaser(new \traveltainment\SOAP17\StructType\Search_CrossSelling_ParkingTeaser()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -312,7 +312,7 @@ if ($search->Search_CrossSelling_ParkingTeaser(new \StructType\Search_CrossSelli
 /**
  * Sample call for Search_CrossSelling_CarRentalOfferConditions operation/method
  */
-if ($search->Search_CrossSelling_CarRentalOfferConditions(new \StructType\Search_CrossSelling_CarRentalOfferConditions()) !== false) {
+if ($search->Search_CrossSelling_CarRentalOfferConditions(new \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalOfferConditions()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -320,7 +320,7 @@ if ($search->Search_CrossSelling_CarRentalOfferConditions(new \StructType\Search
 /**
  * Sample call for Search_CrossSelling_CarRentalOfferList operation/method
  */
-if ($search->Search_CrossSelling_CarRentalOfferList(new \StructType\Search_CrossSelling_CarRentalOfferList()) !== false) {
+if ($search->Search_CrossSelling_CarRentalOfferList(new \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalOfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -328,7 +328,7 @@ if ($search->Search_CrossSelling_CarRentalOfferList(new \StructType\Search_Cross
 /**
  * Sample call for Search_Package_SimpleRegionList operation/method
  */
-if ($search->Search_Package_SimpleRegionList(new \StructType\Search_Package_SimpleRegionList()) !== false) {
+if ($search->Search_Package_SimpleRegionList(new \traveltainment\SOAP17\StructType\Search_Package_SimpleRegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -336,7 +336,7 @@ if ($search->Search_Package_SimpleRegionList(new \StructType\Search_Package_Simp
 /**
  * Sample call for Search_Hotel_SimpleRegionList operation/method
  */
-if ($search->Search_Hotel_SimpleRegionList(new \StructType\Search_Hotel_SimpleRegionList()) !== false) {
+if ($search->Search_Hotel_SimpleRegionList(new \traveltainment\SOAP17\StructType\Search_Hotel_SimpleRegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -344,7 +344,7 @@ if ($search->Search_Hotel_SimpleRegionList(new \StructType\Search_Hotel_SimpleRe
 /**
  * Sample call for Search_Flight_SimpleRegionList operation/method
  */
-if ($search->Search_Flight_SimpleRegionList(new \StructType\Search_Flight_SimpleRegionList()) !== false) {
+if ($search->Search_Flight_SimpleRegionList(new \traveltainment\SOAP17\StructType\Search_Flight_SimpleRegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -352,7 +352,7 @@ if ($search->Search_Flight_SimpleRegionList(new \StructType\Search_Flight_Simple
 /**
  * Sample call for Search_Package_RegionList operation/method
  */
-if ($search->Search_Package_RegionList(new \StructType\Search_Package_RegionList()) !== false) {
+if ($search->Search_Package_RegionList(new \traveltainment\SOAP17\StructType\Search_Package_RegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -360,7 +360,7 @@ if ($search->Search_Package_RegionList(new \StructType\Search_Package_RegionList
 /**
  * Sample call for Search_Hotel_RegionList operation/method
  */
-if ($search->Search_Hotel_RegionList(new \StructType\Search_Hotel_RegionList()) !== false) {
+if ($search->Search_Hotel_RegionList(new \traveltainment\SOAP17\StructType\Search_Hotel_RegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -368,7 +368,7 @@ if ($search->Search_Hotel_RegionList(new \StructType\Search_Hotel_RegionList()) 
 /**
  * Sample call for Search_Flight_RegionList operation/method
  */
-if ($search->Search_Flight_RegionList(new \StructType\Search_Flight_RegionList()) !== false) {
+if ($search->Search_Flight_RegionList(new \traveltainment\SOAP17\StructType\Search_Flight_RegionList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -376,7 +376,7 @@ if ($search->Search_Flight_RegionList(new \StructType\Search_Flight_RegionList()
 /**
  * Sample call for Search_Package_HotelList operation/method
  */
-if ($search->Search_Package_HotelList(new \StructType\Search_Package_HotelList()) !== false) {
+if ($search->Search_Package_HotelList(new \traveltainment\SOAP17\StructType\Search_Package_HotelList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -384,7 +384,7 @@ if ($search->Search_Package_HotelList(new \StructType\Search_Package_HotelList()
 /**
  * Sample call for Search_Hotel_HotelList operation/method
  */
-if ($search->Search_Hotel_HotelList(new \StructType\Search_Hotel_HotelList()) !== false) {
+if ($search->Search_Hotel_HotelList(new \traveltainment\SOAP17\StructType\Search_Hotel_HotelList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -392,7 +392,7 @@ if ($search->Search_Hotel_HotelList(new \StructType\Search_Hotel_HotelList()) !=
 /**
  * Sample call for Search_HolidayHome_HolidayHomeList operation/method
  */
-if ($search->Search_HolidayHome_HolidayHomeList(new \StructType\Search_HolidayHome_HolidayHomeList()) !== false) {
+if ($search->Search_HolidayHome_HolidayHomeList(new \traveltainment\SOAP17\StructType\Search_HolidayHome_HolidayHomeList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -400,7 +400,7 @@ if ($search->Search_HolidayHome_HolidayHomeList(new \StructType\Search_HolidayHo
 /**
  * Sample call for Search_Package_OfferGrid operation/method
  */
-if ($search->Search_Package_OfferGrid(new \StructType\Search_Package_OfferGrid()) !== false) {
+if ($search->Search_Package_OfferGrid(new \traveltainment\SOAP17\StructType\Search_Package_OfferGrid()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -408,7 +408,7 @@ if ($search->Search_Package_OfferGrid(new \StructType\Search_Package_OfferGrid()
 /**
  * Sample call for Search_Package_OfferList operation/method
  */
-if ($search->Search_Package_OfferList(new \StructType\Search_Package_OfferList()) !== false) {
+if ($search->Search_Package_OfferList(new \traveltainment\SOAP17\StructType\Search_Package_OfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -416,7 +416,7 @@ if ($search->Search_Package_OfferList(new \StructType\Search_Package_OfferList()
 /**
  * Sample call for Search_Hotel_OfferList operation/method
  */
-if ($search->Search_Hotel_OfferList(new \StructType\Search_Hotel_OfferList()) !== false) {
+if ($search->Search_Hotel_OfferList(new \traveltainment\SOAP17\StructType\Search_Hotel_OfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -424,7 +424,7 @@ if ($search->Search_Hotel_OfferList(new \StructType\Search_Hotel_OfferList()) !=
 /**
  * Sample call for Search_Hotel_OfferGrid operation/method
  */
-if ($search->Search_Hotel_OfferGrid(new \StructType\Search_Hotel_OfferGrid()) !== false) {
+if ($search->Search_Hotel_OfferGrid(new \traveltainment\SOAP17\StructType\Search_Hotel_OfferGrid()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -432,7 +432,7 @@ if ($search->Search_Hotel_OfferGrid(new \StructType\Search_Hotel_OfferGrid()) !=
 /**
  * Sample call for Search_Flight_OfferList operation/method
  */
-if ($search->Search_Flight_OfferList(new \StructType\Search_Flight_OfferList()) !== false) {
+if ($search->Search_Flight_OfferList(new \traveltainment\SOAP17\StructType\Search_Flight_OfferList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -440,7 +440,7 @@ if ($search->Search_Flight_OfferList(new \StructType\Search_Flight_OfferList()) 
 /**
  * Sample call for Search_Package_CityList operation/method
  */
-if ($search->Search_Package_CityList(new \StructType\Search_Package_CityList()) !== false) {
+if ($search->Search_Package_CityList(new \traveltainment\SOAP17\StructType\Search_Package_CityList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -448,7 +448,7 @@ if ($search->Search_Package_CityList(new \StructType\Search_Package_CityList()) 
 /**
  * Sample call for Search_Hotel_CityList operation/method
  */
-if ($search->Search_Hotel_CityList(new \StructType\Search_Hotel_CityList()) !== false) {
+if ($search->Search_Hotel_CityList(new \traveltainment\SOAP17\StructType\Search_Hotel_CityList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -456,7 +456,7 @@ if ($search->Search_Hotel_CityList(new \StructType\Search_Hotel_CityList()) !== 
 /**
  * Sample call for Search_Flight_CityList operation/method
  */
-if ($search->Search_Flight_CityList(new \StructType\Search_Flight_CityList()) !== false) {
+if ($search->Search_Flight_CityList(new \traveltainment\SOAP17\StructType\Search_Flight_CityList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -464,7 +464,7 @@ if ($search->Search_Flight_CityList(new \StructType\Search_Flight_CityList()) !=
 /**
  * Sample call for Search_HolidayHome_CityList operation/method
  */
-if ($search->Search_HolidayHome_CityList(new \StructType\Search_HolidayHome_CityList()) !== false) {
+if ($search->Search_HolidayHome_CityList(new \traveltainment\SOAP17\StructType\Search_HolidayHome_CityList()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -472,7 +472,7 @@ if ($search->Search_HolidayHome_CityList(new \StructType\Search_HolidayHome_City
 /**
  * Sample call for Search_Package_RegionTree operation/method
  */
-if ($search->Search_Package_RegionTree(new \StructType\Search_Package_RegionTree()) !== false) {
+if ($search->Search_Package_RegionTree(new \traveltainment\SOAP17\StructType\Search_Package_RegionTree()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -480,7 +480,7 @@ if ($search->Search_Package_RegionTree(new \StructType\Search_Package_RegionTree
 /**
  * Sample call for Search_Hotel_RegionTree operation/method
  */
-if ($search->Search_Hotel_RegionTree(new \StructType\Search_Hotel_RegionTree()) !== false) {
+if ($search->Search_Hotel_RegionTree(new \traveltainment\SOAP17\StructType\Search_Hotel_RegionTree()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -488,7 +488,7 @@ if ($search->Search_Hotel_RegionTree(new \StructType\Search_Hotel_RegionTree()) 
 /**
  * Sample call for Search_Flight_RegionTree operation/method
  */
-if ($search->Search_Flight_RegionTree(new \StructType\Search_Flight_RegionTree()) !== false) {
+if ($search->Search_Flight_RegionTree(new \traveltainment\SOAP17\StructType\Search_Flight_RegionTree()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -496,7 +496,7 @@ if ($search->Search_Flight_RegionTree(new \StructType\Search_Flight_RegionTree()
 /**
  * Sample call for Search_HolidayHome_RegionTree operation/method
  */
-if ($search->Search_HolidayHome_RegionTree(new \StructType\Search_HolidayHome_RegionTree()) !== false) {
+if ($search->Search_HolidayHome_RegionTree(new \traveltainment\SOAP17\StructType\Search_HolidayHome_RegionTree()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -504,7 +504,7 @@ if ($search->Search_HolidayHome_RegionTree(new \StructType\Search_HolidayHome_Re
 /**
  * Sample call for Search_Package_TourOperators operation/method
  */
-if ($search->Search_Package_TourOperators(new \StructType\Search_Package_TourOperators()) !== false) {
+if ($search->Search_Package_TourOperators(new \traveltainment\SOAP17\StructType\Search_Package_TourOperators()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -512,7 +512,7 @@ if ($search->Search_Package_TourOperators(new \StructType\Search_Package_TourOpe
 /**
  * Sample call for Search_Hotel_TourOperators operation/method
  */
-if ($search->Search_Hotel_TourOperators(new \StructType\Search_Hotel_TourOperators()) !== false) {
+if ($search->Search_Hotel_TourOperators(new \traveltainment\SOAP17\StructType\Search_Hotel_TourOperators()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -520,7 +520,7 @@ if ($search->Search_Hotel_TourOperators(new \StructType\Search_Hotel_TourOperato
 /**
  * Sample call for Search_Flight_TourOperators operation/method
  */
-if ($search->Search_Flight_TourOperators(new \StructType\Search_Flight_TourOperators()) !== false) {
+if ($search->Search_Flight_TourOperators(new \traveltainment\SOAP17\StructType\Search_Flight_TourOperators()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());
@@ -528,7 +528,7 @@ if ($search->Search_Flight_TourOperators(new \StructType\Search_Flight_TourOpera
 /**
  * Sample call for Search_HolidayHome_TourOperators operation/method
  */
-if ($search->Search_HolidayHome_TourOperators(new \StructType\Search_HolidayHome_TourOperators()) !== false) {
+if ($search->Search_HolidayHome_TourOperators(new \traveltainment\SOAP17\StructType\Search_HolidayHome_TourOperators()) !== false) {
     print_r($search->getResult());
 } else {
     print_r($search->getLastError());

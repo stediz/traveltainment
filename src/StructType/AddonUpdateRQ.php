@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,24 +12,24 @@ class AddonUpdateRQ extends XmlInterfaceRQ
 {
     /**
      * The AddonInfos
-     * @var \StructType\AddonUpdateType
+     * @var \traveltainment\SOAP17\StructType\AddonUpdateType
      */
     public $AddonInfos;
     /**
      * The ParamList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ExtendedKeyValueListType
+     * @var \traveltainment\SOAP17\StructType\ExtendedKeyValueListType
      */
     public $ParamList;
     /**
      * Constructor method for AddonUpdateRQ
      * @uses AddonUpdateRQ::setAddonInfos()
      * @uses AddonUpdateRQ::setParamList()
-     * @param \StructType\AddonUpdateType $addonInfos
-     * @param \StructType\ExtendedKeyValueListType $paramList
+     * @param \traveltainment\SOAP17\StructType\AddonUpdateType $addonInfos
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
      */
-    public function __construct(\StructType\AddonUpdateType $addonInfos = null, \StructType\ExtendedKeyValueListType $paramList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AddonUpdateType $addonInfos = null, \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this
             ->setAddonInfos($addonInfos)
@@ -37,7 +37,7 @@ class AddonUpdateRQ extends XmlInterfaceRQ
     }
     /**
      * Get AddonInfos value
-     * @return \StructType\AddonUpdateType|null
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateType|null
      */
     public function getAddonInfos()
     {
@@ -45,17 +45,17 @@ class AddonUpdateRQ extends XmlInterfaceRQ
     }
     /**
      * Set AddonInfos value
-     * @param \StructType\AddonUpdateType $addonInfos
-     * @return \StructType\AddonUpdateRQ
+     * @param \traveltainment\SOAP17\StructType\AddonUpdateType $addonInfos
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateRQ
      */
-    public function setAddonInfos(\StructType\AddonUpdateType $addonInfos = null)
+    public function setAddonInfos(\traveltainment\SOAP17\StructType\AddonUpdateType $addonInfos = null)
     {
         $this->AddonInfos = $addonInfos;
         return $this;
     }
     /**
      * Get ParamList value
-     * @return \StructType\ExtendedKeyValueListType|null
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueListType|null
      */
     public function getParamList()
     {
@@ -63,10 +63,10 @@ class AddonUpdateRQ extends XmlInterfaceRQ
     }
     /**
      * Set ParamList value
-     * @param \StructType\ExtendedKeyValueListType $paramList
-     * @return \StructType\AddonUpdateRQ
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateRQ
      */
-    public function setParamList(\StructType\ExtendedKeyValueListType $paramList = null)
+    public function setParamList(\traveltainment\SOAP17\StructType\ExtendedKeyValueListType $paramList = null)
     {
         $this->ParamList = $paramList;
         return $this;
@@ -77,7 +77,7 @@ class AddonUpdateRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonUpdateRQ
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateRQ
      */
     public static function __set_state(array $array)
     {

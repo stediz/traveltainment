@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -37,7 +37,7 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
      * The HolidayHomeAttributes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeAttributesType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeAttributesType
      */
     public $HolidayHomeAttributes;
     /**
@@ -65,11 +65,11 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
      * @param int $category
      * @param string $holidayHomeType
      * @param int $roomCount
-     * @param \StructType\HolidayHomeAttributesType $holidayHomeAttributes
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes
      * @param string $distanceToSea
      * @param string $distanceToSkilift
      */
-    public function __construct($category = null, $holidayHomeType = null, $roomCount = null, \StructType\HolidayHomeAttributesType $holidayHomeAttributes = null, $distanceToSea = null, $distanceToSkilift = null)
+    public function __construct($category = null, $holidayHomeType = null, $roomCount = null, \traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes = null, $distanceToSea = null, $distanceToSkilift = null)
     {
         $this
             ->setCategory($category)
@@ -90,7 +90,7 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
     /**
      * Set Category value
      * @param int $category
-     * @return \StructType\HolidayHomeSearchCriteriaType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
     public function setCategory($category = null)
     {
@@ -119,17 +119,17 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
     }
     /**
      * Set HolidayHomeType value
-     * @uses \EnumType\HolidayHomeTypeEnum::valueIsValid()
-     * @uses \EnumType\HolidayHomeTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $holidayHomeType
-     * @return \StructType\HolidayHomeSearchCriteriaType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
     public function setHolidayHomeType($holidayHomeType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HolidayHomeTypeEnum::valueIsValid($holidayHomeType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $holidayHomeType, implode(', ', \EnumType\HolidayHomeTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HolidayHomeTypeEnum::valueIsValid($holidayHomeType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $holidayHomeType, implode(', ', \traveltainment\SOAP17\EnumType\HolidayHomeTypeEnum::getValidValues())), __LINE__);
         }
         $this->HolidayHomeType = $holidayHomeType;
         return $this;
@@ -145,7 +145,7 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
     /**
      * Set RoomCount value
      * @param int $roomCount
-     * @return \StructType\HolidayHomeSearchCriteriaType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
     public function setRoomCount($roomCount = null)
     {
@@ -158,7 +158,7 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
     }
     /**
      * Get HolidayHomeAttributes value
-     * @return \StructType\HolidayHomeAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAttributesType|null
      */
     public function getHolidayHomeAttributes()
     {
@@ -166,10 +166,10 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
     }
     /**
      * Set HolidayHomeAttributes value
-     * @param \StructType\HolidayHomeAttributesType $holidayHomeAttributes
-     * @return \StructType\HolidayHomeSearchCriteriaType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
-    public function setHolidayHomeAttributes(\StructType\HolidayHomeAttributesType $holidayHomeAttributes = null)
+    public function setHolidayHomeAttributes(\traveltainment\SOAP17\StructType\HolidayHomeAttributesType $holidayHomeAttributes = null)
     {
         $this->HolidayHomeAttributes = $holidayHomeAttributes;
         return $this;
@@ -184,17 +184,17 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
     }
     /**
      * Set DistanceToSea value
-     * @uses \EnumType\DistanceEnum::valueIsValid()
-     * @uses \EnumType\DistanceEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $distanceToSea
-     * @return \StructType\HolidayHomeSearchCriteriaType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
     public function setDistanceToSea($distanceToSea = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\DistanceEnum::valueIsValid($distanceToSea)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSea, implode(', ', \EnumType\DistanceEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid($distanceToSea)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSea, implode(', ', \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues())), __LINE__);
         }
         $this->DistanceToSea = $distanceToSea;
         return $this;
@@ -209,17 +209,17 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
     }
     /**
      * Set DistanceToSkilift value
-     * @uses \EnumType\DistanceEnum::valueIsValid()
-     * @uses \EnumType\DistanceEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $distanceToSkilift
-     * @return \StructType\HolidayHomeSearchCriteriaType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
     public function setDistanceToSkilift($distanceToSkilift = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\DistanceEnum::valueIsValid($distanceToSkilift)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSkilift, implode(', ', \EnumType\DistanceEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\DistanceEnum::valueIsValid($distanceToSkilift)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $distanceToSkilift, implode(', ', \traveltainment\SOAP17\EnumType\DistanceEnum::getValidValues())), __LINE__);
         }
         $this->DistanceToSkilift = $distanceToSkilift;
         return $this;
@@ -230,7 +230,7 @@ class HolidayHomeSearchCriteriaType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeSearchCriteriaType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
     public static function __set_state(array $array)
     {

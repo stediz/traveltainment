@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class CarRentalPickupInfoType extends AbstractStructBase
     /**
      * Set PickupStationCode value
      * @param string $pickupStationCode
-     * @return \StructType\CarRentalPickupInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalPickupInfoType
      */
     public function setPickupStationCode($pickupStationCode = null)
     {
@@ -77,7 +77,7 @@ class CarRentalPickupInfoType extends AbstractStructBase
     /**
      * Set PickupDateTime value
      * @param string $pickupDateTime
-     * @return \StructType\CarRentalPickupInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalPickupInfoType
      */
     public function setPickupDateTime($pickupDateTime = null)
     {
@@ -94,7 +94,7 @@ class CarRentalPickupInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalPickupInfoType
+     * @return \traveltainment\SOAP17\StructType\CarRentalPickupInfoType
      */
     public static function __set_state(array $array)
     {

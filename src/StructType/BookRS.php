@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class BookRS extends XmlInterfaceRS
 {
     /**
      * The Status
-     * @var \StructType\StatusType
+     * @var \traveltainment\SOAP17\StructType\StatusType
      */
     public $Status;
     /**
@@ -27,34 +27,34 @@ class BookRS extends XmlInterfaceRS
     public $ShoppingCartID;
     /**
      * The PriceInformation
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $PriceInformation;
     /**
      * The ReservationInformation
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ReservationInformationType
+     * @var \traveltainment\SOAP17\StructType\ReservationInformationType
      */
     public $ReservationInformation;
     /**
      * The Payment
-     * @var \StructType\PaymentType
+     * @var \traveltainment\SOAP17\StructType\PaymentType
      */
     public $Payment;
     /**
      * The TravellerList
-     * @var \StructType\TravellerListType
+     * @var \traveltainment\SOAP17\StructType\TravellerListType
      */
     public $TravellerList;
     /**
      * The Customer
-     * @var \StructType\CustomerType
+     * @var \traveltainment\SOAP17\StructType\CustomerType
      */
     public $Customer;
     /**
      * The Offer
-     * @var \StructType\OfferType
+     * @var \traveltainment\SOAP17\StructType\OfferType
      */
     public $Offer;
     /**
@@ -68,17 +68,17 @@ class BookRS extends XmlInterfaceRS
      * @uses BookRS::setTravellerList()
      * @uses BookRS::setCustomer()
      * @uses BookRS::setOffer()
-     * @param \StructType\StatusType $status
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
      * @param string $bookingID
      * @param string $shoppingCartID
-     * @param \StructType\PriceInformationType $priceInformation
-     * @param \StructType\ReservationInformationType $reservationInformation
-     * @param \StructType\PaymentType $payment
-     * @param \StructType\TravellerListType $travellerList
-     * @param \StructType\CustomerType $customer
-     * @param \StructType\OfferType $offer
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @param \traveltainment\SOAP17\StructType\ReservationInformationType $reservationInformation
+     * @param \traveltainment\SOAP17\StructType\PaymentType $payment
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @param \traveltainment\SOAP17\StructType\CustomerType $customer
+     * @param \traveltainment\SOAP17\StructType\OfferType $offer
      */
-    public function __construct(\StructType\StatusType $status = null, $bookingID = null, $shoppingCartID = null, \StructType\PriceInformationType $priceInformation = null, \StructType\ReservationInformationType $reservationInformation = null, \StructType\PaymentType $payment = null, \StructType\TravellerListType $travellerList = null, \StructType\CustomerType $customer = null, \StructType\OfferType $offer = null)
+    public function __construct(\traveltainment\SOAP17\StructType\StatusType $status = null, $bookingID = null, $shoppingCartID = null, \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null, \traveltainment\SOAP17\StructType\ReservationInformationType $reservationInformation = null, \traveltainment\SOAP17\StructType\PaymentType $payment = null, \traveltainment\SOAP17\StructType\TravellerListType $travellerList = null, \traveltainment\SOAP17\StructType\CustomerType $customer = null, \traveltainment\SOAP17\StructType\OfferType $offer = null)
     {
         $this
             ->setStatus($status)
@@ -93,7 +93,7 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Get Status value
-     * @return \StructType\StatusType|null
+     * @return \traveltainment\SOAP17\StructType\StatusType|null
      */
     public function getStatus()
     {
@@ -101,10 +101,10 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Set Status value
-     * @param \StructType\StatusType $status
-     * @return \StructType\BookRS
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
-    public function setStatus(\StructType\StatusType $status = null)
+    public function setStatus(\traveltainment\SOAP17\StructType\StatusType $status = null)
     {
         $this->Status = $status;
         return $this;
@@ -120,7 +120,7 @@ class BookRS extends XmlInterfaceRS
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\BookRS
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
     public function setBookingID($bookingID = null)
     {
@@ -142,7 +142,7 @@ class BookRS extends XmlInterfaceRS
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\BookRS
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -155,7 +155,7 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Get PriceInformation value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getPriceInformation()
     {
@@ -163,17 +163,17 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Set PriceInformation value
-     * @param \StructType\PriceInformationType $priceInformation
-     * @return \StructType\BookRS
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
-    public function setPriceInformation(\StructType\PriceInformationType $priceInformation = null)
+    public function setPriceInformation(\traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this->PriceInformation = $priceInformation;
         return $this;
     }
     /**
      * Get ReservationInformation value
-     * @return \StructType\ReservationInformationType|null
+     * @return \traveltainment\SOAP17\StructType\ReservationInformationType|null
      */
     public function getReservationInformation()
     {
@@ -181,17 +181,17 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Set ReservationInformation value
-     * @param \StructType\ReservationInformationType $reservationInformation
-     * @return \StructType\BookRS
+     * @param \traveltainment\SOAP17\StructType\ReservationInformationType $reservationInformation
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
-    public function setReservationInformation(\StructType\ReservationInformationType $reservationInformation = null)
+    public function setReservationInformation(\traveltainment\SOAP17\StructType\ReservationInformationType $reservationInformation = null)
     {
         $this->ReservationInformation = $reservationInformation;
         return $this;
     }
     /**
      * Get Payment value
-     * @return \StructType\PaymentType|null
+     * @return \traveltainment\SOAP17\StructType\PaymentType|null
      */
     public function getPayment()
     {
@@ -199,17 +199,17 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Set Payment value
-     * @param \StructType\PaymentType $payment
-     * @return \StructType\BookRS
+     * @param \traveltainment\SOAP17\StructType\PaymentType $payment
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
-    public function setPayment(\StructType\PaymentType $payment = null)
+    public function setPayment(\traveltainment\SOAP17\StructType\PaymentType $payment = null)
     {
         $this->Payment = $payment;
         return $this;
     }
     /**
      * Get TravellerList value
-     * @return \StructType\TravellerListType|null
+     * @return \traveltainment\SOAP17\StructType\TravellerListType|null
      */
     public function getTravellerList()
     {
@@ -217,17 +217,17 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Set TravellerList value
-     * @param \StructType\TravellerListType $travellerList
-     * @return \StructType\BookRS
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
-    public function setTravellerList(\StructType\TravellerListType $travellerList = null)
+    public function setTravellerList(\traveltainment\SOAP17\StructType\TravellerListType $travellerList = null)
     {
         $this->TravellerList = $travellerList;
         return $this;
     }
     /**
      * Get Customer value
-     * @return \StructType\CustomerType|null
+     * @return \traveltainment\SOAP17\StructType\CustomerType|null
      */
     public function getCustomer()
     {
@@ -235,17 +235,17 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Set Customer value
-     * @param \StructType\CustomerType $customer
-     * @return \StructType\BookRS
+     * @param \traveltainment\SOAP17\StructType\CustomerType $customer
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
-    public function setCustomer(\StructType\CustomerType $customer = null)
+    public function setCustomer(\traveltainment\SOAP17\StructType\CustomerType $customer = null)
     {
         $this->Customer = $customer;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\OfferType|null
+     * @return \traveltainment\SOAP17\StructType\OfferType|null
      */
     public function getOffer()
     {
@@ -253,10 +253,10 @@ class BookRS extends XmlInterfaceRS
     }
     /**
      * Set Offer value
-     * @param \StructType\OfferType $offer
-     * @return \StructType\BookRS
+     * @param \traveltainment\SOAP17\StructType\OfferType $offer
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
-    public function setOffer(\StructType\OfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\OfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
@@ -267,7 +267,7 @@ class BookRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookRS
+     * @return \traveltainment\SOAP17\StructType\BookRS
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class PaymentList extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\XmlPaymentDescriptionType[]
+     * @var \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType[]
      */
     public $Payment;
     /**
      * Constructor method for PaymentList
      * @uses PaymentList::setPayment()
-     * @param \StructType\XmlPaymentDescriptionType[] $payment
+     * @param \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType[] $payment
      */
     public function __construct(array $payment = array())
     {
@@ -30,7 +30,7 @@ class PaymentList extends AbstractStructBase
     }
     /**
      * Get Payment value
-     * @return \StructType\XmlPaymentDescriptionType[]|null
+     * @return \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType[]|null
      */
     public function getPayment()
     {
@@ -39,15 +39,15 @@ class PaymentList extends AbstractStructBase
     /**
      * Set Payment value
      * @throws \InvalidArgumentException
-     * @param \StructType\XmlPaymentDescriptionType[] $payment
-     * @return \StructType\PaymentList
+     * @param \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType[] $payment
+     * @return \traveltainment\SOAP17\StructType\PaymentList
      */
     public function setPayment(array $payment = array())
     {
         foreach ($payment as $paymentListPaymentItem) {
             // validation for constraint: itemType
-            if (!$paymentListPaymentItem instanceof \StructType\XmlPaymentDescriptionType) {
-                throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \StructType\XmlPaymentDescriptionType, "%s" given', is_object($paymentListPaymentItem) ? get_class($paymentListPaymentItem) : gettype($paymentListPaymentItem)), __LINE__);
+            if (!$paymentListPaymentItem instanceof \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType) {
+                throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType, "%s" given', is_object($paymentListPaymentItem) ? get_class($paymentListPaymentItem) : gettype($paymentListPaymentItem)), __LINE__);
             }
         }
         $this->Payment = $payment;
@@ -56,14 +56,14 @@ class PaymentList extends AbstractStructBase
     /**
      * Add item to Payment value
      * @throws \InvalidArgumentException
-     * @param \StructType\XmlPaymentDescriptionType $item
-     * @return \StructType\PaymentList
+     * @param \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType $item
+     * @return \traveltainment\SOAP17\StructType\PaymentList
      */
-    public function addToPayment(\StructType\XmlPaymentDescriptionType $item)
+    public function addToPayment(\traveltainment\SOAP17\StructType\XmlPaymentDescriptionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\XmlPaymentDescriptionType) {
-            throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \StructType\XmlPaymentDescriptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType) {
+            throw new \InvalidArgumentException(sprintf('The Payment property can only contain items of \traveltainment\SOAP17\StructType\XmlPaymentDescriptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Payment[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class PaymentList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PaymentList
+     * @return \traveltainment\SOAP17\StructType\PaymentList
      */
     public static function __set_state(array $array)
     {

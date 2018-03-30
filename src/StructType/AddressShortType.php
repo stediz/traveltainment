@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class AddressShortType extends AbstractStructBase
     /**
      * Set AdressLine value
      * @param string $adressLine
-     * @return \StructType\AddressShortType
+     * @return \traveltainment\SOAP17\StructType\AddressShortType
      */
     public function setAdressLine($adressLine = null)
     {
@@ -69,7 +69,7 @@ class AddressShortType extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\AddressShortType
+     * @return \traveltainment\SOAP17\StructType\AddressShortType
      */
     public function setCity($city = null)
     {
@@ -94,7 +94,7 @@ class AddressShortType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddressShortType
+     * @return \traveltainment\SOAP17\StructType\AddressShortType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class ConvertedPersonPriceType extends ConvertedSimplePriceType
     public $TravellerRef;
     /**
      * The _
-     * @var \StructType\ConvertedSimplePriceType
+     * @var \traveltainment\SOAP17\StructType\ConvertedSimplePriceType
      */
     public $_;
     /**
@@ -27,9 +27,9 @@ class ConvertedPersonPriceType extends ConvertedSimplePriceType
      * @uses ConvertedPersonPriceType::setTravellerRef()
      * @uses ConvertedPersonPriceType::set_()
      * @param string $travellerRef
-     * @param \StructType\ConvertedSimplePriceType $_
+     * @param \traveltainment\SOAP17\StructType\ConvertedSimplePriceType $_
      */
-    public function __construct($travellerRef = null, \StructType\ConvertedSimplePriceType $_ = null)
+    public function __construct($travellerRef = null, \traveltainment\SOAP17\StructType\ConvertedSimplePriceType $_ = null)
     {
         $this
             ->setTravellerRef($travellerRef)
@@ -46,7 +46,7 @@ class ConvertedPersonPriceType extends ConvertedSimplePriceType
     /**
      * Set TravellerRef value
      * @param string $travellerRef
-     * @return \StructType\ConvertedPersonPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPersonPriceType
      */
     public function setTravellerRef($travellerRef = null)
     {
@@ -59,7 +59,7 @@ class ConvertedPersonPriceType extends ConvertedSimplePriceType
     }
     /**
      * Get _ value
-     * @return \StructType\ConvertedSimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\ConvertedSimplePriceType|null
      */
     public function get_()
     {
@@ -67,10 +67,10 @@ class ConvertedPersonPriceType extends ConvertedSimplePriceType
     }
     /**
      * Set _ value
-     * @param \StructType\ConvertedSimplePriceType $_
-     * @return \StructType\ConvertedPersonPriceType
+     * @param \traveltainment\SOAP17\StructType\ConvertedSimplePriceType $_
+     * @return \traveltainment\SOAP17\StructType\ConvertedPersonPriceType
      */
-    public function set_(\StructType\ConvertedSimplePriceType $_ = null)
+    public function set_(\traveltainment\SOAP17\StructType\ConvertedSimplePriceType $_ = null)
     {
         $this->_ = $_;
         return $this;
@@ -81,7 +81,7 @@ class ConvertedPersonPriceType extends ConvertedSimplePriceType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConvertedPersonPriceType
+     * @return \traveltainment\SOAP17\StructType\ConvertedPersonPriceType
      */
     public static function __set_state(array $array)
     {

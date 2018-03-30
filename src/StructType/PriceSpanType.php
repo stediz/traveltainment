@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class PriceSpanType extends AbstractStructBase
     /**
      * Set MaxPrice value
      * @param float $maxPrice
-     * @return \StructType\PriceSpanType
+     * @return \traveltainment\SOAP17\StructType\PriceSpanType
      */
     public function setMaxPrice($maxPrice = null)
     {
@@ -94,7 +94,7 @@ class PriceSpanType extends AbstractStructBase
     /**
      * Set MinPrice value
      * @param float $minPrice
-     * @return \StructType\PriceSpanType
+     * @return \traveltainment\SOAP17\StructType\PriceSpanType
      */
     public function setMinPrice($minPrice = null)
     {
@@ -115,17 +115,17 @@ class PriceSpanType extends AbstractStructBase
     }
     /**
      * Set CurrencyCode value
-     * @uses \EnumType\CurrencyCode::valueIsValid()
-     * @uses \EnumType\CurrencyCode::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $currencyCode
-     * @return \StructType\PriceSpanType
+     * @return \traveltainment\SOAP17\StructType\PriceSpanType
      */
     public function setCurrencyCode($currencyCode = 'EUR')
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CurrencyCode::valueIsValid($currencyCode)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currencyCode, implode(', ', \EnumType\CurrencyCode::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid($currencyCode)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currencyCode, implode(', ', \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues())), __LINE__);
         }
         $this->CurrencyCode = $currencyCode;
         return $this;
@@ -141,7 +141,7 @@ class PriceSpanType extends AbstractStructBase
     /**
      * Set Weightage value
      * @param int $weightage
-     * @return \StructType\PriceSpanType
+     * @return \traveltainment\SOAP17\StructType\PriceSpanType
      */
     public function setWeightage($weightage = '0')
     {
@@ -166,7 +166,7 @@ class PriceSpanType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PriceSpanType
+     * @return \traveltainment\SOAP17\StructType\PriceSpanType
      */
     public static function __set_state(array $array)
     {

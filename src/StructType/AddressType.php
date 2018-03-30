@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,17 +43,17 @@ class AddressType extends AddressBaseType
     }
     /**
      * Set Status value
-     * @uses \EnumType\AddressStatusEnum::valueIsValid()
-     * @uses \EnumType\AddressStatusEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\AddressStatusEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\AddressStatusEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $status
-     * @return \StructType\AddressType
+     * @return \traveltainment\SOAP17\StructType\AddressType
      */
     public function setStatus($status = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AddressStatusEnum::valueIsValid($status)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \EnumType\AddressStatusEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\AddressStatusEnum::valueIsValid($status)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $status, implode(', ', \traveltainment\SOAP17\EnumType\AddressStatusEnum::getValidValues())), __LINE__);
         }
         $this->Status = $status;
         return $this;
@@ -68,17 +68,17 @@ class AddressType extends AddressBaseType
     }
     /**
      * Set LocationType value
-     * @uses \EnumType\UseLocationTypeEnum::valueIsValid()
-     * @uses \EnumType\UseLocationTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\UseLocationTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\UseLocationTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $locationType
-     * @return \StructType\AddressType
+     * @return \traveltainment\SOAP17\StructType\AddressType
      */
     public function setLocationType($locationType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\UseLocationTypeEnum::valueIsValid($locationType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $locationType, implode(', ', \EnumType\UseLocationTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\UseLocationTypeEnum::valueIsValid($locationType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $locationType, implode(', ', \traveltainment\SOAP17\EnumType\UseLocationTypeEnum::getValidValues())), __LINE__);
         }
         $this->LocationType = $locationType;
         return $this;
@@ -89,7 +89,7 @@ class AddressType extends AddressBaseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddressType
+     * @return \traveltainment\SOAP17\StructType\AddressType
      */
     public static function __set_state(array $array)
     {

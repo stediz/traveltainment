@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class PriceInformationType extends AbstractStructBase
 {
     /**
      * The OriginalPrice
-     * @var \StructType\PriceType
+     * @var \traveltainment\SOAP17\StructType\PriceType
      */
     public $OriginalPrice;
     /**
@@ -20,42 +20,42 @@ class PriceInformationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\ConvertedPriceType[]
+     * @var \traveltainment\SOAP17\StructType\ConvertedPriceType[]
      */
     public $ConvertedPrice;
     /**
      * The TotalPrice
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceType
+     * @var \traveltainment\SOAP17\StructType\PriceType
      */
     public $TotalPrice;
     /**
      * The ConvertedTotalPriceList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ConvertedTotalPriceListType
+     * @var \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType
      */
     public $ConvertedTotalPriceList;
     /**
      * The TravellerPriceList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TravellerPriceListType
+     * @var \traveltainment\SOAP17\StructType\TravellerPriceListType
      */
     public $TravellerPriceList;
     /**
      * The ConvertedTravellerPriceList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ConvertedTravellerPriceListType
+     * @var \traveltainment\SOAP17\StructType\ConvertedTravellerPriceListType
      */
     public $ConvertedTravellerPriceList;
     /**
      * The ComponentPriceList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ComponentPriceListType
+     * @var \traveltainment\SOAP17\StructType\ComponentPriceListType
      */
     public $ComponentPriceList;
     /**
@@ -67,15 +67,15 @@ class PriceInformationType extends AbstractStructBase
      * @uses PriceInformationType::setTravellerPriceList()
      * @uses PriceInformationType::setConvertedTravellerPriceList()
      * @uses PriceInformationType::setComponentPriceList()
-     * @param \StructType\PriceType $originalPrice
-     * @param \StructType\ConvertedPriceType[] $convertedPrice
-     * @param \StructType\PriceType $totalPrice
-     * @param \StructType\ConvertedTotalPriceListType $convertedTotalPriceList
-     * @param \StructType\TravellerPriceListType $travellerPriceList
-     * @param \StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList
-     * @param \StructType\ComponentPriceListType $componentPriceList
+     * @param \traveltainment\SOAP17\StructType\PriceType $originalPrice
+     * @param \traveltainment\SOAP17\StructType\ConvertedPriceType[] $convertedPrice
+     * @param \traveltainment\SOAP17\StructType\PriceType $totalPrice
+     * @param \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList
+     * @param \traveltainment\SOAP17\StructType\TravellerPriceListType $travellerPriceList
+     * @param \traveltainment\SOAP17\StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList
+     * @param \traveltainment\SOAP17\StructType\ComponentPriceListType $componentPriceList
      */
-    public function __construct(\StructType\PriceType $originalPrice = null, array $convertedPrice = array(), \StructType\PriceType $totalPrice = null, \StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null, \StructType\TravellerPriceListType $travellerPriceList = null, \StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList = null, \StructType\ComponentPriceListType $componentPriceList = null)
+    public function __construct(\traveltainment\SOAP17\StructType\PriceType $originalPrice = null, array $convertedPrice = array(), \traveltainment\SOAP17\StructType\PriceType $totalPrice = null, \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null, \traveltainment\SOAP17\StructType\TravellerPriceListType $travellerPriceList = null, \traveltainment\SOAP17\StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList = null, \traveltainment\SOAP17\StructType\ComponentPriceListType $componentPriceList = null)
     {
         $this
             ->setOriginalPrice($originalPrice)
@@ -88,7 +88,7 @@ class PriceInformationType extends AbstractStructBase
     }
     /**
      * Get OriginalPrice value
-     * @return \StructType\PriceType|null
+     * @return \traveltainment\SOAP17\StructType\PriceType|null
      */
     public function getOriginalPrice()
     {
@@ -96,17 +96,17 @@ class PriceInformationType extends AbstractStructBase
     }
     /**
      * Set OriginalPrice value
-     * @param \StructType\PriceType $originalPrice
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\PriceType $originalPrice
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
-    public function setOriginalPrice(\StructType\PriceType $originalPrice = null)
+    public function setOriginalPrice(\traveltainment\SOAP17\StructType\PriceType $originalPrice = null)
     {
         $this->OriginalPrice = $originalPrice;
         return $this;
     }
     /**
      * Get ConvertedPrice value
-     * @return \StructType\ConvertedPriceType[]|null
+     * @return \traveltainment\SOAP17\StructType\ConvertedPriceType[]|null
      */
     public function getConvertedPrice()
     {
@@ -115,15 +115,15 @@ class PriceInformationType extends AbstractStructBase
     /**
      * Set ConvertedPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConvertedPriceType[] $convertedPrice
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\ConvertedPriceType[] $convertedPrice
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public function setConvertedPrice(array $convertedPrice = array())
     {
         foreach ($convertedPrice as $priceInformationTypeConvertedPriceItem) {
             // validation for constraint: itemType
-            if (!$priceInformationTypeConvertedPriceItem instanceof \StructType\ConvertedPriceType) {
-                throw new \InvalidArgumentException(sprintf('The ConvertedPrice property can only contain items of \StructType\ConvertedPriceType, "%s" given', is_object($priceInformationTypeConvertedPriceItem) ? get_class($priceInformationTypeConvertedPriceItem) : gettype($priceInformationTypeConvertedPriceItem)), __LINE__);
+            if (!$priceInformationTypeConvertedPriceItem instanceof \traveltainment\SOAP17\StructType\ConvertedPriceType) {
+                throw new \InvalidArgumentException(sprintf('The ConvertedPrice property can only contain items of \traveltainment\SOAP17\StructType\ConvertedPriceType, "%s" given', is_object($priceInformationTypeConvertedPriceItem) ? get_class($priceInformationTypeConvertedPriceItem) : gettype($priceInformationTypeConvertedPriceItem)), __LINE__);
             }
         }
         $this->ConvertedPrice = $convertedPrice;
@@ -132,21 +132,21 @@ class PriceInformationType extends AbstractStructBase
     /**
      * Add item to ConvertedPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConvertedPriceType $item
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\ConvertedPriceType $item
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
-    public function addToConvertedPrice(\StructType\ConvertedPriceType $item)
+    public function addToConvertedPrice(\traveltainment\SOAP17\StructType\ConvertedPriceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ConvertedPriceType) {
-            throw new \InvalidArgumentException(sprintf('The ConvertedPrice property can only contain items of \StructType\ConvertedPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ConvertedPriceType) {
+            throw new \InvalidArgumentException(sprintf('The ConvertedPrice property can only contain items of \traveltainment\SOAP17\StructType\ConvertedPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ConvertedPrice[] = $item;
         return $this;
     }
     /**
      * Get TotalPrice value
-     * @return \StructType\PriceType|null
+     * @return \traveltainment\SOAP17\StructType\PriceType|null
      */
     public function getTotalPrice()
     {
@@ -154,17 +154,17 @@ class PriceInformationType extends AbstractStructBase
     }
     /**
      * Set TotalPrice value
-     * @param \StructType\PriceType $totalPrice
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\PriceType $totalPrice
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
-    public function setTotalPrice(\StructType\PriceType $totalPrice = null)
+    public function setTotalPrice(\traveltainment\SOAP17\StructType\PriceType $totalPrice = null)
     {
         $this->TotalPrice = $totalPrice;
         return $this;
     }
     /**
      * Get ConvertedTotalPriceList value
-     * @return \StructType\ConvertedTotalPriceListType|null
+     * @return \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType|null
      */
     public function getConvertedTotalPriceList()
     {
@@ -172,17 +172,17 @@ class PriceInformationType extends AbstractStructBase
     }
     /**
      * Set ConvertedTotalPriceList value
-     * @param \StructType\ConvertedTotalPriceListType $convertedTotalPriceList
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
-    public function setConvertedTotalPriceList(\StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null)
+    public function setConvertedTotalPriceList(\traveltainment\SOAP17\StructType\ConvertedTotalPriceListType $convertedTotalPriceList = null)
     {
         $this->ConvertedTotalPriceList = $convertedTotalPriceList;
         return $this;
     }
     /**
      * Get TravellerPriceList value
-     * @return \StructType\TravellerPriceListType|null
+     * @return \traveltainment\SOAP17\StructType\TravellerPriceListType|null
      */
     public function getTravellerPriceList()
     {
@@ -190,17 +190,17 @@ class PriceInformationType extends AbstractStructBase
     }
     /**
      * Set TravellerPriceList value
-     * @param \StructType\TravellerPriceListType $travellerPriceList
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\TravellerPriceListType $travellerPriceList
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
-    public function setTravellerPriceList(\StructType\TravellerPriceListType $travellerPriceList = null)
+    public function setTravellerPriceList(\traveltainment\SOAP17\StructType\TravellerPriceListType $travellerPriceList = null)
     {
         $this->TravellerPriceList = $travellerPriceList;
         return $this;
     }
     /**
      * Get ConvertedTravellerPriceList value
-     * @return \StructType\ConvertedTravellerPriceListType|null
+     * @return \traveltainment\SOAP17\StructType\ConvertedTravellerPriceListType|null
      */
     public function getConvertedTravellerPriceList()
     {
@@ -208,17 +208,17 @@ class PriceInformationType extends AbstractStructBase
     }
     /**
      * Set ConvertedTravellerPriceList value
-     * @param \StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
-    public function setConvertedTravellerPriceList(\StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList = null)
+    public function setConvertedTravellerPriceList(\traveltainment\SOAP17\StructType\ConvertedTravellerPriceListType $convertedTravellerPriceList = null)
     {
         $this->ConvertedTravellerPriceList = $convertedTravellerPriceList;
         return $this;
     }
     /**
      * Get ComponentPriceList value
-     * @return \StructType\ComponentPriceListType|null
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceListType|null
      */
     public function getComponentPriceList()
     {
@@ -226,10 +226,10 @@ class PriceInformationType extends AbstractStructBase
     }
     /**
      * Set ComponentPriceList value
-     * @param \StructType\ComponentPriceListType $componentPriceList
-     * @return \StructType\PriceInformationType
+     * @param \traveltainment\SOAP17\StructType\ComponentPriceListType $componentPriceList
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
-    public function setComponentPriceList(\StructType\ComponentPriceListType $componentPriceList = null)
+    public function setComponentPriceList(\traveltainment\SOAP17\StructType\ComponentPriceListType $componentPriceList = null)
     {
         $this->ComponentPriceList = $componentPriceList;
         return $this;
@@ -240,7 +240,7 @@ class PriceInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PriceInformationType
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public static function __set_state(array $array)
     {

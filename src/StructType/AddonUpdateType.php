@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,7 +28,7 @@ class AddonUpdateType extends AbstractStructBase
      * The MiscInfos
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddonMiscInfoType
+     * @var \traveltainment\SOAP17\StructType\AddonMiscInfoType
      */
     public $MiscInfos;
     /**
@@ -44,10 +44,10 @@ class AddonUpdateType extends AbstractStructBase
      * @uses AddonUpdateType::setUID()
      * @param string $addonId
      * @param string $shoppingCartId
-     * @param \StructType\AddonMiscInfoType $miscInfos
+     * @param \traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos
      * @param string $uID
      */
-    public function __construct($addonId = null, $shoppingCartId = null, \StructType\AddonMiscInfoType $miscInfos = null, $uID = null)
+    public function __construct($addonId = null, $shoppingCartId = null, \traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos = null, $uID = null)
     {
         $this
             ->setAddonId($addonId)
@@ -66,7 +66,7 @@ class AddonUpdateType extends AbstractStructBase
     /**
      * Set AddonId value
      * @param string $addonId
-     * @return \StructType\AddonUpdateType
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateType
      */
     public function setAddonId($addonId = null)
     {
@@ -92,7 +92,7 @@ class AddonUpdateType extends AbstractStructBase
     /**
      * Set ShoppingCartId value
      * @param string $shoppingCartId
-     * @return \StructType\AddonUpdateType
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateType
      */
     public function setShoppingCartId($shoppingCartId = null)
     {
@@ -109,7 +109,7 @@ class AddonUpdateType extends AbstractStructBase
     }
     /**
      * Get MiscInfos value
-     * @return \StructType\AddonMiscInfoType|null
+     * @return \traveltainment\SOAP17\StructType\AddonMiscInfoType|null
      */
     public function getMiscInfos()
     {
@@ -117,10 +117,10 @@ class AddonUpdateType extends AbstractStructBase
     }
     /**
      * Set MiscInfos value
-     * @param \StructType\AddonMiscInfoType $miscInfos
-     * @return \StructType\AddonUpdateType
+     * @param \traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateType
      */
-    public function setMiscInfos(\StructType\AddonMiscInfoType $miscInfos = null)
+    public function setMiscInfos(\traveltainment\SOAP17\StructType\AddonMiscInfoType $miscInfos = null)
     {
         $this->MiscInfos = $miscInfos;
         return $this;
@@ -136,7 +136,7 @@ class AddonUpdateType extends AbstractStructBase
     /**
      * Set UID value
      * @param string $uID
-     * @return \StructType\AddonUpdateType
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateType
      */
     public function setUID($uID = null)
     {
@@ -153,7 +153,7 @@ class AddonUpdateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonUpdateType
+     * @return \traveltainment\SOAP17\StructType\AddonUpdateType
      */
     public static function __set_state(array $array)
     {

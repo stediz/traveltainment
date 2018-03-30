@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewLocationAttributesType extends AbstractStructBase
     }
     /**
      * Set LocationAttribute value
-     * @uses \EnumType\HotelReviewLocationAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewLocationAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $locationAttribute
-     * @return \StructType\HotelReviewLocationAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType
      */
     public function setLocationAttribute(array $locationAttribute = array())
     {
         $invalidValues = array();
         foreach ($locationAttribute as $hotelReviewLocationAttributesTypeLocationAttributeItem) {
-            if (!\EnumType\HotelReviewLocationAttribute::valueIsValid($hotelReviewLocationAttributesTypeLocationAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::valueIsValid($hotelReviewLocationAttributesTypeLocationAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewLocationAttributesTypeLocationAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewLocationAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::getValidValues())), __LINE__);
         }
         $this->LocationAttribute = $locationAttribute;
         return $this;
     }
     /**
      * Add item to LocationAttribute value
-     * @uses \EnumType\HotelReviewLocationAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewLocationAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewLocationAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType
      */
     public function addToLocationAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewLocationAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewLocationAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewLocationAttribute::getValidValues())), __LINE__);
         }
         $this->LocationAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewLocationAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewLocationAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType
      */
     public static function __set_state(array $array)
     {

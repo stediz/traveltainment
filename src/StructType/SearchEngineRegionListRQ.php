@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,21 +12,21 @@ class SearchEngineRegionListRQ extends XmlInterfaceRQ
 {
     /**
      * The Search
-     * @var \StructType\RegionListSearchType
+     * @var \traveltainment\SOAP17\StructType\RegionListSearchType
      */
     public $Search;
     /**
      * The Selection
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\Selection
+     * @var \traveltainment\SOAP17\StructType\Selection
      */
     public $Selection;
     /**
      * The Filter
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionListFilterType
+     * @var \traveltainment\SOAP17\StructType\RegionListFilterType
      */
     public $Filter;
     /**
@@ -34,11 +34,11 @@ class SearchEngineRegionListRQ extends XmlInterfaceRQ
      * @uses SearchEngineRegionListRQ::setSearch()
      * @uses SearchEngineRegionListRQ::setSelection()
      * @uses SearchEngineRegionListRQ::setFilter()
-     * @param \StructType\RegionListSearchType $search
-     * @param \StructType\Selection $selection
-     * @param \StructType\RegionListFilterType $filter
+     * @param \traveltainment\SOAP17\StructType\RegionListSearchType $search
+     * @param \traveltainment\SOAP17\StructType\Selection $selection
+     * @param \traveltainment\SOAP17\StructType\RegionListFilterType $filter
      */
-    public function __construct(\StructType\RegionListSearchType $search = null, \StructType\Selection $selection = null, \StructType\RegionListFilterType $filter = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionListSearchType $search = null, \traveltainment\SOAP17\StructType\Selection $selection = null, \traveltainment\SOAP17\StructType\RegionListFilterType $filter = null)
     {
         $this
             ->setSearch($search)
@@ -47,7 +47,7 @@ class SearchEngineRegionListRQ extends XmlInterfaceRQ
     }
     /**
      * Get Search value
-     * @return \StructType\RegionListSearchType|null
+     * @return \traveltainment\SOAP17\StructType\RegionListSearchType|null
      */
     public function getSearch()
     {
@@ -55,17 +55,17 @@ class SearchEngineRegionListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Search value
-     * @param \StructType\RegionListSearchType $search
-     * @return \StructType\SearchEngineRegionListRQ
+     * @param \traveltainment\SOAP17\StructType\RegionListSearchType $search
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ
      */
-    public function setSearch(\StructType\RegionListSearchType $search = null)
+    public function setSearch(\traveltainment\SOAP17\StructType\RegionListSearchType $search = null)
     {
         $this->Search = $search;
         return $this;
     }
     /**
      * Get Selection value
-     * @return \StructType\Selection|null
+     * @return \traveltainment\SOAP17\StructType\Selection|null
      */
     public function getSelection()
     {
@@ -73,17 +73,17 @@ class SearchEngineRegionListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Selection value
-     * @param \StructType\Selection $selection
-     * @return \StructType\SearchEngineRegionListRQ
+     * @param \traveltainment\SOAP17\StructType\Selection $selection
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ
      */
-    public function setSelection(\StructType\Selection $selection = null)
+    public function setSelection(\traveltainment\SOAP17\StructType\Selection $selection = null)
     {
         $this->Selection = $selection;
         return $this;
     }
     /**
      * Get Filter value
-     * @return \StructType\RegionListFilterType|null
+     * @return \traveltainment\SOAP17\StructType\RegionListFilterType|null
      */
     public function getFilter()
     {
@@ -91,10 +91,10 @@ class SearchEngineRegionListRQ extends XmlInterfaceRQ
     }
     /**
      * Set Filter value
-     * @param \StructType\RegionListFilterType $filter
-     * @return \StructType\SearchEngineRegionListRQ
+     * @param \traveltainment\SOAP17\StructType\RegionListFilterType $filter
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ
      */
-    public function setFilter(\StructType\RegionListFilterType $filter = null)
+    public function setFilter(\traveltainment\SOAP17\StructType\RegionListFilterType $filter = null)
     {
         $this->Filter = $filter;
         return $this;
@@ -105,7 +105,7 @@ class SearchEngineRegionListRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineRegionListRQ
+     * @return \traveltainment\SOAP17\StructType\SearchEngineRegionListRQ
      */
     public static function __set_state(array $array)
     {

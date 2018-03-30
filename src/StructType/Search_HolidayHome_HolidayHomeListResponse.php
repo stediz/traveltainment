@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Search_HolidayHome_HolidayHomeListResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeListRS
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeListRS
      */
     public $return;
     /**
      * Constructor method for Search_HolidayHome_HolidayHomeListResponse
      * @uses Search_HolidayHome_HolidayHomeListResponse::setReturn()
-     * @param \StructType\HolidayHomeListRS $return
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListRS $return
      */
-    public function __construct(\StructType\HolidayHomeListRS $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeListRS $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\HolidayHomeListRS|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeListRS|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Search_HolidayHome_HolidayHomeListResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\HolidayHomeListRS $return
-     * @return \StructType\Search_HolidayHome_HolidayHomeListResponse
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeListRS $return
+     * @return \traveltainment\SOAP17\StructType\Search_HolidayHome_HolidayHomeListResponse
      */
-    public function setReturn(\StructType\HolidayHomeListRS $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\HolidayHomeListRS $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Search_HolidayHome_HolidayHomeListResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_HolidayHome_HolidayHomeListResponse
+     * @return \traveltainment\SOAP17\StructType\Search_HolidayHome_HolidayHomeListResponse
      */
     public static function __set_state(array $array)
     {

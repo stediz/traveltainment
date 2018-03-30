@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,32 +12,32 @@ class OfferListRSHeader extends AbstractStructBase
 {
     /**
      * The DepartureAirports
-     * @var \StructType\DepartureAirportListType
+     * @var \traveltainment\SOAP17\StructType\DepartureAirportListType
      */
     public $DepartureAirports;
     /**
      * The Departures
-     * @var \StructType\DepartureListType
+     * @var \traveltainment\SOAP17\StructType\DepartureListType
      */
     public $Departures;
     /**
      * The Durations
-     * @var \StructType\DurationListType
+     * @var \traveltainment\SOAP17\StructType\DurationListType
      */
     public $Durations;
     /**
      * The Rooms
-     * @var \StructType\SimpleRoomInformationListType
+     * @var \traveltainment\SOAP17\StructType\SimpleRoomInformationListType
      */
     public $Rooms;
     /**
      * The Boards
-     * @var \StructType\BoardListType
+     * @var \traveltainment\SOAP17\StructType\BoardListType
      */
     public $Boards;
     /**
      * The TourOperators
-     * @var \StructType\TourOperatorListType
+     * @var \traveltainment\SOAP17\StructType\TourOperatorListType
      */
     public $TourOperators;
     /**
@@ -48,14 +48,14 @@ class OfferListRSHeader extends AbstractStructBase
      * @uses OfferListRSHeader::setRooms()
      * @uses OfferListRSHeader::setBoards()
      * @uses OfferListRSHeader::setTourOperators()
-     * @param \StructType\DepartureAirportListType $departureAirports
-     * @param \StructType\DepartureListType $departures
-     * @param \StructType\DurationListType $durations
-     * @param \StructType\SimpleRoomInformationListType $rooms
-     * @param \StructType\BoardListType $boards
-     * @param \StructType\TourOperatorListType $tourOperators
+     * @param \traveltainment\SOAP17\StructType\DepartureAirportListType $departureAirports
+     * @param \traveltainment\SOAP17\StructType\DepartureListType $departures
+     * @param \traveltainment\SOAP17\StructType\DurationListType $durations
+     * @param \traveltainment\SOAP17\StructType\SimpleRoomInformationListType $rooms
+     * @param \traveltainment\SOAP17\StructType\BoardListType $boards
+     * @param \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators
      */
-    public function __construct(\StructType\DepartureAirportListType $departureAirports = null, \StructType\DepartureListType $departures = null, \StructType\DurationListType $durations = null, \StructType\SimpleRoomInformationListType $rooms = null, \StructType\BoardListType $boards = null, \StructType\TourOperatorListType $tourOperators = null)
+    public function __construct(\traveltainment\SOAP17\StructType\DepartureAirportListType $departureAirports = null, \traveltainment\SOAP17\StructType\DepartureListType $departures = null, \traveltainment\SOAP17\StructType\DurationListType $durations = null, \traveltainment\SOAP17\StructType\SimpleRoomInformationListType $rooms = null, \traveltainment\SOAP17\StructType\BoardListType $boards = null, \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators = null)
     {
         $this
             ->setDepartureAirports($departureAirports)
@@ -67,7 +67,7 @@ class OfferListRSHeader extends AbstractStructBase
     }
     /**
      * Get DepartureAirports value
-     * @return \StructType\DepartureAirportListType|null
+     * @return \traveltainment\SOAP17\StructType\DepartureAirportListType|null
      */
     public function getDepartureAirports()
     {
@@ -75,17 +75,17 @@ class OfferListRSHeader extends AbstractStructBase
     }
     /**
      * Set DepartureAirports value
-     * @param \StructType\DepartureAirportListType $departureAirports
-     * @return \StructType\OfferListRSHeader
+     * @param \traveltainment\SOAP17\StructType\DepartureAirportListType $departureAirports
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
-    public function setDepartureAirports(\StructType\DepartureAirportListType $departureAirports = null)
+    public function setDepartureAirports(\traveltainment\SOAP17\StructType\DepartureAirportListType $departureAirports = null)
     {
         $this->DepartureAirports = $departureAirports;
         return $this;
     }
     /**
      * Get Departures value
-     * @return \StructType\DepartureListType|null
+     * @return \traveltainment\SOAP17\StructType\DepartureListType|null
      */
     public function getDepartures()
     {
@@ -93,17 +93,17 @@ class OfferListRSHeader extends AbstractStructBase
     }
     /**
      * Set Departures value
-     * @param \StructType\DepartureListType $departures
-     * @return \StructType\OfferListRSHeader
+     * @param \traveltainment\SOAP17\StructType\DepartureListType $departures
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
-    public function setDepartures(\StructType\DepartureListType $departures = null)
+    public function setDepartures(\traveltainment\SOAP17\StructType\DepartureListType $departures = null)
     {
         $this->Departures = $departures;
         return $this;
     }
     /**
      * Get Durations value
-     * @return \StructType\DurationListType|null
+     * @return \traveltainment\SOAP17\StructType\DurationListType|null
      */
     public function getDurations()
     {
@@ -111,17 +111,17 @@ class OfferListRSHeader extends AbstractStructBase
     }
     /**
      * Set Durations value
-     * @param \StructType\DurationListType $durations
-     * @return \StructType\OfferListRSHeader
+     * @param \traveltainment\SOAP17\StructType\DurationListType $durations
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
-    public function setDurations(\StructType\DurationListType $durations = null)
+    public function setDurations(\traveltainment\SOAP17\StructType\DurationListType $durations = null)
     {
         $this->Durations = $durations;
         return $this;
     }
     /**
      * Get Rooms value
-     * @return \StructType\SimpleRoomInformationListType|null
+     * @return \traveltainment\SOAP17\StructType\SimpleRoomInformationListType|null
      */
     public function getRooms()
     {
@@ -129,17 +129,17 @@ class OfferListRSHeader extends AbstractStructBase
     }
     /**
      * Set Rooms value
-     * @param \StructType\SimpleRoomInformationListType $rooms
-     * @return \StructType\OfferListRSHeader
+     * @param \traveltainment\SOAP17\StructType\SimpleRoomInformationListType $rooms
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
-    public function setRooms(\StructType\SimpleRoomInformationListType $rooms = null)
+    public function setRooms(\traveltainment\SOAP17\StructType\SimpleRoomInformationListType $rooms = null)
     {
         $this->Rooms = $rooms;
         return $this;
     }
     /**
      * Get Boards value
-     * @return \StructType\BoardListType|null
+     * @return \traveltainment\SOAP17\StructType\BoardListType|null
      */
     public function getBoards()
     {
@@ -147,17 +147,17 @@ class OfferListRSHeader extends AbstractStructBase
     }
     /**
      * Set Boards value
-     * @param \StructType\BoardListType $boards
-     * @return \StructType\OfferListRSHeader
+     * @param \traveltainment\SOAP17\StructType\BoardListType $boards
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
-    public function setBoards(\StructType\BoardListType $boards = null)
+    public function setBoards(\traveltainment\SOAP17\StructType\BoardListType $boards = null)
     {
         $this->Boards = $boards;
         return $this;
     }
     /**
      * Get TourOperators value
-     * @return \StructType\TourOperatorListType|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorListType|null
      */
     public function getTourOperators()
     {
@@ -165,10 +165,10 @@ class OfferListRSHeader extends AbstractStructBase
     }
     /**
      * Set TourOperators value
-     * @param \StructType\TourOperatorListType $tourOperators
-     * @return \StructType\OfferListRSHeader
+     * @param \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
-    public function setTourOperators(\StructType\TourOperatorListType $tourOperators = null)
+    public function setTourOperators(\traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators = null)
     {
         $this->TourOperators = $tourOperators;
         return $this;
@@ -179,7 +179,7 @@ class OfferListRSHeader extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferListRSHeader
+     * @return \traveltainment\SOAP17\StructType\OfferListRSHeader
      */
     public static function __set_state(array $array)
     {

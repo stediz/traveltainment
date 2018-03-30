@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,19 +14,19 @@ class ListItemType extends AbstractStructBase
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
      * The Hotel
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelType
+     * @var \traveltainment\SOAP17\StructType\HotelType
      */
     public $Hotel;
     /**
      * The Offer
-     * @var \StructType\OfferType
+     * @var \traveltainment\SOAP17\StructType\OfferType
      */
     public $Offer;
     /**
@@ -34,11 +34,11 @@ class ListItemType extends AbstractStructBase
      * @uses ListItemType::setRegion()
      * @uses ListItemType::setHotel()
      * @uses ListItemType::setOffer()
-     * @param \StructType\RegionType $region
-     * @param \StructType\HotelType $hotel
-     * @param \StructType\OfferType $offer
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @param \traveltainment\SOAP17\StructType\OfferType $offer
      */
-    public function __construct(\StructType\RegionType $region = null, \StructType\HotelType $hotel = null, \StructType\OfferType $offer = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionType $region = null, \traveltainment\SOAP17\StructType\HotelType $hotel = null, \traveltainment\SOAP17\StructType\OfferType $offer = null)
     {
         $this
             ->setRegion($region)
@@ -47,7 +47,7 @@ class ListItemType extends AbstractStructBase
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -55,17 +55,17 @@ class ListItemType extends AbstractStructBase
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\ListItemType
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\ListItemType
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
     }
     /**
      * Get Hotel value
-     * @return \StructType\HotelType|null
+     * @return \traveltainment\SOAP17\StructType\HotelType|null
      */
     public function getHotel()
     {
@@ -73,17 +73,17 @@ class ListItemType extends AbstractStructBase
     }
     /**
      * Set Hotel value
-     * @param \StructType\HotelType $hotel
-     * @return \StructType\ListItemType
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @return \traveltainment\SOAP17\StructType\ListItemType
      */
-    public function setHotel(\StructType\HotelType $hotel = null)
+    public function setHotel(\traveltainment\SOAP17\StructType\HotelType $hotel = null)
     {
         $this->Hotel = $hotel;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\OfferType|null
+     * @return \traveltainment\SOAP17\StructType\OfferType|null
      */
     public function getOffer()
     {
@@ -91,10 +91,10 @@ class ListItemType extends AbstractStructBase
     }
     /**
      * Set Offer value
-     * @param \StructType\OfferType $offer
-     * @return \StructType\ListItemType
+     * @param \traveltainment\SOAP17\StructType\OfferType $offer
+     * @return \traveltainment\SOAP17\StructType\ListItemType
      */
-    public function setOffer(\StructType\OfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\OfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
@@ -105,7 +105,7 @@ class ListItemType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ListItemType
+     * @return \traveltainment\SOAP17\StructType\ListItemType
      */
     public static function __set_state(array $array)
     {

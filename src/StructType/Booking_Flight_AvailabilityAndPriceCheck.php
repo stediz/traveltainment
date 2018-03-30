@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_Flight_AvailabilityAndPriceCheck extends AbstractStructBase
      * The request
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailabilityAndPriceCheckRQ
+     * @var \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ
      */
     public $request;
     /**
      * Constructor method for Booking_Flight_AvailabilityAndPriceCheck
      * @uses Booking_Flight_AvailabilityAndPriceCheck::setRequest()
-     * @param \StructType\AvailabilityAndPriceCheckRQ $request
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ $request
      */
-    public function __construct(\StructType\AvailabilityAndPriceCheckRQ $request = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\AvailabilityAndPriceCheckRQ|null
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ|null
      */
     public function getRequest()
     {
@@ -39,10 +39,10 @@ class Booking_Flight_AvailabilityAndPriceCheck extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\AvailabilityAndPriceCheckRQ $request
-     * @return \StructType\Booking_Flight_AvailabilityAndPriceCheck
+     * @param \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ $request
+     * @return \traveltainment\SOAP17\StructType\Booking_Flight_AvailabilityAndPriceCheck
      */
-    public function setRequest(\StructType\AvailabilityAndPriceCheckRQ $request = null)
+    public function setRequest(\traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRQ $request = null)
     {
         $this->request = $request;
         return $this;
@@ -53,7 +53,7 @@ class Booking_Flight_AvailabilityAndPriceCheck extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_Flight_AvailabilityAndPriceCheck
+     * @return \traveltainment\SOAP17\StructType\Booking_Flight_AvailabilityAndPriceCheck
      */
     public static function __set_state(array $array)
     {

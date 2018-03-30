@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class BookingResultsType extends AbstractStructBase
      * The BookingResult
      * Meta informations extracted from the WSDL
      * - maxOccurs: 99
-     * @var \StructType\BookingResultType[]
+     * @var \traveltainment\SOAP17\StructType\BookingResultType[]
      */
     public $BookingResult;
     /**
      * Constructor method for BookingResultsType
      * @uses BookingResultsType::setBookingResult()
-     * @param \StructType\BookingResultType[] $bookingResult
+     * @param \traveltainment\SOAP17\StructType\BookingResultType[] $bookingResult
      */
     public function __construct(array $bookingResult = array())
     {
@@ -29,7 +29,7 @@ class BookingResultsType extends AbstractStructBase
     }
     /**
      * Get BookingResult value
-     * @return \StructType\BookingResultType[]|null
+     * @return \traveltainment\SOAP17\StructType\BookingResultType[]|null
      */
     public function getBookingResult()
     {
@@ -38,15 +38,15 @@ class BookingResultsType extends AbstractStructBase
     /**
      * Set BookingResult value
      * @throws \InvalidArgumentException
-     * @param \StructType\BookingResultType[] $bookingResult
-     * @return \StructType\BookingResultsType
+     * @param \traveltainment\SOAP17\StructType\BookingResultType[] $bookingResult
+     * @return \traveltainment\SOAP17\StructType\BookingResultsType
      */
     public function setBookingResult(array $bookingResult = array())
     {
         foreach ($bookingResult as $bookingResultsTypeBookingResultItem) {
             // validation for constraint: itemType
-            if (!$bookingResultsTypeBookingResultItem instanceof \StructType\BookingResultType) {
-                throw new \InvalidArgumentException(sprintf('The BookingResult property can only contain items of \StructType\BookingResultType, "%s" given', is_object($bookingResultsTypeBookingResultItem) ? get_class($bookingResultsTypeBookingResultItem) : gettype($bookingResultsTypeBookingResultItem)), __LINE__);
+            if (!$bookingResultsTypeBookingResultItem instanceof \traveltainment\SOAP17\StructType\BookingResultType) {
+                throw new \InvalidArgumentException(sprintf('The BookingResult property can only contain items of \traveltainment\SOAP17\StructType\BookingResultType, "%s" given', is_object($bookingResultsTypeBookingResultItem) ? get_class($bookingResultsTypeBookingResultItem) : gettype($bookingResultsTypeBookingResultItem)), __LINE__);
             }
         }
         $this->BookingResult = $bookingResult;
@@ -55,14 +55,14 @@ class BookingResultsType extends AbstractStructBase
     /**
      * Add item to BookingResult value
      * @throws \InvalidArgumentException
-     * @param \StructType\BookingResultType $item
-     * @return \StructType\BookingResultsType
+     * @param \traveltainment\SOAP17\StructType\BookingResultType $item
+     * @return \traveltainment\SOAP17\StructType\BookingResultsType
      */
-    public function addToBookingResult(\StructType\BookingResultType $item)
+    public function addToBookingResult(\traveltainment\SOAP17\StructType\BookingResultType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\BookingResultType) {
-            throw new \InvalidArgumentException(sprintf('The BookingResult property can only contain items of \StructType\BookingResultType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\BookingResultType) {
+            throw new \InvalidArgumentException(sprintf('The BookingResult property can only contain items of \traveltainment\SOAP17\StructType\BookingResultType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->BookingResult[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class BookingResultsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookingResultsType
+     * @return \traveltainment\SOAP17\StructType\BookingResultsType
      */
     public static function __set_state(array $array)
     {

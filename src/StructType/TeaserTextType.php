@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class TeaserTextType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\TeaserTextType
+     * @return \traveltainment\SOAP17\StructType\TeaserTextType
      */
     public function set_($_ = null)
     {
@@ -74,7 +74,7 @@ class TeaserTextType extends AbstractStructBase
     /**
      * Set Alternative value
      * @param bool $alternative
-     * @return \StructType\TeaserTextType
+     * @return \traveltainment\SOAP17\StructType\TeaserTextType
      */
     public function setAlternative($alternative = null)
     {
@@ -96,7 +96,7 @@ class TeaserTextType extends AbstractStructBase
     /**
      * Set TourOperator value
      * @param string $tourOperator
-     * @return \StructType\TeaserTextType
+     * @return \traveltainment\SOAP17\StructType\TeaserTextType
      */
     public function setTourOperator($tourOperator = null)
     {
@@ -113,7 +113,7 @@ class TeaserTextType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TeaserTextType
+     * @return \traveltainment\SOAP17\StructType\TeaserTextType
      */
     public static function __set_state(array $array)
     {

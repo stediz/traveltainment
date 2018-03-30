@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class CarRentalEventType extends AbstractStructBase
     /**
      * Set DateTime value
      * @param string $dateTime
-     * @return \StructType\CarRentalEventType
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventType
      */
     public function setDateTime($dateTime = null)
     {
@@ -69,7 +69,7 @@ class CarRentalEventType extends AbstractStructBase
     /**
      * Set LocationCode value
      * @param string $locationCode
-     * @return \StructType\CarRentalEventType
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventType
      */
     public function setLocationCode($locationCode = null)
     {
@@ -94,7 +94,7 @@ class CarRentalEventType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalEventType
+     * @return \traveltainment\SOAP17\StructType\CarRentalEventType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -28,14 +28,14 @@ class RegionOptionsType extends AbstractStructBase
      * The TeaserOptions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TeaserOptionsType
+     * @var \traveltainment\SOAP17\StructType\TeaserOptionsType
      */
     public $TeaserOptions;
     /**
      * The PostsortingSelection
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionPostsortingSelectionType
+     * @var \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType
      */
     public $PostsortingSelection;
     /**
@@ -54,11 +54,11 @@ class RegionOptionsType extends AbstractStructBase
      * @uses RegionOptionsType::setAdditionalCurrencies()
      * @param int $resultsPerPage
      * @param int $resultOffset
-     * @param \StructType\TeaserOptionsType $teaserOptions
-     * @param \StructType\RegionPostsortingSelectionType $postsortingSelection
+     * @param \traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions
+     * @param \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType $postsortingSelection
      * @param string $additionalCurrencies
      */
-    public function __construct($resultsPerPage = 20, $resultOffset = 0, \StructType\TeaserOptionsType $teaserOptions = null, \StructType\RegionPostsortingSelectionType $postsortingSelection = null, $additionalCurrencies = null)
+    public function __construct($resultsPerPage = 20, $resultOffset = 0, \traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions = null, \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType $postsortingSelection = null, $additionalCurrencies = null)
     {
         $this
             ->setResultsPerPage($resultsPerPage)
@@ -78,7 +78,7 @@ class RegionOptionsType extends AbstractStructBase
     /**
      * Set ResultsPerPage value
      * @param int $resultsPerPage
-     * @return \StructType\RegionOptionsType
+     * @return \traveltainment\SOAP17\StructType\RegionOptionsType
      */
     public function setResultsPerPage($resultsPerPage = 20)
     {
@@ -100,7 +100,7 @@ class RegionOptionsType extends AbstractStructBase
     /**
      * Set ResultOffset value
      * @param int $resultOffset
-     * @return \StructType\RegionOptionsType
+     * @return \traveltainment\SOAP17\StructType\RegionOptionsType
      */
     public function setResultOffset($resultOffset = 0)
     {
@@ -113,7 +113,7 @@ class RegionOptionsType extends AbstractStructBase
     }
     /**
      * Get TeaserOptions value
-     * @return \StructType\TeaserOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\TeaserOptionsType|null
      */
     public function getTeaserOptions()
     {
@@ -121,17 +121,17 @@ class RegionOptionsType extends AbstractStructBase
     }
     /**
      * Set TeaserOptions value
-     * @param \StructType\TeaserOptionsType $teaserOptions
-     * @return \StructType\RegionOptionsType
+     * @param \traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions
+     * @return \traveltainment\SOAP17\StructType\RegionOptionsType
      */
-    public function setTeaserOptions(\StructType\TeaserOptionsType $teaserOptions = null)
+    public function setTeaserOptions(\traveltainment\SOAP17\StructType\TeaserOptionsType $teaserOptions = null)
     {
         $this->TeaserOptions = $teaserOptions;
         return $this;
     }
     /**
      * Get PostsortingSelection value
-     * @return \StructType\RegionPostsortingSelectionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType|null
      */
     public function getPostsortingSelection()
     {
@@ -139,10 +139,10 @@ class RegionOptionsType extends AbstractStructBase
     }
     /**
      * Set PostsortingSelection value
-     * @param \StructType\RegionPostsortingSelectionType $postsortingSelection
-     * @return \StructType\RegionOptionsType
+     * @param \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType $postsortingSelection
+     * @return \traveltainment\SOAP17\StructType\RegionOptionsType
      */
-    public function setPostsortingSelection(\StructType\RegionPostsortingSelectionType $postsortingSelection = null)
+    public function setPostsortingSelection(\traveltainment\SOAP17\StructType\RegionPostsortingSelectionType $postsortingSelection = null)
     {
         $this->PostsortingSelection = $postsortingSelection;
         return $this;
@@ -158,7 +158,7 @@ class RegionOptionsType extends AbstractStructBase
     /**
      * Set AdditionalCurrencies value
      * @param string $additionalCurrencies
-     * @return \StructType\RegionOptionsType
+     * @return \traveltainment\SOAP17\StructType\RegionOptionsType
      */
     public function setAdditionalCurrencies($additionalCurrencies = null)
     {
@@ -175,7 +175,7 @@ class RegionOptionsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionOptionsType
+     * @return \traveltainment\SOAP17\StructType\RegionOptionsType
      */
     public static function __set_state(array $array)
     {

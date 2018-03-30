@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,12 +12,12 @@ class CarRentalDetails4SearchType extends AbstractStructBase
 {
     /**
      * The Pickup
-     * @var \StructType\CarRentalPickupInfoType
+     * @var \traveltainment\SOAP17\StructType\CarRentalPickupInfoType
      */
     public $Pickup;
     /**
      * The Return
-     * @var \StructType\CarRentalReturnInfoType
+     * @var \traveltainment\SOAP17\StructType\CarRentalReturnInfoType
      */
     public $Return;
     /**
@@ -27,17 +27,17 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     public $AvailabilityStatus;
     /**
      * The DayRate
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $DayRate;
     /**
      * The ExtendedDayRate
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $ExtendedDayRate;
     /**
      * The VehicleDetails
-     * @var \StructType\VehicleDetailsType
+     * @var \traveltainment\SOAP17\StructType\VehicleDetailsType
      */
     public $VehicleDetails;
     /**
@@ -48,14 +48,14 @@ class CarRentalDetails4SearchType extends AbstractStructBase
      * @uses CarRentalDetails4SearchType::setDayRate()
      * @uses CarRentalDetails4SearchType::setExtendedDayRate()
      * @uses CarRentalDetails4SearchType::setVehicleDetails()
-     * @param \StructType\CarRentalPickupInfoType $pickup
-     * @param \StructType\CarRentalReturnInfoType $return
+     * @param \traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup
+     * @param \traveltainment\SOAP17\StructType\CarRentalReturnInfoType $return
      * @param string $availabilityStatus
-     * @param \StructType\SimplePriceType $dayRate
-     * @param \StructType\PriceInformationType $extendedDayRate
-     * @param \StructType\VehicleDetailsType $vehicleDetails
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $dayRate
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedDayRate
+     * @param \traveltainment\SOAP17\StructType\VehicleDetailsType $vehicleDetails
      */
-    public function __construct(\StructType\CarRentalPickupInfoType $pickup = null, \StructType\CarRentalReturnInfoType $return = null, $availabilityStatus = null, \StructType\SimplePriceType $dayRate = null, \StructType\PriceInformationType $extendedDayRate = null, \StructType\VehicleDetailsType $vehicleDetails = null)
+    public function __construct(\traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup = null, \traveltainment\SOAP17\StructType\CarRentalReturnInfoType $return = null, $availabilityStatus = null, \traveltainment\SOAP17\StructType\SimplePriceType $dayRate = null, \traveltainment\SOAP17\StructType\PriceInformationType $extendedDayRate = null, \traveltainment\SOAP17\StructType\VehicleDetailsType $vehicleDetails = null)
     {
         $this
             ->setPickup($pickup)
@@ -67,7 +67,7 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     }
     /**
      * Get Pickup value
-     * @return \StructType\CarRentalPickupInfoType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalPickupInfoType|null
      */
     public function getPickup()
     {
@@ -75,17 +75,17 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set Pickup value
-     * @param \StructType\CarRentalPickupInfoType $pickup
-     * @return \StructType\CarRentalDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
-    public function setPickup(\StructType\CarRentalPickupInfoType $pickup = null)
+    public function setPickup(\traveltainment\SOAP17\StructType\CarRentalPickupInfoType $pickup = null)
     {
         $this->Pickup = $pickup;
         return $this;
     }
     /**
      * Get Return value
-     * @return \StructType\CarRentalReturnInfoType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalReturnInfoType|null
      */
     public function getReturn()
     {
@@ -93,10 +93,10 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set Return value
-     * @param \StructType\CarRentalReturnInfoType $return
-     * @return \StructType\CarRentalDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\CarRentalReturnInfoType $return
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
-    public function setReturn(\StructType\CarRentalReturnInfoType $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\CarRentalReturnInfoType $return = null)
     {
         $this->Return = $return;
         return $this;
@@ -111,24 +111,24 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set AvailabilityStatus value
-     * @uses \EnumType\OTA_InventoryStatusEnum::valueIsValid()
-     * @uses \EnumType\OTA_InventoryStatusEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $availabilityStatus
-     * @return \StructType\CarRentalDetails4SearchType
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
     public function setAvailabilityStatus($availabilityStatus = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OTA_InventoryStatusEnum::valueIsValid($availabilityStatus)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $availabilityStatus, implode(', ', \EnumType\OTA_InventoryStatusEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::valueIsValid($availabilityStatus)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $availabilityStatus, implode(', ', \traveltainment\SOAP17\EnumType\OTA_InventoryStatusEnum::getValidValues())), __LINE__);
         }
         $this->AvailabilityStatus = $availabilityStatus;
         return $this;
     }
     /**
      * Get DayRate value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function getDayRate()
     {
@@ -136,17 +136,17 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set DayRate value
-     * @param \StructType\SimplePriceType $dayRate
-     * @return \StructType\CarRentalDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $dayRate
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
-    public function setDayRate(\StructType\SimplePriceType $dayRate = null)
+    public function setDayRate(\traveltainment\SOAP17\StructType\SimplePriceType $dayRate = null)
     {
         $this->DayRate = $dayRate;
         return $this;
     }
     /**
      * Get ExtendedDayRate value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getExtendedDayRate()
     {
@@ -154,17 +154,17 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set ExtendedDayRate value
-     * @param \StructType\PriceInformationType $extendedDayRate
-     * @return \StructType\CarRentalDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $extendedDayRate
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
-    public function setExtendedDayRate(\StructType\PriceInformationType $extendedDayRate = null)
+    public function setExtendedDayRate(\traveltainment\SOAP17\StructType\PriceInformationType $extendedDayRate = null)
     {
         $this->ExtendedDayRate = $extendedDayRate;
         return $this;
     }
     /**
      * Get VehicleDetails value
-     * @return \StructType\VehicleDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\VehicleDetailsType|null
      */
     public function getVehicleDetails()
     {
@@ -172,10 +172,10 @@ class CarRentalDetails4SearchType extends AbstractStructBase
     }
     /**
      * Set VehicleDetails value
-     * @param \StructType\VehicleDetailsType $vehicleDetails
-     * @return \StructType\CarRentalDetails4SearchType
+     * @param \traveltainment\SOAP17\StructType\VehicleDetailsType $vehicleDetails
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
-    public function setVehicleDetails(\StructType\VehicleDetailsType $vehicleDetails = null)
+    public function setVehicleDetails(\traveltainment\SOAP17\StructType\VehicleDetailsType $vehicleDetails = null)
     {
         $this->VehicleDetails = $vehicleDetails;
         return $this;
@@ -186,7 +186,7 @@ class CarRentalDetails4SearchType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CarRentalDetails4SearchType
+     * @return \traveltainment\SOAP17\StructType\CarRentalDetails4SearchType
      */
     public static function __set_state(array $array)
     {

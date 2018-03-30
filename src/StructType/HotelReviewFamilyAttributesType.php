@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewFamilyAttributesType extends AbstractStructBase
     }
     /**
      * Set FamilyAttribute value
-     * @uses \EnumType\HotelReviewFamilyAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewFamilyAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $familyAttribute
-     * @return \StructType\HotelReviewFamilyAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType
      */
     public function setFamilyAttribute(array $familyAttribute = array())
     {
         $invalidValues = array();
         foreach ($familyAttribute as $hotelReviewFamilyAttributesTypeFamilyAttributeItem) {
-            if (!\EnumType\HotelReviewFamilyAttribute::valueIsValid($hotelReviewFamilyAttributesTypeFamilyAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::valueIsValid($hotelReviewFamilyAttributesTypeFamilyAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewFamilyAttributesTypeFamilyAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewFamilyAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::getValidValues())), __LINE__);
         }
         $this->FamilyAttribute = $familyAttribute;
         return $this;
     }
     /**
      * Add item to FamilyAttribute value
-     * @uses \EnumType\HotelReviewFamilyAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewFamilyAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewFamilyAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType
      */
     public function addToFamilyAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewFamilyAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewFamilyAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewFamilyAttribute::getValidValues())), __LINE__);
         }
         $this->FamilyAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewFamilyAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewFamilyAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType
      */
     public static function __set_state(array $array)
     {

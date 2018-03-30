@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,33 +12,33 @@ class HolidayHomeJourneyType extends AbstractStructBase
 {
     /**
      * The TravellerList
-     * @var \StructType\TravellerListType
+     * @var \traveltainment\SOAP17\StructType\TravellerListType
      */
     public $TravellerList;
     /**
      * The TravelDateSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TravelDateSpanType
+     * @var \traveltainment\SOAP17\StructType\TravelDateSpanType
      */
     public $TravelDateSpan;
     /**
      * The TravelDurationSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TravelDurationSpanType
+     * @var \traveltainment\SOAP17\StructType\TravelDurationSpanType
      */
     public $TravelDurationSpan;
     /**
      * The ExactTravelDateSpan
-     * @var \StructType\TravelDateSpanType
+     * @var \traveltainment\SOAP17\StructType\TravelDateSpanType
      */
     public $ExactTravelDateSpan;
     /**
      * The PriceSpan
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceSpanType
+     * @var \traveltainment\SOAP17\StructType\PriceSpanType
      */
     public $PriceSpan;
     /**
@@ -48,13 +48,13 @@ class HolidayHomeJourneyType extends AbstractStructBase
      * @uses HolidayHomeJourneyType::setTravelDurationSpan()
      * @uses HolidayHomeJourneyType::setExactTravelDateSpan()
      * @uses HolidayHomeJourneyType::setPriceSpan()
-     * @param \StructType\TravellerListType $travellerList
-     * @param \StructType\TravelDateSpanType $travelDateSpan
-     * @param \StructType\TravelDurationSpanType $travelDurationSpan
-     * @param \StructType\TravelDateSpanType $exactTravelDateSpan
-     * @param \StructType\PriceSpanType $priceSpan
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan
+     * @param \traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan
+     * @param \traveltainment\SOAP17\StructType\PriceSpanType $priceSpan
      */
-    public function __construct(\StructType\TravellerListType $travellerList = null, \StructType\TravelDateSpanType $travelDateSpan = null, \StructType\TravelDurationSpanType $travelDurationSpan = null, \StructType\TravelDateSpanType $exactTravelDateSpan = null, \StructType\PriceSpanType $priceSpan = null)
+    public function __construct(\traveltainment\SOAP17\StructType\TravellerListType $travellerList = null, \traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan = null, \traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan = null, \traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan = null, \traveltainment\SOAP17\StructType\PriceSpanType $priceSpan = null)
     {
         $this
             ->setTravellerList($travellerList)
@@ -65,7 +65,7 @@ class HolidayHomeJourneyType extends AbstractStructBase
     }
     /**
      * Get TravellerList value
-     * @return \StructType\TravellerListType|null
+     * @return \traveltainment\SOAP17\StructType\TravellerListType|null
      */
     public function getTravellerList()
     {
@@ -73,17 +73,17 @@ class HolidayHomeJourneyType extends AbstractStructBase
     }
     /**
      * Set TravellerList value
-     * @param \StructType\TravellerListType $travellerList
-     * @return \StructType\HolidayHomeJourneyType
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeJourneyType
      */
-    public function setTravellerList(\StructType\TravellerListType $travellerList = null)
+    public function setTravellerList(\traveltainment\SOAP17\StructType\TravellerListType $travellerList = null)
     {
         $this->TravellerList = $travellerList;
         return $this;
     }
     /**
      * Get TravelDateSpan value
-     * @return \StructType\TravelDateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\TravelDateSpanType|null
      */
     public function getTravelDateSpan()
     {
@@ -91,17 +91,17 @@ class HolidayHomeJourneyType extends AbstractStructBase
     }
     /**
      * Set TravelDateSpan value
-     * @param \StructType\TravelDateSpanType $travelDateSpan
-     * @return \StructType\HolidayHomeJourneyType
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeJourneyType
      */
-    public function setTravelDateSpan(\StructType\TravelDateSpanType $travelDateSpan = null)
+    public function setTravelDateSpan(\traveltainment\SOAP17\StructType\TravelDateSpanType $travelDateSpan = null)
     {
         $this->TravelDateSpan = $travelDateSpan;
         return $this;
     }
     /**
      * Get TravelDurationSpan value
-     * @return \StructType\TravelDurationSpanType|null
+     * @return \traveltainment\SOAP17\StructType\TravelDurationSpanType|null
      */
     public function getTravelDurationSpan()
     {
@@ -109,17 +109,17 @@ class HolidayHomeJourneyType extends AbstractStructBase
     }
     /**
      * Set TravelDurationSpan value
-     * @param \StructType\TravelDurationSpanType $travelDurationSpan
-     * @return \StructType\HolidayHomeJourneyType
+     * @param \traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeJourneyType
      */
-    public function setTravelDurationSpan(\StructType\TravelDurationSpanType $travelDurationSpan = null)
+    public function setTravelDurationSpan(\traveltainment\SOAP17\StructType\TravelDurationSpanType $travelDurationSpan = null)
     {
         $this->TravelDurationSpan = $travelDurationSpan;
         return $this;
     }
     /**
      * Get ExactTravelDateSpan value
-     * @return \StructType\TravelDateSpanType|null
+     * @return \traveltainment\SOAP17\StructType\TravelDateSpanType|null
      */
     public function getExactTravelDateSpan()
     {
@@ -127,17 +127,17 @@ class HolidayHomeJourneyType extends AbstractStructBase
     }
     /**
      * Set ExactTravelDateSpan value
-     * @param \StructType\TravelDateSpanType $exactTravelDateSpan
-     * @return \StructType\HolidayHomeJourneyType
+     * @param \traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeJourneyType
      */
-    public function setExactTravelDateSpan(\StructType\TravelDateSpanType $exactTravelDateSpan = null)
+    public function setExactTravelDateSpan(\traveltainment\SOAP17\StructType\TravelDateSpanType $exactTravelDateSpan = null)
     {
         $this->ExactTravelDateSpan = $exactTravelDateSpan;
         return $this;
     }
     /**
      * Get PriceSpan value
-     * @return \StructType\PriceSpanType|null
+     * @return \traveltainment\SOAP17\StructType\PriceSpanType|null
      */
     public function getPriceSpan()
     {
@@ -145,10 +145,10 @@ class HolidayHomeJourneyType extends AbstractStructBase
     }
     /**
      * Set PriceSpan value
-     * @param \StructType\PriceSpanType $priceSpan
-     * @return \StructType\HolidayHomeJourneyType
+     * @param \traveltainment\SOAP17\StructType\PriceSpanType $priceSpan
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeJourneyType
      */
-    public function setPriceSpan(\StructType\PriceSpanType $priceSpan = null)
+    public function setPriceSpan(\traveltainment\SOAP17\StructType\PriceSpanType $priceSpan = null)
     {
         $this->PriceSpan = $priceSpan;
         return $this;
@@ -159,7 +159,7 @@ class HolidayHomeJourneyType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeJourneyType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeJourneyType
      */
     public static function __set_state(array $array)
     {

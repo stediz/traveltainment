@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,12 +12,12 @@ class CoveredTripType extends AbstractStructBase
 {
     /**
      * The Destinations
-     * @var \StructType\DestinationsType
+     * @var \traveltainment\SOAP17\StructType\DestinationsType
      */
     public $Destinations;
     /**
      * The TourOperators
-     * @var \StructType\TourOperatorsType
+     * @var \traveltainment\SOAP17\StructType\TourOperatorsType
      */
     public $TourOperators;
     /**
@@ -36,12 +36,12 @@ class CoveredTripType extends AbstractStructBase
      * @uses CoveredTripType::setTourOperators()
      * @uses CoveredTripType::setStart()
      * @uses CoveredTripType::setEnd()
-     * @param \StructType\DestinationsType $destinations
-     * @param \StructType\TourOperatorsType $tourOperators
+     * @param \traveltainment\SOAP17\StructType\DestinationsType $destinations
+     * @param \traveltainment\SOAP17\StructType\TourOperatorsType $tourOperators
      * @param string $start
      * @param string $end
      */
-    public function __construct(\StructType\DestinationsType $destinations = null, \StructType\TourOperatorsType $tourOperators = null, $start = null, $end = null)
+    public function __construct(\traveltainment\SOAP17\StructType\DestinationsType $destinations = null, \traveltainment\SOAP17\StructType\TourOperatorsType $tourOperators = null, $start = null, $end = null)
     {
         $this
             ->setDestinations($destinations)
@@ -51,7 +51,7 @@ class CoveredTripType extends AbstractStructBase
     }
     /**
      * Get Destinations value
-     * @return \StructType\DestinationsType|null
+     * @return \traveltainment\SOAP17\StructType\DestinationsType|null
      */
     public function getDestinations()
     {
@@ -59,17 +59,17 @@ class CoveredTripType extends AbstractStructBase
     }
     /**
      * Set Destinations value
-     * @param \StructType\DestinationsType $destinations
-     * @return \StructType\CoveredTripType
+     * @param \traveltainment\SOAP17\StructType\DestinationsType $destinations
+     * @return \traveltainment\SOAP17\StructType\CoveredTripType
      */
-    public function setDestinations(\StructType\DestinationsType $destinations = null)
+    public function setDestinations(\traveltainment\SOAP17\StructType\DestinationsType $destinations = null)
     {
         $this->Destinations = $destinations;
         return $this;
     }
     /**
      * Get TourOperators value
-     * @return \StructType\TourOperatorsType|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorsType|null
      */
     public function getTourOperators()
     {
@@ -77,10 +77,10 @@ class CoveredTripType extends AbstractStructBase
     }
     /**
      * Set TourOperators value
-     * @param \StructType\TourOperatorsType $tourOperators
-     * @return \StructType\CoveredTripType
+     * @param \traveltainment\SOAP17\StructType\TourOperatorsType $tourOperators
+     * @return \traveltainment\SOAP17\StructType\CoveredTripType
      */
-    public function setTourOperators(\StructType\TourOperatorsType $tourOperators = null)
+    public function setTourOperators(\traveltainment\SOAP17\StructType\TourOperatorsType $tourOperators = null)
     {
         $this->TourOperators = $tourOperators;
         return $this;
@@ -96,7 +96,7 @@ class CoveredTripType extends AbstractStructBase
     /**
      * Set Start value
      * @param string $start
-     * @return \StructType\CoveredTripType
+     * @return \traveltainment\SOAP17\StructType\CoveredTripType
      */
     public function setStart($start = null)
     {
@@ -118,7 +118,7 @@ class CoveredTripType extends AbstractStructBase
     /**
      * Set End value
      * @param string $end
-     * @return \StructType\CoveredTripType
+     * @return \traveltainment\SOAP17\StructType\CoveredTripType
      */
     public function setEnd($end = null)
     {
@@ -135,7 +135,7 @@ class CoveredTripType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CoveredTripType
+     * @return \traveltainment\SOAP17\StructType\CoveredTripType
      */
     public static function __set_state(array $array)
     {

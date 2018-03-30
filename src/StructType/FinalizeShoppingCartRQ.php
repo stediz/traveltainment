@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -36,7 +36,7 @@ class FinalizeShoppingCartRQ extends XmlInterfaceRQ
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\FinalizeShoppingCartRQ
+     * @return \traveltainment\SOAP17\StructType\FinalizeShoppingCartRQ
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -53,7 +53,7 @@ class FinalizeShoppingCartRQ extends XmlInterfaceRQ
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FinalizeShoppingCartRQ
+     * @return \traveltainment\SOAP17\StructType\FinalizeShoppingCartRQ
      */
     public static function __set_state(array $array)
     {

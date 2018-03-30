@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class BookShoppingCartRSType extends ResponseType
 {
     /**
      * The Errors
-     * @var \StructType\ErrorsType
+     * @var \traveltainment\SOAP17\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -27,7 +27,7 @@ class BookShoppingCartRSType extends ResponseType
     public $SessionID;
     /**
      * The BookingResults
-     * @var \StructType\BookingResultsType
+     * @var \traveltainment\SOAP17\StructType\BookingResultsType
      */
     public $BookingResults;
     /**
@@ -36,12 +36,12 @@ class BookShoppingCartRSType extends ResponseType
      * @uses BookShoppingCartRSType::setShoppingCartID()
      * @uses BookShoppingCartRSType::setSessionID()
      * @uses BookShoppingCartRSType::setBookingResults()
-     * @param \StructType\ErrorsType $errors
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
      * @param string $shoppingCartID
      * @param string $sessionID
-     * @param \StructType\BookingResultsType $bookingResults
+     * @param \traveltainment\SOAP17\StructType\BookingResultsType $bookingResults
      */
-    public function __construct(\StructType\ErrorsType $errors = null, $shoppingCartID = null, $sessionID = null, \StructType\BookingResultsType $bookingResults = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ErrorsType $errors = null, $shoppingCartID = null, $sessionID = null, \traveltainment\SOAP17\StructType\BookingResultsType $bookingResults = null)
     {
         $this
             ->setErrors($errors)
@@ -51,7 +51,7 @@ class BookShoppingCartRSType extends ResponseType
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -59,10 +59,10 @@ class BookShoppingCartRSType extends ResponseType
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\BookShoppingCartRSType
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRSType
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\traveltainment\SOAP17\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
@@ -78,7 +78,7 @@ class BookShoppingCartRSType extends ResponseType
     /**
      * Set ShoppingCartID value
      * @param string $shoppingCartID
-     * @return \StructType\BookShoppingCartRSType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRSType
      */
     public function setShoppingCartID($shoppingCartID = null)
     {
@@ -100,7 +100,7 @@ class BookShoppingCartRSType extends ResponseType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\BookShoppingCartRSType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRSType
      */
     public function setSessionID($sessionID = null)
     {
@@ -113,7 +113,7 @@ class BookShoppingCartRSType extends ResponseType
     }
     /**
      * Get BookingResults value
-     * @return \StructType\BookingResultsType|null
+     * @return \traveltainment\SOAP17\StructType\BookingResultsType|null
      */
     public function getBookingResults()
     {
@@ -121,10 +121,10 @@ class BookShoppingCartRSType extends ResponseType
     }
     /**
      * Set BookingResults value
-     * @param \StructType\BookingResultsType $bookingResults
-     * @return \StructType\BookShoppingCartRSType
+     * @param \traveltainment\SOAP17\StructType\BookingResultsType $bookingResults
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRSType
      */
-    public function setBookingResults(\StructType\BookingResultsType $bookingResults = null)
+    public function setBookingResults(\traveltainment\SOAP17\StructType\BookingResultsType $bookingResults = null)
     {
         $this->BookingResults = $bookingResults;
         return $this;
@@ -135,7 +135,7 @@ class BookShoppingCartRSType extends ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BookShoppingCartRSType
+     * @return \traveltainment\SOAP17\StructType\BookShoppingCartRSType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class OptionalTimeDateType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\OptionalTimeDateType
+     * @return \traveltainment\SOAP17\StructType\OptionalTimeDateType
      */
     public function set_($_ = null)
     {
@@ -66,7 +66,7 @@ class OptionalTimeDateType extends AbstractStructBase
     /**
      * Set Time value
      * @param string $time
-     * @return \StructType\OptionalTimeDateType
+     * @return \traveltainment\SOAP17\StructType\OptionalTimeDateType
      */
     public function setTime($time = null)
     {
@@ -83,7 +83,7 @@ class OptionalTimeDateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OptionalTimeDateType
+     * @return \traveltainment\SOAP17\StructType\OptionalTimeDateType
      */
     public static function __set_state(array $array)
     {

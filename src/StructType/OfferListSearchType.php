@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,22 +14,22 @@ class OfferListSearchType extends SearchType
      * The Options
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferListOptionsType
+     * @var \traveltainment\SOAP17\StructType\OfferListOptionsType
      */
     public $Options;
     /**
      * Constructor method for OfferListSearchType
      * @uses OfferListSearchType::setOptions()
-     * @param \StructType\OfferListOptionsType $options
+     * @param \traveltainment\SOAP17\StructType\OfferListOptionsType $options
      */
-    public function __construct(\StructType\OfferListOptionsType $options = null)
+    public function __construct(\traveltainment\SOAP17\StructType\OfferListOptionsType $options = null)
     {
         $this
             ->setOptions($options);
     }
     /**
      * Get Options value
-     * @return \StructType\OfferListOptionsType|null
+     * @return \traveltainment\SOAP17\StructType\OfferListOptionsType|null
      */
     public function getOptions()
     {
@@ -37,10 +37,10 @@ class OfferListSearchType extends SearchType
     }
     /**
      * Set Options value
-     * @param \StructType\OfferListOptionsType $options
-     * @return \StructType\OfferListSearchType
+     * @param \traveltainment\SOAP17\StructType\OfferListOptionsType $options
+     * @return \traveltainment\SOAP17\StructType\OfferListSearchType
      */
-    public function setOptions(\StructType\OfferListOptionsType $options = null)
+    public function setOptions(\traveltainment\SOAP17\StructType\OfferListOptionsType $options = null)
     {
         $this->Options = $options;
         return $this;
@@ -51,7 +51,7 @@ class OfferListSearchType extends SearchType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferListSearchType
+     * @return \traveltainment\SOAP17\StructType\OfferListSearchType
      */
     public static function __set_state(array $array)
     {

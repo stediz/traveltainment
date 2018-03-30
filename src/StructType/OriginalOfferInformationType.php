@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class OriginalOfferInformationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * @var \StructType\AlternativeFlightDetailsType
+     * @var \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
     public $OutboundFlight;
     /**
@@ -39,12 +39,12 @@ class OriginalOfferInformationType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AlternativeFlightDetailsType
+     * @var \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
     public $InboundFlight;
     /**
      * The PriceInformation
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $PriceInformation;
     /**
@@ -54,13 +54,13 @@ class OriginalOfferInformationType extends AbstractStructBase
      * @uses OriginalOfferInformationType::setHotelCode()
      * @uses OriginalOfferInformationType::setInboundFlight()
      * @uses OriginalOfferInformationType::setPriceInformation()
-     * @param \StructType\AlternativeFlightDetailsType $outboundFlight
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight
      * @param string $packageTourOperator
      * @param string $hotelCode
-     * @param \StructType\AlternativeFlightDetailsType $inboundFlight
-     * @param \StructType\PriceInformationType $priceInformation
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
      */
-    public function __construct(\StructType\AlternativeFlightDetailsType $outboundFlight = null, $packageTourOperator = null, $hotelCode = null, \StructType\AlternativeFlightDetailsType $inboundFlight = null, \StructType\PriceInformationType $priceInformation = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight = null, $packageTourOperator = null, $hotelCode = null, \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight = null, \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this
             ->setOutboundFlight($outboundFlight)
@@ -71,7 +71,7 @@ class OriginalOfferInformationType extends AbstractStructBase
     }
     /**
      * Get OutboundFlight value
-     * @return \StructType\AlternativeFlightDetailsType
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType
      */
     public function getOutboundFlight()
     {
@@ -79,10 +79,10 @@ class OriginalOfferInformationType extends AbstractStructBase
     }
     /**
      * Set OutboundFlight value
-     * @param \StructType\AlternativeFlightDetailsType $outboundFlight
-     * @return \StructType\OriginalOfferInformationType
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight
+     * @return \traveltainment\SOAP17\StructType\OriginalOfferInformationType
      */
-    public function setOutboundFlight(\StructType\AlternativeFlightDetailsType $outboundFlight = null)
+    public function setOutboundFlight(\traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $outboundFlight = null)
     {
         $this->OutboundFlight = $outboundFlight;
         return $this;
@@ -98,7 +98,7 @@ class OriginalOfferInformationType extends AbstractStructBase
     /**
      * Set PackageTourOperator value
      * @param string $packageTourOperator
-     * @return \StructType\OriginalOfferInformationType
+     * @return \traveltainment\SOAP17\StructType\OriginalOfferInformationType
      */
     public function setPackageTourOperator($packageTourOperator = null)
     {
@@ -120,7 +120,7 @@ class OriginalOfferInformationType extends AbstractStructBase
     /**
      * Set HotelCode value
      * @param string $hotelCode
-     * @return \StructType\OriginalOfferInformationType
+     * @return \traveltainment\SOAP17\StructType\OriginalOfferInformationType
      */
     public function setHotelCode($hotelCode = null)
     {
@@ -133,7 +133,7 @@ class OriginalOfferInformationType extends AbstractStructBase
     }
     /**
      * Get InboundFlight value
-     * @return \StructType\AlternativeFlightDetailsType|null
+     * @return \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType|null
      */
     public function getInboundFlight()
     {
@@ -141,17 +141,17 @@ class OriginalOfferInformationType extends AbstractStructBase
     }
     /**
      * Set InboundFlight value
-     * @param \StructType\AlternativeFlightDetailsType $inboundFlight
-     * @return \StructType\OriginalOfferInformationType
+     * @param \traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight
+     * @return \traveltainment\SOAP17\StructType\OriginalOfferInformationType
      */
-    public function setInboundFlight(\StructType\AlternativeFlightDetailsType $inboundFlight = null)
+    public function setInboundFlight(\traveltainment\SOAP17\StructType\AlternativeFlightDetailsType $inboundFlight = null)
     {
         $this->InboundFlight = $inboundFlight;
         return $this;
     }
     /**
      * Get PriceInformation value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getPriceInformation()
     {
@@ -159,10 +159,10 @@ class OriginalOfferInformationType extends AbstractStructBase
     }
     /**
      * Set PriceInformation value
-     * @param \StructType\PriceInformationType $priceInformation
-     * @return \StructType\OriginalOfferInformationType
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @return \traveltainment\SOAP17\StructType\OriginalOfferInformationType
      */
-    public function setPriceInformation(\StructType\PriceInformationType $priceInformation = null)
+    public function setPriceInformation(\traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this->PriceInformation = $priceInformation;
         return $this;
@@ -173,7 +173,7 @@ class OriginalOfferInformationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OriginalOfferInformationType
+     * @return \traveltainment\SOAP17\StructType\OriginalOfferInformationType
      */
     public static function __set_state(array $array)
     {

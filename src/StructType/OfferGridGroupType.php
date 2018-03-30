@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class OfferGridGroupType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OfferGridElementType[]
+     * @var \traveltainment\SOAP17\StructType\OfferGridElementType[]
      */
     public $Element;
     /**
@@ -30,7 +30,7 @@ class OfferGridGroupType extends AbstractStructBase
      * @uses OfferGridGroupType::setCategory()
      * @uses OfferGridGroupType::setElement()
      * @param string $category
-     * @param \StructType\OfferGridElementType[] $element
+     * @param \traveltainment\SOAP17\StructType\OfferGridElementType[] $element
      */
     public function __construct($category = null, array $element = array())
     {
@@ -48,24 +48,24 @@ class OfferGridGroupType extends AbstractStructBase
     }
     /**
      * Set category value
-     * @uses \EnumType\OfferGridGroupTypeEnum::valueIsValid()
-     * @uses \EnumType\OfferGridGroupTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\OfferGridGroupTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\OfferGridGroupTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $category
-     * @return \StructType\OfferGridGroupType
+     * @return \traveltainment\SOAP17\StructType\OfferGridGroupType
      */
     public function setCategory($category = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OfferGridGroupTypeEnum::valueIsValid($category)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $category, implode(', ', \EnumType\OfferGridGroupTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\OfferGridGroupTypeEnum::valueIsValid($category)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $category, implode(', ', \traveltainment\SOAP17\EnumType\OfferGridGroupTypeEnum::getValidValues())), __LINE__);
         }
         $this->category = $category;
         return $this;
     }
     /**
      * Get Element value
-     * @return \StructType\OfferGridElementType[]|null
+     * @return \traveltainment\SOAP17\StructType\OfferGridElementType[]|null
      */
     public function getElement()
     {
@@ -74,15 +74,15 @@ class OfferGridGroupType extends AbstractStructBase
     /**
      * Set Element value
      * @throws \InvalidArgumentException
-     * @param \StructType\OfferGridElementType[] $element
-     * @return \StructType\OfferGridGroupType
+     * @param \traveltainment\SOAP17\StructType\OfferGridElementType[] $element
+     * @return \traveltainment\SOAP17\StructType\OfferGridGroupType
      */
     public function setElement(array $element = array())
     {
         foreach ($element as $offerGridGroupTypeElementItem) {
             // validation for constraint: itemType
-            if (!$offerGridGroupTypeElementItem instanceof \StructType\OfferGridElementType) {
-                throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \StructType\OfferGridElementType, "%s" given', is_object($offerGridGroupTypeElementItem) ? get_class($offerGridGroupTypeElementItem) : gettype($offerGridGroupTypeElementItem)), __LINE__);
+            if (!$offerGridGroupTypeElementItem instanceof \traveltainment\SOAP17\StructType\OfferGridElementType) {
+                throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \traveltainment\SOAP17\StructType\OfferGridElementType, "%s" given', is_object($offerGridGroupTypeElementItem) ? get_class($offerGridGroupTypeElementItem) : gettype($offerGridGroupTypeElementItem)), __LINE__);
             }
         }
         $this->Element = $element;
@@ -91,14 +91,14 @@ class OfferGridGroupType extends AbstractStructBase
     /**
      * Add item to Element value
      * @throws \InvalidArgumentException
-     * @param \StructType\OfferGridElementType $item
-     * @return \StructType\OfferGridGroupType
+     * @param \traveltainment\SOAP17\StructType\OfferGridElementType $item
+     * @return \traveltainment\SOAP17\StructType\OfferGridGroupType
      */
-    public function addToElement(\StructType\OfferGridElementType $item)
+    public function addToElement(\traveltainment\SOAP17\StructType\OfferGridElementType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OfferGridElementType) {
-            throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \StructType\OfferGridElementType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\OfferGridElementType) {
+            throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \traveltainment\SOAP17\StructType\OfferGridElementType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Element[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class OfferGridGroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferGridGroupType
+     * @return \traveltainment\SOAP17\StructType\OfferGridGroupType
      */
     public static function __set_state(array $array)
     {

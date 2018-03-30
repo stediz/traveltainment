@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,7 +12,7 @@ class GetAvailableOfferDataRSType extends ResponseType
 {
     /**
      * The Errors
-     * @var \StructType\ErrorsType
+     * @var \traveltainment\SOAP17\StructType\ErrorsType
      */
     public $Errors;
     /**
@@ -27,14 +27,14 @@ class GetAvailableOfferDataRSType extends ResponseType
     public $OfferExpirationTime;
     /**
      * The Offer
-     * @var \StructType\AvailableOfferType
+     * @var \traveltainment\SOAP17\StructType\AvailableOfferType
      */
     public $Offer;
     /**
      * The Allowed3PProviders
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AllProvidersType
+     * @var \traveltainment\SOAP17\StructType\AllProvidersType
      */
     public $Allowed3PProviders;
     /**
@@ -44,13 +44,13 @@ class GetAvailableOfferDataRSType extends ResponseType
      * @uses GetAvailableOfferDataRSType::setOfferExpirationTime()
      * @uses GetAvailableOfferDataRSType::setOffer()
      * @uses GetAvailableOfferDataRSType::setAllowed3PProviders()
-     * @param \StructType\ErrorsType $errors
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
      * @param string $sessionID
      * @param string $offerExpirationTime
-     * @param \StructType\AvailableOfferType $offer
-     * @param \StructType\AllProvidersType $allowed3PProviders
+     * @param \traveltainment\SOAP17\StructType\AvailableOfferType $offer
+     * @param \traveltainment\SOAP17\StructType\AllProvidersType $allowed3PProviders
      */
-    public function __construct(\StructType\ErrorsType $errors = null, $sessionID = null, $offerExpirationTime = null, \StructType\AvailableOfferType $offer = null, \StructType\AllProvidersType $allowed3PProviders = null)
+    public function __construct(\traveltainment\SOAP17\StructType\ErrorsType $errors = null, $sessionID = null, $offerExpirationTime = null, \traveltainment\SOAP17\StructType\AvailableOfferType $offer = null, \traveltainment\SOAP17\StructType\AllProvidersType $allowed3PProviders = null)
     {
         $this
             ->setErrors($errors)
@@ -61,7 +61,7 @@ class GetAvailableOfferDataRSType extends ResponseType
     }
     /**
      * Get Errors value
-     * @return \StructType\ErrorsType|null
+     * @return \traveltainment\SOAP17\StructType\ErrorsType|null
      */
     public function getErrors()
     {
@@ -69,10 +69,10 @@ class GetAvailableOfferDataRSType extends ResponseType
     }
     /**
      * Set Errors value
-     * @param \StructType\ErrorsType $errors
-     * @return \StructType\GetAvailableOfferDataRSType
+     * @param \traveltainment\SOAP17\StructType\ErrorsType $errors
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType
      */
-    public function setErrors(\StructType\ErrorsType $errors = null)
+    public function setErrors(\traveltainment\SOAP17\StructType\ErrorsType $errors = null)
     {
         $this->Errors = $errors;
         return $this;
@@ -88,7 +88,7 @@ class GetAvailableOfferDataRSType extends ResponseType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\GetAvailableOfferDataRSType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType
      */
     public function setSessionID($sessionID = null)
     {
@@ -110,7 +110,7 @@ class GetAvailableOfferDataRSType extends ResponseType
     /**
      * Set OfferExpirationTime value
      * @param string $offerExpirationTime
-     * @return \StructType\GetAvailableOfferDataRSType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType
      */
     public function setOfferExpirationTime($offerExpirationTime = null)
     {
@@ -123,7 +123,7 @@ class GetAvailableOfferDataRSType extends ResponseType
     }
     /**
      * Get Offer value
-     * @return \StructType\AvailableOfferType|null
+     * @return \traveltainment\SOAP17\StructType\AvailableOfferType|null
      */
     public function getOffer()
     {
@@ -131,17 +131,17 @@ class GetAvailableOfferDataRSType extends ResponseType
     }
     /**
      * Set Offer value
-     * @param \StructType\AvailableOfferType $offer
-     * @return \StructType\GetAvailableOfferDataRSType
+     * @param \traveltainment\SOAP17\StructType\AvailableOfferType $offer
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType
      */
-    public function setOffer(\StructType\AvailableOfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\AvailableOfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
     }
     /**
      * Get Allowed3PProviders value
-     * @return \StructType\AllProvidersType|null
+     * @return \traveltainment\SOAP17\StructType\AllProvidersType|null
      */
     public function getAllowed3PProviders()
     {
@@ -149,10 +149,10 @@ class GetAvailableOfferDataRSType extends ResponseType
     }
     /**
      * Set Allowed3PProviders value
-     * @param \StructType\AllProvidersType $allowed3PProviders
-     * @return \StructType\GetAvailableOfferDataRSType
+     * @param \traveltainment\SOAP17\StructType\AllProvidersType $allowed3PProviders
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType
      */
-    public function setAllowed3PProviders(\StructType\AllProvidersType $allowed3PProviders = null)
+    public function setAllowed3PProviders(\traveltainment\SOAP17\StructType\AllProvidersType $allowed3PProviders = null)
     {
         $this->Allowed3PProviders = $allowed3PProviders;
         return $this;
@@ -163,7 +163,7 @@ class GetAvailableOfferDataRSType extends ResponseType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetAvailableOfferDataRSType
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType
      */
     public static function __set_state(array $array)
     {

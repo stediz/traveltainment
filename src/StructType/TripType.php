@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,21 +12,21 @@ class TripType extends AbstractStructBase
 {
     /**
      * The Journey
-     * @var \StructType\JourneyType
+     * @var \traveltainment\SOAP17\StructType\JourneyType
      */
     public $Journey;
     /**
      * The Hotel
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelType
+     * @var \traveltainment\SOAP17\StructType\HotelType
      */
     public $Hotel;
     /**
      * The TourOperator
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TourOperatorRequest
+     * @var \traveltainment\SOAP17\StructType\TourOperatorRequest
      */
     public $TourOperator;
     /**
@@ -34,11 +34,11 @@ class TripType extends AbstractStructBase
      * @uses TripType::setJourney()
      * @uses TripType::setHotel()
      * @uses TripType::setTourOperator()
-     * @param \StructType\JourneyType $journey
-     * @param \StructType\HotelType $hotel
-     * @param \StructType\TourOperatorRequest $tourOperator
+     * @param \traveltainment\SOAP17\StructType\JourneyType $journey
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @param \traveltainment\SOAP17\StructType\TourOperatorRequest $tourOperator
      */
-    public function __construct(\StructType\JourneyType $journey = null, \StructType\HotelType $hotel = null, \StructType\TourOperatorRequest $tourOperator = null)
+    public function __construct(\traveltainment\SOAP17\StructType\JourneyType $journey = null, \traveltainment\SOAP17\StructType\HotelType $hotel = null, \traveltainment\SOAP17\StructType\TourOperatorRequest $tourOperator = null)
     {
         $this
             ->setJourney($journey)
@@ -47,7 +47,7 @@ class TripType extends AbstractStructBase
     }
     /**
      * Get Journey value
-     * @return \StructType\JourneyType|null
+     * @return \traveltainment\SOAP17\StructType\JourneyType|null
      */
     public function getJourney()
     {
@@ -55,17 +55,17 @@ class TripType extends AbstractStructBase
     }
     /**
      * Set Journey value
-     * @param \StructType\JourneyType $journey
-     * @return \StructType\TripType
+     * @param \traveltainment\SOAP17\StructType\JourneyType $journey
+     * @return \traveltainment\SOAP17\StructType\TripType
      */
-    public function setJourney(\StructType\JourneyType $journey = null)
+    public function setJourney(\traveltainment\SOAP17\StructType\JourneyType $journey = null)
     {
         $this->Journey = $journey;
         return $this;
     }
     /**
      * Get Hotel value
-     * @return \StructType\HotelType|null
+     * @return \traveltainment\SOAP17\StructType\HotelType|null
      */
     public function getHotel()
     {
@@ -73,17 +73,17 @@ class TripType extends AbstractStructBase
     }
     /**
      * Set Hotel value
-     * @param \StructType\HotelType $hotel
-     * @return \StructType\TripType
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @return \traveltainment\SOAP17\StructType\TripType
      */
-    public function setHotel(\StructType\HotelType $hotel = null)
+    public function setHotel(\traveltainment\SOAP17\StructType\HotelType $hotel = null)
     {
         $this->Hotel = $hotel;
         return $this;
     }
     /**
      * Get TourOperator value
-     * @return \StructType\TourOperatorRequest|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorRequest|null
      */
     public function getTourOperator()
     {
@@ -91,10 +91,10 @@ class TripType extends AbstractStructBase
     }
     /**
      * Set TourOperator value
-     * @param \StructType\TourOperatorRequest $tourOperator
-     * @return \StructType\TripType
+     * @param \traveltainment\SOAP17\StructType\TourOperatorRequest $tourOperator
+     * @return \traveltainment\SOAP17\StructType\TripType
      */
-    public function setTourOperator(\StructType\TourOperatorRequest $tourOperator = null)
+    public function setTourOperator(\traveltainment\SOAP17\StructType\TourOperatorRequest $tourOperator = null)
     {
         $this->TourOperator = $tourOperator;
         return $this;
@@ -105,7 +105,7 @@ class TripType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TripType
+     * @return \traveltainment\SOAP17\StructType\TripType
      */
     public static function __set_state(array $array)
     {

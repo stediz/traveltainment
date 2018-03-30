@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,7 +35,7 @@ class HotelReviewRequestType extends AbstractStructBase
      * The Category
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewCategoryType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
     public $Category;
     /**
@@ -63,11 +63,11 @@ class HotelReviewRequestType extends AbstractStructBase
      * @param int $numberOfRatings
      * @param float $totalRecommendation
      * @param int $ratingAllOver
-     * @param \StructType\HotelReviewCategoryType $category
+     * @param \traveltainment\SOAP17\StructType\HotelReviewCategoryType $category
      * @param string $travellerType
      * @param string $holidayType
      */
-    public function __construct($numberOfRatings = null, $totalRecommendation = null, $ratingAllOver = null, \StructType\HotelReviewCategoryType $category = null, $travellerType = null, $holidayType = null)
+    public function __construct($numberOfRatings = null, $totalRecommendation = null, $ratingAllOver = null, \traveltainment\SOAP17\StructType\HotelReviewCategoryType $category = null, $travellerType = null, $holidayType = null)
     {
         $this
             ->setNumberOfRatings($numberOfRatings)
@@ -88,7 +88,7 @@ class HotelReviewRequestType extends AbstractStructBase
     /**
      * Set NumberOfRatings value
      * @param int $numberOfRatings
-     * @return \StructType\HotelReviewRequestType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public function setNumberOfRatings($numberOfRatings = null)
     {
@@ -110,7 +110,7 @@ class HotelReviewRequestType extends AbstractStructBase
     /**
      * Set TotalRecommendation value
      * @param float $totalRecommendation
-     * @return \StructType\HotelReviewRequestType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public function setTotalRecommendation($totalRecommendation = null)
     {
@@ -128,7 +128,7 @@ class HotelReviewRequestType extends AbstractStructBase
     /**
      * Set RatingAllOver value
      * @param int $ratingAllOver
-     * @return \StructType\HotelReviewRequestType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public function setRatingAllOver($ratingAllOver = null)
     {
@@ -141,7 +141,7 @@ class HotelReviewRequestType extends AbstractStructBase
     }
     /**
      * Get Category value
-     * @return \StructType\HotelReviewCategoryType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType|null
      */
     public function getCategory()
     {
@@ -149,10 +149,10 @@ class HotelReviewRequestType extends AbstractStructBase
     }
     /**
      * Set Category value
-     * @param \StructType\HotelReviewCategoryType $category
-     * @return \StructType\HotelReviewRequestType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewCategoryType $category
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
-    public function setCategory(\StructType\HotelReviewCategoryType $category = null)
+    public function setCategory(\traveltainment\SOAP17\StructType\HotelReviewCategoryType $category = null)
     {
         $this->Category = $category;
         return $this;
@@ -167,17 +167,17 @@ class HotelReviewRequestType extends AbstractStructBase
     }
     /**
      * Set TravellerType value
-     * @uses \EnumType\HotelReviewTravellerType::valueIsValid()
-     * @uses \EnumType\HotelReviewTravellerType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewTravellerType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewTravellerType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $travellerType
-     * @return \StructType\HotelReviewRequestType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public function setTravellerType($travellerType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewTravellerType::valueIsValid($travellerType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $travellerType, implode(', ', \EnumType\HotelReviewTravellerType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewTravellerType::valueIsValid($travellerType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $travellerType, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewTravellerType::getValidValues())), __LINE__);
         }
         $this->TravellerType = $travellerType;
         return $this;
@@ -192,17 +192,17 @@ class HotelReviewRequestType extends AbstractStructBase
     }
     /**
      * Set HolidayType value
-     * @uses \EnumType\HotelReviewHolidayType::valueIsValid()
-     * @uses \EnumType\HotelReviewHolidayType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewHolidayType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewHolidayType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $holidayType
-     * @return \StructType\HotelReviewRequestType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public function setHolidayType($holidayType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewHolidayType::valueIsValid($holidayType)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $holidayType, implode(', ', \EnumType\HotelReviewHolidayType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewHolidayType::valueIsValid($holidayType)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $holidayType, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewHolidayType::getValidValues())), __LINE__);
         }
         $this->HolidayType = $holidayType;
         return $this;
@@ -213,7 +213,7 @@ class HotelReviewRequestType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewRequestType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRequestType
      */
     public static function __set_state(array $array)
     {

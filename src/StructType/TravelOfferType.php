@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,17 +14,17 @@ class TravelOfferType extends OfferType
 {
     /**
      * The Package
-     * @var \StructType\PackageType
+     * @var \traveltainment\SOAP17\StructType\PackageType
      */
     public $Package;
     /**
      * The Accommodation
-     * @var \StructType\AccommodationType
+     * @var \traveltainment\SOAP17\StructType\AccommodationType
      */
     public $Accommodation;
     /**
      * The Flight
-     * @var \StructType\FlightType
+     * @var \traveltainment\SOAP17\StructType\FlightType
      */
     public $Flight;
     /**
@@ -32,11 +32,11 @@ class TravelOfferType extends OfferType
      * @uses TravelOfferType::setPackage()
      * @uses TravelOfferType::setAccommodation()
      * @uses TravelOfferType::setFlight()
-     * @param \StructType\PackageType $package
-     * @param \StructType\AccommodationType $accommodation
-     * @param \StructType\FlightType $flight
+     * @param \traveltainment\SOAP17\StructType\PackageType $package
+     * @param \traveltainment\SOAP17\StructType\AccommodationType $accommodation
+     * @param \traveltainment\SOAP17\StructType\FlightType $flight
      */
-    public function __construct(\StructType\PackageType $package = null, \StructType\AccommodationType $accommodation = null, \StructType\FlightType $flight = null)
+    public function __construct(\traveltainment\SOAP17\StructType\PackageType $package = null, \traveltainment\SOAP17\StructType\AccommodationType $accommodation = null, \traveltainment\SOAP17\StructType\FlightType $flight = null)
     {
         $this
             ->setPackage($package)
@@ -45,7 +45,7 @@ class TravelOfferType extends OfferType
     }
     /**
      * Get Package value
-     * @return \StructType\PackageType|null
+     * @return \traveltainment\SOAP17\StructType\PackageType|null
      */
     public function getPackage()
     {
@@ -53,17 +53,17 @@ class TravelOfferType extends OfferType
     }
     /**
      * Set Package value
-     * @param \StructType\PackageType $package
-     * @return \StructType\TravelOfferType
+     * @param \traveltainment\SOAP17\StructType\PackageType $package
+     * @return \traveltainment\SOAP17\StructType\TravelOfferType
      */
-    public function setPackage(\StructType\PackageType $package = null)
+    public function setPackage(\traveltainment\SOAP17\StructType\PackageType $package = null)
     {
         $this->Package = $package;
         return $this;
     }
     /**
      * Get Accommodation value
-     * @return \StructType\AccommodationType|null
+     * @return \traveltainment\SOAP17\StructType\AccommodationType|null
      */
     public function getAccommodation()
     {
@@ -71,17 +71,17 @@ class TravelOfferType extends OfferType
     }
     /**
      * Set Accommodation value
-     * @param \StructType\AccommodationType $accommodation
-     * @return \StructType\TravelOfferType
+     * @param \traveltainment\SOAP17\StructType\AccommodationType $accommodation
+     * @return \traveltainment\SOAP17\StructType\TravelOfferType
      */
-    public function setAccommodation(\StructType\AccommodationType $accommodation = null)
+    public function setAccommodation(\traveltainment\SOAP17\StructType\AccommodationType $accommodation = null)
     {
         $this->Accommodation = $accommodation;
         return $this;
     }
     /**
      * Get Flight value
-     * @return \StructType\FlightType|null
+     * @return \traveltainment\SOAP17\StructType\FlightType|null
      */
     public function getFlight()
     {
@@ -89,10 +89,10 @@ class TravelOfferType extends OfferType
     }
     /**
      * Set Flight value
-     * @param \StructType\FlightType $flight
-     * @return \StructType\TravelOfferType
+     * @param \traveltainment\SOAP17\StructType\FlightType $flight
+     * @return \traveltainment\SOAP17\StructType\TravelOfferType
      */
-    public function setFlight(\StructType\FlightType $flight = null)
+    public function setFlight(\traveltainment\SOAP17\StructType\FlightType $flight = null)
     {
         $this->Flight = $flight;
         return $this;
@@ -103,7 +103,7 @@ class TravelOfferType extends OfferType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravelOfferType
+     * @return \traveltainment\SOAP17\StructType\TravelOfferType
      */
     public static function __set_state(array $array)
     {

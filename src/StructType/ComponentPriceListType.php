@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class ComponentPriceListType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 1
-     * @var \StructType\ComponentPriceType[]
+     * @var \traveltainment\SOAP17\StructType\ComponentPriceType[]
      */
     public $ComponentPrice;
     /**
      * Constructor method for ComponentPriceListType
      * @uses ComponentPriceListType::setComponentPrice()
-     * @param \StructType\ComponentPriceType[] $componentPrice
+     * @param \traveltainment\SOAP17\StructType\ComponentPriceType[] $componentPrice
      */
     public function __construct(array $componentPrice = array())
     {
@@ -30,7 +30,7 @@ class ComponentPriceListType extends AbstractStructBase
     }
     /**
      * Get ComponentPrice value
-     * @return \StructType\ComponentPriceType[]
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceType[]
      */
     public function getComponentPrice()
     {
@@ -39,15 +39,15 @@ class ComponentPriceListType extends AbstractStructBase
     /**
      * Set ComponentPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\ComponentPriceType[] $componentPrice
-     * @return \StructType\ComponentPriceListType
+     * @param \traveltainment\SOAP17\StructType\ComponentPriceType[] $componentPrice
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceListType
      */
     public function setComponentPrice(array $componentPrice = array())
     {
         foreach ($componentPrice as $componentPriceListTypeComponentPriceItem) {
             // validation for constraint: itemType
-            if (!$componentPriceListTypeComponentPriceItem instanceof \StructType\ComponentPriceType) {
-                throw new \InvalidArgumentException(sprintf('The ComponentPrice property can only contain items of \StructType\ComponentPriceType, "%s" given', is_object($componentPriceListTypeComponentPriceItem) ? get_class($componentPriceListTypeComponentPriceItem) : gettype($componentPriceListTypeComponentPriceItem)), __LINE__);
+            if (!$componentPriceListTypeComponentPriceItem instanceof \traveltainment\SOAP17\StructType\ComponentPriceType) {
+                throw new \InvalidArgumentException(sprintf('The ComponentPrice property can only contain items of \traveltainment\SOAP17\StructType\ComponentPriceType, "%s" given', is_object($componentPriceListTypeComponentPriceItem) ? get_class($componentPriceListTypeComponentPriceItem) : gettype($componentPriceListTypeComponentPriceItem)), __LINE__);
             }
         }
         $this->ComponentPrice = $componentPrice;
@@ -56,14 +56,14 @@ class ComponentPriceListType extends AbstractStructBase
     /**
      * Add item to ComponentPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\ComponentPriceType $item
-     * @return \StructType\ComponentPriceListType
+     * @param \traveltainment\SOAP17\StructType\ComponentPriceType $item
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceListType
      */
-    public function addToComponentPrice(\StructType\ComponentPriceType $item)
+    public function addToComponentPrice(\traveltainment\SOAP17\StructType\ComponentPriceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ComponentPriceType) {
-            throw new \InvalidArgumentException(sprintf('The ComponentPrice property can only contain items of \StructType\ComponentPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ComponentPriceType) {
+            throw new \InvalidArgumentException(sprintf('The ComponentPrice property can only contain items of \traveltainment\SOAP17\StructType\ComponentPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->ComponentPrice[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class ComponentPriceListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ComponentPriceListType
+     * @return \traveltainment\SOAP17\StructType\ComponentPriceListType
      */
     public static function __set_state(array $array)
     {

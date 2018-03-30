@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class AdditionalInfoType extends AbstractStructBase
      * Set AdditionalInfoLine value
      * @throws \InvalidArgumentException
      * @param string[] $additionalInfoLine
-     * @return \StructType\AdditionalInfoType
+     * @return \traveltainment\SOAP17\StructType\AdditionalInfoType
      */
     public function setAdditionalInfoLine(array $additionalInfoLine = array())
     {
@@ -57,7 +57,7 @@ class AdditionalInfoType extends AbstractStructBase
      * Add item to AdditionalInfoLine value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\AdditionalInfoType
+     * @return \traveltainment\SOAP17\StructType\AdditionalInfoType
      */
     public function addToAdditionalInfoLine($item)
     {
@@ -74,7 +74,7 @@ class AdditionalInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AdditionalInfoType
+     * @return \traveltainment\SOAP17\StructType\AdditionalInfoType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class AddonMiscInfoType extends AbstractStructBase
     /**
      * Set IsChargeable value
      * @param bool $isChargeable
-     * @return \StructType\AddonMiscInfoType
+     * @return \traveltainment\SOAP17\StructType\AddonMiscInfoType
      */
     public function setIsChargeable($isChargeable = null)
     {
@@ -69,7 +69,7 @@ class AddonMiscInfoType extends AbstractStructBase
     /**
      * Set Label value
      * @param string $label
-     * @return \StructType\AddonMiscInfoType
+     * @return \traveltainment\SOAP17\StructType\AddonMiscInfoType
      */
     public function setLabel($label = null)
     {
@@ -90,7 +90,7 @@ class AddonMiscInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddonMiscInfoType
+     * @return \traveltainment\SOAP17\StructType\AddonMiscInfoType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class Transfers4SearchType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\Transfer4SearchType[]
+     * @var \traveltainment\SOAP17\StructType\Transfer4SearchType[]
      */
     public $Transfer;
     /**
      * Constructor method for Transfers4SearchType
      * @uses Transfers4SearchType::setTransfer()
-     * @param \StructType\Transfer4SearchType[] $transfer
+     * @param \traveltainment\SOAP17\StructType\Transfer4SearchType[] $transfer
      */
     public function __construct(array $transfer = array())
     {
@@ -30,7 +30,7 @@ class Transfers4SearchType extends AbstractStructBase
     }
     /**
      * Get Transfer value
-     * @return \StructType\Transfer4SearchType[]|null
+     * @return \traveltainment\SOAP17\StructType\Transfer4SearchType[]|null
      */
     public function getTransfer()
     {
@@ -39,15 +39,15 @@ class Transfers4SearchType extends AbstractStructBase
     /**
      * Set Transfer value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transfer4SearchType[] $transfer
-     * @return \StructType\Transfers4SearchType
+     * @param \traveltainment\SOAP17\StructType\Transfer4SearchType[] $transfer
+     * @return \traveltainment\SOAP17\StructType\Transfers4SearchType
      */
     public function setTransfer(array $transfer = array())
     {
         foreach ($transfer as $transfers4SearchTypeTransferItem) {
             // validation for constraint: itemType
-            if (!$transfers4SearchTypeTransferItem instanceof \StructType\Transfer4SearchType) {
-                throw new \InvalidArgumentException(sprintf('The Transfer property can only contain items of \StructType\Transfer4SearchType, "%s" given', is_object($transfers4SearchTypeTransferItem) ? get_class($transfers4SearchTypeTransferItem) : gettype($transfers4SearchTypeTransferItem)), __LINE__);
+            if (!$transfers4SearchTypeTransferItem instanceof \traveltainment\SOAP17\StructType\Transfer4SearchType) {
+                throw new \InvalidArgumentException(sprintf('The Transfer property can only contain items of \traveltainment\SOAP17\StructType\Transfer4SearchType, "%s" given', is_object($transfers4SearchTypeTransferItem) ? get_class($transfers4SearchTypeTransferItem) : gettype($transfers4SearchTypeTransferItem)), __LINE__);
             }
         }
         $this->Transfer = $transfer;
@@ -56,14 +56,14 @@ class Transfers4SearchType extends AbstractStructBase
     /**
      * Add item to Transfer value
      * @throws \InvalidArgumentException
-     * @param \StructType\Transfer4SearchType $item
-     * @return \StructType\Transfers4SearchType
+     * @param \traveltainment\SOAP17\StructType\Transfer4SearchType $item
+     * @return \traveltainment\SOAP17\StructType\Transfers4SearchType
      */
-    public function addToTransfer(\StructType\Transfer4SearchType $item)
+    public function addToTransfer(\traveltainment\SOAP17\StructType\Transfer4SearchType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Transfer4SearchType) {
-            throw new \InvalidArgumentException(sprintf('The Transfer property can only contain items of \StructType\Transfer4SearchType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\Transfer4SearchType) {
+            throw new \InvalidArgumentException(sprintf('The Transfer property can only contain items of \traveltainment\SOAP17\StructType\Transfer4SearchType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Transfer[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class Transfers4SearchType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Transfers4SearchType
+     * @return \traveltainment\SOAP17\StructType\Transfers4SearchType
      */
     public static function __set_state(array $array)
     {

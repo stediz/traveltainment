@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class SearchEngineTourOperatorsRS extends XmlInterfaceRS
 {
     /**
      * The TravelDatePeriod
-     * @var \StructType\TimePeriod
+     * @var \traveltainment\SOAP17\StructType\TimePeriod
      */
     public $TravelDatePeriod;
     /**
      * The TourOperators
-     * @var \StructType\TourOperatorListType
+     * @var \traveltainment\SOAP17\StructType\TourOperatorListType
      */
     public $TourOperators;
     /**
      * Constructor method for SearchEngineTourOperatorsRS
      * @uses SearchEngineTourOperatorsRS::setTravelDatePeriod()
      * @uses SearchEngineTourOperatorsRS::setTourOperators()
-     * @param \StructType\TimePeriod $travelDatePeriod
-     * @param \StructType\TourOperatorListType $tourOperators
+     * @param \traveltainment\SOAP17\StructType\TimePeriod $travelDatePeriod
+     * @param \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators
      */
-    public function __construct(\StructType\TimePeriod $travelDatePeriod = null, \StructType\TourOperatorListType $tourOperators = null)
+    public function __construct(\traveltainment\SOAP17\StructType\TimePeriod $travelDatePeriod = null, \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators = null)
     {
         $this
             ->setTravelDatePeriod($travelDatePeriod)
@@ -35,7 +35,7 @@ class SearchEngineTourOperatorsRS extends XmlInterfaceRS
     }
     /**
      * Get TravelDatePeriod value
-     * @return \StructType\TimePeriod|null
+     * @return \traveltainment\SOAP17\StructType\TimePeriod|null
      */
     public function getTravelDatePeriod()
     {
@@ -43,17 +43,17 @@ class SearchEngineTourOperatorsRS extends XmlInterfaceRS
     }
     /**
      * Set TravelDatePeriod value
-     * @param \StructType\TimePeriod $travelDatePeriod
-     * @return \StructType\SearchEngineTourOperatorsRS
+     * @param \traveltainment\SOAP17\StructType\TimePeriod $travelDatePeriod
+     * @return \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRS
      */
-    public function setTravelDatePeriod(\StructType\TimePeriod $travelDatePeriod = null)
+    public function setTravelDatePeriod(\traveltainment\SOAP17\StructType\TimePeriod $travelDatePeriod = null)
     {
         $this->TravelDatePeriod = $travelDatePeriod;
         return $this;
     }
     /**
      * Get TourOperators value
-     * @return \StructType\TourOperatorListType|null
+     * @return \traveltainment\SOAP17\StructType\TourOperatorListType|null
      */
     public function getTourOperators()
     {
@@ -61,10 +61,10 @@ class SearchEngineTourOperatorsRS extends XmlInterfaceRS
     }
     /**
      * Set TourOperators value
-     * @param \StructType\TourOperatorListType $tourOperators
-     * @return \StructType\SearchEngineTourOperatorsRS
+     * @param \traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators
+     * @return \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRS
      */
-    public function setTourOperators(\StructType\TourOperatorListType $tourOperators = null)
+    public function setTourOperators(\traveltainment\SOAP17\StructType\TourOperatorListType $tourOperators = null)
     {
         $this->TourOperators = $tourOperators;
         return $this;
@@ -75,7 +75,7 @@ class SearchEngineTourOperatorsRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineTourOperatorsRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineTourOperatorsRS
      */
     public static function __set_state(array $array)
     {

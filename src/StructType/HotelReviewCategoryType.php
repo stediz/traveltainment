@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,105 +14,105 @@ class HotelReviewCategoryType extends AbstractStructBase
      * The Hotel
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewHotelAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewHotelAttributesType
      */
     public $Hotel;
     /**
      * The Location
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewLocationAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType
      */
     public $Location;
     /**
      * The Beach
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewBeachAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewBeachAttributesType
      */
     public $Beach;
     /**
      * The Room
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewRoomAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewRoomAttributesType
      */
     public $Room;
     /**
      * The Food
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewFoodAttributeType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType
      */
     public $Food;
     /**
      * The Pool
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewPoolAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType
      */
     public $Pool;
     /**
      * The Service
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewServiceAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewServiceAttributesType
      */
     public $Service;
     /**
      * The Sport
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewSportAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType
      */
     public $Sport;
     /**
      * The Family
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewFamilyAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType
      */
     public $Family;
     /**
      * The Culture
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewCultureAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType
      */
     public $Culture;
     /**
      * The Infrastructure
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewInfrastructureAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType
      */
     public $Infrastructure;
     /**
      * The Activities
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewActivitiesAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewActivitiesAttributesType
      */
     public $Activities;
     /**
      * The SkiingArea
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewSkiingAreaAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType
      */
     public $SkiingArea;
     /**
      * The SkiOpportunities
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewSkiOpportunitiesAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewSkiOpportunitiesAttributesType
      */
     public $SkiOpportunities;
     /**
      * The Wellness
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelReviewWellnessAttributesType
+     * @var \traveltainment\SOAP17\StructType\HotelReviewWellnessAttributesType
      */
     public $Wellness;
     /**
@@ -132,23 +132,23 @@ class HotelReviewCategoryType extends AbstractStructBase
      * @uses HotelReviewCategoryType::setSkiingArea()
      * @uses HotelReviewCategoryType::setSkiOpportunities()
      * @uses HotelReviewCategoryType::setWellness()
-     * @param \StructType\HotelReviewHotelAttributesType $hotel
-     * @param \StructType\HotelReviewLocationAttributesType $location
-     * @param \StructType\HotelReviewBeachAttributesType $beach
-     * @param \StructType\HotelReviewRoomAttributesType $room
-     * @param \StructType\HotelReviewFoodAttributeType $food
-     * @param \StructType\HotelReviewPoolAttributesType $pool
-     * @param \StructType\HotelReviewServiceAttributesType $service
-     * @param \StructType\HotelReviewSportAttributesType $sport
-     * @param \StructType\HotelReviewFamilyAttributesType $family
-     * @param \StructType\HotelReviewCultureAttributesType $culture
-     * @param \StructType\HotelReviewInfrastructureAttributesType $infrastructure
-     * @param \StructType\HotelReviewActivitiesAttributesType $activities
-     * @param \StructType\HotelReviewSkiingAreaAttributesType $skiingArea
-     * @param \StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities
-     * @param \StructType\HotelReviewWellnessAttributesType $wellness
+     * @param \traveltainment\SOAP17\StructType\HotelReviewHotelAttributesType $hotel
+     * @param \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType $location
+     * @param \traveltainment\SOAP17\StructType\HotelReviewBeachAttributesType $beach
+     * @param \traveltainment\SOAP17\StructType\HotelReviewRoomAttributesType $room
+     * @param \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType $food
+     * @param \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType $pool
+     * @param \traveltainment\SOAP17\StructType\HotelReviewServiceAttributesType $service
+     * @param \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType $sport
+     * @param \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType $family
+     * @param \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType $culture
+     * @param \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType $infrastructure
+     * @param \traveltainment\SOAP17\StructType\HotelReviewActivitiesAttributesType $activities
+     * @param \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType $skiingArea
+     * @param \traveltainment\SOAP17\StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities
+     * @param \traveltainment\SOAP17\StructType\HotelReviewWellnessAttributesType $wellness
      */
-    public function __construct(\StructType\HotelReviewHotelAttributesType $hotel = null, \StructType\HotelReviewLocationAttributesType $location = null, \StructType\HotelReviewBeachAttributesType $beach = null, \StructType\HotelReviewRoomAttributesType $room = null, \StructType\HotelReviewFoodAttributeType $food = null, \StructType\HotelReviewPoolAttributesType $pool = null, \StructType\HotelReviewServiceAttributesType $service = null, \StructType\HotelReviewSportAttributesType $sport = null, \StructType\HotelReviewFamilyAttributesType $family = null, \StructType\HotelReviewCultureAttributesType $culture = null, \StructType\HotelReviewInfrastructureAttributesType $infrastructure = null, \StructType\HotelReviewActivitiesAttributesType $activities = null, \StructType\HotelReviewSkiingAreaAttributesType $skiingArea = null, \StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities = null, \StructType\HotelReviewWellnessAttributesType $wellness = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HotelReviewHotelAttributesType $hotel = null, \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType $location = null, \traveltainment\SOAP17\StructType\HotelReviewBeachAttributesType $beach = null, \traveltainment\SOAP17\StructType\HotelReviewRoomAttributesType $room = null, \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType $food = null, \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType $pool = null, \traveltainment\SOAP17\StructType\HotelReviewServiceAttributesType $service = null, \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType $sport = null, \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType $family = null, \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType $culture = null, \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType $infrastructure = null, \traveltainment\SOAP17\StructType\HotelReviewActivitiesAttributesType $activities = null, \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType $skiingArea = null, \traveltainment\SOAP17\StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities = null, \traveltainment\SOAP17\StructType\HotelReviewWellnessAttributesType $wellness = null)
     {
         $this
             ->setHotel($hotel)
@@ -169,7 +169,7 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Get Hotel value
-     * @return \StructType\HotelReviewHotelAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewHotelAttributesType|null
      */
     public function getHotel()
     {
@@ -177,17 +177,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Hotel value
-     * @param \StructType\HotelReviewHotelAttributesType $hotel
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewHotelAttributesType $hotel
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setHotel(\StructType\HotelReviewHotelAttributesType $hotel = null)
+    public function setHotel(\traveltainment\SOAP17\StructType\HotelReviewHotelAttributesType $hotel = null)
     {
         $this->Hotel = $hotel;
         return $this;
     }
     /**
      * Get Location value
-     * @return \StructType\HotelReviewLocationAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType|null
      */
     public function getLocation()
     {
@@ -195,17 +195,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Location value
-     * @param \StructType\HotelReviewLocationAttributesType $location
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType $location
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setLocation(\StructType\HotelReviewLocationAttributesType $location = null)
+    public function setLocation(\traveltainment\SOAP17\StructType\HotelReviewLocationAttributesType $location = null)
     {
         $this->Location = $location;
         return $this;
     }
     /**
      * Get Beach value
-     * @return \StructType\HotelReviewBeachAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewBeachAttributesType|null
      */
     public function getBeach()
     {
@@ -213,17 +213,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Beach value
-     * @param \StructType\HotelReviewBeachAttributesType $beach
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewBeachAttributesType $beach
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setBeach(\StructType\HotelReviewBeachAttributesType $beach = null)
+    public function setBeach(\traveltainment\SOAP17\StructType\HotelReviewBeachAttributesType $beach = null)
     {
         $this->Beach = $beach;
         return $this;
     }
     /**
      * Get Room value
-     * @return \StructType\HotelReviewRoomAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewRoomAttributesType|null
      */
     public function getRoom()
     {
@@ -231,17 +231,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Room value
-     * @param \StructType\HotelReviewRoomAttributesType $room
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewRoomAttributesType $room
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setRoom(\StructType\HotelReviewRoomAttributesType $room = null)
+    public function setRoom(\traveltainment\SOAP17\StructType\HotelReviewRoomAttributesType $room = null)
     {
         $this->Room = $room;
         return $this;
     }
     /**
      * Get Food value
-     * @return \StructType\HotelReviewFoodAttributeType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType|null
      */
     public function getFood()
     {
@@ -249,17 +249,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Food value
-     * @param \StructType\HotelReviewFoodAttributeType $food
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType $food
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setFood(\StructType\HotelReviewFoodAttributeType $food = null)
+    public function setFood(\traveltainment\SOAP17\StructType\HotelReviewFoodAttributeType $food = null)
     {
         $this->Food = $food;
         return $this;
     }
     /**
      * Get Pool value
-     * @return \StructType\HotelReviewPoolAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType|null
      */
     public function getPool()
     {
@@ -267,17 +267,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Pool value
-     * @param \StructType\HotelReviewPoolAttributesType $pool
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType $pool
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setPool(\StructType\HotelReviewPoolAttributesType $pool = null)
+    public function setPool(\traveltainment\SOAP17\StructType\HotelReviewPoolAttributesType $pool = null)
     {
         $this->Pool = $pool;
         return $this;
     }
     /**
      * Get Service value
-     * @return \StructType\HotelReviewServiceAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewServiceAttributesType|null
      */
     public function getService()
     {
@@ -285,17 +285,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Service value
-     * @param \StructType\HotelReviewServiceAttributesType $service
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewServiceAttributesType $service
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setService(\StructType\HotelReviewServiceAttributesType $service = null)
+    public function setService(\traveltainment\SOAP17\StructType\HotelReviewServiceAttributesType $service = null)
     {
         $this->Service = $service;
         return $this;
     }
     /**
      * Get Sport value
-     * @return \StructType\HotelReviewSportAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType|null
      */
     public function getSport()
     {
@@ -303,17 +303,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Sport value
-     * @param \StructType\HotelReviewSportAttributesType $sport
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewSportAttributesType $sport
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setSport(\StructType\HotelReviewSportAttributesType $sport = null)
+    public function setSport(\traveltainment\SOAP17\StructType\HotelReviewSportAttributesType $sport = null)
     {
         $this->Sport = $sport;
         return $this;
     }
     /**
      * Get Family value
-     * @return \StructType\HotelReviewFamilyAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType|null
      */
     public function getFamily()
     {
@@ -321,17 +321,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Family value
-     * @param \StructType\HotelReviewFamilyAttributesType $family
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType $family
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setFamily(\StructType\HotelReviewFamilyAttributesType $family = null)
+    public function setFamily(\traveltainment\SOAP17\StructType\HotelReviewFamilyAttributesType $family = null)
     {
         $this->Family = $family;
         return $this;
     }
     /**
      * Get Culture value
-     * @return \StructType\HotelReviewCultureAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType|null
      */
     public function getCulture()
     {
@@ -339,17 +339,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Culture value
-     * @param \StructType\HotelReviewCultureAttributesType $culture
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType $culture
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setCulture(\StructType\HotelReviewCultureAttributesType $culture = null)
+    public function setCulture(\traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType $culture = null)
     {
         $this->Culture = $culture;
         return $this;
     }
     /**
      * Get Infrastructure value
-     * @return \StructType\HotelReviewInfrastructureAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType|null
      */
     public function getInfrastructure()
     {
@@ -357,17 +357,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Infrastructure value
-     * @param \StructType\HotelReviewInfrastructureAttributesType $infrastructure
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType $infrastructure
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setInfrastructure(\StructType\HotelReviewInfrastructureAttributesType $infrastructure = null)
+    public function setInfrastructure(\traveltainment\SOAP17\StructType\HotelReviewInfrastructureAttributesType $infrastructure = null)
     {
         $this->Infrastructure = $infrastructure;
         return $this;
     }
     /**
      * Get Activities value
-     * @return \StructType\HotelReviewActivitiesAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewActivitiesAttributesType|null
      */
     public function getActivities()
     {
@@ -375,17 +375,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Activities value
-     * @param \StructType\HotelReviewActivitiesAttributesType $activities
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewActivitiesAttributesType $activities
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setActivities(\StructType\HotelReviewActivitiesAttributesType $activities = null)
+    public function setActivities(\traveltainment\SOAP17\StructType\HotelReviewActivitiesAttributesType $activities = null)
     {
         $this->Activities = $activities;
         return $this;
     }
     /**
      * Get SkiingArea value
-     * @return \StructType\HotelReviewSkiingAreaAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType|null
      */
     public function getSkiingArea()
     {
@@ -393,17 +393,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set SkiingArea value
-     * @param \StructType\HotelReviewSkiingAreaAttributesType $skiingArea
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType $skiingArea
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setSkiingArea(\StructType\HotelReviewSkiingAreaAttributesType $skiingArea = null)
+    public function setSkiingArea(\traveltainment\SOAP17\StructType\HotelReviewSkiingAreaAttributesType $skiingArea = null)
     {
         $this->SkiingArea = $skiingArea;
         return $this;
     }
     /**
      * Get SkiOpportunities value
-     * @return \StructType\HotelReviewSkiOpportunitiesAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewSkiOpportunitiesAttributesType|null
      */
     public function getSkiOpportunities()
     {
@@ -411,17 +411,17 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set SkiOpportunities value
-     * @param \StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setSkiOpportunities(\StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities = null)
+    public function setSkiOpportunities(\traveltainment\SOAP17\StructType\HotelReviewSkiOpportunitiesAttributesType $skiOpportunities = null)
     {
         $this->SkiOpportunities = $skiOpportunities;
         return $this;
     }
     /**
      * Get Wellness value
-     * @return \StructType\HotelReviewWellnessAttributesType|null
+     * @return \traveltainment\SOAP17\StructType\HotelReviewWellnessAttributesType|null
      */
     public function getWellness()
     {
@@ -429,10 +429,10 @@ class HotelReviewCategoryType extends AbstractStructBase
     }
     /**
      * Set Wellness value
-     * @param \StructType\HotelReviewWellnessAttributesType $wellness
-     * @return \StructType\HotelReviewCategoryType
+     * @param \traveltainment\SOAP17\StructType\HotelReviewWellnessAttributesType $wellness
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
-    public function setWellness(\StructType\HotelReviewWellnessAttributesType $wellness = null)
+    public function setWellness(\traveltainment\SOAP17\StructType\HotelReviewWellnessAttributesType $wellness = null)
     {
         $this->Wellness = $wellness;
         return $this;
@@ -443,7 +443,7 @@ class HotelReviewCategoryType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewCategoryType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCategoryType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class TransferFlightInfoType extends AbstractStructBase
     /**
      * Set Airline value
      * @param string $airline
-     * @return \StructType\TransferFlightInfoType
+     * @return \traveltainment\SOAP17\StructType\TransferFlightInfoType
      */
     public function setAirline($airline = null)
     {
@@ -74,7 +74,7 @@ class TransferFlightInfoType extends AbstractStructBase
     /**
      * Set FlightNumber value
      * @param string $flightNumber
-     * @return \StructType\TransferFlightInfoType
+     * @return \traveltainment\SOAP17\StructType\TransferFlightInfoType
      */
     public function setFlightNumber($flightNumber = null)
     {
@@ -96,7 +96,7 @@ class TransferFlightInfoType extends AbstractStructBase
     /**
      * Set FlightTime value
      * @param string $flightTime
-     * @return \StructType\TransferFlightInfoType
+     * @return \traveltainment\SOAP17\StructType\TransferFlightInfoType
      */
     public function setFlightTime($flightTime = null)
     {
@@ -113,7 +113,7 @@ class TransferFlightInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferFlightInfoType
+     * @return \traveltainment\SOAP17\StructType\TransferFlightInfoType
      */
     public static function __set_state(array $array)
     {

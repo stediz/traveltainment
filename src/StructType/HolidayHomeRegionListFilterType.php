@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
      * The RegionID
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionID
+     * @var \traveltainment\SOAP17\StructType\RegionID
      */
     public $RegionID;
     /**
@@ -35,7 +35,7 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
      * The UDFRegions
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\UDFRegionsType
+     * @var \traveltainment\SOAP17\StructType\UDFRegionsType
      */
     public $UDFRegions;
     /**
@@ -44,12 +44,12 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
      * @uses HolidayHomeRegionListFilterType::setObjectName()
      * @uses HolidayHomeRegionListFilterType::setObjectCode()
      * @uses HolidayHomeRegionListFilterType::setUDFRegions()
-     * @param \StructType\RegionID $regionID
+     * @param \traveltainment\SOAP17\StructType\RegionID $regionID
      * @param string $objectName
      * @param string $objectCode
-     * @param \StructType\UDFRegionsType $uDFRegions
+     * @param \traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions
      */
-    public function __construct(\StructType\RegionID $regionID = null, $objectName = null, $objectCode = null, \StructType\UDFRegionsType $uDFRegions = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionID $regionID = null, $objectName = null, $objectCode = null, \traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions = null)
     {
         $this
             ->setRegionID($regionID)
@@ -59,7 +59,7 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
     }
     /**
      * Get RegionID value
-     * @return \StructType\RegionID|null
+     * @return \traveltainment\SOAP17\StructType\RegionID|null
      */
     public function getRegionID()
     {
@@ -67,10 +67,10 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
     }
     /**
      * Set RegionID value
-     * @param \StructType\RegionID $regionID
-     * @return \StructType\HolidayHomeRegionListFilterType
+     * @param \traveltainment\SOAP17\StructType\RegionID $regionID
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType
      */
-    public function setRegionID(\StructType\RegionID $regionID = null)
+    public function setRegionID(\traveltainment\SOAP17\StructType\RegionID $regionID = null)
     {
         $this->RegionID = $regionID;
         return $this;
@@ -86,7 +86,7 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
     /**
      * Set ObjectName value
      * @param string $objectName
-     * @return \StructType\HolidayHomeRegionListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType
      */
     public function setObjectName($objectName = null)
     {
@@ -108,7 +108,7 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
     /**
      * Set ObjectCode value
      * @param string $objectCode
-     * @return \StructType\HolidayHomeRegionListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType
      */
     public function setObjectCode($objectCode = null)
     {
@@ -121,7 +121,7 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
     }
     /**
      * Get UDFRegions value
-     * @return \StructType\UDFRegionsType|null
+     * @return \traveltainment\SOAP17\StructType\UDFRegionsType|null
      */
     public function getUDFRegions()
     {
@@ -129,10 +129,10 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
     }
     /**
      * Set UDFRegions value
-     * @param \StructType\UDFRegionsType $uDFRegions
-     * @return \StructType\HolidayHomeRegionListFilterType
+     * @param \traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType
      */
-    public function setUDFRegions(\StructType\UDFRegionsType $uDFRegions = null)
+    public function setUDFRegions(\traveltainment\SOAP17\StructType\UDFRegionsType $uDFRegions = null)
     {
         $this->UDFRegions = $uDFRegions;
         return $this;
@@ -143,7 +143,7 @@ class HolidayHomeRegionListFilterType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeRegionListFilterType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeRegionListFilterType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,24 +14,24 @@ class OfferAddInfoType extends AbstractStructBase
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
      * The Hotel
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelType
+     * @var \traveltainment\SOAP17\StructType\HotelType
      */
     public $Hotel;
     /**
      * Constructor method for OfferAddInfoType
      * @uses OfferAddInfoType::setRegion()
      * @uses OfferAddInfoType::setHotel()
-     * @param \StructType\RegionType $region
-     * @param \StructType\HotelType $hotel
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
      */
-    public function __construct(\StructType\RegionType $region = null, \StructType\HotelType $hotel = null)
+    public function __construct(\traveltainment\SOAP17\StructType\RegionType $region = null, \traveltainment\SOAP17\StructType\HotelType $hotel = null)
     {
         $this
             ->setRegion($region)
@@ -39,7 +39,7 @@ class OfferAddInfoType extends AbstractStructBase
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -47,17 +47,17 @@ class OfferAddInfoType extends AbstractStructBase
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\OfferAddInfoType
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\OfferAddInfoType
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
     }
     /**
      * Get Hotel value
-     * @return \StructType\HotelType|null
+     * @return \traveltainment\SOAP17\StructType\HotelType|null
      */
     public function getHotel()
     {
@@ -65,10 +65,10 @@ class OfferAddInfoType extends AbstractStructBase
     }
     /**
      * Set Hotel value
-     * @param \StructType\HotelType $hotel
-     * @return \StructType\OfferAddInfoType
+     * @param \traveltainment\SOAP17\StructType\HotelType $hotel
+     * @return \traveltainment\SOAP17\StructType\OfferAddInfoType
      */
-    public function setHotel(\StructType\HotelType $hotel = null)
+    public function setHotel(\traveltainment\SOAP17\StructType\HotelType $hotel = null)
     {
         $this->Hotel = $hotel;
         return $this;
@@ -79,7 +79,7 @@ class OfferAddInfoType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferAddInfoType
+     * @return \traveltainment\SOAP17\StructType\OfferAddInfoType
      */
     public static function __set_state(array $array)
     {

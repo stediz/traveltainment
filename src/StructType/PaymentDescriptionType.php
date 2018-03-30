@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -21,37 +21,37 @@ class PaymentDescriptionType extends AbstractStructBase
     public $Type;
     /**
      * The CreditCard
-     * @var \StructType\CreditCardType
+     * @var \traveltainment\SOAP17\StructType\CreditCardType
      */
     public $CreditCard;
     /**
      * The BankTransfer
-     * @var \StructType\BankTransferType
+     * @var \traveltainment\SOAP17\StructType\BankTransferType
      */
     public $BankTransfer;
     /**
      * The DirectDebit
-     * @var \StructType\DirectDebitType
+     * @var \traveltainment\SOAP17\StructType\DirectDebitType
      */
     public $DirectDebit;
     /**
      * The DirectDebitInternational
-     * @var \StructType\DirectDebitInternationalType
+     * @var \traveltainment\SOAP17\StructType\DirectDebitInternationalType
      */
     public $DirectDebitInternational;
     /**
      * The Agency
-     * @var \StructType\AgencyType
+     * @var \traveltainment\SOAP17\StructType\AgencyType
      */
     public $Agency;
     /**
      * The Ideal
-     * @var \StructType\IdealType
+     * @var \traveltainment\SOAP17\StructType\IdealType
      */
     public $Ideal;
     /**
      * The Phone
-     * @var \StructType\PhoneType
+     * @var \traveltainment\SOAP17\StructType\PhoneType
      */
     public $Phone;
     /**
@@ -65,15 +65,15 @@ class PaymentDescriptionType extends AbstractStructBase
      * @uses PaymentDescriptionType::setIdeal()
      * @uses PaymentDescriptionType::setPhone()
      * @param string $type
-     * @param \StructType\CreditCardType $creditCard
-     * @param \StructType\BankTransferType $bankTransfer
-     * @param \StructType\DirectDebitType $directDebit
-     * @param \StructType\DirectDebitInternationalType $directDebitInternational
-     * @param \StructType\AgencyType $agency
-     * @param \StructType\IdealType $ideal
-     * @param \StructType\PhoneType $phone
+     * @param \traveltainment\SOAP17\StructType\CreditCardType $creditCard
+     * @param \traveltainment\SOAP17\StructType\BankTransferType $bankTransfer
+     * @param \traveltainment\SOAP17\StructType\DirectDebitType $directDebit
+     * @param \traveltainment\SOAP17\StructType\DirectDebitInternationalType $directDebitInternational
+     * @param \traveltainment\SOAP17\StructType\AgencyType $agency
+     * @param \traveltainment\SOAP17\StructType\IdealType $ideal
+     * @param \traveltainment\SOAP17\StructType\PhoneType $phone
      */
-    public function __construct($type = null, \StructType\CreditCardType $creditCard = null, \StructType\BankTransferType $bankTransfer = null, \StructType\DirectDebitType $directDebit = null, \StructType\DirectDebitInternationalType $directDebitInternational = null, \StructType\AgencyType $agency = null, \StructType\IdealType $ideal = null, \StructType\PhoneType $phone = null)
+    public function __construct($type = null, \traveltainment\SOAP17\StructType\CreditCardType $creditCard = null, \traveltainment\SOAP17\StructType\BankTransferType $bankTransfer = null, \traveltainment\SOAP17\StructType\DirectDebitType $directDebit = null, \traveltainment\SOAP17\StructType\DirectDebitInternationalType $directDebitInternational = null, \traveltainment\SOAP17\StructType\AgencyType $agency = null, \traveltainment\SOAP17\StructType\IdealType $ideal = null, \traveltainment\SOAP17\StructType\PhoneType $phone = null)
     {
         $this
             ->setType($type)
@@ -95,24 +95,24 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\PaymentTypeEnum::valueIsValid()
-     * @uses \EnumType\PaymentTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\PaymentTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\PaymentTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\PaymentDescriptionType
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PaymentTypeEnum::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\PaymentTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\PaymentTypeEnum::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \traveltainment\SOAP17\EnumType\PaymentTypeEnum::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
     }
     /**
      * Get CreditCard value
-     * @return \StructType\CreditCardType|null
+     * @return \traveltainment\SOAP17\StructType\CreditCardType|null
      */
     public function getCreditCard()
     {
@@ -120,17 +120,17 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set CreditCard value
-     * @param \StructType\CreditCardType $creditCard
-     * @return \StructType\PaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\CreditCardType $creditCard
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
-    public function setCreditCard(\StructType\CreditCardType $creditCard = null)
+    public function setCreditCard(\traveltainment\SOAP17\StructType\CreditCardType $creditCard = null)
     {
         $this->CreditCard = $creditCard;
         return $this;
     }
     /**
      * Get BankTransfer value
-     * @return \StructType\BankTransferType|null
+     * @return \traveltainment\SOAP17\StructType\BankTransferType|null
      */
     public function getBankTransfer()
     {
@@ -138,17 +138,17 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set BankTransfer value
-     * @param \StructType\BankTransferType $bankTransfer
-     * @return \StructType\PaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\BankTransferType $bankTransfer
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
-    public function setBankTransfer(\StructType\BankTransferType $bankTransfer = null)
+    public function setBankTransfer(\traveltainment\SOAP17\StructType\BankTransferType $bankTransfer = null)
     {
         $this->BankTransfer = $bankTransfer;
         return $this;
     }
     /**
      * Get DirectDebit value
-     * @return \StructType\DirectDebitType|null
+     * @return \traveltainment\SOAP17\StructType\DirectDebitType|null
      */
     public function getDirectDebit()
     {
@@ -156,17 +156,17 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set DirectDebit value
-     * @param \StructType\DirectDebitType $directDebit
-     * @return \StructType\PaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\DirectDebitType $directDebit
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
-    public function setDirectDebit(\StructType\DirectDebitType $directDebit = null)
+    public function setDirectDebit(\traveltainment\SOAP17\StructType\DirectDebitType $directDebit = null)
     {
         $this->DirectDebit = $directDebit;
         return $this;
     }
     /**
      * Get DirectDebitInternational value
-     * @return \StructType\DirectDebitInternationalType|null
+     * @return \traveltainment\SOAP17\StructType\DirectDebitInternationalType|null
      */
     public function getDirectDebitInternational()
     {
@@ -174,17 +174,17 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set DirectDebitInternational value
-     * @param \StructType\DirectDebitInternationalType $directDebitInternational
-     * @return \StructType\PaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\DirectDebitInternationalType $directDebitInternational
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
-    public function setDirectDebitInternational(\StructType\DirectDebitInternationalType $directDebitInternational = null)
+    public function setDirectDebitInternational(\traveltainment\SOAP17\StructType\DirectDebitInternationalType $directDebitInternational = null)
     {
         $this->DirectDebitInternational = $directDebitInternational;
         return $this;
     }
     /**
      * Get Agency value
-     * @return \StructType\AgencyType|null
+     * @return \traveltainment\SOAP17\StructType\AgencyType|null
      */
     public function getAgency()
     {
@@ -192,17 +192,17 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set Agency value
-     * @param \StructType\AgencyType $agency
-     * @return \StructType\PaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\AgencyType $agency
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
-    public function setAgency(\StructType\AgencyType $agency = null)
+    public function setAgency(\traveltainment\SOAP17\StructType\AgencyType $agency = null)
     {
         $this->Agency = $agency;
         return $this;
     }
     /**
      * Get Ideal value
-     * @return \StructType\IdealType|null
+     * @return \traveltainment\SOAP17\StructType\IdealType|null
      */
     public function getIdeal()
     {
@@ -210,17 +210,17 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set Ideal value
-     * @param \StructType\IdealType $ideal
-     * @return \StructType\PaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\IdealType $ideal
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
-    public function setIdeal(\StructType\IdealType $ideal = null)
+    public function setIdeal(\traveltainment\SOAP17\StructType\IdealType $ideal = null)
     {
         $this->Ideal = $ideal;
         return $this;
     }
     /**
      * Get Phone value
-     * @return \StructType\PhoneType|null
+     * @return \traveltainment\SOAP17\StructType\PhoneType|null
      */
     public function getPhone()
     {
@@ -228,10 +228,10 @@ class PaymentDescriptionType extends AbstractStructBase
     }
     /**
      * Set Phone value
-     * @param \StructType\PhoneType $phone
-     * @return \StructType\PaymentDescriptionType
+     * @param \traveltainment\SOAP17\StructType\PhoneType $phone
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
-    public function setPhone(\StructType\PhoneType $phone = null)
+    public function setPhone(\traveltainment\SOAP17\StructType\PhoneType $phone = null)
     {
         $this->Phone = $phone;
         return $this;
@@ -242,7 +242,7 @@ class PaymentDescriptionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PaymentDescriptionType
+     * @return \traveltainment\SOAP17\StructType\PaymentDescriptionType
      */
     public static function __set_state(array $array)
     {

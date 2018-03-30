@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * The Status
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\StatusType
+     * @var \traveltainment\SOAP17\StructType\StatusType
      */
     public $Status;
     /**
@@ -29,35 +29,35 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * The PriceInformation
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\PriceInformationType
+     * @var \traveltainment\SOAP17\StructType\PriceInformationType
      */
     public $PriceInformation;
     /**
      * The Offer
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfferType
+     * @var \traveltainment\SOAP17\StructType\OfferType
      */
     public $Offer;
     /**
      * The AvailableBookingTypes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailableBookingTypesListType
+     * @var \traveltainment\SOAP17\StructType\AvailableBookingTypesListType
      */
     public $AvailableBookingTypes;
     /**
      * The TravellerList
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TravellerListType
+     * @var \traveltainment\SOAP17\StructType\TravellerListType
      */
     public $TravellerList;
     /**
      * The AvailablePaymentTypes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailablePaymentTypes
+     * @var \traveltainment\SOAP17\StructType\AvailablePaymentTypes
      */
     public $AvailablePaymentTypes;
     /**
@@ -65,14 +65,14 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OptionType[]
+     * @var \traveltainment\SOAP17\StructType\OptionType[]
      */
     public $Option;
     /**
      * The ReservationSystemInformation
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ReservationSystemInformationType
+     * @var \traveltainment\SOAP17\StructType\ReservationSystemInformationType
      */
     public $ReservationSystemInformation;
     /**
@@ -86,17 +86,17 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * @uses AvailabilityAndPriceCheckRS::setAvailablePaymentTypes()
      * @uses AvailabilityAndPriceCheckRS::setOption()
      * @uses AvailabilityAndPriceCheckRS::setReservationSystemInformation()
-     * @param \StructType\StatusType $status
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
      * @param string $bookingID
-     * @param \StructType\PriceInformationType $priceInformation
-     * @param \StructType\OfferType $offer
-     * @param \StructType\AvailableBookingTypesListType $availableBookingTypes
-     * @param \StructType\TravellerListType $travellerList
-     * @param \StructType\AvailablePaymentTypes $availablePaymentTypes
-     * @param \StructType\OptionType[] $option
-     * @param \StructType\ReservationSystemInformationType $reservationSystemInformation
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @param \traveltainment\SOAP17\StructType\OfferType $offer
+     * @param \traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @param \traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes
+     * @param \traveltainment\SOAP17\StructType\OptionType[] $option
+     * @param \traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation
      */
-    public function __construct(\StructType\StatusType $status = null, $bookingID = null, \StructType\PriceInformationType $priceInformation = null, \StructType\OfferType $offer = null, \StructType\AvailableBookingTypesListType $availableBookingTypes = null, \StructType\TravellerListType $travellerList = null, \StructType\AvailablePaymentTypes $availablePaymentTypes = null, array $option = array(), \StructType\ReservationSystemInformationType $reservationSystemInformation = null)
+    public function __construct(\traveltainment\SOAP17\StructType\StatusType $status = null, $bookingID = null, \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null, \traveltainment\SOAP17\StructType\OfferType $offer = null, \traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes = null, \traveltainment\SOAP17\StructType\TravellerListType $travellerList = null, \traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes = null, array $option = array(), \traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation = null)
     {
         $this
             ->setStatus($status)
@@ -111,7 +111,7 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Get Status value
-     * @return \StructType\StatusType|null
+     * @return \traveltainment\SOAP17\StructType\StatusType|null
      */
     public function getStatus()
     {
@@ -119,10 +119,10 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set Status value
-     * @param \StructType\StatusType $status
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function setStatus(\StructType\StatusType $status = null)
+    public function setStatus(\traveltainment\SOAP17\StructType\StatusType $status = null)
     {
         $this->Status = $status;
         return $this;
@@ -138,7 +138,7 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
     public function setBookingID($bookingID = null)
     {
@@ -151,7 +151,7 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Get PriceInformation value
-     * @return \StructType\PriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\PriceInformationType|null
      */
     public function getPriceInformation()
     {
@@ -159,17 +159,17 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set PriceInformation value
-     * @param \StructType\PriceInformationType $priceInformation
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\PriceInformationType $priceInformation
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function setPriceInformation(\StructType\PriceInformationType $priceInformation = null)
+    public function setPriceInformation(\traveltainment\SOAP17\StructType\PriceInformationType $priceInformation = null)
     {
         $this->PriceInformation = $priceInformation;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\OfferType|null
+     * @return \traveltainment\SOAP17\StructType\OfferType|null
      */
     public function getOffer()
     {
@@ -177,17 +177,17 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set Offer value
-     * @param \StructType\OfferType $offer
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\OfferType $offer
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function setOffer(\StructType\OfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\OfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
     }
     /**
      * Get AvailableBookingTypes value
-     * @return \StructType\AvailableBookingTypesListType|null
+     * @return \traveltainment\SOAP17\StructType\AvailableBookingTypesListType|null
      */
     public function getAvailableBookingTypes()
     {
@@ -195,17 +195,17 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set AvailableBookingTypes value
-     * @param \StructType\AvailableBookingTypesListType $availableBookingTypes
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function setAvailableBookingTypes(\StructType\AvailableBookingTypesListType $availableBookingTypes = null)
+    public function setAvailableBookingTypes(\traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes = null)
     {
         $this->AvailableBookingTypes = $availableBookingTypes;
         return $this;
     }
     /**
      * Get TravellerList value
-     * @return \StructType\TravellerListType|null
+     * @return \traveltainment\SOAP17\StructType\TravellerListType|null
      */
     public function getTravellerList()
     {
@@ -213,17 +213,17 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set TravellerList value
-     * @param \StructType\TravellerListType $travellerList
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\TravellerListType $travellerList
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function setTravellerList(\StructType\TravellerListType $travellerList = null)
+    public function setTravellerList(\traveltainment\SOAP17\StructType\TravellerListType $travellerList = null)
     {
         $this->TravellerList = $travellerList;
         return $this;
     }
     /**
      * Get AvailablePaymentTypes value
-     * @return \StructType\AvailablePaymentTypes|null
+     * @return \traveltainment\SOAP17\StructType\AvailablePaymentTypes|null
      */
     public function getAvailablePaymentTypes()
     {
@@ -231,17 +231,17 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set AvailablePaymentTypes value
-     * @param \StructType\AvailablePaymentTypes $availablePaymentTypes
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function setAvailablePaymentTypes(\StructType\AvailablePaymentTypes $availablePaymentTypes = null)
+    public function setAvailablePaymentTypes(\traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes = null)
     {
         $this->AvailablePaymentTypes = $availablePaymentTypes;
         return $this;
     }
     /**
      * Get Option value
-     * @return \StructType\OptionType[]|null
+     * @return \traveltainment\SOAP17\StructType\OptionType[]|null
      */
     public function getOption()
     {
@@ -250,15 +250,15 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     /**
      * Set Option value
      * @throws \InvalidArgumentException
-     * @param \StructType\OptionType[] $option
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\OptionType[] $option
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
     public function setOption(array $option = array())
     {
         foreach ($option as $availabilityAndPriceCheckRSOptionItem) {
             // validation for constraint: itemType
-            if (!$availabilityAndPriceCheckRSOptionItem instanceof \StructType\OptionType) {
-                throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \StructType\OptionType, "%s" given', is_object($availabilityAndPriceCheckRSOptionItem) ? get_class($availabilityAndPriceCheckRSOptionItem) : gettype($availabilityAndPriceCheckRSOptionItem)), __LINE__);
+            if (!$availabilityAndPriceCheckRSOptionItem instanceof \traveltainment\SOAP17\StructType\OptionType) {
+                throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \traveltainment\SOAP17\StructType\OptionType, "%s" given', is_object($availabilityAndPriceCheckRSOptionItem) ? get_class($availabilityAndPriceCheckRSOptionItem) : gettype($availabilityAndPriceCheckRSOptionItem)), __LINE__);
             }
         }
         $this->Option = $option;
@@ -267,21 +267,21 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     /**
      * Add item to Option value
      * @throws \InvalidArgumentException
-     * @param \StructType\OptionType $item
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\OptionType $item
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function addToOption(\StructType\OptionType $item)
+    public function addToOption(\traveltainment\SOAP17\StructType\OptionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OptionType) {
-            throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \StructType\OptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\OptionType) {
+            throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \traveltainment\SOAP17\StructType\OptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Option[] = $item;
         return $this;
     }
     /**
      * Get ReservationSystemInformation value
-     * @return \StructType\ReservationSystemInformationType|null
+     * @return \traveltainment\SOAP17\StructType\ReservationSystemInformationType|null
      */
     public function getReservationSystemInformation()
     {
@@ -289,10 +289,10 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set ReservationSystemInformation value
-     * @param \StructType\ReservationSystemInformationType $reservationSystemInformation
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
-    public function setReservationSystemInformation(\StructType\ReservationSystemInformationType $reservationSystemInformation = null)
+    public function setReservationSystemInformation(\traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation = null)
     {
         $this->ReservationSystemInformation = $reservationSystemInformation;
         return $this;
@@ -303,7 +303,7 @@ class AvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AvailabilityAndPriceCheckRS
+     * @return \traveltainment\SOAP17\StructType\AvailabilityAndPriceCheckRS
      */
     public static function __set_state(array $array)
     {

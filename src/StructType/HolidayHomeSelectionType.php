@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class HolidayHomeSelectionType extends AbstractStructBase
     /**
      * Set RegionIDs value
      * @param int $regionIDs
-     * @return \StructType\HolidayHomeSelectionType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSelectionType
      */
     public function setRegionIDs($regionIDs = null)
     {
@@ -64,7 +64,7 @@ class HolidayHomeSelectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeSelectionType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSelectionType
      */
     public static function __set_state(array $array)
     {

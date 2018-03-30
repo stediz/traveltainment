@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,21 +12,21 @@ class HolidayHomeTripType extends AbstractStructBase
 {
     /**
      * The Journey
-     * @var \StructType\HolidayHomeJourneyType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeJourneyType
      */
     public $Journey;
     /**
      * The HolidayHomeSearchCriteria
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeSearchCriteriaType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType
      */
     public $HolidayHomeSearchCriteria;
     /**
      * The TourOperator
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeTourOperatorRequest
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeTourOperatorRequest
      */
     public $TourOperator;
     /**
@@ -34,11 +34,11 @@ class HolidayHomeTripType extends AbstractStructBase
      * @uses HolidayHomeTripType::setJourney()
      * @uses HolidayHomeTripType::setHolidayHomeSearchCriteria()
      * @uses HolidayHomeTripType::setTourOperator()
-     * @param \StructType\HolidayHomeJourneyType $journey
-     * @param \StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria
-     * @param \StructType\HolidayHomeTourOperatorRequest $tourOperator
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeJourneyType $journey
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeTourOperatorRequest $tourOperator
      */
-    public function __construct(\StructType\HolidayHomeJourneyType $journey = null, \StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria = null, \StructType\HolidayHomeTourOperatorRequest $tourOperator = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HolidayHomeJourneyType $journey = null, \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria = null, \traveltainment\SOAP17\StructType\HolidayHomeTourOperatorRequest $tourOperator = null)
     {
         $this
             ->setJourney($journey)
@@ -47,7 +47,7 @@ class HolidayHomeTripType extends AbstractStructBase
     }
     /**
      * Get Journey value
-     * @return \StructType\HolidayHomeJourneyType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeJourneyType|null
      */
     public function getJourney()
     {
@@ -55,17 +55,17 @@ class HolidayHomeTripType extends AbstractStructBase
     }
     /**
      * Set Journey value
-     * @param \StructType\HolidayHomeJourneyType $journey
-     * @return \StructType\HolidayHomeTripType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeJourneyType $journey
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeTripType
      */
-    public function setJourney(\StructType\HolidayHomeJourneyType $journey = null)
+    public function setJourney(\traveltainment\SOAP17\StructType\HolidayHomeJourneyType $journey = null)
     {
         $this->Journey = $journey;
         return $this;
     }
     /**
      * Get HolidayHomeSearchCriteria value
-     * @return \StructType\HolidayHomeSearchCriteriaType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType|null
      */
     public function getHolidayHomeSearchCriteria()
     {
@@ -73,17 +73,17 @@ class HolidayHomeTripType extends AbstractStructBase
     }
     /**
      * Set HolidayHomeSearchCriteria value
-     * @param \StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria
-     * @return \StructType\HolidayHomeTripType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeTripType
      */
-    public function setHolidayHomeSearchCriteria(\StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria = null)
+    public function setHolidayHomeSearchCriteria(\traveltainment\SOAP17\StructType\HolidayHomeSearchCriteriaType $holidayHomeSearchCriteria = null)
     {
         $this->HolidayHomeSearchCriteria = $holidayHomeSearchCriteria;
         return $this;
     }
     /**
      * Get TourOperator value
-     * @return \StructType\HolidayHomeTourOperatorRequest|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeTourOperatorRequest|null
      */
     public function getTourOperator()
     {
@@ -91,10 +91,10 @@ class HolidayHomeTripType extends AbstractStructBase
     }
     /**
      * Set TourOperator value
-     * @param \StructType\HolidayHomeTourOperatorRequest $tourOperator
-     * @return \StructType\HolidayHomeTripType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeTourOperatorRequest $tourOperator
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeTripType
      */
-    public function setTourOperator(\StructType\HolidayHomeTourOperatorRequest $tourOperator = null)
+    public function setTourOperator(\traveltainment\SOAP17\StructType\HolidayHomeTourOperatorRequest $tourOperator = null)
     {
         $this->TourOperator = $tourOperator;
         return $this;
@@ -105,7 +105,7 @@ class HolidayHomeTripType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeTripType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeTripType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class TextType extends AbstractStructBase
      * Set TextURL value
      * @throws \InvalidArgumentException
      * @param string[] $textURL
-     * @return \StructType\TextType
+     * @return \traveltainment\SOAP17\StructType\TextType
      */
     public function setTextURL(array $textURL = array())
     {
@@ -57,7 +57,7 @@ class TextType extends AbstractStructBase
      * Add item to TextURL value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\TextType
+     * @return \traveltainment\SOAP17\StructType\TextType
      */
     public function addToTextURL($item)
     {
@@ -74,7 +74,7 @@ class TextType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TextType
+     * @return \traveltainment\SOAP17\StructType\TextType
      */
     public static function __set_state(array $array)
     {

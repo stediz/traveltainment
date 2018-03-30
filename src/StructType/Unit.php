@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class Unit extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\Unit
+     * @return \traveltainment\SOAP17\StructType\Unit
      */
     public function set_($_ = null)
     {
@@ -66,7 +66,7 @@ class Unit extends AbstractStructBase
     /**
      * Set Unit value
      * @param string $unit
-     * @return \StructType\Unit
+     * @return \traveltainment\SOAP17\StructType\Unit
      */
     public function setUnit($unit = null)
     {
@@ -83,7 +83,7 @@ class Unit extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Unit
+     * @return \traveltainment\SOAP17\StructType\Unit
      */
     public static function __set_state(array $array)
     {

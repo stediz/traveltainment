@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -93,17 +93,17 @@ class CommentDefinitionType extends AbstractStructBase
     }
     /**
      * Set Category value
-     * @uses \EnumType\CommentCategoryType::valueIsValid()
-     * @uses \EnumType\CommentCategoryType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CommentCategoryType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CommentCategoryType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $category
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public function setCategory($category = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CommentCategoryType::valueIsValid($category)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $category, implode(', ', \EnumType\CommentCategoryType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CommentCategoryType::valueIsValid($category)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $category, implode(', ', \traveltainment\SOAP17\EnumType\CommentCategoryType::getValidValues())), __LINE__);
         }
         $this->Category = $category;
         return $this;
@@ -118,17 +118,17 @@ class CommentDefinitionType extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\CommentType::valueIsValid()
-     * @uses \EnumType\CommentType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CommentType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CommentType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\CommentType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CommentType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \traveltainment\SOAP17\EnumType\CommentType::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -144,7 +144,7 @@ class CommentDefinitionType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public function set_($_ = null)
     {
@@ -170,7 +170,7 @@ class CommentDefinitionType extends AbstractStructBase
     /**
      * Set TravelAgent value
      * @param string $travelAgent
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public function setTravelAgent($travelAgent = null)
     {
@@ -196,7 +196,7 @@ class CommentDefinitionType extends AbstractStructBase
     /**
      * Set Date value
      * @param string $date
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public function setDate($date = null)
     {
@@ -218,7 +218,7 @@ class CommentDefinitionType extends AbstractStructBase
     /**
      * Set UID value
      * @param string $uID
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public function setUID($uID = null)
     {
@@ -240,7 +240,7 @@ class CommentDefinitionType extends AbstractStructBase
     /**
      * Set Username value
      * @param string $username
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public function setUsername($username = null)
     {
@@ -257,7 +257,7 @@ class CommentDefinitionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CommentDefinitionType
+     * @return \traveltainment\SOAP17\StructType\CommentDefinitionType
      */
     public static function __set_state(array $array)
     {

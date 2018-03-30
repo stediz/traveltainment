@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,39 +38,39 @@ class HotelReviewCultureAttributesType extends AbstractStructBase
     }
     /**
      * Set CultureAttribute value
-     * @uses \EnumType\HotelReviewCultureAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewCultureAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string[] $cultureAttribute
-     * @return \StructType\HotelReviewCultureAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType
      */
     public function setCultureAttribute(array $cultureAttribute = array())
     {
         $invalidValues = array();
         foreach ($cultureAttribute as $hotelReviewCultureAttributesTypeCultureAttributeItem) {
-            if (!\EnumType\HotelReviewCultureAttribute::valueIsValid($hotelReviewCultureAttributesTypeCultureAttributeItem)) {
+            if (!\traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::valueIsValid($hotelReviewCultureAttributesTypeCultureAttributeItem)) {
                 $invalidValues[] = var_export($hotelReviewCultureAttributesTypeCultureAttributeItem, true);
             }
         }
         if (!empty($invalidValues)) {
-            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \EnumType\HotelReviewCultureAttribute::getValidValues())), __LINE__);
+            throw new \InvalidArgumentException(sprintf('Value(s) "%s" is/are invalid, please use one of: %s', implode(', ', $invalidValues), implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::getValidValues())), __LINE__);
         }
         $this->CultureAttribute = $cultureAttribute;
         return $this;
     }
     /**
      * Add item to CultureAttribute value
-     * @uses \EnumType\HotelReviewCultureAttribute::valueIsValid()
-     * @uses \EnumType\HotelReviewCultureAttribute::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\HotelReviewCultureAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType
      */
     public function addToCultureAttribute($item)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HotelReviewCultureAttribute::valueIsValid($item)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \EnumType\HotelReviewCultureAttribute::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::valueIsValid($item)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $item, implode(', ', \traveltainment\SOAP17\EnumType\HotelReviewCultureAttribute::getValidValues())), __LINE__);
         }
         $this->CultureAttribute[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class HotelReviewCultureAttributesType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelReviewCultureAttributesType
+     * @return \traveltainment\SOAP17\StructType\HotelReviewCultureAttributesType
      */
     public static function __set_state(array $array)
     {

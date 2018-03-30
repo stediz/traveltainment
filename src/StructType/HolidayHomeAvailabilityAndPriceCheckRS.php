@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,7 +14,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * The Status
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\StatusType
+     * @var \traveltainment\SOAP17\StructType\StatusType
      */
     public $Status;
     /**
@@ -29,21 +29,21 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * The PriceInformation
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomePriceInformationType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType
      */
     public $PriceInformation;
     /**
      * The Offer
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOfferType
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferType
      */
     public $Offer;
     /**
      * The AvailableBookingTypes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailableBookingTypesListType
+     * @var \traveltainment\SOAP17\StructType\AvailableBookingTypesListType
      */
     public $AvailableBookingTypes;
     /**
@@ -58,7 +58,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * The AvailablePaymentTypes
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AvailablePaymentTypes
+     * @var \traveltainment\SOAP17\StructType\AvailablePaymentTypes
      */
     public $AvailablePaymentTypes;
     /**
@@ -66,14 +66,14 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\OptionType[]
+     * @var \traveltainment\SOAP17\StructType\OptionType[]
      */
     public $Option;
     /**
      * The ReservationSystemInformation
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\ReservationSystemInformationType
+     * @var \traveltainment\SOAP17\StructType\ReservationSystemInformationType
      */
     public $ReservationSystemInformation;
     /**
@@ -87,17 +87,17 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * @uses HolidayHomeAvailabilityAndPriceCheckRS::setAvailablePaymentTypes()
      * @uses HolidayHomeAvailabilityAndPriceCheckRS::setOption()
      * @uses HolidayHomeAvailabilityAndPriceCheckRS::setReservationSystemInformation()
-     * @param \StructType\StatusType $status
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
      * @param string $bookingID
-     * @param \StructType\HolidayHomePriceInformationType $priceInformation
-     * @param \StructType\HolidayHomeOfferType $offer
-     * @param \StructType\AvailableBookingTypesListType $availableBookingTypes
+     * @param \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType $priceInformation
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer
+     * @param \traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes
      * @param int $travellerCount
-     * @param \StructType\AvailablePaymentTypes $availablePaymentTypes
-     * @param \StructType\OptionType[] $option
-     * @param \StructType\ReservationSystemInformationType $reservationSystemInformation
+     * @param \traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes
+     * @param \traveltainment\SOAP17\StructType\OptionType[] $option
+     * @param \traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation
      */
-    public function __construct(\StructType\StatusType $status = null, $bookingID = null, \StructType\HolidayHomePriceInformationType $priceInformation = null, \StructType\HolidayHomeOfferType $offer = null, \StructType\AvailableBookingTypesListType $availableBookingTypes = null, $travellerCount = null, \StructType\AvailablePaymentTypes $availablePaymentTypes = null, array $option = array(), \StructType\ReservationSystemInformationType $reservationSystemInformation = null)
+    public function __construct(\traveltainment\SOAP17\StructType\StatusType $status = null, $bookingID = null, \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType $priceInformation = null, \traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer = null, \traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes = null, $travellerCount = null, \traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes = null, array $option = array(), \traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation = null)
     {
         $this
             ->setStatus($status)
@@ -112,7 +112,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Get Status value
-     * @return \StructType\StatusType|null
+     * @return \traveltainment\SOAP17\StructType\StatusType|null
      */
     public function getStatus()
     {
@@ -120,10 +120,10 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set Status value
-     * @param \StructType\StatusType $status
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\StatusType $status
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
-    public function setStatus(\StructType\StatusType $status = null)
+    public function setStatus(\traveltainment\SOAP17\StructType\StatusType $status = null)
     {
         $this->Status = $status;
         return $this;
@@ -139,7 +139,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     /**
      * Set BookingID value
      * @param string $bookingID
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
     public function setBookingID($bookingID = null)
     {
@@ -152,7 +152,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Get PriceInformation value
-     * @return \StructType\HolidayHomePriceInformationType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType|null
      */
     public function getPriceInformation()
     {
@@ -160,17 +160,17 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set PriceInformation value
-     * @param \StructType\HolidayHomePriceInformationType $priceInformation
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomePriceInformationType $priceInformation
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
-    public function setPriceInformation(\StructType\HolidayHomePriceInformationType $priceInformation = null)
+    public function setPriceInformation(\traveltainment\SOAP17\StructType\HolidayHomePriceInformationType $priceInformation = null)
     {
         $this->PriceInformation = $priceInformation;
         return $this;
     }
     /**
      * Get Offer value
-     * @return \StructType\HolidayHomeOfferType|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferType|null
      */
     public function getOffer()
     {
@@ -178,17 +178,17 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set Offer value
-     * @param \StructType\HolidayHomeOfferType $offer
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
-    public function setOffer(\StructType\HolidayHomeOfferType $offer = null)
+    public function setOffer(\traveltainment\SOAP17\StructType\HolidayHomeOfferType $offer = null)
     {
         $this->Offer = $offer;
         return $this;
     }
     /**
      * Get AvailableBookingTypes value
-     * @return \StructType\AvailableBookingTypesListType|null
+     * @return \traveltainment\SOAP17\StructType\AvailableBookingTypesListType|null
      */
     public function getAvailableBookingTypes()
     {
@@ -196,10 +196,10 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set AvailableBookingTypes value
-     * @param \StructType\AvailableBookingTypesListType $availableBookingTypes
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
-    public function setAvailableBookingTypes(\StructType\AvailableBookingTypesListType $availableBookingTypes = null)
+    public function setAvailableBookingTypes(\traveltainment\SOAP17\StructType\AvailableBookingTypesListType $availableBookingTypes = null)
     {
         $this->AvailableBookingTypes = $availableBookingTypes;
         return $this;
@@ -215,7 +215,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     /**
      * Set TravellerCount value
      * @param int $travellerCount
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
     public function setTravellerCount($travellerCount = null)
     {
@@ -236,7 +236,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Get AvailablePaymentTypes value
-     * @return \StructType\AvailablePaymentTypes|null
+     * @return \traveltainment\SOAP17\StructType\AvailablePaymentTypes|null
      */
     public function getAvailablePaymentTypes()
     {
@@ -244,17 +244,17 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set AvailablePaymentTypes value
-     * @param \StructType\AvailablePaymentTypes $availablePaymentTypes
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
-    public function setAvailablePaymentTypes(\StructType\AvailablePaymentTypes $availablePaymentTypes = null)
+    public function setAvailablePaymentTypes(\traveltainment\SOAP17\StructType\AvailablePaymentTypes $availablePaymentTypes = null)
     {
         $this->AvailablePaymentTypes = $availablePaymentTypes;
         return $this;
     }
     /**
      * Get Option value
-     * @return \StructType\OptionType[]|null
+     * @return \traveltainment\SOAP17\StructType\OptionType[]|null
      */
     public function getOption()
     {
@@ -263,15 +263,15 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     /**
      * Set Option value
      * @throws \InvalidArgumentException
-     * @param \StructType\OptionType[] $option
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\OptionType[] $option
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
     public function setOption(array $option = array())
     {
         foreach ($option as $holidayHomeAvailabilityAndPriceCheckRSOptionItem) {
             // validation for constraint: itemType
-            if (!$holidayHomeAvailabilityAndPriceCheckRSOptionItem instanceof \StructType\OptionType) {
-                throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \StructType\OptionType, "%s" given', is_object($holidayHomeAvailabilityAndPriceCheckRSOptionItem) ? get_class($holidayHomeAvailabilityAndPriceCheckRSOptionItem) : gettype($holidayHomeAvailabilityAndPriceCheckRSOptionItem)), __LINE__);
+            if (!$holidayHomeAvailabilityAndPriceCheckRSOptionItem instanceof \traveltainment\SOAP17\StructType\OptionType) {
+                throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \traveltainment\SOAP17\StructType\OptionType, "%s" given', is_object($holidayHomeAvailabilityAndPriceCheckRSOptionItem) ? get_class($holidayHomeAvailabilityAndPriceCheckRSOptionItem) : gettype($holidayHomeAvailabilityAndPriceCheckRSOptionItem)), __LINE__);
             }
         }
         $this->Option = $option;
@@ -280,21 +280,21 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     /**
      * Add item to Option value
      * @throws \InvalidArgumentException
-     * @param \StructType\OptionType $item
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\OptionType $item
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
-    public function addToOption(\StructType\OptionType $item)
+    public function addToOption(\traveltainment\SOAP17\StructType\OptionType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OptionType) {
-            throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \StructType\OptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\OptionType) {
+            throw new \InvalidArgumentException(sprintf('The Option property can only contain items of \traveltainment\SOAP17\StructType\OptionType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Option[] = $item;
         return $this;
     }
     /**
      * Get ReservationSystemInformation value
-     * @return \StructType\ReservationSystemInformationType|null
+     * @return \traveltainment\SOAP17\StructType\ReservationSystemInformationType|null
      */
     public function getReservationSystemInformation()
     {
@@ -302,10 +302,10 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
     }
     /**
      * Set ReservationSystemInformation value
-     * @param \StructType\ReservationSystemInformationType $reservationSystemInformation
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @param \traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
-    public function setReservationSystemInformation(\StructType\ReservationSystemInformationType $reservationSystemInformation = null)
+    public function setReservationSystemInformation(\traveltainment\SOAP17\StructType\ReservationSystemInformationType $reservationSystemInformation = null)
     {
         $this->ReservationSystemInformation = $reservationSystemInformation;
         return $this;
@@ -316,7 +316,7 @@ class HolidayHomeAvailabilityAndPriceCheckRS extends XmlInterfaceRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeAvailabilityAndPriceCheckRS
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeAvailabilityAndPriceCheckRS
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class DepartureListType extends AbstractStructBase
      * Set Departure value
      * @throws \InvalidArgumentException
      * @param string[] $departure
-     * @return \StructType\DepartureListType
+     * @return \traveltainment\SOAP17\StructType\DepartureListType
      */
     public function setDeparture(array $departure = array())
     {
@@ -56,7 +56,7 @@ class DepartureListType extends AbstractStructBase
      * Add item to Departure value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \StructType\DepartureListType
+     * @return \traveltainment\SOAP17\StructType\DepartureListType
      */
     public function addToDeparture($item)
     {
@@ -73,7 +73,7 @@ class DepartureListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DepartureListType
+     * @return \traveltainment\SOAP17\StructType\DepartureListType
      */
     public static function __set_state(array $array)
     {

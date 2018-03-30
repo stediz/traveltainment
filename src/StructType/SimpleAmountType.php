@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -53,17 +53,17 @@ class SimpleAmountType extends AbstractStructBase
     }
     /**
      * Set Currency value
-     * @uses \EnumType\CurrencyCode::valueIsValid()
-     * @uses \EnumType\CurrencyCode::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $currency
-     * @return \StructType\SimpleAmountType
+     * @return \traveltainment\SOAP17\StructType\SimpleAmountType
      */
     public function setCurrency($currency = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CurrencyCode::valueIsValid($currency)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency, implode(', ', \EnumType\CurrencyCode::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\CurrencyCode::valueIsValid($currency)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency, implode(', ', \traveltainment\SOAP17\EnumType\CurrencyCode::getValidValues())), __LINE__);
         }
         $this->Currency = $currency;
         return $this;
@@ -79,7 +79,7 @@ class SimpleAmountType extends AbstractStructBase
     /**
      * Set _ value
      * @param float $_
-     * @return \StructType\SimpleAmountType
+     * @return \traveltainment\SOAP17\StructType\SimpleAmountType
      */
     public function set_($_ = null)
     {
@@ -104,7 +104,7 @@ class SimpleAmountType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SimpleAmountType
+     * @return \traveltainment\SOAP17\StructType\SimpleAmountType
      */
     public static function __set_state(array $array)
     {

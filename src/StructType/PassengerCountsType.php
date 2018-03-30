@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class PassengerCountsType extends AbstractStructBase
     /**
      * Set AdultCount value
      * @param int $adultCount
-     * @return \StructType\PassengerCountsType
+     * @return \traveltainment\SOAP17\StructType\PassengerCountsType
      */
     public function setAdultCount($adultCount = null)
     {
@@ -66,7 +66,7 @@ class PassengerCountsType extends AbstractStructBase
     /**
      * Set ChildCount value
      * @param int $childCount
-     * @return \StructType\PassengerCountsType
+     * @return \traveltainment\SOAP17\StructType\PassengerCountsType
      */
     public function setChildCount($childCount = null)
     {
@@ -83,7 +83,7 @@ class PassengerCountsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PassengerCountsType
+     * @return \traveltainment\SOAP17\StructType\PassengerCountsType
      */
     public static function __set_state(array $array)
     {

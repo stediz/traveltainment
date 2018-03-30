@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -43,17 +43,17 @@ class OfferGridBestPriceDateSpanType extends AbstractStructBase
     }
     /**
      * Set WeekdayStart value
-     * @uses \EnumType\WeekdayEnum::valueIsValid()
-     * @uses \EnumType\WeekdayEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\WeekdayEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\WeekdayEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $weekdayStart
-     * @return \StructType\OfferGridBestPriceDateSpanType
+     * @return \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType
      */
     public function setWeekdayStart($weekdayStart = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\WeekdayEnum::valueIsValid($weekdayStart)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $weekdayStart, implode(', ', \EnumType\WeekdayEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\WeekdayEnum::valueIsValid($weekdayStart)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $weekdayStart, implode(', ', \traveltainment\SOAP17\EnumType\WeekdayEnum::getValidValues())), __LINE__);
         }
         $this->WeekdayStart = $weekdayStart;
         return $this;
@@ -69,7 +69,7 @@ class OfferGridBestPriceDateSpanType extends AbstractStructBase
     /**
      * Set NumberOfDays value
      * @param int $numberOfDays
-     * @return \StructType\OfferGridBestPriceDateSpanType
+     * @return \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType
      */
     public function setNumberOfDays($numberOfDays = null)
     {
@@ -86,7 +86,7 @@ class OfferGridBestPriceDateSpanType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OfferGridBestPriceDateSpanType
+     * @return \traveltainment\SOAP17\StructType\OfferGridBestPriceDateSpanType
      */
     public static function __set_state(array $array)
     {

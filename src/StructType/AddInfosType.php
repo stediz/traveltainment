@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class AddInfosType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 1
-     * @var \StructType\AddInfoType[]
+     * @var \traveltainment\SOAP17\StructType\AddInfoType[]
      */
     public $AddInfo;
     /**
      * Constructor method for AddInfosType
      * @uses AddInfosType::setAddInfo()
-     * @param \StructType\AddInfoType[] $addInfo
+     * @param \traveltainment\SOAP17\StructType\AddInfoType[] $addInfo
      */
     public function __construct(array $addInfo = array())
     {
@@ -30,7 +30,7 @@ class AddInfosType extends AbstractStructBase
     }
     /**
      * Get AddInfo value
-     * @return \StructType\AddInfoType[]
+     * @return \traveltainment\SOAP17\StructType\AddInfoType[]
      */
     public function getAddInfo()
     {
@@ -39,15 +39,15 @@ class AddInfosType extends AbstractStructBase
     /**
      * Set AddInfo value
      * @throws \InvalidArgumentException
-     * @param \StructType\AddInfoType[] $addInfo
-     * @return \StructType\AddInfosType
+     * @param \traveltainment\SOAP17\StructType\AddInfoType[] $addInfo
+     * @return \traveltainment\SOAP17\StructType\AddInfosType
      */
     public function setAddInfo(array $addInfo = array())
     {
         foreach ($addInfo as $addInfosTypeAddInfoItem) {
             // validation for constraint: itemType
-            if (!$addInfosTypeAddInfoItem instanceof \StructType\AddInfoType) {
-                throw new \InvalidArgumentException(sprintf('The AddInfo property can only contain items of \StructType\AddInfoType, "%s" given', is_object($addInfosTypeAddInfoItem) ? get_class($addInfosTypeAddInfoItem) : gettype($addInfosTypeAddInfoItem)), __LINE__);
+            if (!$addInfosTypeAddInfoItem instanceof \traveltainment\SOAP17\StructType\AddInfoType) {
+                throw new \InvalidArgumentException(sprintf('The AddInfo property can only contain items of \traveltainment\SOAP17\StructType\AddInfoType, "%s" given', is_object($addInfosTypeAddInfoItem) ? get_class($addInfosTypeAddInfoItem) : gettype($addInfosTypeAddInfoItem)), __LINE__);
             }
         }
         $this->AddInfo = $addInfo;
@@ -56,14 +56,14 @@ class AddInfosType extends AbstractStructBase
     /**
      * Add item to AddInfo value
      * @throws \InvalidArgumentException
-     * @param \StructType\AddInfoType $item
-     * @return \StructType\AddInfosType
+     * @param \traveltainment\SOAP17\StructType\AddInfoType $item
+     * @return \traveltainment\SOAP17\StructType\AddInfosType
      */
-    public function addToAddInfo(\StructType\AddInfoType $item)
+    public function addToAddInfo(\traveltainment\SOAP17\StructType\AddInfoType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\AddInfoType) {
-            throw new \InvalidArgumentException(sprintf('The AddInfo property can only contain items of \StructType\AddInfoType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\AddInfoType) {
+            throw new \InvalidArgumentException(sprintf('The AddInfo property can only contain items of \traveltainment\SOAP17\StructType\AddInfoType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->AddInfo[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class AddInfosType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddInfosType
+     * @return \traveltainment\SOAP17\StructType\AddInfosType
      */
     public static function __set_state(array $array)
     {

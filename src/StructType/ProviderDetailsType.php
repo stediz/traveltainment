@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class ProviderDetailsType extends AbstractStructBase
      * The Address
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\AddressBaseType
+     * @var \traveltainment\SOAP17\StructType\AddressBaseType
      */
     public $Address;
     /**
@@ -51,10 +51,10 @@ class ProviderDetailsType extends AbstractStructBase
      * @param string $providerID
      * @param string $providerName
      * @param string $providerShortName
-     * @param \StructType\AddressBaseType $address
+     * @param \traveltainment\SOAP17\StructType\AddressBaseType $address
      * @param string $logoURL
      */
-    public function __construct($providerID = null, $providerName = null, $providerShortName = null, \StructType\AddressBaseType $address = null, $logoURL = null)
+    public function __construct($providerID = null, $providerName = null, $providerShortName = null, \traveltainment\SOAP17\StructType\AddressBaseType $address = null, $logoURL = null)
     {
         $this
             ->setProviderID($providerID)
@@ -74,7 +74,7 @@ class ProviderDetailsType extends AbstractStructBase
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\ProviderDetailsType
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
     public function setProviderID($providerID = null)
     {
@@ -96,7 +96,7 @@ class ProviderDetailsType extends AbstractStructBase
     /**
      * Set ProviderName value
      * @param string $providerName
-     * @return \StructType\ProviderDetailsType
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
     public function setProviderName($providerName = null)
     {
@@ -118,7 +118,7 @@ class ProviderDetailsType extends AbstractStructBase
     /**
      * Set ProviderShortName value
      * @param string $providerShortName
-     * @return \StructType\ProviderDetailsType
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
     public function setProviderShortName($providerShortName = null)
     {
@@ -131,7 +131,7 @@ class ProviderDetailsType extends AbstractStructBase
     }
     /**
      * Get Address value
-     * @return \StructType\AddressBaseType|null
+     * @return \traveltainment\SOAP17\StructType\AddressBaseType|null
      */
     public function getAddress()
     {
@@ -139,10 +139,10 @@ class ProviderDetailsType extends AbstractStructBase
     }
     /**
      * Set Address value
-     * @param \StructType\AddressBaseType $address
-     * @return \StructType\ProviderDetailsType
+     * @param \traveltainment\SOAP17\StructType\AddressBaseType $address
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
-    public function setAddress(\StructType\AddressBaseType $address = null)
+    public function setAddress(\traveltainment\SOAP17\StructType\AddressBaseType $address = null)
     {
         $this->Address = $address;
         return $this;
@@ -158,7 +158,7 @@ class ProviderDetailsType extends AbstractStructBase
     /**
      * Set LogoURL value
      * @param string $logoURL
-     * @return \StructType\ProviderDetailsType
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
     public function setLogoURL($logoURL = null)
     {
@@ -175,7 +175,7 @@ class ProviderDetailsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProviderDetailsType
+     * @return \traveltainment\SOAP17\StructType\ProviderDetailsType
      */
     public static function __set_state(array $array)
     {

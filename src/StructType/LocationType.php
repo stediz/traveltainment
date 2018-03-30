@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -60,7 +60,7 @@ class LocationType extends AbstractStructBase
     /**
      * Set _ value
      * @param string $_
-     * @return \StructType\LocationType
+     * @return \traveltainment\SOAP17\StructType\LocationType
      */
     public function set_($_ = null)
     {
@@ -86,7 +86,7 @@ class LocationType extends AbstractStructBase
     /**
      * Set LocationCode value
      * @param string $locationCode
-     * @return \StructType\LocationType
+     * @return \traveltainment\SOAP17\StructType\LocationType
      */
     public function setLocationCode($locationCode = null)
     {
@@ -112,7 +112,7 @@ class LocationType extends AbstractStructBase
     /**
      * Set Country value
      * @param string $country
-     * @return \StructType\LocationType
+     * @return \traveltainment\SOAP17\StructType\LocationType
      */
     public function setCountry($country = null)
     {
@@ -133,7 +133,7 @@ class LocationType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LocationType
+     * @return \traveltainment\SOAP17\StructType\LocationType
      */
     public static function __set_state(array $array)
     {

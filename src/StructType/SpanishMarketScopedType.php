@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -82,17 +82,17 @@ class SpanishMarketScopedType extends AbstractStructBase
     }
     /**
      * Set ResidentDiscountCode value
-     * @uses \EnumType\ResidentDiscountRequestCodeEnum::valueIsValid()
-     * @uses \EnumType\ResidentDiscountRequestCodeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ResidentDiscountRequestCodeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ResidentDiscountRequestCodeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $residentDiscountCode
-     * @return \StructType\SpanishMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public function setResidentDiscountCode($residentDiscountCode = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ResidentDiscountRequestCodeEnum::valueIsValid($residentDiscountCode)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $residentDiscountCode, implode(', ', \EnumType\ResidentDiscountRequestCodeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ResidentDiscountRequestCodeEnum::valueIsValid($residentDiscountCode)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $residentDiscountCode, implode(', ', \traveltainment\SOAP17\EnumType\ResidentDiscountRequestCodeEnum::getValidValues())), __LINE__);
         }
         $this->ResidentDiscountCode = $residentDiscountCode;
         return $this;
@@ -108,7 +108,7 @@ class SpanishMarketScopedType extends AbstractStructBase
     /**
      * Set ResidentZIPCode value
      * @param string $residentZIPCode
-     * @return \StructType\SpanishMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public function setResidentZIPCode($residentZIPCode = null)
     {
@@ -133,17 +133,17 @@ class SpanishMarketScopedType extends AbstractStructBase
     }
     /**
      * Set ResidentDiscountPaxCategory value
-     * @uses \EnumType\ResidentDiscountPaxCategoryEnum::valueIsValid()
-     * @uses \EnumType\ResidentDiscountPaxCategoryEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\ResidentDiscountPaxCategoryEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\ResidentDiscountPaxCategoryEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $residentDiscountPaxCategory
-     * @return \StructType\SpanishMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public function setResidentDiscountPaxCategory($residentDiscountPaxCategory = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ResidentDiscountPaxCategoryEnum::valueIsValid($residentDiscountPaxCategory)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $residentDiscountPaxCategory, implode(', ', \EnumType\ResidentDiscountPaxCategoryEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\ResidentDiscountPaxCategoryEnum::valueIsValid($residentDiscountPaxCategory)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $residentDiscountPaxCategory, implode(', ', \traveltainment\SOAP17\EnumType\ResidentDiscountPaxCategoryEnum::getValidValues())), __LINE__);
         }
         $this->ResidentDiscountPaxCategory = $residentDiscountPaxCategory;
         return $this;
@@ -159,7 +159,7 @@ class SpanishMarketScopedType extends AbstractStructBase
     /**
      * Set ResidentCertificateNumber value
      * @param string $residentCertificateNumber
-     * @return \StructType\SpanishMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public function setResidentCertificateNumber($residentCertificateNumber = null)
     {
@@ -189,7 +189,7 @@ class SpanishMarketScopedType extends AbstractStructBase
     /**
      * Set NIECardNumber value
      * @param string $nIECardNumber
-     * @return \StructType\SpanishMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public function setNIECardNumber($nIECardNumber = null)
     {
@@ -214,7 +214,7 @@ class SpanishMarketScopedType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SpanishMarketScopedType
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public static function __set_state(array $array)
     {

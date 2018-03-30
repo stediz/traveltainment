@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class ParkingDataType extends AbstractStructBase
     public $ProviderID;
     /**
      * The ParkingDateTimes
-     * @var \StructType\ParkingDateTimesType
+     * @var \traveltainment\SOAP17\StructType\ParkingDateTimesType
      */
     public $ParkingDateTimes;
     /**
@@ -27,7 +27,7 @@ class ParkingDataType extends AbstractStructBase
     public $PassengerCount;
     /**
      * The ParkingCost
-     * @var \StructType\SimplePriceType
+     * @var \traveltainment\SOAP17\StructType\SimplePriceType
      */
     public $ParkingCost;
     /**
@@ -37,11 +37,11 @@ class ParkingDataType extends AbstractStructBase
      * @uses ParkingDataType::setPassengerCount()
      * @uses ParkingDataType::setParkingCost()
      * @param string $providerID
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
      * @param int $passengerCount
-     * @param \StructType\SimplePriceType $parkingCost
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $parkingCost
      */
-    public function __construct($providerID = null, \StructType\ParkingDateTimesType $parkingDateTimes = null, $passengerCount = null, \StructType\SimplePriceType $parkingCost = null)
+    public function __construct($providerID = null, \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null, $passengerCount = null, \traveltainment\SOAP17\StructType\SimplePriceType $parkingCost = null)
     {
         $this
             ->setProviderID($providerID)
@@ -60,7 +60,7 @@ class ParkingDataType extends AbstractStructBase
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\ParkingDataType
+     * @return \traveltainment\SOAP17\StructType\ParkingDataType
      */
     public function setProviderID($providerID = null)
     {
@@ -73,7 +73,7 @@ class ParkingDataType extends AbstractStructBase
     }
     /**
      * Get ParkingDateTimes value
-     * @return \StructType\ParkingDateTimesType|null
+     * @return \traveltainment\SOAP17\StructType\ParkingDateTimesType|null
      */
     public function getParkingDateTimes()
     {
@@ -81,10 +81,10 @@ class ParkingDataType extends AbstractStructBase
     }
     /**
      * Set ParkingDateTimes value
-     * @param \StructType\ParkingDateTimesType $parkingDateTimes
-     * @return \StructType\ParkingDataType
+     * @param \traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes
+     * @return \traveltainment\SOAP17\StructType\ParkingDataType
      */
-    public function setParkingDateTimes(\StructType\ParkingDateTimesType $parkingDateTimes = null)
+    public function setParkingDateTimes(\traveltainment\SOAP17\StructType\ParkingDateTimesType $parkingDateTimes = null)
     {
         $this->ParkingDateTimes = $parkingDateTimes;
         return $this;
@@ -100,7 +100,7 @@ class ParkingDataType extends AbstractStructBase
     /**
      * Set PassengerCount value
      * @param int $passengerCount
-     * @return \StructType\ParkingDataType
+     * @return \traveltainment\SOAP17\StructType\ParkingDataType
      */
     public function setPassengerCount($passengerCount = null)
     {
@@ -113,7 +113,7 @@ class ParkingDataType extends AbstractStructBase
     }
     /**
      * Get ParkingCost value
-     * @return \StructType\SimplePriceType|null
+     * @return \traveltainment\SOAP17\StructType\SimplePriceType|null
      */
     public function getParkingCost()
     {
@@ -121,10 +121,10 @@ class ParkingDataType extends AbstractStructBase
     }
     /**
      * Set ParkingCost value
-     * @param \StructType\SimplePriceType $parkingCost
-     * @return \StructType\ParkingDataType
+     * @param \traveltainment\SOAP17\StructType\SimplePriceType $parkingCost
+     * @return \traveltainment\SOAP17\StructType\ParkingDataType
      */
-    public function setParkingCost(\StructType\SimplePriceType $parkingCost = null)
+    public function setParkingCost(\traveltainment\SOAP17\StructType\SimplePriceType $parkingCost = null)
     {
         $this->ParkingCost = $parkingCost;
         return $this;
@@ -135,7 +135,7 @@ class ParkingDataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ParkingDataType
+     * @return \traveltainment\SOAP17\StructType\ParkingDataType
      */
     public static function __set_state(array $array)
     {

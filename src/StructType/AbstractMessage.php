@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -106,17 +106,17 @@ abstract class AbstractMessage extends AbstractStructBase
     }
     /**
      * Set Target value
-     * @uses \EnumType\TargetType::valueIsValid()
-     * @uses \EnumType\TargetType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\TargetType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\TargetType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $target
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public function setTarget($target = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TargetType::valueIsValid($target)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $target, implode(', ', \EnumType\TargetType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\TargetType::valueIsValid($target)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $target, implode(', ', \traveltainment\SOAP17\EnumType\TargetType::getValidValues())), __LINE__);
         }
         $this->Target = $target;
         return $this;
@@ -132,7 +132,7 @@ abstract class AbstractMessage extends AbstractStructBase
     /**
      * Set LanguageCode value
      * @param string $languageCode
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public function setLanguageCode($languageCode = null)
     {
@@ -154,7 +154,7 @@ abstract class AbstractMessage extends AbstractStructBase
     /**
      * Set CID value
      * @param string $cID
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public function setCID($cID = null)
     {
@@ -176,7 +176,7 @@ abstract class AbstractMessage extends AbstractStructBase
     /**
      * Set Timestamp value
      * @param string $timestamp
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public function setTimestamp($timestamp = null)
     {
@@ -198,7 +198,7 @@ abstract class AbstractMessage extends AbstractStructBase
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public function setSessionID($sessionID = null)
     {
@@ -220,7 +220,7 @@ abstract class AbstractMessage extends AbstractStructBase
     /**
      * Set TrackingID value
      * @param string $trackingID
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public function setTrackingID($trackingID = null)
     {
@@ -242,7 +242,7 @@ abstract class AbstractMessage extends AbstractStructBase
     /**
      * Set ClientSessionID value
      * @param string $clientSessionID
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public function setClientSessionID($clientSessionID = null)
     {
@@ -259,7 +259,7 @@ abstract class AbstractMessage extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AbstractMessage
+     * @return \traveltainment\SOAP17\StructType\AbstractMessage
      */
     public static function __set_state(array $array)
     {

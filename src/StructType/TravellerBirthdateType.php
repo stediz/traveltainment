@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class TravellerBirthdateType extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\TravellerBirthdateType
+     * @return \traveltainment\SOAP17\StructType\TravellerBirthdateType
      */
     public function setID($iD = null)
     {
@@ -78,7 +78,7 @@ class TravellerBirthdateType extends AbstractStructBase
     /**
      * Set Birthdate value
      * @param string $birthdate
-     * @return \StructType\TravellerBirthdateType
+     * @return \traveltainment\SOAP17\StructType\TravellerBirthdateType
      */
     public function setBirthdate($birthdate = null)
     {
@@ -99,17 +99,17 @@ class TravellerBirthdateType extends AbstractStructBase
     }
     /**
      * Set AgeQualifier value
-     * @uses \EnumType\PersType::valueIsValid()
-     * @uses \EnumType\PersType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\PersType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\PersType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $ageQualifier
-     * @return \StructType\TravellerBirthdateType
+     * @return \traveltainment\SOAP17\StructType\TravellerBirthdateType
      */
     public function setAgeQualifier($ageQualifier = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PersType::valueIsValid($ageQualifier)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $ageQualifier, implode(', ', \EnumType\PersType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\PersType::valueIsValid($ageQualifier)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $ageQualifier, implode(', ', \traveltainment\SOAP17\EnumType\PersType::getValidValues())), __LINE__);
         }
         $this->AgeQualifier = $ageQualifier;
         return $this;
@@ -120,7 +120,7 @@ class TravellerBirthdateType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravellerBirthdateType
+     * @return \traveltainment\SOAP17\StructType\TravellerBirthdateType
      */
     public static function __set_state(array $array)
     {

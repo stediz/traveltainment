@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class TravellerPriceListType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\TravellerPriceType[]
+     * @var \traveltainment\SOAP17\StructType\TravellerPriceType[]
      */
     public $TravellerPrice;
     /**
      * Constructor method for TravellerPriceListType
      * @uses TravellerPriceListType::setTravellerPrice()
-     * @param \StructType\TravellerPriceType[] $travellerPrice
+     * @param \traveltainment\SOAP17\StructType\TravellerPriceType[] $travellerPrice
      */
     public function __construct(array $travellerPrice = array())
     {
@@ -30,7 +30,7 @@ class TravellerPriceListType extends AbstractStructBase
     }
     /**
      * Get TravellerPrice value
-     * @return \StructType\TravellerPriceType[]|null
+     * @return \traveltainment\SOAP17\StructType\TravellerPriceType[]|null
      */
     public function getTravellerPrice()
     {
@@ -39,15 +39,15 @@ class TravellerPriceListType extends AbstractStructBase
     /**
      * Set TravellerPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\TravellerPriceType[] $travellerPrice
-     * @return \StructType\TravellerPriceListType
+     * @param \traveltainment\SOAP17\StructType\TravellerPriceType[] $travellerPrice
+     * @return \traveltainment\SOAP17\StructType\TravellerPriceListType
      */
     public function setTravellerPrice(array $travellerPrice = array())
     {
         foreach ($travellerPrice as $travellerPriceListTypeTravellerPriceItem) {
             // validation for constraint: itemType
-            if (!$travellerPriceListTypeTravellerPriceItem instanceof \StructType\TravellerPriceType) {
-                throw new \InvalidArgumentException(sprintf('The TravellerPrice property can only contain items of \StructType\TravellerPriceType, "%s" given', is_object($travellerPriceListTypeTravellerPriceItem) ? get_class($travellerPriceListTypeTravellerPriceItem) : gettype($travellerPriceListTypeTravellerPriceItem)), __LINE__);
+            if (!$travellerPriceListTypeTravellerPriceItem instanceof \traveltainment\SOAP17\StructType\TravellerPriceType) {
+                throw new \InvalidArgumentException(sprintf('The TravellerPrice property can only contain items of \traveltainment\SOAP17\StructType\TravellerPriceType, "%s" given', is_object($travellerPriceListTypeTravellerPriceItem) ? get_class($travellerPriceListTypeTravellerPriceItem) : gettype($travellerPriceListTypeTravellerPriceItem)), __LINE__);
             }
         }
         $this->TravellerPrice = $travellerPrice;
@@ -56,14 +56,14 @@ class TravellerPriceListType extends AbstractStructBase
     /**
      * Add item to TravellerPrice value
      * @throws \InvalidArgumentException
-     * @param \StructType\TravellerPriceType $item
-     * @return \StructType\TravellerPriceListType
+     * @param \traveltainment\SOAP17\StructType\TravellerPriceType $item
+     * @return \traveltainment\SOAP17\StructType\TravellerPriceListType
      */
-    public function addToTravellerPrice(\StructType\TravellerPriceType $item)
+    public function addToTravellerPrice(\traveltainment\SOAP17\StructType\TravellerPriceType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\TravellerPriceType) {
-            throw new \InvalidArgumentException(sprintf('The TravellerPrice property can only contain items of \StructType\TravellerPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\TravellerPriceType) {
+            throw new \InvalidArgumentException(sprintf('The TravellerPrice property can only contain items of \traveltainment\SOAP17\StructType\TravellerPriceType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->TravellerPrice[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class TravellerPriceListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravellerPriceListType
+     * @return \traveltainment\SOAP17\StructType\TravellerPriceListType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,14 +17,14 @@ class TransferEventType extends AbstractStructBase
     public $DateTime;
     /**
      * The Location
-     * @var \StructType\TransferLocationType
+     * @var \traveltainment\SOAP17\StructType\TransferLocationType
      */
     public $Location;
     /**
      * The FlightInfo
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\TransferFlightInfoType
+     * @var \traveltainment\SOAP17\StructType\TransferFlightInfoType
      */
     public $FlightInfo;
     /**
@@ -33,10 +33,10 @@ class TransferEventType extends AbstractStructBase
      * @uses TransferEventType::setLocation()
      * @uses TransferEventType::setFlightInfo()
      * @param string $dateTime
-     * @param \StructType\TransferLocationType $location
-     * @param \StructType\TransferFlightInfoType $flightInfo
+     * @param \traveltainment\SOAP17\StructType\TransferLocationType $location
+     * @param \traveltainment\SOAP17\StructType\TransferFlightInfoType $flightInfo
      */
-    public function __construct($dateTime = null, \StructType\TransferLocationType $location = null, \StructType\TransferFlightInfoType $flightInfo = null)
+    public function __construct($dateTime = null, \traveltainment\SOAP17\StructType\TransferLocationType $location = null, \traveltainment\SOAP17\StructType\TransferFlightInfoType $flightInfo = null)
     {
         $this
             ->setDateTime($dateTime)
@@ -54,7 +54,7 @@ class TransferEventType extends AbstractStructBase
     /**
      * Set DateTime value
      * @param string $dateTime
-     * @return \StructType\TransferEventType
+     * @return \traveltainment\SOAP17\StructType\TransferEventType
      */
     public function setDateTime($dateTime = null)
     {
@@ -67,7 +67,7 @@ class TransferEventType extends AbstractStructBase
     }
     /**
      * Get Location value
-     * @return \StructType\TransferLocationType|null
+     * @return \traveltainment\SOAP17\StructType\TransferLocationType|null
      */
     public function getLocation()
     {
@@ -75,17 +75,17 @@ class TransferEventType extends AbstractStructBase
     }
     /**
      * Set Location value
-     * @param \StructType\TransferLocationType $location
-     * @return \StructType\TransferEventType
+     * @param \traveltainment\SOAP17\StructType\TransferLocationType $location
+     * @return \traveltainment\SOAP17\StructType\TransferEventType
      */
-    public function setLocation(\StructType\TransferLocationType $location = null)
+    public function setLocation(\traveltainment\SOAP17\StructType\TransferLocationType $location = null)
     {
         $this->Location = $location;
         return $this;
     }
     /**
      * Get FlightInfo value
-     * @return \StructType\TransferFlightInfoType|null
+     * @return \traveltainment\SOAP17\StructType\TransferFlightInfoType|null
      */
     public function getFlightInfo()
     {
@@ -93,10 +93,10 @@ class TransferEventType extends AbstractStructBase
     }
     /**
      * Set FlightInfo value
-     * @param \StructType\TransferFlightInfoType $flightInfo
-     * @return \StructType\TransferEventType
+     * @param \traveltainment\SOAP17\StructType\TransferFlightInfoType $flightInfo
+     * @return \traveltainment\SOAP17\StructType\TransferEventType
      */
-    public function setFlightInfo(\StructType\TransferFlightInfoType $flightInfo = null)
+    public function setFlightInfo(\traveltainment\SOAP17\StructType\TransferFlightInfoType $flightInfo = null)
     {
         $this->FlightInfo = $flightInfo;
         return $this;
@@ -107,7 +107,7 @@ class TransferEventType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransferEventType
+     * @return \traveltainment\SOAP17\StructType\TransferEventType
      */
     public static function __set_state(array $array)
     {

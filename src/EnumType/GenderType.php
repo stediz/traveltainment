@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace traveltainment\SOAP17\EnumType;
 
 /**
  * This class stands for GenderType EnumType

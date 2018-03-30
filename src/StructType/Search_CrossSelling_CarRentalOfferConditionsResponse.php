@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,22 +17,22 @@ class Search_CrossSelling_CarRentalOfferConditionsResponse extends AbstractStruc
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetCarRentalOfferConditionsRSType
+     * @var \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType
      */
     public $return;
     /**
      * Constructor method for Search_CrossSelling_CarRentalOfferConditionsResponse
      * @uses Search_CrossSelling_CarRentalOfferConditionsResponse::setReturn()
-     * @param \StructType\GetCarRentalOfferConditionsRSType $return
+     * @param \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType $return
      */
-    public function __construct(\StructType\GetCarRentalOfferConditionsRSType $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\GetCarRentalOfferConditionsRSType|null
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType|null
      */
     public function getReturn()
     {
@@ -40,10 +40,10 @@ class Search_CrossSelling_CarRentalOfferConditionsResponse extends AbstractStruc
     }
     /**
      * Set return value
-     * @param \StructType\GetCarRentalOfferConditionsRSType $return
-     * @return \StructType\Search_CrossSelling_CarRentalOfferConditionsResponse
+     * @param \traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType $return
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalOfferConditionsResponse
      */
-    public function setReturn(\StructType\GetCarRentalOfferConditionsRSType $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\GetCarRentalOfferConditionsRSType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -54,7 +54,7 @@ class Search_CrossSelling_CarRentalOfferConditionsResponse extends AbstractStruc
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Search_CrossSelling_CarRentalOfferConditionsResponse
+     * @return \traveltainment\SOAP17\StructType\Search_CrossSelling_CarRentalOfferConditionsResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class HotelResultSummaryType extends AbstractStructBase
 {
     /**
      * The Cities
-     * @var \StructType\SummaryRegion
+     * @var \traveltainment\SOAP17\StructType\SummaryRegion
      */
     public $Cities;
     /**
      * Constructor method for HotelResultSummaryType
      * @uses HotelResultSummaryType::setCities()
-     * @param \StructType\SummaryRegion $cities
+     * @param \traveltainment\SOAP17\StructType\SummaryRegion $cities
      */
-    public function __construct(\StructType\SummaryRegion $cities = null)
+    public function __construct(\traveltainment\SOAP17\StructType\SummaryRegion $cities = null)
     {
         $this
             ->setCities($cities);
     }
     /**
      * Get Cities value
-     * @return \StructType\SummaryRegion|null
+     * @return \traveltainment\SOAP17\StructType\SummaryRegion|null
      */
     public function getCities()
     {
@@ -35,10 +35,10 @@ class HotelResultSummaryType extends AbstractStructBase
     }
     /**
      * Set Cities value
-     * @param \StructType\SummaryRegion $cities
-     * @return \StructType\HotelResultSummaryType
+     * @param \traveltainment\SOAP17\StructType\SummaryRegion $cities
+     * @return \traveltainment\SOAP17\StructType\HotelResultSummaryType
      */
-    public function setCities(\StructType\SummaryRegion $cities = null)
+    public function setCities(\traveltainment\SOAP17\StructType\SummaryRegion $cities = null)
     {
         $this->Cities = $cities;
         return $this;
@@ -49,7 +49,7 @@ class HotelResultSummaryType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HotelResultSummaryType
+     * @return \traveltainment\SOAP17\StructType\HotelResultSummaryType
      */
     public static function __set_state(array $array)
     {

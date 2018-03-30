@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class SearchEngineCityListRS extends XmlInterfaceSearchRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineCityListRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineCityListRS
      */
     public static function __set_state(array $array)
     {

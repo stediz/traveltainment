@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -58,7 +58,7 @@ class FlagsType extends AbstractStructBase
     /**
      * Set ShowResultSummary value
      * @param bool $showResultSummary
-     * @return \StructType\FlagsType
+     * @return \traveltainment\SOAP17\StructType\FlagsType
      */
     public function setShowResultSummary($showResultSummary = null)
     {
@@ -80,7 +80,7 @@ class FlagsType extends AbstractStructBase
     /**
      * Set HardSearch value
      * @param bool $hardSearch
-     * @return \StructType\FlagsType
+     * @return \traveltainment\SOAP17\StructType\FlagsType
      */
     public function setHardSearch($hardSearch = null)
     {
@@ -102,7 +102,7 @@ class FlagsType extends AbstractStructBase
     /**
      * Set ShowAll value
      * @param bool $showAll
-     * @return \StructType\FlagsType
+     * @return \traveltainment\SOAP17\StructType\FlagsType
      */
     public function setShowAll($showAll = null)
     {
@@ -119,7 +119,7 @@ class FlagsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FlagsType
+     * @return \traveltainment\SOAP17\StructType\FlagsType
      */
     public static function __set_state(array $array)
     {

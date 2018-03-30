@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,22 +12,22 @@ class HolidayHomeWithCoordinatesType extends HolidayHomeType
 {
     /**
      * The Coordinates
-     * @var \StructType\Coordinates
+     * @var \traveltainment\SOAP17\StructType\Coordinates
      */
     public $Coordinates;
     /**
      * Constructor method for HolidayHomeWithCoordinatesType
      * @uses HolidayHomeWithCoordinatesType::setCoordinates()
-     * @param \StructType\Coordinates $coordinates
+     * @param \traveltainment\SOAP17\StructType\Coordinates $coordinates
      */
-    public function __construct(\StructType\Coordinates $coordinates = null)
+    public function __construct(\traveltainment\SOAP17\StructType\Coordinates $coordinates = null)
     {
         $this
             ->setCoordinates($coordinates);
     }
     /**
      * Get Coordinates value
-     * @return \StructType\Coordinates|null
+     * @return \traveltainment\SOAP17\StructType\Coordinates|null
      */
     public function getCoordinates()
     {
@@ -35,10 +35,10 @@ class HolidayHomeWithCoordinatesType extends HolidayHomeType
     }
     /**
      * Set Coordinates value
-     * @param \StructType\Coordinates $coordinates
-     * @return \StructType\HolidayHomeWithCoordinatesType
+     * @param \traveltainment\SOAP17\StructType\Coordinates $coordinates
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeWithCoordinatesType
      */
-    public function setCoordinates(\StructType\Coordinates $coordinates = null)
+    public function setCoordinates(\traveltainment\SOAP17\StructType\Coordinates $coordinates = null)
     {
         $this->Coordinates = $coordinates;
         return $this;
@@ -49,7 +49,7 @@ class HolidayHomeWithCoordinatesType extends HolidayHomeType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeWithCoordinatesType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeWithCoordinatesType
      */
     public static function __set_state(array $array)
     {

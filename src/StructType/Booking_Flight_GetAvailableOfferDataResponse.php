@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class Booking_Flight_GetAvailableOfferDataResponse extends AbstractStructBase
      * The return
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\GetAvailableOfferDataRSType
+     * @var \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType
      */
     public $return;
     /**
      * Constructor method for Booking_Flight_GetAvailableOfferDataResponse
      * @uses Booking_Flight_GetAvailableOfferDataResponse::setReturn()
-     * @param \StructType\GetAvailableOfferDataRSType $return
+     * @param \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType $return
      */
-    public function __construct(\StructType\GetAvailableOfferDataRSType $return = null)
+    public function __construct(\traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\GetAvailableOfferDataRSType|null
+     * @return \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType|null
      */
     public function getReturn()
     {
@@ -39,10 +39,10 @@ class Booking_Flight_GetAvailableOfferDataResponse extends AbstractStructBase
     }
     /**
      * Set return value
-     * @param \StructType\GetAvailableOfferDataRSType $return
-     * @return \StructType\Booking_Flight_GetAvailableOfferDataResponse
+     * @param \traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType $return
+     * @return \traveltainment\SOAP17\StructType\Booking_Flight_GetAvailableOfferDataResponse
      */
-    public function setReturn(\StructType\GetAvailableOfferDataRSType $return = null)
+    public function setReturn(\traveltainment\SOAP17\StructType\GetAvailableOfferDataRSType $return = null)
     {
         $this->return = $return;
         return $this;
@@ -53,7 +53,7 @@ class Booking_Flight_GetAvailableOfferDataResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Booking_Flight_GetAvailableOfferDataResponse
+     * @return \traveltainment\SOAP17\StructType\Booking_Flight_GetAvailableOfferDataResponse
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -76,7 +76,7 @@ class RS_MetadataType extends AbstractStructBase
     /**
      * Set IsTest value
      * @param bool $isTest
-     * @return \StructType\RS_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public function setIsTest($isTest = null)
     {
@@ -98,7 +98,7 @@ class RS_MetadataType extends AbstractStructBase
     /**
      * Set RequestID value
      * @param string $requestID
-     * @return \StructType\RS_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public function setRequestID($requestID = null)
     {
@@ -120,7 +120,7 @@ class RS_MetadataType extends AbstractStructBase
     /**
      * Set TransactionID value
      * @param string $transactionID
-     * @return \StructType\RS_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public function setTransactionID($transactionID = null)
     {
@@ -142,7 +142,7 @@ class RS_MetadataType extends AbstractStructBase
     /**
      * Set ResponseID value
      * @param string $responseID
-     * @return \StructType\RS_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public function setResponseID($responseID = null)
     {
@@ -164,7 +164,7 @@ class RS_MetadataType extends AbstractStructBase
     /**
      * Set Timestamp value
      * @param string $timestamp
-     * @return \StructType\RS_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public function setTimestamp($timestamp = null)
     {
@@ -186,7 +186,7 @@ class RS_MetadataType extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\RS_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public function setLanguage($language = null)
     {
@@ -203,7 +203,7 @@ class RS_MetadataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RS_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RS_MetadataType
      */
     public static function __set_state(array $array)
     {

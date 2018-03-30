@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,24 +14,24 @@ class SearchEngineHotelListRS extends XmlInterfaceSearchRS
      * The ResultSummary
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\HotelResultSummaryType
+     * @var \traveltainment\SOAP17\StructType\HotelResultSummaryType
      */
     public $ResultSummary;
     /**
      * The Region
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RegionType
+     * @var \traveltainment\SOAP17\StructType\RegionType
      */
     public $Region;
     /**
      * Constructor method for SearchEngineHotelListRS
      * @uses SearchEngineHotelListRS::setResultSummary()
      * @uses SearchEngineHotelListRS::setRegion()
-     * @param \StructType\HotelResultSummaryType $resultSummary
-     * @param \StructType\RegionType $region
+     * @param \traveltainment\SOAP17\StructType\HotelResultSummaryType $resultSummary
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
      */
-    public function __construct(\StructType\HotelResultSummaryType $resultSummary = null, \StructType\RegionType $region = null)
+    public function __construct(\traveltainment\SOAP17\StructType\HotelResultSummaryType $resultSummary = null, \traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this
             ->setResultSummary($resultSummary)
@@ -39,7 +39,7 @@ class SearchEngineHotelListRS extends XmlInterfaceSearchRS
     }
     /**
      * Get ResultSummary value
-     * @return \StructType\HotelResultSummaryType|null
+     * @return \traveltainment\SOAP17\StructType\HotelResultSummaryType|null
      */
     public function getResultSummary()
     {
@@ -47,17 +47,17 @@ class SearchEngineHotelListRS extends XmlInterfaceSearchRS
     }
     /**
      * Set ResultSummary value
-     * @param \StructType\HotelResultSummaryType $resultSummary
-     * @return \StructType\SearchEngineHotelListRS
+     * @param \traveltainment\SOAP17\StructType\HotelResultSummaryType $resultSummary
+     * @return \traveltainment\SOAP17\StructType\SearchEngineHotelListRS
      */
-    public function setResultSummary(\StructType\HotelResultSummaryType $resultSummary = null)
+    public function setResultSummary(\traveltainment\SOAP17\StructType\HotelResultSummaryType $resultSummary = null)
     {
         $this->ResultSummary = $resultSummary;
         return $this;
     }
     /**
      * Get Region value
-     * @return \StructType\RegionType|null
+     * @return \traveltainment\SOAP17\StructType\RegionType|null
      */
     public function getRegion()
     {
@@ -65,10 +65,10 @@ class SearchEngineHotelListRS extends XmlInterfaceSearchRS
     }
     /**
      * Set Region value
-     * @param \StructType\RegionType $region
-     * @return \StructType\SearchEngineHotelListRS
+     * @param \traveltainment\SOAP17\StructType\RegionType $region
+     * @return \traveltainment\SOAP17\StructType\SearchEngineHotelListRS
      */
-    public function setRegion(\StructType\RegionType $region = null)
+    public function setRegion(\traveltainment\SOAP17\StructType\RegionType $region = null)
     {
         $this->Region = $region;
         return $this;
@@ -79,7 +79,7 @@ class SearchEngineHotelListRS extends XmlInterfaceSearchRS
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SearchEngineHotelListRS
+     * @return \traveltainment\SOAP17\StructType\SearchEngineHotelListRS
      */
     public static function __set_state(array $array)
     {

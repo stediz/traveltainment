@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -65,7 +65,7 @@ class RQ_MetadataType extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\RQ_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RQ_MetadataType
      */
     public function setLanguage($language = null)
     {
@@ -87,7 +87,7 @@ class RQ_MetadataType extends AbstractStructBase
     /**
      * Set IsTest value
      * @param bool $isTest
-     * @return \StructType\RQ_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RQ_MetadataType
      */
     public function setIsTest($isTest = null)
     {
@@ -109,7 +109,7 @@ class RQ_MetadataType extends AbstractStructBase
     /**
      * Set RequestID value
      * @param string $requestID
-     * @return \StructType\RQ_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RQ_MetadataType
      */
     public function setRequestID($requestID = null)
     {
@@ -131,7 +131,7 @@ class RQ_MetadataType extends AbstractStructBase
     /**
      * Set TransactionID value
      * @param string $transactionID
-     * @return \StructType\RQ_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RQ_MetadataType
      */
     public function setTransactionID($transactionID = null)
     {
@@ -156,7 +156,7 @@ class RQ_MetadataType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RQ_MetadataType
+     * @return \traveltainment\SOAP17\StructType\RQ_MetadataType
      */
     public static function __set_state(array $array)
     {

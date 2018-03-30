@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -14,13 +14,13 @@ class ExtendedKeyValueListType extends AbstractStructBase
      * The Param
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
-     * @var \StructType\ExtendedKeyValueType[]
+     * @var \traveltainment\SOAP17\StructType\ExtendedKeyValueType[]
      */
     public $Param;
     /**
      * Constructor method for ExtendedKeyValueListType
      * @uses ExtendedKeyValueListType::setParam()
-     * @param \StructType\ExtendedKeyValueType[] $param
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueType[] $param
      */
     public function __construct(array $param = array())
     {
@@ -29,7 +29,7 @@ class ExtendedKeyValueListType extends AbstractStructBase
     }
     /**
      * Get Param value
-     * @return \StructType\ExtendedKeyValueType[]|null
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueType[]|null
      */
     public function getParam()
     {
@@ -38,15 +38,15 @@ class ExtendedKeyValueListType extends AbstractStructBase
     /**
      * Set Param value
      * @throws \InvalidArgumentException
-     * @param \StructType\ExtendedKeyValueType[] $param
-     * @return \StructType\ExtendedKeyValueListType
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueType[] $param
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueListType
      */
     public function setParam(array $param = array())
     {
         foreach ($param as $extendedKeyValueListTypeParamItem) {
             // validation for constraint: itemType
-            if (!$extendedKeyValueListTypeParamItem instanceof \StructType\ExtendedKeyValueType) {
-                throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \StructType\ExtendedKeyValueType, "%s" given', is_object($extendedKeyValueListTypeParamItem) ? get_class($extendedKeyValueListTypeParamItem) : gettype($extendedKeyValueListTypeParamItem)), __LINE__);
+            if (!$extendedKeyValueListTypeParamItem instanceof \traveltainment\SOAP17\StructType\ExtendedKeyValueType) {
+                throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \traveltainment\SOAP17\StructType\ExtendedKeyValueType, "%s" given', is_object($extendedKeyValueListTypeParamItem) ? get_class($extendedKeyValueListTypeParamItem) : gettype($extendedKeyValueListTypeParamItem)), __LINE__);
             }
         }
         $this->Param = $param;
@@ -55,14 +55,14 @@ class ExtendedKeyValueListType extends AbstractStructBase
     /**
      * Add item to Param value
      * @throws \InvalidArgumentException
-     * @param \StructType\ExtendedKeyValueType $item
-     * @return \StructType\ExtendedKeyValueListType
+     * @param \traveltainment\SOAP17\StructType\ExtendedKeyValueType $item
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueListType
      */
-    public function addToParam(\StructType\ExtendedKeyValueType $item)
+    public function addToParam(\traveltainment\SOAP17\StructType\ExtendedKeyValueType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ExtendedKeyValueType) {
-            throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \StructType\ExtendedKeyValueType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\ExtendedKeyValueType) {
+            throw new \InvalidArgumentException(sprintf('The Param property can only contain items of \traveltainment\SOAP17\StructType\ExtendedKeyValueType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Param[] = $item;
         return $this;
@@ -73,7 +73,7 @@ class ExtendedKeyValueListType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ExtendedKeyValueListType
+     * @return \traveltainment\SOAP17\StructType\ExtendedKeyValueListType
      */
     public static function __set_state(array $array)
     {

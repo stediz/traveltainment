@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class VehicleType extends AbstractStructBase
     /**
      * Set VehicleType value
      * @param string $vehicleType
-     * @return \StructType\VehicleType
+     * @return \traveltainment\SOAP17\StructType\VehicleType
      */
     public function setVehicleType($vehicleType = null)
     {
@@ -66,7 +66,7 @@ class VehicleType extends AbstractStructBase
     /**
      * Set VehicleCount value
      * @param int $vehicleCount
-     * @return \StructType\VehicleType
+     * @return \traveltainment\SOAP17\StructType\VehicleType
      */
     public function setVehicleCount($vehicleCount = null)
     {
@@ -83,7 +83,7 @@ class VehicleType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\VehicleType
+     * @return \traveltainment\SOAP17\StructType\VehicleType
      */
     public static function __set_state(array $array)
     {

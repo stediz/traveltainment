@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class HolidayHomeOfferGridGroupType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\HolidayHomeOfferGridElementType[]
+     * @var \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType[]
      */
     public $Element;
     /**
@@ -30,7 +30,7 @@ class HolidayHomeOfferGridGroupType extends AbstractStructBase
      * @uses HolidayHomeOfferGridGroupType::setCategory()
      * @uses HolidayHomeOfferGridGroupType::setElement()
      * @param string $category
-     * @param \StructType\HolidayHomeOfferGridElementType[] $element
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType[] $element
      */
     public function __construct($category = null, array $element = array())
     {
@@ -48,24 +48,24 @@ class HolidayHomeOfferGridGroupType extends AbstractStructBase
     }
     /**
      * Set category value
-     * @uses \EnumType\HolidayHomeOfferGridGroupTypeEnum::valueIsValid()
-     * @uses \EnumType\HolidayHomeOfferGridGroupTypeEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeOfferGridGroupTypeEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\HolidayHomeOfferGridGroupTypeEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $category
-     * @return \StructType\HolidayHomeOfferGridGroupType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType
      */
     public function setCategory($category = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\HolidayHomeOfferGridGroupTypeEnum::valueIsValid($category)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $category, implode(', ', \EnumType\HolidayHomeOfferGridGroupTypeEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\HolidayHomeOfferGridGroupTypeEnum::valueIsValid($category)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $category, implode(', ', \traveltainment\SOAP17\EnumType\HolidayHomeOfferGridGroupTypeEnum::getValidValues())), __LINE__);
         }
         $this->category = $category;
         return $this;
     }
     /**
      * Get Element value
-     * @return \StructType\HolidayHomeOfferGridElementType[]|null
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType[]|null
      */
     public function getElement()
     {
@@ -74,15 +74,15 @@ class HolidayHomeOfferGridGroupType extends AbstractStructBase
     /**
      * Set Element value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeOfferGridElementType[] $element
-     * @return \StructType\HolidayHomeOfferGridGroupType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType[] $element
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType
      */
     public function setElement(array $element = array())
     {
         foreach ($element as $holidayHomeOfferGridGroupTypeElementItem) {
             // validation for constraint: itemType
-            if (!$holidayHomeOfferGridGroupTypeElementItem instanceof \StructType\HolidayHomeOfferGridElementType) {
-                throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \StructType\HolidayHomeOfferGridElementType, "%s" given', is_object($holidayHomeOfferGridGroupTypeElementItem) ? get_class($holidayHomeOfferGridGroupTypeElementItem) : gettype($holidayHomeOfferGridGroupTypeElementItem)), __LINE__);
+            if (!$holidayHomeOfferGridGroupTypeElementItem instanceof \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType) {
+                throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType, "%s" given', is_object($holidayHomeOfferGridGroupTypeElementItem) ? get_class($holidayHomeOfferGridGroupTypeElementItem) : gettype($holidayHomeOfferGridGroupTypeElementItem)), __LINE__);
             }
         }
         $this->Element = $element;
@@ -91,14 +91,14 @@ class HolidayHomeOfferGridGroupType extends AbstractStructBase
     /**
      * Add item to Element value
      * @throws \InvalidArgumentException
-     * @param \StructType\HolidayHomeOfferGridElementType $item
-     * @return \StructType\HolidayHomeOfferGridGroupType
+     * @param \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType $item
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType
      */
-    public function addToElement(\StructType\HolidayHomeOfferGridElementType $item)
+    public function addToElement(\traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\HolidayHomeOfferGridElementType) {
-            throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \StructType\HolidayHomeOfferGridElementType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType) {
+            throw new \InvalidArgumentException(sprintf('The Element property can only contain items of \traveltainment\SOAP17\StructType\HolidayHomeOfferGridElementType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Element[] = $item;
         return $this;
@@ -109,7 +109,7 @@ class HolidayHomeOfferGridGroupType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\HolidayHomeOfferGridGroupType
+     * @return \traveltainment\SOAP17\StructType\HolidayHomeOfferGridGroupType
      */
     public static function __set_state(array $array)
     {

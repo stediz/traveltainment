@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -19,7 +19,7 @@ class TravellerType extends NonCyrillicPersonType
      * The PersonName
      * Meta informations extracted from the WSDL
      * - documentation: Der Name einer Person.
-     * @var \StructType\NonCyrillicPersonNameType
+     * @var \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public $PersonName;
     /**
@@ -57,14 +57,14 @@ class TravellerType extends NonCyrillicPersonType
      * The SpanishMarketScoped
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\SpanishMarketScopedType
+     * @var \traveltainment\SOAP17\StructType\SpanishMarketScopedType
      */
     public $SpanishMarketScoped;
     /**
      * The RussianMarketScoped
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\RussianMarketScopedType
+     * @var \traveltainment\SOAP17\StructType\RussianMarketScopedType
      */
     public $RussianMarketScoped;
     /**
@@ -84,7 +84,7 @@ class TravellerType extends NonCyrillicPersonType
      * Meta informations extracted from the WSDL
      * - documentation: Dieser Knoten wird nur fuer den Response benoetigt. Der Knoten Total kann verschiedene Preise beinhalten. | This type is just needed for the response type.
      * - minOccurs: 0
-     * @var \StructType\TotalType
+     * @var \traveltainment\SOAP17\StructType\TotalType
      */
     public $Total;
     /**
@@ -127,21 +127,21 @@ class TravellerType extends NonCyrillicPersonType
      * @uses TravellerType::setFrequentFlierAccount()
      * @uses TravellerType::setTravellerRef()
      * @param string $age
-     * @param \StructType\NonCyrillicPersonNameType $personName
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName
      * @param string $gender
      * @param string $birthDate
      * @param string $ageQualifier
      * @param string $iDCardNumber
-     * @param \StructType\SpanishMarketScopedType $spanishMarketScoped
-     * @param \StructType\RussianMarketScopedType $russianMarketScoped
+     * @param \traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped
+     * @param \traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped
      * @param string $iD
      * @param string $type
-     * @param \StructType\TotalType $total
+     * @param \traveltainment\SOAP17\StructType\TotalType $total
      * @param string $frequentFlierProgram
      * @param string $frequentFlierAccount
      * @param string $travellerRef
      */
-    public function __construct($age = null, \StructType\NonCyrillicPersonNameType $personName = null, $gender = null, $birthDate = null, $ageQualifier = null, $iDCardNumber = null, \StructType\SpanishMarketScopedType $spanishMarketScoped = null, \StructType\RussianMarketScopedType $russianMarketScoped = null, $iD = null, $type = null, \StructType\TotalType $total = null, $frequentFlierProgram = null, $frequentFlierAccount = null, $travellerRef = null)
+    public function __construct($age = null, \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName = null, $gender = null, $birthDate = null, $ageQualifier = null, $iDCardNumber = null, \traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped = null, \traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped = null, $iD = null, $type = null, \traveltainment\SOAP17\StructType\TotalType $total = null, $frequentFlierProgram = null, $frequentFlierAccount = null, $travellerRef = null)
     {
         $this
             ->setAge($age)
@@ -170,7 +170,7 @@ class TravellerType extends NonCyrillicPersonType
     /**
      * Set Age value
      * @param string $age
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setAge($age = null)
     {
@@ -183,7 +183,7 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Get PersonName value
-     * @return \StructType\NonCyrillicPersonNameType|null
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType|null
      */
     public function getPersonName()
     {
@@ -191,10 +191,10 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Set PersonName value
-     * @param \StructType\NonCyrillicPersonNameType $personName
-     * @return \StructType\TravellerType
+     * @param \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
-    public function setPersonName(\StructType\NonCyrillicPersonNameType $personName = null)
+    public function setPersonName(\traveltainment\SOAP17\StructType\NonCyrillicPersonNameType $personName = null)
     {
         $this->PersonName = $personName;
         return $this;
@@ -209,17 +209,17 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Set Gender value
-     * @uses \EnumType\GenderType::valueIsValid()
-     * @uses \EnumType\GenderType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\GenderType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $gender
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setGender($gender = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\GenderType::valueIsValid($gender)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \EnumType\GenderType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\GenderType::valueIsValid($gender)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $gender, implode(', ', \traveltainment\SOAP17\EnumType\GenderType::getValidValues())), __LINE__);
         }
         $this->Gender = $gender;
         return $this;
@@ -235,7 +235,7 @@ class TravellerType extends NonCyrillicPersonType
     /**
      * Set BirthDate value
      * @param string $birthDate
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setBirthDate($birthDate = null)
     {
@@ -260,17 +260,17 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Set AgeQualifier value
-     * @uses \EnumType\PersType::valueIsValid()
-     * @uses \EnumType\PersType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\PersType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\PersType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $ageQualifier
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setAgeQualifier($ageQualifier = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PersType::valueIsValid($ageQualifier)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $ageQualifier, implode(', ', \EnumType\PersType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\PersType::valueIsValid($ageQualifier)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $ageQualifier, implode(', ', \traveltainment\SOAP17\EnumType\PersType::getValidValues())), __LINE__);
         }
         $this->AgeQualifier = $ageQualifier;
         return $this;
@@ -286,7 +286,7 @@ class TravellerType extends NonCyrillicPersonType
     /**
      * Set IDCardNumber value
      * @param string $iDCardNumber
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setIDCardNumber($iDCardNumber = null)
     {
@@ -307,7 +307,7 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Get SpanishMarketScoped value
-     * @return \StructType\SpanishMarketScopedType|null
+     * @return \traveltainment\SOAP17\StructType\SpanishMarketScopedType|null
      */
     public function getSpanishMarketScoped()
     {
@@ -315,17 +315,17 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Set SpanishMarketScoped value
-     * @param \StructType\SpanishMarketScopedType $spanishMarketScoped
-     * @return \StructType\TravellerType
+     * @param \traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
-    public function setSpanishMarketScoped(\StructType\SpanishMarketScopedType $spanishMarketScoped = null)
+    public function setSpanishMarketScoped(\traveltainment\SOAP17\StructType\SpanishMarketScopedType $spanishMarketScoped = null)
     {
         $this->SpanishMarketScoped = $spanishMarketScoped;
         return $this;
     }
     /**
      * Get RussianMarketScoped value
-     * @return \StructType\RussianMarketScopedType|null
+     * @return \traveltainment\SOAP17\StructType\RussianMarketScopedType|null
      */
     public function getRussianMarketScoped()
     {
@@ -333,10 +333,10 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Set RussianMarketScoped value
-     * @param \StructType\RussianMarketScopedType $russianMarketScoped
-     * @return \StructType\TravellerType
+     * @param \traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
-    public function setRussianMarketScoped(\StructType\RussianMarketScopedType $russianMarketScoped = null)
+    public function setRussianMarketScoped(\traveltainment\SOAP17\StructType\RussianMarketScopedType $russianMarketScoped = null)
     {
         $this->RussianMarketScoped = $russianMarketScoped;
         return $this;
@@ -352,7 +352,7 @@ class TravellerType extends NonCyrillicPersonType
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setID($iD = null)
     {
@@ -373,24 +373,24 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Set Type value
-     * @uses \EnumType\PersType::valueIsValid()
-     * @uses \EnumType\PersType::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\PersType::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\PersType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PersType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \EnumType\PersType::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\PersType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $type, implode(', ', \traveltainment\SOAP17\EnumType\PersType::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
     }
     /**
      * Get Total value
-     * @return \StructType\TotalType|null
+     * @return \traveltainment\SOAP17\StructType\TotalType|null
      */
     public function getTotal()
     {
@@ -398,10 +398,10 @@ class TravellerType extends NonCyrillicPersonType
     }
     /**
      * Set Total value
-     * @param \StructType\TotalType $total
-     * @return \StructType\TravellerType
+     * @param \traveltainment\SOAP17\StructType\TotalType $total
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
-    public function setTotal(\StructType\TotalType $total = null)
+    public function setTotal(\traveltainment\SOAP17\StructType\TotalType $total = null)
     {
         $this->Total = $total;
         return $this;
@@ -417,7 +417,7 @@ class TravellerType extends NonCyrillicPersonType
     /**
      * Set FrequentFlierProgram value
      * @param string $frequentFlierProgram
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setFrequentFlierProgram($frequentFlierProgram = null)
     {
@@ -443,7 +443,7 @@ class TravellerType extends NonCyrillicPersonType
     /**
      * Set FrequentFlierAccount value
      * @param string $frequentFlierAccount
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setFrequentFlierAccount($frequentFlierAccount = null)
     {
@@ -469,7 +469,7 @@ class TravellerType extends NonCyrillicPersonType
     /**
      * Set travellerRef value
      * @param string $travellerRef
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public function setTravellerRef($travellerRef = null)
     {
@@ -490,7 +490,7 @@ class TravellerType extends NonCyrillicPersonType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TravellerType
+     * @return \traveltainment\SOAP17\StructType\TravellerType
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -12,19 +12,19 @@ class CredentialsType extends AbstractStructBase
 {
     /**
      * The Agency
-     * @var \StructType\AgencyInformationType
+     * @var \traveltainment\SOAP17\StructType\AgencyInformationType
      */
     public $Agency;
     /**
      * The Office
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\OfficeInformationType
+     * @var \traveltainment\SOAP17\StructType\OfficeInformationType
      */
     public $Office;
     /**
      * The ConsolidatorInformation
-     * @var \StructType\ConsolidatorType
+     * @var \traveltainment\SOAP17\StructType\ConsolidatorType
      */
     public $ConsolidatorInformation;
     /**
@@ -32,11 +32,11 @@ class CredentialsType extends AbstractStructBase
      * @uses CredentialsType::setAgency()
      * @uses CredentialsType::setOffice()
      * @uses CredentialsType::setConsolidatorInformation()
-     * @param \StructType\AgencyInformationType $agency
-     * @param \StructType\OfficeInformationType $office
-     * @param \StructType\ConsolidatorType $consolidatorInformation
+     * @param \traveltainment\SOAP17\StructType\AgencyInformationType $agency
+     * @param \traveltainment\SOAP17\StructType\OfficeInformationType $office
+     * @param \traveltainment\SOAP17\StructType\ConsolidatorType $consolidatorInformation
      */
-    public function __construct(\StructType\AgencyInformationType $agency = null, \StructType\OfficeInformationType $office = null, \StructType\ConsolidatorType $consolidatorInformation = null)
+    public function __construct(\traveltainment\SOAP17\StructType\AgencyInformationType $agency = null, \traveltainment\SOAP17\StructType\OfficeInformationType $office = null, \traveltainment\SOAP17\StructType\ConsolidatorType $consolidatorInformation = null)
     {
         $this
             ->setAgency($agency)
@@ -45,7 +45,7 @@ class CredentialsType extends AbstractStructBase
     }
     /**
      * Get Agency value
-     * @return \StructType\AgencyInformationType|null
+     * @return \traveltainment\SOAP17\StructType\AgencyInformationType|null
      */
     public function getAgency()
     {
@@ -53,17 +53,17 @@ class CredentialsType extends AbstractStructBase
     }
     /**
      * Set Agency value
-     * @param \StructType\AgencyInformationType $agency
-     * @return \StructType\CredentialsType
+     * @param \traveltainment\SOAP17\StructType\AgencyInformationType $agency
+     * @return \traveltainment\SOAP17\StructType\CredentialsType
      */
-    public function setAgency(\StructType\AgencyInformationType $agency = null)
+    public function setAgency(\traveltainment\SOAP17\StructType\AgencyInformationType $agency = null)
     {
         $this->Agency = $agency;
         return $this;
     }
     /**
      * Get Office value
-     * @return \StructType\OfficeInformationType|null
+     * @return \traveltainment\SOAP17\StructType\OfficeInformationType|null
      */
     public function getOffice()
     {
@@ -71,17 +71,17 @@ class CredentialsType extends AbstractStructBase
     }
     /**
      * Set Office value
-     * @param \StructType\OfficeInformationType $office
-     * @return \StructType\CredentialsType
+     * @param \traveltainment\SOAP17\StructType\OfficeInformationType $office
+     * @return \traveltainment\SOAP17\StructType\CredentialsType
      */
-    public function setOffice(\StructType\OfficeInformationType $office = null)
+    public function setOffice(\traveltainment\SOAP17\StructType\OfficeInformationType $office = null)
     {
         $this->Office = $office;
         return $this;
     }
     /**
      * Get ConsolidatorInformation value
-     * @return \StructType\ConsolidatorType|null
+     * @return \traveltainment\SOAP17\StructType\ConsolidatorType|null
      */
     public function getConsolidatorInformation()
     {
@@ -89,10 +89,10 @@ class CredentialsType extends AbstractStructBase
     }
     /**
      * Set ConsolidatorInformation value
-     * @param \StructType\ConsolidatorType $consolidatorInformation
-     * @return \StructType\CredentialsType
+     * @param \traveltainment\SOAP17\StructType\ConsolidatorType $consolidatorInformation
+     * @return \traveltainment\SOAP17\StructType\CredentialsType
      */
-    public function setConsolidatorInformation(\StructType\ConsolidatorType $consolidatorInformation = null)
+    public function setConsolidatorInformation(\traveltainment\SOAP17\StructType\ConsolidatorType $consolidatorInformation = null)
     {
         $this->ConsolidatorInformation = $consolidatorInformation;
         return $this;
@@ -103,7 +103,7 @@ class CredentialsType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CredentialsType
+     * @return \traveltainment\SOAP17\StructType\CredentialsType
      */
     public static function __set_state(array $array)
     {

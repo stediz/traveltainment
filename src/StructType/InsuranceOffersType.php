@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,13 +15,13 @@ class InsuranceOffersType extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\InsuranceOfferType[]
+     * @var \traveltainment\SOAP17\StructType\InsuranceOfferType[]
      */
     public $Offer;
     /**
      * Constructor method for InsuranceOffersType
      * @uses InsuranceOffersType::setOffer()
-     * @param \StructType\InsuranceOfferType[] $offer
+     * @param \traveltainment\SOAP17\StructType\InsuranceOfferType[] $offer
      */
     public function __construct(array $offer = array())
     {
@@ -30,7 +30,7 @@ class InsuranceOffersType extends AbstractStructBase
     }
     /**
      * Get Offer value
-     * @return \StructType\InsuranceOfferType[]|null
+     * @return \traveltainment\SOAP17\StructType\InsuranceOfferType[]|null
      */
     public function getOffer()
     {
@@ -39,15 +39,15 @@ class InsuranceOffersType extends AbstractStructBase
     /**
      * Set Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\InsuranceOfferType[] $offer
-     * @return \StructType\InsuranceOffersType
+     * @param \traveltainment\SOAP17\StructType\InsuranceOfferType[] $offer
+     * @return \traveltainment\SOAP17\StructType\InsuranceOffersType
      */
     public function setOffer(array $offer = array())
     {
         foreach ($offer as $insuranceOffersTypeOfferItem) {
             // validation for constraint: itemType
-            if (!$insuranceOffersTypeOfferItem instanceof \StructType\InsuranceOfferType) {
-                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\InsuranceOfferType, "%s" given', is_object($insuranceOffersTypeOfferItem) ? get_class($insuranceOffersTypeOfferItem) : gettype($insuranceOffersTypeOfferItem)), __LINE__);
+            if (!$insuranceOffersTypeOfferItem instanceof \traveltainment\SOAP17\StructType\InsuranceOfferType) {
+                throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\InsuranceOfferType, "%s" given', is_object($insuranceOffersTypeOfferItem) ? get_class($insuranceOffersTypeOfferItem) : gettype($insuranceOffersTypeOfferItem)), __LINE__);
             }
         }
         $this->Offer = $offer;
@@ -56,14 +56,14 @@ class InsuranceOffersType extends AbstractStructBase
     /**
      * Add item to Offer value
      * @throws \InvalidArgumentException
-     * @param \StructType\InsuranceOfferType $item
-     * @return \StructType\InsuranceOffersType
+     * @param \traveltainment\SOAP17\StructType\InsuranceOfferType $item
+     * @return \traveltainment\SOAP17\StructType\InsuranceOffersType
      */
-    public function addToOffer(\StructType\InsuranceOfferType $item)
+    public function addToOffer(\traveltainment\SOAP17\StructType\InsuranceOfferType $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\InsuranceOfferType) {
-            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \StructType\InsuranceOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \traveltainment\SOAP17\StructType\InsuranceOfferType) {
+            throw new \InvalidArgumentException(sprintf('The Offer property can only contain items of \traveltainment\SOAP17\StructType\InsuranceOfferType, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->Offer[] = $item;
         return $this;
@@ -74,7 +74,7 @@ class InsuranceOffersType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\InsuranceOffersType
+     * @return \traveltainment\SOAP17\StructType\InsuranceOffersType
      */
     public static function __set_state(array $array)
     {

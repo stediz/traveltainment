@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -86,7 +86,7 @@ class NonCyrillicPersonNameType extends AbstractStructBase
     /**
      * Set FirstName value
      * @param string $firstName
-     * @return \StructType\NonCyrillicPersonNameType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public function setFirstName($firstName = null)
     {
@@ -112,7 +112,7 @@ class NonCyrillicPersonNameType extends AbstractStructBase
     /**
      * Set MiddleName value
      * @param string $middleName
-     * @return \StructType\NonCyrillicPersonNameType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public function setMiddleName($middleName = null)
     {
@@ -138,7 +138,7 @@ class NonCyrillicPersonNameType extends AbstractStructBase
     /**
      * Set LastName value
      * @param string $lastName
-     * @return \StructType\NonCyrillicPersonNameType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public function setLastName($lastName = null)
     {
@@ -164,7 +164,7 @@ class NonCyrillicPersonNameType extends AbstractStructBase
     /**
      * Set Title value
      * @param string $title
-     * @return \StructType\NonCyrillicPersonNameType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public function setTitle($title = null)
     {
@@ -190,7 +190,7 @@ class NonCyrillicPersonNameType extends AbstractStructBase
     /**
      * Set Salutation value
      * @param string $salutation
-     * @return \StructType\NonCyrillicPersonNameType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public function setSalutation($salutation = null)
     {
@@ -211,7 +211,7 @@ class NonCyrillicPersonNameType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\NonCyrillicPersonNameType
+     * @return \traveltainment\SOAP17\StructType\NonCyrillicPersonNameType
      */
     public static function __set_state(array $array)
     {

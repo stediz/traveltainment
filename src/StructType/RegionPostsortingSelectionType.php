@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -55,17 +55,17 @@ class RegionPostsortingSelectionType extends AbstractStructBase
     }
     /**
      * Set Order value
-     * @uses \EnumType\SortDirectionEnum::valueIsValid()
-     * @uses \EnumType\SortDirectionEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\SortDirectionEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\SortDirectionEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $order
-     * @return \StructType\RegionPostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType
      */
     public function setOrder($order = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\SortDirectionEnum::valueIsValid($order)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order, implode(', ', \EnumType\SortDirectionEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\SortDirectionEnum::valueIsValid($order)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order, implode(', ', \traveltainment\SOAP17\EnumType\SortDirectionEnum::getValidValues())), __LINE__);
         }
         $this->Order = $order;
         return $this;
@@ -81,7 +81,7 @@ class RegionPostsortingSelectionType extends AbstractStructBase
     /**
      * Set GroupByRegion value
      * @param bool $groupByRegion
-     * @return \StructType\RegionPostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType
      */
     public function setGroupByRegion($groupByRegion = null)
     {
@@ -102,17 +102,17 @@ class RegionPostsortingSelectionType extends AbstractStructBase
     }
     /**
      * Set Postsorting value
-     * @uses \EnumType\RegionPostsortingEnum::valueIsValid()
-     * @uses \EnumType\RegionPostsortingEnum::getValidValues()
+     * @uses \traveltainment\SOAP17\EnumType\RegionPostsortingEnum::valueIsValid()
+     * @uses \traveltainment\SOAP17\EnumType\RegionPostsortingEnum::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $postsorting
-     * @return \StructType\RegionPostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType
      */
     public function setPostsorting($postsorting = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\RegionPostsortingEnum::valueIsValid($postsorting)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $postsorting, implode(', ', \EnumType\RegionPostsortingEnum::getValidValues())), __LINE__);
+        if (!\traveltainment\SOAP17\EnumType\RegionPostsortingEnum::valueIsValid($postsorting)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $postsorting, implode(', ', \traveltainment\SOAP17\EnumType\RegionPostsortingEnum::getValidValues())), __LINE__);
         }
         $this->Postsorting = $postsorting;
         return $this;
@@ -123,7 +123,7 @@ class RegionPostsortingSelectionType extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegionPostsortingSelectionType
+     * @return \traveltainment\SOAP17\StructType\RegionPostsortingSelectionType
      */
     public static function __set_state(array $array)
     {

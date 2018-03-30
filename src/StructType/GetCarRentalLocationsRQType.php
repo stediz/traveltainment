@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace traveltainment\SOAP17\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class GetCarRentalLocationsRQType extends RequestType
      * The Location
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
-     * @var \StructType\CarRentalLocationCodeType
+     * @var \traveltainment\SOAP17\StructType\CarRentalLocationCodeType
      */
     public $Location;
     /**
@@ -34,9 +34,9 @@ class GetCarRentalLocationsRQType extends RequestType
      * @uses GetCarRentalLocationsRQType::setLocation()
      * @param string $sessionID
      * @param string $providerID
-     * @param \StructType\CarRentalLocationCodeType $location
+     * @param \traveltainment\SOAP17\StructType\CarRentalLocationCodeType $location
      */
-    public function __construct($sessionID = null, $providerID = null, \StructType\CarRentalLocationCodeType $location = null)
+    public function __construct($sessionID = null, $providerID = null, \traveltainment\SOAP17\StructType\CarRentalLocationCodeType $location = null)
     {
         $this
             ->setSessionID($sessionID)
@@ -54,7 +54,7 @@ class GetCarRentalLocationsRQType extends RequestType
     /**
      * Set SessionID value
      * @param string $sessionID
-     * @return \StructType\GetCarRentalLocationsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType
      */
     public function setSessionID($sessionID = null)
     {
@@ -76,7 +76,7 @@ class GetCarRentalLocationsRQType extends RequestType
     /**
      * Set ProviderID value
      * @param string $providerID
-     * @return \StructType\GetCarRentalLocationsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType
      */
     public function setProviderID($providerID = null)
     {
@@ -89,7 +89,7 @@ class GetCarRentalLocationsRQType extends RequestType
     }
     /**
      * Get Location value
-     * @return \StructType\CarRentalLocationCodeType|null
+     * @return \traveltainment\SOAP17\StructType\CarRentalLocationCodeType|null
      */
     public function getLocation()
     {
@@ -97,10 +97,10 @@ class GetCarRentalLocationsRQType extends RequestType
     }
     /**
      * Set Location value
-     * @param \StructType\CarRentalLocationCodeType $location
-     * @return \StructType\GetCarRentalLocationsRQType
+     * @param \traveltainment\SOAP17\StructType\CarRentalLocationCodeType $location
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType
      */
-    public function setLocation(\StructType\CarRentalLocationCodeType $location = null)
+    public function setLocation(\traveltainment\SOAP17\StructType\CarRentalLocationCodeType $location = null)
     {
         $this->Location = $location;
         return $this;
@@ -111,7 +111,7 @@ class GetCarRentalLocationsRQType extends RequestType
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetCarRentalLocationsRQType
+     * @return \traveltainment\SOAP17\StructType\GetCarRentalLocationsRQType
      */
     public static function __set_state(array $array)
     {
